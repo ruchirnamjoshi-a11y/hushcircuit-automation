@@ -1,0 +1,62 @@
+{
+  "id": "010-automate-email-inbox-with-ai",
+  "title": "Automate Your Email Inbox With AI",
+  "description": "A practical system for using AI to draft, sort, and clear your inbox faster without losing your own voice in the replies.\n\n#EmailProductivity #AITools",
+  "tags": [
+    "email productivity",
+    "AI tools",
+    "inbox management",
+    "automation",
+    "productivity"
+  ],
+  "scenes": [
+    {
+      "narration": "An overflowing inbox isn't a discipline problem, it's a system problem. Here's an AI-based system that actually fixes it.",
+      "visual_keyword": "overflowing email inbox screen",
+      "duration_hint": 8,
+      "short_worthy": true
+    },
+    {
+      "narration": "First, use AI to triage, not reply. Ask it to sort unread emails into 'needs a reply today,' 'can wait,' and 'no action needed.' Most inbox anxiety comes from not knowing what actually needs attention, and this turns that into a visible, sorted list in seconds instead of a vague sense of dread.",
+      "visual_keyword": "email folders sorting screen",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "For anything routine, feed it your usual reply style once, and let it draft future replies to match your voice.",
+      "visual_keyword": "person editing email draft",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "For the 'can wait' pile, batch them. Instead of replying throughout the day, ask AI to draft all of those replies at once at a set time, so you're not context-switching every ten minutes to handle a low-priority message that could've waited until this afternoon anyway.",
+      "visual_keyword": "person typing email batch",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Always read a draft before sending. AI drafts save time typing, not time thinking.",
+      "visual_keyword": "reviewing email draft",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "Set up a standing filter for newsletters and notifications so they never mix into the same view as messages from actual people, that separation alone removes most of the visual clutter that makes an inbox feel unmanageable in the first place.",
+      "visual_keyword": "email filter settings screen",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "None of this requires a new app, most email clients already have AI drafting built in now. It just requires actually turning it on and using it as a system, not a novelty.",
+      "visual_keyword": "email app settings screen",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Set up one of these today and watch your inbox stop feeling like a to-do list you're always behind on. Subscribe for more.",
+      "visual_keyword": "subscribe button animation",
+      "duration_hint": 8,
+      "short_worthy": true
+    }
+  ]
+}

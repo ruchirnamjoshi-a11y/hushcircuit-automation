@@ -1,0 +1,63 @@
+name: Daily Video
+
+on:
+  schedule:
+    - cron: '0 14 * * *' # 14:00 UTC daily — adjust to your audience's timezone
+  workflow_dispatch:
+    inputs:
+      privacy:
+        description: 'YouTube privacy status for this manual run'
+        required: false
+        default: 'private'
+        type: choice
+        options: [private, unlisted, public]
+
+concurrency:
+  group: daily-video
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  produce-and-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Ensure ffmpeg is installed
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore YouTube OAuth token
+        run: |
+          mkdir -p secrets
+          echo "${{ secrets.YOUTUBE_TOKEN_B64 }}" | base64 -d > secrets/youtube_token.json
+
+      - name: Run daily pipeline
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          YOUTUBE_TOKEN_FILE: secrets/youtube_token.json
+        # Scheduled runs publish for real (public); manual runs default to
+        # private so you can sanity-check a run without publishing it live.
+        run: |
+          PRIVACY="${{ github.event_name == 'workflow_dispatch' && inputs.privacy || 'public' }}"
+          python run_daily.py --privacy "$PRIVACY"
+
+      - name: Commit consumed script back to the queue
+        run: |
+          git config user.name "youtube-automation-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add scripts_queue/
+          git diff --cached --quiet || git commit -m "chore: consume next queued script [skip ci]"
+          git push

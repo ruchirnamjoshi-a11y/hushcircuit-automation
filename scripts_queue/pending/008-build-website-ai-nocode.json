@@ -1,0 +1,62 @@
+{
+  "id": "008-build-website-ai-nocode",
+  "title": "Build a Website in 10 Minutes With AI",
+  "description": "A no-code plus AI workflow for going from zero to a live, working website in about ten minutes.\n\n#NoCode #AITools #WebDesign",
+  "tags": [
+    "no-code",
+    "AI website builder",
+    "web design",
+    "AI tools",
+    "tutorial"
+  ],
+  "scenes": [
+    {
+      "narration": "You don't need to know how to code to have a live website today. Here's the ten minute version.",
+      "visual_keyword": "website builder screen",
+      "duration_hint": 8,
+      "short_worthy": true
+    },
+    {
+      "narration": "Start with a no-code website builder that has AI generation built in. Instead of picking a template and filling in blanks, describe what the site is for in a sentence, 'a landing page for a local coffee shop,' and let it generate a full first draft, layout, sections, and placeholder copy included.",
+      "visual_keyword": "website template screen",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Swap out the placeholder text next, that's the part that makes it feel generic if you skip it.",
+      "visual_keyword": "editing text website",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "For images, either upload your own or generate a few with an AI image tool using the same style keywords for every image, so the whole site feels visually consistent instead of looking like five different sites stitched together.",
+      "visual_keyword": "image gallery website screen",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Check it on mobile before you publish, most visitors will see it on a phone first, not a laptop.",
+      "visual_keyword": "phone showing website",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "Once the layout's right, ask the AI assistant to tighten the copy, shorter headlines, clearer call to action buttons, that's usually a bigger improvement than any design tweak you could make manually in the same amount of time.",
+      "visual_keyword": "website copy editing screen",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Then publish. Most of these builders host it for free on a starter domain, so there's nothing stopping you from having it live today instead of someday.",
+      "visual_keyword": "publish button website",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Build one this week, even just for practice. Subscribe for more no-code and AI tutorials.",
+      "visual_keyword": "subscribe button animation",
+      "duration_hint": 8,
+      "short_worthy": true
+    }
+  ]
+}

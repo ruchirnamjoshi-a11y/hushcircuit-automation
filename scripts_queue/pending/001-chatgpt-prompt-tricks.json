@@ -1,0 +1,62 @@
+{
+  "id": "001-chatgpt-prompt-tricks",
+  "title": "5 ChatGPT Prompt Tricks Nobody Tells You About",
+  "description": "Five prompt-engineering tricks that instantly make ChatGPT's answers sharper, more useful, and more specific to what you actually need.\n\n#ChatGPT #AIPrompts #AITools #Productivity",
+  "tags": [
+    "ChatGPT",
+    "AI prompts",
+    "prompt engineering",
+    "AI tools",
+    "productivity"
+  ],
+  "scenes": [
+    {
+      "narration": "Most people type one line into ChatGPT and settle for a mediocre answer. Here are five prompt tricks that change that instantly.",
+      "visual_keyword": "person typing laptop close up",
+      "duration_hint": 8,
+      "short_worthy": true
+    },
+    {
+      "narration": "Trick one: give it a role. Instead of asking a plain question, tell ChatGPT who to be. Say 'act as a senior software engineer reviewing this code' or 'act as a skeptical editor.' The model shifts its vocabulary, priorities, and depth to match that role, and the answer gets noticeably more useful because it's no longer guessing what kind of answer you want.",
+      "visual_keyword": "hands typing keyboard office",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Trick two: ask for options, not one answer. 'Give me three different taglines' beats 'give me a tagline' every time.",
+      "visual_keyword": "lightbulb idea concept",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "Trick three: tell it to think step by step before answering, especially for anything involving logic, math, or planning. Adding the phrase 'walk through your reasoning first, then give your final answer' forces the model to slow down internally, and that extra reasoning step catches mistakes that a rushed one-shot answer would miss.",
+      "visual_keyword": "brainstorming whiteboard notes",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Trick four: show it an example of the output you want. One good example is worth paragraphs of instructions.",
+      "visual_keyword": "notebook sketching ideas",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "Trick five: set hard constraints. Word counts, tone, format, audience. 'Explain this to a twelve year old in under a hundred words' produces a completely different, and usually better, answer than an open-ended request. The more specific your constraints, the less the model has to guess.",
+      "visual_keyword": "laptop screen document",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "And the meta-trick: treat it like a conversation, not a search engine. If the first answer isn't quite right, don't start over. Just tell it what to change, the same way you'd redirect a coworker, and it'll refine from where you left off.",
+      "visual_keyword": "person talking video call",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Try one of these in your next chat and notice the difference. If this helped, subscribe for more AI tool breakdowns every week.",
+      "visual_keyword": "subscribe button animation",
+      "duration_hint": 8,
+      "short_worthy": true
+    }
+  ]
+}
