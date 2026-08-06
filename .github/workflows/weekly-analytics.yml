@@ -1,0 +1,41 @@
+name: Weekly Analytics
+
+on:
+  schedule:
+    - cron: '0 9 * * 1' # Monday 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pull-analytics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore YouTube OAuth token
+        run: |
+          mkdir -p secrets
+          echo "${{ secrets.YOUTUBE_TOKEN_B64 }}" | base64 -d > secrets/youtube_token.json
+
+      - name: Pull weekly analytics
+        env:
+          YOUTUBE_TOKEN_FILE: secrets/youtube_token.json
+        run: python run_weekly_analytics.py
+
+      - name: Commit report
+        run: |
+          git config user.name "youtube-automation-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add analytics/
+          git diff --cached --quiet || git commit -m "chore: weekly analytics report [skip ci]"
+          git push

@@ -1,0 +1,62 @@
+{
+  "id": "009-ai-tools-for-students",
+  "title": "AI Tools for Students: Study Smarter, Not Harder",
+  "description": "AI study tools and techniques that actually improve retention, not just shortcuts that skip the learning.\n\n#StudyTips #AITools #Students",
+  "tags": [
+    "AI for students",
+    "study tips",
+    "AI tools",
+    "studying",
+    "productivity"
+  ],
+  "scenes": [
+    {
+      "narration": "There's a difference between using AI to cheat and using AI to actually learn faster. Here's the second one.",
+      "visual_keyword": "student studying laptop",
+      "duration_hint": 8,
+      "short_worthy": true
+    },
+    {
+      "narration": "Turn your notes into practice questions. Paste your class notes into an AI assistant and ask it to generate quiz questions from them. Active recall, testing yourself instead of rereading, is one of the most proven study techniques there is, and this makes it nearly effortless to set up before any exam.",
+      "visual_keyword": "student writing notes",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Ask it to explain confusing concepts a different way, not just once, but using a different analogy each time until one clicks.",
+      "visual_keyword": "confused student desk",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "For essays, use AI to critique your draft, not write it for you. Ask specifically 'what's the weakest argument in this essay' instead of 'write this essay,' and you'll actually improve as a writer instead of outsourcing the thinking entirely, which catches up with you eventually.",
+      "visual_keyword": "student writing essay laptop",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Summarize long readings before class, then read the original with that structure already in your head.",
+      "visual_keyword": "textbook and laptop desk",
+      "duration_hint": 18,
+      "short_worthy": true
+    },
+    {
+      "narration": "For group projects, use AI to turn a messy shared document into a clean outline everyone can actually work from, instead of the usual scroll-and-guess approach to figuring out who's doing what.",
+      "visual_keyword": "students group study table",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "The theme across all of this: use AI to practice and check your understanding, not to skip understanding entirely. That's the difference between a tool that helps you learn and one that just gets you a grade.",
+      "visual_keyword": "student thinking desk",
+      "duration_hint": 62,
+      "short_worthy": false
+    },
+    {
+      "narration": "Try the practice-questions trick before your next exam. Subscribe for more study tips.",
+      "visual_keyword": "subscribe button animation",
+      "duration_hint": 8,
+      "short_worthy": true
+    }
+  ]
+}
