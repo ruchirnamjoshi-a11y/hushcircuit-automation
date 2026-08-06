@@ -39,3 +39,4 @@ jobs:
           git add analytics/
           git diff --cached --quiet || git commit -m "chore: weekly analytics report [skip ci]"
           git push
+

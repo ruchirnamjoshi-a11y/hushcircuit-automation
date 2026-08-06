@@ -61,3 +61,4 @@ jobs:
           git add scripts_queue/
           git diff --cached --quiet || git commit -m "chore: consume next queued script [skip ci]"
           git push
+
