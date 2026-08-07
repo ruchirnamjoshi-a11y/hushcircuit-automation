@@ -12,51 +12,51 @@
   "scenes": [
     {
       "narration": "If your AI-generated images keep coming out generic or weird, it's almost always the prompt, not the model.",
-      "visual_keyword": "AI generated art on screen",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "PROMPTS THAT WORK"
     },
     {
       "narration": "Most people type a noun and hope for the best, 'a mountain landscape.' That's not a prompt, that's a topic. A working prompt describes subject, style, lighting, and composition separately, so the model isn't guessing what you actually want to see.",
-      "visual_keyword": "digital art tablet screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "SUBJECT + STYLE"
     },
     {
       "narration": "Add a specific art style. 'Watercolor,' 'studio photography,' '3D render' each pushes the output in a completely different direction.",
-      "visual_keyword": "art style examples screen",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "PICK AN ART STYLE"
     },
     {
       "narration": "Lighting matters more than people expect. 'Golden hour,' 'dramatic side lighting,' 'soft overcast light' changes the entire mood of an image far more than adding extra descriptive adjectives to the subject itself does.",
-      "visual_keyword": "sunset lighting photography",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "LIGHTING MATTERS"
     },
     {
       "narration": "Composition words help too. 'Close-up,' 'wide shot,' 'from above' control framing the way a camera direction would.",
-      "visual_keyword": "camera framing shot",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "COMPOSITION WORDS"
     },
     {
       "narration": "And when a result is close but not right, don't start over, just describe what to change, the same way you'd direct a photographer, and regenerate from there. Most tools let you refine iteratively rather than rolling the dice on an entirely new prompt every time.",
-      "visual_keyword": "person editing image screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "REFINE, DON'T RESTART"
     },
     {
       "narration": "The gap between a mediocre AI image and a great one is almost always five extra words of specificity, not a different tool entirely.",
-      "visual_keyword": "before after comparison screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "FIVE EXTRA WORDS"
     },
     {
       "narration": "Try rewriting your next prompt with subject, style, lighting, and composition as four separate pieces. Subscribe for more AI tool breakdowns.",
-      "visual_keyword": "subscribe button animation",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "SUBSCRIBE"
     }
   ]
 }

@@ -12,51 +12,51 @@
   "scenes": [
     {
       "narration": "There are a dozen AI coding assistants now, and they're not all built for the same kind of work. Here's how to actually choose.",
-      "visual_keyword": "code editor screen close up",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "PICK THE RIGHT ASSISTANT"
     },
     {
       "narration": "First question: are you writing new code or maintaining an existing large codebase? Some assistants are tuned for fast autocomplete in a small file, great for prototyping, while others are built to hold an entire project's context and reason across multiple files at once, which matters a lot more once your codebase gets big.",
-      "visual_keyword": "multiple monitors code",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "NEW CODE VS BIG CODEBASE"
     },
     {
       "narration": "If you work mostly inside one editor, an assistant that lives directly in that editor beats one you have to alt-tab to.",
-      "visual_keyword": "developer at desk typing",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "STAYS IN YOUR EDITOR"
     },
     {
       "narration": "Second question: do you want it to just suggest, or actually make changes across files for you? Autocomplete-style tools are lower risk and easier to review line by line. Agentic tools that edit multiple files save more time but need you to actually read the diff before trusting it, especially early on while you're learning where it tends to go wrong.",
-      "visual_keyword": "terminal command line screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "SUGGEST VS AUTO-EDIT"
     },
     {
       "narration": "Also check how it handles your existing code style. A good assistant should match your formatting, not fight it.",
-      "visual_keyword": "code formatting screen",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "MATCHES YOUR STYLE"
     },
     {
       "narration": "Third question: cost and limits. Free tiers are usually generous enough for side projects and learning, but heavy daily professional use often needs a paid tier eventually. Test the free tier on a real task first, not a toy example, before deciding if it's worth paying for.",
-      "visual_keyword": "pricing page screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "COST & LIMITS"
     },
     {
       "narration": "There's no single best assistant, there's the one that fits how you already work. Try two on the same real task and see which one actually saves you time, not which one has the longer feature list.",
-      "visual_keyword": "person comparing screens",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "FITS HOW YOU WORK"
     },
     {
       "narration": "Which one are you using? Drop it in the comments, and subscribe for more dev-focused AI breakdowns.",
-      "visual_keyword": "subscribe button animation",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "SUBSCRIBE"
     }
   ]
 }

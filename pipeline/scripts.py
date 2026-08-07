@@ -14,14 +14,14 @@ from typing import Optional
 
 from pipeline.config import QUEUE_PENDING_DIR, QUEUE_USED_DIR
 
-REQUIRED_SCENE_FIELDS = {"narration", "visual_keyword", "duration_hint", "short_worthy"}
+REQUIRED_SCENE_FIELDS = {"narration", "on_screen_text", "duration_hint", "short_worthy"}
 REQUIRED_SCRIPT_FIELDS = {"id", "title", "description", "tags", "scenes"}
 
 
 @dataclass
 class Scene:
     narration: str
-    visual_keyword: str
+    on_screen_text: str
     duration_hint: float
     short_worthy: bool = False
 
@@ -60,6 +60,19 @@ class Script:
     def total_duration(self) -> float:
         return sum(s.duration_hint for s in self.scenes)
 
+    def badge_text(self, scene_index: int) -> str:
+        """The on-screen progress badge for a scene, e.g. 'TIP 2/6 · GIVE IT
+        A ROLE' for a body scene, or just the scene's on_screen_text for the
+        hook/outro. Numbering reflects position in the full script, so a
+        Short that only includes a subset of scenes still shows correct
+        global numbers (e.g. 'TIP 4/6') rather than renumbering 1..N."""
+        scene = self.scenes[scene_index]
+        if scene_index == 0 or scene_index == len(self.scenes) - 1:
+            return scene.on_screen_text
+        tip_number = scene_index
+        total_tips = len(self.body_scenes)
+        return f"TIP {tip_number}/{total_tips} · {scene.on_screen_text}"
+
 
 class ScriptValidationError(ValueError):
     pass
@@ -82,7 +95,7 @@ def validate(data: dict) -> Script:
         scenes.append(
             Scene(
                 narration=scene_data["narration"],
-                visual_keyword=scene_data["visual_keyword"],
+                on_screen_text=scene_data["on_screen_text"],
                 duration_hint=float(scene_data["duration_hint"]),
                 short_worthy=bool(scene_data["short_worthy"]),
             )
@@ -106,7 +119,7 @@ def to_dict(script: Script) -> dict:
         "scenes": [
             {
                 "narration": s.narration,
-                "visual_keyword": s.visual_keyword,
+                "on_screen_text": s.on_screen_text,
                 "duration_hint": s.duration_hint,
                 "short_worthy": s.short_worthy,
             }

@@ -12,51 +12,51 @@
   "scenes": [
     {
       "narration": "You're probably paying for software that a free AI tool can already do just as well. Let's fix that.",
-      "visual_keyword": "laptop with dollar sign icon",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "FREE VS PAID"
     },
     {
       "narration": "Start with writing and editing. Free tiers of AI writing assistants can catch grammar issues, rewrite awkward sentences, and adjust tone, work that used to require a paid grammar-checking subscription. For most casual and professional writing, the free tier alone is enough -- you only hit a wall if you need heavy daily volume.",
-      "visual_keyword": "person writing on laptop",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "WRITING & EDITING"
     },
     {
       "narration": "Need a quick logo or social graphic? Free design tools with AI backgrounds and layout suggestions cover it without touching a paid design app.",
-      "visual_keyword": "design mockup on screen",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "DESIGN & LOGOS"
     },
     {
       "narration": "Transcription is another one. Free speech-to-text tools built into note apps and browsers can transcribe meetings, interviews, and voice memos in minutes, a task that used to mean paying per-minute for a transcription service or doing it by hand.",
-      "visual_keyword": "voice recorder phone desk",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "TRANSCRIPTION"
     },
     {
       "narration": "For research, AI-powered summarizers can turn a long PDF or article into a clean set of key points before you've even opened the file.",
-      "visual_keyword": "stack of papers desk",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "RESEARCH SUMMARIES"
     },
     {
       "narration": "And for scheduling, free AI calendar assistants can suggest meeting times and draft replies, cutting out the back-and-forth email thread entirely. None of this needs a credit card. It just needs you to know these free tiers exist before you reach for your wallet.",
-      "visual_keyword": "calendar app phone screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "SCHEDULING"
     },
     {
       "narration": "The pattern across all of these: check the free tier first. Most AI tools are usable, not just a limited demo, before you ever need to upgrade.",
-      "visual_keyword": "phone showing app icons",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "CHECK FREE TIER FIRST"
     },
     {
       "narration": "Which one are you trying first? Let me know, and subscribe for more free-tool roundups.",
-      "visual_keyword": "subscribe button animation",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "SUBSCRIBE"
     }
   ]
 }

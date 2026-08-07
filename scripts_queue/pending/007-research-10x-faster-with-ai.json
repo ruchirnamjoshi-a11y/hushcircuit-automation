@@ -12,51 +12,51 @@
   "scenes": [
     {
       "narration": "Researching a topic used to mean twenty open browser tabs. AI can cut that down to a fraction of the time, if you use it the right way.",
-      "visual_keyword": "many browser tabs open",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "RESEARCH 10X FASTER"
     },
     {
       "narration": "Start broad, not narrow. Ask an AI assistant to map out the main subtopics of your subject first, before you dive into any one of them. This gives you a structure to research into, instead of following one random thread and missing entire angles you didn't know existed.",
-      "visual_keyword": "mind map on whiteboard",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "START BROAD FIRST"
     },
     {
       "narration": "Then go deep on each subtopic one at a time, asking follow-up questions like you're interviewing an expert.",
-      "visual_keyword": "person taking notes laptop",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "GO DEEP PER TOPIC"
     },
     {
       "narration": "Here's the part people skip: always ask for sources, and actually check a few of them. AI assistants can be confidently wrong, especially on niche or fast-changing topics, so treat its answers as a fast first draft to verify, not a finished fact.",
-      "visual_keyword": "person fact checking screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "ALWAYS CHECK SOURCES"
     },
     {
       "narration": "Use AI to summarize long sources you've already verified, that's where it saves the most real time.",
-      "visual_keyword": "long article on screen",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "SUMMARIZE VERIFIED SOURCES"
     },
     {
       "narration": "Finally, ask it to organize everything you've gathered into a structured outline at the end, not the beginning. That way the structure reflects what you actually found, instead of forcing your research into a structure you guessed at before you started.",
-      "visual_keyword": "organized notes desk",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "OUTLINE LAST, NOT FIRST"
     },
     {
       "narration": "Used this way, AI doesn't replace research, it removes the slow parts, reading everything cover to cover, and leaves you more time for the part that actually matters: judgment.",
-      "visual_keyword": "person thinking desk",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "AI REMOVES THE SLOW PART"
     },
     {
       "narration": "Try this on your next research task and see how much time it saves. Subscribe for more.",
-      "visual_keyword": "subscribe button animation",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "SUBSCRIBE"
     }
   ]
 }

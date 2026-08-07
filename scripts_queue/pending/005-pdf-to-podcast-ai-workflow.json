@@ -12,51 +12,51 @@
   "scenes": [
     {
       "narration": "That forty-page PDF you've been avoiding? You can turn it into something you actually listen to, in a few minutes.",
-      "visual_keyword": "stack of documents desk",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "PDF TO PODCAST"
     },
     {
       "narration": "Step one, upload the PDF into an AI tool that supports document summarization. Most modern AI assistants can read the full document and pull out the core arguments, not just the first paragraph of every section, which is what makes this different from a basic keyword-based summary tool.",
-      "visual_keyword": "uploading file to laptop",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "STEP 1: UPLOAD"
     },
     {
       "narration": "Step two, ask it directly for a conversational summary, not a bullet list. That's what makes it listenable instead of just readable.",
-      "visual_keyword": "person reading screen",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "STEP 2: ASK FOR SUMMARY"
     },
     {
       "narration": "Step three, some tools can generate that summary as two voices discussing the material back and forth, which sounds a lot more like a podcast than a robot reading bullet points. If your tool doesn't do that natively, you can paste the summary into a free text-to-speech tool and get a single-narrator version instead, which works just as well for most material.",
-      "visual_keyword": "podcast microphone setup",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "STEP 3: TWO-VOICE AUDIO"
     },
     {
       "narration": "Export the audio and drop it onto your phone for the commute or the gym.",
-      "visual_keyword": "phone with headphones",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "EXPORT & LISTEN"
     },
     {
       "narration": "This works especially well for research papers, long reports, and dense documentation, anything you'd normally skim and half-remember instead of actually reading properly. Turning it into audio means you actually finish it.",
-      "visual_keyword": "person walking with headphones",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "GREAT FOR RESEARCH"
     },
     {
       "narration": "It's not a replacement for reading the original when it really matters, but for a first pass or a refresher, it turns a task you'd put off into something you finish on a walk.",
-      "visual_keyword": "person listening outdoors",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "NOT A FULL REPLACEMENT"
     },
     {
       "narration": "Try it on one PDF sitting in your downloads folder right now. Subscribe for more workflows like this.",
-      "visual_keyword": "subscribe button animation",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "SUBSCRIBE"
     }
   ]
 }

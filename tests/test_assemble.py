@@ -4,8 +4,11 @@ from pathlib import Path
 import pytest
 
 from pipeline.assemble import assemble_long_form
-from pipeline.broll import BrollClip
+from pipeline.scripts import validate
+from pipeline.textcard import make_gradient_image
 from pipeline.ffmpeg_utils import (
+    ACCENT_INLINE_ASS,
+    WHITE_INLINE_ASS,
     build_ass_captions,
     build_scene_clip,
     concat_clips,
@@ -56,13 +59,42 @@ def test_seconds_to_ass_timestamp():
 
 
 def test_group_words_into_captions_chunks_by_max_words():
-    words = [(f"w{i}", float(i), float(i) + 0.5) for i in range(10)]
+    words = [(f"word{chr(97 + i)}", float(i), float(i) + 0.5, False) for i in range(10)]
     chunks = group_words_into_captions(words, max_words=4)
     assert len(chunks) == 3
-    text0, start0, end0 = chunks[0]
-    assert text0 == "w0 w1 w2 w3"
+    text0, start0, end0, emphasize0 = chunks[0]
+    assert text0 == "worda wordb wordc wordd"
     assert start0 == 0.0
     assert end0 == 3.5
+    assert emphasize0 is False
+
+
+def test_group_words_into_captions_breaks_early_at_sentence_end():
+    # "end." after 2 words should close the chunk even though max_words=4
+    words = [
+        ("This", 0.0, 0.2, False),
+        ("sentence.", 0.2, 0.5, True),
+        ("Next", 0.5, 0.7, False),
+        ("one.", 0.7, 0.9, True),
+    ]
+    chunks = group_words_into_captions(words, max_words=4)
+    assert [text for text, _, _, _ in chunks] == ["This sentence.", "Next one."]
+
+
+def test_group_words_into_captions_flags_emphasis_words():
+    words = [
+        ("check", 0.0, 0.2, False),
+        ("chatgpt", 0.2, 0.4, False),
+        ("out.", 0.4, 0.6, True),
+        ("five", 0.6, 0.8, False),
+        ("tricks.", 0.8, 1.0, True),
+    ]
+    chunks = group_words_into_captions(words, max_words=3)
+    texts_and_emphasis = [(text, emphasize) for text, _, _, emphasize in chunks]
+    assert texts_and_emphasis == [
+        ("check chatgpt out.", True),   # "chatgpt" triggers emphasis
+        ("five tricks.", False),         # spelled-out numbers don't trigger it
+    ]
 
 
 # ---- ffmpeg-backed unit tests (synthetic lavfi inputs, no network) ----
@@ -99,13 +131,50 @@ def test_concat_clips_sums_durations(tmp_path):
     assert probe_duration(out) == pytest.approx(5.0, abs=0.5)
 
 
-def test_build_ass_captions_writes_valid_file(tmp_path):
-    lines = [("hello world", 0.0, 1.0), ("second line", 1.0, 2.5)]
+def test_build_ass_captions_writes_valid_file_with_pop_animation(tmp_path):
+    lines = [("hello world", 0.0, 1.0, False), ("second line", 1.0, 2.5, False)]
     out = build_ass_captions(lines, tmp_path / "captions.ass", resolution=(1920, 1080))
     content = out.read_text()
     assert "[Script Info]" in content
+    assert "Style: Caption," in content
     assert "hello world" in content
-    assert "Dialogue: 0,0:00:00.00,0:00:01.00,Default,hello world" in content
+    # pop-in scale/fade tags and default white color should be present
+    assert r"\fad(60,0)" in content
+    assert f"\\c{WHITE_INLINE_ASS}" in content
+    assert "Dialogue: 0,0:00:00.00,0:00:01.00,Caption," in content
+
+
+def test_build_ass_captions_colors_emphasized_words_with_accent(tmp_path):
+    lines = [("regular text", 0.0, 1.0, False), ("chatgpt tip", 1.0, 2.0, True)]
+    out = build_ass_captions(lines, tmp_path / "captions.ass", resolution=(1920, 1080))
+    content = out.read_text()
+    lines_out = content.splitlines()
+    regular_line = next(l for l in lines_out if "regular text" in l)
+    emphasized_line = next(l for l in lines_out if "chatgpt tip" in l)
+    assert f"\\c{WHITE_INLINE_ASS}" in regular_line
+    assert f"\\c{ACCENT_INLINE_ASS}" in emphasized_line
+
+
+def test_build_ass_captions_includes_badge_style_and_uppercases_text(tmp_path):
+    caption_lines = [("hello world", 0.0, 1.0, False)]
+    badge_lines = [("give it a role", 0.0, 8.0)]
+    out = build_ass_captions(
+        caption_lines, tmp_path / "captions.ass", resolution=(1920, 1080),
+        badge_lines=badge_lines,
+    )
+    content = out.read_text()
+    assert "Style: Badge," in content
+    assert "GIVE IT A ROLE" in content
+    assert "Dialogue: 0,0:00:00.00,0:00:08.00,Badge," in content
+    # flowing captions stay on the Caption style, untouched
+    assert "Dialogue: 0,0:00:00.00,0:00:01.00,Caption," in content
+
+
+def test_build_ass_captions_works_without_badges(tmp_path):
+    out = build_ass_captions([("just captions", 0.0, 1.0, False)], tmp_path / "captions.ass", resolution=(1920, 1080))
+    content = out.read_text()
+    assert "just captions" in content
+    assert "Style: Badge," in content  # style is always declared, just unused
 
 
 def test_mix_final_burns_captions_and_mixes_music(tmp_path):
@@ -120,7 +189,7 @@ def test_mix_final_burns_captions_and_mixes_music(tmp_path):
         check=True,
     )
 
-    ass = build_ass_captions([("test caption", 0.0, 1.0)], tmp_path / "captions.ass", resolution=(640, 360))
+    ass = build_ass_captions([("test caption", 0.0, 1.0, False)], tmp_path / "captions.ass", resolution=(640, 360))
 
     out = mix_final(scene, tmp_path / "final.mp4", music_path=music, captions_ass_path=ass)
     assert out.exists()
@@ -129,10 +198,22 @@ def test_mix_final_burns_captions_and_mixes_music(tmp_path):
 
 # ---- full pipeline integration, synthetic inputs ----
 
+SAMPLE_SCRIPT = {
+    "id": "assemble-test",
+    "title": "Assemble Test",
+    "description": "test",
+    "tags": [],
+    "scenes": [
+        {"narration": "hook", "on_screen_text": "HOOK", "duration_hint": 3, "short_worthy": True},
+        {"narration": "outro", "on_screen_text": "OUTRO", "duration_hint": 4, "short_worthy": True},
+    ],
+}
+
+
 def test_assemble_long_form_end_to_end(tmp_path):
+    script = validate(SAMPLE_SCRIPT)
     scene_audios = []
-    broll_clips = []
-    for i, (color, dur) in enumerate([("blue", 3.0), ("green", 4.0)]):
+    for i, dur in enumerate([3.0, 4.0]):
         audio_path = make_silent_audio(tmp_path / f"audio_{i}.aac", dur)
         word_timings = [
             WordTiming(word=f"word{j}", start=j * 0.5, end=j * 0.5 + 0.4)
@@ -142,11 +223,14 @@ def test_assemble_long_form_end_to_end(tmp_path):
             scene_index=i, audio_path=audio_path, timings_path=tmp_path / f"t{i}.json",
             duration=dur, word_timings=word_timings,
         ))
-        broll_path = make_color_clip(tmp_path / f"broll_{i}.mp4", color, dur)
-        broll_clips.append(BrollClip(path=broll_path, duration=dur, source="test"))
+
+    scene_images = [
+        make_gradient_image(tmp_path / f"img_{i}.png", (1920, 1080))
+        for i in range(len(script.scenes))
+    ]
 
     out = assemble_long_form(
-        scene_audios, broll_clips,
+        script, scene_audios, scene_images,
         work_dir=tmp_path / "work",
         out_path=tmp_path / "final.mp4",
     )
@@ -154,3 +238,31 @@ def test_assemble_long_form_end_to_end(tmp_path):
     assert out.exists()
     assert probe_duration(out) == pytest.approx(7.0, abs=0.5)
     assert probe_resolution(out) == (1920, 1080)
+
+
+def test_assemble_long_form_regenerates_orbs_for_fallback_scenes(tmp_path):
+    # scene_used_fallback marks which scenes fell back to the gradient —
+    # those should render fine via generate_background_clip (with orbs)
+    # rather than zooming scene_images[i] plain.
+    script = validate(SAMPLE_SCRIPT)
+    scene_audios = []
+    for i, dur in enumerate([3.0, 4.0]):
+        audio_path = make_silent_audio(tmp_path / f"audio_{i}.aac", dur)
+        scene_audios.append(SceneAudio(
+            scene_index=i, audio_path=audio_path, timings_path=tmp_path / f"t{i}.json",
+            duration=dur, word_timings=[WordTiming(word="hi", start=0, end=min(1, dur))],
+        ))
+    scene_images = [
+        make_gradient_image(tmp_path / f"img_{i}.png", (1920, 1080))
+        for i in range(len(script.scenes))
+    ]
+
+    out = assemble_long_form(
+        script, scene_audios, scene_images,
+        work_dir=tmp_path / "work2",
+        out_path=tmp_path / "final2.mp4",
+        scene_used_fallback=[True, False],
+    )
+
+    assert out.exists()
+    assert probe_duration(out) == pytest.approx(7.0, abs=0.5)

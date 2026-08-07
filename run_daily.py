@@ -12,9 +12,9 @@ from __future__ import annotations
 import argparse
 import sys
 
+from pipeline.ai_image import fit_scene_image, generate_scene_image_raw
 from pipeline.assemble import assemble_long_form, pick_music_track
-from pipeline.broll import fetch_broll
-from pipeline.config import OUTPUT_DIR
+from pipeline.config import LONG_FORM_RESOLUTION, OUTPUT_DIR, SHORT_RESOLUTION
 from pipeline.scripts import load_next_pending, mark_used
 from pipeline.shorts import assemble_short
 from pipeline.thumbnail import generate_thumbnail
@@ -36,31 +36,43 @@ def run(dry_run: bool = False, privacy_status: str = "private") -> int:
     print("[1/5] Synthesizing voiceover...")
     scene_audios = synthesize_script(script, run_dir / "audio")
 
-    print("[2/5] Fetching b-roll...")
-    broll_cache: dict = {}
-    broll_clips = [
-        fetch_broll(scene.visual_keyword, min_duration=audio.duration, out_dir=run_dir / "broll", cache=broll_cache)
-        for scene, audio in zip(script.scenes, scene_audios)
+    print("[2/5] Generating scene illustrations...")
+    # One AI image generation per scene (raw, uncropped), reused for both
+    # long-form and Short via a cheap local crop per format — keeps API
+    # cost to exactly len(scenes) calls regardless of how many formats use it.
+    raw_results = [
+        generate_scene_image_raw(scene, run_dir / "images_raw" / f"scene_{i:02d}.png")
+        for i, scene in enumerate(script.scenes)
+    ]
+    raw_images = [path for path, _ in raw_results]
+    scene_used_fallback = [used_fallback for _, used_fallback in raw_results]
+    long_form_images = [
+        fit_scene_image(raw, run_dir / "images_long" / f"scene_{i:02d}.png", LONG_FORM_RESOLUTION)
+        for i, raw in enumerate(raw_images)
+    ]
+    short_images = [
+        fit_scene_image(raw, run_dir / "images_short" / f"scene_{i:02d}.png", SHORT_RESOLUTION)
+        for i, raw in enumerate(raw_images)
     ]
 
     music_path = pick_music_track()
 
     print("[3/5] Assembling long-form video...")
     long_form_path = assemble_long_form(
-        scene_audios, broll_clips,
+        script, scene_audios, long_form_images,
         work_dir=run_dir / "work_long", out_path=run_dir / "long.mp4",
-        music_path=music_path,
+        music_path=music_path, scene_used_fallback=scene_used_fallback,
     )
 
     print("[3/5] Assembling short...")
     short_path = assemble_short(
-        script, scene_audios, broll_clips,
+        script, scene_audios, short_images,
         work_dir=run_dir / "work_short", out_path=run_dir / "short.mp4",
-        music_path=music_path,
+        music_path=music_path, scene_used_fallback=scene_used_fallback,
     )
 
     print("[4/5] Generating thumbnail...")
-    thumbnail_path = generate_thumbnail(broll_clips[0].path, script.title, run_dir / "thumbnail.jpg")
+    thumbnail_path = generate_thumbnail(script.title, run_dir / "thumbnail.jpg")
 
     print(f"[5/5] Uploading (dry_run={dry_run})...")
     upload_result = upload_daily_video(

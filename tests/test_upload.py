@@ -12,8 +12,8 @@ SAMPLE = {
     "description": "Test description with #hashtags",
     "tags": ["ai", "tools"],
     "scenes": [
-        {"narration": "hook", "visual_keyword": "a", "duration_hint": 8, "short_worthy": True},
-        {"narration": "outro", "visual_keyword": "b", "duration_hint": 8, "short_worthy": True},
+        {"narration": "hook", "on_screen_text": "HOOK", "duration_hint": 8, "short_worthy": True},
+        {"narration": "outro", "on_screen_text": "OUTRO", "duration_hint": 8, "short_worthy": True},
     ],
 }
 
