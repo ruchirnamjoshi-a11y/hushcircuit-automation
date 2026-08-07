@@ -12,51 +12,51 @@
   "scenes": [
     {
       "narration": "You do the same five tasks every single day without thinking about it. AI can take most of them off your plate.",
-      "visual_keyword": "person overwhelmed at desk",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "AUTOMATE YOUR DAY"
     },
     {
       "narration": "Start with email. Instead of writing every reply from scratch, draft a short instruction like 'reply confirming the meeting and asking for the agenda' and let an AI assistant produce the draft. You edit in ten seconds instead of writing in two minutes. Across a full inbox, that adds up to real time back in your day.",
-      "visual_keyword": "inbox email screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "EMAIL REPLIES"
     },
     {
       "narration": "Meeting notes are next. AI note-takers can summarize a call into action items automatically, no more scrambling to type while someone's talking.",
-      "visual_keyword": "video call meeting screen",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "MEETING NOTES"
     },
     {
       "narration": "File organization is a quieter win. Some AI-powered file tools can auto-tag and sort documents by content, not just filename, so 'that PDF from last month about the budget' actually becomes findable instead of buried in a folder called Downloads.",
-      "visual_keyword": "computer file folders screen",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "FILE ORGANIZATION"
     },
     {
       "narration": "For repetitive research, set up a standing prompt template you reuse instead of rewriting instructions every time.",
-      "visual_keyword": "person typing notes",
       "duration_hint": 18,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "RESEARCH TEMPLATES"
     },
     {
       "narration": "And for scheduling, AI calendar tools can look at everyone's availability and propose times automatically, cutting out the reply-all thread that usually takes three days to land on one meeting slot. Once it's set up, you stop thinking about it entirely.",
-      "visual_keyword": "calendar planning desk",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "SMART SCHEDULING"
     },
     {
       "narration": "The real unlock isn't any single tool, it's picking two or three repetitive tasks you do daily and automating just those first, instead of trying to automate everything at once.",
-      "visual_keyword": "checklist notebook desk",
       "duration_hint": 62,
-      "short_worthy": false
+      "short_worthy": false,
+      "on_screen_text": "START WITH 2-3 TASKS"
     },
     {
       "narration": "Pick one task from this video and automate it this week. Subscribe for more.",
-      "visual_keyword": "subscribe button animation",
       "duration_hint": 8,
-      "short_worthy": true
+      "short_worthy": true,
+      "on_screen_text": "SUBSCRIBE"
     }
   ]
 }

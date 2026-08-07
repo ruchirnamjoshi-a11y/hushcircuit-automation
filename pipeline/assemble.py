@@ -6,7 +6,6 @@ import random
 from pathlib import Path
 from typing import Optional
 
-from pipeline.broll import BrollClip
 from pipeline.config import LONG_FORM_RESOLUTION, MUSIC_DIR, MUSIC_VOLUME_DB
 from pipeline.ffmpeg_utils import (
     build_ass_captions,
@@ -15,6 +14,8 @@ from pipeline.ffmpeg_utils import (
     group_words_into_captions,
     mix_final,
 )
+from pipeline.scripts import Script
+from pipeline.textcard import generate_background_clip, generate_image_background_clip
 from pipeline.tts import SceneAudio
 
 
@@ -24,34 +25,55 @@ def pick_music_track(music_dir: Path = MUSIC_DIR) -> Optional[Path]:
 
 
 def assemble_long_form(
+    script: Script,
     scene_audios: list[SceneAudio],
-    broll_clips: list[BrollClip],
+    scene_images: list[Path],
     work_dir: Path,
     out_path: Path,
     music_path: Optional[Path] = None,
+    scene_used_fallback: Optional[list[bool]] = None,
 ) -> Path:
-    if len(scene_audios) != len(broll_clips):
-        raise ValueError("scene_audios and broll_clips must be the same length")
+    """scene_used_fallback (one bool per scene, from
+    ai_image.generate_scene_image_raw) marks scenes that fell back to the
+    brand gradient — those regenerate a fresh gradient+orbs clip instead of
+    zooming scene_images[i] plain, so a fallback scene doesn't look flatter
+    than a real AI illustration or the original all-gradient design."""
+    if len(scene_audios) != len(script.scenes):
+        raise ValueError("scene_audios must cover every scene in the script")
+    if len(scene_images) != len(script.scenes):
+        raise ValueError("scene_images must cover every scene in the script")
 
     work_dir.mkdir(parents=True, exist_ok=True)
     clip_paths = []
-    all_words: list[tuple[str, float, float]] = []
+    all_words: list[tuple[str, float, float, bool]] = []
+    badge_lines: list[tuple[str, float, float]] = []
     cumulative = 0.0
 
-    for i, (scene_audio, broll) in enumerate(zip(scene_audios, broll_clips)):
+    for i, scene_audio in enumerate(scene_audios):
+        bg_path = work_dir / f"bg_{i:02d}.mp4"
+        if scene_used_fallback and scene_used_fallback[i]:
+            generate_background_clip(LONG_FORM_RESOLUTION, scene_audio.duration, bg_path)
+        else:
+            generate_image_background_clip(scene_images[i], LONG_FORM_RESOLUTION, scene_audio.duration, bg_path)
+
         clip_path = work_dir / f"scene_{i:02d}.mp4"
-        build_scene_clip(broll.path, scene_audio.audio_path, clip_path, LONG_FORM_RESOLUTION)
+        build_scene_clip(bg_path, scene_audio.audio_path, clip_path, LONG_FORM_RESOLUTION)
         clip_paths.append(clip_path)
+
         for w in scene_audio.word_timings:
-            all_words.append((w.word, w.start + cumulative, w.end + cumulative))
+            all_words.append((w.word, w.start + cumulative, w.end + cumulative, w.ends_sentence))
+        badge_lines.append((script.badge_text(i), cumulative, cumulative + scene_audio.duration))
         cumulative += scene_audio.duration
 
     combined_path = work_dir / "combined.mp4"
     concat_clips(clip_paths, combined_path)
 
-    caption_lines = group_words_into_captions(all_words, max_words=4)
+    caption_lines = group_words_into_captions(all_words, max_words=2)
     ass_path = work_dir / "captions.ass"
-    build_ass_captions(caption_lines, ass_path, LONG_FORM_RESOLUTION, font_size=64, margin_v=100)
+    build_ass_captions(
+        caption_lines, ass_path, LONG_FORM_RESOLUTION,
+        font_size=100, badge_lines=badge_lines, badge_font_size=40,
+    )
 
     mix_final(
         combined_path.resolve(),

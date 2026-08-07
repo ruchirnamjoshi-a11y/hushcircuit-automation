@@ -18,6 +18,13 @@ NICHE = os.environ.get("NICHE", "AI tools & tips")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
 PIXABAY_API_KEY = os.environ.get("PIXABAY_API_KEY", "")
 
+# Hosted AI image generation: Cloudflare Workers AI, running FLUX.1-schnell.
+# Genuinely free tier (10,000 Neurons/day, no credit card) — comfortably
+# covers a daily video's ~8 scene images with huge headroom to spare.
+CF_ACCOUNT_ID = os.environ.get("CF_ACCOUNT_ID", "")
+CF_API_TOKEN = os.environ.get("CF_API_TOKEN", "")
+AI_IMAGE_MODEL = os.environ.get("AI_IMAGE_MODEL", "@cf/black-forest-labs/flux-1-schnell")
+
 TTS_VOICE = os.environ.get("TTS_VOICE", "en-US-GuyNeural")
 
 YOUTUBE_CLIENT_SECRET_FILE = os.environ.get(

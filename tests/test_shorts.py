@@ -2,10 +2,10 @@ import subprocess
 
 import pytest
 
-from pipeline.broll import BrollClip
 from pipeline.ffmpeg_utils import probe_duration
 from pipeline.scripts import validate
 from pipeline.shorts import _select_within_budget, assemble_short
+from pipeline.textcard import make_gradient_image
 from pipeline.tts import SceneAudio, WordTiming
 
 SAMPLE = {
@@ -14,11 +14,11 @@ SAMPLE = {
     "description": "test",
     "tags": [],
     "scenes": [
-        {"narration": "hook", "visual_keyword": "a", "duration_hint": 8, "short_worthy": True},
-        {"narration": "long explainer beat one", "visual_keyword": "b", "duration_hint": 60, "short_worthy": False},
-        {"narration": "quick punchy tip", "visual_keyword": "c", "duration_hint": 18, "short_worthy": True},
-        {"narration": "another long explainer beat", "visual_keyword": "d", "duration_hint": 60, "short_worthy": False},
-        {"narration": "outro and cta", "visual_keyword": "e", "duration_hint": 8, "short_worthy": True},
+        {"narration": "hook", "on_screen_text": "HOOK", "duration_hint": 8, "short_worthy": True},
+        {"narration": "long explainer beat one", "on_screen_text": "BEAT ONE", "duration_hint": 60, "short_worthy": False},
+        {"narration": "quick punchy tip", "on_screen_text": "QUICK TIP", "duration_hint": 18, "short_worthy": True},
+        {"narration": "another long explainer beat", "on_screen_text": "BEAT TWO", "duration_hint": 60, "short_worthy": False},
+        {"narration": "outro and cta", "on_screen_text": "SUBSCRIBE", "duration_hint": 8, "short_worthy": True},
     ],
 }
 
@@ -57,16 +57,6 @@ def test_select_within_budget_trims_when_over_cap():
     assert sum(audios[i].duration for i in selected) <= 58
 
 
-def make_color_clip(path, color, duration, size="360x640"):
-    subprocess.run(
-        ["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi",
-         "-i", f"color=c={color}:s={size}:d={duration}",
-         "-pix_fmt", "yuv420p", str(path)],
-        check=True,
-    )
-    return path
-
-
 def make_silent_audio(path, duration):
     subprocess.run(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi",
@@ -90,7 +80,6 @@ def probe_resolution(path):
 def test_assemble_short_end_to_end(tmp_path):
     script = validate(SAMPLE)
     scene_audios = []
-    broll_clips = []
     for i, sc in enumerate(script.scenes):
         dur = min(sc.duration_hint, 3.0)  # keep test fast regardless of authored duration_hint
         audio_path = make_silent_audio(tmp_path / f"audio_{i}.aac", dur)
@@ -98,15 +87,44 @@ def test_assemble_short_end_to_end(tmp_path):
             scene_index=i, audio_path=audio_path, timings_path=tmp_path / f"t{i}.json",
             duration=dur, word_timings=[WordTiming(word="tip", start=0, end=min(1, dur))],
         ))
-        broll_path = make_color_clip(tmp_path / f"broll_{i}.mp4", "blue", dur)
-        broll_clips.append(BrollClip(path=broll_path, duration=dur, source="test"))
+
+    scene_images = [
+        make_gradient_image(tmp_path / f"img_{i}.png", (1080, 1920))
+        for i in range(len(script.scenes))
+    ]
 
     out = assemble_short(
-        script, scene_audios, broll_clips,
+        script, scene_audios, scene_images,
         work_dir=tmp_path / "work", out_path=tmp_path / "short.mp4",
     )
 
     assert out.exists()
     # 3 selected scenes (hook, quick tip, outro) at 3s each = 9s
     assert probe_duration(out) == pytest.approx(9.0, abs=0.5)
+    assert probe_resolution(out) == (1080, 1920)
+
+
+def test_assemble_short_regenerates_orbs_for_fallback_scenes(tmp_path):
+    script = validate(SAMPLE)
+    scene_audios = []
+    for i, sc in enumerate(script.scenes):
+        dur = min(sc.duration_hint, 3.0)
+        audio_path = make_silent_audio(tmp_path / f"audio2_{i}.aac", dur)
+        scene_audios.append(SceneAudio(
+            scene_index=i, audio_path=audio_path, timings_path=tmp_path / f"t2_{i}.json",
+            duration=dur, word_timings=[WordTiming(word="tip", start=0, end=min(1, dur))],
+        ))
+    scene_images = [
+        make_gradient_image(tmp_path / f"img2_{i}.png", (1080, 1920))
+        for i in range(len(script.scenes))
+    ]
+    scene_used_fallback = [True] + [False] * (len(script.scenes) - 1)  # hook fell back, rest didn't
+
+    out = assemble_short(
+        script, scene_audios, scene_images,
+        work_dir=tmp_path / "work2", out_path=tmp_path / "short2.mp4",
+        scene_used_fallback=scene_used_fallback,
+    )
+
+    assert out.exists()
     assert probe_resolution(out) == (1080, 1920)

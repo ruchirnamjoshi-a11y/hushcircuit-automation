@@ -82,18 +82,56 @@ def seconds_to_ass_timestamp(seconds: float) -> str:
     return f"{h}:{m:02d}:{s:02d}.{cs:02d}"
 
 
+ACCENT_RGB = (255, 195, 80)  # warm gold, matches pipeline/thumbnail.py's ACCENT_COLOR
+EMPHASIS_KEYWORDS = {"ai", "chatgpt", "gpt", "pdf", "cta", "youtube"}
+
+
+def _rgb_to_ass_style_color(rgb: tuple[int, int, int]) -> str:
+    r, g, b = rgb
+    return f"&H00{b:02X}{g:02X}{r:02X}"  # style fields: &HAABBGGRR
+
+
+def _rgb_to_ass_inline_color(rgb: tuple[int, int, int]) -> str:
+    r, g, b = rgb
+    return f"&H{b:02X}{g:02X}{r:02X}&"  # inline \c override: &HBBGGRR&
+
+
+ACCENT_COLOR_ASS = _rgb_to_ass_style_color(ACCENT_RGB)
+ACCENT_INLINE_ASS = _rgb_to_ass_inline_color(ACCENT_RGB)
+WHITE_INLINE_ASS = "&HFFFFFF&"
+
+
+def _is_emphasis_word(word: str) -> bool:
+    bare = word.strip("\"'.,!?:;()")
+    if not bare:
+        return False
+    if any(ch.isdigit() for ch in bare):
+        return True
+    if bare.isupper() and len(bare) >= 2:
+        return True
+    return bare.lower() in EMPHASIS_KEYWORDS
+
+
 def group_words_into_captions(
-    word_tuples: list[tuple[str, float, float]],
-    max_words: int = 4,
-) -> list[tuple[str, float, float]]:
-    """Groups (word, start, end) tuples into short caption lines, breaking
-    early at sentence-ending punctuation so a line never straddles two
-    sentences even if that means fewer than max_words in it."""
+    word_tuples: list[tuple[str, float, float, bool]],
+    max_words: int = 2,
+) -> list[tuple[str, float, float, bool]]:
+    """Groups (word, start, end, ends_sentence) tuples into short caption
+    chunks (default 1-2 words, for a big word-by-word "pop" caption style),
+    breaking early at a sentence end so a chunk never straddles two sentences.
+
+    Returns (text, start, end, emphasize) — emphasize is True if any word in
+    the chunk looks like a number, acronym, or tool-name keyword, so the
+    caller can render it in the accent color.
+
+    ends_sentence must come from the original narration text, not the word
+    itself — edge-tts's WordBoundary events strip punctuation entirely, so
+    checking e.g. word.endswith(".") here would silently never fire.
+    """
     chunks = []
-    current: list[tuple[str, float, float]] = []
-    for word, start, end in word_tuples:
-        current.append((word, start, end))
-        ends_sentence = word.rstrip("\"')").endswith((".", "!", "?"))
+    current: list[tuple[str, float, float, bool]] = []
+    for word, start, end, ends_sentence in word_tuples:
+        current.append((word, start, end, ends_sentence))
         if len(current) >= max_words or ends_sentence:
             chunks.append(current)
             current = []
@@ -101,18 +139,37 @@ def group_words_into_captions(
         chunks.append(current)
 
     return [
-        (" ".join(w for w, _, _ in chunk), chunk[0][1], chunk[-1][2])
+        (
+            " ".join(w for w, _, _, _ in chunk),
+            chunk[0][1],
+            chunk[-1][2],
+            any(_is_emphasis_word(w) for w, _, _, _ in chunk),
+        )
         for chunk in chunks
     ]
 
 
+def _pop_in_tags() -> str:
+    """A quick scale-bounce + fade-in, applied at the start of each caption's
+    on-screen window — the classic word-by-word 'pop' of short-form captions."""
+    return r"\fad(60,0)\fscx55\fscy55\t(0,150,\fscx108\fscy108)\t(150,220,\fscx100\fscy100)"
+
+
 def build_ass_captions(
-    caption_lines: list[tuple[str, float, float]],
+    caption_lines: list[tuple[str, float, float, bool]],
     out_path: Path,
     resolution: tuple[int, int],
-    font_size: int = 64,
-    margin_v: int = 100,
+    font_size: int = 100,
+    badge_lines: Optional[list[tuple[str, float, float]]] = None,
+    badge_font_size: int = 40,
 ) -> Path:
+    """caption_lines are big, center-screen, word-by-word "pop" captions —
+    1-2 words at a time with a scale-bounce entrance, white by default and
+    accent-colored when flagged as emphasis (numbers/acronyms/tool names).
+
+    badge_lines are a small persistent top-left "TIP 2/6 · GIVE IT A ROLE"
+    style label per scene, rendered as a boxed pill (BorderStyle=3).
+    """
     width, height = resolution
     header = f"""[Script Info]
 ScriptType: v4.00+
@@ -122,19 +179,31 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Default,Arial,{font_size},&H00FFFFFF,&H00000000,&H00000000,1,0,1,4,0,2,60,60,{margin_v},1
+Style: Caption,Arial,{font_size},&H00FFFFFF,&H00000000,&H00000000,1,0,1,5,0,5,60,60,0,1
+Style: Badge,Arial,{badge_font_size},&H00101018,{ACCENT_COLOR_ASS},{ACCENT_COLOR_ASS},1,0,3,6,0,7,50,50,50,1
 
 [Events]
 Format: Layer, Start, End, Style, Text
 """
     lines = [header]
-    for text, start, end in caption_lines:
+
+    def _add(text: str, start: float, end: float, style: str, override: str = "") -> None:
         if end <= start:
-            continue
+            return
         escaped = text.replace("\\", "").replace("{", "").replace("}", "")
+        prefix = f"{{{override}}}" if override else ""
         lines.append(
-            f"Dialogue: 0,{seconds_to_ass_timestamp(start)},{seconds_to_ass_timestamp(end)},Default,{escaped}\n"
+            f"Dialogue: 0,{seconds_to_ass_timestamp(start)},{seconds_to_ass_timestamp(end)},{style},{prefix}{escaped}\n"
         )
+
+    pop_tags = _pop_in_tags()
+    for text, start, end, emphasize in caption_lines:
+        color = ACCENT_INLINE_ASS if emphasize else WHITE_INLINE_ASS
+        _add(text, start, end, "Caption", override=f"{pop_tags}\\c{color}")
+
+    for text, start, end in badge_lines or []:
+        _add(f" {text.upper()} ", start, end, "Badge")
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text("".join(lines))
     return out_path

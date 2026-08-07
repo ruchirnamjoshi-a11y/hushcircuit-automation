@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import re
 import subprocess
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -25,6 +26,23 @@ class WordTiming:
     word: str
     start: float
     end: float
+    ends_sentence: bool = False
+
+
+def _sentence_ending_word_indices(text: str) -> set[int]:
+    """0-based indices (by whitespace split of `text`) of words that end a
+    sentence. edge-tts's WordBoundary events strip punctuation entirely, so
+    sentence breaks can't be detected from the synthesized word text itself —
+    this reconstructs them from the original narration instead."""
+    indices = set()
+    word_count = 0
+    for sentence in re.split(r"(?<=[.!?])\s+", text.strip()):
+        n = len(sentence.split())
+        if n == 0:
+            continue
+        word_count += n
+        indices.add(word_count - 1)
+    return indices
 
 
 @dataclass
@@ -60,6 +78,15 @@ async def _synthesize(text: str, out_audio: Path, voice: str) -> list[WordTiming
                 start = chunk["offset"] / HUNDRED_NS_PER_SECOND
                 duration = chunk["duration"] / HUNDRED_NS_PER_SECOND
                 word_timings.append(WordTiming(word=chunk["text"], start=start, end=start + duration))
+
+    # Only trust the reconstructed sentence boundaries if edge-tts emitted
+    # exactly one WordBoundary per whitespace-split word — otherwise indices
+    # would silently point at the wrong words, so leave everything False.
+    if len(word_timings) == len(text.split()):
+        sentence_end_indices = _sentence_ending_word_indices(text)
+        for i, w in enumerate(word_timings):
+            w.ends_sentence = i in sentence_end_indices
+
     return word_timings
 
 
