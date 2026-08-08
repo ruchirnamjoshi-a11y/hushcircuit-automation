@@ -174,16 +174,28 @@ GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 
 TTS_VOICE = os.environ.get("TTS_VOICE", "en-US-GuyNeural")
 
+# One OAuth Desktop client (Google Cloud Console) is shared across all
+# channels — it's the OAuth token per channel that differs, not the client.
 YOUTUBE_CLIENT_SECRET_FILE = os.environ.get(
     "YOUTUBE_CLIENT_SECRET_FILE", str(SECRETS_DIR / "client_secret.json")
-)
-YOUTUBE_TOKEN_FILE = os.environ.get(
-    "YOUTUBE_TOKEN_FILE", str(SECRETS_DIR / "youtube_token.json")
 )
 YOUTUBE_SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/yt-analytics.readonly",
 ]
+
+
+def youtube_token_path(track_key: str) -> Path:
+    """Each track uploads to its own YouTube channel, so each needs its own
+    cached OAuth token — see README's multi-channel setup section.
+    Override per-track via YOUTUBE_TOKEN_FILE_<TRACK> (e.g.
+    YOUTUBE_TOKEN_FILE_KIDS, used in GitHub Actions); defaults to
+    secrets/youtube_token_<track>.json for local one-time OAuth setup via
+    `python -m pipeline.upload --auth-setup --track <track>`."""
+    override = os.environ.get(f"YOUTUBE_TOKEN_FILE_{track_key.upper()}")
+    if override:
+        return Path(override)
+    return SECRETS_DIR / f"youtube_token_{track_key}.json"
 
 # Shorts-only pipeline: every story is one vertical video. YouTube treats
 # vertical #shorts-tagged videos up to 3 minutes as eligible for the Shorts

@@ -50,6 +50,7 @@ from pipeline.config import (
     SHORT_RESOLUTION,
     TRACKS,
     Track,
+    youtube_token_path,
 )
 from pipeline.scripts import load_next_pending, mark_used
 from pipeline.shorts import assemble_short
@@ -67,6 +68,15 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
     failure."""
     if not dry_run and already_produced_today(track.key):
         print(f"[{track.key}] Already produced a video today — skipping until tomorrow.")
+        return True
+
+    if not dry_run and not youtube_token_path(track.key).exists():
+        # Each track has its own YouTube channel/OAuth token (see README's
+        # multi-channel setup). A channel that hasn't been set up yet is a
+        # clean skip, not a failure — and we check this BEFORE doing any
+        # TTS/image work, since it'd all be wasted on a track that can't
+        # upload anyway.
+        print(f"[{track.key}] No YouTube OAuth token yet for this channel — skipping until it's set up.")
         return True
 
     pending_dir = QUEUE_PENDING_DIR / track.key
