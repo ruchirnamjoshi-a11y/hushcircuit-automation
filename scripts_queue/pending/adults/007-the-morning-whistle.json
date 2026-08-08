@@ -1,0 +1,56 @@
+{
+  "id": "the-morning-whistle",
+  "title": "The Morning Whistle",
+  "description": "After losing his wife, Arthur takes a quiet job helping neighborhood kids cross the street and finds a way back into the world.",
+  "tags": [
+    "grief",
+    "community",
+    "healing",
+    "connection",
+    "life lessons"
+  ],
+  "scenes": [
+    {
+      "narration": "After his wife passed away, Arthur sat in his quiet living room for nearly a year, watching the world move outside his window without him.",
+      "on_screen_text": "THE LONELY YEARS",
+      "duration_hint": 11.3,
+      "visual": "An elderly man sitting in a comfortable armchair looking out a curtained window"
+    },
+    {
+      "narration": "When the local elementary school posted a notice for a morning crossing guard, Arthur signed up on a whim, mostly just to have a reason to tie his shoes.",
+      "on_screen_text": "STEPPING OUTSIDE",
+      "duration_hint": 12.6,
+      "visual": "Hands tying the laces of a sturdy leather walking shoe on a rug"
+    },
+    {
+      "narration": "The first week was cold and noisy. But soon, he learned the names of the kids, their favorite colors, and the jokes that made them laugh on early Mondays.",
+      "on_screen_text": "LEARNING NAMES",
+      "duration_hint": 12.6,
+      "visual": "An older man in a bright safety vest smiling and waving on a suburban sidewalk"
+    },
+    {
+      "narration": "One rainy morning, a little girl handed him a soggy handmade card that read thank you for keeping us safe. Arthur tucked it carefully into his coat pocket.",
+      "on_screen_text": "A SMALL KINDNESS",
+      "duration_hint": 13.0,
+      "visual": "Close up of a child's hand giving a folded colorful drawing to an adult hand"
+    },
+    {
+      "narration": "He realized that grief does not vanish, but the heart grows larger around it when you allow new people into your daily routine.",
+      "on_screen_text": "EXPANDING THE HEART",
+      "duration_hint": 10.9,
+      "visual": "An older man standing proudly on a sidewalk surrounded by green trees in morning light"
+    },
+    {
+      "narration": "Healing rarely happens in isolation. It happens when we step back out onto the street and offer a helping hand.",
+      "on_screen_text": "THE WAY FORWARD",
+      "duration_hint": 9.6,
+      "visual": "A warm morning sunrise over a peaceful suburban street with trees lining the road"
+    },
+    {
+      "narration": "Follow along for more inspiring short stories about resilience, hope, and community.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.1,
+      "visual": "An older man sipping coffee from a thermos on his front porch with a content expression"
+    }
+  ]
+}

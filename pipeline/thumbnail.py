@@ -26,7 +26,12 @@ def generate_thumbnail(
     text: str,
     out_path: Path,
     resolution: tuple[int, int] = THUMBNAIL_RESOLUTION,
+    font_path: str | None = None,
+    font_index: int = 0,
 ) -> Path:
+    """font_path/font_index: pass a TTF/TTC with the right glyphs for
+    non-Latin-script titles (e.g. Devanagari) — PIL's built-in default font
+    (used when font_path is None) only covers Latin script."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
     gradient_path = out_path.parent / f"_{out_path.stem}_gradient.png"
     make_gradient_image(gradient_path, resolution)
@@ -40,8 +45,12 @@ def generate_thumbnail(
 
     draw = ImageDraw.Draw(composed)
     font_size = int(height * 0.13)
-    font = ImageFont.load_default(size=font_size)
-    lines = _wrap_text(text.upper())
+    if font_path:
+        font = ImageFont.truetype(font_path, size=font_size, index=font_index)
+        lines = _wrap_text(text)
+    else:
+        font = ImageFont.load_default(size=font_size)
+        lines = _wrap_text(text.upper())
     line_height = int(font_size * 1.15)
     y = height - int(height * 0.06) - line_height * len(lines)
 

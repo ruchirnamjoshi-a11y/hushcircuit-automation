@@ -1,0 +1,56 @@
+{
+  "id": "crossing-the-bridge",
+  "title": "Crossing the Bridge",
+  "description": "Facing her fear of solitude after a breakup, Nina travels solo to a quiet forest cabin.",
+  "tags": [
+    "solitude",
+    "healing",
+    "travel",
+    "independence",
+    "selfdiscovery"
+  ],
+  "scenes": [
+    {
+      "narration": "After her long relationship ended, Nina was terrified of doing simple daily activities alone.",
+      "on_screen_text": "THE FEAR OF SOLITUDE",
+      "duration_hint": 7.0,
+      "visual": "A woman standing alone in a calm living room looking thoughtfully out at a rainy garden"
+    },
+    {
+      "narration": "To confront her fear, she booked a solo weekend getaway to a rustic wooden cabin nestled in mist.",
+      "on_screen_text": "TAKING A LEAP",
+      "duration_hint": 8.0,
+      "visual": "A cozy wooden cabin tucked surrounded by tall green pine trees in a misty mountain forest"
+    },
+    {
+      "narration": "On her first night, sitting by the quiet fireplace, the deep silence felt almost overwhelming.",
+      "on_screen_text": "THE QUIET NIGHT",
+      "duration_hint": 7.0,
+      "visual": "A woman sitting on a rug in front of a warm glowing fireplace with a blanket"
+    },
+    {
+      "narration": "But as dawn broke, she made fresh tea and watched morning fog lift off the pine trees.",
+      "on_screen_text": "A NEW MORNING",
+      "duration_hint": 7.0,
+      "visual": "A woman holding a steaming mug on a wooden porch deck looking over misty forest mountains"
+    },
+    {
+      "narration": "She spent the afternoon hiking scenic mountain trails, captivated by the tranquil beauty around her.",
+      "on_screen_text": "FINDING HARMONY",
+      "duration_hint": 7.0,
+      "visual": "A woman hiking along a lush green forest trail, surrounded by tall sunlit trees"
+    },
+    {
+      "narration": "Nina realized that solitude was not loneliness, but a beautiful reunion with her own spirit.",
+      "on_screen_text": "RECLAIMING HER SELF",
+      "duration_hint": 7.0,
+      "visual": "A happy woman leaning against a tall pine tree, breathing in the fresh mountain air"
+    },
+    {
+      "narration": "You are your own ultimate sanctuary. Follow along for more daily stories of courage and peace.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "A woman standing on a mountain vantage point looking out over a magnificent golden valley"
+    }
+  ]
+}

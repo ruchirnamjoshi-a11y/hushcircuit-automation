@@ -1,0 +1,56 @@
+{
+  "id": "milo-the-monkeys-slow-day",
+  "title": "Milo the Monkey's Slow Day",
+  "description": "A jungle story about a energetic monkey who discovers that helping others is better than winning a race.",
+  "tags": [
+    "kindness",
+    "monkey",
+    "jungle",
+    "bedtime",
+    "patience"
+  ],
+  "scenes": [
+    {
+      "narration": "Milo the monkey loved to move fast, swinging from vine to vine through the lush green jungle canopy.",
+      "on_screen_text": "THE FASTEST MONKEY",
+      "duration_hint": 7.0,
+      "visual": "playful little brown monkey swinging enthusiastically through bright green jungle leaves"
+    },
+    {
+      "narration": "Today was the big jungle swing, and Milo wanted to be the very first to reach the grand banana tree.",
+      "on_screen_text": "THE BIG RACE",
+      "duration_hint": 7.0,
+      "visual": "cute monkey sitting on a high branch looking determinedly toward the distant horizon"
+    },
+    {
+      "narration": "As he leaped past a thick branch, he heard a small squeak. A tiny caterpillar was stuck under a twig.",
+      "on_screen_text": "A CRY FOR HELP",
+      "duration_hint": 7.0,
+      "visual": "tiny green caterpillar pinned under a small brown twig on a thick tree branch"
+    },
+    {
+      "narration": "Milo slowed down. If he stopped to help, he would lose his lead, but he could not leave a friend behind.",
+      "on_screen_text": "THE HARD CHOICE",
+      "duration_hint": 7.0,
+      "visual": "monkey pausing mid swing and looking down thoughtfully at the tiny caterpillar"
+    },
+    {
+      "narration": "Carefully, Milo lifted the heavy twig with his tail, letting the happy little caterpillar crawl safely away.",
+      "on_screen_text": "A HELPING HAND",
+      "duration_hint": 7.0,
+      "visual": "monkey gently lifting a small twig off a smiling green caterpillar with his tail"
+    },
+    {
+      "narration": "Even though the other monkeys finished first, they all cheered for Milo when they heard about his kindness.",
+      "on_screen_text": "THE TRUE WINNER",
+      "duration_hint": 7.0,
+      "visual": "group of friendly jungle animals gathered around a happy monkey high in the trees"
+    },
+    {
+      "narration": "Being kind is the greatest victory of all. Sweet dreams, and follow along for more cozy stories tonight.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "cute little monkey curled up asleep on a soft hammock woven from green leaves"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "penny-squirrels-big-acorn",
+  "title": "Penny Squirrel's Big Acorn",
+  "description": "A charming story of a little squirrel who learns that big tasks are easier when shared with friends.",
+  "tags": [
+    "teamwork",
+    "squirrel",
+    "bedtime",
+    "sharing",
+    "forest"
+  ],
+  "scenes": [
+    {
+      "narration": "Penny the squirrel loved collecting crunchy treats for autumn, rustling through the golden fall leaves.",
+      "on_screen_text": "THE AUTUMN SEARCH",
+      "duration_hint": 7.0,
+      "visual": "fluffy orange squirrel leaping happily through bright yellow and red fallen leaves"
+    },
+    {
+      "narration": "Under a giant oak tree, she discovered the biggest, shiny acorn she had ever seen in her life.",
+      "on_screen_text": "THE GIANT ACORN",
+      "duration_hint": 7.0,
+      "visual": "little squirrel standing in front of an enormous golden oak acorn"
+    },
+    {
+      "narration": "Penny tried to lift it, but it was far too heavy for one small squirrel to roll up the grassy hill.",
+      "on_screen_text": "TOO HEAVY TO MOVE",
+      "duration_hint": 7.0,
+      "visual": "squirrel pushing against a massive acorn with all her strength on a grassy slope"
+    },
+    {
+      "narration": "Instead of giving up, Penny called her brother Sammy. Together, they pushed the acorn side by side.",
+      "on_screen_text": "WORKING TOGETHER",
+      "duration_hint": 7.0,
+      "visual": "two cute squirrels pushing a giant acorn up a soft grassy hill together"
+    },
+    {
+      "narration": "With four busy paws working together, the giant acorn rolled smoothly all the way to their cozy tree trunk.",
+      "on_screen_text": "SUCCESS AT LAST",
+      "duration_hint": 7.0,
+      "visual": "two happy squirrels resting together next to their big acorn inside a cozy tree cavity"
+    },
+    {
+      "narration": "They shared a delicious feast and cheered. Working together makes every big heavy job feel light.",
+      "on_screen_text": "BETTER TOGETHER",
+      "duration_hint": 7.0,
+      "visual": "two squirrels smiling and sharing small acorn pieces together in a warm room"
+    },
+    {
+      "narration": "Good friends make every burden small. Close your eyes, and follow along for more comforting tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "two little squirrels sleeping soundly side by side wrapped in a soft leafy blanket"
+    }
+  ]
+}

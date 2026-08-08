@@ -1,0 +1,56 @@
+{
+  "id": "colors-of-her-own",
+  "title": "Colors of Her Own",
+  "description": "After her children leave home, Claire rediscovers her passion for pottery and builds a new creative identity.",
+  "tags": [
+    "creativity",
+    "emptynest",
+    "reinvention",
+    "art",
+    "healing"
+  ],
+  "scenes": [
+    {
+      "narration": "When Claire's youngest child left for college, the empty house felt echoing and far too silent.",
+      "on_screen_text": "THE QUIET HOUSE",
+      "duration_hint": 7.0,
+      "visual": "A quiet residential living room filled with warm afternoon sunlight and cozy armchair"
+    },
+    {
+      "narration": "Instead of letting loneliness settle in, she cleared the spare bedroom and installed a pottery wheel.",
+      "on_screen_text": "MAKING SPACE",
+      "duration_hint": 7.0,
+      "visual": "A bright room with a pottery wheel set up in the center near a sunny window sill"
+    },
+    {
+      "narration": "Her hands remembered the cool clay from twenty years ago, even when her mind felt uncertain.",
+      "on_screen_text": "RETURNING TO ART",
+      "duration_hint": 7.0,
+      "visual": "Hands carefully shaping brown wet clay on a spinning wheel, glowing under soft light"
+    },
+    {
+      "narration": "She spent quiet evenings shaping bowls, letting go of perfectionism and embracing every unique curve.",
+      "on_screen_text": "EMBRACING IMPERFECTION",
+      "duration_hint": 7.0,
+      "visual": "A woman smiling softly as she shapes a clay vase on a pottery wheel in her home studio"
+    },
+    {
+      "narration": "Soon, her home was filled with colorful handcrafted ceramics that reflected her inner joy.",
+      "on_screen_text": "CREATIVE FLOURISHING",
+      "duration_hint": 6.0,
+      "visual": "A wooden shelf filled with beautiful glazed ceramic bowls and vases in warm earth tones"
+    },
+    {
+      "narration": "Claire discovered that motherhood was just one beautiful chapter of her vast creative journey.",
+      "on_screen_text": "HER NEW CHAPTER",
+      "duration_hint": 7.0,
+      "visual": "A woman holding a finished ceramic cup, looking out a sunlit window with a peaceful smile"
+    },
+    {
+      "narration": "Your dormant dreams are always waiting for you. Follow along for more inspiring daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "A smiling woman arranging freshly painted ceramics on a rustic wooden table"
+    }
+  ]
+}

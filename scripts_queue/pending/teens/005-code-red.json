@@ -1,0 +1,56 @@
+{
+  "id": "code-red",
+  "title": "Code Red",
+  "description": "Zara faces a major setback during her first 24-hour hackathon, forcing her to ask for help.",
+  "tags": [
+    "coding",
+    "hackathon",
+    "teamwork",
+    "ambition",
+    "teen-tech"
+  ],
+  "scenes": [
+    {
+      "narration": "At hour twenty of my first hackathon, my entire project crashed, wiping out thousands of lines of code.",
+      "on_screen_text": "SYSTEM CRASH",
+      "duration_hint": 10.0,
+      "visual": "Teen girl staring at a glowing laptop screen with a shocked and tired expression"
+    },
+    {
+      "narration": "I had spent the whole night working alone because I wanted to prove I didn't need anyone's help to win.",
+      "on_screen_text": "SOLO MISSION",
+      "duration_hint": 10.0,
+      "visual": "Overhead view of a messy desk with energy drinks and a glowing laptop in a dark room"
+    },
+    {
+      "narration": "With only four hours left until judging, tears stung my eyes. I was ready to pack up my bag and quit.",
+      "on_screen_text": "BREAKING POINT",
+      "duration_hint": 10.0,
+      "visual": "Teen girl leaning back in a chair rubbing her eyes in exhaustion"
+    },
+    {
+      "narration": "A teammate from across the table noticed my panic and pulled up a chair without asking questions.",
+      "on_screen_text": "AN OFFER OF HELP",
+      "duration_hint": 9.0,
+      "visual": "Two teens sitting together in front of a laptop discussing code intensely"
+    },
+    {
+      "narration": "Together, we found a backup file from midnight and rebuilt the broken interface step by step.",
+      "on_screen_text": "BUILDING BACK",
+      "duration_hint": 9.0,
+      "visual": "Close-up of hands typing rapidly on an illuminated keyboard in a dim room"
+    },
+    {
+      "narration": "We didn't take first place, but presenting our working app together was a bigger win than I expected.",
+      "on_screen_text": "SHARED VICTORY",
+      "duration_hint": 10.0,
+      "visual": "Two teens high-fiving across a desk in a brightly lit modern hall"
+    },
+    {
+      "narration": "Asking for help isn't weakness, it's how we grow stronger. Follow along for daily stories of real growth!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Teen girl standing confidently in a brightly lit hallway smiling at the camera"
+    }
+  ]
+}

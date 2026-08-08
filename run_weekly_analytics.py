@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Weekly orchestrator: pulls the last 7 days of channel/video metrics and
-writes analytics/reports/{date}.json + .md. No LLM call — bring the .md
-report back to a Claude Code session to turn it into next week's scripts.
+writes analytics/reports/{date}.json + .md. No LLM call itself — the
+weekly-analytics.yml workflow chains run_weekly_story_refill.py (which does
+call Gemini) right after this, so the report currently isn't fed back into
+story generation yet. Feeding performance data into the story prompts is a
+natural next step if that becomes worth doing.
 """
 
 from __future__ import annotations

@@ -1,0 +1,56 @@
+{
+  "id": "open-mic-night",
+  "title": "Open Mic Night",
+  "description": "Leo loves playing acoustic guitar alone in his room, but performing live in front of strangers tests his courage.",
+  "tags": [
+    "music",
+    "stage-fright",
+    "courage",
+    "guitar",
+    "personal-growth"
+  ],
+  "scenes": [
+    {
+      "narration": "I have played acoustic guitar in my bedroom for three years, hidden away where nobody could hear me play a wrong chord.",
+      "on_screen_text": "HIDDEN TALENT",
+      "duration_hint": 9.0,
+      "visual": "Teen boy sitting on the edge of a bed playing an acoustic guitar in a cozy bedroom"
+    },
+    {
+      "narration": "When my best friend signed me up for an open-mic night, my stomach immediately dropped into a heavy knot.",
+      "on_screen_text": "THE UNEXPECTED PUSH",
+      "duration_hint": 9.0,
+      "visual": "Teen boy holding an acoustic guitar looking shocked at his friend who is smiling"
+    },
+    {
+      "narration": "Standing behind the dark velvet curtain, listening to the announcer call my name, my fingers went completely numb.",
+      "on_screen_text": "PARALYZING DREAD",
+      "duration_hint": 9.0,
+      "visual": "Close-up of a nervous teen boy looking out from behind a dark stage curtain into dim lights"
+    },
+    {
+      "narration": "I walked out, sat on the stool, and froze. The first chord came out buzzing and totally out of tune.",
+      "on_screen_text": "THE FALSE START",
+      "duration_hint": 10.0,
+      "visual": "Teen boy sitting on a stage stool under a warm spotlight holding a guitar with an anxious face"
+    },
+    {
+      "narration": "I took a deep breath, tuned the string, and started over. I closed my eyes and imagined I was back in my quiet bedroom.",
+      "on_screen_text": "RESETTING THE MIND",
+      "duration_hint": 11.0,
+      "visual": "Close-up of boy closing his eyes peacefully while resting his fingers on guitar strings"
+    },
+    {
+      "narration": "By the second verse, my fingers took over. When I finished, the polite applause felt louder than a stadium crowd.",
+      "on_screen_text": "FINDING THE RHYTHM",
+      "duration_hint": 11.0,
+      "visual": "Teen boy smiling softly under stage lights while holding his acoustic guitar after finishing a song"
+    },
+    {
+      "narration": "Facing your fears never gets easy, but the feeling afterward is worth every second. Follow along for more stories like this!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Teen boy resting his guitar against a wall and smiling genuinely into the camera"
+    }
+  ]
+}

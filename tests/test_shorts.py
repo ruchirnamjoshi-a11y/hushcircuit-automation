@@ -14,11 +14,11 @@ SAMPLE = {
     "description": "test",
     "tags": [],
     "scenes": [
-        {"narration": "hook", "on_screen_text": "HOOK", "duration_hint": 8, "short_worthy": True},
-        {"narration": "long explainer beat one", "on_screen_text": "BEAT ONE", "duration_hint": 60, "short_worthy": False},
-        {"narration": "quick punchy tip", "on_screen_text": "QUICK TIP", "duration_hint": 18, "short_worthy": True},
-        {"narration": "another long explainer beat", "on_screen_text": "BEAT TWO", "duration_hint": 60, "short_worthy": False},
-        {"narration": "outro and cta", "on_screen_text": "SUBSCRIBE", "duration_hint": 8, "short_worthy": True},
+        {"narration": "hook", "on_screen_text": "HOOK", "duration_hint": 8},
+        {"narration": "beat one", "on_screen_text": "BEAT ONE", "duration_hint": 20},
+        {"narration": "quick punchy tip", "on_screen_text": "QUICK TIP", "duration_hint": 18},
+        {"narration": "beat two", "on_screen_text": "BEAT TWO", "duration_hint": 20},
+        {"narration": "outro and cta", "on_screen_text": "SUBSCRIBE", "duration_hint": 8},
     ],
 }
 
@@ -30,21 +30,16 @@ def make_fake_scene_audio(index, duration):
     )
 
 
-def test_short_scene_indices_selects_hook_flagged_and_outro():
-    script = validate(SAMPLE)
-    assert script.short_scene_indices == [0, 2, 4]
-
-
-def test_select_within_budget_keeps_hook_and_outro_drops_longest_middle():
+def test_select_within_budget_keeps_all_scenes_when_under_cap():
     script = validate(SAMPLE)
     scene_audios = [make_fake_scene_audio(i, sc.duration_hint) for i, sc in enumerate(script.scenes)]
-    # indices [0,2,4] durations [8,18,8] = 34s, well under budget, nothing dropped
-    selected = _select_within_budget(script.short_scene_indices, scene_audios, max_seconds=58)
-    assert selected == [0, 2, 4]
+    # total = 8+20+18+20+8 = 74s, under the 180s default ceiling — nothing dropped
+    selected = _select_within_budget(list(range(len(script.scenes))), scene_audios, max_seconds=180)
+    assert selected == [0, 1, 2, 3, 4]
 
 
 def test_select_within_budget_trims_when_over_cap():
-    # hook(8) + two flagged middles (30 each) + outro(8) = 76s > 58 cap
+    # hook(8) + two long middles (30 each) + outro(8) = 76s > 58 cap
     audios = [
         make_fake_scene_audio(0, 8),
         make_fake_scene_audio(1, 30),
@@ -77,7 +72,7 @@ def probe_resolution(path):
     return int(w), int(h)
 
 
-def test_assemble_short_end_to_end(tmp_path):
+def test_assemble_short_includes_every_scene(tmp_path):
     script = validate(SAMPLE)
     scene_audios = []
     for i, sc in enumerate(script.scenes):
@@ -99,8 +94,8 @@ def test_assemble_short_end_to_end(tmp_path):
     )
 
     assert out.exists()
-    # 3 selected scenes (hook, quick tip, outro) at 3s each = 9s
-    assert probe_duration(out) == pytest.approx(9.0, abs=0.5)
+    # every one of the 5 scenes included at 3s each = 15s (not just a flagged subset)
+    assert probe_duration(out) == pytest.approx(15.0, abs=0.5)
     assert probe_resolution(out) == (1080, 1920)
 
 

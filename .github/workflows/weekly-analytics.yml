@@ -32,11 +32,16 @@ jobs:
           YOUTUBE_TOKEN_FILE: secrets/youtube_token.json
         run: python run_weekly_analytics.py
 
-      - name: Commit report
+      - name: Refill story queue (Gemini)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python run_weekly_story_refill.py
+
+      - name: Commit report and refilled queue
         run: |
           git config user.name "youtube-automation-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add analytics/
-          git diff --cached --quiet || git commit -m "chore: weekly analytics report [skip ci]"
+          git add analytics/ scripts_queue/
+          git diff --cached --quiet || git commit -m "chore: weekly analytics report + story refill [skip ci]"
           git push
 

@@ -14,7 +14,7 @@ from typing import Optional
 
 from pipeline.config import QUEUE_PENDING_DIR, QUEUE_USED_DIR
 
-REQUIRED_SCENE_FIELDS = {"narration", "on_screen_text", "duration_hint", "short_worthy"}
+REQUIRED_SCENE_FIELDS = {"narration", "on_screen_text", "duration_hint"}
 REQUIRED_SCRIPT_FIELDS = {"id", "title", "description", "tags", "scenes"}
 
 
@@ -23,7 +23,16 @@ class Scene:
     narration: str
     on_screen_text: str
     duration_hint: float
-    short_worthy: bool = False
+    # Optional richer visual description used only for the AI illustration
+    # prompt (e.g. "a small rabbit squeezing through a narrow fence gap,
+    # determined expression") — on_screen_text is a short chapter-title-style
+    # label and produces vaguer images on its own. Falls back to
+    # on_screen_text when left blank.
+    visual: str = ""
+
+    @property
+    def image_concept(self) -> str:
+        return self.visual or self.on_screen_text
 
 
 @dataclass
@@ -46,32 +55,21 @@ class Script:
     def body_scenes(self) -> list[Scene]:
         return self.scenes[1:-1]
 
-    @property
-    def short_scenes(self) -> list[Scene]:
-        """Hook always included; body/outro scenes only if flagged short_worthy."""
-        return [self.hook] + [s for s in self.scenes[1:] if s.short_worthy]
-
-    @property
-    def short_scene_indices(self) -> list[int]:
-        """Same selection as short_scenes, but as indices into self.scenes —
-        used to pull matching SceneAudio/BrollClip by position."""
-        return [0] + [i for i, s in enumerate(self.scenes[1:], start=1) if s.short_worthy]
-
     def total_duration(self) -> float:
         return sum(s.duration_hint for s in self.scenes)
 
     def badge_text(self, scene_index: int) -> str:
-        """The on-screen progress badge for a scene, e.g. 'TIP 2/6 · GIVE IT
-        A ROLE' for a body scene, or just the scene's on_screen_text for the
-        hook/outro. Numbering reflects position in the full script, so a
-        Short that only includes a subset of scenes still shows correct
-        global numbers (e.g. 'TIP 4/6') rather than renumbering 1..N."""
+        """The on-screen progress badge for a scene, e.g. 'PART 2/6 · THE
+        OLD OWL' for a body scene, or just the scene's on_screen_text for
+        the hook/outro. Numbering reflects position in the full script, so
+        a Short that only includes a subset of scenes still shows correct
+        global numbers (e.g. 'PART 4/6') rather than renumbering 1..N."""
         scene = self.scenes[scene_index]
         if scene_index == 0 or scene_index == len(self.scenes) - 1:
             return scene.on_screen_text
-        tip_number = scene_index
-        total_tips = len(self.body_scenes)
-        return f"TIP {tip_number}/{total_tips} · {scene.on_screen_text}"
+        part_number = scene_index
+        total_parts = len(self.body_scenes)
+        return f"PART {part_number}/{total_parts} · {scene.on_screen_text}"
 
 
 class ScriptValidationError(ValueError):
@@ -97,7 +95,7 @@ def validate(data: dict) -> Script:
                 narration=scene_data["narration"],
                 on_screen_text=scene_data["on_screen_text"],
                 duration_hint=float(scene_data["duration_hint"]),
-                short_worthy=bool(scene_data["short_worthy"]),
+                visual=scene_data.get("visual", ""),
             )
         )
 
@@ -121,7 +119,7 @@ def to_dict(script: Script) -> dict:
                 "narration": s.narration,
                 "on_screen_text": s.on_screen_text,
                 "duration_hint": s.duration_hint,
-                "short_worthy": s.short_worthy,
+                "visual": s.visual,
             }
             for s in script.scenes
         ],

@@ -1,8 +1,37 @@
-# Faceless AI-Tools YouTube Automation
+# Daily Stories, For Every Age
 
-Fully-free, script-driven pipeline that produces and publishes a daily faceless
-YouTube video (long-form + auto-clipped Short) about AI tools & tips, then feeds
-performance data back into future content decisions.
+Fully-free, script-driven pipeline that produces and publishes **one narrated
+short story per day, per audience track** — kids, teens & young adults,
+adults & middle-aged, and women — each with its own voice, illustration
+style, and YouTube upload settings, then feeds performance data back into
+future content decisions.
+
+## The four tracks
+
+One vertical Short is produced daily for each track, all on the same
+channel. There's no separate long-form (16:9) video: our ~8-scene stories
+run ~70-90s, so a distinct long-form cut added little, and uploading both
+would cost ~13,000 YouTube Data API quota units/day across 4 tracks — over
+the default 10,000/day free cap. `pipeline/assemble.py` (the long-form
+assembler) is kept in the codebase, tested, but unused by default — same
+pattern as `pipeline/broll.py`.
+
+| Track | Voice | Illustration style | Made for kids? |
+|---|---|---|---|
+| **Kids** | Sonia (British, warm) | Watercolor storybook | Yes — every kids upload is flagged `selfDeclaredMadeForKids` |
+| **Teens & young adults** | Aria (confident) | Vibrant character-focused digital art | No |
+| **Adults & middle-aged** | Guy (warm, mature) | Cinematic, painterly, reflective | No |
+| **Women** | Jenny (warm, comforting) | Elegant, soft, rose-gold | No |
+
+Configured in `pipeline/config.py`'s `TRACKS` dict — voice, illustration
+style prompt, YouTube category, `made_for_kids` flag, and extra tags per
+track all live there.
+
+**YouTube's "made for kids" flag is set per video, not per channel** — so
+the kids track's uploads correctly disable personalized ads/comments on
+those specific videos, while the other three tracks keep full monetization
+and engagement features. One channel works fine; there's no need to split
+into four.
 
 ## How it stays (nearly) free
 
@@ -11,51 +40,127 @@ billing account required anywhere:
 
 | Stage | Tool | Cost |
 |---|---|---|
-| Script writing | Written interactively in Claude Code (this repo's `scripts_queue/`) | Covered by Claude Pro/Max — no API key |
-| Voiceover | `edge-tts` | Free, uncapped |
+| Story writing | Gemini API (`pipeline/story_writer.py`), weekly, per track | Free tier — ~28 requests/week total, well inside free limits |
+| Voiceover | `edge-tts`, one voice per track | Free, uncapped, but unofficial (no SLA — see Limits below) |
 | Scene illustrations | FLUX.1-schnell via Cloudflare Workers AI (`pipeline/ai_image.py`) | Free — 10,000 Neurons/day, no card |
 | Assembly/captions/animation | FFmpeg + generated brand gradient (`pipeline/textcard.py`) | Free, local |
 | Thumbnail | Pillow (matches the video's gradient) | Free |
-| Upload | YouTube Data API v3 | Free quota |
-| Scheduling | GitHub Actions | Free tier |
+| Upload | YouTube Data API v3 | Free — 10,000 quota units/day (see Limits below) |
+| Scheduling | GitHub Actions | Free tier — 2,000 min/month on this private repo |
 | Analytics | YouTube Analytics API | Free |
 
-**There is no Anthropic API key anywhere in this codebase.** Scripts are written
-by asking Claude Code (in a normal interactive session) to batch-write JSON files
-into `scripts_queue/pending/`, following the schema in `pipeline/scripts.py`. The
-automated daily run only *consumes* the queue — it never calls an LLM.
+### Limits worth knowing, per tool
 
-**Visuals are AI-generated per scene, not stock footage.** Free stock-footage
-APIs (Pexels/Pixabay) have no real footage of "using ChatGPT" — matching by
-keyword only ever gets generic, often-unrelated b-roll. Instead each scene gets
+- **Cloudflare Workers AI**: 10,000 Neurons/day. A normal day (4 tracks × 8
+  scenes) needs ~32 images, comfortably inside that — but heavy iteration/
+  testing burns through it fast (spot-checking prompts, re-running the
+  pipeline repeatedly), and there's no way to query a reset time from the
+  API. `pipeline/ai_image.py` distinguishes real rate-limiting (Cloudflare
+  error 429, retries with backoff) from daily quota exhaustion (error code
+  4006, fails fast — no point retrying until the reset) and falls back to
+  the brand gradient either way rather than failing the video.
+- **YouTube Data API v3**: 10,000 quota units/day by default.
+  `videos.insert` costs 1,600 units; `thumbnails.set` costs 50. At one
+  upload per track per day, 4 tracks cost ~6,600 units/day — comfortable.
+  (Uploading a second long-form video per track, as earlier versions of
+  this pipeline did, pushed that to ~13,000/day and blew the cap — this is
+  why there's no long-form output anymore.) A quota increase can be
+  requested for free in Google Cloud Console but isn't instant.
+- **edge-tts**: not an official public API — it's a wrapper around
+  Microsoft Edge's built-in read-aloud service, with no published rate
+  limit and no SLA. It could change or stop working with zero notice since
+  it's unofficial; there's no in-repo fallback if that happens.
+- **GitHub Actions**: this repo is private, so it gets the free plan's
+  2,000 minutes/month (public repos get unlimited). A full 4-track daily
+  run takes roughly 20-30 minutes in practice, which fits comfortably, but
+  is worth spot-checking against real run durations in the Actions tab
+  after the workflow's been live a few days.
+
+**There is no Anthropic API key anywhere in this codebase.** Story writing
+uses the Gemini API instead (`pipeline/story_writer.py`) — the *only* LLM
+call in the whole pipeline. It runs weekly (`run_weekly_story_refill.py`,
+chained onto the `weekly-analytics` GitHub Action), generating 7 stories per
+track with Gemini's structured-output JSON mode constrained to the exact
+`Script`/`Scene` schema, validating each with the same `pipeline.scripts.
+validate()` a hand-written script would go through before writing it into
+`scripts_queue/pending/<track>/`. The daily run (`run_daily.py`) only ever
+*consumes* the queue — it never calls an LLM itself. Generated stories go
+straight into the production queue with no human review step by default;
+add one if you want a quality gate (see Weekly loop below). You can still
+write scripts by hand the same way as before — anything matching the schema
+in `pipeline/scripts.py` works regardless of how it was written.
+
+**Visuals are AI-generated per scene, not stock footage.** Each scene gets
 one AI illustration (`pipeline/ai_image.py`, FLUX.1-schnell via Cloudflare
-Workers AI) prompted from that scene's own content, animated with a Ken Burns
-zoom (`pipeline/textcard.py`), plus a numbered progress badge and big
-word-by-word "pop" captions with the current key term accent-colored. If the
-AI API call fails or `CF_ACCOUNT_ID`/`CF_API_TOKEN` aren't set, it falls back
-automatically to a generated brand gradient with drifting glow orbs — the
-pipeline never hard-fails on this stage. `pipeline/broll.py` (Pexels/Pixabay)
-is kept in the codebase, tested, but unused by default.
+Workers AI) prompted from that scene's own content, animated with a Ken
+Burns zoom (`pipeline/textcard.py`), plus a numbered progress badge ("PART
+2/6 · ...") and big word-by-word "pop" captions with the current key term
+accent-colored. If the AI API call fails or `CF_ACCOUNT_ID`/`CF_API_TOKEN`
+aren't set, it falls back automatically to a generated brand gradient with
+drifting glow orbs — the pipeline never hard-fails on this stage.
+`pipeline/broll.py` (Pexels/Pixabay) is kept in the codebase, tested, but
+unused by default.
 
-Local Stable Diffusion generation (via `diffusers`) and several other
-providers (Hugging Face Inference Providers, Google Gemini/Imagen) were
-evaluated and rejected before landing on Cloudflare: HF's free tier only
-covers ~10 images/month, Gemini's image models have zero free-tier quota, and
-local SD on an M1/16GB Mac was either too slow (~11min/image on SDXL) or too
+### A real limitation worth knowing: FLUX-schnell sometimes renders garbled text
+
+Cloudflare's free FLUX.1-schnell has no negative-prompt/CFG support, so "no
+text" instructions only *reduce*, not eliminate, on-image text — and it
+reliably tries to render text for anything that reads like ad copy, a
+banner, or (worst offender) **institutional building exteriors/signage**
+(school entrances, storefronts). Two things keep this rare in practice:
+
+1. Each `Scene` has an optional `visual` field — a concrete visual
+   description used *only* for the image prompt, kept separate from the
+   narrated `narration` and the on-screen `on_screen_text` badge label.
+   Writing `visual` as a close, concrete description (not a quoted
+   slogan, not a full sentence, not a building exterior) is what makes
+   this reliable — see the seed scripts in `scripts_queue/pending/` for
+   examples across all four styles.
+2. `pipeline/ai_image.py` front-loads a strong no-text instruction and
+   substitutes a few known trigger words (`free` → `no-cost`, `subscribe`
+   → `follow`) that otherwise anchor FLUX toward badge/button training
+   images.
+
+When writing new story scripts — especially for the **teens** track, whose
+"vibrant/dynamic" style is the most sign-prone — keep `visual` descriptions
+character-focused (close-ups, nature, interiors) and avoid building
+exteriors with implied signage.
+
+### Why Cloudflare, not something else
+
+Local Stable Diffusion (via `diffusers`) and several hosted providers
+(Hugging Face Inference Providers, Google Gemini/Imagen) were evaluated and
+rejected before landing on Cloudflare: HF's free tier only covers ~10
+images/month, Gemini's image models have zero free-tier quota, and local SD
+on an M1/16GB Mac was either too slow (~11min/image on SDXL) or too
 low-quality (SD1.5) for daily production use. Cloudflare Workers AI's free
-tier comfortably covers this pipeline's ~8 images/day.
+tier (10,000 Neurons/day) comfortably covers ~4 videos × ~8 scenes/day.
 
-## Weekly loop (the only manual step)
+## Weekly loop (fully automated)
 
-Once a week:
-1. `run_weekly_analytics.py` (via the `weekly-analytics` GitHub Action) drops a
-   report in `analytics/reports/{date}.md`.
-2. Bring that report to a Claude Code session in this repo and ask for the next
-   ~10 scripts. I'll write them straight into `scripts_queue/pending/`.
-3. Commit and push. The daily workflow does the rest.
+The `weekly-analytics` GitHub Action runs both steps in sequence, no manual
+step required once `GEMINI_API_KEY` is set:
+1. `run_weekly_analytics.py` pulls the last 7 days of metrics into
+   `analytics/reports/{date}.md`.
+2. `run_weekly_story_refill.py` generates 7 new stories per track (28
+   total) via `pipeline/story_writer.py` and writes them straight into
+   `scripts_queue/pending/<track>/`.
+3. Both the report and the refilled queue get committed and pushed
+   automatically.
 
-If the queue runs dry, `run_daily.py` logs "queue empty, refill needed" and exits
-cleanly — no crash, no partial video, no wasted API calls.
+If a track's queue runs dry before the next refill, `run_daily.py` logs
+"queue empty, refill needed" for that track only and moves on to the
+others — no crash, no partial video, no wasted API calls. If
+`GEMINI_API_KEY` isn't set, the refill step logs a message and exits
+cleanly rather than failing the workflow.
+
+**No review gate by default** — generated stories are validated against the
+schema (so malformed output can't reach the queue) but not read by a human
+before `run_daily.py` picks them up and uploads them. If you want a quality
+checkpoint, the natural place to add one is having `run_weekly_story_refill.py`
+write to a separate `scripts_queue/review/<track>/` directory instead of
+`pending/` directly, and moving files over manually (or via a follow-up
+script) after a look.
 
 ## One-time setup
 
@@ -74,7 +179,14 @@ cleanly — no crash, no partial video, no wasted API calls.
      the gradient background for every scene, no error, just a plainer look
    - `PEXELS_API_KEY` / `PIXABAY_API_KEY` are optional, only needed to
      experiment with `pipeline/broll.py` directly
-3. YouTube upload/analytics OAuth:
+3. Copy `.env.example` and fill in `GEMINI_API_KEY` for weekly story
+   generation:
+   - Free key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+     — copy the "API Key" value from the key details panel exactly (the
+     format isn't a fixed prefix, don't assume "starts with AIza")
+   - No billing needed; if unset, the weekly refill step just skips
+   - For GitHub Actions, add it as the repo secret `GEMINI_API_KEY`
+4. YouTube upload/analytics OAuth:
    - Create a Google Cloud project, enable **YouTube Data API v3** and
      **YouTube Analytics API**, create an OAuth Desktop client, download the JSON
      as `secrets/client_secret.json`.
@@ -83,7 +195,7 @@ cleanly — no crash, no partial video, no wasted API calls.
    - For GitHub Actions, base64-encode that token file and store it as the repo
      secret `YOUTUBE_TOKEN_B64`, and add `CF_ACCOUNT_ID` / `CF_API_TOKEN` as
      their own repo secrets too.
-4. Drop a few royalty-free tracks (e.g. from the YouTube Audio Library) into
+5. Drop a few royalty-free tracks (e.g. from the YouTube Audio Library) into
    `assets/music/`.
 
 ## Testing each stage standalone
@@ -91,37 +203,45 @@ cleanly — no crash, no partial video, no wasted API calls.
 ```bash
 pytest tests/test_scripts.py     # queue schema/helpers, no network
 pytest tests/test_tts.py          # real edge-tts call, no key needed
-pytest tests/test_ai_image.py      # mocked HF client, no network/cost
+pytest tests/test_ai_image.py      # mocked Cloudflare client, no network/cost
+pytest tests/test_story_writer.py   # mocked Gemini client, no network/cost
 pytest tests/test_textcard.py       # generated backgrounds, ffmpeg only, no network
-pytest tests/test_assemble.py        # ffmpeg with synthetic lavfi inputs, no network
-pytest tests/test_shorts.py           # same, vertical output
+pytest tests/test_assemble.py        # long-form assembler — unused by default, kept tested
+pytest tests/test_shorts.py           # the actual production path: full-story vertical video
 pytest tests/test_thumbnail.py         # Pillow only, no network
 pytest tests/test_upload.py             # --dry-run, builds payload without calling API
 pytest tests/test_broll.py               # optional/unused by default; needs an API key
 ```
 
 Tests requiring an API key skip automatically (not fail) if that key is unset.
-`test_ai_image.py` mocks the HF client entirely, so the suite never spends
-real money — only a manual `run_daily.py` actually calls the paid API.
+`test_ai_image.py` mocks the Cloudflare client entirely, so the suite never
+spends real money — only a manual `run_daily.py` actually calls the API.
 
 ## Running the full pipeline manually
 
 ```bash
-python run_daily.py            # consumes next queued script, uploads as "private"
-python run_daily.py --dry-run   # does everything except the real YouTube upload
+python run_daily.py                  # runs all 4 tracks, uploads as "private"
+python run_daily.py --track kids      # run just one track
+python run_daily.py --dry-run          # does everything except the real YouTube upload
 ```
 
 ## Repo layout
 
 ```
 pipeline/            stage modules (see docstrings for details)
-  ai_image.py           per-scene AI illustrations (hosted FLUX), gradient fallback
-  textcard.py            Ken Burns zoom animation + brand-gradient fallback
-  broll.py                Pexels/Pixabay fetch — tested, kept, unused by default
-scripts_queue/        pending/ + used/ — the script queue
-run_daily.py            orchestrator for stages 2-6
-run_weekly_analytics.py  orchestrator for stage 8
-.github/workflows/        daily-video.yml, weekly-analytics.yml
+  config.py             TRACKS: per-track voice/style/made-for-kids/tags/story-guidance config
+  story_writer.py         weekly story generation via Gemini — the only LLM call in the pipeline
+  ai_image.py            per-scene AI illustrations (hosted FLUX, track-aware style), gradient fallback
+  textcard.py             Ken Burns zoom animation + brand-gradient fallback
+  shorts.py                assembles the single vertical Short — the actual production output
+  assemble.py               long-form (16:9) assembler — tested, kept, unused by default
+  broll.py                 Pexels/Pixabay fetch — tested, kept, unused by default
+scripts_queue/        pending/<track>/ + used/<track>/ — one queue per audience track
+archive/ai_tools_scripts/  retired scripts from this channel's original "AI tools & tips" concept
+run_daily.py            orchestrator — loops all 4 tracks, one video each
+run_weekly_analytics.py  pulls YouTube Analytics metrics
+run_weekly_story_refill.py  generates + queues a week of stories per track via Gemini
+.github/workflows/        daily-video.yml, weekly-analytics.yml (analytics + story refill)
 assets/music/               royalty-free background tracks (you provide these)
 analytics/reports/            weekly performance reports
 ```

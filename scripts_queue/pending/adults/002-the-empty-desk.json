@@ -1,0 +1,56 @@
+{
+  "id": "the-empty-desk",
+  "title": "The Empty Desk",
+  "description": "After twenty-five years in corporate finance, David packs his office box and steps into an uncertain, handcrafted future.",
+  "tags": [
+    "life transition",
+    "career change",
+    "reinvention",
+    "mindfulness",
+    "storytelling"
+  ],
+  "scenes": [
+    {
+      "narration": "For twenty-five years, David measured his life in quarterly reports and late night emails. But as he sat at his desk tonight, he realized the spreadsheet was full, but his life felt completely empty.",
+      "on_screen_text": "THE QUIET REALIZATION",
+      "duration_hint": 14.3,
+      "visual": "A middle aged man standing alone in a dimly lit office holding a single cardboard box"
+    },
+    {
+      "narration": "He placed his security badge on the polished mahogany desk and walked out into the cool evening air. There was no grand party, just the quiet hum of the elevator and a sudden, terrifying sense of freedom.",
+      "on_screen_text": "LEAVING IT BEHIND",
+      "duration_hint": 16.5,
+      "visual": "Hands placing a key plastic card onto a dark wooden table near a window"
+    },
+    {
+      "narration": "The next morning, his hands felt strangely heavy with nothing to type. He walked into his dusty garage workshop, where his grandfather's woodworking tools sat untouched beneath a canvas sheet.",
+      "on_screen_text": "AN OLD SANCTUARY",
+      "duration_hint": 13.9,
+      "visual": "Dust motes dancing in morning sunlight filtering through a garage window over vintage tools"
+    },
+    {
+      "narration": "The first chair he tried to build was uneven and wobbly. He wanted to throw it away, but instead he sat on the concrete floor and laughed until his chest burned.",
+      "on_screen_text": "EMBRACING THE IMPERFECT",
+      "duration_hint": 13.5,
+      "visual": "A middle aged man sitting on a garage floor next to a rough wooden stool"
+    },
+    {
+      "narration": "With every plane of wood and every ribbon of cedar shaving, his mind cleared. For the first time in decades, he was fully present in the room he was standing in.",
+      "on_screen_text": "THE CRAFT OF HEALING",
+      "duration_hint": 13.0,
+      "visual": "Close up of hands using a hand plane on raw timber sending wood shavings floating"
+    },
+    {
+      "narration": "It turns out success was never about the title on the corner office door. It was about creating something real with your own hands before the daylight ran out.",
+      "on_screen_text": "MEASURING WORTH",
+      "duration_hint": 12.6,
+      "visual": "A beautifully finished handmade oak chair sitting in warm sunlight on a quiet porch"
+    },
+    {
+      "narration": "If you are looking for the courage to start your next chapter, follow along for more stories of second chances.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "A middle aged man resting his hands on a warm wooden tabletop with a calm smile"
+    }
+  ]
+}

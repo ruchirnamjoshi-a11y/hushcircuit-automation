@@ -1,0 +1,70 @@
+{
+  "id": "pip-the-small-rabbit",
+  "title": "Pip the Small Rabbit \u2014 A Bedtime Story",
+  "description": "A gentle bedtime story about a small rabbit who learns that being small doesn't mean you can't do big things.",
+  "tags": [
+    "bedtime story",
+    "kids story",
+    "story for kids",
+    "Pip the rabbit",
+    "moral story"
+  ],
+  "scenes": [
+    {
+      "narration": "Once upon a time, in a little burrow under an old oak tree, there lived a rabbit named Pip. Pip was small, even for a rabbit, and he worried that being small meant he couldn't do big things.",
+      "on_screen_text": "PIP THE RABBIT",
+      "duration_hint": 16.5,
+      "short_worthy": true,
+      "visual": "a small rabbit sitting outside a cozy burrow under a big oak tree, looking thoughtful"
+    },
+    {
+      "narration": "One rainy morning, Pip heard a tiny cry coming from the garden. He hopped outside and found a baby bird who had fallen from her nest, too high for anyone to reach.",
+      "on_screen_text": "A CRY IN THE RAIN",
+      "duration_hint": 13.9,
+      "short_worthy": false,
+      "visual": "a small rabbit in the rain looking up at a tall tree with an empty nest, a tiny baby bird on the ground"
+    },
+    {
+      "narration": "\"I'm too small to help,\" Pip said sadly. But then he noticed something. Because he was small, he could squeeze through the fence where the big animals could not. He dashed off, and squeezed through the gap, and found Old Owl, who was very wise and had very long wings.",
+      "on_screen_text": "TOO SMALL TO HELP?",
+      "duration_hint": 21.7,
+      "short_worthy": true,
+      "visual": "a small rabbit squeezing through a narrow gap in a garden fence, determined expression"
+    },
+    {
+      "narration": "Together, they flew back to the garden. Owl lifted the baby bird gently and set her safely back in her nest, high in the tree.",
+      "on_screen_text": "OWL TO THE RESCUE",
+      "duration_hint": 10.9,
+      "short_worthy": false,
+      "visual": "a wise owl with large wings gently lifting a tiny baby bird up toward a nest in a tall tree"
+    },
+    {
+      "narration": "\"You did it, Pip!\" chirped the baby bird. \"Being small helped you save me!\"",
+      "on_screen_text": "SAVED!",
+      "duration_hint": 6.1,
+      "short_worthy": true,
+      "visual": "a happy baby bird safe in its nest looking down at a small rabbit and an owl below, warm sunrise"
+    },
+    {
+      "narration": "Pip smiled all the way home. He learned that day that being small didn't mean he couldn't do big things. It just meant he did them in his own special way.",
+      "on_screen_text": "BEING SMALL IS OK",
+      "duration_hint": 13.5,
+      "short_worthy": false,
+      "visual": "a small rabbit hopping happily home through a sunny garden, confident and joyful"
+    },
+    {
+      "narration": "And from that day on, whenever Pip felt too small for something, he remembered the baby bird, and he smiled instead.",
+      "on_screen_text": "A HAPPY LESSON",
+      "duration_hint": 9.1,
+      "short_worthy": false,
+      "visual": "a small rabbit sitting proudly outside its burrow under the oak tree at golden sunset, content"
+    },
+    {
+      "narration": "If you liked Pip's story, follow along for a new story every day. The end.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "short_worthy": true,
+      "visual": "a small rabbit and a baby bird sitting together happily under a big oak tree at sunset"
+    }
+  ]
+}

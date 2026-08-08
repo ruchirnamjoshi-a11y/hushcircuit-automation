@@ -1,0 +1,56 @@
+{
+  "id": "baking-her-future",
+  "title": "Baking Her Future",
+  "description": "Priya leaves a secure accounting career to open her own artisan bread business.",
+  "tags": [
+    "entrepreneurship",
+    "courage",
+    "passions",
+    "dreams",
+    "fulfillment"
+  ],
+  "scenes": [
+    {
+      "narration": "Priya spent a decade staring at financial spreadsheets while secretly dreaming of flour and sourdough.",
+      "on_screen_text": "THE DUAL LIFE",
+      "duration_hint": 7.0,
+      "visual": "A woman working on a laptop at a brightly lit office desk while looking distant"
+    },
+    {
+      "narration": "Every evening after work, her small kitchen became a sanctuary of rising dough and golden crusts.",
+      "on_screen_text": "EVENING SANCTUARY",
+      "duration_hint": 8.0,
+      "visual": "Hands kneading fresh bread dough on a wooden kitchen counter dusted with white flour"
+    },
+    {
+      "narration": "When doubt told her that leaving stability was foolish, she remembered her true passion.",
+      "on_screen_text": "CONFRONTING DOUBT",
+      "duration_hint": 6.0,
+      "visual": "A woman looking at fresh golden artisan bread loaves resting on a cooling rack"
+    },
+    {
+      "narration": "She saved every penny, created a solid plan, and finally handed in her corporate resignation.",
+      "on_screen_text": "THE LEAP OF FAITH",
+      "duration_hint": 7.0,
+      "visual": "A woman walking out of a modern glass office entrance with a backpack and bright smile"
+    },
+    {
+      "narration": "Working eighteen-hour days kneading dough, her body was tired, but her soul felt alive.",
+      "on_screen_text": "LABOR OF LOVE",
+      "duration_hint": 7.0,
+      "visual": "A woman in a white apron pulling a tray of fresh baked bread out of an oven"
+    },
+    {
+      "narration": "Priya learned that true security comes from trusting your own skills and dedicated heart.",
+      "on_screen_text": "TRUSTING HERSELF",
+      "duration_hint": 7.0,
+      "visual": "A smiling woman holding a rustic wooden board with warm freshly baked sourdough bread"
+    },
+    {
+      "narration": "Your passions are worth believing in. Follow along for more inspiring daily stories of courage.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "A happy woman sitting in a warm sunlit room filled with fresh bread and flowers"
+    }
+  ]
+}

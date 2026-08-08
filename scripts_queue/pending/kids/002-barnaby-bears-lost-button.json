@@ -1,0 +1,56 @@
+{
+  "id": "barnaby-bears-lost-button",
+  "title": "Barnaby Bear's Lost Button",
+  "description": "A gentle story about a soft bear who loses a button, only to find a delightful new friend using it.",
+  "tags": [
+    "bedtime",
+    "kids story",
+    "kindness",
+    "sharing",
+    "bear"
+  ],
+  "scenes": [
+    {
+      "narration": "Deep in the green woods, Barnaby Bear loved his cozy red sweater more than anything else in the world.",
+      "on_screen_text": "THE FAVORITE SWEATER",
+      "duration_hint": 7.0,
+      "visual": "cute fluffy brown bear wearing a bright red knitted sweater standing in a sunny mossy forest"
+    },
+    {
+      "narration": "But one chilly afternoon, Barnaby looked down and noticed something awful. A shiny wooden button was missing!",
+      "on_screen_text": "A MISSING BUTTON",
+      "duration_hint": 7.0,
+      "visual": "close up of fluffy bear looking surprised at a loose thread on his sweater"
+    },
+    {
+      "narration": "He retraced his steps along the forest path, searching carefully under bright autumn leaves and soft green moss.",
+      "on_screen_text": "SEARCHING THE PATH",
+      "duration_hint": 7.0,
+      "visual": "little bear bending down examining golden leaves on a dirt path in the woods"
+    },
+    {
+      "narration": "Near the hollow oak tree, he spotted a tiny mouse family sitting around his wooden button, eating berries.",
+      "on_screen_text": "A TINY DISCOVERY",
+      "duration_hint": 7.0,
+      "visual": "tiny mice sitting around a smooth wooden button used as a small dining table"
+    },
+    {
+      "narration": "Barnaby smiled softly. The button made a perfect little table for them, and they looked so full of joy.",
+      "on_screen_text": "A KIND HEART",
+      "duration_hint": 7.0,
+      "visual": "friendly bear smiling warmly down at tiny mice in a cozy hollow tree stump"
+    },
+    {
+      "narration": "He decided to gift the button to his new friends and tied his sweater thread into a neat bow.",
+      "on_screen_text": "SHARING IS CARING",
+      "duration_hint": 7.0,
+      "visual": "bear tying a tiny bow on his sweater thread while mice wave happily"
+    },
+    {
+      "narration": "Warm hearts make the cozy feelings last forever. Sleep tight, and follow along for more sweet bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "bear sleeping peacefully in a warm bedroom with glowing cozy lantern light"
+    }
+  ]
+}

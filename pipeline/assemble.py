@@ -32,12 +32,16 @@ def assemble_long_form(
     out_path: Path,
     music_path: Optional[Path] = None,
     scene_used_fallback: Optional[list[bool]] = None,
+    font_name: str = "Arial",
 ) -> Path:
     """scene_used_fallback (one bool per scene, from
     ai_image.generate_scene_image_raw) marks scenes that fell back to the
     brand gradient — those regenerate a fresh gradient+orbs clip instead of
     zooming scene_images[i] plain, so a fallback scene doesn't look flatter
-    than a real AI illustration or the original all-gradient design."""
+    than a real AI illustration or the original all-gradient design.
+
+    font_name: pass a font with the right glyphs for non-Latin-script
+    narration (see build_ass_captions)."""
     if len(scene_audios) != len(script.scenes):
         raise ValueError("scene_audios must cover every scene in the script")
     if len(scene_images) != len(script.scenes):
@@ -72,7 +76,7 @@ def assemble_long_form(
     ass_path = work_dir / "captions.ass"
     build_ass_captions(
         caption_lines, ass_path, LONG_FORM_RESOLUTION,
-        font_size=100, badge_lines=badge_lines, badge_font_size=40,
+        font_size=100, badge_lines=badge_lines, badge_font_size=40, font_name=font_name,
     )
 
     mix_final(

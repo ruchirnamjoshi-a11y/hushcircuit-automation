@@ -1,0 +1,56 @@
+{
+  "id": "unsent-letters",
+  "title": "Unsent Letters",
+  "description": "Sorting through her late mother's belongings, Elena discovers a forgotten notebook that changes how she sees her own choices.",
+  "tags": [
+    "family ties",
+    "grief and healing",
+    "self discovery",
+    "mother daughter",
+    "hope"
+  ],
+  "scenes": [
+    {
+      "narration": "Elena spent three weeks packing up her mother's small apartment, room by room, box by taped box. She thought she knew everything about the woman who raised her until she opened the blue leather notebook.",
+      "on_screen_text": "THE DISCOVERY",
+      "duration_hint": 15.2,
+      "visual": "A woman in her mid forties kneeling beside open cardboard boxes holding a blue journal"
+    },
+    {
+      "narration": "Tucked inside were hand-drawn sketches of bustling Italian bakeries and recipe ideas written in faded blue ink. Her mother had given up a culinary scholarship to stay home when Elena was born.",
+      "on_screen_text": "FORGOTTEN DREAMS",
+      "duration_hint": 13.9,
+      "visual": "Hands gently turning the yellowed pages of a handwritten recipe notebook"
+    },
+    {
+      "narration": "Elena had spent fifteen years working in middle management, constantly convincing herself it was too late to change course. She stared at her mother's elegant handwriting and felt a sudden pang of regret.",
+      "on_screen_text": "A MIRROR TO THE PAST",
+      "duration_hint": 14.8,
+      "visual": "A woman looking thoughtfully out a rain streak window clutching an old journal"
+    },
+    {
+      "narration": "Her mother had never complained about the life she chose, but every page smelled of cardamom and vanilla, proof of a fire that never quite went out.",
+      "on_screen_text": "THE SACRIFICE",
+      "duration_hint": 11.7,
+      "visual": "A close up of a dried flower pressed between pages of handwritten notes"
+    },
+    {
+      "narration": "The next afternoon, Elena bought a sack of flour, yeast, and fresh butter. She spent five hours in her kitchen kneading dough until her shoulders ached and her heart felt light.",
+      "on_screen_text": "THE FIRST BATCH",
+      "duration_hint": 13.5,
+      "visual": "Flour dusting over a wooden kitchen counter as hands shape fresh bread dough"
+    },
+    {
+      "narration": "Honoring the people we lost does not mean living in the past. Sometimes it means finishing the dream they started.",
+      "on_screen_text": "HONORING THE LEGACY",
+      "duration_hint": 9.6,
+      "visual": "A loaf of golden freshly baked bread resting on a rustic wire cooling rack"
+    },
+    {
+      "narration": "For more quiet stories about finding your way back to yourself, follow along today.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "A serene woman sitting at a sunlit kitchen table enjoying a warm pastry"
+    }
+  ]
+}
