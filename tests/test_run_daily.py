@@ -1,0 +1,99 @@
+from unittest.mock import MagicMock, patch
+
+from pipeline.ai_image import CloudflareQuotaExhausted
+from pipeline.config import TRACKS
+
+import run_daily
+
+KIDS_TRACK = TRACKS["kids"]
+TEENS_TRACK = TRACKS["teens"]
+
+
+def test_run_track_skips_if_already_produced_today(tmp_path):
+    with patch("run_daily.already_produced_today", return_value=True), \
+         patch("run_daily.load_next_pending") as mock_load:
+        result = run_daily.run_track(KIDS_TRACK, dry_run=False)
+
+    assert result is True
+    mock_load.assert_not_called()  # never even looked at the queue
+
+
+def test_run_track_dry_run_ignores_already_produced_today(tmp_path):
+    # dry runs are for local testing and shouldn't be blocked by real
+    # production state, nor should they be able to set it
+    with patch("run_daily.already_produced_today", return_value=True) as mock_check, \
+         patch("run_daily.load_next_pending", return_value=None):
+        result = run_daily.run_track(KIDS_TRACK, dry_run=True)
+
+    assert result is True
+    mock_check.assert_not_called()
+
+
+def test_run_track_raises_quota_exhausted_from_first_scene_probe(tmp_path):
+    fake_script = MagicMock()
+    fake_script.title = "Test"
+    fake_script.id = "test-id"
+    fake_script.scenes = [MagicMock(), MagicMock()]
+
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch("run_daily.generate_scene_image_raw", side_effect=CloudflareQuotaExhausted("exhausted")) as mock_gen, \
+         patch("run_daily.synthesize_script") as mock_tts:
+        try:
+            run_daily.run_track(KIDS_TRACK, dry_run=False)
+            assert False, "expected CloudflareQuotaExhausted to propagate"
+        except CloudflareQuotaExhausted:
+            pass
+
+    # aborted before TTS ever ran — the probe is the very first real work
+    mock_tts.assert_not_called()
+    assert mock_gen.call_count == 1
+    _, kwargs = mock_gen.call_args
+    assert kwargs.get("raise_on_quota_exhausted") is True
+
+
+def test_run_skips_remaining_tracks_after_quota_exhaustion():
+    with patch("run_daily.run_track", side_effect=CloudflareQuotaExhausted("exhausted")) as mock_run_track:
+        exit_code = run_daily.run(dry_run=False)
+
+    # every track attempted exactly once before giving up (first raises,
+    # the rest are skipped without calling run_track again)
+    assert mock_run_track.call_count == 1
+    assert exit_code == 0  # quota exhaustion is expected/handled, not a failure
+
+
+def test_run_continues_past_a_real_failure_on_one_track():
+    def fake_run_track(track, dry_run=False, privacy_status="private"):
+        if track.key == "kids":
+            raise RuntimeError("boom")
+        return True
+
+    with patch("run_daily.run_track", side_effect=fake_run_track) as mock_run_track:
+        exit_code = run_daily.run(dry_run=False)
+
+    assert mock_run_track.call_count == len(TRACKS)  # all tracks still attempted
+    assert exit_code == 1  # a real failure does affect the exit code
+
+
+def test_run_track_marks_produced_today_only_on_real_success(tmp_path):
+    fake_script = MagicMock()
+    fake_script.title = "Test"
+    fake_script.id = "test-id"
+    fake_script.scenes = [MagicMock(), MagicMock()]
+
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)), \
+         patch("run_daily.synthesize_script", return_value=[MagicMock(), MagicMock()]), \
+         patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
+         patch("run_daily.pick_music_track", return_value=None), \
+         patch("run_daily.assemble_short", return_value=tmp_path / "video.mp4"), \
+         patch("run_daily.generate_thumbnail", return_value=tmp_path / "thumb.jpg"), \
+         patch("run_daily.upload_daily_video", return_value={"video": {}, "thumbnail": {}}), \
+         patch("run_daily.mark_used"), \
+         patch("run_daily.mark_produced_today") as mock_mark:
+        run_daily.run_track(KIDS_TRACK, dry_run=False)
+
+    mock_mark.assert_called_once_with(KIDS_TRACK.key)

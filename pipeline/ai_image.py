@@ -100,6 +100,7 @@ def generate_scene_image_raw(
     out_path: Path,
     track: Track,
     retries: int = 2,
+    raise_on_quota_exhausted: bool = False,
 ) -> tuple[Path, bool]:
     """Generates one illustration for a scene via Cloudflare Workers AI, saved
     at its native resolution (no cropping yet) — call fit_scene_image() per
@@ -109,6 +110,14 @@ def generate_scene_image_raw(
 
     `track` selects the illustration style (kids/teens/adults/women — see
     pipeline.config.TRACKS).
+
+    `raise_on_quota_exhausted`: when True, a CloudflareQuotaExhausted lets
+    the exception propagate instead of falling back to the gradient.
+    run_daily.py sets this for a track's first scene only, using it as a
+    real-work "probe" — if quota is exhausted, the whole video would end up
+    all-gradient anyway, and the caller would rather abort the track (leave
+    its script in the queue) and let a later scheduled run retry once
+    quota resets than publish a placeholder-only video.
 
     Returns (path, used_fallback) — callers use used_fallback to decide
     whether this scene should get the gradient's drifting orb treatment
@@ -128,6 +137,8 @@ def generate_scene_image_raw(
                 time.sleep(INTER_REQUEST_DELAY_SECONDS)
                 return out_path, False
             except CloudflareQuotaExhausted as e:
+                if raise_on_quota_exhausted:
+                    raise
                 # No point retrying or pacing further calls this run —
                 # every remaining scene (and track) will hit the same wall
                 # until Cloudflare's daily reset.

@@ -57,8 +57,15 @@ billing account required anywhere:
   pipeline repeatedly), and there's no way to query a reset time from the
   API. `pipeline/ai_image.py` distinguishes real rate-limiting (Cloudflare
   error 429, retries with backoff) from daily quota exhaustion (error code
-  4006, fails fast — no point retrying until the reset) and falls back to
-  the brand gradient either way rather than failing the video.
+  4006, fails fast — no point retrying). **Quota exhaustion aborts the
+  video rather than publishing it with placeholder gradients**: `run_daily.py`
+  generates each track's first scene as a real-work "probe" before doing
+  any TTS/assembly; if that hits quota exhaustion, the whole run stops
+  there (every other track would hit the same account-wide wall) and every
+  track's script stays queued, untouched, for a later run to retry — see
+  "Runs multiple times a day" below. A non-quota per-scene failure (network
+  blip, etc.) still falls back to the gradient as before; that's a one-off,
+  not a sign the rest of the video would fail too.
 - **YouTube Data API v3**: 10,000 quota units/day by default.
   `videos.insert` costs 1,600 units; `thumbnails.set` costs 50. At one
   upload per track per day, 4 tracks cost ~6,600 units/day — comfortable.
@@ -71,10 +78,28 @@ billing account required anywhere:
   limit and no SLA. It could change or stop working with zero notice since
   it's unofficial; there's no in-repo fallback if that happens.
 - **GitHub Actions**: this repo is private, so it gets the free plan's
-  2,000 minutes/month (public repos get unlimited). A full 4-track daily
-  run takes roughly 20-30 minutes in practice, which fits comfortably, but
-  is worth spot-checking against real run durations in the Actions tab
-  after the workflow's been live a few days.
+  2,000 minutes/month (public repos get unlimited). The daily workflow now
+  runs every 4 hours (6x/day, see below), but most of those runs are
+  fast — either a near-instant quota-exhaustion abort or a no-op skip for
+  tracks already produced that day — so real usage is closer to one full
+  ~20-30 minute run/day plus a handful of short ones, not 6x that. Worth
+  spot-checking against real run durations in the Actions tab after the
+  workflow's been live a few days.
+
+### Runs multiple times a day, not once
+
+`daily-video.yml` runs on a `0 */4 * * *` schedule (every 4 hours) instead
+of a single daily cron, specifically so a quota-exhaustion abort gets
+retried later the same day once Cloudflare's quota resets, without your
+involvement. Two things make repeated runs safe rather than producing
+duplicate content:
+- `pipeline/state.py` tracks which tracks already produced a video today
+  (`scripts_queue/state/<track>.json`, committed back to the repo like the
+  queue itself) — a track that already succeeded earlier the same day is
+  skipped on later runs.
+- A track that hasn't produced yet always resumes with the *same* queued
+  script (nothing was consumed on the aborted attempt), so a retry never
+  skips or duplicates content.
 
 **There is no Anthropic API key anywhere in this codebase.** Story writing
 uses the Gemini API instead (`pipeline/story_writer.py`) — the *only* LLM
@@ -210,6 +235,8 @@ pytest tests/test_assemble.py        # long-form assembler — unused by default
 pytest tests/test_shorts.py           # the actual production path: full-story vertical video
 pytest tests/test_thumbnail.py         # Pillow only, no network
 pytest tests/test_upload.py             # --dry-run, builds payload without calling API
+pytest tests/test_state.py               # per-track daily-production state, no network
+pytest tests/test_run_daily.py            # orchestration: quota-abort, daily-state gating (mocked)
 pytest tests/test_broll.py               # optional/unused by default; needs an API key
 ```
 
@@ -231,6 +258,7 @@ python run_daily.py --dry-run          # does everything except the real YouTube
 pipeline/            stage modules (see docstrings for details)
   config.py             TRACKS: per-track voice/style/made-for-kids/tags/story-guidance config
   story_writer.py         weekly story generation via Gemini — the only LLM call in the pipeline
+  state.py                 per-track "already produced today" tracking (scripts_queue/state/)
   ai_image.py            per-scene AI illustrations (hosted FLUX, track-aware style), gradient fallback
   textcard.py             Ken Burns zoom animation + brand-gradient fallback
   shorts.py                assembles the single vertical Short — the actual production output

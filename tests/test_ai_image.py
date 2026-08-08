@@ -2,6 +2,7 @@ import base64
 from io import BytesIO
 from unittest.mock import MagicMock, patch
 
+import pytest
 from PIL import Image
 
 from pipeline.ai_image import build_prompt, fit_scene_image, generate_scene_image_raw
@@ -102,6 +103,42 @@ def test_generate_scene_image_raw_skips_retries_on_quota_exhaustion(tmp_path):
     # exactly one attempt — no retries, no backoff sleep for a lost cause
     assert mock_post.call_count == 1
     mock_sleep.assert_not_called()
+
+
+def test_generate_scene_image_raw_raises_on_quota_exhaustion_when_requested(tmp_path):
+    from pipeline.ai_image import CloudflareQuotaExhausted
+
+    mock_response = MagicMock()
+    mock_response.status_code = 429
+    mock_response.json.return_value = {
+        "success": False,
+        "errors": [{"message": "daily free allocation exhausted", "code": 4006}],
+    }
+
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", return_value=mock_response), \
+         patch("pipeline.ai_image.time.sleep"):
+        with pytest.raises(CloudflareQuotaExhausted):
+            generate_scene_image_raw(
+                SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK, raise_on_quota_exhausted=True,
+            )
+
+    # no gradient fallback file should have been written — caller aborts instead
+    assert not (tmp_path / "raw.png").exists()
+
+
+def test_generate_scene_image_raw_still_falls_back_for_non_quota_errors_when_raise_flag_set(tmp_path):
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", side_effect=RuntimeError("network blip")), \
+         patch("pipeline.ai_image.time.sleep"):
+        out, used_fallback = generate_scene_image_raw(
+            SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK, retries=1, raise_on_quota_exhausted=True,
+        )
+
+    assert used_fallback is True
+    assert out.exists()
 
 
 def test_generate_scene_image_raw_backs_off_longer_on_rate_limit(tmp_path):
