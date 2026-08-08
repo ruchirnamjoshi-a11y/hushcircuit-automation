@@ -3,18 +3,28 @@
 Fully-free, script-driven pipeline that produces and publishes **one narrated
 short story per day, per audience track** — kids, teens & young adults,
 adults & middle-aged, and women — each with its own voice, illustration
-style, and YouTube upload settings, then feeds performance data back into
+style, and **its own YouTube channel**, then feeds performance data back into
 future content decisions.
 
-## The four tracks
+## The four tracks, four channels
 
-One vertical Short is produced daily for each track, all on the same
-channel. There's no separate long-form (16:9) video: our ~8-scene stories
-run ~70-90s, so a distinct long-form cut added little, and uploading both
-would cost ~13,000 YouTube Data API quota units/day across 4 tracks — over
-the default 10,000/day free cap. `pipeline/assemble.py` (the long-form
-assembler) is kept in the codebase, tested, but unused by default — same
-pattern as `pipeline/broll.py`.
+Each track is a fully separate YouTube channel with its own OAuth token,
+own subscribers, own branding. Earlier this ran as one shared channel
+(YouTube's `made_for_kids` flag is set per video, not per channel, so that
+worked mechanically) but a kids bedtime-story subscriber getting a teen
+breakup drama in their feed — and vice versa — is bad for subscriber
+retention and channel identity, so it's four channels now. See "Multi-channel
+YouTube setup" below for how each channel/token maps to a track.
+
+One vertical Short is produced daily per channel. There's no separate
+long-form (16:9) video: our ~8-scene stories run ~70-90s, so a distinct
+long-form cut added little, and uploading both would cost ~13,000 YouTube
+Data API quota units/day across 4 channels — over the default 10,000/day
+free cap *per channel's project* (though with separate channels each
+getting its own quota, that's less of a hard constraint than it was under
+one shared channel). `pipeline/assemble.py` (the long-form assembler) is
+kept in the codebase, tested, but unused by default — same pattern as
+`pipeline/broll.py`.
 
 | Track | Voice | Illustration style | Made for kids? |
 |---|---|---|---|
@@ -26,12 +36,6 @@ pattern as `pipeline/broll.py`.
 Configured in `pipeline/config.py`'s `TRACKS` dict — voice, illustration
 style prompt, YouTube category, `made_for_kids` flag, and extra tags per
 track all live there.
-
-**YouTube's "made for kids" flag is set per video, not per channel** — so
-the kids track's uploads correctly disable personalized ads/comments on
-those specific videos, while the other three tracks keep full monetization
-and engagement features. One channel works fine; there's no need to split
-into four.
 
 ## How it stays (nearly) free
 
@@ -165,8 +169,9 @@ tier (10,000 Neurons/day) comfortably covers ~4 videos × ~8 scenes/day.
 
 The `weekly-analytics` GitHub Action runs both steps in sequence, no manual
 step required once `GEMINI_API_KEY` is set:
-1. `run_weekly_analytics.py` pulls the last 7 days of metrics into
-   `analytics/reports/{date}.md`.
+1. `run_weekly_analytics.py` pulls the last 7 days of metrics for each
+   track's channel into `analytics/reports/<track>/{date}.md` (skipping any
+   track whose channel isn't set up yet).
 2. `run_weekly_story_refill.py` generates 7 new stories per track (28
    total) via `pipeline/story_writer.py` and writes them straight into
    `scripts_queue/pending/<track>/`.
@@ -211,21 +216,54 @@ script) after a look.
      format isn't a fixed prefix, don't assume "starts with AIza")
    - No billing needed; if unset, the weekly refill step just skips
    - For GitHub Actions, add it as the repo secret `GEMINI_API_KEY`
-4. YouTube upload/analytics OAuth:
-   - Create a Google Cloud project, enable **YouTube Data API v3** and
-     **YouTube Analytics API**, create an OAuth Desktop client, download the JSON
-     as `secrets/client_secret.json`.
-   - Run `python -m pipeline.upload --auth-setup` once locally to complete the
-     OAuth consent flow; this writes `secrets/youtube_token.json`.
-   - For GitHub Actions, base64-encode that token file and store it as the repo
-     secret `YOUTUBE_TOKEN_B64`, and add `CF_ACCOUNT_ID` / `CF_API_TOKEN` as
-     their own repo secrets too.
+4. **Multi-channel YouTube setup** — one OAuth Desktop client is shared,
+   but each of the 4 tracks needs its own channel and its own token:
+   - Create a Google Cloud project once, enable **YouTube Data API v3** and
+     **YouTube Analytics API**, create an OAuth Desktop client, download the
+     JSON as `secrets/client_secret.json`. This client is reused for all 4
+     channels — you don't need 4 Cloud projects.
+   - Create 4 YouTube channels (as Brand Accounts under your Google account
+     is easiest to manage: youtube.com → your profile icon → "Create a
+     channel"), one per track. Name/brand each for its audience.
+   - For each track, authorize its channel:
+     1. In [studio.youtube.com](https://studio.youtube.com), switch your
+        **active channel** (profile icon → account switcher) to the one
+        for this track. This step matters — the OAuth consent screen
+        authorizes whichever channel is currently active, and there's no
+        channel picker in the flow itself.
+     2. Run `python -m pipeline.upload --auth-setup --track <kids|teens|adults|women>`
+        — this opens a browser consent screen and, on approval, writes
+        `secrets/youtube_token_<track>.json`.
+     3. Repeat for the other 3 tracks, switching the active channel each time.
+   - For GitHub Actions, base64-encode each track's token file and store it
+     as its own repo secret: `YOUTUBE_TOKEN_B64_KIDS`,
+     `YOUTUBE_TOKEN_B64_TEENS`, `YOUTUBE_TOKEN_B64_ADULTS`,
+     `YOUTUBE_TOKEN_B64_WOMEN`. Also add `CF_ACCOUNT_ID` / `CF_API_TOKEN` as
+     their own repo secrets.
+   - You don't have to set all 4 up at once — `run_daily.py` and
+     `run_weekly_analytics.py` both skip a track cleanly (not a failure) if
+     that track's token doesn't exist yet, so you can bring channels online
+     one at a time.
 5. Drop a few royalty-free tracks (e.g. from the YouTube Audio Library) into
    `assets/music/`.
+
+## Instagram — not built yet
+
+There's no Instagram posting code in this repo yet. Unlike YouTube's
+one-time OAuth, Instagram/Meta requires more upfront setup before any
+posting code is useful: a Business or Creator Instagram account connected
+to a Facebook Page, then a Meta Developer App with Instagram
+content-publishing permissions (which can require Meta's app review for
+that scope). Our vertical 1080×1920 Short output is already Reels-format
+compatible, so once that account/app setup is done, adding a
+`pipeline/instagram_upload.py` using the Instagram Graph API's Content
+Publishing endpoints is a comparatively small addition — worth revisiting
+once the Business/Creator account and Meta App exist.
 
 ## Testing each stage standalone
 
 ```bash
+pytest tests/test_config.py       # per-track YouTube token path resolution, no network
 pytest tests/test_scripts.py     # queue schema/helpers, no network
 pytest tests/test_tts.py          # real edge-tts call, no key needed
 pytest tests/test_ai_image.py      # mocked Cloudflare client, no network/cost
@@ -247,16 +285,17 @@ spends real money — only a manual `run_daily.py` actually calls the API.
 ## Running the full pipeline manually
 
 ```bash
-python run_daily.py                  # runs all 4 tracks, uploads as "private"
-python run_daily.py --track kids      # run just one track
+python run_daily.py                  # runs all 4 tracks/channels, uploads as "private"
+python run_daily.py --track kids      # run just one track (needs that channel's token)
 python run_daily.py --dry-run          # does everything except the real YouTube upload
+                                         # (works even with no channels set up yet)
 ```
 
 ## Repo layout
 
 ```
 pipeline/            stage modules (see docstrings for details)
-  config.py             TRACKS: per-track voice/style/made-for-kids/tags/story-guidance config
+  config.py             TRACKS config + youtube_token_path() (per-track/per-channel OAuth token)
   story_writer.py         weekly story generation via Gemini — the only LLM call in the pipeline
   state.py                 per-track "already produced today" tracking (scripts_queue/state/)
   ai_image.py            per-scene AI illustrations (hosted FLUX, track-aware style), gradient fallback

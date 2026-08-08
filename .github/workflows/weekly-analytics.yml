@@ -22,14 +22,22 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Restore YouTube OAuth token
+      - name: Restore YouTube OAuth tokens (one per channel/track)
+        # A track's secret being unset is fine — run_weekly_analytics.py
+        # skips that track cleanly (channel not set up yet).
         run: |
           mkdir -p secrets
-          echo "${{ secrets.YOUTUBE_TOKEN_B64 }}" | base64 -d > secrets/youtube_token.json
+          write_token() {
+            if [ -n "$2" ]; then
+              echo "$2" | base64 -d > "secrets/youtube_token_$1.json"
+            fi
+          }
+          write_token kids "${{ secrets.YOUTUBE_TOKEN_B64_KIDS }}"
+          write_token teens "${{ secrets.YOUTUBE_TOKEN_B64_TEENS }}"
+          write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
+          write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
 
       - name: Pull weekly analytics
-        env:
-          YOUTUBE_TOKEN_FILE: secrets/youtube_token.json
         run: python run_weekly_analytics.py
 
       - name: Refill story queue (Gemini)

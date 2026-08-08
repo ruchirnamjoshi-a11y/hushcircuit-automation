@@ -47,10 +47,23 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Restore YouTube OAuth token
+      - name: Restore YouTube OAuth tokens (one per channel/track)
+        # A track's secret being unset is fine — run_daily.py skips that
+        # track cleanly (channel not set up yet) rather than failing.
         run: |
           mkdir -p secrets
-          echo "${{ secrets.YOUTUBE_TOKEN_B64 }}" | base64 -d > secrets/youtube_token.json
+          write_token() {
+            if [ -n "$2" ]; then
+              echo "$2" | base64 -d > "secrets/youtube_token_$1.json"
+              echo "Restored token for $1"
+            else
+              echo "No YOUTUBE_TOKEN_B64_$(echo "$1" | tr a-z A-Z) secret set — $1 will be skipped"
+            fi
+          }
+          write_token kids "${{ secrets.YOUTUBE_TOKEN_B64_KIDS }}"
+          write_token teens "${{ secrets.YOUTUBE_TOKEN_B64_TEENS }}"
+          write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
+          write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
 
       - name: Run daily pipeline (all story tracks)
         env:
@@ -58,15 +71,14 @@ jobs:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          YOUTUBE_TOKEN_FILE: secrets/youtube_token.json
         # Scheduled runs publish for real (public); manual runs default to
         # private so you can sanity-check a run without publishing it live.
         # run_daily.py loops over every track (kids/teens/adults/women),
-        # skipping any with an empty queue or already produced today, and
-        # aborting the whole run (not a failure — exit code stays 0) if
-        # Cloudflare's image quota is exhausted, retried by the next
-        # scheduled run. It exits non-zero only on a real per-track
-        # failure, which fails this job so that's visible.
+        # skipping any with an empty queue, no OAuth token yet, or already
+        # produced today, and aborting the whole run (not a failure — exit
+        # code stays 0) if Cloudflare's image quota is exhausted, retried
+        # by the next scheduled run. It exits non-zero only on a real
+        # per-track failure, which fails this job so that's visible.
         run: |
           PRIVACY="${{ github.event_name == 'workflow_dispatch' && inputs.privacy || 'public' }}"
           python run_daily.py --privacy "$PRIVACY"

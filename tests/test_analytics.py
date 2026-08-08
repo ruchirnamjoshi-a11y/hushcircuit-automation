@@ -1,4 +1,5 @@
 from datetime import date
+from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 from pipeline.analytics import (
@@ -8,6 +9,8 @@ from pipeline.analytics import (
     fetch_top_videos,
     write_report,
 )
+
+FAKE_TOKEN_PATH = Path("/fake/youtube_token_kids.json")
 
 CHANNEL_RESPONSE = {
     "columnHeaders": [
@@ -47,14 +50,14 @@ def _mock_service(response):
 
 def test_fetch_channel_metrics_returns_first_row_as_dict():
     with patch("pipeline.analytics.get_analytics_service", return_value=_mock_service(CHANNEL_RESPONSE)):
-        result = fetch_channel_metrics(date(2026, 7, 1), date(2026, 7, 7))
+        result = fetch_channel_metrics(FAKE_TOKEN_PATH, date(2026, 7, 1), date(2026, 7, 7))
     assert result["views"] == 1200
     assert result["subscribersGained"] == 15
 
 
 def test_fetch_top_videos_returns_all_rows():
     with patch("pipeline.analytics.get_analytics_service", return_value=_mock_service(VIDEO_RESPONSE)):
-        result = fetch_top_videos(date(2026, 7, 1), date(2026, 7, 7))
+        result = fetch_top_videos(FAKE_TOKEN_PATH, date(2026, 7, 1), date(2026, 7, 7))
     assert len(result) == 2
     assert result[0]["video"] == "abc123"
     assert result[0]["views"] == 800
@@ -63,25 +66,27 @@ def test_fetch_top_videos_returns_all_rows():
 def test_build_report_combines_channel_and_video_data():
     with patch("pipeline.analytics.fetch_channel_metrics", return_value={"views": 1200}), \
          patch("pipeline.analytics.fetch_top_videos", return_value=[{"video": "abc123", "views": 800}]):
-        report = build_report(days=7)
+        report = build_report(FAKE_TOKEN_PATH, days=7)
 
     assert report["channel"] == {"views": 1200}
     assert report["top_videos"] == [{"video": "abc123", "views": 800}]
     assert report["start_date"] < report["end_date"]
 
 
-def test_write_report_writes_json_and_markdown(tmp_path):
+def test_write_report_writes_json_and_markdown_per_track(tmp_path):
     report = {
         "start_date": "2026-07-01", "end_date": "2026-07-07",
         "channel": {"views": 1200, "subscribersGained": 15},
         "top_videos": [{"video": "abc123", "views": 800}],
     }
-    json_path, md_path = write_report(report, reports_dir=tmp_path)
+    json_path, md_path = write_report(report, "kids", "Kids", reports_dir=tmp_path)
 
     assert json_path.exists() and json_path.name == "2026-07-07.json"
+    assert json_path.parent.name == "kids"
     assert md_path.exists() and md_path.name == "2026-07-07.md"
 
     md_content = md_path.read_text()
     assert "Weekly Analytics Report" in md_content
+    assert "Kids" in md_content
     assert "views" in md_content
     assert "abc123" in md_content

@@ -29,13 +29,37 @@ def test_run_track_dry_run_ignores_already_produced_today(tmp_path):
     mock_check.assert_not_called()
 
 
+def test_run_track_skips_if_no_youtube_token_yet(tmp_path):
+    missing_token = tmp_path / "no_such_token.json"
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=missing_token), \
+         patch("run_daily.load_next_pending") as mock_load:
+        result = run_daily.run_track(KIDS_TRACK, dry_run=False)
+
+    assert result is True
+    mock_load.assert_not_called()  # never even looked at the queue
+
+
+def test_run_track_dry_run_ignores_missing_youtube_token(tmp_path):
+    missing_token = tmp_path / "no_such_token.json"
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=missing_token), \
+         patch("run_daily.load_next_pending", return_value=None):
+        result = run_daily.run_track(KIDS_TRACK, dry_run=True)
+
+    assert result is True
+
+
 def test_run_track_raises_quota_exhausted_from_first_scene_probe(tmp_path):
     fake_script = MagicMock()
     fake_script.title = "Test"
     fake_script.id = "test-id"
     fake_script.scenes = [MagicMock(), MagicMock()]
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
 
     with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
          patch("run_daily.generate_scene_image_raw", side_effect=CloudflareQuotaExhausted("exhausted")) as mock_gen, \
@@ -81,8 +105,11 @@ def test_run_track_marks_produced_today_only_on_real_success(tmp_path):
     fake_script.title = "Test"
     fake_script.id = "test-id"
     fake_script.scenes = [MagicMock(), MagicMock()]
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
 
     with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
          patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)), \
