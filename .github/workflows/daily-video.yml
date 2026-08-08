@@ -2,7 +2,13 @@ name: Daily Video
 
 on:
   schedule:
-    - cron: '0 14 * * *' # 14:00 UTC daily — adjust to your audience's timezone
+    # Every 4 hours, not once a day: if Cloudflare's free image quota is
+    # exhausted, run_daily.py aborts the whole run rather than publishing a
+    # video with no matching artwork (see run_daily.py's docstring) —
+    # running repeatedly lets that abort get retried later the same day
+    # once quota resets. pipeline/state.py stops a track that already
+    # succeeded earlier in the day from being produced again.
+    - cron: '0 */4 * * *'
   workflow_dispatch:
     inputs:
       privacy:
@@ -56,21 +62,23 @@ jobs:
         # Scheduled runs publish for real (public); manual runs default to
         # private so you can sanity-check a run without publishing it live.
         # run_daily.py loops over every track (kids/teens/adults/women),
-        # skipping any with an empty queue and continuing past a single
-        # track's failure so the others still get produced; it exits
-        # non-zero if any track failed, which fails this job so it's visible.
+        # skipping any with an empty queue or already produced today, and
+        # aborting the whole run (not a failure — exit code stays 0) if
+        # Cloudflare's image quota is exhausted, retried by the next
+        # scheduled run. It exits non-zero only on a real per-track
+        # failure, which fails this job so that's visible.
         run: |
           PRIVACY="${{ github.event_name == 'workflow_dispatch' && inputs.privacy || 'public' }}"
           python run_daily.py --privacy "$PRIVACY"
 
-      - name: Commit consumed scripts back to the queue
+      - name: Commit consumed scripts and daily-production state
         # Runs even if the pipeline step failed a track, so any tracks that
-        # DID succeed still get their consumed script committed.
+        # DID succeed still get their consumed script + state committed.
         if: always()
         run: |
           git config user.name "youtube-automation-bot"
           git config user.email "actions@users.noreply.github.com"
           git add scripts_queue/
-          git diff --cached --quiet || git commit -m "chore: consume next queued scripts [skip ci]"
+          git diff --cached --quiet || git commit -m "chore: consume queued scripts / update daily state [skip ci]"
           git push
 
