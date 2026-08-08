@@ -1,0 +1,70 @@
+{
+  "id": "the-tryout",
+  "title": "The Tryout \u2014 A Short Story",
+  "description": "A shy teenager gets a second chance to prove herself on the soccer field, one year after a mistake she never forgot.",
+  "tags": [
+    "short story",
+    "ya fiction",
+    "relatable story",
+    "sports story",
+    "confidence"
+  ],
+  "scenes": [
+    {
+      "narration": "Maya sat on the bench, lacing up her cleats with shaking hands. Today was tryouts, and she had promised herself she wouldn't chicken out again.",
+      "on_screen_text": "THE TRYOUT",
+      "duration_hint": 10.9,
+      "short_worthy": true,
+      "visual": "a teenage girl lacing up soccer cleats on a bench, focused and nervous expression, close-up"
+    },
+    {
+      "narration": "Last year, she missed the easiest goal of the game, right in front of everyone. She still remembered the laughter. She never went back, until now.",
+      "on_screen_text": "LAST YEAR'S MISTAKE",
+      "duration_hint": 11.3,
+      "short_worthy": false,
+      "visual": "a teenage girl standing alone on a grassy field at dusk, head down, a soccer ball rolling away from her"
+    },
+    {
+      "narration": "Her older sister sat beside her the night before. \"Everyone falls, Maya,\" she said. \"The only real mistake is not trying again.\"",
+      "on_screen_text": "HER SISTER'S PUSH",
+      "duration_hint": 9.6,
+      "short_worthy": true,
+      "visual": "two teenage sisters sitting together on a porch step at sunset, one comforting the other with an arm around her shoulder"
+    },
+    {
+      "narration": "So there she was, walking onto the field again, heart pounding, trying not to think about last year at all.",
+      "on_screen_text": "BACK ON THE FIELD",
+      "duration_hint": 8.7,
+      "short_worthy": false,
+      "visual": "a teenage girl running onto a green soccer field, other players warming up blurred in the background"
+    },
+    {
+      "narration": "Five minutes in, she tripped chasing the ball and hit the grass hard. For a second, she wanted to disappear.",
+      "on_screen_text": "THE STUMBLE",
+      "duration_hint": 8.7,
+      "short_worthy": false,
+      "visual": "a teenage girl falling while chasing a soccer ball on grass, motion blur, dramatic angle"
+    },
+    {
+      "narration": "But her best friend on the sideline just laughed kindly and shouted, \"Get up, superstar!\" Maya couldn't help but laugh too, and she got back up.",
+      "on_screen_text": "A FRIEND CHEERS",
+      "duration_hint": 11.3,
+      "short_worthy": true,
+      "visual": "two teenage girls high-fiving on a sunny soccer field, big genuine smiles"
+    },
+    {
+      "narration": "By the end of tryouts, she'd scored once and helped twice. When her name was called for the team, she screamed loud enough for the whole field to hear.",
+      "on_screen_text": "SHE MADE IT",
+      "duration_hint": 12.6,
+      "short_worthy": true,
+      "visual": "a teenage girl jumping and cheering alone on a field at golden hour, arms raised in triumph"
+    },
+    {
+      "narration": "Maya learned that the story doesn't end at the mistake. Follow along for a new story every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.8,
+      "short_worthy": true,
+      "visual": "two teenage friends laughing together while sitting on a park bench, warm evening light"
+    }
+  ]
+}

@@ -204,8 +204,8 @@ SAMPLE_SCRIPT = {
     "description": "test",
     "tags": [],
     "scenes": [
-        {"narration": "hook", "on_screen_text": "HOOK", "duration_hint": 3, "short_worthy": True},
-        {"narration": "outro", "on_screen_text": "OUTRO", "duration_hint": 4, "short_worthy": True},
+        {"narration": "hook", "on_screen_text": "HOOK", "duration_hint": 3},
+        {"narration": "outro", "on_screen_text": "OUTRO", "duration_hint": 4},
     ],
 }
 

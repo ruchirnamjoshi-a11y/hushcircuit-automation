@@ -5,13 +5,15 @@ from unittest.mock import MagicMock, patch
 from PIL import Image
 
 from pipeline.ai_image import build_prompt, fit_scene_image, generate_scene_image_raw
+from pipeline.config import TRACKS
 from pipeline.scripts import Scene
 
+KIDS_TRACK = TRACKS["kids"]
+
 SAMPLE_SCENE = Scene(
-    narration="Trick one: give it a role. Instead of asking a plain question, tell ChatGPT who to be.",
+    narration="Once upon a time there was a small rabbit named Pip.",
     on_screen_text="GIVE IT A ROLE",
     duration_hint=45,
-    short_worthy=False,
 )
 
 
@@ -25,11 +27,23 @@ def _fake_cf_response(image: Image.Image, success: bool = True) -> MagicMock:
     return mock_response
 
 
-def test_build_prompt_includes_on_screen_text_and_style():
-    prompt = build_prompt(SAMPLE_SCENE)
+def test_build_prompt_includes_concept_and_track_style():
+    prompt = build_prompt(SAMPLE_SCENE, KIDS_TRACK)
     assert "give it a role" in prompt
-    assert "flat vector illustration" in prompt
     assert "no text" in prompt
+    assert KIDS_TRACK.image_style_suffix in prompt
+
+
+def test_build_prompt_prefers_visual_over_on_screen_text():
+    scene = Scene(
+        narration="...",
+        on_screen_text="GIVE IT A ROLE",
+        duration_hint=10,
+        visual="a small robot wearing a tiny crown",
+    )
+    prompt = build_prompt(scene, KIDS_TRACK)
+    assert "a small robot wearing a tiny crown" in prompt
+    assert "give it a role" not in prompt
 
 
 def test_build_prompt_substitutes_trigger_words():
@@ -37,18 +51,23 @@ def test_build_prompt_substitutes_trigger_words():
         narration="...",
         on_screen_text="SUBSCRIBE FOR FREE TIPS",
         duration_hint=10,
-        short_worthy=False,
     )
-    prompt = build_prompt(scene)
+    prompt = build_prompt(scene, KIDS_TRACK)
     assert "follow" in prompt
     assert "no-cost" in prompt
     assert "subscribe" not in prompt.lower()
     assert "free" not in prompt.lower()
 
 
+def test_build_prompt_varies_by_track():
+    kids_prompt = build_prompt(SAMPLE_SCENE, TRACKS["kids"])
+    women_prompt = build_prompt(SAMPLE_SCENE, TRACKS["women"])
+    assert kids_prompt != women_prompt
+
+
 def test_generate_scene_image_raw_falls_back_to_gradient_when_no_credentials(tmp_path):
     with patch("pipeline.ai_image.CF_ACCOUNT_ID", ""), patch("pipeline.ai_image.CF_API_TOKEN", ""):
-        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png")
+        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK)
     assert out.exists()
     assert used_fallback is True
     assert Image.open(out).mode in ("RGB", "RGBA")
@@ -59,10 +78,51 @@ def test_generate_scene_image_raw_falls_back_after_all_retries_fail(tmp_path):
          patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
          patch("pipeline.ai_image.requests.post", side_effect=RuntimeError("simulated API failure")), \
          patch("pipeline.ai_image.time.sleep"):
-        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", retries=2)
+        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK, retries=2)
 
     assert out.exists()
     assert used_fallback is True
+
+
+def test_generate_scene_image_raw_skips_retries_on_quota_exhaustion(tmp_path):
+    mock_response = MagicMock()
+    mock_response.status_code = 429
+    mock_response.json.return_value = {
+        "success": False,
+        "errors": [{"message": "you have used up your daily free allocation of 10,000 neurons", "code": 4006}],
+    }
+
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.ai_image.time.sleep") as mock_sleep:
+        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK, retries=2)
+
+    assert used_fallback is True
+    # exactly one attempt — no retries, no backoff sleep for a lost cause
+    assert mock_post.call_count == 1
+    mock_sleep.assert_not_called()
+
+
+def test_generate_scene_image_raw_backs_off_longer_on_rate_limit(tmp_path):
+    import requests as requests_module
+
+    fake_response = MagicMock()
+    fake_response.status_code = 429
+    fake_response.headers = {}
+    rate_limit_error = requests_module.exceptions.HTTPError("429 Too Many Requests")
+    rate_limit_error.response = fake_response
+
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", side_effect=rate_limit_error), \
+         patch("pipeline.ai_image.time.sleep") as mock_sleep:
+        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK, retries=1)
+
+    assert used_fallback is True
+    # first retry backoff should use the longer rate-limit delay, not the short default
+    from pipeline.ai_image import RATE_LIMIT_RETRY_DELAY_SECONDS
+    assert mock_sleep.call_args_list[0].args[0] == RATE_LIMIT_RETRY_DELAY_SECONDS
 
 
 def test_generate_scene_image_raw_succeeds_saves_native_resolution(tmp_path):
@@ -71,8 +131,9 @@ def test_generate_scene_image_raw_succeeds_saves_native_resolution(tmp_path):
 
     with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
          patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
-         patch("pipeline.ai_image.requests.post", return_value=mock_response) as mock_post:
-        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png")
+         patch("pipeline.ai_image.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.ai_image.time.sleep"):
+        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK)
 
     assert used_fallback is False
     assert Image.open(out).size == (1024, 768)  # untouched, no crop yet
@@ -92,7 +153,7 @@ def test_generate_scene_image_raw_treats_success_false_as_failure(tmp_path):
          patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
          patch("pipeline.ai_image.requests.post", return_value=mock_response), \
          patch("pipeline.ai_image.time.sleep"):
-        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", retries=1)
+        out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK, retries=1)
 
     assert used_fallback is True
 

@@ -22,7 +22,10 @@ permissions:
 jobs:
   produce-and-upload:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # run_daily.py produces one video per story track (kids/teens/adults/
+    # women) in a single run, so this needs headroom for ~4x the work of a
+    # single video.
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
 
@@ -43,7 +46,7 @@ jobs:
           mkdir -p secrets
           echo "${{ secrets.YOUTUBE_TOKEN_B64 }}" | base64 -d > secrets/youtube_token.json
 
-      - name: Run daily pipeline
+      - name: Run daily pipeline (all story tracks)
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
@@ -52,15 +55,22 @@ jobs:
           YOUTUBE_TOKEN_FILE: secrets/youtube_token.json
         # Scheduled runs publish for real (public); manual runs default to
         # private so you can sanity-check a run without publishing it live.
+        # run_daily.py loops over every track (kids/teens/adults/women),
+        # skipping any with an empty queue and continuing past a single
+        # track's failure so the others still get produced; it exits
+        # non-zero if any track failed, which fails this job so it's visible.
         run: |
           PRIVACY="${{ github.event_name == 'workflow_dispatch' && inputs.privacy || 'public' }}"
           python run_daily.py --privacy "$PRIVACY"
 
-      - name: Commit consumed script back to the queue
+      - name: Commit consumed scripts back to the queue
+        # Runs even if the pipeline step failed a track, so any tracks that
+        # DID succeed still get their consumed script committed.
+        if: always()
         run: |
           git config user.name "youtube-automation-bot"
           git config user.email "actions@users.noreply.github.com"
           git add scripts_queue/
-          git diff --cached --quiet || git commit -m "chore: consume next queued script [skip ci]"
+          git diff --cached --quiet || git commit -m "chore: consume next queued scripts [skip ci]"
           git push
 

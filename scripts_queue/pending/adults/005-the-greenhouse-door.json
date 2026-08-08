@@ -1,0 +1,56 @@
+{
+  "id": "the-greenhouse-door",
+  "title": "The Greenhouse Door",
+  "description": "Facing an empty nest, Sarah turns her backyard shed into a sanctuary of new growth and quiet purpose.",
+  "tags": [
+    "empty nest",
+    "parenthood",
+    "healing",
+    "gardening",
+    "new beginnings"
+  ],
+  "scenes": [
+    {
+      "narration": "The day her youngest child packed the car for college, Sarah stood in the driveway until the tail lights disappeared down the street. The house behind her felt impossibly large.",
+      "on_screen_text": "THE SILENT HOUSE",
+      "duration_hint": 13.5,
+      "visual": "A middle aged woman standing alone in a driveway watching sunset shadows"
+    },
+    {
+      "narration": "She walked to the backyard shed, where old bicycles and dusty soccer balls sat covered in cobwebs. The noise of a busy family was gone, replaced by an uncomfortable quiet.",
+      "on_screen_text": "AN EMPTY PLACE",
+      "duration_hint": 13.0,
+      "visual": "An old wooden garden shed filled with discarded lawn chairs and sports equipment"
+    },
+    {
+      "narration": "Instead of sitting inside with the quiet, she spent the weekend clearing out the rusty junk. She replaced broken window panes and set up wooden potting benches.",
+      "on_screen_text": "CLEARING SPACE",
+      "duration_hint": 12.2,
+      "visual": "A woman carrying old wooden crates out of a bright glass greenhouse enclosure"
+    },
+    {
+      "narration": "She planted rows of rosemary, lavender, and heirloom tomato seeds. Her hands were caked in rich soil, and for the first time in weeks, her mind felt calm.",
+      "on_screen_text": "PLANTING SEEDS",
+      "duration_hint": 12.6,
+      "visual": "Close up of hands gently pressing small green sprouts into dark potting soil"
+    },
+    {
+      "narration": "Weeks passed, and tiny green shoots pushed through the dark earth. She was still a mother, but she was also learning how to cultivate a life of her own again.",
+      "on_screen_text": "NEW GROWTH",
+      "duration_hint": 13.0,
+      "visual": "Small green seedlings sprouting in clay pots lined up on a sunlit wooden bench"
+    },
+    {
+      "narration": "Children grow up and leave, but the love you spent twenty years giving them can be turned right back toward your own soil.",
+      "on_screen_text": "RETURNING TO YOURSELF",
+      "duration_hint": 10.9,
+      "visual": "A smiling woman watering vibrant green plants inside a sunlit glass greenhouse"
+    },
+    {
+      "narration": "Follow along for more heartfelt stories about navigating life transitions and finding hope.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "A calm backyard garden brimming with blooming flowers and lush greenery"
+    }
+  ]
+}

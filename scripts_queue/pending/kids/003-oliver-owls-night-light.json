@@ -1,0 +1,56 @@
+{
+  "id": "oliver-owls-night-light",
+  "title": "Oliver Owl's Night Light",
+  "description": "A comforting tale about a young owl who learns to see the beauty in nighttime shadows.",
+  "tags": [
+    "bedtime",
+    "owl",
+    "courage",
+    "kids story",
+    "night"
+  ],
+  "scenes": [
+    {
+      "narration": "High in a tall pine tree, little Oliver Owl was supposed to love the dark, but shadows made him nervous.",
+      "on_screen_text": "THE LITTLE OWL",
+      "duration_hint": 7.0,
+      "visual": "cute baby owl sitting on a tree branch looking timidly at the dusk sky"
+    },
+    {
+      "narration": "When the sun went down, the forest turned dark and mysterious, making Oliver snuggle deeper into his nest.",
+      "on_screen_text": "DARKNESS FALLS",
+      "duration_hint": 7.0,
+      "visual": "dark blue evening forest with soft shadows and glowing blue atmospheric mist"
+    },
+    {
+      "narration": "Suddenly, a small yellow light flickered near his beak. It was a tiny firefly floating on the breeze.",
+      "on_screen_text": "A SPARK OF LIGHT",
+      "duration_hint": 7.0,
+      "visual": "glowing yellow firefly fluttering right in front of a wide eyed baby owl"
+    },
+    {
+      "narration": "More fireflies joined in, dancing together like tiny floating stars across the quiet forest night.",
+      "on_screen_text": "DANCING FIREFLIES",
+      "duration_hint": 7.0,
+      "visual": "dozens of sparkling fireflies lighting up the dark green branches of a forest tree"
+    },
+    {
+      "narration": "Oliver realized the night was full of gentle glowing lights if he just remembered where to look.",
+      "on_screen_text": "BEAUTY IN THE DARK",
+      "duration_hint": 7.0,
+      "visual": "happy little owl watching tiny lights twinkle around his tree branch"
+    },
+    {
+      "narration": "He spread his wings and took a brave, peaceful glide through the warm lantern glow of the woods.",
+      "on_screen_text": "A BRAVE FLYER",
+      "duration_hint": 7.0,
+      "visual": "baby owl gliding gracefully through the night sky surrounded by floating golden sparks"
+    },
+    {
+      "narration": "The dark is full of friendly starlight. Rest well little owl, and follow along for more bedtime adventures.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "little owl tucked comfortably in a cozy nest sleeping under a starry moonlit sky"
+    }
+  ]
+}

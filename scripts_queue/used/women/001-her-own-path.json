@@ -1,0 +1,70 @@
+{
+  "id": "her-own-path",
+  "title": "Her Own Path \u2014 A Story About Choosing Yourself",
+  "description": "A woman who spent a decade building the career her family wanted finally chooses the dream she kept secret.",
+  "tags": [
+    "short story",
+    "women's story",
+    "inspiring story",
+    "career change",
+    "self discovery"
+  ],
+  "scenes": [
+    {
+      "narration": "Elena stood at the edge of the path, suitcase in hand, thirty-four years old and about to make the first choice in a decade that was entirely her own.",
+      "on_screen_text": "HER OWN PATH",
+      "duration_hint": 12.6,
+      "short_worthy": true,
+      "visual": "a woman standing at a crossroads path in a park at sunrise, one hand on a suitcase"
+    },
+    {
+      "narration": "She'd spent ten years climbing a ladder she never really chose, working late so her parents could tell their friends how well she'd done.",
+      "on_screen_text": "THE CAREER SHE BUILT",
+      "duration_hint": 10.4,
+      "short_worthy": false,
+      "visual": "a woman sitting at a sleek office desk late at night, tired, staring at a glowing laptop screen alone"
+    },
+    {
+      "narration": "But at home, in a drawer nobody opened, there was a notebook full of recipes in her grandmother's handwriting, and a dream she never said out loud.",
+      "on_screen_text": "THE SECRET DREAM",
+      "duration_hint": 11.7,
+      "short_worthy": true,
+      "visual": "close-up of a woman's hands flipping through a well-worn handwritten recipe notebook at a kitchen counter, warm light"
+    },
+    {
+      "narration": "A scare at the doctor's office, nothing serious in the end, but enough to make her sit in the waiting room and ask herself what she was actually building toward.",
+      "on_screen_text": "THE WAKE-UP CALL",
+      "duration_hint": 13.0,
+      "short_worthy": false,
+      "visual": "a woman sitting alone in a hospital waiting room chair, hands clasped, looking out a window in thought"
+    },
+    {
+      "narration": "The next morning, she closed her laptop for the last time, hands shaking, and felt lighter than she had in years.",
+      "on_screen_text": "CHOOSING HERSELF",
+      "duration_hint": 9.1,
+      "short_worthy": true,
+      "visual": "a woman closing a laptop decisively at her office desk, a small determined smile"
+    },
+    {
+      "narration": "She spent the next month with flour on her hands instead of a keyboard, relearning her grandmother's recipes one loaf at a time.",
+      "on_screen_text": "FLOUR ON HER HANDS",
+      "duration_hint": 10.0,
+      "short_worthy": false,
+      "visual": "close-up of a woman's hands kneading bread dough on a warm sunlit kitchen counter"
+    },
+    {
+      "narration": "On opening morning, she tied her apron with shaking hands, the smell of fresh bread filling the small kitchen. Nervous, and prouder than she'd ever been.",
+      "on_screen_text": "HER FIRST MORNING",
+      "duration_hint": 11.3,
+      "short_worthy": true,
+      "visual": "a woman tying an apron behind her back in a small warm bakery kitchen, soft morning light, close-up"
+    },
+    {
+      "narration": "Sometimes the bravest thing you can do is choose the life nobody asked you to want. Follow along for a new story every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.4,
+      "short_worthy": true,
+      "visual": "a woman smiling warmly while holding a fresh loaf of bread in a sunlit kitchen"
+    }
+  ]
+}

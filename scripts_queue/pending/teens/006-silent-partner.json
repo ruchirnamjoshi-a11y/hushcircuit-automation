@@ -1,0 +1,56 @@
+{
+  "id": "silent-partner",
+  "title": "Silent Partner",
+  "description": "Chloe always stayed in the background during group projects until a tight deadline forced her to step up as leader.",
+  "tags": [
+    "leadership",
+    "school",
+    "social-anxiety",
+    "voice",
+    "confidence"
+  ],
+  "scenes": [
+    {
+      "narration": "I was always the student who stayed quiet in group projects and did whatever work was assigned to me.",
+      "on_screen_text": "THE QUIET ONE",
+      "duration_hint": 10.0,
+      "visual": "Teen girl sitting quietly at a group table while others talk around her"
+    },
+    {
+      "narration": "When our group leader dropped out two days before our big history presentation, everyone panicked.",
+      "on_screen_text": "CHAOS IN THE GROUP",
+      "duration_hint": 9.0,
+      "visual": "Group of teens looking stressed around a table scattered with books and papers"
+    },
+    {
+      "narration": "No one knew how to structure the remaining slides, and the silence in the room grew heavy.",
+      "on_screen_text": "DEAD SILENCE",
+      "duration_hint": 9.0,
+      "visual": "Close-up of a teen girl looking down nervously at a notebook"
+    },
+    {
+      "narration": "My heart pounded in my ears, but I spoke up and shared the outline I had quietly drafted.",
+      "on_screen_text": "FINDING MY VOICE",
+      "duration_hint": 9.0,
+      "visual": "Teen girl looking up with a determined expression while pointing at a notebook page"
+    },
+    {
+      "narration": "They actually listened. For the next two hours, I guided the team on who would present each section.",
+      "on_screen_text": "TAKING CONTROL",
+      "duration_hint": 10.0,
+      "visual": "Teen girl explaining an idea with animated hand gestures to engaged classmates"
+    },
+    {
+      "narration": "When we finished our presentation, my teacher gave us a nod of real respect. I wasn't invisible anymore.",
+      "on_screen_text": "EARNED RESPECT",
+      "duration_hint": 10.0,
+      "visual": "Teen girl walking back to her seat with a quiet confident smile in a classroom"
+    },
+    {
+      "narration": "Your voice matters even when you think nobody is listening. Follow along for more inspiring daily stories!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Teen girl holding a folder looking warmly into the camera in a sunlit hallway"
+    }
+  ]
+}

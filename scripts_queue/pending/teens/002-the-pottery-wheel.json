@@ -1,0 +1,56 @@
+{
+  "id": "the-pottery-wheel",
+  "title": "The Pottery Wheel",
+  "description": "Maya tries pottery to step outside her comfort zone, but a messy failure forces her to redefine what perfection really means.",
+  "tags": [
+    "art",
+    "coming-of-age",
+    "self-expression",
+    "creativity",
+    "teen-drama"
+  ],
+  "scenes": [
+    {
+      "narration": "I swore I would try one new thing this semester, so I signed up for ceramics. Thirty seconds in, my clay collapsed into a grey puddle.",
+      "on_screen_text": "THE COMFORT ZONE",
+      "duration_hint": 11.0,
+      "visual": "Teen girl staring dismayed at a messy blob of grey clay on a spinning wheel in a sunlit art studio"
+    },
+    {
+      "narration": "Everyone else was crafting sleek vases, while I couldn't even keep my hands steady. The instructor offered to help, but panic made me pull back.",
+      "on_screen_text": "OUT OF PLACE",
+      "duration_hint": 11.0,
+      "visual": "Focus on hesitant hands covered in wet clay hovering over a pottery wheel"
+    },
+    {
+      "narration": "I walked out of class feeling like a total fake. I almost dropped the course right then on my phone in the hallway.",
+      "on_screen_text": "THE RETREAT",
+      "duration_hint": 10.0,
+      "visual": "Teenage girl leaning against a locker wall looking down at her phone with an anxious expression"
+    },
+    {
+      "narration": "That night, I watched videos of artists embracing imperfection. They didn't fight the clay, they guided it gently without forcing symmetry.",
+      "on_screen_text": "A NEW ANGLE",
+      "duration_hint": 10.0,
+      "visual": "Glow of a smartphone screen reflecting on a girl face in a dark bedroom at night"
+    },
+    {
+      "narration": "The next week, I sat down and let go of trying to make a perfect bowl. Instead of fixing a wobble, I turned it into a textured lip.",
+      "on_screen_text": "EMBRACING THE MESS",
+      "duration_hint": 11.0,
+      "visual": "Girl hands shaping messy clay into a unique rustic bowl with focused determination"
+    },
+    {
+      "narration": "When it came out of the kiln, it wasn't neat, but it was mine. A classmate even asked how I got that custom wave shape.",
+      "on_screen_text": "OWNING THE FLAWS",
+      "duration_hint": 11.0,
+      "visual": "Smiling teen girl holding a glazed ceramic bowl with wavy edges near a sunlit window"
+    },
+    {
+      "narration": "Sometimes the best creations come from leaning into your mistakes. Follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "Young woman smiling warmly at the camera in a cozy room with soft warm lighting"
+    }
+  ]
+}

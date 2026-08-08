@@ -18,12 +18,17 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
 
-from pipeline.config import YOUTUBE_CLIENT_SECRET_FILE, YOUTUBE_SCOPES, YOUTUBE_TOKEN_FILE
+from pipeline.config import (
+    CATEGORY_ENTERTAINMENT,
+    YOUTUBE_CLIENT_SECRET_FILE,
+    YOUTUBE_SCOPES,
+    YOUTUBE_TOKEN_FILE,
+    Track,
+)
 from pipeline.scripts import Script
 
 API_SERVICE_NAME = "youtube"
 API_VERSION = "v3"
-CATEGORY_SCIENCE_TECH = "28"
 
 
 def load_credentials() -> Credentials:
@@ -59,17 +64,24 @@ def get_service():
     return build(API_SERVICE_NAME, API_VERSION, credentials=load_credentials())
 
 
-def build_upload_body(title: str, description: str, tags: list[str], privacy_status: str = "private") -> dict:
+def build_upload_body(
+    title: str,
+    description: str,
+    tags: list[str],
+    privacy_status: str = "private",
+    category_id: str = CATEGORY_ENTERTAINMENT,
+    made_for_kids: bool = False,
+) -> dict:
     return {
         "snippet": {
             "title": title[:100],
             "description": description[:5000],
             "tags": tags[:500],
-            "categoryId": CATEGORY_SCIENCE_TECH,
+            "categoryId": category_id,
         },
         "status": {
             "privacyStatus": privacy_status,
-            "selfDeclaredMadeForKids": False,
+            "selfDeclaredMadeForKids": made_for_kids,
         },
     }
 
@@ -81,8 +93,10 @@ def upload_video(
     tags: list[str],
     privacy_status: str = "private",
     dry_run: bool = False,
+    category_id: str = CATEGORY_ENTERTAINMENT,
+    made_for_kids: bool = False,
 ) -> dict:
-    body = build_upload_body(title, description, tags, privacy_status)
+    body = build_upload_body(title, description, tags, privacy_status, category_id, made_for_kids)
     if dry_run:
         return {"dry_run": True, "video_path": str(video_path), "body": body}
 
@@ -105,38 +119,40 @@ def set_thumbnail(video_id: str, thumbnail_path: Path, dry_run: bool = False) ->
 
 def upload_daily_video(
     script: Script,
-    long_form_path: Path,
-    short_path: Path,
+    video_path: Path,
     thumbnail_path: Path,
+    track: Track,
     privacy_status: str = "private",
     dry_run: bool = False,
 ) -> dict:
-    long_result = upload_video(
-        long_form_path, script.title, script.description, script.tags, privacy_status, dry_run
-    )
-
-    short_title = script.title if len(script.title) <= 90 else script.title[:87] + "..."
-    short_result = upload_video(
-        short_path, f"{short_title} #shorts", script.description, [*script.tags, "shorts"],
-        privacy_status, dry_run,
+    """Uploads the single vertical Short that carries the full story. One
+    upload per track per day — this keeps YouTube Data API quota usage to
+    ~1,650 units/track (video + thumbnail), so 4 tracks/day fits well inside
+    the default 10,000 units/day free quota. Uploading a separate long-form
+    video too would roughly double that and blow past the daily cap."""
+    tags = [*script.tags, *track.extra_tags, "shorts"]
+    title = script.title if len(script.title) <= 90 else script.title[:87] + "..."
+    video_result = upload_video(
+        video_path, f"{title} #shorts", script.description, tags, privacy_status, dry_run,
+        category_id=track.category_id, made_for_kids=track.made_for_kids,
     )
 
     if dry_run:
         thumb_result = set_thumbnail("DRY_RUN_VIDEO_ID", thumbnail_path, dry_run=True)
     else:
         try:
-            thumb_result = set_thumbnail(long_result["video_id"], thumbnail_path, dry_run=False)
+            thumb_result = set_thumbnail(video_result["video_id"], thumbnail_path, dry_run=False)
         except HttpError as e:
             # Custom thumbnails require a phone-verified channel (a YouTube
             # account restriction, not something the API key controls). Don't
             # let this abort the run — the video itself uploaded fine and
             # falls back to YouTube's auto-generated thumbnail.
             thumb_result = {
-                "dry_run": False, "video_id": long_result["video_id"],
+                "dry_run": False, "video_id": video_result["video_id"],
                 "error": f"thumbnail not set (channel likely needs phone verification at youtube.com/verify): {e}",
             }
 
-    return {"long_form": long_result, "short": short_result, "thumbnail": thumb_result}
+    return {"video": video_result, "thumbnail": thumb_result}
 
 
 def main() -> None:

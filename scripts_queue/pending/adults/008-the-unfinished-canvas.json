@@ -1,0 +1,56 @@
+{
+  "id": "the-unfinished-canvas",
+  "title": "The Unfinished Canvas",
+  "description": "Following a health scare, Maya picks up a paintbrush for the first time in thirty years and redefines success.",
+  "tags": [
+    "art",
+    "health journey",
+    "courage",
+    "reinvention",
+    "mindfulness"
+  ],
+  "scenes": [
+    {
+      "narration": "When the doctor gave Maya a clean bill of health after six months of intense treatment, she stood in the hospital parking lot and burst into tears of relief.",
+      "on_screen_text": "THE SECOND CHANCE",
+      "duration_hint": 13.5,
+      "visual": "A woman standing in a sunlit parking lot taking a deep breath with eyes closed"
+    },
+    {
+      "narration": "She went straight to an art supply store and bought a large blank canvas, three jars of acrylic paint, and two thick brushes.",
+      "on_screen_text": "BUYING THE CANVAS",
+      "duration_hint": 10.0,
+      "visual": "A woman carrying art supplies including a blank framed canvas down a quiet hallway"
+    },
+    {
+      "narration": "She had set aside her passion for painting when she started her accounting firm decades ago, promising herself she would return to it when she had more time.",
+      "on_screen_text": "PROMISES DELAYED",
+      "duration_hint": 12.6,
+      "visual": "Close up of a dusty old sketchbook sitting forgotten on a high closet shelf"
+    },
+    {
+      "narration": "Standing before the blank white canvas that night, her hand trembled. The fear of making a mistake almost made her set the brush down again.",
+      "on_screen_text": "FACING THE BLANK PAGE",
+      "duration_hint": 11.7,
+      "visual": "A woman holding a paintbrush saturated with blue paint poised above a blank white canvas"
+    },
+    {
+      "narration": "Then she swept a bold streak of deep cobalt blue across the center. It was not perfect, but it was alive, vibrant, and entirely hers.",
+      "on_screen_text": "THE FIRST STROKE",
+      "duration_hint": 11.3,
+      "visual": "Vibrant blue and yellow acrylic paint swooping across a white canvas texture"
+    },
+    {
+      "narration": "Life is far too short to leave your best ideas waiting on a shelf for some distant someday that may never arrive.",
+      "on_screen_text": "NO MORE SOMEDAYS",
+      "duration_hint": 10.0,
+      "visual": "A colorful abstract painting drying on an easel in a room flooded with sunlight"
+    },
+    {
+      "narration": "If you are ready to start painting your own story, make sure to follow along for daily inspiration.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.4,
+      "visual": "A woman covered in paint smudges smiling brightly beside her completed artwork"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "lulu-the-lambs-colorful-fleece",
+  "title": "Lulu the Lamb's Colorful Fleece",
+  "description": "A sweet story about a little lamb who learns to love her own simple wool just as it is.",
+  "tags": [
+    "self-love",
+    "lamb",
+    "bedtime",
+    "gentle",
+    "farm"
+  ],
+  "scenes": [
+    {
+      "narration": "In a rolling green meadow, Lulu the lamb felt plain compared to the bright wildflowers blooming everywhere.",
+      "on_screen_text": "THE PLAIN LITTLE LAMB",
+      "duration_hint": 7.0,
+      "visual": "fluffy white lamb standing in a meadow looking down at bright blue flowers"
+    },
+    {
+      "narration": "She rubbed against a bush of ripe red berries, coloring her soft wool in bright crimson spots.",
+      "on_screen_text": "A SPRAY OF COLOR",
+      "duration_hint": 7.0,
+      "visual": "cute lamb rubbing her white wool against a bush covered in glossy red berries"
+    },
+    {
+      "narration": "At first she felt fancy, but soon the berries felt sticky and itchy in the warm afternoon sunshine.",
+      "on_screen_text": "THE STICKY FEELING",
+      "duration_hint": 7.0,
+      "visual": "lamb looking uncomfortable and sticky with red patches on her fluffy coat"
+    },
+    {
+      "narration": "Lulu trotted down to the cool, clear stream and washed away the squishy fruit from her soft wool.",
+      "on_screen_text": "WASHING CLEAN",
+      "duration_hint": 7.0,
+      "visual": "white lamb standing cheerfully in shallow clear water splashing gently"
+    },
+    {
+      "narration": "Her mother wrapped her in a cozy hug, whispering how soft, clean, and warm her natural fleece truly was.",
+      "on_screen_text": "MOTHER'S WARM HUG",
+      "duration_hint": 7.0,
+      "visual": "mother sheep tenderly nuzzling her clean fluffy white lamb in the meadow"
+    },
+    {
+      "narration": "Lulu smiled, realizing she was perfect and cuddly just the way she was made to be.",
+      "on_screen_text": "PERFECT AS YOU ARE",
+      "duration_hint": 7.0,
+      "visual": "happy white lamb smiling brightly under a warm golden sunset sky"
+    },
+    {
+      "narration": "You are special just being you. Rest cozy tonight, and follow along for more sweet bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "little lamb snuggled comfortably in a soft barn bed sleeping peacefully"
+    }
+  ]
+}

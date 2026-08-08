@@ -1,0 +1,56 @@
+{
+  "id": "a-second-draft",
+  "title": "A Second Draft",
+  "description": "A former journalist finds an unexpected second chapter while organizing archives at a small town library.",
+  "tags": [
+    "second chances",
+    "mentorship",
+    "purpose",
+    "growing older",
+    "storytelling"
+  ],
+  "scenes": [
+    {
+      "narration": "At fifty-two, Robert lost his reporting job when the city newspaper shuttered its doors. He felt like a relic from a forgotten era in a world moving too fast.",
+      "on_screen_text": "THE END OF AN ERA",
+      "duration_hint": 13.5,
+      "visual": "A man in a trench coat looking at a closed brick building on an autumn afternoon"
+    },
+    {
+      "narration": "He took a part-time job archiving dusty regional history documents in the basement of a small town library, surrounded by stacks of yellowed newsprint.",
+      "on_screen_text": "IN THE ARCHIVES",
+      "duration_hint": 11.7,
+      "visual": "A man wearing glasses carefully sorting through old paper files in a quiet basement library"
+    },
+    {
+      "narration": "One afternoon, a teenager named Leo came downstairs looking for help with a local history essay. Robert saw the boy struggling to find the core of the story.",
+      "on_screen_text": "AN UNEXPECTED VISITOR",
+      "duration_hint": 12.6,
+      "visual": "A teenager sitting across a wooden table from an older man surrounded by book stacks"
+    },
+    {
+      "narration": "Robert sat down and showed him how to ask the right questions, how to listen for what people leave unsaid, and how to bring dead facts back to life.",
+      "on_screen_text": "PASSING THE TORCH",
+      "duration_hint": 13.0,
+      "visual": "An older man pointing to details on an old historical map laid out on a table"
+    },
+    {
+      "narration": "Over the next few months, more young students started coming down to the basement. Robert realized he had not lost his purpose, he had just changed his audience.",
+      "on_screen_text": "A NEW PURPOSE",
+      "duration_hint": 13.0,
+      "visual": "Three teenagers listening attentively to an older man in a cozy library setting"
+    },
+    {
+      "narration": "Your value is not tied to a corporate title or a desk. The wisdom you gathered along the way was meant to be shared.",
+      "on_screen_text": "WISDOM SHARED",
+      "duration_hint": 10.9,
+      "visual": "Close up of an older man smiling warmly while closing an old hardcover book"
+    },
+    {
+      "narration": "If you enjoy grounded stories about finding meaning at any age, follow along for more daily videos.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.8,
+      "visual": "A bright, warm library room with books lining wood shelves and sunlight pouring in"
+    }
+  ]
+}

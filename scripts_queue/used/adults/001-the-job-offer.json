@@ -1,0 +1,70 @@
+{
+  "id": "the-job-offer",
+  "title": "The Job Offer \u2014 A Story About New Beginnings",
+  "description": "A widowed father weighs a job offer that means leaving the only house his kids ever knew \u2014 and the memories inside it.",
+  "tags": [
+    "short story",
+    "life story",
+    "story time",
+    "new beginnings",
+    "life lessons"
+  ],
+  "scenes": [
+    {
+      "narration": "David read the email for the fifth time. A job offer, in a city three states away, three weeks after the layoff he still hadn't told his kids about.",
+      "on_screen_text": "THE JOB OFFER",
+      "duration_hint": 12.6,
+      "short_worthy": true,
+      "visual": "a middle-aged man sitting alone at a kitchen table at night, staring at an open laptop with a letter beside it"
+    },
+    {
+      "narration": "He walked down the hall and stopped at his son's old room, empty now, but he could still see the pencil marks on the doorframe from every birthday.",
+      "on_screen_text": "TWENTY YEARS IN ONE HOUSE",
+      "duration_hint": 12.2,
+      "short_worthy": false,
+      "visual": "a middle-aged man standing in an empty child's bedroom, looking at old height marks on a doorframe"
+    },
+    {
+      "narration": "In the living room, he sat beside the chair that used to be hers. He still talked to her sometimes, when the house got too quiet.",
+      "on_screen_text": "THE EMPTY CHAIR",
+      "duration_hint": 11.3,
+      "short_worthy": true,
+      "visual": "a middle-aged man sitting beside an empty armchair, holding an old photograph, warm lamp light"
+    },
+    {
+      "narration": "He found an old cardboard box and, almost without deciding to, started packing. A worn baseball glove. A stack of photographs. Twenty years, in one box.",
+      "on_screen_text": "PACKING THE FIRST BOX",
+      "duration_hint": 11.3,
+      "short_worthy": false,
+      "visual": "close-up of a middle-aged man's hands packing old photographs and a worn baseball glove into a cardboard box"
+    },
+    {
+      "narration": "His daughter called that night. \"Dad, take the job,\" she said. \"The memories aren't in the walls. They're in us. We're coming with you either way.\"",
+      "on_screen_text": "A CALL FROM HIS DAUGHTER",
+      "duration_hint": 11.3,
+      "short_worthy": false,
+      "visual": "a middle-aged man smiling gently while talking on the phone, sitting on a porch step at dusk"
+    },
+    {
+      "narration": "He stood in the doorway one last time, suitcase in hand, looking back at the empty living room. Scared, but for the first time in months, hopeful too.",
+      "on_screen_text": "THE DECISION",
+      "duration_hint": 12.2,
+      "short_worthy": true,
+      "visual": "a middle-aged man standing in a doorway with a suitcase, looking back at an empty living room"
+    },
+    {
+      "narration": "The next morning, he drove east as the sun came up over the highway, and for the first time in a long time, he didn't feel like he was leaving something behind. He felt like he was catching up to it.",
+      "on_screen_text": "A NEW BEGINNING",
+      "duration_hint": 17.8,
+      "short_worthy": true,
+      "visual": "a middle-aged man driving a car at sunrise, open road ahead, gentle hopeful expression"
+    },
+    {
+      "narration": "Some endings are really just beginnings wearing a disguise. Follow along for a new story every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.4,
+      "short_worthy": true,
+      "visual": "a middle-aged man driving with the window down, warm morning light, relaxed and hopeful"
+    }
+  ]
+}

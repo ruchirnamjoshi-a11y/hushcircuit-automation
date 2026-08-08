@@ -1,0 +1,56 @@
+{
+  "id": "unfiltered-grace",
+  "title": "Unfiltered Grace",
+  "description": "Hannah abandons the pressure of perfectionism to embrace an authentic and peaceful lifestyle.",
+  "tags": [
+    "selfacceptance",
+    "perfectionism",
+    "mentalhealth",
+    "authenticity",
+    "peace"
+  ],
+  "scenes": [
+    {
+      "narration": "Hannah spent years trying to maintain a flawless home, perfect career, and spotless image.",
+      "on_screen_text": "THE PERFECTION TRAP",
+      "duration_hint": 7.0,
+      "visual": "A woman meticulously arranging cushions on a modern sofa in a neat living room"
+    },
+    {
+      "narration": "The constant drive to satisfy everyone else left her completely exhausted and emotionally drained.",
+      "on_screen_text": "THE WEIGHT OF EXPECTATION",
+      "duration_hint": 7.0,
+      "visual": "A woman sitting on a bedroom edge, resting her face in her hands with weary eyes"
+    },
+    {
+      "narration": "One evening, overwhelmed by endless to-do lists, she let go and allowed herself to rest.",
+      "on_screen_text": "SURRENDERING CONTROL",
+      "duration_hint": 7.0,
+      "visual": "A woman relaxing deeply into a armchair, leaving paperwork unread on a coffee table"
+    },
+    {
+      "narration": "She started saying no to demands that drained her and yes to unscheduled, peaceful moments.",
+      "on_screen_text": "CHOSING FREEDOM",
+      "duration_hint": 7.0,
+      "visual": "A woman strolling barefoot through green grass in a sunny backyard garden"
+    },
+    {
+      "narration": "She traded perfection for presence, finding magic in messy art projects and unfiltered laughter.",
+      "on_screen_text": "EMBRACING REALITY",
+      "duration_hint": 7.0,
+      "visual": "A laughing woman sitting on the floor surrounded by colorful craft paper and paints"
+    },
+    {
+      "narration": "Hannah discovered that peace appears the exact moment you stop performing for others.",
+      "on_screen_text": "UNFILTERED PEACE",
+      "duration_hint": 7.0,
+      "visual": "A serene woman sitting comfortably outdoors, closing her eyes to feel warm sunshine"
+    },
+    {
+      "narration": "You are worthy exactly as you are today. Follow along for more uplifting stories every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "A smiling woman walking through a blooming wildflower field under a bright clear sky"
+    }
+  ]
+}

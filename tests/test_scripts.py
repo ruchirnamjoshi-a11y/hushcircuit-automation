@@ -15,10 +15,10 @@ SAMPLE = {
     "description": "Test description",
     "tags": ["ai", "tools"],
     "scenes": [
-        {"narration": "hook line", "on_screen_text": "ROBOT TYPING", "duration_hint": 4.0, "short_worthy": True},
-        {"narration": "body beat one", "on_screen_text": "CODE EDITOR", "duration_hint": 8.0, "short_worthy": False},
-        {"narration": "body beat two", "on_screen_text": "CHATBOT UI", "duration_hint": 8.0, "short_worthy": True},
-        {"narration": "outro and cta", "on_screen_text": "SUBSCRIBE", "duration_hint": 5.0, "short_worthy": True},
+        {"narration": "hook line", "on_screen_text": "ROBOT TYPING", "duration_hint": 4.0},
+        {"narration": "body beat one", "on_screen_text": "CODE EDITOR", "duration_hint": 8.0},
+        {"narration": "body beat two", "on_screen_text": "CHATBOT UI", "duration_hint": 8.0},
+        {"narration": "outro and cta", "on_screen_text": "SUBSCRIBE", "duration_hint": 5.0},
     ],
 }
 
@@ -33,24 +33,30 @@ def test_validate_accepts_well_formed_script():
     assert script.total_duration() == 25.0
 
 
-def test_short_scenes_includes_hook_and_flagged_scenes():
-    script = validate(SAMPLE)
-    short = script.short_scenes
-    assert short[0] is script.hook
-    assert len(short) == 3  # hook + 2 flagged (body beat two, outro)
-
-
 def test_badge_text_for_hook_and_outro_is_just_on_screen_text():
     script = validate(SAMPLE)
     assert script.badge_text(0) == "ROBOT TYPING"
     assert script.badge_text(len(script.scenes) - 1) == "SUBSCRIBE"
 
 
-def test_badge_text_for_body_scene_includes_tip_number_and_total():
+def test_badge_text_for_body_scene_includes_part_number_and_total():
     script = validate(SAMPLE)
-    # SAMPLE has 2 body scenes (indices 1 and 2), scene 1 is the first tip
-    assert script.badge_text(1) == "TIP 1/2 · CODE EDITOR"
-    assert script.badge_text(2) == "TIP 2/2 · CHATBOT UI"
+    # SAMPLE has 2 body scenes (indices 1 and 2), scene 1 is the first part
+    assert script.badge_text(1) == "PART 1/2 · CODE EDITOR"
+    assert script.badge_text(2) == "PART 2/2 · CHATBOT UI"
+
+
+def test_scene_image_concept_falls_back_to_on_screen_text_when_visual_blank():
+    script = validate(SAMPLE)
+    assert script.hook.visual == ""
+    assert script.hook.image_concept == "ROBOT TYPING"
+
+
+def test_scene_image_concept_prefers_visual_when_present():
+    with_visual = json.loads(json.dumps(SAMPLE))
+    with_visual["scenes"][0]["visual"] = "a small robot typing on a tiny keyboard"
+    script = validate(with_visual)
+    assert script.hook.image_concept == "a small robot typing on a tiny keyboard"
 
 
 def test_validate_rejects_missing_top_level_field():

@@ -1,0 +1,56 @@
+{
+  "id": "finley-fox-and-the-lost-star",
+  "title": "Finley Fox and the Lost Star",
+  "description": "A magical nighttime adventure of a helpful fox guiding a tiny glowworm back to its family.",
+  "tags": [
+    "fox",
+    "nature",
+    "bedtime",
+    "helpfulness",
+    "stars"
+  ],
+  "scenes": [
+    {
+      "narration": "Finley the little red fox was trotting through the silver forest when he saw a bright spark on the grass.",
+      "on_screen_text": "A NIGHTTIME WALK",
+      "duration_hint": 7.0,
+      "visual": "adorable small red fox exploring a soft misty moonlit forest path"
+    },
+    {
+      "narration": "Oh dear, thought Finley, a tiny star must have fallen right out of the peaceful night sky!",
+      "on_screen_text": "A FALLEN SPARK",
+      "duration_hint": 7.0,
+      "visual": "little fox sitting down looking curiously at a glowing yellow light on a mossy patch"
+    },
+    {
+      "narration": "When he leaned closer, the tiny spark spoke softly. It was not a star, but a lost baby firefly.",
+      "on_screen_text": "NOT A STAR",
+      "duration_hint": 7.0,
+      "visual": "close up of a tiny glowing firefly sitting on a soft green leaf in front of a fox nose"
+    },
+    {
+      "narration": "The little firefly had drifted away from the river meadow and could not find its glowing family.",
+      "on_screen_text": "LOST IN THE WOODS",
+      "duration_hint": 7.0,
+      "visual": "small firefly floating sadly in the air while a gentle red fox watches attentively"
+    },
+    {
+      "narration": "Finley lowered his fluffy tail, letting the small insect rest safely on his warm fur as he walked.",
+      "on_screen_text": "A SAFE RIDE",
+      "duration_hint": 7.0,
+      "visual": "tiny glowing light sitting on the tip of a bushy red fox tail as he walks smoothly"
+    },
+    {
+      "narration": "He guided the little firefly back to the shimmering riverbank, where dozens of bright lights flickered happily.",
+      "on_screen_text": "REUNITED AT LAST",
+      "duration_hint": 7.0,
+      "visual": "cluster of twinkling fireflies surrounding a happy red fox near a peaceful riverbank"
+    },
+    {
+      "narration": "A small kindness lights up the dark. Sleep soundly, and follow along for more bedtime adventures.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "little red fox curled up in a cozy ball sleeping peacefully in a warm den under the stars"
+    }
+  ]
+}

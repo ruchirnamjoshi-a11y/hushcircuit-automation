@@ -1,0 +1,56 @@
+{
+  "id": "the-late-shift",
+  "title": "The Late Shift",
+  "description": "Sam takes on his first job at a busy local diner and learns how to handle high-stress mistakes.",
+  "tags": [
+    "first-job",
+    "responsibility",
+    "work-life",
+    "resilience",
+    "growing-up"
+  ],
+  "scenes": [
+    {
+      "narration": "Working my first solo shift at the diner felt like playing a video game where every single guest was a boss fight.",
+      "on_screen_text": "IN OVER MY HEAD",
+      "duration_hint": 10.0,
+      "visual": "Teen boy carrying a tray with drinks through a bustling indoor diner setting"
+    },
+    {
+      "narration": "During the dinner rush, I mixed up two orders and accidentally spilled a full glass of iced tea on a customer lap.",
+      "on_screen_text": "TOTAL DISASTER",
+      "duration_hint": 11.0,
+      "visual": "Spilled glass of liquid splattering on a tiled floor with a shocked teen server kneeling down"
+    },
+    {
+      "narration": "My heart hammered against my ribs. I wanted to hand over my apron right then and walk out the back door forever.",
+      "on_screen_text": "THE URGE TO RUN",
+      "duration_hint": 11.0,
+      "visual": "Teen boy standing in a diner kitchen looking overwhelmed with hands on his head"
+    },
+    {
+      "narration": "Instead, I grabbed clean towels, apologized sincerely, and took ownership without making excuses.",
+      "on_screen_text": "TAKING RESPONSIBILITY",
+      "duration_hint": 8.0,
+      "visual": "Close-up of hands wiping down a clean diner table carefully with a cloth"
+    },
+    {
+      "narration": "The customer saw how panicked I was and smiled, telling me about his own embarrassing first job mistake.",
+      "on_screen_text": "AN UNEXPECTED ALLY",
+      "duration_hint": 10.0,
+      "visual": "Kind older man smiling reassuringly at a nervous teenage boy inside a cozy diner booth"
+    },
+    {
+      "narration": "I made it through the rest of the shift smoothly. Leaving work that night, I felt two inches taller.",
+      "on_screen_text": "SURVIVING THE STORM",
+      "duration_hint": 10.0,
+      "visual": "Teen boy stepping outside into the cool evening air wearing a jacket with a confident smile"
+    },
+    {
+      "narration": "Mistakes happen to everyone, but how you handle them changes everything. Hit follow for a new story every day!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "Teen boy smiling outside under warm streetlights looking directly into the camera"
+    }
+  ]
+}

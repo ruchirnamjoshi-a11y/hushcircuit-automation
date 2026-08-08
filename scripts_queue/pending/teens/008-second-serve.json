@@ -1,0 +1,56 @@
+{
+  "id": "second-serve",
+  "title": "Second Serve",
+  "description": "Lucas battles his inner self-doubt during a decisive tennis match after double-faulting on match point.",
+  "tags": [
+    "sports",
+    "tennis",
+    "resilience",
+    "mental-game",
+    "focus"
+  ],
+  "scenes": [
+    {
+      "narration": "Double-faulting on match point in front of a packed crowd is a nightmare I used to replay every night.",
+      "on_screen_text": "THE NIGHTMARE",
+      "duration_hint": 10.0,
+      "visual": "Teen boy on a tennis court looking down at a tennis ball in disappointment"
+    },
+    {
+      "narration": "For months afterward, every time I served under pressure, my arm would lock up with anxiety.",
+      "on_screen_text": "THE MENTAL BLOCK",
+      "duration_hint": 9.0,
+      "visual": "Close-up of a teen boy gripping a tennis racket tightly on a court"
+    },
+    {
+      "narration": "During the county quarterfinals, history repeated itself. I was down to my final serve on tiebreak.",
+      "on_screen_text": "DEJA VU",
+      "duration_hint": 9.0,
+      "visual": "Teen boy bouncing a yellow tennis ball on a blue court surface looking tense"
+    },
+    {
+      "narration": "The crowd was dead silent. I could hear my heart beating louder than the summer heat.",
+      "on_screen_text": "THE TENSION",
+      "duration_hint": 8.0,
+      "visual": "Low-angle shot of a tennis player standing at the baseline looking focused"
+    },
+    {
+      "narration": "Instead of fearing another mistake, I decided to play to win rather than playing not to lose.",
+      "on_screen_text": "THE SHIFT",
+      "duration_hint": 9.0,
+      "visual": "Teen boy tossing a tennis ball into the air under a bright blue sky"
+    },
+    {
+      "narration": "I tossed the ball high and swung with full confidence. The ball clipped the line for an ace.",
+      "on_screen_text": "THE PERFECT ACE",
+      "duration_hint": 9.0,
+      "visual": "Teen boy celebrating with a pump of his fist on a bright outdoor tennis court"
+    },
+    {
+      "narration": "Confidence isn't the absence of fear, it's trusting yourself anyway. Follow along for more stories every day!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Teen boy holding his racket over his shoulder smiling warmly at the camera"
+    }
+  ]
+}

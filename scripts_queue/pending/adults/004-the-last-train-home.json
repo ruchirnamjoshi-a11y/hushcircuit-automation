@@ -1,0 +1,56 @@
+{
+  "id": "the-last-train-home",
+  "title": "The Last Train Home",
+  "description": "A chance late-night encounter on a quiet train platform brings closure to a long-broken friendship.",
+  "tags": [
+    "friendship",
+    "second chances",
+    "reconciliation",
+    "reflection",
+    "short story"
+  ],
+  "scenes": [
+    {
+      "narration": "Marcus almost missed the ten forty-five commuter train out of the city. As he stepped onto the quiet platform, he saw a familiar silhouette standing beneath the amber light.",
+      "on_screen_text": "AN UNEXPECTED SHADOW",
+      "duration_hint": 13.0,
+      "visual": "A lone man walking down a dimly lit suburban train platform at night"
+    },
+    {
+      "narration": "It was Julian, a man he had not spoken to since a bitter business disagreement twelve years ago had ended their partnership and their lifelong friendship.",
+      "on_screen_text": "TWELVE YEARS OF SILENCE",
+      "duration_hint": 12.2,
+      "visual": "Two middle aged men standing several feet apart under a streetlight"
+    },
+    {
+      "narration": "For ten minutes, neither man said a word, watching the tracks stretch into the dark. The silence was thick with old arguments that no longer seemed to matter.",
+      "on_screen_text": "THE WEIGHT OF TIME",
+      "duration_hint": 13.0,
+      "visual": "Close up of a man looking down at his worn leather shoes in quiet reflection"
+    },
+    {
+      "narration": "Marcus took a breath, stepped forward, and asked a simple question about Julian's daughter. Julian turned, his eyes tired, and managed a small, genuine smile.",
+      "on_screen_text": "BREAKING THE ICE",
+      "duration_hint": 12.6,
+      "visual": "One man turning toward another with an open posture and soft expression"
+    },
+    {
+      "narration": "They sat together on the train ride home, talking not about the money or the failed company, but about getting older and how fast the years had slipped away.",
+      "on_screen_text": "OLD MEMORIES",
+      "duration_hint": 13.5,
+      "visual": "Two men seated inside a quiet train car chatting under warm interior lighting"
+    },
+    {
+      "narration": "Holding onto an old grudge requires so much energy, while letting it go takes only a single, quiet sentence.",
+      "on_screen_text": "LETTING GO",
+      "duration_hint": 9.6,
+      "visual": "A train speeding through the dark night with warm light glowing from its windows"
+    },
+    {
+      "narration": "Subscribe for more real stories about life choices, second chances, and human connections.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.1,
+      "visual": "Two old friends shaking hands on a quiet residential street corner under a lamppost"
+    }
+  ]
+}

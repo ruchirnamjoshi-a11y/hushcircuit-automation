@@ -1,0 +1,56 @@
+{
+  "id": "toby-turtles-little-jump",
+  "title": "Toby Turtle's Little Jump",
+  "description": "A reassuring tale about a slow turtle who finds his own special strength during a sudden rain shower.",
+  "tags": [
+    "turtle",
+    "acceptance",
+    "bedtime",
+    "patience",
+    "friendship"
+  ],
+  "scenes": [
+    {
+      "narration": "Toby Turtle walked slowly along the pond edge, watching the happy green frogs leap high into the air.",
+      "on_screen_text": "THE SLOW POND WALK",
+      "duration_hint": 7.0,
+      "visual": "cute green turtle slowly walking beside a calm blue pond surrounded by tall cattails"
+    },
+    {
+      "narration": "He wished he could jump over tall stones and splash like his bouncy forest friends did every day.",
+      "on_screen_text": "WISHING FOR SPRINGS",
+      "duration_hint": 7.0,
+      "visual": "turtle looking wistfully up at a frog hopping high above a mossy rock"
+    },
+    {
+      "narration": "Suddenly, dark rain clouds rolled in, and big raindrops began to fall heavily all over the meadow.",
+      "on_screen_text": "A SUDDEN SHOWER",
+      "duration_hint": 7.0,
+      "visual": "rain falling gently on green lily pads and dark wet stones by the water"
+    },
+    {
+      "narration": "The little frogs shivered in the cold rain, looking for a dry spot to hide from the heavy splashing drops.",
+      "on_screen_text": "LOOKING FOR SHELTER",
+      "duration_hint": 7.0,
+      "visual": "small cold frogs huddling together near a wet muddy stone under falling rain"
+    },
+    {
+      "narration": "Toby tucked his head inside his strong shell and offered room under his back for his cold little friends.",
+      "on_screen_text": "A SAFE SHELTER",
+      "duration_hint": 7.0,
+      "visual": "turtle holding steady while tiny frogs shelter happily under his smooth round shell"
+    },
+    {
+      "narration": "The frogs stayed warm and dry until the sun came out, thanking Toby for his grand sturdy shell.",
+      "on_screen_text": "THE BEST PROTECTOR",
+      "duration_hint": 7.0,
+      "visual": "sunlight breaking through leaves onto a smiling turtle surrounded by cheerful frogs"
+    },
+    {
+      "narration": "Everyone has a special gift to share. Sleep warmly tonight, and follow along for more soothing bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "cute turtle resting comfortably on a warm flat stone by the peaceful moonlit pond"
+    }
+  ]
+}

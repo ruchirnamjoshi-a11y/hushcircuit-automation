@@ -7,8 +7,8 @@ SAMPLE_SCRIPT = {
     "description": "test",
     "tags": [],
     "scenes": [
-        {"narration": "This is the hook line for testing.", "on_screen_text": "TEST", "duration_hint": 4.0, "short_worthy": True},
-        {"narration": "This is a short body scene to verify synthesis works end to end.", "on_screen_text": "TEST", "duration_hint": 6.0, "short_worthy": False},
+        {"narration": "This is the hook line for testing.", "on_screen_text": "TEST", "duration_hint": 4.0},
+        {"narration": "This is a short body scene to verify synthesis works end to end.", "on_screen_text": "TEST", "duration_hint": 6.0},
     ],
 }
 

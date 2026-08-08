@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+"""Weekly orchestrator: generates a week's worth of stories per track via
+the Gemini API (pipeline.story_writer) and writes them into
+scripts_queue/pending/<track>/. Replaces the manual "write ~28 scripts by
+hand every week" step — this is the only place in the pipeline that calls
+an LLM; run_daily.py still only ever *consumes* the queue.
+
+If GEMINI_API_KEY isn't set, this exits cleanly (not an error) so a missing
+key doesn't fail CI — the queue just doesn't get refilled until it's added.
+One track's generation failure doesn't block the others.
+"""
+
+from __future__ import annotations
+
+import sys
+import traceback
+
+from pipeline.config import GEMINI_API_KEY, TRACKS
+from pipeline.story_writer import generate_stories, write_stories
+
+STORIES_PER_TRACK = 7  # one week of daily buffer per track
+
+
+def run() -> int:
+    if not GEMINI_API_KEY:
+        print("GEMINI_API_KEY not set — skipping story refill.")
+        return 0
+
+    any_failed = False
+    for track in TRACKS.values():
+        try:
+            print(f"[{track.key}] Generating {STORIES_PER_TRACK} stories...")
+            scripts = generate_stories(track, count=STORIES_PER_TRACK)
+            written = write_stories(track, scripts)
+            for path in written:
+                print(f"[{track.key}] Wrote {path}")
+        except Exception:
+            any_failed = True
+            print(f"[{track.key}] FAILED:")
+            traceback.print_exc()
+
+    return 1 if any_failed else 0
+
+
+if __name__ == "__main__":
+    sys.exit(run())

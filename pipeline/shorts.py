@@ -1,6 +1,7 @@
-"""Stage 4b: auto-clip a vertical (9:16) Short from the same scene assets used
-for the long-form video. No second script-gen call — reuses whichever scenes
-were flagged short_worthy in the script."""
+"""Stage 4: assemble the single vertical (9:16) Short that carries the full
+story — every scene, in order. `max_seconds` is a safety ceiling (not a
+highlight-reel trim target): our ~8-scene stories run ~70-90s, well under
+it, so it only ever trims an unusually long script."""
 
 from __future__ import annotations
 
@@ -56,14 +57,15 @@ def assemble_short(
 ) -> Path:
     """scene_used_fallback (one bool per scene, from
     ai_image.generate_scene_image_raw) marks scenes that fell back to the
-    brand gradient — see assemble_long_form for why those get regenerated
-    with orbs rather than reusing the plain fallback image."""
+    brand gradient — those get regenerated with orbs rather than reusing the
+    plain fallback image, so a fallback scene doesn't look flatter than a
+    real AI illustration."""
     if len(scene_audios) != len(script.scenes):
         raise ValueError("scene_audios must cover every scene in the script")
     if len(scene_images) != len(script.scenes):
         raise ValueError("scene_images must cover every scene in the script")
 
-    indices = _select_within_budget(script.short_scene_indices, scene_audios, max_seconds)
+    indices = _select_within_budget(list(range(len(script.scenes))), scene_audios, max_seconds)
 
     work_dir.mkdir(parents=True, exist_ok=True)
     clip_paths = []

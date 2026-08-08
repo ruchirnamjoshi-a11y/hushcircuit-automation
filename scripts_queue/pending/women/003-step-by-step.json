@@ -1,0 +1,56 @@
+{
+  "id": "step-by-step",
+  "title": "Step by Step",
+  "description": "At forty-two, Elena starts running to reclaim her stamina, health, and sense of personal power.",
+  "tags": [
+    "fitness",
+    "perseverance",
+    "selfcare",
+    "growth",
+    "inspiration"
+  ],
+  "scenes": [
+    {
+      "narration": "Elena thought forty-two was too late to transform her health, but staring at her reflection, she knew she needed change.",
+      "on_screen_text": "A FRESH START",
+      "duration_hint": 9.0,
+      "visual": "A woman looking into a bedroom mirror with a quiet expression of determination"
+    },
+    {
+      "narration": "She laced up a pair of simple running shoes and set a modest goal to run just one block.",
+      "on_screen_text": "THE FIRST STEP",
+      "duration_hint": 8.0,
+      "visual": "Close up of a woman tying bright pink laces on running shoes while sitting on wooden steps"
+    },
+    {
+      "narration": "Her lungs burned on the very first attempt, and negative thoughts urged her to quit immediately.",
+      "on_screen_text": "FACING THE HURDLE",
+      "duration_hint": 7.0,
+      "visual": "A tired woman pausing during a jog along a quiet suburban sidewalk, hand on her knee"
+    },
+    {
+      "narration": "Instead, she kept showing up every dawn, running a little farther through autumn leaves and quiet mornings.",
+      "on_screen_text": "BUILDING ENDURANCE",
+      "duration_hint": 8.0,
+      "visual": "A woman jogging along a misty tree-lined path illuminated by early morning sunlight"
+    },
+    {
+      "narration": "Months later, she crossed the half-marathon finish line, tears of pride mixing with sweat.",
+      "on_screen_text": "CROSSING THE LINE",
+      "duration_hint": 6.0,
+      "visual": "A joyful woman running across a finish stripe on a paved road, raised arms in victory"
+    },
+    {
+      "narration": "She proved that strength is built one quiet decision at a time, no matter your age.",
+      "on_screen_text": "OWNING HER POWER",
+      "duration_hint": 7.0,
+      "visual": "A woman standing triumphantly on top of a grassy hill looking at a vibrant sunrise"
+    },
+    {
+      "narration": "Your journey is always worth taking. Follow along for more uplifting daily stories of strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "A woman smiling warmly at the camera while walking along a sunlit park trail"
+    }
+  ]
+}

@@ -17,26 +17,19 @@ from pathlib import Path
 import requests
 from PIL import Image, ImageOps
 
-from pipeline.config import AI_IMAGE_MODEL, CF_ACCOUNT_ID, CF_API_TOKEN
+from pipeline.config import AI_IMAGE_MODEL, CF_ACCOUNT_ID, CF_API_TOKEN, Track
 from pipeline.scripts import Scene
 from pipeline.textcard import make_gradient_image
 
 # FLUX.1-schnell has no negative-prompt/CFG support on Workers AI, so "no text"
 # instructions only reduce (not eliminate) on-image text — and it reliably
 # renders garbled text when the prompt reads like ad copy/a banner headline.
-# Front-loading the instruction and describing on_screen_text as a concept
-# (never quoting it verbatim, never including narration) empirically produced
-# clean icon-only output; feeding it a full sentence brought the text back
-# even with substitutions applied.
-STYLE_PREFIX = (
-    "Icon design with absolutely no text, no letters, no words anywhere in "
-    "the image. A single flat-vector icon symbolizing "
-)
-STYLE_SUFFIX = (
-    ", flat vector illustration, clean geometric shapes, warm gold and deep "
-    "navy color palette, minimalist tech aesthetic, isolated icon "
-    "composition on plain background"
-)
+# Front-loading the instruction and describing the scene as a concept (never
+# quoting on_screen_text verbatim, never including full narration sentences)
+# empirically produced clean output; feeding it a full sentence brought the
+# text back even with substitutions applied. Each Track supplies its own
+# image_style_prefix/suffix (see pipeline.config) so illustration style
+# varies by audience while this safety technique stays shared.
 
 # These specific words strongly anchor FLUX toward badge/button training
 # images ("FREE" stickers, "SUBSCRIBE" buttons) and it renders them as text
@@ -49,6 +42,10 @@ TRIGGER_WORD_SUBSTITUTIONS = {
 }
 
 RETRY_DELAY_SECONDS = 2
+RATE_LIMIT_RETRY_DELAY_SECONDS = 20
+INTER_REQUEST_DELAY_SECONDS = 3  # paces successive calls so a 4-track run
+# (~32 images) doesn't burst past Cloudflare's per-minute rate limit even
+# though the 10k Neurons/day budget has plenty of headroom left.
 REQUEST_TIMEOUT_SECONDS = 60
 
 
@@ -59,13 +56,20 @@ def _sanitize_concept(text: str) -> str:
     return concept
 
 
-def build_prompt(scene: Scene) -> str:
-    concept = _sanitize_concept(scene.on_screen_text)
-    return f"{STYLE_PREFIX}{concept}{STYLE_SUFFIX}"
+def build_prompt(scene: Scene, track: Track) -> str:
+    concept = _sanitize_concept(scene.image_concept)
+    return f"{track.image_style_prefix}{concept}{track.image_style_suffix}"
 
 
 def _fit_to_resolution(image: Image.Image, resolution: tuple[int, int]) -> Image.Image:
     return ImageOps.fit(image.convert("RGB"), resolution, Image.LANCZOS)
+
+
+class CloudflareQuotaExhausted(RuntimeError):
+    """Today's free 10,000 Neurons/day allocation is used up (Cloudflare
+    error code 4006) — distinct from a transient rate limit: retrying won't
+    help until the daily reset, so callers should fall back immediately
+    instead of burning time on backoff retries."""
 
 
 def _call_cloudflare(prompt: str) -> Image.Image:
@@ -76,6 +80,13 @@ def _call_cloudflare(prompt: str) -> Image.Image:
         json={"prompt": prompt},
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
+    if response.status_code == 429:
+        try:
+            errors = response.json().get("errors") or []
+        except ValueError:
+            errors = []
+        if any(err.get("code") == 4006 for err in errors):
+            raise CloudflareQuotaExhausted(f"daily free Neurons allocation exhausted: {errors}")
     response.raise_for_status()
     data = response.json()
     if not data.get("success"):
@@ -87,6 +98,7 @@ def _call_cloudflare(prompt: str) -> Image.Image:
 def generate_scene_image_raw(
     scene: Scene,
     out_path: Path,
+    track: Track,
     retries: int = 2,
 ) -> tuple[Path, bool]:
     """Generates one illustration for a scene via Cloudflare Workers AI, saved
@@ -94,6 +106,9 @@ def generate_scene_image_raw(
     output format (long-form 16:9, Short 9:16) afterward so a scene only
     costs one API call regardless of how many formats use it. Falls back to
     the brand gradient if credentials are unset or every attempt fails.
+
+    `track` selects the illustration style (kids/teens/adults/women — see
+    pipeline.config.TRACKS).
 
     Returns (path, used_fallback) — callers use used_fallback to decide
     whether this scene should get the gradient's drifting orb treatment
@@ -105,20 +120,34 @@ def generate_scene_image_raw(
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     if CF_ACCOUNT_ID and CF_API_TOKEN:
-        prompt = build_prompt(scene)
+        prompt = build_prompt(scene, track)
         for attempt in range(retries + 1):
             try:
                 image = _call_cloudflare(prompt)
                 image.convert("RGB").save(out_path)
+                time.sleep(INTER_REQUEST_DELAY_SECONDS)
                 return out_path, False
+            except CloudflareQuotaExhausted as e:
+                # No point retrying or pacing further calls this run —
+                # every remaining scene (and track) will hit the same wall
+                # until Cloudflare's daily reset.
+                print(f"[ai_image] quota exhausted for scene '{scene.on_screen_text}': {e}")
+                break
             except Exception as e:
+                is_rate_limited = getattr(e, "response", None) is not None and e.response.status_code == 429
                 print(f"[ai_image] attempt {attempt + 1}/{retries + 1} failed for scene "
                       f"'{scene.on_screen_text}': {e}")
                 if attempt < retries:
-                    time.sleep(RETRY_DELAY_SECONDS)
-
-        print(f"[ai_image] all attempts failed for scene '{scene.on_screen_text}', "
-              "falling back to brand gradient")
+                    if is_rate_limited:
+                        retry_after = e.response.headers.get("Retry-After")
+                        delay = float(retry_after) if retry_after else RATE_LIMIT_RETRY_DELAY_SECONDS
+                    else:
+                        delay = RETRY_DELAY_SECONDS
+                    time.sleep(delay)
+        else:
+            print(f"[ai_image] all attempts failed for scene '{scene.on_screen_text}', "
+                  "falling back to brand gradient")
+            time.sleep(INTER_REQUEST_DELAY_SECONDS)
     else:
         print("[ai_image] CF_ACCOUNT_ID/CF_API_TOKEN not set, using brand gradient")
 

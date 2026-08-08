@@ -1,0 +1,56 @@
+{
+  "id": "the-lost-trail",
+  "title": "The Lost Trail",
+  "description": "Ethan embarks on a solo day hike to prove his independence, but losing the trail teaches him true self-reliance.",
+  "tags": [
+    "outdoors",
+    "hiking",
+    "self-reliance",
+    "adventure",
+    "mindset"
+  ],
+  "scenes": [
+    {
+      "narration": "I set out on my first solo hike to prove to my family that I could handle a real adventure on my own.",
+      "on_screen_text": "SOLO JOURNEY",
+      "duration_hint": 10.0,
+      "visual": "Teen boy hiking on a narrow dirt trail surrounded by tall green trees"
+    },
+    {
+      "narration": "Two hours in, the marked path faded into thick brush. I realized I hadn't seen a trail marker in twenty minutes.",
+      "on_screen_text": "OFF THE MAP",
+      "duration_hint": 10.0,
+      "visual": "Teen boy standing amidst dense forest trees looking down at a paper map"
+    },
+    {
+      "narration": "Fear flared up like a cold shock. My instinct was to run wildly in whatever direction looked familiar.",
+      "on_screen_text": "PANIC RISES",
+      "duration_hint": 9.0,
+      "visual": "Teen boy looking frantically around dense woods under an overcast sky"
+    },
+    {
+      "narration": "I sat down on a boulder and forced myself to count down from ten until my breathing slowed.",
+      "on_screen_text": "PAUSE AND BREATHE",
+      "duration_hint": 9.0,
+      "visual": "Teen boy sitting quietly on a large granite rock taking a slow deep breath"
+    },
+    {
+      "narration": "I remembered the ridge line I crossed earlier and carefully retraced my footsteps using landmark trees.",
+      "on_screen_text": "RETRACING STEPS",
+      "duration_hint": 9.0,
+      "visual": "Close-up of hiking boots stepping carefully across mossy ground in a forest"
+    },
+    {
+      "narration": "When I finally spotted the wooden trail marker again, I didn't feel relief, I felt genuine pride.",
+      "on_screen_text": "THE WAY BACK",
+      "duration_hint": 9.0,
+      "visual": "Teen boy reaching a clear sunny path smiling with a sense of accomplishment"
+    },
+    {
+      "narration": "Panic makes problems bigger, but staying calm reveals the path forward. Follow along for more daily journeys!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Teen boy standing at a scenic mountain overlook looking confident into the camera"
+    }
+  ]
+}
