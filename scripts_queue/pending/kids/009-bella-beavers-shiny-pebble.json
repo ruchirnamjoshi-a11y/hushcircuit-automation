@@ -1,0 +1,56 @@
+{
+  "id": "bella-beavers-shiny-pebble",
+  "title": "Bella Beaver's Shiny Pebble",
+  "description": "Bella finds a perfectly smooth river pebble, but learns that sharing it brings a far greater shine to her day.",
+  "tags": [
+    "bedtime",
+    "sharing",
+    "kindness",
+    "beaver",
+    "animals"
+  ],
+  "scenes": [
+    {
+      "narration": "Deep in the green forest stream, Bella Beaver found the smoothest, shiniest pebble she had ever seen. It sparkled under the water like a tiny treasure.",
+      "on_screen_text": "THE SHINY PEBBLE",
+      "duration_hint": 10.4,
+      "visual": "A small brown beaver holding a shiny wet pebble beside a clear forest stream"
+    },
+    {
+      "narration": "Bella wanted to keep the pebble inside her cozy lodge. But as she splashed along the bank, she saw a little duckling sitting beside a messy twig nest.",
+      "on_screen_text": "A SAD FRIEND",
+      "duration_hint": 11.3,
+      "visual": "A fluffy yellow duckling sitting beside a messy twig nest near quiet water"
+    },
+    {
+      "narration": "The morning wind kept blowing the duckling's nest away. The little bird looked tired and sad, trying to keep the twigs together.",
+      "on_screen_text": "NEST IN THE WIND",
+      "duration_hint": 9.6,
+      "visual": "Wind blowing dry leaves around a small nest made of grass and twigs"
+    },
+    {
+      "narration": "Bella looked at her shiny pebble, then at the floating nest. She knew the heavy stone would keep the duckling's home warm and safe.",
+      "on_screen_text": "BELLA'S CHOICE",
+      "duration_hint": 10.4,
+      "visual": "A little beaver gazing thoughtfully at a smooth stone sitting in her paws"
+    },
+    {
+      "narration": "With a kind smile, Bella placed her smooth pebble right in the center of the nest. The twigs stayed perfectly still against the gentle breeze.",
+      "on_screen_text": "A HELPFUL GIFT",
+      "duration_hint": 10.9,
+      "visual": "A beaver gently placing a smooth pebble on the edge of a duckling nest"
+    },
+    {
+      "narration": "The duckling let out a happy quack and cuddled into the safe nest. Bella realized that helping a friend felt even better than keeping a shiny pebble.",
+      "on_screen_text": "WARM HEARTS",
+      "duration_hint": 11.7,
+      "visual": "A beaver and a duckling sitting together happily on sunny riverbank grass"
+    },
+    {
+      "narration": "When you share love, every day shines a little brighter. Follow along for more sweet bedtime stories every single night.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "A tranquil forest stream with soft sunlight filtering through green tree leaves"
+    }
+  ]
+}

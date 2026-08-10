@@ -1,0 +1,56 @@
+{
+  "id": "ellie-elephants-quiet-song",
+  "title": "Ellie Elephant's Quiet Song",
+  "description": "Ellie worries her booming voice is too loud, until she discovers how to sing a soft lullaby to help a little bird sleep.",
+  "tags": [
+    "bedtime",
+    "lullaby",
+    "gentleness",
+    "elephant",
+    "jungle"
+  ],
+  "scenes": [
+    {
+      "narration": "Ellie Elephant loved music, but her big trunk made every sound feel like a booming thunderclap across the sleepy jungle.",
+      "on_screen_text": "A BIG VOICE",
+      "duration_hint": 9.1,
+      "visual": "A friendly baby elephant wearing a flower crown sitting under jungle leaves"
+    },
+    {
+      "narration": "She was so worried about disturbing her friends that she stopped making any sounds at all, tiptoeing quietly through the high ferns.",
+      "on_screen_text": "TOO LOUD",
+      "duration_hint": 9.6,
+      "visual": "An elephant looking down nervously while other jungle animals sleep softly"
+    },
+    {
+      "narration": "High up in an acacia tree, a tiny baby robin chirped sadly. It was nighttime, but the little bird could not drift off to sleep.",
+      "on_screen_text": "CRYING ROBIN",
+      "duration_hint": 10.4,
+      "visual": "A tiny red robin sitting shivering on a low wooden tree branch"
+    },
+    {
+      "narration": "Ellie walked gently to the tree, rested her trunk near the nest, and blew out the softest, warmest breath of breeze she could manage.",
+      "on_screen_text": "GENTLE WHISPER",
+      "duration_hint": 10.4,
+      "visual": "An elephant kneeling down close to a tiny bird nest in a tree"
+    },
+    {
+      "narration": "She hummed a low, soothing tune that sounded like a quiet summer night. The baby robin closed its eyes and snuggled into its warm nest.",
+      "on_screen_text": "SLEEPY LULLABY",
+      "duration_hint": 10.9,
+      "visual": "A small bird sleeping peacefully curled up inside a warm feather nest"
+    },
+    {
+      "narration": "Ellie smiled happily. She realized that even big voices can be soft, gentle, and comforting when used with care.",
+      "on_screen_text": "SOFT AND SWEET",
+      "duration_hint": 8.7,
+      "visual": "An elephant and a little bird cozy together under soft green fronds"
+    },
+    {
+      "narration": "Let the gentle jungle lullaby soothe you to sleep tonight. Follow along for more sweet dreams every evening.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.3,
+      "visual": "A peaceful jungle sunset with glowing purple sky and gentle trees"
+    }
+  ]
+}

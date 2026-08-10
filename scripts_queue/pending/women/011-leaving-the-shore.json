@@ -1,0 +1,56 @@
+{
+  "id": "leaving-the-shore",
+  "title": "Leaving the Shore",
+  "description": "Elena leaves her predictable routine to build a new meaningful life filled with creativity and authentic joy.",
+  "tags": [
+    "courage",
+    "newbeginnings",
+    "selflove",
+    "lifetransition",
+    "growth"
+  ],
+  "scenes": [
+    {
+      "narration": "Elena had spent eight years in a predictable routine that offered safety, but zero joy. Every morning felt like an echo of yesterday.",
+      "on_screen_text": "THE COMFORT CAGE",
+      "duration_hint": 10.4,
+      "visual": "Woman gazing out a foggy high-rise window with a steaming mug in her hand inside a modern kitchen"
+    },
+    {
+      "narration": "One rainy Tuesday, she packed two suitcases with her essentials and handed in her apartment keys. It was time to start over in a new city.",
+      "on_screen_text": "PACKING UP",
+      "duration_hint": 11.7,
+      "visual": "Open suitcases filled with neatly folded sweaters on a wooden floor in a half-empty room"
+    },
+    {
+      "narration": "Fear gripped her as she sat in the empty train station, leaving behind everything familiar. Leaving certainty behind is always terrifying.",
+      "on_screen_text": "THE UNKNOWN",
+      "duration_hint": 9.6,
+      "visual": "Woman sitting alone on a wooden bench inside a quiet train station holding a small leather handbag"
+    },
+    {
+      "narration": "In her tiny new apartment, sitting on a bare floor, she unpacked her favorite mug. It was modest, but it was entirely her own creation.",
+      "on_screen_text": "FIRST NIGHT",
+      "duration_hint": 10.4,
+      "visual": "Woman sitting on a rug in a sunlit room sipping tea from a ceramic mug"
+    },
+    {
+      "narration": "Over the next few weeks, Elena opened her small community workshop teaching pottery. Her hands embraced the raw clay and built a life of meaning.",
+      "on_screen_text": "FINDING PURPOSE",
+      "duration_hint": 10.9,
+      "visual": "Close-up of hands shaping wet clay on a rotating potter wheel in a warm daylight workshop"
+    },
+    {
+      "narration": "She no longer woke up with dread, but with quiet excitement for what the day would bring. She had built a home within herself.",
+      "on_screen_text": "EMBRACING JOY",
+      "duration_hint": 10.4,
+      "visual": "Woman laughing softly as she wipes clay off her hands inside a bright artistic studio room"
+    },
+    {
+      "narration": "Real safety comes from trusting yourself through change. Follow along for more stories of self-discovery and transformation.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "Woman smiling warmly near a window filled with indoor plants and soft ambient sunlight"
+    }
+  ]
+}

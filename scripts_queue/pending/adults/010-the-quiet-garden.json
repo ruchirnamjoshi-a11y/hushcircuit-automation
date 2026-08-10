@@ -1,0 +1,56 @@
+{
+  "id": "the-quiet-garden",
+  "title": "The Quiet Garden",
+  "description": "A recently divorced woman restores her grandmother's abandoned backyard and finds her own voice.",
+  "tags": [
+    "gardening",
+    "divorce",
+    "healing",
+    "second-chances",
+    "nature"
+  ],
+  "scenes": [
+    {
+      "narration": "Elena stood in the overgrown backyard of her late grandmother's house, clutching a set of house keys. Her twenty-year marriage was officially over, and the silence felt overwhelming.",
+      "on_screen_text": "THE SILENT YARD",
+      "duration_hint": 11.0,
+      "visual": "A woman standing among tall wild weeds and unpruned rose bushes in soft afternoon light"
+    },
+    {
+      "narration": "Underneath tangled weeds, she found choked lavender plants struggling to reach the light. She knelt down and began pulling the weeds with her bare hands.",
+      "on_screen_text": "CLEARING THE PAST",
+      "duration_hint": 11.0,
+      "visual": "Close-up of hands pulling dark green weeds away from vibrant purple lavender sprouts"
+    },
+    {
+      "narration": "Hours turned into days, and blisters formed on her palms, but each pulled root felt like releasing a secret burden.",
+      "on_screen_text": "ROOTS AND RECOVERY",
+      "duration_hint": 9.0,
+      "visual": "A woman wiping sweat from her forehead while holding a garden spade in rich soil"
+    },
+    {
+      "narration": "She planted fresh tomato seeds and row after row of bright wildflowers, tending them every morning before dawn.",
+      "on_screen_text": "SEEDS OF CHANGE",
+      "duration_hint": 8.0,
+      "visual": "Sunlight hitting tiny green plant sprouts emerging from dark moist garden soil"
+    },
+    {
+      "narration": "By midsummer, the yard was humming with life, rich with red tomatoes and deep lavender blossoms.",
+      "on_screen_text": "THE FULL BLOOM",
+      "duration_hint": 7.0,
+      "visual": "A vibrant garden flourishing with colorful wildflowers and ripe red tomatoes in full sunlight"
+    },
+    {
+      "narration": "Sitting on the wooden bench her grandfather built, she realized she had not just restored a garden, she had rebuilt herself.",
+      "on_screen_text": "RECLAIMING MYSELF",
+      "duration_hint": 9.0,
+      "visual": "A peaceful woman sitting on an old wooden garden bench sipping tea and smiling softly"
+    },
+    {
+      "narration": "Growth takes time, but every season offers a fresh start. Follow along for more stories of quiet renewal.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "A serene woman watering blooming garden plants with a vintage metal watering can"
+    }
+  ]
+}

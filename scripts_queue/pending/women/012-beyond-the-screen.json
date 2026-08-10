@@ -1,0 +1,56 @@
+{
+  "id": "beyond-the-screen",
+  "title": "Beyond the Screen",
+  "description": "Nina disconnects from social media comparison and rediscovers present-moment peace in her everyday life.",
+  "tags": [
+    "digitaldetox",
+    "mindfulness",
+    "selfcare",
+    "presence",
+    "mentalhealth"
+  ],
+  "scenes": [
+    {
+      "narration": "Nina spent every evening scrolling through curated lives on her phone, feeling increasingly invisible and exhausted by comparison.",
+      "on_screen_text": "THE DISCONNECT",
+      "duration_hint": 9.6,
+      "visual": "Young woman lying on a couch in a dark room illuminated only by her glowing phone screen"
+    },
+    {
+      "narration": "Tonight, she placed the phone in a drawer, locked it, and stepped away. She decided to return to her real life.",
+      "on_screen_text": "TURNING IT OFF",
+      "duration_hint": 9.1,
+      "visual": "Hand placing a dark smartphone into a wooden desk drawer and sliding it shut"
+    },
+    {
+      "narration": "She dusted off her old acoustic guitar resting in the corner. Her fingertips were rusty, but the chords resonated deeply through her quiet room.",
+      "on_screen_text": "OLD PASSIONS",
+      "duration_hint": 10.4,
+      "visual": "Woman holding an acoustic guitar near an armchair in a cozy living room lit by a floor lamp"
+    },
+    {
+      "narration": "She brewed herbal tea, listening to the gentle hum of the kettle and watching rain wash against her window. She was truly present.",
+      "on_screen_text": "SENSORY AWAKENING",
+      "duration_hint": 10.4,
+      "visual": "Hands wrapping around a warm ceramic mug near a raindrops-covered window pane"
+    },
+    {
+      "narration": "The next afternoon, she met her oldest friend in a park without checking her phone once. Their laughter was deep, real, and uninterrupted.",
+      "on_screen_text": "REAL CONNECTION",
+      "duration_hint": 10.4,
+      "visual": "Two female friends laughing together on a park bench surrounded by green autumn trees"
+    },
+    {
+      "narration": "Nina realized that peace was not found in digital validation, but in living fully right where she stood.",
+      "on_screen_text": "INNER CALM",
+      "duration_hint": 9.6,
+      "visual": "Woman sitting peacefully outdoors on a wooden bench taking a deep breath with eyes closed"
+    },
+    {
+      "narration": "Disconnecting from the noise allows you to reconnect with yourself. Follow along for daily inspiration and quiet reflection.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "Serene portrait of a young woman resting outdoors in a sunlit field with a calm smile"
+    }
+  ]
+}

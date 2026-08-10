@@ -1,0 +1,56 @@
+{
+  "id": "the-unmapped-road",
+  "title": "The Unmapped Road",
+  "description": "An empty-nester mother renovates a vintage camper van to embark on her first solo cross-country trip.",
+  "tags": [
+    "empty-nest",
+    "travel",
+    "self-discovery",
+    "motherhood",
+    "adventure"
+  ],
+  "scenes": [
+    {
+      "narration": "After her youngest child moved out for college, Clara looked around her quiet four-bedroom house and felt like a stranger in her own home.",
+      "on_screen_text": "AN EMPTY NEST",
+      "duration_hint": 10.0,
+      "visual": "A middle-aged woman standing alone in a clean, sunlit dining room surrounded by empty chairs"
+    },
+    {
+      "narration": "Instead of staying trapped in memories, she bought a rusted retro camper van sitting in a neighbor's driveway.",
+      "on_screen_text": "A NEW CANVAS",
+      "duration_hint": 8.0,
+      "visual": "A woman looking thoughtfully at a vintage cream-colored camper van parked on gravel"
+    },
+    {
+      "narration": "She spent three weeks sanding paneling, painting walls eggshell white, and sewing bright yellow curtains.",
+      "on_screen_text": "BUILDING FREEDOM",
+      "duration_hint": 7.0,
+      "visual": "A woman holding a paintbrush inside the cozy interior of a wooden camper van"
+    },
+    {
+      "narration": "Her friends asked if she was scared to travel alone across the country at fifty-two, but she just smiled.",
+      "on_screen_text": "UNANSWERED FEARS",
+      "duration_hint": 8.0,
+      "visual": "A smiling woman packing wool blankets and books into small camper storage shelves"
+    },
+    {
+      "narration": "Driving down coastal highway cliffs at sunrise, she rolled down her window and felt the ocean air brush her face.",
+      "on_screen_text": "THE OPEN ROAD",
+      "duration_hint": 9.0,
+      "visual": "A woman driving a vintage van along a scenic ocean cliff highway during golden hour"
+    },
+    {
+      "narration": "For the first time in thirty years, she wasn't living for someone else's schedule; she was following her own compass.",
+      "on_screen_text": "HER OWN COMPASS",
+      "duration_hint": 9.0,
+      "visual": "A woman sitting on the open back step of a camper van looking at a sunset over mountains"
+    },
+    {
+      "narration": "Your next chapter can be your greatest adventure. Follow along for more inspiring stories of new beginnings.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A joyful woman holding a steaming mug outdoors beside a cozy camper van at twilight"
+    }
+  ]
+}

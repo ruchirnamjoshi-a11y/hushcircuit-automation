@@ -1,0 +1,56 @@
+{
+  "id": "the-old-workbench",
+  "title": "The Old Workbench",
+  "description": "An estranged father restores a broken vintage grandfather clock for his daughter's upcoming wedding.",
+  "tags": [
+    "reconciliation",
+    "parenthood",
+    "woodworking",
+    "family",
+    "forgiveness"
+  ],
+  "scenes": [
+    {
+      "narration": "David sat at his garage workbench staring at a broken grandfather clock that hadn't ticked in twelve years. That was the year his daughter stopped speaking to him.",
+      "on_screen_text": "STOPPED TIME",
+      "duration_hint": 12.0,
+      "visual": "A dusty dark wood clock casing sitting open on a dusty garage workbench"
+    },
+    {
+      "narration": "When her wedding invitation arrived in the mail last week, he knew words wouldn't fix the past, but maybe action could.",
+      "on_screen_text": "THE INVITATION",
+      "duration_hint": 9.0,
+      "visual": "A man holding a delicate paper card in his rough carpenter hands with emotion"
+    },
+    {
+      "narration": "Night after night, he carefully cleaned brass gears, oiled rusted springs, and carved replacement wooden trim by hand.",
+      "on_screen_text": "REPAIRING THE GEARS",
+      "duration_hint": 8.0,
+      "visual": "Precision tools carefully adjusting intricate brass clock gears under a warm desk lamp"
+    },
+    {
+      "narration": "Every turned screw was an apology for missed birthdays, short tempers, and years of stubborn pride.",
+      "on_screen_text": "SILENT APOLOGIES",
+      "duration_hint": 7.0,
+      "visual": "A focused man sanding a curved piece of mahogany wood with fine sandpaper"
+    },
+    {
+      "narration": "On the morning of the wedding, he adjusted the heavy pendulum, gave it a gentle push, and listened as the steady tick resumed.",
+      "on_screen_text": "TICKING AGAIN",
+      "duration_hint": 11.0,
+      "visual": "A brass clock pendulum swinging steadily inside a polished wooden casing"
+    },
+    {
+      "narration": "When his daughter saw the restored family heirloom waiting in the venue hallway, tears pooled in her eyes, and she reached for his hand.",
+      "on_screen_text": "A HEALED BOND",
+      "duration_hint": 11.0,
+      "visual": "An emotional embrace between a father in a dark suit and his adult daughter in white"
+    },
+    {
+      "narration": "It is never too late to repair what was broken. Follow along for more heartwarming stories of second chances.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A smiling father and daughter looking together at a classic tall grandfather clock"
+    }
+  ]
+}

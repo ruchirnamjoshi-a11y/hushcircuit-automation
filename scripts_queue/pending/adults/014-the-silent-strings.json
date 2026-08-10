@@ -1,0 +1,56 @@
+{
+  "id": "the-silent-strings",
+  "title": "The Silent Strings",
+  "description": "A former musician rediscovering his passion for acoustic guitar after hearing his son practice.",
+  "tags": [
+    "music",
+    "fatherhood",
+    "passion",
+    "regret",
+    "connection"
+  ],
+  "scenes": [
+    {
+      "narration": "For twenty-five years, Julian's vintage acoustic guitar sat tucked away inside a dusty leather case in the attic corner.",
+      "on_screen_text": "DUSTY CASES",
+      "duration_hint": 9.0,
+      "visual": "A worn leather guitar case resting against a wooden beam in a dim attic space"
+    },
+    {
+      "narration": "He had traded his musical dreams for a stable office job when his son was born, convincing himself it was the only responsible choice.",
+      "on_screen_text": "THE SACRIFICE",
+      "duration_hint": 10.0,
+      "visual": "A man in a dress shirt staring at spreadsheets on a computer screen in a home office"
+    },
+    {
+      "narration": "One evening, he heard clumsily plucked notes coming from his teenage son's bedroom down the hallway.",
+      "on_screen_text": "A DISTANT TUNE",
+      "duration_hint": 7.0,
+      "visual": "A father standing outside a bedroom door listening intently with a soft warm expression"
+    },
+    {
+      "narration": "Walking upstairs, Julian pulled down his old guitar, replaced the rusted steel strings, and tuned each key by ear.",
+      "on_screen_text": "NEW STRINGS",
+      "duration_hint": 9.0,
+      "visual": "Hands threading silver metal guitar strings through wooden bridge pegs on an acoustic guitar body"
+    },
+    {
+      "narration": "His fingers were stiff at first, but as he played a simple chord progression, twenty years of suppressed music came pouring out.",
+      "on_screen_text": "THE FIRST CHORD",
+      "duration_hint": 10.0,
+      "visual": "A man strumming a warm wooden acoustic guitar with focused emotion on his face"
+    },
+    {
+      "narration": "His son walked into the room, grabbed his own instrument, and without saying a word, joined in the melody.",
+      "on_screen_text": "PLAYING TOGETHER",
+      "duration_hint": 8.0,
+      "visual": "A father and teenage son sitting side-by-side playing acoustic guitars together in soft lamp light"
+    },
+    {
+      "narration": "Passions delayed are never truly lost, they are just waiting to be shared. Follow along for more heartwarming life stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "A father smiling warmly as he teaches his son a fingerpicking pattern on acoustic guitar"
+    }
+  ]
+}

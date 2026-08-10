@@ -1,0 +1,56 @@
+{
+  "id": "the-first-rain",
+  "title": "The First Rain",
+  "description": "A corporate manager turns down an executive promotion to save his late grandfather's neglected orchard.",
+  "tags": [
+    "hometown",
+    "simplifying",
+    "career",
+    "nature",
+    "reflection"
+  ],
+  "scenes": [
+    {
+      "narration": "Henry held the executive promotion contract in his hands, complete with a six-figure salary increase. Yet looking down at the paper, he felt a strange, suffocating weight.",
+      "on_screen_text": "THE PROMOTION",
+      "duration_hint": 11.0,
+      "visual": "A man in a sleek business suit holding paper documents inside a tall glass office building"
+    },
+    {
+      "narration": "That weekend, he drove back to his hometown and walked through his late grandfather's neglected apple orchard.",
+      "on_screen_text": "RETURNING HOME",
+      "duration_hint": 8.0,
+      "visual": "A man walking through rows of gnarled, unpruned apple trees under gray skies"
+    },
+    {
+      "narration": "The trees were overgrown and wild, but beneath the fallen branches, new green buds were desperately fighting to bloom.",
+      "on_screen_text": "BUDS IN THE WILD",
+      "duration_hint": 9.0,
+      "visual": "Close-up of small vibrant green leaf buds on a weathered brown tree branch"
+    },
+    {
+      "narration": "He remembered his grandfather teaching him how to prune branches so sunlight could reach the heart of the tree.",
+      "on_screen_text": "WISDOM OF THE TREES",
+      "duration_hint": 9.0,
+      "visual": "Hands using wooden pruning shears to trim away a dry dead branch from a tree"
+    },
+    {
+      "narration": "He called his CEO on Monday morning and respectfully declined the promotion, resigning to move back to the valley.",
+      "on_screen_text": "CHOOSING A PATH",
+      "duration_hint": 9.0,
+      "visual": "A man standing outdoors taking off his tie while looking at distant green hills"
+    },
+    {
+      "narration": "As the autumn rain began to fall over the orchard, Henry felt cool water on his face and a deep sense of relief.",
+      "on_screen_text": "WASHING AWAY NOISE",
+      "duration_hint": 10.0,
+      "visual": "A man standing peacefully in a lush green orchard as gentle rain drops fall around him"
+    },
+    {
+      "narration": "Success isn't about climbing higher, it's about putting down deeper roots. Follow along for more stories of self-discovery.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "A content middle-aged man holding a wooden basket filled with fresh red apples"
+    }
+  ]
+}
