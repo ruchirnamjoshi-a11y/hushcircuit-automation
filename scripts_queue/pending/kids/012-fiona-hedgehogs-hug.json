@@ -1,0 +1,56 @@
+{
+  "id": "fiona-hedgehogs-hug",
+  "title": "Fiona Hedgehog's Hug",
+  "description": "Fiona wants to hug her forest friends, and finds a creative, cozy solution using soft autumn leaves.",
+  "tags": [
+    "bedtime",
+    "hugs",
+    "creativity",
+    "hedgehog",
+    "autumn"
+  ],
+  "scenes": [
+    {
+      "narration": "Fiona Hedgehog loved cozy moments. Whenever she saw her forest friends giving warm hugs, her little heart filled with joy.",
+      "on_screen_text": "WARM HEART",
+      "duration_hint": 9.1,
+      "visual": "A round little hedgehog sitting happily in a golden autumn forest"
+    },
+    {
+      "narration": "However, Fiona was nervous to offer a hug herself. She was afraid her prickly back might poke someone by mistake.",
+      "on_screen_text": "PRICKLY BACK",
+      "duration_hint": 8.7,
+      "visual": "A hedgehog looking at her spiky back while watching woodland friends hug"
+    },
+    {
+      "narration": "One golden afternoon, crisp autumn leaves fluttered down around her. Fiona watched a soft maple leaf float down to the mossy earth.",
+      "on_screen_text": "SOFT LEAVES",
+      "duration_hint": 9.6,
+      "visual": "A hedgehog rolling in a big pile of colorful maple leaves"
+    },
+    {
+      "narration": "She picked up several fluffy, golden leaves and wrapped them gently around her back like a plush, cozy winter coat.",
+      "on_screen_text": "LEAF BLANKET",
+      "duration_hint": 8.7,
+      "visual": "A tiny hedgehog wrapped snugly in a blanket of soft orange autumn leaves"
+    },
+    {
+      "narration": "When a small field mouse walked by, Fiona opened her arms. The mouse cuddled right into the soft leaf coat with a happy cheer.",
+      "on_screen_text": "COZY EMBRACE",
+      "duration_hint": 10.0,
+      "visual": "A small field mouse hugging a leaf-wrapped hedgehog on soft forest moss"
+    },
+    {
+      "narration": "Fiona cheered softly. She had found a way to share warmth and affection without worrying about her spines at all.",
+      "on_screen_text": "LOVE FINDS A WAY",
+      "duration_hint": 8.7,
+      "visual": "Two small forest creatures smiling warmly together under a canopy of leaves"
+    },
+    {
+      "narration": "Wrap yourself up snug and warm for sleep tonight. Follow along for more cozy bedtime stories every night.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.8,
+      "visual": "A gentle starry night sky over a sleeping autumn forest clearing"
+    }
+  ]
+}

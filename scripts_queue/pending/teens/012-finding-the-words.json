@@ -1,0 +1,56 @@
+{
+  "id": "finding-the-words",
+  "title": "Finding the Words",
+  "description": "Elena overcomes public speaking terror by throwing away her scripted notes and speaking from the heart.",
+  "tags": [
+    "publicspeaking",
+    "courage",
+    "vulnerability",
+    "school",
+    "growth"
+  ],
+  "scenes": [
+    {
+      "narration": "Elena froze completely during her first practice round for the regional speech showcase, leaving thirty seconds of dead silence.",
+      "on_screen_text": "DEAD SILENCE",
+      "duration_hint": 8.3,
+      "visual": "A young woman standing frozen behind a simple wooden lectern in a softly lit room."
+    },
+    {
+      "narration": "Her teammates exchanged awkward glances while she clutched her index cards so tightly they crumpled in her palms.",
+      "on_screen_text": "CRUMPLED NOTES",
+      "duration_hint": 7.8,
+      "visual": "Close-up of anxious hands crumpling index cards over a wooden desk surface in shadow."
+    },
+    {
+      "narration": "She retreated to the empty hallway, convinced she should drop out before the final public event.",
+      "on_screen_text": "HALLWAY ESCAPE",
+      "duration_hint": 7.0,
+      "visual": "A teenage girl sitting alone on a quiet window ledge in a sunlit interior corridor."
+    },
+    {
+      "narration": "Her coach sat beside her on the bench, reminding her that speaking isn't about perfection, but connection.",
+      "on_screen_text": "WISE COUNSEL",
+      "duration_hint": 7.4,
+      "visual": "An encouraging adult mentor sitting beside a young woman on a wooden bench talking softly."
+    },
+    {
+      "narration": "Elena tossed her scripted index cards into her backpack and decided to speak straight from her own lived experience.",
+      "on_screen_text": "DITCH THE SCRIPT",
+      "duration_hint": 8.3,
+      "visual": "Hands dropping paper cards into an open canvas backpack sitting on a wooden floor."
+    },
+    {
+      "narration": "On stage under the warm lights, her voice steady and true, the audience leaned in to hear every word.",
+      "on_screen_text": "SPEAKING FREELY",
+      "duration_hint": 7.8,
+      "visual": "A young woman speaking confidently under a warm spotlight on a simple dark stage."
+    },
+    {
+      "narration": "Your real voice is the one that matters most. Follow along for more daily coming-of-age stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "A smiling teenage girl holding her head high while standing under bright warm overhead lights."
+    }
+  ]
+}

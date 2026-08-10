@@ -1,0 +1,56 @@
+{
+  "id": "daisy-deers-high-jump",
+  "title": "Daisy Deer's High Jump",
+  "description": "Daisy feels nervous about stepping over a fallen tree branch, but learns that taking small steps leads to big courage.",
+  "tags": [
+    "bedtime",
+    "courage",
+    "patience",
+    "deer",
+    "forest"
+  ],
+  "scenes": [
+    {
+      "narration": "Daisy Deer loved exploring the soft mossy trails of the enchanted wood with her gentle forest family.",
+      "on_screen_text": "FOREST TRAIL",
+      "duration_hint": 7.8,
+      "visual": "A young fawn walking along a soft mossy path inside a sunny forest"
+    },
+    {
+      "narration": "One sunny morning, a thick mossy log lay right across the path, blocking Daisy's way to the clover meadow.",
+      "on_screen_text": "A BIG LOG",
+      "duration_hint": 8.7,
+      "visual": "A small deer standing in front of a mossy fallen tree trunk"
+    },
+    {
+      "narration": "Daisy paused and wobbled slightly. To her small legs, the log looked as high as a big mountain wall.",
+      "on_screen_text": "DOUBTFUL DEER",
+      "duration_hint": 8.7,
+      "visual": "A little fawn looking up doubtfully at a wooden log across the path"
+    },
+    {
+      "narration": "Her mama walked over gently, nuzzling Daisy's ear softly. She showed her how to step one tiny hoof over at a time.",
+      "on_screen_text": "A HELPING PAW",
+      "duration_hint": 10.0,
+      "visual": "A mother deer standing next to her fawn offering encouragement on a trail"
+    },
+    {
+      "narration": "Daisy took a calm, quiet breath. She lifted her left hoof, then her right, stepping gracefully right over the log.",
+      "on_screen_text": "ONE STEP FORWARD",
+      "duration_hint": 9.1,
+      "visual": "A tiny fawn stepping carefully over a small fallen branch in a wood"
+    },
+    {
+      "narration": "She pranced happily into the sunny meadow. Daisy learned that big obstacles become easy when you take them one small step at a time.",
+      "on_screen_text": "BRAVE STEPS",
+      "duration_hint": 10.4,
+      "visual": "A fawn bounding happily across a sunlit meadow full of butterflies"
+    },
+    {
+      "narration": "Rest well tonight knowing you are braver than you think. Follow along for more heartwarming bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.8,
+      "visual": "A peaceful sunset over a quiet grassy meadow with distant blue hills"
+    }
+  ]
+}

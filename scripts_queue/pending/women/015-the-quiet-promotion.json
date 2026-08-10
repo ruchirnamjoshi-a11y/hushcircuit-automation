@@ -1,0 +1,56 @@
+{
+  "id": "the-quiet-promotion",
+  "title": "The Quiet Promotion",
+  "description": "Lauren stands up for her hard work at the office and advocates for her own promotion with calm professionalism.",
+  "tags": [
+    "career",
+    "advocacy",
+    "selfworth",
+    "workplace",
+    "empowerment"
+  ],
+  "scenes": [
+    {
+      "narration": "Lauren discovered her manager took credit for the quarter-end report she spent three sleepless weeks preparing.",
+      "on_screen_text": "OVERLOOKED",
+      "duration_hint": 9.6,
+      "visual": "Woman sitting in an office desk chair holding a printed document with a subtle pained expression"
+    },
+    {
+      "narration": "Instead of venting in anger or retreating in silence, Lauren gathered her data, spreadsheets, and original drafts.",
+      "on_screen_text": "PREPARING PROOF",
+      "duration_hint": 9.1,
+      "visual": "Woman neatly organizing files and folders on a wooden desk inside a modern office room"
+    },
+    {
+      "narration": "She scheduled a private meeting with senior leadership and presented her documented contributions clearly and professionally.",
+      "on_screen_text": "THE MEETING",
+      "duration_hint": 9.6,
+      "visual": "Woman presenting documents across a glass conference table with a calm and confident posture"
+    },
+    {
+      "narration": "I value my contributions to this company, she said, and I expect my work to be recognized accurately.",
+      "on_screen_text": "STANDING STRONG",
+      "duration_hint": 9.1,
+      "visual": "Close-up of Lauren speaking with firm composure sitting at a conference table indoors"
+    },
+    {
+      "narration": "The director listened attentively, acknowledged her leadership, and offered her the project lead role she deserved.",
+      "on_screen_text": "RESPECT EARNED",
+      "duration_hint": 9.1,
+      "visual": "Senior executive nodding respectfully across a table toward a focused professional woman"
+    },
+    {
+      "narration": "Standing up for herself transformed her career and set an example for every woman in her department.",
+      "on_screen_text": "TAKING CHARGE",
+      "duration_hint": 10.0,
+      "visual": "Woman walking through a bright modern office corridor with a confident smile and upright posture"
+    },
+    {
+      "narration": "Your hard work deserves to be seen and respected. Follow along for more daily stories of strength and empowerment.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "Empowered woman standing near a tall window in a sunlit room looking out with confidence"
+    }
+  ]
+}
