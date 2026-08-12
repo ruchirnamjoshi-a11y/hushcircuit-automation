@@ -36,6 +36,10 @@ class Track:
     # (which only shapes the illustration prompt).
     story_guidance: str = ""
     extra_tags: list[str] = field(default_factory=list)
+    # False for non-Latin-script tracks (e.g. Hindi) where we don't have a
+    # matching caption font wired up — video + audio only, no captions/badge
+    # burned in, rather than rendering wrong-language or missing-glyph text.
+    burn_captions: bool = True
 
 
 # Category IDs are YouTube's fixed video categories (24 = Entertainment,
@@ -152,6 +156,37 @@ TRACKS: dict[str, Track] = {
             "affirming without being preachy."
         ),
         extra_tags=["short story", "women's story", "inspiring story"],
+    ),
+    "hindi_mythology": Track(
+        key="hindi_mythology",
+        label="Indian Mythology (Hindi)",
+        voice="hi-IN-MadhurNeural",
+        image_style_prefix=(
+            "Illustration with absolutely no text, no letters, no words "
+            "anywhere in the image. A single traditional Indian "
+            "mythological illustration of "
+        ),
+        image_style_suffix=(
+            ", inspired by Indian miniature and mural art, warm earthy "
+            "and golden color palette, ornate flowing linework, divine "
+            "glowing light, majestic and reverent mood, isolated scene "
+            "on simple background"
+        ),
+        made_for_kids=False,
+        category_id=CATEGORY_ENTERTAINMENT,
+        story_guidance=(
+            "Write every field — title, description, tags, narration, and "
+            "on_screen_text — in Hindi (Devanagari script), not English. "
+            "Base each story on well-known Indian mythology: Ramayana, "
+            "Mahabharata, Puranic tales — gods, heroes, cosmic events, "
+            "moral lessons. Majestic, reverent storytelling tone, natural "
+            "spoken Hindi (not a stiff word-for-word translation from "
+            "English). visual descriptions can stay in English since "
+            "they only drive the image generator, not what's shown "
+            "on-screen."
+        ),
+        extra_tags=["indian mythology", "hindi story", "hindu mythology", "mythology story", "ramayana", "mahabharata"],
+        burn_captions=False,
     ),
 }
 

@@ -36,6 +36,7 @@ jobs:
           write_token teens "${{ secrets.YOUTUBE_TOKEN_B64_TEENS }}"
           write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
           write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
+          write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
 
       - name: Pull weekly analytics
         run: python run_weekly_analytics.py

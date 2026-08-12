@@ -54,12 +54,18 @@ def assemble_short(
     music_path: Optional[Path] = None,
     max_seconds: float = SHORT_MAX_SECONDS,
     scene_used_fallback: Optional[list[bool]] = None,
+    burn_captions: bool = True,
 ) -> Path:
     """scene_used_fallback (one bool per scene, from
     ai_image.generate_scene_image_raw) marks scenes that fell back to the
     brand gradient — those get regenerated with orbs rather than reusing the
     plain fallback image, so a fallback scene doesn't look flatter than a
-    real AI illustration."""
+    real AI illustration.
+
+    burn_captions=False skips the word-pop captions and progress badge
+    entirely (video + audio only) — for tracks without a matching caption
+    font (e.g. non-Latin scripts), rather than rendering wrong/missing-glyph
+    text on top of the video."""
     if len(scene_audios) != len(script.scenes):
         raise ValueError("scene_audios must cover every scene in the script")
     if len(scene_images) != len(script.scenes):
@@ -94,12 +100,14 @@ def assemble_short(
     combined_path = work_dir / "short_combined.mp4"
     concat_clips(clip_paths, combined_path)
 
-    caption_lines = group_words_into_captions(all_words, max_words=2)
-    ass_path = work_dir / "short_captions.ass"
-    build_ass_captions(
-        caption_lines, ass_path, SHORT_RESOLUTION,
-        font_size=130, badge_lines=badge_lines, badge_font_size=48,
-    )
+    ass_path = None
+    if burn_captions:
+        caption_lines = group_words_into_captions(all_words, max_words=2)
+        ass_path = work_dir / "short_captions.ass"
+        build_ass_captions(
+            caption_lines, ass_path, SHORT_RESOLUTION,
+            font_size=130, badge_lines=badge_lines, badge_font_size=48,
+        )
 
     mix_final(
         combined_path.resolve(),

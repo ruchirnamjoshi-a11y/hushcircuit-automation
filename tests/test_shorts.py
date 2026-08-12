@@ -99,6 +99,32 @@ def test_assemble_short_includes_every_scene(tmp_path):
     assert probe_resolution(out) == (1080, 1920)
 
 
+def test_assemble_short_burn_captions_false_skips_ass_file(tmp_path):
+    script = validate(SAMPLE)
+    scene_audios = []
+    for i, sc in enumerate(script.scenes):
+        dur = min(sc.duration_hint, 3.0)
+        audio_path = make_silent_audio(tmp_path / f"audio3_{i}.aac", dur)
+        scene_audios.append(SceneAudio(
+            scene_index=i, audio_path=audio_path, timings_path=tmp_path / f"t3_{i}.json",
+            duration=dur, word_timings=[WordTiming(word="tip", start=0, end=min(1, dur))],
+        ))
+    scene_images = [
+        make_gradient_image(tmp_path / f"img3_{i}.png", (1080, 1920))
+        for i in range(len(script.scenes))
+    ]
+    work_dir = tmp_path / "work3"
+
+    out = assemble_short(
+        script, scene_audios, scene_images,
+        work_dir=work_dir, out_path=tmp_path / "short3.mp4",
+        burn_captions=False,
+    )
+
+    assert out.exists()
+    assert not (work_dir / "short_captions.ass").exists()
+
+
 def test_assemble_short_regenerates_orbs_for_fallback_scenes(tmp_path):
     script = validate(SAMPLE)
     scene_audios = []

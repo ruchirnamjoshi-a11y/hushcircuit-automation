@@ -29,8 +29,8 @@ jobs:
   produce-and-upload:
     runs-on: ubuntu-latest
     # run_daily.py produces one video per story track (kids/teens/adults/
-    # women) in a single run, so this needs headroom for ~4x the work of a
-    # single video.
+    # women/hindi_mythology) in a single run, so this needs headroom for
+    # ~5x the work of a single video.
     timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
@@ -64,6 +64,7 @@ jobs:
           write_token teens "${{ secrets.YOUTUBE_TOKEN_B64_TEENS }}"
           write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
           write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
+          write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
 
       - name: Run daily pipeline (all story tracks)
         env:
