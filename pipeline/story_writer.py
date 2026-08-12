@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -21,6 +22,11 @@ from pipeline.config import GEMINI_API_KEY, GEMINI_MODEL, QUEUE_PENDING_DIR, QUE
 from pipeline.scripts import Script, ScriptValidationError, to_dict, validate
 
 REQUEST_TIMEOUT_SECONDS = 120
+# gemini-flash-latest's free tier observed at ~5 requests/minute (hit a real
+# 429 backfilling at 1 req/sec) — 13s keeps a big backfill batch under that.
+BACKFILL_PACING_SECONDS = 13
+BACKFILL_RATE_LIMIT_RETRY_SECONDS = 65  # a bit over a minute, to clear the window
+BACKFILL_MAX_RETRIES = 2
 
 SCENE_SCHEMA = {
     "type": "object",
@@ -183,3 +189,90 @@ def write_stories(track: Track, scripts: list[Script]) -> list[Path]:
         out_path.write_text(json.dumps(to_dict(script), indent=2))
         written.append(out_path)
     return written
+
+
+CHARACTER_REFERENCE_SCHEMA = {
+    "type": "object",
+    "properties": {"character_reference": {"type": "string"}},
+    "required": ["character_reference"],
+}
+
+BACKFILL_PROMPT_TEMPLATE = """Read this short story, written for a narrated video, and write ONE \
+detailed, reusable physical description of its main protagonist, to be \
+used as a consistent reference for AI image generation across every scene.
+
+Describe species/build, hair or fur color, clothing, and 1-2 distinguishing \
+features (e.g. "a small cream-colored rabbit with floppy brown-tipped ears \
+and a red neckerchief"). Keep it concise (1-2 sentences) and concrete — \
+avoid abstract or emotional language, and don't describe an action or pose.
+
+If the story genuinely has no single recurring character (e.g. it's about \
+a place or an event with no protagonist), return an empty string.
+
+STORY TITLE: {title}
+
+SCENES:
+{scenes_text}
+"""
+
+
+def _build_backfill_prompt(script: Script) -> str:
+    scenes_text = "\n".join(f"- {s.on_screen_text}: {s.narration}" for s in script.scenes)
+    return BACKFILL_PROMPT_TEMPLATE.format(title=script.title, scenes_text=scenes_text)
+
+
+def generate_character_reference(script: Script) -> str:
+    """Retrofits a character_reference for a story written before that
+    field existed, by having Gemini read the finished story back."""
+    if not GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY is not set")
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+    body = {
+        "contents": [{"parts": [{"text": _build_backfill_prompt(script)}]}],
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "responseSchema": CHARACTER_REFERENCE_SCHEMA,
+        },
+    }
+    response = requests.post(
+        url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS,
+    )
+    response.raise_for_status()
+    data = response.json()
+    text = data["candidates"][0]["content"]["parts"][0]["text"]
+    return json.loads(text).get("character_reference", "")
+
+
+def backfill_character_references(track_key: str) -> list[Path]:
+    """Fills in character_reference for every pending script of this track
+    that doesn't have one yet (written before the field existed). Only
+    touches pending/ — already-used scripts won't be produced again, so
+    there's nothing to gain backfilling them. Returns the paths updated."""
+    pending_dir = QUEUE_PENDING_DIR / track_key
+    updated = []
+    for path in sorted(pending_dir.glob("*.json")):
+        data = json.loads(path.read_text())
+        if data.get("character_reference", ""):
+            continue
+        script = validate(data)
+
+        for attempt in range(BACKFILL_MAX_RETRIES + 1):
+            try:
+                character_reference = generate_character_reference(script)
+                break
+            except requests.exceptions.HTTPError as e:
+                is_rate_limited = e.response is not None and e.response.status_code == 429
+                if is_rate_limited and attempt < BACKFILL_MAX_RETRIES:
+                    print(f"[story_writer] rate limited backfilling '{script.id}', "
+                          f"waiting {BACKFILL_RATE_LIMIT_RETRY_SECONDS}s...")
+                    time.sleep(BACKFILL_RATE_LIMIT_RETRY_SECONDS)
+                else:
+                    raise
+        else:
+            raise RuntimeError(f"backfill failed for '{script.id}' after {BACKFILL_MAX_RETRIES} retries")
+
+        data["character_reference"] = character_reference
+        path.write_text(json.dumps(data, indent=2))
+        updated.append(path)
+        time.sleep(BACKFILL_PACING_SECONDS)
+    return updated

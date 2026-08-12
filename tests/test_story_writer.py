@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from pipeline.config import TRACKS
-from pipeline.story_writer import generate_stories, write_stories
+from pipeline.story_writer import backfill_character_references, generate_stories, write_stories
 
 KIDS_TRACK = TRACKS["kids"]
 
@@ -95,3 +95,54 @@ def test_write_stories_numbers_sequentially_after_existing_files(tmp_path):
     assert written[0].exists()
     data = json.loads(written[0].read_text())
     assert data["id"] == "test-story"
+
+
+def _fake_character_reference_response(character_reference: str) -> MagicMock:
+    mock_response = MagicMock()
+    mock_response.raise_for_status.return_value = None
+    mock_response.json.return_value = {
+        "candidates": [{"content": {"parts": [{"text": json.dumps({"character_reference": character_reference})}]}}]
+    }
+    return mock_response
+
+
+def test_backfill_character_references_fills_in_missing_ones(tmp_path):
+    pending_dir = tmp_path / "pending" / "kids"
+    pending_dir.mkdir(parents=True)
+    script_no_ref = json.loads(json.dumps(VALID_STORY))
+    script_no_ref["character_reference"] = ""
+    (pending_dir / "001-no-ref.json").write_text(json.dumps(script_no_ref))
+    script_with_ref = json.loads(json.dumps(VALID_STORY))
+    script_with_ref["id"] = "has-ref-story"
+    script_with_ref["character_reference"] = "already has one"
+    (pending_dir / "002-has-ref.json").write_text(json.dumps(script_with_ref))
+
+    mock_response = _fake_character_reference_response("a small cream-colored rabbit")
+    with patch("pipeline.story_writer.GEMINI_API_KEY", "fake-key"), \
+         patch("pipeline.story_writer.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.story_writer.QUEUE_PENDING_DIR", tmp_path / "pending"), \
+         patch("pipeline.story_writer.BACKFILL_PACING_SECONDS", 0):
+        updated = backfill_character_references("kids")
+
+    assert len(updated) == 1  # only the one missing a reference
+    assert mock_post.call_count == 1
+    data = json.loads((pending_dir / "001-no-ref.json").read_text())
+    assert data["character_reference"] == "a small cream-colored rabbit"
+    # untouched file keeps its original value
+    unchanged = json.loads((pending_dir / "002-has-ref.json").read_text())
+    assert unchanged["character_reference"] == "already has one"
+
+
+def test_backfill_character_references_no_op_when_all_have_references(tmp_path):
+    pending_dir = tmp_path / "pending" / "kids"
+    pending_dir.mkdir(parents=True)
+    script_with_ref = json.loads(json.dumps(VALID_STORY))
+    script_with_ref["character_reference"] = "already has one"
+    (pending_dir / "001-has-ref.json").write_text(json.dumps(script_with_ref))
+
+    with patch("pipeline.story_writer.QUEUE_PENDING_DIR", tmp_path / "pending"), \
+         patch("pipeline.story_writer.requests.post") as mock_post:
+        updated = backfill_character_references("kids")
+
+    assert updated == []
+    mock_post.assert_not_called()
