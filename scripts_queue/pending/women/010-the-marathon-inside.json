@@ -1,0 +1,56 @@
+{
+  "id": "the-marathon-inside",
+  "title": "The Marathon Inside",
+  "description": "Recovering from illness, Clara proves to herself that resilience is built one small step at a time.",
+  "tags": [
+    "running",
+    "resilience",
+    "healing",
+    "empowerment",
+    "fitness"
+  ],
+  "scenes": [
+    {
+      "narration": "Everyone said Clara was too fragile to finish the trail run after her long illness. But she tied her laces anyway, determined to reclaim her strength.",
+      "on_screen_text": "THE CHALLENGE",
+      "duration_hint": 10.9,
+      "visual": "A woman tying her running shoe laces on a wooden bench outdoors in early morning light"
+    },
+    {
+      "narration": "The cold morning air burned her lungs, and her legs felt heavy after the first two miles. Doubt whispered in her head, telling her to stop.",
+      "on_screen_text": "FIRST MILES",
+      "duration_hint": 10.9,
+      "visual": "Woman running along a dirt trail through a quiet pine forest as sunlight filters through trees"
+    },
+    {
+      "narration": "Instead of giving up, Clara shortened her stride and focused on the path right in front of her. One single step at a time was all she needed.",
+      "on_screen_text": "PUSHING THROUGH",
+      "duration_hint": 10.4,
+      "visual": "Close-up of running shoes stepping firmly onto a muddy woodland path"
+    },
+    {
+      "narration": "At the steep incline, her body ached, but her spirit soared. She was no longer running against others, she was running for herself.",
+      "on_screen_text": "MIDWAY MILESTONE",
+      "duration_hint": 10.4,
+      "visual": "Woman resting her hands on her knees catching her breath while looking up a hillside path"
+    },
+    {
+      "narration": "As she reached the peak, the valley stretched out before her in magnificent golden light. Sweat poured down her face, mixed with tears of pure joy.",
+      "on_screen_text": "REACHING THE TOP",
+      "duration_hint": 10.9,
+      "visual": "Woman standing atop a grassy mountain hill overlooking a sunlit panoramic valley with arms open wide"
+    },
+    {
+      "narration": "Clara realized resilience was not about never falling down, but about trusting her power to keep moving forward.",
+      "on_screen_text": "A NEW LEAF",
+      "duration_hint": 9.6,
+      "visual": "Woman smiling gently with sweat on her brow glowing in afternoon golden sunlight outdoors"
+    },
+    {
+      "narration": "You are stronger than any obstacle in your way. Follow along for daily stories of courage and growth.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "Peaceful woman standing in nature looking calmly toward the sun with a hopeful expression"
+    }
+  ]
+}

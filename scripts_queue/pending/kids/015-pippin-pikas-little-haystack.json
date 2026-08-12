@@ -1,0 +1,56 @@
+{
+  "id": "pippin-pikas-little-haystack",
+  "title": "Pippin Pika's Little Haystack",
+  "description": "When a gust of wind scatters Pippin's gathered grass, a helpful chipmunk shows him that teamwork makes everything better.",
+  "tags": [
+    "bedtime",
+    "teamwork",
+    "patience",
+    "pika",
+    "mountains"
+  ],
+  "scenes": [
+    {
+      "narration": "Pippin Pika lived high on a sunny rocky mountain peak. He loved gathering sweet mountain grass to build cozy winter stacks.",
+      "on_screen_text": "SUMMER GRASS",
+      "duration_hint": 9.6,
+      "visual": "A fluffy pika animal picking tall green stems of grass on a rocky hill"
+    },
+    {
+      "narration": "Just as Pippin finished a large stack, a sudden swooping mountain breeze blew across the rocks and scattered his grass everywhere.",
+      "on_screen_text": "BLOWN AWAY",
+      "duration_hint": 9.6,
+      "visual": "Gusts of wind blowing dry grass stalks high into the blue sky"
+    },
+    {
+      "narration": "Pippin sat on a warm stone, feeling sad as he watched his hard morning work tumble down the grassy hillside.",
+      "on_screen_text": "LOST STACKS",
+      "duration_hint": 8.7,
+      "visual": "A sad pika sitting on a stone watching grass drift away in wind"
+    },
+    {
+      "narration": "Suddenly, a friendly chipmunk scrambled down from a boulder with a wide, cheery grin and an armful of fresh green grass stems.",
+      "on_screen_text": "FRIENDS HELP",
+      "duration_hint": 9.6,
+      "visual": "A friendly chipmunk carrying a armful of green grass stems toward a pika"
+    },
+    {
+      "narration": "Together, they scurried up and down the rocks, collecting all the scattered blades and building a brand new, twice-as-big stack.",
+      "on_screen_text": "TEAMWORK",
+      "duration_hint": 9.6,
+      "visual": "A pika and a chipmunk bundling grass together on a sunlit stone"
+    },
+    {
+      "narration": "Pippin hugged his chipmunk friend with gratitude. Working together had turned a tough mistake into a fun game.",
+      "on_screen_text": "BETTER TOGETHER",
+      "duration_hint": 8.3,
+      "visual": "Two small mountain animals sitting beside a big pile of gathered grass"
+    },
+    {
+      "narration": "Close your eyes and sleep peacefully tonight. Follow along for more gentle mountain tales every single evening.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.8,
+      "visual": "A calm twilight mountain view with soft orange clouds and gentle stars"
+    }
+  ]
+}

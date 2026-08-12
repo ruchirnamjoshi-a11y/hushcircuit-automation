@@ -1,0 +1,56 @@
+{
+  "id": "threading-the-needle",
+  "title": "Threading the Needle",
+  "description": "Kai transforms a ruined sewing project into a bold fashion statement hours before a runway show.",
+  "tags": [
+    "fashion",
+    "upcycling",
+    "creativity",
+    "design",
+    "persistence"
+  ],
+  "scenes": [
+    {
+      "narration": "Kai designed a jacket out of thrifted denim for the community upcycled fashion show, but his seams unravelled hours before showtime.",
+      "on_screen_text": "UNRAVELED SEAMS",
+      "duration_hint": 9.6,
+      "visual": "A young designer standing next to a denim jacket on a dress mannequin in a studio."
+    },
+    {
+      "narration": "He sat surrounded by fabric scraps, staring at the ruined sleeve while the clock ticked loudly on the wall.",
+      "on_screen_text": "RACE THE CLOCK",
+      "duration_hint": 8.7,
+      "visual": "Scattered fabric scraps and dark thread spools around a glowing sewing machine on a table."
+    },
+    {
+      "narration": "He almost gave up, ready to hide his mannequin under a sheet and walk away from the contest.",
+      "on_screen_text": "GIVING UP",
+      "duration_hint": 7.8,
+      "visual": "A young man sitting on a stool staring down at a torn sleeve with disappointment."
+    },
+    {
+      "narration": "Instead, he grabbed heavy silver safety pins and dark thread, transforming the tear into an edgy industrial accent.",
+      "on_screen_text": "REACTION DESIGN",
+      "duration_hint": 8.3,
+      "visual": "Hands carefully pushing silver safety pins into thick denim fabric on a work table."
+    },
+    {
+      "narration": "He worked through the night, hand-stitching bold metallic patterns over every frayed line.",
+      "on_screen_text": "HAND STITCHING",
+      "duration_hint": 6.1,
+      "visual": "Close-up of hands hand-sewing metallic thread into a dark fabric panel under a lamp."
+    },
+    {
+      "narration": "As the model walked the runway, the crowd cheered for the daring, hand-crafted details that saved the entire design.",
+      "on_screen_text": "RUNWAY TRIUMPH",
+      "duration_hint": 8.7,
+      "visual": "A model wearing a styled custom jacket walking along a simple runway under warm spotlights."
+    },
+    {
+      "narration": "Flaws can become your strongest creative statement. Follow along for more inspiring daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "A proud young fashion designer holding a pair of shears smiling in his creative studio."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "barnaby-badgers-lantern",
+  "title": "Barnaby Badger's Lantern",
+  "description": "Barnaby makes a bright moss lantern to help a lost beetle find his way home through the dark woods.",
+  "tags": [
+    "bedtime",
+    "kindness",
+    "light",
+    "badger",
+    "night"
+  ],
+  "scenes": [
+    {
+      "narration": "Barnaby Badger lived under a giant oak tree where the ground was carpeted with glowing green forest moss.",
+      "on_screen_text": "GLOWING MOSS",
+      "duration_hint": 7.8,
+      "visual": "A young badger gathering glowing green moss inside a hollow tree trunk"
+    },
+    {
+      "narration": "As dusk settled over the woods, Barnaby heard a soft crying near a tall fern. A little beetle was lost in the dark shadows.",
+      "on_screen_text": "LOST IN DARKNESS",
+      "duration_hint": 10.0,
+      "visual": "A tiny shiny beetle sitting lost on a dark forest path at twilight"
+    },
+    {
+      "narration": "The forest path was too dark for the beetle to see his home. Barnaby carefully placed a glowing patch of moss inside a clear glass jar.",
+      "on_screen_text": "MAKING A LIGHT",
+      "duration_hint": 10.9,
+      "visual": "A badger carefully placing glowing green moss inside a clear glass lantern"
+    },
+    {
+      "narration": "He lifted the lantern high, sending a warm green light dancing across the mossy path and illuminating every safe step.",
+      "on_screen_text": "GUIDING THE WAY",
+      "duration_hint": 9.1,
+      "visual": "A badger holding a softly glowing lantern to illuminate a mossy pathway"
+    },
+    {
+      "narration": "Together, they trotted safely down the trail until the little beetle reached his cozy home under a big red mushroom cap.",
+      "on_screen_text": "SAFE AT HOME",
+      "duration_hint": 9.6,
+      "visual": "A little beetle reuniting with tiny beetle family members under a mushroom"
+    },
+    {
+      "narration": "Barnaby smiled as the beetle waved thank you. Even a tiny light can make a big difference when shared with a friend.",
+      "on_screen_text": "A BRIGHT LIGHT",
+      "duration_hint": 9.1,
+      "visual": "A badger watching happy beetles under the warm light of a moss lantern"
+    },
+    {
+      "narration": "May peaceful light guide your dreams tonight. Follow along for more comforting bedtime adventures every evening.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.8,
+      "visual": "A cozy forest hollow under a quiet moonlight sky with faint fireflies"
+    }
+  ]
+}

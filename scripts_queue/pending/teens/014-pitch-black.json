@@ -1,0 +1,56 @@
+{
+  "id": "pitch-black",
+  "title": "Pitch Black",
+  "description": "Chloe conquers her fear of heights on an indoor climbing wall with the help of a trusting belayer.",
+  "tags": [
+    "climbing",
+    "fearofheights",
+    "trust",
+    "sports",
+    "mindset"
+  ],
+  "scenes": [
+    {
+      "narration": "Chloe was terrified of heights, but she signed up for the indoor climbing gym's top-rope challenge to beat her anxiety.",
+      "on_screen_text": "THE HIGH WALL",
+      "duration_hint": 9.1,
+      "visual": "A teenage girl wearing a climbing harness looking up at a colorful indoor climbing wall."
+    },
+    {
+      "narration": "Halfway up the wall, her chalky hands began to shake and her boots slipped on a tiny plastic hold.",
+      "on_screen_text": "SHAKY HOLD",
+      "duration_hint": 8.7,
+      "visual": "Close-up of chalked hands gripping a bright resin climbing hold on an indoor wall."
+    },
+    {
+      "narration": "Looking down at the gym floor far below, her vision narrowed and her breath caught in her chest.",
+      "on_screen_text": "LOOKING DOWN",
+      "duration_hint": 7.8,
+      "visual": "A climber hanging on a rope looking down from high up near the ceiling beam."
+    },
+    {
+      "narration": "Her belay partner called up calmly from below, reminding her to trust the rope and take one steady step.",
+      "on_screen_text": "STEADY BELAY",
+      "duration_hint": 8.7,
+      "visual": "A teenager standing on the gym floor below holding a belay device and looking upward."
+    },
+    {
+      "narration": "Chloe closed her eyes, reached for a firm volume pocket overhead, and pushed up through her heels.",
+      "on_screen_text": "ONE MORE STEP",
+      "duration_hint": 7.4,
+      "visual": "Close-up of a climber pushing off a rubber foot hold with determination and focus."
+    },
+    {
+      "narration": "She slapped the top anchor ring with a grin, looking out across the gym with a soaring feeling of triumph.",
+      "on_screen_text": "THE TOP RING",
+      "duration_hint": 8.7,
+      "visual": "A young woman reaching the top hold of a climbing wall with a joyous expression."
+    },
+    {
+      "narration": "Courage is just taking one small step at a time. Follow along for more stories like this every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.8,
+      "visual": "A happy teenage girl sitting on a gym mat with her climbing gear smiling widely."
+    }
+  ]
+}

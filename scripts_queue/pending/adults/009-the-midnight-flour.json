@@ -1,0 +1,56 @@
+{
+  "id": "the-midnight-flour",
+  "title": "The Midnight Flour",
+  "description": "An overworked accountant finds new purpose in the quiet stillness of late-night baking.",
+  "tags": [
+    "baking",
+    "career-change",
+    "legacy",
+    "healing",
+    "middle-age"
+  ],
+  "scenes": [
+    {
+      "narration": "At two in the morning, Arthur stared at the balance sheets that had consumed his life for thirty years. His hands were steady, but his heart felt entirely numb.",
+      "on_screen_text": "THE LATE SHIFT",
+      "duration_hint": 13.0,
+      "visual": "A tired middle-aged man sitting at a dark wooden desk lit by a soft desk lamp"
+    },
+    {
+      "narration": "In the quiet kitchen, he pulled out his father's old metal mixing bowl. The scent of yeast and warm flour brought back memories of childhood mornings long forgotten.",
+      "on_screen_text": "A BURIED MEMORY",
+      "duration_hint": 12.0,
+      "visual": "Hands resting on an ancient metal mixing bowl on a rustic kitchen counter"
+    },
+    {
+      "narration": "Kneading dough in the silence of the night was the first time in years he felt present in his own body.",
+      "on_screen_text": "THE RHYTHM OF DOUGH",
+      "duration_hint": 9.0,
+      "visual": "Close-up of flour-dusted hands gently shaping a round loaf of sourdough bread"
+    },
+    {
+      "narration": "He realized he had spent decades balancing other people's numbers while bankrupting his own passion.",
+      "on_screen_text": "BALANCING THE BOOKS",
+      "duration_hint": 7.0,
+      "visual": "A reflective man looking out a dark kitchen window while dough rises nearby"
+    },
+    {
+      "narration": "When the golden loaf came out of the oven, the crust crackled like distant applause.",
+      "on_screen_text": "THE FIRST LOAF",
+      "duration_hint": 7.0,
+      "visual": "Warm golden baked sourdough loaf steaming on a wire cooling rack in warm light"
+    },
+    {
+      "narration": "The next morning, he packed his briefcase with sourdough loaves instead of audit reports and walked out the door toward a new life.",
+      "on_screen_text": "A NEW DIRECTION",
+      "duration_hint": 10.0,
+      "visual": "A man in a casual wool coat carrying a paper bag of fresh bread down a morning street"
+    },
+    {
+      "narration": "Life begins again the moment you decide to feed your soul. Follow along for more quiet stories of second chances.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A smiling middle-aged man pouring coffee in a sunlit kitchen with flour on his apron"
+    }
+  ]
+}

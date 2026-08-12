@@ -1,0 +1,56 @@
+{
+  "id": "sammy-skunks-sweet-garden",
+  "title": "Sammy Skunk's Sweet Garden",
+  "description": "Sammy feels too shy to invite friends over, but his sweet strawberry garden helps him make a wonderful connection.",
+  "tags": [
+    "bedtime",
+    "friendship",
+    "shyness",
+    "gardening",
+    "animals"
+  ],
+  "scenes": [
+    {
+      "narration": "Sammy Skunk grew the sweetest red berries in the entire sunlit valley. Every morning, he tended to his soft green patch with love.",
+      "on_screen_text": "BERRY PATCH",
+      "duration_hint": 9.6,
+      "visual": "A cute skunk standing in a colorful garden filled with red berries"
+    },
+    {
+      "narration": "Sammy wished he had friends to taste his juicy berries, but he was worried the other animals would be shy around a skunk.",
+      "on_screen_text": "SHY LITTLE SKUNK",
+      "duration_hint": 10.0,
+      "visual": "A skunk peeking timidly from behind a large green bush in a meadow"
+    },
+    {
+      "narration": "One afternoon, a small bunny sat on a nearby log, sighing softly because her tummy was rumbling after a long walk.",
+      "on_screen_text": "A HUNGRY BUNNY",
+      "duration_hint": 9.1,
+      "visual": "A small brown bunny resting on a log with a tummy rumble look"
+    },
+    {
+      "narration": "Sammy took a deep breath, gathered a large basket of his ripe berries, and walked over with a big, welcoming smile.",
+      "on_screen_text": "SHARING DESSERT",
+      "duration_hint": 9.6,
+      "visual": "A skunk offering a wooden bowl packed with bright red berries to a bunny"
+    },
+    {
+      "narration": "The bunny tasted a berry and her eyes lit up with joy. Soon, she called over her friends to share in the delicious feast.",
+      "on_screen_text": "NEW FRIENDS",
+      "duration_hint": 9.6,
+      "visual": "Three small woodland animals eating sweet berries together on a mossy mound"
+    },
+    {
+      "narration": "Sammy laughed and chatted with his new forest companions all afternoon. He learned that kindness is the sweetest scent of all.",
+      "on_screen_text": "SWEET FRIENDSHIP",
+      "duration_hint": 9.1,
+      "visual": "A warm sunny glade with animals laughing under a big oak tree"
+    },
+    {
+      "narration": "Sleep tight tonight knowing new friends are always nearby. Follow along for more peaceful bedtime tales tomorrow.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.3,
+      "visual": "Soft golden twilight over a quiet meadow with tall gentle wildflowers"
+    }
+  ]
+}
