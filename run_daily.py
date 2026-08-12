@@ -120,9 +120,12 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
         script, scene_audios, short_images,
         work_dir=run_dir / "work", out_path=run_dir / "video.mp4",
         music_path=music_path, scene_used_fallback=scene_used_fallback,
+        burn_captions=track.burn_captions,
     )
 
-    thumbnail_path = generate_thumbnail(script.title, run_dir / "thumbnail.jpg")
+    thumbnail_path = generate_thumbnail(
+        script.title, run_dir / "thumbnail.jpg", draw_text=track.burn_captions,
+    )
 
     print(f"[{track.key}] Uploading (dry_run={dry_run})...")
     upload_result = upload_daily_video(
