@@ -1,0 +1,56 @@
+{
+  "id": "off-key",
+  "title": "Off Key",
+  "description": "A timid bass player builds the courage to share his original song with his garage band.",
+  "tags": [
+    "music",
+    "band",
+    "collaboration",
+    "shyness",
+    "creative"
+  ],
+  "scenes": [
+    {
+      "narration": "Marcus played bass in a basement indie band, but he never dared to share the melodies he wrote late at night.",
+      "on_screen_text": "HIDDEN MELODIES",
+      "duration_hint": 9.1,
+      "visual": "A young man sitting on an amplifier holding a wooden bass guitar in a garage."
+    },
+    {
+      "narration": "During rehearsal, their lead guitarist snapped when the tempo dragged, leaving a tense silence across the garage floor.",
+      "on_screen_text": "TENSE REHEARSAL",
+      "duration_hint": 7.8,
+      "visual": "An electric guitar resting against a speaker cabinet in a cozy garage studio with instruments."
+    },
+    {
+      "narration": "Marcus took a leap, plugged in his acoustic, and played the soft opening riff of his hidden ballad.",
+      "on_screen_text": "FIRST NOTE",
+      "duration_hint": 7.8,
+      "visual": "A young man sitting down playing an acoustic guitar with focused emotion in warm lighting."
+    },
+    {
+      "narration": "At first, the drummer kept counting wrong, missing the rhythm and making the song sound disjointed and awkward.",
+      "on_screen_text": "OFF BEAT",
+      "duration_hint": 7.8,
+      "visual": "Close-up of wooden drumsticks striking a cymbal in a softly lit music practice room."
+    },
+    {
+      "narration": "Marcus slowed his pacing, made eye contact, and guided the band into a shared, rhythmic groove.",
+      "on_screen_text": "FINDING THE GROOVE",
+      "duration_hint": 7.0,
+      "visual": "A musician making eye contact with his bandmates while tapping his foot to the beat."
+    },
+    {
+      "narration": "By the third chorus, the entire garage echoed with a powerful blend of harmonies they built together.",
+      "on_screen_text": "FULL HARMONY",
+      "duration_hint": 7.4,
+      "visual": "Three young musicians performing together with passion inside a warm garage illuminated by lamps."
+    },
+    {
+      "narration": "Taking the lead starts with sharing your sound. Follow along for more relatable daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "A smiling young bass player holding his instrument strap outdoors in late afternoon sunlight."
+    }
+  ]
+}

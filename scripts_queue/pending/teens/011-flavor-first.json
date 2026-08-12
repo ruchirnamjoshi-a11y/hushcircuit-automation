@@ -1,0 +1,56 @@
+{
+  "id": "flavor-first",
+  "title": "Flavor First",
+  "description": "A teen chef burns his main course during a cooking competition and invents something better under pressure.",
+  "tags": [
+    "cooking",
+    "pressure",
+    "creativity",
+    "resilience",
+    "culinary"
+  ],
+  "scenes": [
+    {
+      "narration": "Sam entered the regional teen cooking clash with his grandmother's secret marinara recipe, but panic made him burn the main batch.",
+      "on_screen_text": "KITCHEN PANIC",
+      "duration_hint": 9.1,
+      "visual": "A young chef in a white apron standing over a smoking pan on a stainless kitchen counter."
+    },
+    {
+      "narration": "With twenty minutes left on the clock, his station was a smoky mess of scorched pans and chopped tomatoes.",
+      "on_screen_text": "SMOKY MESS",
+      "duration_hint": 8.3,
+      "visual": "Close-up of a burnt metal pan on a stainless steel tabletop surrounded by chopped vegetables."
+    },
+    {
+      "narration": "He almost tossed his apron into the bin and walked off the kitchen floor right then.",
+      "on_screen_text": "READY TO QUIT",
+      "duration_hint": 6.5,
+      "visual": "A frustrated teenage boy resting his forehead against his hand beside a kitchen work surface."
+    },
+    {
+      "narration": "Taking a deep breath, he decided to pivot, using fresh herbs and roasted red peppers to create an entirely original sauce.",
+      "on_screen_text": "NEW RECIPE",
+      "duration_hint": 9.6,
+      "visual": "Hands slicing fresh green herbs and red peppers on a wooden cutting board in bright light."
+    },
+    {
+      "narration": "When the timer dinged, he plated his rustic pasta dish with trembling fingers, serving it to the lead judge.",
+      "on_screen_text": "FINAL SERVE",
+      "duration_hint": 7.8,
+      "visual": "A carefully arranged plate of pasta with fresh red sauce sitting on a clean counter."
+    },
+    {
+      "narration": "The judge took one bite, raised an eyebrow in surprise, and asked for his personal recipe name.",
+      "on_screen_text": "JUDGE TASTES IT",
+      "duration_hint": 7.0,
+      "visual": "An older judge tasting a forkful of pasta while standing in a brightly lit kitchen setting."
+    },
+    {
+      "narration": "Sometimes mistakes lead to your best creations. Follow along for more inspiring stories every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "A proud young chef smiling warmly while adjusting his apron in a modern kitchen studio."
+    }
+  ]
+}

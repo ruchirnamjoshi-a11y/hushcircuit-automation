@@ -1,0 +1,56 @@
+{
+  "id": "the-harbor-light",
+  "title": "The Harbor Light",
+  "description": "A widowed lighthouse keeper prepares to retire after thirty years of watching the sea.",
+  "tags": [
+    "grief",
+    "retirement",
+    "ocean",
+    "solitude",
+    "new-beginnings"
+  ],
+  "scenes": [
+    {
+      "narration": "For thirty years, Marcus maintained the coastal beacon through violent storms and quiet foggy nights. Today was his final shift before full retirement.",
+      "on_screen_text": "THE LAST WATCH",
+      "duration_hint": 11.0,
+      "visual": "A weathered man standing on a high stone balcony overlooking misty ocean waves"
+    },
+    {
+      "narration": "Ever since his wife passed five years ago, the lantern room had been his sanctuary and his fortress against grief.",
+      "on_screen_text": "A TOWER OF REFLECTION",
+      "duration_hint": 9.0,
+      "visual": "A quiet brass lantern housing shining warmly over crashing blue ocean waves below"
+    },
+    {
+      "narration": "Polishing the heavy glass lens one last time, he noticed his own reflection looked tired, yet oddly peaceful.",
+      "on_screen_text": "POLISHING THE LENS",
+      "duration_hint": 8.0,
+      "visual": "Detailed shot of hands polishing a massive glass optical lens with a soft cotton cloth"
+    },
+    {
+      "narration": "He realized he had spent years keeping others safe while hiding away from the world down below.",
+      "on_screen_text": "SAFE AT DISTANCE",
+      "duration_hint": 8.0,
+      "visual": "A lonely figure looking out through a round glass window toward a distant coastal village"
+    },
+    {
+      "narration": "He packed his small canvas duffel bag, placed the brass keeper keys on the wooden table, and walked down the spiral stairs.",
+      "on_screen_text": "LEAVING THE TOWER",
+      "duration_hint": 10.0,
+      "visual": "A man walking down a curving spiral staircase holding a worn leather bag"
+    },
+    {
+      "narration": "Stepping onto the mainland soil, the sea breeze felt different, like an invitation rather than a wall.",
+      "on_screen_text": "ON SOLID GROUND",
+      "duration_hint": 8.0,
+      "visual": "A man standing on a rocky shoreline path looking forward toward green coastal hills"
+    },
+    {
+      "narration": "Sometimes you have to step out of your sanctuary to find your next home. Follow along for more life journey stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "A serene middle-aged man walking along a sandy beach in warm sunset light"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "her-own-masterpiece",
+  "title": "Her Own Masterpiece",
+  "description": "Sophia overcomes self-doubt and presents her wood carvings to the world, rediscovering her confidence.",
+  "tags": [
+    "creativity",
+    "overcomingfear",
+    "careerchange",
+    "confidence",
+    "empowerment"
+  ],
+  "scenes": [
+    {
+      "narration": "For years, Sophia kept her hand-carved wooden sculptures hidden away, afraid of being judged by professional artists.",
+      "on_screen_text": "THE CRITIC",
+      "duration_hint": 10.4,
+      "visual": "Woman sitting in a dusty woodworking shop looking at intricate carved wooden birds on a workbench"
+    },
+    {
+      "narration": "Tired of living in fear, she entered her signature piece into a local community gallery submission.",
+      "on_screen_text": "THE LEAP",
+      "duration_hint": 9.6,
+      "visual": "Hands carefully placing a polished wooden sculpture onto a plain velvet table surface inside a room"
+    },
+    {
+      "narration": "Standing in the gallery among strangers, her heart pounded. Someone stopped and marveled at the intricate grain of her artwork.",
+      "on_screen_text": "EXPOSURE",
+      "duration_hint": 10.4,
+      "visual": "Woman standing nervously in a softly lit gallery room while visitors admire a wooden sculpture"
+    },
+    {
+      "narration": "An elderly art collector approached her, praising the warmth and emotion captured in the wood. Her heart swelled with pride.",
+      "on_screen_text": "APPRECIATION",
+      "duration_hint": 10.4,
+      "visual": "Elderly person speaking warmly with a smiling young woman beside a handcrafted wooden art piece"
+    },
+    {
+      "narration": "Sophia realized that perfection was never required to touch someone's heart, only authenticity and passion.",
+      "on_screen_text": "BELIEVING",
+      "duration_hint": 9.1,
+      "visual": "Close-up of Sophia smiling with genuine pride as sunlight illuminates her face"
+    },
+    {
+      "narration": "She returned to her workshop with renewed spirit, creating not for approval, but for the pure joy of expression.",
+      "on_screen_text": "PURE PASSION",
+      "duration_hint": 10.4,
+      "visual": "Woman using a chisel on raw wood inside a rustic sunlit studio with wood shavings around"
+    },
+    {
+      "narration": "Sharing your authentic gifts with the world is an act of bravery. Follow along for more inspiring stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "Radiant woman holding a carved wooden heart in her hands with a bright confident smile"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "in-frame",
+  "title": "In Frame",
+  "description": "A young photographer overcomes her self-doubt by accidentally sharing her most authentic work.",
+  "tags": [
+    "photography",
+    "selfdoubt",
+    "art",
+    "confidence",
+    "identity"
+  ],
+  "scenes": [
+    {
+      "narration": "Maya always hid behind her camera lens, capturing everyone else's candid moments while remaining completely invisible.",
+      "on_screen_text": "THE UNSEEN",
+      "duration_hint": 6.5,
+      "visual": "Teenage girl holding a camera lens to her eye in a softly lit indoor hallway."
+    },
+    {
+      "narration": "The school art gallery deadline was tonight, but her folder was full of deleted drafts and self-doubt.",
+      "on_screen_text": "DOUBT CREEPS IN",
+      "duration_hint": 7.0,
+      "visual": "Desk with scattered black and white photograph prints near a desk lamp late at night."
+    },
+    {
+      "narration": "She showed her best portrait to her best friend, who barely glanced up from her phone screen.",
+      "on_screen_text": "IGNORED WORK",
+      "duration_hint": 7.0,
+      "visual": "Two teenage friends sitting on a wooden park bench looking down at photo prints."
+    },
+    {
+      "narration": "Crushed, Maya accidentally posted her raw, unedited self-portrait to the contest board instead of the polished landscape.",
+      "on_screen_text": "WRONG SUBMISSION",
+      "duration_hint": 7.4,
+      "visual": "Hands carefully attaching a portrait photo onto a dark cork board wall inside a hallway."
+    },
+    {
+      "narration": "She panicked and tried to delete it, but the submissions were locked for judging.",
+      "on_screen_text": "LOCKED IN",
+      "duration_hint": 5.7,
+      "visual": "Close-up of a nervous young woman biting her lip while staring at a display board."
+    },
+    {
+      "narration": "Walking into the exhibit, she found a crowd gathered around her raw portrait, silently nodding in genuine connection.",
+      "on_screen_text": "REAL CONNECTION",
+      "duration_hint": 7.8,
+      "visual": "A small group of teenagers standing together looking up at a framed photograph on a wall."
+    },
+    {
+      "narration": "Seeing yourself clearly changes everything. Follow along for more stories like this every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.1,
+      "visual": "A smiling teenage girl with a camera around her neck standing outdoors in golden sunlight."
+    }
+  ]
+}

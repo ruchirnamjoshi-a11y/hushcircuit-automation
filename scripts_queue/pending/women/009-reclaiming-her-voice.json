@@ -1,0 +1,56 @@
+{
+  "id": "reclaiming-her-voice",
+  "title": "Reclaiming Her Voice",
+  "description": "A young woman finds the courage to speak up at a family dinner and choose her artistic path over family expectations.",
+  "tags": [
+    "empowerment",
+    "boundaries",
+    "selfworth",
+    "resilience",
+    "personalgrowth"
+  ],
+  "scenes": [
+    {
+      "narration": "For years, Maya smiled and agreed at family dinners while everyone else planned her life for her. But tonight, she realized silence was costing her everything.",
+      "on_screen_text": "THE SILENCE",
+      "duration_hint": 10.4,
+      "visual": "A young woman sitting at a warm dinner table looking down quietly while family talks"
+    },
+    {
+      "narration": "They asked when she would quit her art studio to take over the family business. She paused, took a deep breath, and looked up with absolute clarity.",
+      "on_screen_text": "SHIFTING TIDES",
+      "duration_hint": 9.6,
+      "visual": "Close-up of Maya lifting her head with steady eyes and a calm expression"
+    },
+    {
+      "narration": "I love you all, she said gently, but my life belongs to me, and I am staying in my studio.",
+      "on_screen_text": "THE SPEECH",
+      "duration_hint": 8.7,
+      "visual": "Maya speaking across a softly lit dining table with hands resting firmly on the tablecloth"
+    },
+    {
+      "narration": "The table went completely quiet, filled with surprise and hesitation. For the first time in her life, Maya did not apologize for her choice.",
+      "on_screen_text": "UNCOMFORTABLE QUIET",
+      "duration_hint": 9.6,
+      "visual": "Family members staring in astonishment around a candlelit dining room"
+    },
+    {
+      "narration": "She stood up calmly, cleared her plate, and walked out into the cool evening air. Her chest felt lighter than it had in a decade.",
+      "on_screen_text": "WALKING AWAY",
+      "duration_hint": 10.4,
+      "visual": "Maya walking outdoors under night streetlights with a serene smile on her face"
+    },
+    {
+      "narration": "Back at her canvas, surrounded by vibrant oils, Maya painted with newfound freedom. She had finally chosen her own happiness over pleasing others.",
+      "on_screen_text": "FREEDOM IN ART",
+      "duration_hint": 10.0,
+      "visual": "Maya dipping a paintbrush into colorful paint inside a sunlit art studio"
+    },
+    {
+      "narration": "Remembering your self-worth starts with one courageous step. Follow along for more inspiring stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "A glowing warm portrait of a confident woman smiling gently at the camera indoors"
+    }
+  ]
+}

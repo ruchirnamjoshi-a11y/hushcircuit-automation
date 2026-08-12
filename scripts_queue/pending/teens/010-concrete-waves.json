@@ -1,0 +1,56 @@
+{
+  "id": "concrete-waves",
+  "title": "Concrete Waves",
+  "description": "Leo faces his anxiety at the local skatepark and discovers community in an unexpected fall.",
+  "tags": [
+    "skateboarding",
+    "anxiety",
+    "friendship",
+    "perseverance",
+    "sports"
+  ],
+  "scenes": [
+    {
+      "narration": "Leo wanted to learn to skate, but every time he stepped into the park, the older kids made him freeze.",
+      "on_screen_text": "FEAR OF SKATING",
+      "duration_hint": 8.7,
+      "visual": "Teenage boy standing with a skateboard near concrete ramps looking uncertain in morning light."
+    },
+    {
+      "narration": "He spent weeks practicing alone in his dimly lit driveway, taking quiet falls on the hard asphalt.",
+      "on_screen_text": "SOLO PRACTICE",
+      "duration_hint": 7.4,
+      "visual": "A young skater practicing balance on a wooden skateboard on a quiet suburban driveway at sunset."
+    },
+    {
+      "narration": "One afternoon, he finally rolled up to the local bowl, heart hammering against his ribs.",
+      "on_screen_text": "THE PARK AT LAST",
+      "duration_hint": 6.5,
+      "visual": "Close-up of worn skate sneakers stepping onto a grip tape surface of a skateboard."
+    },
+    {
+      "narration": "His first drop-in was a disaster. The board slipped out, sending him sliding across the concrete on his hands.",
+      "on_screen_text": "HEAVY FALL",
+      "duration_hint": 8.3,
+      "visual": "A teenage boy slipping off his skateboard onto smooth concrete inside a sunlit outdoor park."
+    },
+    {
+      "narration": "Instead of laughing, a girl with a scuffed helmet tossed him his board and showed him where to position his feet.",
+      "on_screen_text": "HELPING HAND",
+      "duration_hint": 9.1,
+      "visual": "A young girl with a helmet offering a hand to a boy sitting on the pavement."
+    },
+    {
+      "narration": "On his second try, he leaned forward, caught the momentum, and rode out smooth into the open park.",
+      "on_screen_text": "SMOOTH RIDE",
+      "duration_hint": 7.8,
+      "visual": "A teenage boy smoothly riding a skateboard down a curved concrete surface with arms open."
+    },
+    {
+      "narration": "Every fall is just practice for landing it right. Follow along for more daily real-life stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "A happy teenage boy holding his skateboard under his arm smiling towards the camera at dusk."
+    }
+  ]
+}
