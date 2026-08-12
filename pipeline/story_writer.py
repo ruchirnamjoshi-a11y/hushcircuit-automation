@@ -40,9 +40,10 @@ STORY_SCHEMA = {
         "title": {"type": "string"},
         "description": {"type": "string"},
         "tags": {"type": "array", "items": {"type": "string"}},
+        "character_reference": {"type": "string"},
         "scenes": {"type": "array", "items": SCENE_SCHEMA},
     },
-    "required": ["id", "title", "description", "tags", "scenes"],
+    "required": ["id", "title", "description", "tags", "character_reference", "scenes"],
 }
 
 RESPONSE_SCHEMA = {
@@ -74,12 +75,24 @@ natural speaking pace (~2.3 words/second) — just estimate from the \
 narration's word count.
 - "visual" is a SEPARATE short, concrete visual description (10-20 words) \
 for an AI image generator — NOT a copy of the narration, NOT a full \
-sentence with punctuation, NOT a quoted slogan. Describe one concrete \
-moment: a character, an action, a setting, a mood. CRITICAL: never \
-describe any text, signs, banners, logos, or readable words appearing in \
-the scene, and never describe a building exterior or storefront with \
-visible signage (e.g. a school entrance, a shop front) — describe \
-close-up character moments, nature, or interiors without signage instead.
+sentence with punctuation, NOT a quoted slogan. Describe the ACTION, POSE, \
+and SETTING of that specific moment only — not the character's fixed \
+physical appearance (that belongs in "character_reference" below and gets \
+automatically added to every scene, so repeating it here just wastes words \
+and can conflict). CRITICAL: never describe any text, signs, banners, \
+logos, or readable words appearing in the scene, and never describe a \
+building exterior or storefront with visible signage (e.g. a school \
+entrance, a shop front) — describe close-up character moments, nature, or \
+interiors without signage instead.
+- "character_reference": ONE detailed, reusable physical description of \
+the story's main protagonist (species/build, hair or fur color, clothing, \
+1-2 distinguishing features — e.g. "a small cream-colored rabbit with \
+floppy brown-tipped ears and a red neckerchief"). This exact description \
+gets prepended to every scene's image prompt so the same character stays \
+visually recognizable across independently-generated images — write it \
+once, specifically, and don't repeat it inside individual scenes' \
+"visual" fields. If a story genuinely has no single recurring character \
+(e.g. it's about a place or an event), leave this as an empty string.
 - "id" is a unique kebab-case slug derived from the title (e.g. \
 "the-tryout"). "tags" is 4-6 relevant lowercase keyword tags.
 

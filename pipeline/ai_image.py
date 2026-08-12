@@ -56,9 +56,21 @@ def _sanitize_concept(text: str) -> str:
     return concept
 
 
-def build_prompt(scene: Scene, track: Track) -> str:
+def build_prompt(scene: Scene, track: Track, character_reference: str = "") -> str:
+    """character_reference (Script.character_reference): a detailed,
+    reusable physical description of the story's protagonist — same fur
+    color, clothing, distinguishing features, etc. — repeated into every
+    scene's prompt. FLUX has no image-to-image/reference-image input on
+    Cloudflare's free tier (text prompt + seed only), so this is the
+    strongest lever available for keeping "the same character" recognizable
+    across independently-generated scenes; combined with a fixed seed per
+    story (see generate_scene_image_raw) it noticeably helps, though it's
+    prompt-engineering, not true reference conditioning — expect it to
+    reduce, not eliminate, cross-scene drift."""
     concept = _sanitize_concept(scene.image_concept)
-    return f"{track.image_style_prefix}{concept}{track.image_style_suffix}"
+    character = _sanitize_concept(character_reference) if character_reference else ""
+    subject = f"{character}, {concept}" if character else concept
+    return f"{track.image_style_prefix}{subject}{track.image_style_suffix}"
 
 
 def _fit_to_resolution(image: Image.Image, resolution: tuple[int, int]) -> Image.Image:
@@ -72,12 +84,15 @@ class CloudflareQuotaExhausted(RuntimeError):
     instead of burning time on backoff retries."""
 
 
-def _call_cloudflare(prompt: str) -> Image.Image:
+def _call_cloudflare(prompt: str, seed: int | None = None) -> Image.Image:
     url = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/ai/run/{AI_IMAGE_MODEL}"
+    body = {"prompt": prompt}
+    if seed is not None:
+        body["seed"] = seed
     response = requests.post(
         url,
         headers={"Authorization": f"Bearer {CF_API_TOKEN}"},
-        json={"prompt": prompt},
+        json=body,
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
     if response.status_code == 429:
@@ -99,6 +114,8 @@ def generate_scene_image_raw(
     scene: Scene,
     out_path: Path,
     track: Track,
+    character_reference: str = "",
+    seed: int | None = None,
     retries: int = 2,
     raise_on_quota_exhausted: bool = False,
 ) -> tuple[Path, bool]:
@@ -109,7 +126,10 @@ def generate_scene_image_raw(
     the brand gradient if credentials are unset or every attempt fails.
 
     `track` selects the illustration style (kids/teens/adults/women — see
-    pipeline.config.TRACKS).
+    pipeline.config.TRACKS). `character_reference` and `seed` (see
+    build_prompt and run_daily.py) are how cross-scene character
+    consistency is approximated — pass the same values for every scene in
+    a story.
 
     `raise_on_quota_exhausted`: when True, a CloudflareQuotaExhausted lets
     the exception propagate instead of falling back to the gradient.
@@ -129,10 +149,10 @@ def generate_scene_image_raw(
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     if CF_ACCOUNT_ID and CF_API_TOKEN:
-        prompt = build_prompt(scene, track)
+        prompt = build_prompt(scene, track, character_reference)
         for attempt in range(retries + 1):
             try:
-                image = _call_cloudflare(prompt)
+                image = _call_cloudflare(prompt, seed)
                 image.convert("RGB").save(out_path)
                 time.sleep(INTER_REQUEST_DELAY_SECONDS)
                 return out_path, False

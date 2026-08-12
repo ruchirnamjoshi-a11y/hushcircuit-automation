@@ -66,6 +66,21 @@ def test_build_prompt_varies_by_track():
     assert kids_prompt != women_prompt
 
 
+def test_build_prompt_includes_character_reference_when_given():
+    prompt = build_prompt(
+        SAMPLE_SCENE, KIDS_TRACK,
+        character_reference="a small cream-colored rabbit with a red neckerchief",
+    )
+    assert "a small cream-colored rabbit with a red neckerchief" in prompt
+
+
+def test_build_prompt_omits_character_reference_when_blank():
+    with_ref = build_prompt(SAMPLE_SCENE, KIDS_TRACK, character_reference="a small rabbit")
+    without_ref = build_prompt(SAMPLE_SCENE, KIDS_TRACK, character_reference="")
+    assert with_ref != without_ref
+    assert "a small rabbit" not in without_ref
+
+
 def test_generate_scene_image_raw_falls_back_to_gradient_when_no_credentials(tmp_path):
     with patch("pipeline.ai_image.CF_ACCOUNT_ID", ""), patch("pipeline.ai_image.CF_API_TOKEN", ""):
         out, used_fallback = generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK)
@@ -179,6 +194,38 @@ def test_generate_scene_image_raw_succeeds_saves_native_resolution(tmp_path):
     _, kwargs = mock_post.call_args
     assert "Authorization" in kwargs["headers"]
     assert "prompt" in kwargs["json"]
+
+
+def test_generate_scene_image_raw_passes_seed_and_character_reference(tmp_path):
+    fake_image = Image.new("RGB", (1024, 768), (10, 20, 30))
+    mock_response = _fake_cf_response(fake_image)
+
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.ai_image.time.sleep"):
+        generate_scene_image_raw(
+            SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK,
+            character_reference="a small cream-colored rabbit", seed=12345,
+        )
+
+    _, kwargs = mock_post.call_args
+    assert kwargs["json"]["seed"] == 12345
+    assert "a small cream-colored rabbit" in kwargs["json"]["prompt"]
+
+
+def test_generate_scene_image_raw_omits_seed_when_not_given(tmp_path):
+    fake_image = Image.new("RGB", (1024, 768), (10, 20, 30))
+    mock_response = _fake_cf_response(fake_image)
+
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.ai_image.time.sleep"):
+        generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK)
+
+    _, kwargs = mock_post.call_args
+    assert "seed" not in kwargs["json"]
 
 
 def test_generate_scene_image_raw_treats_success_false_as_failure(tmp_path):

@@ -40,6 +40,7 @@ from __future__ import annotations
 import argparse
 import sys
 import traceback
+import zlib
 
 from pipeline.ai_image import CloudflareQuotaExhausted, fit_scene_image, generate_scene_image_raw
 from pipeline.assemble import pick_music_track
@@ -58,6 +59,17 @@ from pipeline.state import already_produced_today, mark_produced_today
 from pipeline.thumbnail import generate_thumbnail
 from pipeline.tts import synthesize_script
 from pipeline.upload import upload_daily_video
+
+
+def _story_seed(script_id: str) -> int:
+    """A stable (not Python's randomized-per-process hash()) seed derived
+    from the script id, reused for every scene's Cloudflare call within a
+    story. Cloudflare's free flux-1-schnell has no image-to-image/reference
+    input, so a shared seed + Script.character_reference (see
+    pipeline.ai_image.build_prompt) is the strongest available lever for
+    keeping a character visually recognizable across independently
+    generated scenes."""
+    return zlib.crc32(script_id.encode())
 
 
 def run_track(track: Track, dry_run: bool = False, privacy_status: str = "private") -> bool:
@@ -92,10 +104,13 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
     run_dir = OUTPUT_DIR / track.key / script.id
     run_dir.mkdir(parents=True, exist_ok=True)
 
+    seed = _story_seed(script.id)
+
     print(f"[{track.key}] [1/4] Probing image generation availability...")
     images_raw_dir = run_dir / "images_raw"
     first_raw_path, first_used_fallback = generate_scene_image_raw(
-        script.scenes[0], images_raw_dir / "scene_00.png", track, raise_on_quota_exhausted=True,
+        script.scenes[0], images_raw_dir / "scene_00.png", track,
+        character_reference=script.character_reference, seed=seed, raise_on_quota_exhausted=True,
     )
 
     print(f"[{track.key}] [2/4] Synthesizing voiceover ({track.voice})...")
@@ -103,7 +118,10 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
 
     print(f"[{track.key}] [3/4] Generating remaining scene illustrations...")
     raw_results = [(first_raw_path, first_used_fallback)] + [
-        generate_scene_image_raw(scene, images_raw_dir / f"scene_{i:02d}.png", track)
+        generate_scene_image_raw(
+            scene, images_raw_dir / f"scene_{i:02d}.png", track,
+            character_reference=script.character_reference, seed=seed,
+        )
         for i, scene in enumerate(script.scenes[1:], start=1)
     ]
     raw_images = [path for path, _ in raw_results]

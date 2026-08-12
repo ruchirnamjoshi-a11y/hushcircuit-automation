@@ -42,6 +42,13 @@ class Script:
     description: str
     tags: list[str] = field(default_factory=list)
     scenes: list[Scene] = field(default_factory=list)
+    # A detailed, reusable physical description of the story's protagonist
+    # (fur/hair color, clothing, distinguishing features) — repeated into
+    # every scene's AI image prompt (see pipeline.ai_image.build_prompt) so
+    # independently-generated scenes look like the same character. Optional/
+    # blank for scripts without a clear single protagonist, or written
+    # before this field existed.
+    character_reference: str = ""
 
     @property
     def hook(self) -> Scene:
@@ -105,6 +112,7 @@ def validate(data: dict) -> Script:
         description=data["description"],
         tags=list(data.get("tags", [])),
         scenes=scenes,
+        character_reference=data.get("character_reference", ""),
     )
 
 
@@ -114,6 +122,7 @@ def to_dict(script: Script) -> dict:
         "title": script.title,
         "description": script.description,
         "tags": script.tags,
+        "character_reference": script.character_reference,
         "scenes": [
             {
                 "narration": s.narration,

@@ -124,3 +124,39 @@ def test_run_track_marks_produced_today_only_on_real_success(tmp_path):
         run_daily.run_track(KIDS_TRACK, dry_run=False)
 
     mock_mark.assert_called_once_with(KIDS_TRACK.key)
+
+
+def test_story_seed_is_stable_and_varies_by_id():
+    assert run_daily._story_seed("the-tryout") == run_daily._story_seed("the-tryout")
+    assert run_daily._story_seed("the-tryout") != run_daily._story_seed("a-different-story")
+
+
+def test_run_track_passes_character_reference_and_shared_seed_to_every_scene(tmp_path):
+    fake_script = MagicMock()
+    fake_script.title = "Test"
+    fake_script.id = "test-id"
+    fake_script.character_reference = "a small cream-colored rabbit"
+    fake_script.scenes = [MagicMock(), MagicMock(), MagicMock()]
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
+
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)) as mock_gen, \
+         patch("run_daily.synthesize_script", return_value=[MagicMock(), MagicMock(), MagicMock()]), \
+         patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
+         patch("run_daily.pick_music_track", return_value=None), \
+         patch("run_daily.assemble_short", return_value=tmp_path / "video.mp4"), \
+         patch("run_daily.generate_thumbnail", return_value=tmp_path / "thumb.jpg"), \
+         patch("run_daily.upload_daily_video", return_value={"video": {}, "thumbnail": {}}), \
+         patch("run_daily.mark_used"), \
+         patch("run_daily.mark_produced_today"):
+        run_daily.run_track(KIDS_TRACK, dry_run=False)
+
+    expected_seed = run_daily._story_seed("test-id")
+    assert mock_gen.call_count == 3  # every scene, including the probe
+    for call in mock_gen.call_args_list:
+        assert call.kwargs["character_reference"] == "a small cream-colored rabbit"
+        assert call.kwargs["seed"] == expected_seed
