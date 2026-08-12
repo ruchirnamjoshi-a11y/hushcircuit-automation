@@ -6,6 +6,7 @@ from pipeline.scripts import (
     ScriptValidationError,
     load_next_pending,
     mark_used,
+    to_dict,
     validate,
 )
 
@@ -31,6 +32,25 @@ def test_validate_accepts_well_formed_script():
     assert script.outro.narration == "outro and cta"
     assert len(script.body_scenes) == 2
     assert script.total_duration() == 25.0
+
+
+def test_validate_defaults_character_reference_to_empty_string():
+    script = validate(SAMPLE)
+    assert script.character_reference == ""
+
+
+def test_validate_reads_character_reference_when_present():
+    with_ref = json.loads(json.dumps(SAMPLE))
+    with_ref["character_reference"] = "a small cream-colored rabbit with a red neckerchief"
+    script = validate(with_ref)
+    assert script.character_reference == "a small cream-colored rabbit with a red neckerchief"
+
+
+def test_to_dict_round_trips_character_reference():
+    with_ref = json.loads(json.dumps(SAMPLE))
+    with_ref["character_reference"] = "a small cream-colored rabbit"
+    script = validate(with_ref)
+    assert to_dict(script)["character_reference"] == "a small cream-colored rabbit"
 
 
 def test_badge_text_for_hook_and_outro_is_just_on_screen_text():

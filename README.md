@@ -130,6 +130,33 @@ drifting glow orbs — the pipeline never hard-fails on this stage.
 `pipeline/broll.py` (Pexels/Pixabay) is kept in the codebase, tested, but
 unused by default.
 
+### Keeping a character visually consistent across scenes
+
+Each scene's image is generated completely independently — Cloudflare's
+free `flux-1-schnell` has no image-to-image or reference-image input (see
+"Why Cloudflare" below), so there's no way to show it "the character from
+scene 1" directly. Two things approximate consistency instead, both wired
+into `pipeline/ai_image.py`/`run_daily.py`:
+
+1. **`Script.character_reference`** — one detailed, reusable physical
+   description of the protagonist (fur/hair color, clothing, distinguishing
+   features), written once per story by `pipeline/story_writer.py` and
+   prepended into every scene's image prompt. Per-scene `visual` fields
+   describe only the action/pose/setting, not the character's fixed
+   appearance, so the two don't conflict.
+2. **A fixed seed per story** — derived deterministically from the script's
+   `id` (`run_daily._story_seed`), passed to every scene's Cloudflare call
+   for that story, biasing the model toward a similar visual "random state"
+   across scenes.
+
+This is prompt-engineering, not true reference conditioning, so it reduces
+cross-scene drift rather than eliminating it — but validated well in
+practice (same character recognizable — coloring, features, clothing —
+across differently-composed scenes). A paid model with real multi-reference
+support (Cloudflare's FLUX.2 [dev], priced per-tile-per-step rather than
+included in the free Neurons tier) would do better if that cost is ever
+worth taking on.
+
 ### A real limitation worth knowing: FLUX-schnell sometimes renders garbled text
 
 Cloudflare's free FLUX.1-schnell has no negative-prompt/CFG support, so "no
