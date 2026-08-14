@@ -115,6 +115,11 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
         script.scenes[0], images_raw_dir / "scene_00.png", track,
         character_reference=script.character_reference, seed=seed, raise_on_quota_exhausted=True,
     )
+    # The first scene's own generated image becomes the reference for every
+    # later scene — real image-to-image conditioning (see ai_image.py),
+    # not just a shared text description. Skipped if scene 1 itself fell
+    # back to the gradient (nothing meaningful to reference).
+    reference_image_bytes = None if first_used_fallback else first_raw_path.read_bytes()
 
     voice_desc = f"{track.tts_provider}: {'/'.join(track.tts_voices) or track.voice}"
     print(f"[{track.key}] [2/4] Synthesizing voiceover ({voice_desc})...")
@@ -125,6 +130,7 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
         generate_scene_image_raw(
             scene, images_raw_dir / f"scene_{i:02d}.png", track,
             character_reference=script.character_reference, seed=seed,
+            reference_image_bytes=reference_image_bytes,
         )
         for i, scene in enumerate(script.scenes[1:], start=1)
     ]

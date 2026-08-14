@@ -177,8 +177,14 @@ TRACKS: dict[str, Track] = {
     "hindi_mythology": Track(
         key="hindi_mythology",
         label="Indian Mythology (Hindi)",
-        voice="hi-IN-MadhurNeural",  # unused while tts_provider="gemini"; kept as an edge-tts fallback value
-        tts_provider="gemini",
+        voice="hi-IN-MadhurNeural",
+        # Reverted from tts_provider="gemini": both gemini-2.5-flash-preview-tts
+        # and gemini-3.1-flash-tts-preview turned out to have a hard 10
+        # requests/DAY free-tier cap (confirmed live on both) — well under
+        # the ~8 calls a single 8-scene video needs, with zero margin for
+        # retries. Sounds noticeably better when it works, but not reliable
+        # enough for unattended daily production yet. tts_voices kept here,
+        # dormant, in case a model with a workable daily quota shows up.
         tts_voices=["Kore", "Puck", "Aoede"],
         image_style_prefix=(
             "Illustration with absolutely no text, no letters, no words "
@@ -248,7 +254,15 @@ PIXABAY_API_KEY = os.environ.get("PIXABAY_API_KEY", "")
 # covers a daily video's ~8 scene images with huge headroom to spare.
 CF_ACCOUNT_ID = os.environ.get("CF_ACCOUNT_ID", "")
 CF_API_TOKEN = os.environ.get("CF_API_TOKEN", "")
-AI_IMAGE_MODEL = os.environ.get("AI_IMAGE_MODEL", "@cf/black-forest-labs/flux-1-schnell")
+# flux-2-klein-4b (not flux-1-schnell) — supports a real reference input
+# image (see pipeline.ai_image), so scenes 2+ can be conditioned on scene
+# 1's actual generated image instead of only a text description + shared
+# seed. Verified in real testing to hold character details (armor, crown,
+# skin tone) far better across dramatically different poses/settings than
+# the old text-only approach. Costs about the same per image (~5.37 vs
+# ~4.80 neurons/tile) — comfortably inside the free 10,000/day budget even
+# with reference-image input tiles added on top.
+AI_IMAGE_MODEL = os.environ.get("AI_IMAGE_MODEL", "@cf/black-forest-labs/flux-2-klein-4b")
 
 # Weekly story generation: Gemini API, free tier. "gemini-flash-latest" is an
 # alias Google keeps pointed at their current recommended flash model, so it

@@ -190,10 +190,10 @@ def test_generate_scene_image_raw_succeeds_saves_native_resolution(tmp_path):
     assert used_fallback is False
     assert Image.open(out).size == (1024, 768)  # untouched, no crop yet
     assert mock_post.call_count == 1
-    # sanity-check the request shape
+    # sanity-check the request shape — flux-2-klein-4b takes multipart, not JSON
     _, kwargs = mock_post.call_args
     assert "Authorization" in kwargs["headers"]
-    assert "prompt" in kwargs["json"]
+    assert "prompt" in kwargs["files"]
 
 
 def test_generate_scene_image_raw_passes_seed_and_character_reference(tmp_path):
@@ -210,8 +210,8 @@ def test_generate_scene_image_raw_passes_seed_and_character_reference(tmp_path):
         )
 
     _, kwargs = mock_post.call_args
-    assert kwargs["json"]["seed"] == 12345
-    assert "a small cream-colored rabbit" in kwargs["json"]["prompt"]
+    assert kwargs["files"]["seed"] == (None, "12345")
+    assert "a small cream-colored rabbit" in kwargs["files"]["prompt"][1]
 
 
 def test_generate_scene_image_raw_omits_seed_when_not_given(tmp_path):
@@ -225,7 +225,38 @@ def test_generate_scene_image_raw_omits_seed_when_not_given(tmp_path):
         generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK)
 
     _, kwargs = mock_post.call_args
-    assert "seed" not in kwargs["json"]
+    assert "seed" not in kwargs["files"]
+
+
+def test_generate_scene_image_raw_omits_reference_image_when_not_given(tmp_path):
+    fake_image = Image.new("RGB", (1024, 768), (10, 20, 30))
+    mock_response = _fake_cf_response(fake_image)
+
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.ai_image.time.sleep"):
+        generate_scene_image_raw(SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK)
+
+    _, kwargs = mock_post.call_args
+    assert "input_image" not in kwargs["files"]
+
+
+def test_generate_scene_image_raw_passes_reference_image_bytes(tmp_path):
+    fake_image = Image.new("RGB", (1024, 768), (10, 20, 30))
+    mock_response = _fake_cf_response(fake_image)
+    ref_bytes = b"fake-jpeg-bytes"
+
+    with patch("pipeline.ai_image.CF_ACCOUNT_ID", "fake-account"), \
+         patch("pipeline.ai_image.CF_API_TOKEN", "fake-token"), \
+         patch("pipeline.ai_image.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.ai_image.time.sleep"):
+        generate_scene_image_raw(
+            SAMPLE_SCENE, tmp_path / "raw.png", KIDS_TRACK, reference_image_bytes=ref_bytes,
+        )
+
+    _, kwargs = mock_post.call_args
+    assert kwargs["files"]["input_image"][1] == ref_bytes
 
 
 def test_generate_scene_image_raw_treats_success_false_as_failure(tmp_path):

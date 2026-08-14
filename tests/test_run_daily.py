@@ -107,12 +107,14 @@ def test_run_track_marks_produced_today_only_on_real_success(tmp_path):
     fake_script.scenes = [MagicMock(), MagicMock()]
     existing_token = tmp_path / "token.json"
     existing_token.write_text("{}")
+    fake_image_path = tmp_path / "img.png"
+    fake_image_path.write_bytes(b"fake-image-bytes")
 
     with patch("run_daily.already_produced_today", return_value=False), \
          patch("run_daily.youtube_token_path", return_value=existing_token), \
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
-         patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)), \
+         patch("run_daily.generate_scene_image_raw", return_value=(fake_image_path, False)), \
          patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock()]), \
          patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
          patch("run_daily.pick_music_track", return_value=None), \
@@ -139,12 +141,14 @@ def test_run_track_passes_character_reference_and_shared_seed_to_every_scene(tmp
     fake_script.scenes = [MagicMock(), MagicMock(), MagicMock()]
     existing_token = tmp_path / "token.json"
     existing_token.write_text("{}")
+    fake_image_path = tmp_path / "img.png"
+    fake_image_path.write_bytes(b"fake-image-bytes")
 
     with patch("run_daily.already_produced_today", return_value=False), \
          patch("run_daily.youtube_token_path", return_value=existing_token), \
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
-         patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)) as mock_gen, \
+         patch("run_daily.generate_scene_image_raw", return_value=(fake_image_path, False)) as mock_gen, \
          patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock(), MagicMock()]), \
          patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
          patch("run_daily.pick_music_track", return_value=None), \
@@ -162,6 +166,74 @@ def test_run_track_passes_character_reference_and_shared_seed_to_every_scene(tmp
         assert call.kwargs["seed"] == expected_seed
 
 
+def test_run_track_threads_first_scene_image_as_reference_for_later_scenes(tmp_path):
+    fake_script = MagicMock()
+    fake_script.title = "Test"
+    fake_script.id = "test-id"
+    fake_script.character_reference = ""
+    fake_script.scenes = [MagicMock(), MagicMock(), MagicMock()]
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
+    fake_image_path = tmp_path / "img.png"
+    fake_image_bytes = b"the-first-scenes-real-image-bytes"
+    fake_image_path.write_bytes(fake_image_bytes)
+
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch("run_daily.generate_scene_image_raw", return_value=(fake_image_path, False)) as mock_gen, \
+         patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock(), MagicMock()]), \
+         patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
+         patch("run_daily.pick_music_track", return_value=None), \
+         patch("run_daily.assemble_short", return_value=tmp_path / "video.mp4"), \
+         patch("run_daily.generate_thumbnail", return_value=tmp_path / "thumb.jpg"), \
+         patch("run_daily.upload_daily_video", return_value={"video": {}, "thumbnail": {}}), \
+         patch("run_daily.mark_used"), \
+         patch("run_daily.mark_produced_today"):
+        run_daily.run_track(KIDS_TRACK, dry_run=False)
+
+    calls = mock_gen.call_args_list
+    assert len(calls) == 3
+    # probe (scene 0) happens before any reference image exists, so it's
+    # not passed at all (not just None) — the probe call predates this feature
+    assert calls[0].kwargs.get("reference_image_bytes") is None
+    # every later scene gets scene 0's actual generated image as reference
+    assert calls[1].kwargs["reference_image_bytes"] == fake_image_bytes
+    assert calls[2].kwargs["reference_image_bytes"] == fake_image_bytes
+
+
+def test_run_track_omits_reference_image_when_first_scene_used_fallback(tmp_path):
+    fake_script = MagicMock()
+    fake_script.title = "Test"
+    fake_script.id = "test-id"
+    fake_script.character_reference = ""
+    fake_script.scenes = [MagicMock(), MagicMock()]
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
+    fake_image_path = tmp_path / "img.png"
+    fake_image_path.write_bytes(b"gradient-fallback-bytes")
+
+    # first (probe) call falls back to gradient; second call should get no reference
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch("run_daily.generate_scene_image_raw", return_value=(fake_image_path, True)) as mock_gen, \
+         patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock()]), \
+         patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
+         patch("run_daily.pick_music_track", return_value=None), \
+         patch("run_daily.assemble_short", return_value=tmp_path / "video.mp4"), \
+         patch("run_daily.generate_thumbnail", return_value=tmp_path / "thumb.jpg"), \
+         patch("run_daily.upload_daily_video", return_value={"video": {}, "thumbnail": {}}), \
+         patch("run_daily.mark_used"), \
+         patch("run_daily.mark_produced_today"):
+        run_daily.run_track(KIDS_TRACK, dry_run=False)
+
+    calls = mock_gen.call_args_list
+    assert calls[1].kwargs["reference_image_bytes"] is None
+
+
 def test_run_track_uses_track_key_seed_for_serialized_tracks(tmp_path):
     hero_track = TRACKS["hero_saga"]
     fake_script = MagicMock()
@@ -171,12 +243,14 @@ def test_run_track_uses_track_key_seed_for_serialized_tracks(tmp_path):
     fake_script.scenes = [MagicMock(), MagicMock()]
     existing_token = tmp_path / "token.json"
     existing_token.write_text("{}")
+    fake_image_path = tmp_path / "img.png"
+    fake_image_path.write_bytes(b"fake-image-bytes")
 
     with patch("run_daily.already_produced_today", return_value=False), \
          patch("run_daily.youtube_token_path", return_value=existing_token), \
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
-         patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)) as mock_gen, \
+         patch("run_daily.generate_scene_image_raw", return_value=(fake_image_path, False)) as mock_gen, \
          patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock()]), \
          patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
          patch("run_daily.pick_music_track", return_value=None), \
