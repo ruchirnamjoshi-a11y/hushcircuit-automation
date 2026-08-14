@@ -10,6 +10,9 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = ROOT_DIR / "output"
 QUEUE_PENDING_DIR = ROOT_DIR / "scripts_queue" / "pending"
 QUEUE_USED_DIR = ROOT_DIR / "scripts_queue" / "used"
+# Persists the locked character_reference + running "story so far" recap for
+# serialized tracks (see Track.serialized), one file per track key.
+SERIES_STATE_DIR = ROOT_DIR / "scripts_queue" / "series_state"
 MUSIC_DIR = ROOT_DIR / "assets" / "music"
 ANALYTICS_REPORTS_DIR = ROOT_DIR / "analytics" / "reports"
 SECRETS_DIR = ROOT_DIR / "secrets"
@@ -31,6 +34,16 @@ class Track:
     image_style_suffix: str
     made_for_kids: bool
     category_id: str
+    # "edge" (default) uses the single `voice` above via edge-tts. "gemini"
+    # uses Gemini's native TTS instead (see pipeline.tts.synthesize_script_
+    # for_track) — no word-level timestamps, so only usable with
+    # burn_captions=False, but noticeably more natural-sounding. `voice` is
+    # ignored when this is "gemini"; tts_voices is used instead.
+    tts_provider: str = "edge"
+    # One narrator voice is picked per script (deterministically, so re-runs
+    # are stable) and used for every scene in that script — consistent
+    # within an episode, varied across episodes/days.
+    tts_voices: list[str] = field(default_factory=list)
     # Tone/theme guidance for pipeline.story_writer's Gemini prompt — what
     # kind of stories this audience wants, distinct from image_style_*
     # (which only shapes the illustration prompt).
@@ -40,6 +53,10 @@ class Track:
     # matching caption font wired up — video + audio only, no captions/badge
     # burned in, rather than rendering wrong-language or missing-glyph text.
     burn_captions: bool = True
+    # True for tracks that tell ONE ongoing story across daily episodes
+    # (persistent character + running recap, see pipeline.story_writer.
+    # generate_next_episode) rather than a fresh standalone story per video.
+    serialized: bool = False
 
 
 # Category IDs are YouTube's fixed video categories (24 = Entertainment,
@@ -160,7 +177,9 @@ TRACKS: dict[str, Track] = {
     "hindi_mythology": Track(
         key="hindi_mythology",
         label="Indian Mythology (Hindi)",
-        voice="hi-IN-MadhurNeural",
+        voice="hi-IN-MadhurNeural",  # unused while tts_provider="gemini"; kept as an edge-tts fallback value
+        tts_provider="gemini",
+        tts_voices=["Kore", "Puck", "Aoede"],
         image_style_prefix=(
             "Illustration with absolutely no text, no letters, no words "
             "anywhere in the image. A single traditional Indian "
@@ -188,6 +207,37 @@ TRACKS: dict[str, Track] = {
         extra_tags=["indian mythology", "hindi story", "hindu mythology", "mythology story", "ramayana", "mahabharata"],
         burn_captions=False,
     ),
+    "hero_saga": Track(
+        key="hero_saga",
+        label="Original Hero Saga",
+        voice="en-US-ChristopherNeural",
+        image_style_prefix=(
+            "Bold cinematic comic-book illustration with absolutely no "
+            "text, no letters, no words, no logos, no signage anywhere in "
+            "the image. A single dramatic graphic-novel-style panel of "
+        ),
+        image_style_suffix=(
+            ", dynamic action pose, dramatic high-contrast lighting, bold "
+            "ink outlines, vibrant saturated color palette, epic "
+            "cinematic composition, isolated scene on simple background"
+        ),
+        made_for_kids=False,
+        category_id=CATEGORY_ENTERTAINMENT,
+        story_guidance=(
+            "An ONGOING original superhero/action-adventure saga — NOT "
+            "any existing franchise or licensed character (no Marvel, DC, "
+            "or any recognizable copyrighted hero/villain names, costumes, "
+            "or references). Invent a wholly original protagonist with a "
+            "distinctive power and a compelling mystery driving the "
+            "series (their power's origin, a hidden enemy, a shadowy "
+            "organization). Dramatic, high-stakes, cinematic tone — "
+            "training a new ability, a tense confrontation, a betrayal, a "
+            "narrow escape. Each episode is one chapter of the larger "
+            "story, not a self-contained tale."
+        ),
+        extra_tags=["superhero story", "original story", "action adventure", "animated series", "hero saga"],
+        serialized=True,
+    ),
 }
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
@@ -208,6 +258,17 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 
 TTS_VOICE = os.environ.get("TTS_VOICE", "en-US-GuyNeural")
+
+# Gemini's native TTS (Track.tts_provider="gemini") — noticeably more
+# natural-sounding than edge-tts for languages like Hindi where edge-tts
+# only exposes two older Azure voices. gemini-2.5-flash-preview-tts's free
+# tier has a hard 10 REQUESTS/DAY cap per project (confirmed empirically
+# via a live 429's quotaValue — Google doesn't publish exact numbers, and
+# this is far tighter than its separate 3/minute limit) — too tight for an
+# 8-scene script with zero retry margin. gemini-3.1-flash-tts-preview uses
+# an independent quota bucket (different model = different quotaId) and
+# is used instead.
+GEMINI_TTS_MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-3.1-flash-tts-preview")
 
 # One OAuth Desktop client (Google Cloud Console) is shared across all
 # channels — it's the OAuth token per channel that differs, not the client.
@@ -253,6 +314,7 @@ for _dir in (
     MUSIC_DIR,
     ANALYTICS_REPORTS_DIR,
     SECRETS_DIR,
+    SERIES_STATE_DIR,
     *(QUEUE_PENDING_DIR / track for track in TRACKS),
     *(QUEUE_USED_DIR / track for track in TRACKS),
 ):

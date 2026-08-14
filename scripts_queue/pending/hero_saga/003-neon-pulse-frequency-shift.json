@@ -1,0 +1,64 @@
+{
+  "id": "neon-pulse-frequency-shift",
+  "title": "Neon Pulse \u2014 Episode 3: Frequency Shift",
+  "description": "Kael attempts to hack into the facility's mainframe to discover who is controlling his powers, only to find a signal that hits closer to home than he ever imagined.",
+  "tags": [
+    "superhero",
+    "action",
+    "cyberpunk",
+    "mystery",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 3,
+  "scenes": [
+    {
+      "narration": "The static in my head isn't just noise. It's a map. I have to find the source of the broadcast before the lockdown seals me in for good.",
+      "on_screen_text": "THE SIGNAL",
+      "duration_hint": 5.0,
+      "visual": "man running through a dark metallic corridor with sparks flying from wall conduits"
+    },
+    {
+      "narration": "Amber light pulses along my sleeves, reacting to the heavy security doors ahead. Every flicker is a direct drain on my internal reserves.",
+      "on_screen_text": "DRAINING POWER",
+      "duration_hint": 6.0,
+      "visual": "close up of glowing amber patterns on dark fabric surging with intense light"
+    },
+    {
+      "narration": "I reach the terminal, and the console flares to life. Someone has been waiting for me to connect all along. They aren't just tracking me\u2014they're logging my genetic signature.",
+      "on_screen_text": "CRITICAL DATA",
+      "duration_hint": 7.0,
+      "visual": "hands hovering over a holographic interface with complex blue data streams"
+    },
+    {
+      "narration": "My pulse quickens as the screen displays a familiar symbol. It\u2019s the emblem from the research facility where I was born. My past isn't a memory, it's an active experiment.",
+      "on_screen_text": "FORGOTTEN TRUTHS",
+      "duration_hint": 7.0,
+      "visual": "staring at a glowing red icon on a monitor with eyes wide in shock"
+    },
+    {
+      "narration": "The ventilation shafts hiss. Gas begins to flood the room, forcing me to make a choice. Stay and die with the truth, or break through the reinforced glass.",
+      "on_screen_text": "TIME IS RUNNING",
+      "duration_hint": 7.0,
+      "visual": "thick vapor filling a small room with yellow emergency lights flashing"
+    },
+    {
+      "narration": "I pour every watt of electricity into my palms. The glass screams under the pressure of the surge. One final push.",
+      "on_screen_text": "THE BREAK",
+      "duration_hint": 5.0,
+      "visual": "clenched fists crackling with concentrated electricity aimed at a reflective surface"
+    },
+    {
+      "narration": "The glass shatters, and I fall into the darkness of the lower sub-levels. The signal is stronger down here. And it\u2019s calling my name.",
+      "on_screen_text": "INTO THE VOID",
+      "duration_hint": 6.0,
+      "visual": "silhouette falling through shards of glass into a deep shadowy pit"
+    },
+    {
+      "narration": "What else are they hiding in the deep? Follow along for more as the mystery of the pulse continues.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "looking up toward the light of the upper level from a dark abyss"
+    }
+  ]
+}

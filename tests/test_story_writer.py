@@ -4,9 +4,15 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from pipeline.config import TRACKS
-from pipeline.story_writer import backfill_character_references, generate_stories, write_stories
+from pipeline.story_writer import (
+    backfill_character_references,
+    generate_next_episode,
+    generate_stories,
+    write_stories,
+)
 
 KIDS_TRACK = TRACKS["kids"]
+HERO_TRACK = TRACKS["hero_saga"]
 
 VALID_STORY = {
     "id": "test-story",
@@ -146,3 +152,83 @@ def test_backfill_character_references_no_op_when_all_have_references(tmp_path):
 
     assert updated == []
     mock_post.assert_not_called()
+
+
+def _fake_episode_response(episode: dict) -> MagicMock:
+    mock_response = MagicMock()
+    mock_response.raise_for_status.return_value = None
+    mock_response.json.return_value = {
+        "candidates": [{"content": {"parts": [{"text": json.dumps({"episode": episode})}]}}]
+    }
+    return mock_response
+
+
+def test_generate_next_episode_starts_a_new_series_when_no_state_exists(tmp_path):
+    episode_1 = {
+        **VALID_STORY,
+        "id": "the-spark",
+        "series_title": "Void Pulse",
+        "episode_subtitle": "The Awakening",
+        "character_reference": "a masked hero in a tattered blue coat",
+        "story_so_far_update": "The hero discovered their power.",
+    }
+    episode_1.pop("title", None)
+    mock_response = _fake_episode_response(episode_1)
+    with patch("pipeline.story_writer.GEMINI_API_KEY", "fake-key"), \
+         patch("pipeline.story_writer.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.story_writer.SERIES_STATE_DIR", tmp_path / "series_state"):
+        script = generate_next_episode(HERO_TRACK)
+
+    assert script.id == "the-spark"
+    assert script.episode_number == 1
+    assert script.title == "Void Pulse — Episode 1: The Awakening"
+    assert script.character_reference == "a masked hero in a tattered blue coat"
+    prompt = mock_post.call_args.kwargs["json"]["contents"][0]["parts"][0]["text"]
+    assert "EPISODE 1" in prompt
+
+    state = json.loads((tmp_path / "series_state" / "hero_saga.json").read_text())
+    assert state["episode_number"] == 1
+    assert state["character_reference"] == "a masked hero in a tattered blue coat"
+    assert state["series_title"] == "Void Pulse"
+    assert state["story_so_far"] == "The hero discovered their power."
+
+
+def test_generate_next_episode_continues_existing_series_with_locked_reference_and_title(tmp_path):
+    state_dir = tmp_path / "series_state"
+    state_dir.mkdir(parents=True)
+    (state_dir / "hero_saga.json").write_text(json.dumps({
+        "episode_number": 1,
+        "character_reference": "a masked hero in a tattered blue coat",
+        "series_title": "Void Pulse",
+        "story_so_far": "The hero discovered their power.",
+    }))
+
+    # model tries to (subtly) reword the character/series name — should be overridden
+    episode_2 = {
+        **VALID_STORY,
+        "id": "the-rival",
+        "series_title": "Circuit Breaker",
+        "episode_subtitle": "The Rival Emerges",
+        "character_reference": "a masked hero in a blue jacket",
+        "story_so_far_update": "The hero discovered their power and met a rival.",
+    }
+    episode_2.pop("title", None)
+    mock_response = _fake_episode_response(episode_2)
+    with patch("pipeline.story_writer.GEMINI_API_KEY", "fake-key"), \
+         patch("pipeline.story_writer.requests.post", return_value=mock_response) as mock_post, \
+         patch("pipeline.story_writer.SERIES_STATE_DIR", state_dir):
+        script = generate_next_episode(HERO_TRACK)
+
+    assert script.episode_number == 2
+    # locked reference/title win over whatever the model returned this call
+    assert script.character_reference == "a masked hero in a tattered blue coat"
+    assert script.title == "Void Pulse — Episode 2: The Rival Emerges"
+    prompt = mock_post.call_args.kwargs["json"]["contents"][0]["parts"][0]["text"]
+    assert "EPISODE 2" in prompt
+    assert "The hero discovered their power." in prompt
+
+    state = json.loads((state_dir / "hero_saga.json").read_text())
+    assert state["episode_number"] == 2
+    assert state["character_reference"] == "a masked hero in a tattered blue coat"
+    assert state["series_title"] == "Void Pulse"
+    assert state["story_so_far"] == "The hero discovered their power and met a rival."

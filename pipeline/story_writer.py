@@ -18,7 +18,7 @@ from pathlib import Path
 
 import requests
 
-from pipeline.config import GEMINI_API_KEY, GEMINI_MODEL, QUEUE_PENDING_DIR, QUEUE_USED_DIR, Track
+from pipeline.config import GEMINI_API_KEY, GEMINI_MODEL, QUEUE_PENDING_DIR, QUEUE_USED_DIR, SERIES_STATE_DIR, Track
 from pipeline.scripts import Script, ScriptValidationError, to_dict, validate
 
 REQUEST_TIMEOUT_SECONDS = 120
@@ -58,14 +58,11 @@ RESPONSE_SCHEMA = {
     "required": ["stories"],
 }
 
-PROMPT_TEMPLATE = """You are writing short-form vertical video scripts for a YouTube Shorts \
-channel that posts one narrated story per day for the "{label}" audience.
-
-AUDIENCE AND TONE
-{story_guidance}
-
-STORY STRUCTURE (every story)
-- 7 to 9 scenes total. Scene 1 is the hook (sets up the situation in 1-2 \
+# Shared scene-writing rules — reused verbatim by both the standalone
+# batch-story prompt and the serialized-episode prompts below, so the
+# important "no on-screen text/signage" image-generation guidance can't
+# drift out of sync between the two paths.
+SCENE_STRUCTURE_RULES = """- 7 to 9 scenes total. Scene 1 is the hook (sets up the situation in 1-2 \
 sentences, no title-card cliches). The last scene is a brief outro that \
 naturally invites the viewer to follow the channel for more stories \
 ("follow along for more" style, not a hard sales pitch) — set its \
@@ -100,7 +97,16 @@ once, specifically, and don't repeat it inside individual scenes' \
 "visual" fields. If a story genuinely has no single recurring character \
 (e.g. it's about a place or an event), leave this as an empty string.
 - "id" is a unique kebab-case slug derived from the title (e.g. \
-"the-tryout"). "tags" is 4-6 relevant lowercase keyword tags.
+"the-tryout"). "tags" is 4-6 relevant lowercase keyword tags."""
+
+PROMPT_TEMPLATE = """You are writing short-form vertical video scripts for a YouTube Shorts \
+channel that posts one narrated story per day for the "{label}" audience.
+
+AUDIENCE AND TONE
+{story_guidance}
+
+STORY STRUCTURE (every story)
+{scene_structure_rules}
 
 Write {count} DIFFERENT stories with distinct premises (no repeated plots). \
 Do not reuse any of these existing titles: {avoid_titles}
@@ -113,10 +119,11 @@ def _build_prompt(track: Track, count: int, avoid_titles: list[str]) -> str:
     avoid = ", ".join(f'"{t}"' for t in avoid_titles) if avoid_titles else "(none yet)"
     return PROMPT_TEMPLATE.format(
         label=track.label, story_guidance=track.story_guidance, count=count, avoid_titles=avoid,
+        scene_structure_rules=SCENE_STRUCTURE_RULES,
     )
 
 
-def _call_gemini(prompt: str) -> dict:
+def _call_gemini_raw(prompt: str, response_schema: dict) -> dict:
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY is not set")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
@@ -124,7 +131,7 @@ def _call_gemini(prompt: str) -> dict:
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
             "responseMimeType": "application/json",
-            "responseSchema": RESPONSE_SCHEMA,
+            "responseSchema": response_schema,
         },
     }
     response = requests.post(
@@ -134,6 +141,10 @@ def _call_gemini(prompt: str) -> dict:
     data = response.json()
     text = data["candidates"][0]["content"]["parts"][0]["text"]
     return json.loads(text)
+
+
+def _call_gemini(prompt: str) -> dict:
+    return _call_gemini_raw(prompt, RESPONSE_SCHEMA)
 
 
 def _existing_titles(track_key: str) -> list[str]:
@@ -189,6 +200,169 @@ def write_stories(track: Track, scripts: list[Script]) -> list[Path]:
         out_path.write_text(json.dumps(to_dict(script), indent=2))
         written.append(out_path)
     return written
+
+
+EPISODE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "id": {"type": "string"},
+        "series_title": {"type": "string"},
+        "episode_subtitle": {"type": "string"},
+        "description": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "string"}},
+        "character_reference": {"type": "string"},
+        "scenes": {"type": "array", "items": SCENE_SCHEMA},
+        "story_so_far_update": {"type": "string"},
+    },
+    "required": [
+        "id", "series_title", "episode_subtitle", "description", "tags",
+        "character_reference", "scenes", "story_so_far_update",
+    ],
+}
+
+EPISODE_RESPONSE_SCHEMA = {
+    "type": "object",
+    "properties": {"episode": EPISODE_SCHEMA},
+    "required": ["episode"],
+}
+
+FIRST_EPISODE_PROMPT_TEMPLATE = """You are starting a new ONGOING serialized short-form video series for a \
+YouTube Shorts channel, for the "{label}" audience.
+
+SERIES CONCEPT
+{story_guidance}
+
+This is EPISODE 1 of an ongoing series — establish a compelling ORIGINAL \
+protagonist and premise that can sustain many future episodes (an \
+unfolding power, a mystery, a rival, a larger threat). End this episode on \
+a hook or cliffhanger that makes viewers want the next part, not a \
+resolved ending.
+
+EPISODE STRUCTURE
+{scene_structure_rules}
+
+Also write:
+- "series_title": a short, punchy name for the SERIES itself (2-4 words, \
+e.g. "Void Pulse") — this gets reused as the title prefix for every future \
+episode, so make it distinctive and memorable, not generic.
+- "episode_subtitle": a short (2-5 word) subtitle for THIS episode only \
+(e.g. "The Awakening").
+- "story_so_far_update": a 2-4 sentence plain-prose recap of what happened \
+in this episode. It will be given back to you as context when writing \
+episode 2, so make it self-contained and concrete (who, what changed, \
+what's unresolved).
+
+Output must match the provided JSON schema exactly.
+"""
+
+CONTINUING_EPISODE_PROMPT_TEMPLATE = """You are continuing an ONGOING serialized short-form video series for a \
+YouTube Shorts channel, for the "{label}" audience.
+
+SERIES CONCEPT
+{story_guidance}
+
+STORY SO FAR (everything that has happened up to now)
+{story_so_far}
+
+PROTAGONIST (already established — keep this consistent, do not \
+redescribe or change any detail)
+{character_reference}
+
+This is EPISODE {episode_number} of the series "{series_title}". Continue \
+directly from where the story left off — do not restart, re-explain the \
+premise, or repeat earlier scenes. Escalate the story and end this episode \
+on a new hook or cliffhanger.
+
+EPISODE STRUCTURE
+{scene_structure_rules}
+
+Also write:
+- "character_reference": repeat the PROTAGONIST description above EXACTLY \
+as given, unchanged.
+- "episode_subtitle": a short (2-5 word) subtitle for THIS episode only \
+(e.g. "The Rival Emerges") — do NOT include the series name or the word \
+"Episode", just the subtitle.
+- "story_so_far_update": an updated 2-4 sentence plain-prose recap \
+covering the FULL story through this episode (not just this episode \
+alone) — this replaces the previous recap and will be given back to you \
+for episode {next_episode_number}.
+
+Output must match the provided JSON schema exactly.
+"""
+
+
+def _series_state_path(track_key: str) -> Path:
+    return SERIES_STATE_DIR / f"{track_key}.json"
+
+
+def _load_series_state(track_key: str) -> dict | None:
+    path = _series_state_path(track_key)
+    if not path.exists():
+        return None
+    return json.loads(path.read_text())
+
+
+def _save_series_state(track_key: str, state: dict) -> None:
+    path = _series_state_path(track_key)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, indent=2))
+
+
+def generate_next_episode(track: Track) -> Script:
+    """Generates the next episode of an ongoing serialized track (see
+    Track.serialized). Episode 1 establishes an original protagonist +
+    premise; every later episode is written with the locked
+    character_reference and running story-so-far recap fed back in, so
+    Gemini continues the plot instead of contradicting itself. Persists the
+    updated series state (scripts_queue/series_state/<track>.json) on
+    success."""
+    state = _load_series_state(track.key)
+
+    if state is None:
+        episode_number = 1
+        prompt = FIRST_EPISODE_PROMPT_TEMPLATE.format(
+            label=track.label, story_guidance=track.story_guidance,
+            scene_structure_rules=SCENE_STRUCTURE_RULES,
+        )
+    else:
+        episode_number = state["episode_number"] + 1
+        prompt = CONTINUING_EPISODE_PROMPT_TEMPLATE.format(
+            label=track.label, story_guidance=track.story_guidance,
+            story_so_far=state["story_so_far"], character_reference=state["character_reference"],
+            series_title=state["series_title"],
+            episode_number=episode_number, next_episode_number=episode_number + 1,
+            scene_structure_rules=SCENE_STRUCTURE_RULES,
+        )
+
+    raw = _call_gemini_raw(prompt, EPISODE_RESPONSE_SCHEMA)
+    episode_data = raw["episode"]
+
+    # Force the locked character description and series title rather than
+    # trusting the model to repeat them verbatim — guarantees consistency
+    # even if it paraphrases (observed drifting the series name episode to
+    # episode when left to the model alone, e.g. "Void Pulse" -> "Circuit
+    # Breaker" -> "Energy Pulse" for the same ongoing story).
+    character_reference = (
+        state["character_reference"] if state is not None else episode_data["character_reference"]
+    )
+    series_title = state["series_title"] if state is not None else episode_data["series_title"]
+    episode_subtitle = episode_data.pop("episode_subtitle")
+
+    episode_data["character_reference"] = character_reference
+    episode_data["episode_number"] = episode_number
+    episode_data["title"] = f"{series_title} — Episode {episode_number}: {episode_subtitle}"
+    del episode_data["series_title"]
+
+    story_so_far_update = episode_data.pop("story_so_far_update")
+    script = validate(episode_data)
+
+    _save_series_state(track.key, {
+        "episode_number": episode_number,
+        "character_reference": character_reference,
+        "series_title": series_title,
+        "story_so_far": story_so_far_update,
+    })
+    return script
 
 
 CHARACTER_REFERENCE_SCHEMA = {

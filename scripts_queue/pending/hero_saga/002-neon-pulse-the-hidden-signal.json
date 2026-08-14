@@ -1,0 +1,64 @@
+{
+  "id": "neon-pulse-the-hidden-signal",
+  "title": "Neon Pulse \u2014 Episode 2: The Hidden Signal",
+  "description": "Kael tracks the electrical pulse to an abandoned industrial facility, but realizes he is being led into a trap by the very organization hunting him.",
+  "tags": [
+    "superhero",
+    "action",
+    "cyberpunk",
+    "mystery",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 2,
+  "scenes": [
+    {
+      "narration": "The signal isn't random. It\u2019s a rhythmic hum, guiding me deep into this derelict factory. Every step feels like walking into a snare.",
+      "on_screen_text": "THE SIGNAL CALLS",
+      "duration_hint": 5.0,
+      "visual": "walking through a dusty, dark warehouse floor with rusted metal beams and scattered debris in shadows"
+    },
+    {
+      "narration": "My jacket\u2019s amber patterns are reacting. They pulse faster the closer I get to the core of this place.",
+      "on_screen_text": "ENERGY SURGE",
+      "duration_hint": 4.0,
+      "visual": "glowing amber light illuminating dark interior space while hand reaches out to touch a cold metal wall"
+    },
+    {
+      "narration": "I thought I was hunting the truth. I was wrong. The energy here is feeding on me.",
+      "on_screen_text": "A DEADLY TRAP",
+      "duration_hint": 4.0,
+      "visual": "stumbling back as sparks fly from loose wires dangling from a high ceiling in a dim room"
+    },
+    {
+      "narration": "Suddenly, the silence breaks. A low-frequency whine echoes through the hall, and the doors behind me lock tight.",
+      "on_screen_text": "NOWHERE TO RUN",
+      "duration_hint": 5.0,
+      "visual": "heavy steel door slamming shut and locking as dust falls from the overhead rafters"
+    },
+    {
+      "narration": "My internal rhythm hitches. They aren't just watching; they are trying to calibrate me like a piece of equipment.",
+      "on_screen_text": "FORCED CALIBRATION",
+      "duration_hint": 5.0,
+      "visual": "clutching head in pain while blue and amber light flickers uncontrollably around the silhouette"
+    },
+    {
+      "narration": "I reach deep into the static. If they want this power, they are going to get more than they bargained for.",
+      "on_screen_text": "UNLEASHING CONTROL",
+      "duration_hint": 5.0,
+      "visual": "arcing electricity snapping from fingertips toward a metal control console creating intense bright sparks"
+    },
+    {
+      "narration": "The wall crumbles under the discharge. I see them now, standing in the shadows across the courtyard.",
+      "on_screen_text": "THEY ARE WATCHING",
+      "duration_hint": 4.0,
+      "visual": "looking out through a jagged hole in a concrete wall toward dark figures silhouetted in the distance"
+    },
+    {
+      "narration": "There is no turning back now. This war has just begun. Follow along for more of my story.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.0,
+      "visual": "running toward a distant exit with intense determination on face while debris falls around"
+    }
+  ]
+}

@@ -63,7 +63,7 @@ def test_run_track_raises_quota_exhausted_from_first_scene_probe(tmp_path):
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
          patch("run_daily.generate_scene_image_raw", side_effect=CloudflareQuotaExhausted("exhausted")) as mock_gen, \
-         patch("run_daily.synthesize_script") as mock_tts:
+         patch("run_daily.synthesize_script_for_track") as mock_tts:
         try:
             run_daily.run_track(KIDS_TRACK, dry_run=False)
             assert False, "expected CloudflareQuotaExhausted to propagate"
@@ -113,7 +113,7 @@ def test_run_track_marks_produced_today_only_on_real_success(tmp_path):
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
          patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)), \
-         patch("run_daily.synthesize_script", return_value=[MagicMock(), MagicMock()]), \
+         patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock()]), \
          patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
          patch("run_daily.pick_music_track", return_value=None), \
          patch("run_daily.assemble_short", return_value=tmp_path / "video.mp4"), \
@@ -145,7 +145,7 @@ def test_run_track_passes_character_reference_and_shared_seed_to_every_scene(tmp
          patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
          patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)) as mock_gen, \
-         patch("run_daily.synthesize_script", return_value=[MagicMock(), MagicMock(), MagicMock()]), \
+         patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock(), MagicMock()]), \
          patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
          patch("run_daily.pick_music_track", return_value=None), \
          patch("run_daily.assemble_short", return_value=tmp_path / "video.mp4"), \
@@ -159,4 +159,34 @@ def test_run_track_passes_character_reference_and_shared_seed_to_every_scene(tmp
     assert mock_gen.call_count == 3  # every scene, including the probe
     for call in mock_gen.call_args_list:
         assert call.kwargs["character_reference"] == "a small cream-colored rabbit"
+        assert call.kwargs["seed"] == expected_seed
+
+
+def test_run_track_uses_track_key_seed_for_serialized_tracks(tmp_path):
+    hero_track = TRACKS["hero_saga"]
+    fake_script = MagicMock()
+    fake_script.title = "Episode 1"
+    fake_script.id = "episode-1"  # deliberately different from track.key
+    fake_script.character_reference = "a masked hero in a blue coat"
+    fake_script.scenes = [MagicMock(), MagicMock()]
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
+
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch("run_daily.generate_scene_image_raw", return_value=(tmp_path / "img.png", False)) as mock_gen, \
+         patch("run_daily.synthesize_script_for_track", return_value=[MagicMock(), MagicMock()]), \
+         patch("run_daily.fit_scene_image", return_value=tmp_path / "fitted.png"), \
+         patch("run_daily.pick_music_track", return_value=None), \
+         patch("run_daily.assemble_short", return_value=tmp_path / "video.mp4"), \
+         patch("run_daily.generate_thumbnail", return_value=tmp_path / "thumb.jpg"), \
+         patch("run_daily.upload_daily_video", return_value={"video": {}, "thumbnail": {}}), \
+         patch("run_daily.mark_used"), \
+         patch("run_daily.mark_produced_today"):
+        run_daily.run_track(hero_track, dry_run=False)
+
+    expected_seed = run_daily._story_seed(hero_track.key)  # not the episode's script.id
+    for call in mock_gen.call_args_list:
         assert call.kwargs["seed"] == expected_seed

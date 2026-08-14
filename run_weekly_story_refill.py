@@ -16,9 +16,20 @@ import sys
 import traceback
 
 from pipeline.config import GEMINI_API_KEY, TRACKS
-from pipeline.story_writer import generate_stories, write_stories
+from pipeline.story_writer import generate_next_episode, generate_stories, write_stories
 
 STORIES_PER_TRACK = 7  # one week of daily buffer per track
+
+
+def _refill_serialized(track) -> None:
+    # Each call continues from the last-saved series state, so episodes
+    # must be generated one at a time, in order — not as a single batch
+    # call like the standalone tracks.
+    for _ in range(STORIES_PER_TRACK):
+        episode = generate_next_episode(track)
+        written = write_stories(track, [episode])
+        for path in written:
+            print(f"[{track.key}] Wrote {path} (episode {episode.episode_number})")
 
 
 def run() -> int:
@@ -29,11 +40,15 @@ def run() -> int:
     any_failed = False
     for track in TRACKS.values():
         try:
-            print(f"[{track.key}] Generating {STORIES_PER_TRACK} stories...")
-            scripts = generate_stories(track, count=STORIES_PER_TRACK)
-            written = write_stories(track, scripts)
-            for path in written:
-                print(f"[{track.key}] Wrote {path}")
+            if track.serialized:
+                print(f"[{track.key}] Generating {STORIES_PER_TRACK} more episodes...")
+                _refill_serialized(track)
+            else:
+                print(f"[{track.key}] Generating {STORIES_PER_TRACK} stories...")
+                scripts = generate_stories(track, count=STORIES_PER_TRACK)
+                written = write_stories(track, scripts)
+                for path in written:
+                    print(f"[{track.key}] Wrote {path}")
         except Exception:
             any_failed = True
             print(f"[{track.key}] FAILED:")
