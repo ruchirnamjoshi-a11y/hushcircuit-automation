@@ -49,6 +49,10 @@ class Script:
     # blank for scripts without a clear single protagonist, or written
     # before this field existed.
     character_reference: str = ""
+    # 1-based position within an ongoing serialized track (see
+    # pipeline.config.Track.serialized); 0 for standalone, non-serialized
+    # stories.
+    episode_number: int = 0
 
     @property
     def hook(self) -> Scene:
@@ -113,6 +117,7 @@ def validate(data: dict) -> Script:
         tags=list(data.get("tags", [])),
         scenes=scenes,
         character_reference=data.get("character_reference", ""),
+        episode_number=int(data.get("episode_number", 0)),
     )
 
 
@@ -123,6 +128,7 @@ def to_dict(script: Script) -> dict:
         "description": script.description,
         "tags": script.tags,
         "character_reference": script.character_reference,
+        "episode_number": script.episode_number,
         "scenes": [
             {
                 "narration": s.narration,

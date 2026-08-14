@@ -57,19 +57,19 @@ from pipeline.scripts import load_next_pending, mark_used
 from pipeline.shorts import assemble_short
 from pipeline.state import already_produced_today, mark_produced_today
 from pipeline.thumbnail import generate_thumbnail
-from pipeline.tts import synthesize_script
+from pipeline.tts import synthesize_script_for_track
 from pipeline.upload import upload_daily_video
 
 
-def _story_seed(script_id: str) -> int:
+def _story_seed(seed_key: str) -> int:
     """A stable (not Python's randomized-per-process hash()) seed derived
-    from the script id, reused for every scene's Cloudflare call within a
-    story. Cloudflare's free flux-1-schnell has no image-to-image/reference
-    input, so a shared seed + Script.character_reference (see
+    from seed_key, reused for every scene's Cloudflare call within a story.
+    Cloudflare's free flux-1-schnell has no image-to-image/reference input,
+    so a shared seed + Script.character_reference (see
     pipeline.ai_image.build_prompt) is the strongest available lever for
     keeping a character visually recognizable across independently
     generated scenes."""
-    return zlib.crc32(script_id.encode())
+    return zlib.crc32(seed_key.encode())
 
 
 def run_track(track: Track, dry_run: bool = False, privacy_status: str = "private") -> bool:
@@ -104,7 +104,10 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
     run_dir = OUTPUT_DIR / track.key / script.id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    seed = _story_seed(script.id)
+    # Serialized tracks (see Track.serialized) reuse ONE seed across the
+    # whole series, not just within one episode, so the protagonist stays
+    # visually consistent from episode 1 through episode N.
+    seed = _story_seed(track.key if track.serialized else script.id)
 
     print(f"[{track.key}] [1/4] Probing image generation availability...")
     images_raw_dir = run_dir / "images_raw"
@@ -113,8 +116,9 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
         character_reference=script.character_reference, seed=seed, raise_on_quota_exhausted=True,
     )
 
-    print(f"[{track.key}] [2/4] Synthesizing voiceover ({track.voice})...")
-    scene_audios = synthesize_script(script, run_dir / "audio", voice=track.voice)
+    voice_desc = f"{track.tts_provider}: {'/'.join(track.tts_voices) or track.voice}"
+    print(f"[{track.key}] [2/4] Synthesizing voiceover ({voice_desc})...")
+    scene_audios = synthesize_script_for_track(script, run_dir / "audio", track)
 
     print(f"[{track.key}] [3/4] Generating remaining scene illustrations...")
     raw_results = [(first_raw_path, first_used_fallback)] + [

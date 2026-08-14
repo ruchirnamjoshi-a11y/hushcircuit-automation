@@ -65,6 +65,7 @@ jobs:
           write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
           write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
           write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
+          write_token hero_saga "${{ secrets.YOUTUBE_TOKEN_B64_HERO_SAGA }}"
 
       - name: Run daily pipeline (all story tracks)
         env:
@@ -72,6 +73,10 @@ jobs:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          # hindi_mythology's voiceover uses Gemini's native TTS (Track.
+          # tts_provider="gemini"), not just the weekly story-writing step —
+          # needed here too now, not only in weekly-analytics.yml.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         # Scheduled runs publish for real (public); manual runs default to
         # private so you can sanity-check a run without publishing it live.
         # run_daily.py loops over every track (kids/teens/adults/women),

@@ -2,40 +2,113 @@
 
 Fully-free, script-driven pipeline that produces and publishes **one narrated
 short story per day, per audience track** — kids, teens & young adults,
-adults & middle-aged, and women — each with its own voice, illustration
-style, and **its own YouTube channel**, then feeds performance data back into
-future content decisions.
+adults & middle-aged, women, Hindi mythology, and an ongoing original
+superhero saga — each with its own voice, illustration style, and **its own
+YouTube channel**, then feeds performance data back into future content
+decisions.
 
-## The four tracks, four channels
+## The tracks, one channel each
 
 Each track is a fully separate YouTube channel with its own OAuth token,
 own subscribers, own branding. Earlier this ran as one shared channel
 (YouTube's `made_for_kids` flag is set per video, not per channel, so that
 worked mechanically) but a kids bedtime-story subscriber getting a teen
 breakup drama in their feed — and vice versa — is bad for subscriber
-retention and channel identity, so it's four channels now. See "Multi-channel
-YouTube setup" below for how each channel/token maps to a track.
+retention and channel identity, so it's one channel per track now. See
+"Multi-channel YouTube setup" below for how each channel/token maps to a
+track.
 
 One vertical Short is produced daily per channel. There's no separate
 long-form (16:9) video: our ~8-scene stories run ~70-90s, so a distinct
-long-form cut added little, and uploading both would cost ~13,000 YouTube
-Data API quota units/day across 4 channels — over the default 10,000/day
-free cap *per channel's project* (though with separate channels each
-getting its own quota, that's less of a hard constraint than it was under
-one shared channel). `pipeline/assemble.py` (the long-form assembler) is
-kept in the codebase, tested, but unused by default — same pattern as
-`pipeline/broll.py`.
+long-form cut added little, and uploading both would cost far more YouTube
+Data API quota than one upload per channel. `pipeline/assemble.py` (the
+long-form assembler) is kept in the codebase, tested, but unused by
+default — same pattern as `pipeline/broll.py`.
 
-| Track | Voice | Illustration style | Made for kids? |
-|---|---|---|---|
-| **Kids** | Sonia (British, warm) | Watercolor storybook | Yes — every kids upload is flagged `selfDeclaredMadeForKids` |
-| **Teens & young adults** | Aria (confident) | Vibrant character-focused digital art | No |
-| **Adults & middle-aged** | Guy (warm, mature) | Cinematic, painterly, reflective | No |
-| **Women** | Jenny (warm, comforting) | Elegant, soft, rose-gold | No |
+| Track | Voice | Illustration style | Made for kids? | Notes |
+|---|---|---|---|---|
+| **Kids** | Sonia (British, warm) | Watercolor storybook | Yes — every kids upload is flagged `selfDeclaredMadeForKids` | Standalone story per day |
+| **Teens & young adults** | Aria (confident) | Vibrant character-focused digital art | No | Standalone story per day |
+| **Adults & middle-aged** | Guy (warm, mature) | Cinematic, painterly, reflective | No | Standalone story per day |
+| **Women** | Jenny (warm, comforting) | Elegant, soft, rose-gold | No | Standalone story per day |
+| **Hindi mythology** | Gemini TTS, rotating Kore/Puck/Aoede | Indian miniature/mural art | No | Standalone story per day, written in Hindi, no captions burned in (`burn_captions=False` — see below) |
+| **Original hero saga** | Christopher (deep, dramatic) | Bold comic-book/graphic-novel | No | **Serialized** — one ongoing story, new episode each day, not standalone (see below) |
 
 Configured in `pipeline/config.py`'s `TRACKS` dict — voice, illustration
 style prompt, YouTube category, `made_for_kids` flag, and extra tags per
 track all live there.
+
+### The Hindi mythology track has no burned-in captions
+
+`Track.burn_captions=False` skips the ASS caption/progress-badge burn-in
+entirely (video + audio only) rather than rendering Devanagari text with a
+font that only has Latin glyphs wired up. `pipeline/thumbnail.py`'s
+`draw_text` flag mirrors this for the thumbnail's title overlay.
+
+### Hindi mythology uses Gemini's native TTS instead of edge-tts
+
+edge-tts only exposes two older Azure voices for Hindi
+(`hi-IN-MadhurNeural`/`hi-IN-SwaraNeural`), and neither sounded natural
+enough — tone/pitch/pacing tweaks (rate, pitch, silence-trimming between
+sentences, replacing sentence-ending punctuation with commas for shorter
+pauses) were all tested for real and none of them meaningfully helped; the
+plain original edge-tts voice was judged better than every tweak. The
+actual fix was a different TTS engine, not a different setting.
+
+`Track.tts_provider="gemini"` + `Track.tts_voices` (see
+`pipeline/tts.py`'s `synthesize_scene_gemini`/`synthesize_script_for_track`)
+uses Gemini's native TTS instead — genuinely more natural-sounding, and
+still free with the same `GEMINI_API_KEY` already used for story writing
+(no Google Cloud billing account, unlike the Cloud Text-to-Speech
+Chirp3-HD path that was considered and declined). One of three voices
+(Kore/Puck/Aoede) is picked deterministically per script
+(`zlib.crc32(script.id) % len(tts_voices)`) and reused for every scene in
+that script — consistent within an episode, varied across days.
+
+**A real free-tier trap worth knowing if you add more Gemini-TTS
+tracks/voices**: `gemini-2.5-flash-preview-tts` looks fine at first (a
+live 429 showed a 3 requests/minute limit, survivable with retries) but
+also has a much tighter **10 requests/DAY** cap per project — found only
+by actually exhausting it in production testing, not from any published
+number. That's under the ~8 calls one 8-scene video needs, with zero
+margin for retries or a second video. `gemini-3.1-flash-tts-preview` uses
+an independent quota bucket (different model name → different quotaId)
+and comfortably covers a full script (verified end-to-end: 8/8 scenes,
+~69s, zero retries needed) — that's the model actually configured
+(`GEMINI_TTS_MODEL`). Word-level caption timestamps aren't available from
+Gemini's TTS (only raw audio), which is fine here since this track already
+has `burn_captions=False` — this provider isn't wired up for any track
+that needs burned-in captions.
+
+### The hero saga track is a serialized, ongoing story
+
+Every other track writes a fresh, self-contained story each time
+(`pipeline.story_writer.generate_stories`). `hero_saga` is different —
+`Track.serialized=True` means it tells ONE story across many daily
+episodes, each ending on a hook/cliffhanger, via
+`pipeline.story_writer.generate_next_episode`:
+
+- **Episode 1** invents an original protagonist (explicitly instructed to
+  avoid any existing franchise/licensed character — no Marvel, DC, or
+  similar) plus a `series_title` (e.g. "Neon Pulse").
+- Every episode after that is written with three things fed back into the
+  prompt: the locked `character_reference`, the locked `series_title`, and
+  a running `story_so_far` recap — all persisted in
+  `scripts_queue/series_state/hero_saga.json`. Gemini only ever has to
+  write the *next* chapter, not re-invent the series.
+- The character reference and series title are then force-overwritten in
+  code after each Gemini call rather than trusted verbatim — early testing
+  showed the model *would* keep the protagonist consistent on its own but
+  quietly drifted the series' own name episode to episode ("Void Pulse" →
+  "Circuit Breaker" → "Energy Pulse" for the same ongoing story) even when
+  told not to. Locking both server-side, not just prompting for
+  consistency, is what actually holds it in place.
+- `run_daily.py`'s illustration seed is keyed off the *track*, not the
+  episode's script id, for serialized tracks — so the protagonist's look
+  stays stable across the whole saga, not just within one episode.
+- The weekly refill (`run_weekly_story_refill.py`) generates this track's
+  episodes one at a time, sequentially (each call depends on the previous
+  one's saved state), rather than one batch call like the other tracks.
 
 ## How it stays (nearly) free
 
@@ -244,30 +317,31 @@ script) after a look.
    - No billing needed; if unset, the weekly refill step just skips
    - For GitHub Actions, add it as the repo secret `GEMINI_API_KEY`
 4. **Multi-channel YouTube setup** — one OAuth Desktop client is shared,
-   but each of the 4 tracks needs its own channel and its own token:
+   but each track needs its own channel and its own token:
    - Create a Google Cloud project once, enable **YouTube Data API v3** and
      **YouTube Analytics API**, create an OAuth Desktop client, download the
-     JSON as `secrets/client_secret.json`. This client is reused for all 4
-     channels — you don't need 4 Cloud projects.
-   - Create 4 YouTube channels (as Brand Accounts under your Google account
-     is easiest to manage: youtube.com → your profile icon → "Create a
-     channel"), one per track. Name/brand each for its audience.
+     JSON as `secrets/client_secret.json`. This client is reused for every
+     channel — you don't need one Cloud project per channel.
+   - Create one YouTube channel per track (as Brand Accounts under your
+     Google account is easiest to manage: youtube.com → your profile icon
+     → "Create a channel"). Name/brand each for its audience.
    - For each track, authorize its channel:
      1. In [studio.youtube.com](https://studio.youtube.com), switch your
         **active channel** (profile icon → account switcher) to the one
         for this track. This step matters — the OAuth consent screen
         authorizes whichever channel is currently active, and there's no
         channel picker in the flow itself.
-     2. Run `python -m pipeline.upload --auth-setup --track <kids|teens|adults|women>`
+     2. Run `python -m pipeline.upload --auth-setup --track <kids|teens|adults|women|hindi_mythology|hero_saga>`
         — this opens a browser consent screen and, on approval, writes
         `secrets/youtube_token_<track>.json`.
-     3. Repeat for the other 3 tracks, switching the active channel each time.
+     3. Repeat for the other tracks, switching the active channel each time.
    - For GitHub Actions, base64-encode each track's token file and store it
      as its own repo secret: `YOUTUBE_TOKEN_B64_KIDS`,
      `YOUTUBE_TOKEN_B64_TEENS`, `YOUTUBE_TOKEN_B64_ADULTS`,
-     `YOUTUBE_TOKEN_B64_WOMEN`. Also add `CF_ACCOUNT_ID` / `CF_API_TOKEN` as
-     their own repo secrets.
-   - You don't have to set all 4 up at once — `run_daily.py` and
+     `YOUTUBE_TOKEN_B64_WOMEN`, `YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY`,
+     `YOUTUBE_TOKEN_B64_HERO_SAGA`. Also add `CF_ACCOUNT_ID` / `CF_API_TOKEN`
+     as their own repo secrets.
+   - You don't have to set all of them up at once — `run_daily.py` and
      `run_weekly_analytics.py` both skip a track cleanly (not a failure) if
      that track's token doesn't exist yet, so you can bring channels online
      one at a time.

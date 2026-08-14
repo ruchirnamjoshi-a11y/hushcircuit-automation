@@ -1,0 +1,58 @@
+{
+  "id": "echoes-of-the-spark",
+  "title": "Neon Pulse \u2014 Episode 1: The First Flicker",
+  "description": "Kael discovers a strange, rhythmic energy pulsing within his veins, marking the start of a journey he never asked for.",
+  "tags": [
+    "superhero",
+    "action",
+    "mystery",
+    "scifi",
+    "origin"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 1,
+  "scenes": [
+    {
+      "narration": "They said the blackout was just a surge in the grid. But I felt it\u2014a vibration under my skin that didn't stop when the lights died.",
+      "on_screen_text": "THE SURGE",
+      "duration_hint": 5.0,
+      "visual": "young man clutching his glowing forearm in a dark alley, frantic expression, dim industrial environment"
+    },
+    {
+      "narration": "My hands won't stop shaking. Every time I touch metal, the air hums like a live wire ready to snap.",
+      "on_screen_text": "UNSTABLE ENERGY",
+      "duration_hint": 4.0,
+      "visual": "fingertips hovering near a metallic surface, static electricity arcing, intense focus"
+    },
+    {
+      "narration": "I thought I was alone in this apartment. But then the shadows started moving with a rhythm that matched my own heartbeat.",
+      "on_screen_text": "FOLLOWING SHADOWS",
+      "duration_hint": 5.0,
+      "visual": "crouching in a dim room, looking back over shoulder, dark silhouettes shifting on the wall"
+    },
+    {
+      "narration": "There is a pattern here. A code hidden in the hum, pulling me toward the derelict sector of the city.",
+      "on_screen_text": "THE SIGNAL",
+      "duration_hint": 4.0,
+      "visual": "staring at a complex holographic projection flickering in the dark, wide-eyed curiosity"
+    },
+    {
+      "narration": "I don't know who is watching, but the air grows cold whenever I reach for the truth. Something is hunting for what I have.",
+      "on_screen_text": "THE HUNTER",
+      "duration_hint": 5.0,
+      "visual": "peering through a cracked wall, silhouettes of armored figures moving in the distance"
+    },
+    {
+      "narration": "I have to leave, before they realize I'm not just a malfunction. My life changed in a single heartbeat.",
+      "on_screen_text": "THE ESCAPE",
+      "duration_hint": 4.0,
+      "visual": "running through a narrow corridor, frantic movement, blurry motion, escaping into the night"
+    },
+    {
+      "narration": "This is only the beginning of the noise. If you want to see where this power leads, stay tuned.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.0,
+      "visual": "standing on a high rooftop overlooking a vast, glowing city at night, silhouette against neon lights"
+    }
+  ]
+}
