@@ -84,15 +84,25 @@ class CloudflareQuotaExhausted(RuntimeError):
     instead of burning time on backoff retries."""
 
 
-def _call_cloudflare(prompt: str, seed: int | None = None) -> Image.Image:
+def _call_cloudflare(
+    prompt: str, seed: int | None = None, reference_image_bytes: bytes | None = None,
+) -> Image.Image:
+    """flux-2-klein-4b takes multipart form data, not JSON (unlike the
+    older flux-1-schnell) — confirmed empirically, since Cloudflare's docs
+    don't publish the field names. `reference_image_bytes`, when given, is
+    sent as `input_image` — real image-to-image conditioning, not just a
+    text description, so a subsequent scene can be given the first scene's
+    actual generated image to keep the character visually consistent."""
     url = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/ai/run/{AI_IMAGE_MODEL}"
-    body = {"prompt": prompt}
+    files: dict = {"prompt": (None, prompt)}
     if seed is not None:
-        body["seed"] = seed
+        files["seed"] = (None, str(seed))
+    if reference_image_bytes is not None:
+        files["input_image"] = ("reference.jpg", reference_image_bytes, "image/jpeg")
     response = requests.post(
         url,
         headers={"Authorization": f"Bearer {CF_API_TOKEN}"},
-        json=body,
+        files=files,
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
     if response.status_code == 429:
@@ -116,7 +126,8 @@ def generate_scene_image_raw(
     track: Track,
     character_reference: str = "",
     seed: int | None = None,
-    retries: int = 2,
+    reference_image_bytes: bytes | None = None,
+    retries: int = 3,
     raise_on_quota_exhausted: bool = False,
 ) -> tuple[Path, bool]:
     """Generates one illustration for a scene via Cloudflare Workers AI, saved
@@ -126,10 +137,14 @@ def generate_scene_image_raw(
     the brand gradient if credentials are unset or every attempt fails.
 
     `track` selects the illustration style (kids/teens/adults/women — see
-    pipeline.config.TRACKS). `character_reference` and `seed` (see
-    build_prompt and run_daily.py) are how cross-scene character
-    consistency is approximated — pass the same values for every scene in
-    a story.
+    pipeline.config.TRACKS). `character_reference` (text) and
+    `reference_image_bytes` (a real image, typically the story's first
+    generated scene — see run_daily.py) together are how cross-scene
+    character consistency is achieved: the reference image is true
+    image-to-image conditioning, verified in testing to hold details (exact
+    colors, costume/armor specifics) far better than text description
+    alone. `seed` is passed too but is now a minor secondary lever, not the
+    primary consistency mechanism it was under the old text-only approach.
 
     `raise_on_quota_exhausted`: when True, a CloudflareQuotaExhausted lets
     the exception propagate instead of falling back to the gradient.
@@ -138,6 +153,13 @@ def generate_scene_image_raw(
     all-gradient anyway, and the caller would rather abort the track (leave
     its script in the queue) and let a later scheduled run retry once
     quota resets than publish a placeholder-only video.
+
+    `retries` defaults higher (3, not 2) than the old flux-1-schnell
+    default — flux-2-klein-4b showed a real, non-trivial rate of transient
+    failures (bare 500s, and occasionally a false-positive content-flag
+    that cleared on retry) in live testing, well above flux-1-schnell's
+    reliability, so extra retry headroom actually matters here. Quota
+    headroom easily covers it either way.
 
     Returns (path, used_fallback) — callers use used_fallback to decide
     whether this scene should get the gradient's drifting orb treatment
@@ -152,7 +174,7 @@ def generate_scene_image_raw(
         prompt = build_prompt(scene, track, character_reference)
         for attempt in range(retries + 1):
             try:
-                image = _call_cloudflare(prompt, seed)
+                image = _call_cloudflare(prompt, seed, reference_image_bytes)
                 image.convert("RGB").save(out_path)
                 time.sleep(INTER_REQUEST_DELAY_SECONDS)
                 return out_path, False

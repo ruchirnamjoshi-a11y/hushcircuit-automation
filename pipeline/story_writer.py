@@ -76,10 +76,14 @@ summarizing that scene, e.g. "THE STUMBLE" or "A NEW BEGINNING".
 - "duration_hint" is the approximate narration length in seconds at a \
 natural speaking pace (~2.3 words/second) — just estimate from the \
 narration's word count.
-- "visual" is a SEPARATE short, concrete visual description (10-20 words) \
-for an AI image generator — NOT a copy of the narration, NOT a full \
-sentence with punctuation, NOT a quoted slogan. Describe the ACTION, POSE, \
-and SETTING of that specific moment only — not the character's fixed \
+- "visual" is a SEPARATE, DETAILED visual description (20-35 words) for an \
+AI image generator — NOT a copy of the narration, NOT a full sentence with \
+punctuation, NOT a quoted slogan. It must depict the SPECIFIC action \
+described in THIS scene's narration, not a generic or interchangeable \
+moment — if the narration says the character is striking, recoiling, \
+kneeling, or looking toward something specific, the visual must show \
+exactly that beat, not just "a dramatic scene". Be concrete about pose, \
+camera angle, and immediate surroundings — not the character's fixed \
 physical appearance (that belongs in "character_reference" below and gets \
 automatically added to every scene, so repeating it here just wastes words \
 and can conflict). CRITICAL: never describe any text, signs, banners, \
