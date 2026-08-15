@@ -201,6 +201,22 @@ def test_pick_voice_is_deterministic_and_from_the_configured_pool():
     assert _pick_voice(GEMINI_TRACK, script_b) in GEMINI_TRACK.tts_voices
 
 
+def test_pick_voice_ignores_leftover_tts_voices_when_provider_is_edge():
+    # Regression test: a track reverted from tts_provider="gemini" back to
+    # "edge" but with tts_voices left populated (kept "dormant" for later)
+    # must NOT hand a Gemini voice name like "Puck" to edge-tts — this
+    # broke hindi_mythology production for ~2 days straight (every run
+    # crashed with ValueError: Invalid voice 'Puck') because _pick_voice
+    # used to key off "is tts_voices non-empty" alone, ignoring provider.
+    reverted_track = Track(
+        key="hindi_mythology", label="Hindi", voice="hi-IN-MadhurNeural",
+        image_style_prefix="", image_style_suffix="", made_for_kids=False, category_id="24",
+        tts_provider="edge", tts_voices=["Kore", "Puck", "Aoede"],
+    )
+    script = validate(SAMPLE_SCRIPT)
+    assert _pick_voice(reverted_track, script) == "hi-IN-MadhurNeural"
+
+
 def test_pick_voice_falls_back_to_track_voice_when_no_pool_configured():
     script = validate(SAMPLE_SCRIPT)
     assert _pick_voice(EDGE_TRACK, script) == EDGE_TRACK.voice

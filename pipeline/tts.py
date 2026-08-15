@@ -235,8 +235,15 @@ def synthesize_scene_gemini(text: str, out_dir: Path, name: str, voice: str) -> 
 def _pick_voice(track: Track, script: Script) -> str:
     """One narrator voice per script, chosen deterministically (not
     randomly) so re-running production for the same script is stable —
-    same pattern as run_daily._story_seed for illustration consistency."""
-    if not track.tts_voices:
+    same pattern as run_daily._story_seed for illustration consistency.
+
+    Only consults tts_voices for tracks actually using the Gemini
+    provider. tts_voices can stay populated on a track that's reverted to
+    edge-tts (kept "dormant" for later) without this function handing an
+    edge-tts call a Gemini voice name like "Puck" — a real production bug:
+    broke hindi_mythology for every run for ~2 days after the Gemini TTS
+    revert, since this used to key off "is tts_voices non-empty" alone."""
+    if track.tts_provider != "gemini" or not track.tts_voices:
         return track.voice
     index = zlib.crc32(script.id.encode()) % len(track.tts_voices)
     return track.tts_voices[index]
