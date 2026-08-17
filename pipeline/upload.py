@@ -30,6 +30,7 @@ from pipeline.config import (
     Track,
     youtube_token_path,
 )
+from pipeline.math_scripts import MathScript
 from pipeline.scripts import Script
 
 API_SERVICE_NAME = "youtube"
@@ -124,7 +125,7 @@ def set_thumbnail(
 
 
 def upload_daily_video(
-    script: Script,
+    script: Script | MathScript,
     video_path: Path,
     thumbnail_path: Path,
     track: Track,

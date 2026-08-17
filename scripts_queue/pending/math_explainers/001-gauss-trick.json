@@ -1,0 +1,15 @@
+{
+  "id": "gauss-trick",
+  "title": "The Trick a 9-Year-Old Used to Add 1 to 100 in Seconds",
+  "description": "The staircase trick young Carl Friedrich Gauss used to instantly sum 1+2+3+...+100 -- and the general formula it reveals: n(n+1)/2.",
+  "tags": ["math", "cool math facts", "math explained", "learn math", "gauss", "math trick", "mental math"],
+  "piece": "gauss_trick",
+  "narration_lines": [
+    "One plus two plus three, all the way up to one hundred. As the story goes, a nine year old named Gauss solved this in seconds. Here's how.",
+    "Line the numbers up as a staircase of blocks, one for each number from one to one hundred.",
+    "Now flip a copy upside down, and slide it in to pair each number with its opposite.",
+    "Every single pair adds up to exactly one hundred and one. One plus a hundred. Two plus ninety nine. Three plus ninety eight. And so on, all the way down.",
+    "That's one hundred pairs, of one hundred and one each. And since we doubled everything to make the pairs, we just cut the total in half.",
+    "One hundred, times one hundred and one, divided by two, equals... five thousand and fifty."
+  ]
+}
