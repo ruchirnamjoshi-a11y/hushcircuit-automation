@@ -37,10 +37,53 @@ uploads per day" below for the quota math this changes.
 | **Women** | Jenny (warm, comforting) | Elegant, soft, rose-gold | No | Standalone story per day |
 | **Kids (Hindi)** (`hindi_mythology` key/channel — see below) | Madhur (edge-tts Hindi) | Same watercolor style as Kids (shares its images) | Yes | Hindi-translated version of that day's kids story; Short **and** long-form; no captions burned in (`burn_captions=False` — see below) |
 | **Original hero saga** | Christopher (deep, dramatic) | Bold comic-book/graphic-novel | No | **Serialized** — one ongoing story, new episode each day, not standalone (see below) |
+| **Fun By Math** (`math_explainers`) | Christopher (edge-tts) | Hand-authored canvas animation — no AI images at all | No | Up to 2/day (`videos_per_day=2`); zero AI-generation cost (see below) |
 
 Configured in `pipeline/config.py`'s `TRACKS` dict — voice, illustration
 style prompt, YouTube category, `made_for_kids` flag, and extra tags per
 track all live there.
+
+### Fun By Math is a different content pipeline entirely — no AI images
+
+Every other track illustrates each scene with an AI image (`pipeline.
+ai_image`, Cloudflare). `math_explainers` doesn't call any image-generation
+API at all — each video is a hand-authored canvas animation
+(`math_pieces/<piece>/piece.html`, built on the shared
+`pipeline/canvas_lib/helpers.js`), rendered into a real video by
+`pipeline.canvas_video` via a real headless browser (Playwright), synced to
+real narration audio:
+
+1. Each narration line is synthesized separately (`pipeline.tts`, same
+   per-line pattern as story scenes), giving real per-line start/end
+   offsets instead of guessed timing.
+2. Those real offsets are injected into the page as
+   `window.__LINE_TIMES__` before the piece's own script runs — every
+   piece reads that to build its own internal timeline, so the visual
+   pacing is driven by the actual narration length.
+3. The piece is driven deterministically frame-by-frame
+   (`window.__seek(t)`, screenshotted each frame) rather than captured in
+   real time, so rendering is glitch-free regardless of machine speed —
+   slower (~200ms/frame; a ~50s piece takes several minutes), which is why
+   `daily-video.yml` installs Playwright's Chromium and gives the job
+   headroom for it.
+
+A queued item here (`scripts_queue/pending/math_explainers/*.json`) is a
+`MathScript` (`pipeline.math_scripts`), not a `Script` — no scenes,
+`character_reference`, or `visual` fields, just `{title, description,
+tags, piece, narration_lines}`. Each piece is still hand-authored per
+topic (a small shared "template library" was considered and rejected —
+see the design note in this repo's session history: a handful of fixed
+visual mechanisms caps content variety the same way a handful of topics
+would, and it's the visual variety that makes explainer content work).
+What *is* shared is infrastructure (easing functions, the caption-sync
+pattern, the render-mode seek hook, canvas/DPR setup), the same way
+`pipeline/textcard.py`'s zoompan engine is shared across story tracks
+while each story's content stays hand-written.
+
+`Track.videos_per_day` (default 1, this track's set to 2) raises
+`pipeline.state`'s daily-limit gate from a single boolean to a per-track
+count — sustaining 2/day still requires 2 pieces queued that day; the
+field only raises the ceiling, it doesn't create content.
 
 ### Kids (Hindi) is a language variant of Kids, not its own stories
 
@@ -346,7 +389,7 @@ script) after a look.
         for this track. This step matters — the OAuth consent screen
         authorizes whichever channel is currently active, and there's no
         channel picker in the flow itself.
-     2. Run `python -m pipeline.upload --auth-setup --track <kids|teens|adults|women|hindi_mythology|hero_saga>`
+     2. Run `python -m pipeline.upload --auth-setup --track <kids|teens|adults|women|hindi_mythology|hero_saga|math_explainers>`
         — this opens a browser consent screen and, on approval, writes
         `secrets/youtube_token_<track>.json`.
      3. Repeat for the other tracks, switching the active channel each time.

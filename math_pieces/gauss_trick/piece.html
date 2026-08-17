@@ -1,0 +1,283 @@
+<title>Gauss's Trick</title>
+<style>
+  :root {
+    --board: #24303d;
+    --board-2: #1c2833;
+    --chalk: #ede9df;
+    --chalk-dim: rgba(237,233,223,0.55);
+    --gold: #d9a441;
+    --coral: #e2725b;
+    --rule: #3a4b5c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  #stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--chalk);
+  }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+  .frame {
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(237,233,223,0.14);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .kicker {
+    position: absolute;
+    top: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--chalk-dim);
+  }
+  .story {
+    position: absolute;
+    left: 50%;
+    bottom: 1.6rem;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 34rem;
+    padding: 0 1rem;
+    font-family: Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+    font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+    color: var(--chalk);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    text-wrap: balance;
+  }
+  .story.show { opacity: 1; }
+  html.render-mode .story { transition: none; }
+  .replay {
+    position: absolute;
+    right: 1.1rem;
+    top: 1.2rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--chalk);
+    background: transparent;
+    border: 1px solid rgba(237,233,223,0.4);
+    border-radius: 3px;
+    padding: 0.35rem 0.7rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .replay:hover { opacity: 1; }
+  .replay:focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker">a nine-year-old's shortcut</div>
+  <div class="story" id="story"></div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const storyEl = document.getElementById('story');
+  const replayBtn = document.getElementById('replayBtn');
+
+  const { ctx, resize } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  const N = 100, cols = 100;
+
+  // ---- timeline ----
+  // window.__LINE_TIMES__ (injected by pipeline.canvas_video before this
+  // script runs) is [{start, end}, ...] -- one entry per narration line,
+  // computed from REAL synthesized audio durations, not guessed. Falls
+  // back to hand-tuned approximate values for standalone preview (opening
+  // this file directly without going through the render pipeline).
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0.0, end: 10.9 }, { start: 10.9, end: 16.88 }, { start: 16.88, end: 22.62 },
+    { start: 22.62, end: 36.47 }, { start: 36.47, end: 45.69 }, { start: 45.69, end: 52.51 },
+  ];
+  const T = {
+    stairStart: LT[1].start, stairEnd: LT[1].end,
+    pairStart: LT[2].start, pairEnd: LT[3].end - 1.0,
+    rectStart: LT[4].start, rectEnd: LT[4].end - 1.2,
+    finalStart: LT[5].start,
+    total: LT[5].end,
+  };
+
+  const storyLines = [
+    { t: LT[0].start, hold: LT[0].end - LT[0].start, text: '1 + 2 + 3 + … + 100 = ?' },
+    { t: LT[1].start, hold: LT[1].end - LT[1].start, text: 'Line the numbers up as a staircase of blocks.' },
+    { t: LT[2].start, hold: LT[2].end - LT[2].start, text: 'Flip a copy upside down, and pair them off.' },
+    { t: LT[3].start, hold: LT[3].end - LT[3].start, text: 'Every pair — 1+100, 2+99, 3+98 … — makes exactly 101.' },
+    { t: LT[4].start, hold: LT[4].end - LT[4].start, text: '100 pairs of 101, then cut the doubling in half.' },
+  ];
+
+  function stairGeom() {
+    const W = getW(), H = getH();
+    const left = W * 0.16, right = W * 0.84;
+    const top = H * 0.20, bottom = H * 0.62;
+    const bw = (right - left) / cols;
+    const maxH = bottom - top;
+    return { left, right, top, bottom, bw, maxH };
+  }
+
+  function drawBar(x, yBottom, w, h, color, alpha) {
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = color;
+    ctx.fillRect(x, yBottom - h, w, h);
+    ctx.restore();
+  }
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.lineWidth = 1;
+    const step = 34;
+    for (let x = (W % step) / 2; x < W; x += step) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % step) / 2; y < H; y += step) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const g = stairGeom();
+
+    const hookAlpha = t < T.stairStart ? 1 : CP.clamp01(1 - (t - T.stairStart) / 1.2);
+    if (hookAlpha > 0.01) {
+      ctx.save();
+      ctx.globalAlpha = hookAlpha;
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `600 ${Math.min(W * 0.052, 42)}px ${MONO}`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('1 + 2 + 3 + … + 100 = ?', W / 2, H * 0.14);
+      ctx.restore();
+    }
+
+    const stairP = CP.clamp01((t - T.stairStart) / (T.stairEnd - T.stairStart));
+    const stairEase = CP.easeOutCubic(stairP);
+    const barsShown = Math.max(1, Math.round(stairEase * cols));
+
+    if (t >= T.stairStart) {
+      for (let i = 0; i < barsShown; i++) {
+        const n = i + 1;
+        const h = (n / N) * g.maxH;
+        const x = g.left + i * g.bw;
+        const localReveal = CP.clamp01((stairEase * cols - i) * 3);
+        drawBar(x, g.bottom, g.bw - 0.6, h * localReveal, '#7fa6c9', 0.85);
+      }
+    }
+
+    const pairP = CP.clamp01((t - T.pairStart) / (T.pairEnd - T.pairStart));
+    if (t >= T.pairStart) {
+      const slide = CP.easeInOutSine(CP.clamp01(pairP * 1.4));
+      for (let i = 0; i < cols; i++) {
+        const n = i + 1;
+        const flippedN = N - n + 1;
+        const h = (flippedN / N) * g.maxH;
+        const x = g.left + i * g.bw;
+        const nBarH = (n / N) * g.maxH;
+        const restY = g.bottom - nBarH;
+        const fromY = g.bottom - g.maxH - 40;
+        const y = fromY + (restY - fromY) * slide;
+        drawBar(x, y + h, g.bw - 0.6, h, '#e2725b', 0.72);
+      }
+
+      const sweepIdx = Math.floor(CP.clamp01((t - T.pairStart - 0.6) / (T.pairEnd - T.pairStart - 0.6)) * cols);
+      [0, 1, 2, cols - 3, cols - 2, cols - 1].forEach((i) => {
+        if (Math.abs(i - sweepIdx) > 6 && sweepIdx < cols - 1) return;
+        const x = g.left + i * g.bw + g.bw / 2;
+        ctx.save();
+        ctx.globalAlpha = 0.95;
+        ctx.fillStyle = '#d9a441';
+        ctx.font = `600 ${Math.max(9, Math.min(g.bw * 1.4, 13))}px ${MONO}`;
+        ctx.textAlign = 'center';
+        ctx.fillText('101', x, g.bottom - g.maxH - 16);
+        ctx.restore();
+      });
+    }
+
+    const rectP = CP.clamp01((t - T.rectStart) / (T.rectEnd - T.rectStart));
+    if (t >= T.rectStart) {
+      const rEase = CP.easeOutBack(Math.min(1, rectP));
+      const rx = g.left;
+      const rw = (g.right - g.left);
+      const rh = g.maxH * rEase;
+      ctx.save();
+      ctx.globalAlpha = 0.9;
+      ctx.fillStyle = 'rgba(217,164,65,0.16)';
+      ctx.strokeStyle = '#d9a441';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(rx, g.bottom - rh, rw, rh);
+      ctx.fillRect(rx, g.bottom - rh, rw, rh);
+      ctx.restore();
+
+      if (rectP > 0.5) {
+        const lblAlpha = CP.clamp01((rectP - 0.5) / 0.5);
+        ctx.save();
+        ctx.globalAlpha = lblAlpha;
+        ctx.fillStyle = '#ede9df';
+        ctx.font = `500 ${Math.min(W * 0.024, 16)}px ${MONO}`;
+        ctx.textAlign = 'center';
+        ctx.fillText('100 wide', (rx + g.right) / 2, g.bottom + 22);
+        ctx.save();
+        ctx.translate(rx - 22, (g.bottom - rh / 2));
+        ctx.rotate(-Math.PI / 2);
+        ctx.fillText('101 tall', 0, 0);
+        ctx.restore();
+        ctx.restore();
+      }
+    }
+
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+    if (t >= T.finalStart) {
+      const fEase = CP.easeOutCubic(finP);
+      ctx.save();
+      ctx.globalAlpha = fEase;
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.03, 22)}px ${MONO}`;
+      ctx.fillText('100 × 101 ÷ 2 =', W / 2, H * 0.78);
+      const pop = finP > 0.55 ? CP.easeOutBack(CP.clamp01((finP - 0.55) / 0.45)) : 0;
+      ctx.save();
+      ctx.translate(W / 2, H * 0.78 + 46);
+      ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop);
+      ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.09, 58)}px ${MONO}`;
+      ctx.fillText('5050', 0, 0);
+      ctx.restore();
+      ctx.restore();
+
+      if (finP > 0.8) {
+        ctx.save();
+        ctx.globalAlpha = CP.clamp01((finP - 0.8) / 0.2) * 0.75;
+        ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
+        ctx.fillText('in general: n(n+1)/2', W / 2, H * 0.78 + 88);
+        ctx.restore();
+      }
+    }
+  }
+
+  const updateStory = CP.createCaptionSync(storyEl, storyLines);
+  const timeline = CP.createTimeline({ draw, updateStory, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

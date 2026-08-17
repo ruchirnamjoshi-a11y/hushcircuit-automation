@@ -16,6 +16,10 @@ SERIES_STATE_DIR = ROOT_DIR / "scripts_queue" / "series_state"
 MUSIC_DIR = ROOT_DIR / "assets" / "music"
 ANALYTICS_REPORTS_DIR = ROOT_DIR / "analytics" / "reports"
 SECRETS_DIR = ROOT_DIR / "secrets"
+# Hand-authored canvas-animation "pieces" (see pipeline.canvas_video) for the
+# math_explainers track — math_pieces/<piece_id>/piece.html, one directory
+# per piece. Not AI-generated visuals: real code, rendered deterministically.
+MATH_PIECES_DIR = ROOT_DIR / "math_pieces"
 
 NICHE = os.environ.get("NICHE", "Daily stories for every age")
 
@@ -69,6 +73,21 @@ class Track:
     # highlight cut from the same generated images/audio (see run_daily.py).
     # False keeps the original single-Short-only behavior.
     produce_long_form: bool = False
+    # "story" (default): the AI-illustrated narrated-story pipeline (Scene/
+    # Script schema, pipeline.ai_image, run_daily.run_track). "canvas": a
+    # hand-authored canvas-animation piece (pipeline.canvas_video,
+    # run_daily.run_math_track) — no AI images at all, real code rendered
+    # deterministically. image_style_prefix/suffix are unused for "canvas"
+    # tracks; pass empty strings.
+    content_type: str = "story"
+    # How many videos/day this track's daily-limit gate (pipeline.state)
+    # allows before skipping for the rest of the day. 1 for every existing
+    # track; math_explainers uses 2 since each piece is short (well under
+    # the Shorts cap) and there's no separate long-form cut to pad out the
+    # channel's daily upload count the way kids/kids-Hindi's second upload
+    # does. Sustaining N/day still requires N pieces queued that day —
+    # this only raises the ceiling, it doesn't create content.
+    videos_per_day: int = 1
 
 
 # Category IDs are YouTube's fixed video categories (24 = Entertainment,
@@ -263,6 +282,26 @@ TRACKS: dict[str, Track] = {
         ),
         extra_tags=["superhero story", "original story", "action adventure", "animated series", "hero saga"],
         serialized=True,
+    ),
+    "math_explainers": Track(
+        key="math_explainers",
+        label="Fun By Math",
+        voice="en-US-ChristopherNeural",
+        image_style_prefix="",  # unused -- content_type="canvas", see pipeline.canvas_video
+        image_style_suffix="",
+        made_for_kids=False,
+        category_id="27",  # Education
+        story_guidance=(
+            "Not used for automated generation yet -- each piece is a "
+            "hand-authored canvas animation (math_pieces/<id>/piece.html, "
+            "built on pipeline/canvas_lib/helpers.js) paired with a short "
+            "narration-line script, queued the same way story scripts are. "
+            "See run_daily.run_math_track."
+        ),
+        extra_tags=["math", "cool math facts", "math explained", "learn math"],
+        produce_long_form=False,
+        content_type="canvas",
+        videos_per_day=2,
     ),
 }
 

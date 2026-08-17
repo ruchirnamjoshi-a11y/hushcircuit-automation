@@ -1,0 +1,16 @@
+{
+  "id": "paper-fold-to-the-moon",
+  "title": "Fold a Paper 42 Times and You'll Reach the Moon",
+  "description": "The math of exponential doubling: why folding an ordinary sheet of paper just 42 times would make a stack taller than the distance to the Moon.",
+  "tags": ["math", "cool math facts", "math explained", "learn math", "exponential growth", "doubling", "mind blowing facts"],
+  "piece": "paper_fold",
+  "narration_lines": [
+    "Take a piece of paper. Fold it in half. Now fold it again. If you could fold it forty-two times... how tall would it get?",
+    "Each fold doubles the thickness. It barely feels like anything is happening.",
+    "But by fold ten, your stack is already taller than a person.",
+    "By fold twenty-seven, it's taller than Mount Everest.",
+    "By fold thirty-two, it's already higher than the space station.",
+    "And by the forty-second fold... your paper is taller than the distance to the Moon.",
+    "That's the power of doubling: forty-two small folds, and you've left the Earth behind."
+  ]
+}

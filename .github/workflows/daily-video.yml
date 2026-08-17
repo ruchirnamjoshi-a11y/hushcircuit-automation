@@ -50,6 +50,12 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Playwright's Chromium (math_explainers track only)
+        # No AI video model involved — pipeline.canvas_video renders
+        # hand-authored canvas animations with a real headless browser.
+        # --with-deps pulls the system libs Chromium needs on a bare runner.
+        run: playwright install --with-deps chromium
+
       - name: Restore YouTube OAuth tokens (one per channel/track)
         # A track's secret being unset is fine — run_daily.py skips that
         # track cleanly (channel not set up yet) rather than failing.
@@ -72,6 +78,7 @@ jobs:
           # Hindi-language version of the "kids" track's stories.
           write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
           write_token hero_saga "${{ secrets.YOUTUBE_TOKEN_B64_HERO_SAGA }}"
+          write_token math_explainers "${{ secrets.YOUTUBE_TOKEN_B64_MATH_EXPLAINERS }}"
 
       - name: Run daily pipeline (all story tracks)
         env:

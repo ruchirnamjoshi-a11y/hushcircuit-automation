@@ -9,6 +9,7 @@ import run_daily
 KIDS_TRACK = TRACKS["kids"]  # produce_long_form=True, shares_images_with=""
 TEENS_TRACK = TRACKS["teens"]  # produce_long_form=False, shares_images_with=""
 HINDI_TRACK = TRACKS["hindi_mythology"]  # produce_long_form=True, shares_images_with="kids"
+MATH_TRACK = TRACKS["math_explainers"]  # content_type="canvas"
 
 
 def _patch_pipeline(**overrides):
@@ -113,10 +114,18 @@ def test_run_continues_past_a_real_failure_on_one_track():
             raise RuntimeError("boom")
         return True
 
-    with patch("run_daily.run_track", side_effect=fake_run_track) as mock_run_track:
+    # run() dispatches content_type="canvas" tracks (math_explainers) to
+    # run_math_track instead of run_track -- both need mocking here, or the
+    # real (unmocked) run_math_track runs for real against whatever's
+    # actually queued/authorized on this machine.
+    with patch("run_daily.run_track", side_effect=fake_run_track) as mock_run_track, \
+         patch("run_daily.run_math_track", return_value=True) as mock_run_math_track:
         exit_code = run_daily.run(dry_run=False)
 
-    assert mock_run_track.call_count == len(TRACKS)  # all tracks still attempted
+    story_tracks = [t for t in TRACKS.values() if t.content_type != "canvas"]
+    canvas_tracks = [t for t in TRACKS.values() if t.content_type == "canvas"]
+    assert mock_run_track.call_count == len(story_tracks)  # all story tracks still attempted
+    assert mock_run_math_track.call_count == len(canvas_tracks)
     assert exit_code == 1  # a real failure does affect the exit code
 
 
@@ -372,3 +381,94 @@ def test_run_track_produce_long_form_false_uploads_only_short(tmp_path):
     upload_calls = patches["upload_daily_video"].call_args_list
     assert len(upload_calls) == 1
     assert upload_calls[0].kwargs["is_short"] is True
+
+
+def _patch_math_pipeline(**overrides):
+    fake_line_times = [MagicMock(end=5.0)]
+    defaults = dict(
+        synthesize_narration_lines=MagicMock(return_value=(Path("/fake/narration.mp3"), fake_line_times)),
+        render_piece_video=MagicMock(return_value=Path("/fake/video.mp4")),
+        pick_music_track=MagicMock(return_value=None),
+        generate_thumbnail=MagicMock(return_value=Path("/fake/thumb.jpg")),
+        upload_daily_video=MagicMock(return_value={"video": {}, "thumbnail": {}}),
+        mark_used=MagicMock(),
+        mark_produced_today=MagicMock(),
+    )
+    defaults.update(overrides)
+    return defaults
+
+
+def test_run_math_track_skips_if_already_produced_today():
+    with patch("run_daily.already_produced_today", return_value=True), \
+         patch("run_daily.load_next_pending_math") as mock_load:
+        result = run_daily.run_math_track(MATH_TRACK, dry_run=False)
+
+    assert result is True
+    mock_load.assert_not_called()
+
+
+def test_run_math_track_skips_if_no_youtube_token_yet(tmp_path):
+    missing_token = tmp_path / "no_such_token.json"
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=missing_token), \
+         patch("run_daily.load_next_pending_math") as mock_load:
+        result = run_daily.run_math_track(MATH_TRACK, dry_run=False)
+
+    assert result is True
+    mock_load.assert_not_called()
+
+
+def test_run_math_track_skips_cleanly_on_empty_queue(tmp_path):
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
+         patch("run_daily.load_next_pending_math", return_value=None) as mock_load:
+        result = run_daily.run_math_track(MATH_TRACK, dry_run=False)
+
+    assert result is True
+    mock_load.assert_called_once()
+
+
+def test_run_math_track_produces_and_uploads_real_pending_piece(tmp_path):
+    fake_script = MagicMock()
+    fake_script.title = "Gauss's Trick"
+    fake_script.id = "gauss-trick"
+    fake_script.piece = "gauss_trick"
+    fake_script.narration_lines = ["line one", "line two"]
+    existing_token = tmp_path / "token.json"
+    existing_token.write_text("{}")
+
+    patches = _patch_math_pipeline()
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
+         patch("run_daily.load_next_pending_math", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch.multiple("run_daily", **patches):
+        run_daily.run_math_track(MATH_TRACK, dry_run=False)
+
+    patches["synthesize_narration_lines"].assert_called_once()
+    call = patches["synthesize_narration_lines"].call_args
+    assert call.args[0] == ["line one", "line two"]
+    assert call.args[2] == MATH_TRACK.voice
+
+    patches["render_piece_video"].assert_called_once()
+    patches["pick_music_track"].assert_called_once()
+    assert "music_path" in patches["render_piece_video"].call_args.kwargs
+
+    upload_call = patches["upload_daily_video"].call_args
+    assert upload_call.args[0] is fake_script
+    assert upload_call.kwargs["is_short"] is True
+    patches["mark_produced_today"].assert_called_once_with(MATH_TRACK.key)
+
+
+def test_run_dispatches_canvas_tracks_to_run_math_track():
+    def fake_run_track(*a, **k):
+        raise AssertionError("run_track should not be called for a content_type='canvas' track")
+
+    with patch("run_daily.run_track", side_effect=fake_run_track), \
+         patch("run_daily.run_math_track", return_value=True) as mock_math:
+        run_daily.run(dry_run=False, track_key="math_explainers")
+
+    mock_math.assert_called_once()
+    assert mock_math.call_args.args[0] is MATH_TRACK

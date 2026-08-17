@@ -63,7 +63,9 @@ from pipeline.ai_image import (
     generate_scene_image_raw,
 )
 from pipeline.assemble import pick_music_track
+from pipeline.canvas_video import render_piece_video, synthesize_narration_lines
 from pipeline.config import (
+    MATH_PIECES_DIR,
     OUTPUT_DIR,
     QUEUE_PENDING_DIR,
     QUEUE_USED_DIR,
@@ -72,6 +74,7 @@ from pipeline.config import (
     Track,
     youtube_token_path,
 )
+from pipeline.math_scripts import load_next_pending as load_next_pending_math
 from pipeline.scripts import Script, load_next_pending, mark_used
 from pipeline.shorts import assemble_short
 from pipeline.state import already_produced_today, mark_produced_today
@@ -157,7 +160,7 @@ def run_track(
     if produced_images is None:
         produced_images = {}
 
-    if not dry_run and already_produced_today(track.key):
+    if not dry_run and already_produced_today(track.key, limit=track.videos_per_day):
         print(f"[{track.key}] Already produced a video today — skipping until tomorrow.")
         return True
 
@@ -252,6 +255,59 @@ def run_track(
     return True
 
 
+def run_math_track(track: Track, dry_run: bool = False, privacy_status: str = "private") -> bool:
+    """Produces + uploads one math_explainers video: no AI images, no
+    Cloudflare quota involved at all — synthesizes each narration line
+    (pipeline.tts), renders the paired hand-authored canvas piece against
+    those real durations (pipeline.canvas_video), then uploads as a single
+    Short-style video. Same queue-consumption/state contract as run_track."""
+    if not dry_run and already_produced_today(track.key, limit=track.videos_per_day):
+        print(f"[{track.key}] Already produced a video today — skipping until tomorrow.")
+        return True
+
+    if not dry_run and not youtube_token_path(track.key).exists():
+        print(f"[{track.key}] No YouTube OAuth token yet for this channel — skipping until it's set up.")
+        return True
+
+    pending_dir = QUEUE_PENDING_DIR / track.key
+    used_dir = QUEUE_USED_DIR / track.key
+
+    result = load_next_pending_math(pending_dir)
+    if result is None:
+        print(f"[{track.key}] Queue empty — refill needed. Skipping today.")
+        return True
+
+    script_path, script = result
+    print(f"[{track.key}] Producing: {script.title} ({script.id})")
+    run_dir = OUTPUT_DIR / track.key / script.id
+    run_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"[{track.key}] [1/3] Synthesizing narration lines (edge: {track.voice})...")
+    narration_path, line_times = synthesize_narration_lines(script.narration_lines, run_dir / "audio", track.voice)
+
+    print(f"[{track.key}] [2/3] Rendering '{script.piece}' (Playwright + ffmpeg)...")
+    piece_html = MATH_PIECES_DIR / script.piece / "piece.html"
+    video_path = render_piece_video(
+        piece_html, line_times, narration_path, run_dir / "video.mp4",
+        music_path=pick_music_track(),
+    )
+
+    thumbnail_path = generate_thumbnail(script.title, run_dir / "thumbnail.jpg")
+
+    print(f"[{track.key}] [3/3] Uploading (dry_run={dry_run})...")
+    upload_result = upload_daily_video(
+        script, video_path, thumbnail_path, track,
+        privacy_status=privacy_status, dry_run=dry_run, is_short=True,
+    )
+    print(upload_result)
+
+    mark_used(script_path, used_dir)
+    if not dry_run:
+        mark_produced_today(track.key)
+    print(f"[{track.key}] Done. Moved {script_path.name} to scripts_queue/used/{track.key}/.")
+    return True
+
+
 def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optional[str] = None) -> int:
     tracks = [TRACKS[track_key]] if track_key else list(TRACKS.values())
 
@@ -264,7 +320,10 @@ def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optio
                   f"this run. Will retry on the next scheduled run.")
             continue
         try:
-            run_track(track, dry_run=dry_run, privacy_status=privacy_status, produced_images=produced_images)
+            if track.content_type == "canvas":
+                run_math_track(track, dry_run=dry_run, privacy_status=privacy_status)
+            else:
+                run_track(track, dry_run=dry_run, privacy_status=privacy_status, produced_images=produced_images)
         except CloudflareQuotaExhausted as e:
             # Account-wide, not per-track — every other track would hit the
             # same wall, so stop here rather than burning time confirming

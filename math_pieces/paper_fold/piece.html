@@ -1,0 +1,287 @@
+<title>Fold a Paper to the Moon</title>
+<style>
+  :root {
+    --board: #24303d;
+    --board-2: #1c2833;
+    --chalk: #ede9df;
+    --chalk-dim: rgba(237,233,223,0.55);
+    --gold: #d9a441;
+    --coral: #e2725b;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  #stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--chalk);
+  }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame {
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(237,233,223,0.14);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .kicker {
+    position: absolute;
+    top: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--chalk-dim);
+  }
+  .story {
+    position: absolute;
+    left: 50%;
+    bottom: 1.6rem;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 34rem;
+    padding: 0 1rem;
+    font-family: Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+    font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+    color: var(--chalk);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    text-wrap: balance;
+  }
+  .story.show { opacity: 1; }
+  html.render-mode .story { transition: none; }
+  .replay {
+    position: absolute;
+    right: 1.1rem;
+    top: 1.2rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--chalk);
+    background: transparent;
+    border: 1px solid rgba(237,233,223,0.4);
+    border-radius: 3px;
+    padding: 0.35rem 0.7rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .replay:hover { opacity: 1; }
+  .replay:focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker">the power of doubling</div>
+  <div class="story" id="story"></div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const storyEl = document.getElementById('story');
+  const replayBtn = document.getElementById('replayBtn');
+
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // A standard sheet of paper is ~0.1mm thick; folding doubles it each
+  // time. thickness(mm) after n folds = 0.1 * 2^n.
+  const START_MM = 0.1;
+  const MAX_FOLDS = 42;
+  const finalThicknessMm = START_MM * Math.pow(2, MAX_FOLDS);
+  const minLog = Math.log10(START_MM);
+  const maxLog = Math.log10(finalThicknessMm);
+
+  const MILESTONES = [
+    { mm: 30, label: 'A THICK BOOK' },
+    { mm: 1700, label: 'A PERSON' },
+    { mm: 8849000, label: 'MOUNT EVEREST' },
+    { mm: 400000000, label: 'THE ISS' },
+    { mm: 384400000000, label: 'THE MOON' },
+  ].map(m => ({ ...m, logPos: (Math.log10(m.mm) - minLog) / (maxLog - minLog) }));
+
+  function fmtDistance(mm) {
+    const km = mm / 1e6;
+    if (km >= 1000) return `${Math.round(km).toLocaleString()} KM`;
+    if (km >= 1) return `${km.toFixed(1)} KM`;
+    return `${Math.round(mm)} MM`;
+  }
+
+  // ---- timeline ----
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0.0, end: 8.0 }, { start: 8.0, end: 15.0 }, { start: 15.0, end: 20.0 },
+    { start: 20.0, end: 26.0 }, { start: 26.0, end: 32.0 }, { start: 32.0, end: 40.0 },
+    { start: 40.0, end: 47.0 },
+  ];
+  const T = {
+    growStart: LT[1].start,
+    growEnd: LT[LT.length - 2].end,
+    finalStart: LT[LT.length - 1].start,
+    total: LT[LT.length - 1].end,
+  };
+
+  const storyLines = LT.map((lt, i) => ({
+    t: lt.start, hold: lt.end - lt.start,
+    text: [
+      'Take a piece of paper. Fold it in half. Now fold it again. If you could fold it forty-two times... how tall would it get?',
+      'Each fold doubles the thickness. It barely feels like anything is happening.',
+      'But by fold ten, your stack is already taller than a person.',
+      'By fold twenty-seven, it’s taller than Mount Everest.',
+      'By fold thirty-two, it’s already higher than the space station.',
+      'And by the forty-second fold... your paper is taller than the distance to the Moon.',
+      'That’s the power of doubling: forty-two small folds, and you’ve left the Earth behind.',
+    ][i] || '',
+  }));
+
+  function trackGeom() {
+    const W = getW(), H = getH();
+    return { x: W * 0.30, top: H * 0.20, bottom: H * 0.80, w: W * 0.16 };
+  }
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.lineWidth = 1;
+    const step = 34;
+    for (let x = (W % step) / 2; x < W; x += step) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % step) / 2; y < H; y += step) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const g = trackGeom();
+    const trackH = g.bottom - g.top;
+
+    // current fold progress (0..42), continuous for smooth growth
+    const growP = CP.clamp01((t - T.growStart) / (T.growEnd - T.growStart));
+    const fold = CP.easeOutCubic(growP) * MAX_FOLDS;
+    const thicknessMm = START_MM * Math.pow(2, fold);
+    const logVal = Math.log10(Math.max(thicknessMm, START_MM));
+    const barFrac = CP.clamp01((logVal - minLog) / (maxLog - minLog));
+
+    // track outline
+    ctx.save();
+    ctx.strokeStyle = 'rgba(237,233,223,0.25)';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(g.x, g.top, g.w, trackH);
+    ctx.restore();
+
+    // milestones
+    for (const m of MILESTONES) {
+      const my = g.bottom - m.logPos * trackH;
+      const reached = barFrac >= m.logPos;
+      ctx.save();
+      ctx.globalAlpha = reached ? 0.95 : 0.35;
+      ctx.strokeStyle = reached ? '#d9a441' : 'rgba(237,233,223,0.4)';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(g.x - 10, my);
+      ctx.lineTo(g.x + g.w + 10, my);
+      ctx.stroke();
+
+      ctx.fillStyle = reached ? '#d9a441' : 'var(--chalk-dim)';
+      ctx.fillStyle = reached ? '#d9a441' : 'rgba(237,233,223,0.55)';
+      ctx.font = `600 ${Math.max(9, Math.min(W * 0.024, 14))}px ${MONO}`;
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(m.label, g.x + g.w + 16, my);
+      ctx.restore();
+    }
+
+    // the growing stack
+    if (t >= T.growStart) {
+      const barH = Math.max(2, barFrac * trackH);
+      ctx.save();
+      ctx.fillStyle = '#7fa6c9';
+      ctx.fillRect(g.x, g.bottom - barH, g.w, barH);
+      // fold lines (visual texture, capped so it doesn't get absurd at high fold counts)
+      ctx.strokeStyle = 'rgba(36,48,61,0.5)';
+      ctx.lineWidth = 1;
+      const visibleFoldLines = Math.min(24, Math.round(fold));
+      for (let i = 1; i <= visibleFoldLines; i++) {
+        const fy = g.bottom - (barH * i) / (visibleFoldLines + 1);
+        ctx.beginPath();
+        ctx.moveTo(g.x, fy);
+        ctx.lineTo(g.x + g.w, fy);
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      // fold counter
+      ctx.save();
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `700 ${Math.min(W * 0.09, 58)}px ${MONO}`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'alphabetic';
+      ctx.fillText(`${Math.round(fold)}`, W / 2, H * 0.135);
+      ctx.font = `500 ${Math.min(W * 0.022, 15)}px ${MONO}`;
+      ctx.fillStyle = 'rgba(237,233,223,0.6)';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('FOLDS', W / 2, H * 0.135 + 22);
+      ctx.restore();
+
+      // current height readout
+      ctx.save();
+      ctx.fillStyle = '#e2725b';
+      ctx.font = `600 ${Math.min(W * 0.032, 20)}px ${MONO}`;
+      ctx.textAlign = 'center';
+      ctx.fillText(fmtDistance(thicknessMm), W / 2, g.top - 18);
+      ctx.restore();
+    }
+
+    // final reveal
+    if (t >= T.finalStart) {
+      const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+      const fEase = CP.easeOutCubic(finP);
+      const pop = finP > 0.4 ? CP.easeOutBack(CP.clamp01((finP - 0.4) / 0.6)) : 0;
+      ctx.save();
+      ctx.globalAlpha = fEase * 0.92;
+      ctx.fillStyle = 'rgba(28,40,51,0.92)';
+      ctx.fillRect(0, H * 0.30, W, H * 0.34);
+      ctx.restore();
+
+      ctx.save();
+      ctx.globalAlpha = fEase;
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.026, 18)}px ${MONO}`;
+      ctx.fillText('42 FOLDS =', W / 2, H * 0.40);
+      ctx.save();
+      ctx.translate(W / 2, H * 0.40 + 52);
+      ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop);
+      ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.075, 46)}px ${MONO}`;
+      ctx.fillText('439,805 KM', 0, 0);
+      ctx.restore();
+      if (finP > 0.75) {
+        ctx.save();
+        ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.85;
+        ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
+        ctx.fillText('past the Moon, 384,400 km away', W / 2, H * 0.40 + 92);
+        ctx.restore();
+      }
+      ctx.restore();
+    }
+  }
+
+  const updateStory = CP.createCaptionSync(storyEl, storyLines);
+  const timeline = CP.createTimeline({ draw, updateStory, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>
