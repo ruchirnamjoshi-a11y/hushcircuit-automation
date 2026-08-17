@@ -1,0 +1,227 @@
+{
+  "id": "zuri-and-the-roaring-river-hi",
+  "source_script_id": "zuri-and-the-roaring-river",
+  "title": "ज़ूरी और गरजती नदी",
+  "description": "एक रोमांचक कहानी एक जिज्ञासु हथिनी बच्ची की, जो अकेली भटक जाती है, तूफ़ान में बढ़ती नदी में फंस जाती है, और सीखती है कि बहादुरी का मतलब है गलती छुपाने के बजाय तुरंत मदद के लिए पुकारना — और यह कि किसी को भी मुसीबत का सामना अकेले नहीं करना पड़ता।",
+  "tags": [
+    "hindi story",
+    "kids story",
+    "bedtime story",
+    "moral story in hindi",
+    "ज़ूरी",
+    "हाथी की कहानी"
+  ],
+  "character_reference": "a small elephant calf with warm grey wrinkled skin, big round curious brown eyes, small budding tusks, large flappy ears, and a short trunk that curls upward when she's excited",
+  "scenes": [
+    {
+      "narration": "सवाना वैली के विशाल हरे मैदानों में एक छोटी हथिनी बच्ची रहती थी, जिसका नाम था ज़ूरी। उसकी बड़ी-बड़ी आँखें हर चीज़ पर ध्यान देती थीं, उसके नन्हे दाँत अभी उगने शुरू ही हुए थे, और उसका जिज्ञासु मन कभी एक जगह टिकता नहीं था।",
+      "on_screen_text": "मिलिए ज़ूरी से",
+      "duration_hint": 13.9,
+      "visual": "a small elephant calf with big curious brown eyes and budding tusks standing in golden grassland, morning light"
+    },
+    {
+      "narration": "ज़ूरी अपने झुंड के साथ रहती थी, जिसकी अगुवाई करती थी उसकी कोमल माँ अमारा, और उसका बुद्धिमान चाचा टेम्बो। हर दिन ज़ूरी किसी नई चीज़ के पीछे भाग जाती — कभी तितली, कभी भृंग, कभी उड़ते हुए फूल के रोएँ — और हर दिन किसी न किसी को उसे वापस बुलाना पड़ता।",
+      "on_screen_text": "हमेशा भटकती हुई",
+      "duration_hint": 15.6,
+      "visual": "a small elephant calf chasing a butterfly through tall grass while a larger mother elephant watches nearby, warm daylight"
+    },
+    {
+      "narration": "सवाना वैली के छोर पर एक चौड़ी, तेज़ बहती नदी थी, जिसे हाथी \"गरजती नदी\" कहते थे। अमारा ने ज़ूरी से कई बार कहा था, \"यह नदी छोटे बच्चों के अकेले जाने के लिए नहीं है। इसकी धाराएँ बहुत तेज़ हैं, और यह बिना चेतावनी के उफान पर आ सकती है। मुझसे वादा करो कि तुम कभी अकेले इसके पास नहीं जाओगी।\"",
+      "on_screen_text": "गरजती नदी",
+      "duration_hint": 16.9,
+      "visual": "a wide fast-flowing river cutting through the savanna, seen from a distance, dark storm clouds gathering far beyond it"
+    },
+    {
+      "narration": "एक सुंदर सुबह, पूरा झुंड मिलकर बड़े जलाशय की ओर चला, अपने पसंदीदा मज़े के लिए — एक लंबा, ठंडा, छपाछप नहाना। ज़ूरी खुशी-खुशी झुंड के बीचोंबीच चल रही थी, बिलकुल वहीं जहाँ उसे होना चाहिए था।",
+      "on_screen_text": "जलाशय की ओर",
+      "duration_hint": 13.9,
+      "visual": "a happy herd of elephants walking together across the savanna toward a distant waterhole, a small calf trotting in the middle"
+    },
+    {
+      "narration": "पर जलाशय का रास्ता नदी के बिलकुल पास से गुज़रता था, और तभी ज़ूरी की नज़र उस पर पड़ी — एक चमकती नीली किंगफ़िशर चिड़िया, जिसके पंख किसी रत्न की तरह चमक रहे थे, पानी के किनारे एक चट्टान पर बैठी हुई।",
+      "on_screen_text": "नीली किंगफ़िशर",
+      "duration_hint": 12.9,
+      "visual": "a small elephant calf staring in wonder at a dazzling blue kingfisher perched on a rock beside a rushing river"
+    },
+    {
+      "narration": "ज़ूरी ने पहले कभी ऐसी सुंदर और चमकीली चिड़िया नहीं देखी थी। बिना सोचे-समझे, उसके कदम धीमे पड़ गए, फिर वह रुक ही गई, किंगफ़िशर को नदी किनारे उड़ते-फुदकते देखती रही, जबकि बाकी झुंड आगे बढ़ गया, यह ध्यान दिए बिना कि वह पीछे रह गई है।",
+      "on_screen_text": "पीछे छूटती हुई",
+      "duration_hint": 14.6,
+      "visual": "a small elephant calf lagging behind alone near a riverbank, watching a blue kingfisher, the herd walking away in the distance"
+    },
+    {
+      "narration": "किंगफ़िशर नदी के उस हिस्से में बिछे सपाट पत्थरों की एक कतार के पार उड़ गई। और ज़ूरी को अपनी माँ का वादा याद आने से पहले ही, उसके छोटे पैर पहले से ही उसका पीछा कर रहे थे, एक-एक पत्थर, तेज़ बहते पानी के ऊपर से।",
+      "on_screen_text": "पत्थरों पर",
+      "duration_hint": 13.9,
+      "visual": "a small elephant calf stepping carefully across flat stones in the middle of a fast river, chasing a blue kingfisher"
+    },
+    {
+      "narration": "आधे रास्ते में, ज़ूरी ने आख़िरकार ऊपर देखा — और एहसास हुआ कि वह कितनी दूर आ गई है। किंगफ़िशर पेड़ों में कहीं गायब हो चुकी थी। और ऊपर आसमान में, काले बादल जिन्हें उसने अब तक नोटिस नहीं किया था, तेज़ी से घिर रहे थे, साथ में गरज की धीमी गड़गड़ाहट भी।",
+      "on_screen_text": "दूर की गड़गड़ाहट",
+      "duration_hint": 14.2,
+      "visual": "a small elephant calf alone on stepping stones in the middle of a river, looking up worriedly at dark storm clouds rolling in"
+    },
+    {
+      "narration": "नदी के ऊपरी हिस्से में कहीं दूर, तूफ़ान पहले से ही नदी में मूसलाधार बारिश उड़ेल रहा था। ज़ूरी को अभी पता नहीं था, पर उसके चारों ओर पानी बढ़ने लगा था — पहले थोड़ा-थोड़ा, पत्थरों पर ऊपर चढ़ता हुआ, फिर तेज़ी से, और भी तेज़।",
+      "on_screen_text": "पानी बढ़ रहा है",
+      "duration_hint": 13.9,
+      "visual": "murky river water rising quickly over flat stepping stones as a small elephant calf watches nervously, dark sky overhead"
+    },
+    {
+      "narration": "ज़ूरी वापस जाने के लिए घूमी — पर उसके पीछे के पत्थर पहले ही पानी में डूब चुके थे, उफनती नदी में समा गए थे। उसने आगे की ओर देखा — पर दूसरा किनारा अभी भी बहुत दूर था, और उसके और किनारे के बीच की धारा तेज़ और बेक़ाबू लग रही थी।",
+      "on_screen_text": "फंस गई",
+      "duration_hint": 14.6,
+      "visual": "a small frightened elephant calf standing on a shrinking rock surrounded by rising rushing water, looking both ways"
+    },
+    {
+      "narration": "एक भयानक पल के लिए, ज़ूरी ने सोचा कि वह बिलकुल चुपचाप और स्थिर खड़ी रहे, इस उम्मीद में कि किसी को पता न चले कि उसने अपना वादा तोड़ा और अकेली भटक गई। शायद, उसने सोचा, वह बस यहीं इंतज़ार करे और उम्मीद करे कि पानी खुद ही उतर जाएगा।",
+      "on_screen_text": "एक डरावना विचार",
+      "duration_hint": 15.2,
+      "visual": "a small elephant calf crouched low and frightened on a rock in rising water, considering staying quiet and hidden"
+    },
+    {
+      "narration": "पर पानी लगातार बढ़ता रहा, किसी भी इच्छा से कहीं तेज़। तो ज़ूरी ने अपने छोटे फेफड़ों में जितनी हो सके उतनी बड़ी साँस भरी, अपनी सूंड़ तूफ़ानी हवा में ऊँची उठाई, और जितनी ज़ोर से हो सके उतनी ज़ोर से चिंघाड़ी — बार-बार, फिर बार-बार।",
+      "on_screen_text": "ज़ूरी पुकारती है",
+      "duration_hint": 14.9,
+      "visual": "a small elephant calf on a rock in rushing water, trunk raised high, trumpeting loudly for help against a dark stormy sky"
+    },
+    {
+      "narration": "कुछ ही दूरी पर, एक कँटीली झाड़ी के नीचे बने बिल में, एक नन्हा नेवला जिसका नाम था निया, और उसके भाई खेलते-खेलते अचानक रुक गए। बारिश के बीच, हल्की मगर साफ़, एक बच्चे की मदद पुकारती आवाज़ सुनाई दी।",
+      "on_screen_text": "किसी ने सुना",
+      "duration_hint": 12.2,
+      "visual": "a young mongoose with sleek brown fur poking out of a burrow entrance in the rain, ears perked up, listening intently"
+    },
+    {
+      "narration": "निया जानती थी कि नदी नेवलों के नन्हे पंजों के लिए बहुत तेज़ और बहुत गहरी है। पर वह यह भी जानती थी कि कौन मदद कर सकता है। \"भागो!\" उसने अपने भाइयों से कहा, और वे सब गीली घास में जितनी तेज़ी से हो सके, दौड़ पड़े।",
+      "on_screen_text": "मदद के लिए दौड़",
+      "duration_hint": 14.9,
+      "visual": "a small mongoose and its brothers running fast through rain-soaked grass, determined expressions, storm clouds above"
+    },
+    {
+      "narration": "जलाशय पर वापस, अमारा अपनी बेटी को देखने के लिए मुड़ी — और उसका दिल धड़क उठा। ज़ूरी वहाँ नहीं थी। वह झुंड में कहीं भी नहीं थी। \"ज़ूरी!\" अमारा पुकारी, उसकी आवाज़ में चिंता बढ़ती गई जैसे-जैसे झुंड ढूँढ़ने लगा।",
+      "on_screen_text": "अमारा को पता चलता है",
+      "duration_hint": 13.9,
+      "visual": "a worried mother elephant calling out and searching anxiously among the herd at a waterhole, rain beginning to fall"
+    },
+    {
+      "narration": "तभी, निया लंबी घास से हाँफते हुए, भीगी हुई, सीधे अमारा की ओर दौड़ी आई। \"नदी!\" निया हाँफते हुए बोली। \"आपकी बच्ची — वह चट्टानों पर फंसी है, और पानी तेज़ी से बढ़ रहा है!\"",
+      "on_screen_text": "निया की चेतावनी",
+      "duration_hint": 11.5,
+      "visual": "a small breathless mongoose reaching a large worried mother elephant, urgently pointing back toward the river in heavy rain"
+    },
+    {
+      "narration": "अमारा को एक पल के लिए भी झिझक नहीं हुई। टेम्बो और दो अन्य हाथियों के साथ, वह सवाना के पार नदी की ओर दौड़ पड़ी, बारिश उसकी पीठ पर बहती हुई, हर कदम के साथ गरज और तेज़ होती हुई।",
+      "on_screen_text": "नदी की ओर दौड़",
+      "duration_hint": 12.2,
+      "visual": "a mother elephant and several other elephants running fast across the savanna through heavy rain toward a distant river"
+    },
+    {
+      "narration": "जब तक वे नदी किनारे पहुँचे, तूफ़ान पूरी तरह से टूट चुका था। बारिश मूसलाधार बरस रही थी, बिजली बैंगनी आसमान को चीर रही थी, और गरजती नदी अपने नाम को पूरी तरह सही साबित कर रही थी, पहले से कहीं ज़्यादा गरजते और उफनते हुए।",
+      "on_screen_text": "तूफ़ान टूट पड़ता है",
+      "duration_hint": 13.5,
+      "visual": "a dramatic wide river during a full storm, heavy rain, lightning flashing across a dark purple sky, water churning violently"
+    },
+    {
+      "narration": "उस सबके बीचोंबीच, ज़ूरी अपने पूरे नन्हे शरीर से चट्टान से चिपकी हुई थी, अपनी सूंड़ को एक नुकीले किनारे के चारों ओर कसकर लपेटे हुए, संतुलन बनाए रखने के लिए। वह भीगी हुई थी, काँप रही थी, और पहले से कहीं ज़्यादा डरी हुई थी — पर वह पुकारती रही, उम्मीद नहीं छोड़ी।",
+      "on_screen_text": "डटी रही",
+      "duration_hint": 16.6,
+      "visual": "a small drenched elephant calf clinging tightly to a rock in rushing floodwater, frightened but determined, trumpeting for help"
+    },
+    {
+      "narration": "अमारा सबसे ज़्यादा चाहती थी कि सीधे पानी में कूद पड़े। पर टेम्बो ने उसे अपनी सूंड़ से धीरे से रोक लिया। \"वहाँ की धारा बहुत तेज़ है, हमारे लिए भी,\" उसने कहा। \"अगर हम बिना सोचे-समझे कूद पड़े, तो हम सब बह सकते हैं — ज़ूरी समेत।\"",
+      "on_screen_text": "पार करना बहुत खतरनाक",
+      "duration_hint": 15.6,
+      "visual": "a large wise elephant gently stopping a mother elephant at the edge of a raging river, both looking anxiously across the water"
+    },
+    {
+      "narration": "टेम्बो की बूढ़ी आँखों ने तेज़ी से नदी किनारे को देखा। फिर उसे मिल गया — थोड़ा आगे एक शांत, चौड़ा मोड़, जहाँ पानी धीरे बहता था और ज़मीन ज़्यादा मज़बूत लगती थी। \"वहाँ,\" उसने कहा। \"यही हमारा रास्ता है पार जाने का। सब लोग, मेरे पीछे आओ, और एक-दूसरे को कसकर पकड़े रहो.\"",
+      "on_screen_text": "टेम्बो की योजना",
+      "duration_hint": 15.9,
+      "visual": "a wise elder elephant pointing his trunk toward a calmer bend in a wide river, several elephants gathering behind him in the rain"
+    },
+    {
+      "narration": "एक-एक करके, हाथी उस शांत मोड़ में उतरे, हर एक अपनी सूंड़ से आगे वाले हाथी की पूँछ पकड़े हुए, एक लंबी, अटूट कड़ी बनाते हुए जो पानी के पार ज़ूरी की चट्टान तक फैली थी।",
+      "on_screen_text": "सूंड़ों की कड़ी",
+      "duration_hint": 11.5,
+      "visual": "a line of elephants linked trunk to tail, forming a chain wading together across a wide river bend in heavy rain"
+    },
+    {
+      "narration": "ऊपर आसमान में, पेड़ों में शरण लिए हुए बुनकर चिड़ियों का एक झुंड तूफ़ान में उड़ पड़ा। आसमान से, वे डूबी हुई चट्टानें और छिपे हुए गड्ढे देख सकते थे जो ज़मीन से किसी को नहीं दिखते थे, और वे बार-बार नीचे झपट्टा मारकर सबसे सुरक्षित रास्ता दिखाते रहे।",
+      "on_screen_text": "चिड़ियाँ रास्ता दिखाती हैं",
+      "duration_hint": 16.2,
+      "visual": "a flock of small weaver birds flying low over a flooded river, diving and circling to guide elephants below through the storm"
+    },
+    {
+      "narration": "और पानी के अंदर ही, ऊदबिलावों का एक परिवार जो नदी की हर धारा को जानता था, कड़ी से आगे दौड़ पड़ा, बीच-बीच में सिर बाहर निकालकर यह दिखाते हुए कि कहाँ ज़मीन मज़बूत है और कहाँ वह खतरनाक ढंग से धँस जाती है।",
+      "on_screen_text": "ऊदबिलाव रास्ता दिखाते हैं",
+      "duration_hint": 13.9,
+      "visual": "a family of otters swimming ahead through rushing floodwater, popping their heads up to mark a safe path for elephants behind them"
+    },
+    {
+      "narration": "आसमान में चिड़ियाँ, पानी में ऊदबिलाव, सूंड़ों से जुड़े हाथी — हर जीव ने अपनी भूमिका निभाई, और धीरे-धीरे, बचाव की कड़ी उस छोटी बच्ची के और नज़दीक पहुँचती गई जो अपनी सिकुड़ती चट्टान पर फंसी थी।",
+      "on_screen_text": "सब मिलकर मदद करते हैं",
+      "duration_hint": 13.2,
+      "visual": "a wide dramatic view of elephants, otters, and birds all working together across a stormy flooded river toward a stranded calf"
+    },
+    {
+      "narration": "आख़िरकार, अमारा की आवाज़ तेज़ बहते पानी के पार पहुँची। \"ज़ूरी! मैं यहाँ हूँ! धीरे-धीरे मेरी सूंड़ की ओर कदम बढ़ाओ — कड़ी पर भरोसा रखो, और पानी की ओर मत देखो, बस मुझे देखो!\"",
+      "on_screen_text": "कड़ी पर भरोसा करो",
+      "duration_hint": 10.5,
+      "visual": "a mother elephant reaching her trunk out across rushing water toward a small frightened calf, calling out encouragingly"
+    },
+    {
+      "narration": "ज़ूरी का पूरा शरीर काँप रहा था। पानी बहुत तेज़, बहुत तेज़ आवाज़ वाला, उससे कहीं बड़ा लग रहा था। पर उसने अपनी माँ की आँखों में देखा, अपनी पूरी छोटी सी ज़िंदगी की सबसे बहादुर साँस ली, और चट्टान से धारा में कदम रख दिया।",
+      "on_screen_text": "पहला कदम",
+      "duration_hint": 13.5,
+      "visual": "a small elephant calf trembling as she steps off a rock into rushing floodwater, eyes fixed on her mother in the distance"
+    },
+    {
+      "narration": "धारा ने उसे तुरंत पकड़ लिया, उसके छोटे पैरों को बगल में खींचते हुए। ज़ूरी हांफी और झपटी, पास ही खड़े एक हाथी की टांग को अपनी सूंड़ से कसकर पकड़ लिया, ठीक समय पर, उसका दिल तूफ़ान की गर्जना के सामने ज़ोर से धड़क रहा था।",
+      "on_screen_text": "बहते-बहते बची",
+      "duration_hint": 12.5,
+      "visual": "a small elephant calf nearly swept off her feet in rushing water, gripping tightly onto a larger elephant's leg with her trunk"
+    },
+    {
+      "narration": "पर वह डटी रही। एक-एक सावधान कदम, ऊपर मंडराती चिड़ियों और नीचे रास्ता दिखाते ऊदबिलावों के साथ, ज़ूरी सूंड़ों की कड़ी के सहारे आगे बढ़ती गई, हर छपाछप कदम के साथ अपनी माँ के और नज़दीक।",
+      "on_screen_text": "कदम दर कदम",
+      "duration_hint": 13.5,
+      "visual": "a small elephant calf moving carefully along a chain of elephants across a river, birds flying low above, otters swimming below"
+    },
+    {
+      "narration": "फिर, एक आख़िरी छपाके भरी छलांग के साथ, ज़ूरी ने खुद को आख़िरी कुछ फ़ुट सीधे अमारा की इंतज़ार करती सूंड़ में झोंक दिया। अमारा ने उसे कसकर लपेट लिया और पानी से बाहर उठा लिया, उसे बरसती बारिश से सुरक्षित थामे हुए।",
+      "on_screen_text": "आख़िरकार सुरक्षित",
+      "duration_hint": 12.5,
+      "visual": "a mother elephant lifting a small soaked elephant calf safely out of the water, wrapping her trunk around her tightly, rain falling"
+    },
+    {
+      "narration": "पूरा झुंड उनके पास इकट्ठा हो गया, सूंड़ें ज़ूरी को धीरे से छूने के लिए बढ़ीं, राहत बारिश की तरह सब पर बरस रही थी। और धीरे-धीरे, जैसे तूफ़ान का काम पूरा हो गया हो, गरज शांत हो गई और तेज़ बारिश धीमी पड़ने लगी।",
+      "on_screen_text": "तूफ़ान थम जाता है",
+      "duration_hint": 13.9,
+      "visual": "a herd of elephants gathered closely around a small rescued calf and her mother, gentle relief, rain easing into soft drizzle"
+    },
+    {
+      "narration": "उस शाम, जैसे ही आसमान साफ़ हुआ, अमारा ज़ूरी के पास बैठी। \"मुझे गुस्सा नहीं है कि तुमसे गलती हुई, छोटी सी,\" उसने धीरे से कहा। \"हर कोई गलती करता है। आज रात तुम्हें जिस चीज़ ने बचाया, वह था ज़रूरत पड़ते ही मदद के लिए पुकारना, न कि छुपकर उम्मीद करना कि किसी को पता न चले.\"",
+      "on_screen_text": "अमारा की बात",
+      "duration_hint": 17.3,
+      "visual": "a mother elephant sitting close and gently talking to a small calf under a clearing evening sky, warm soft light"
+    },
+    {
+      "narration": "अगली सुबह, पूरा झुंड निया के बिल पर धन्यवाद कहने गया, और आसमान और नदी की ओर देखकर बुनकर चिड़ियों और ऊदबिलावों का भी शुक्रिया अदा किया, जिन्होंने ज़ूरी को सुरक्षित घर लाने में अपनी भूमिका निभाई।",
+      "on_screen_text": "नए दोस्तों का शुक्रिया",
+      "duration_hint": 13.2,
+      "visual": "a herd of elephants gathered warmly near a mongoose burrow at sunrise, weaver birds and otters nearby, a joyful thank-you scene"
+    },
+    {
+      "narration": "ज़ूरी पहले जितनी ही जिज्ञासु बनी रही — उसे अब भी तितलियाँ, भृंग, और चमकीली नीली किंगफ़िशर पसंद थीं। पर अब, जब भी उसके पैर भटकना चाहते, उसे याद रहता कि पास ही रहे, और जैसे ही कुछ गलत लगे, तुरंत पुकार लगाए।",
+      "on_screen_text": "एक बहादुर ज़ूरी",
+      "duration_hint": 13.9,
+      "visual": "a small elephant calf happily watching a butterfly while staying close beside her mother, confident and content, sunny savanna"
+    },
+    {
+      "narration": "उस रात, जब झुंड तारों भरे आसमान के नीचे आराम कर रहा था, ज़ूरी अपनी माँ के पास सिमट गई, सुरक्षित और गर्म। उसने सीख लिया था कि बहादुर होने का मतलब कभी अकेले मुसीबत का सामना करना नहीं होता — इसका मतलब है आवाज़ उठाना, और यह जानना कि मदद हमेशा पास ही है।",
+      "on_screen_text": "तारों के नीचे",
+      "duration_hint": 14.9,
+      "visual": "a herd of elephants resting peacefully together under a starry night sky, a small calf leaning contentedly against her mother"
+    }
+  ]
+}
