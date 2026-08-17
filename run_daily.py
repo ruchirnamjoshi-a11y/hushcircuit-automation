@@ -1,20 +1,32 @@
 #!/usr/bin/env python3
-"""Daily orchestrator: for each story track (kids/teens/adults/women),
-consumes that track's next queued script and produces + uploads a single
-vertical Short carrying the full story. On success per track, moves the
-consumed script from scripts_queue/pending/<track>/ to
-scripts_queue/used/<track>/.
+"""Daily orchestrator: for each story track (kids/teens/adults/women/
+hindi_mythology/hero_saga), consumes that track's next queued script and
+produces + uploads its video(s). Tracks with Track.produce_long_form=True
+(currently kids + hindi_mythology) get TWO uploads per day — the full
+long-form story and a trimmed Shorts highlight cut — built from the SAME
+generated scene images/audio, at no extra image-generation or TTS cost.
 
-Shorts-only by design: our ~8-scene stories run ~70-90s, so a separate
-long-form (16:9) video added little, and uploading both would cost ~13,000
-YouTube Data API quota units/day across 4 tracks — over the default 10,000/day
-free cap. One upload per track keeps it to ~6,600/day.
+A track with Track.shares_images_with set (hindi_mythology -> "kids") is a
+language variant of another track's stories: instead of generating its own
+scene illustrations, it reuses the primary track's already-generated raw
+images from THIS SAME run (matched via Script.source_script_id), so a
+second language costs zero extra Cloudflare image-generation quota — only
+its own narration/captions/upload are per-language work. If the primary
+track hasn't produced its paired script yet this run (e.g. it already
+produced today's video in an earlier scheduled run, or its queue is out of
+sync), the variant track falls back to generating its own images
+independently rather than stalling.
+
+On success per track, moves the consumed script from
+scripts_queue/pending/<track>/ to scripts_queue/used/<track>/.
 
 This is meant to run several times a day (see .github/workflows/
 daily-video.yml), not just once:
 
-- Before doing any real work for a track, its first scene's image is
-  generated as a real-work "probe". If Cloudflare's free image quota is
+- Before doing any other real work for a track that generates its own
+  images (i.e. not reusing a sibling's this run), a dedicated reference
+  portrait is generated as a real-work "probe" (see
+  ai_image.REFERENCE_PORTRAIT_SCENE). If Cloudflare's free image quota is
   exhausted, that raises CloudflareQuotaExhausted instead of silently
   falling back to the gradient — we'd rather abort and retry later than
   publish a video with no matching artwork. The whole run stops there
@@ -41,8 +53,15 @@ import argparse
 import sys
 import traceback
 import zlib
+from pathlib import Path
+from typing import Optional
 
-from pipeline.ai_image import CloudflareQuotaExhausted, fit_scene_image, generate_scene_image_raw
+from pipeline.ai_image import (
+    REFERENCE_PORTRAIT_SCENE,
+    CloudflareQuotaExhausted,
+    fit_scene_image,
+    generate_scene_image_raw,
+)
 from pipeline.assemble import pick_music_track
 from pipeline.config import (
     OUTPUT_DIR,
@@ -53,31 +72,91 @@ from pipeline.config import (
     Track,
     youtube_token_path,
 )
-from pipeline.scripts import load_next_pending, mark_used
+from pipeline.scripts import Script, load_next_pending, mark_used
 from pipeline.shorts import assemble_short
 from pipeline.state import already_produced_today, mark_produced_today
 from pipeline.thumbnail import generate_thumbnail
 from pipeline.tts import synthesize_script_for_track
 from pipeline.upload import upload_daily_video
 
+# Populated by a track's own (non-reused) image generation, consulted by any
+# later-processed track whose Track.shares_images_with points at it —
+# key: (track_key, script_id) -> (images_raw_dir, scene_used_fallback).
+# Scoped to a single run() call: an ephemeral CI runner's output/ dir
+# doesn't persist between separately scheduled runs, so reuse only works
+# when both the primary and variant scripts are due in the same run.
+ProducedImages = dict[tuple[str, str], tuple[Path, list[bool]]]
+
 
 def _story_seed(seed_key: str) -> int:
     """A stable (not Python's randomized-per-process hash()) seed derived
     from seed_key, reused for every scene's Cloudflare call within a story.
-    Cloudflare's free flux-1-schnell has no image-to-image/reference input,
-    so a shared seed + Script.character_reference (see
-    pipeline.ai_image.build_prompt) is the strongest available lever for
-    keeping a character visually recognizable across independently
-    generated scenes."""
+    Combined with a fixed reference-portrait image (see
+    ai_image.REFERENCE_PORTRAIT_SCENE), this keeps a character visually
+    recognizable across independently generated scenes."""
     return zlib.crc32(seed_key.encode())
 
 
-def run_track(track: Track, dry_run: bool = False, privacy_status: str = "private") -> bool:
+def _generate_story_images(
+    script: Script, track: Track, seed: int, images_raw_dir: Path,
+) -> tuple[list[Path], list[bool]]:
+    """Generates a fixed reference portrait, then every scene's illustration
+    conditioned on it. The portrait generation is the real-work quota probe
+    (raises CloudflareQuotaExhausted if the daily free allocation is
+    exhausted) — done before any other work so nothing's wasted if it
+    fails."""
+    portrait_path, portrait_fallback = generate_scene_image_raw(
+        REFERENCE_PORTRAIT_SCENE, images_raw_dir / "reference_portrait.png", track,
+        character_reference=script.character_reference, seed=seed, raise_on_quota_exhausted=True,
+    )
+    reference_image_bytes = None if portrait_fallback else portrait_path.read_bytes()
+
+    raw_results = [
+        generate_scene_image_raw(
+            scene, images_raw_dir / f"scene_{i:02d}.png", track,
+            character_reference=script.character_reference, seed=seed,
+            reference_image_bytes=reference_image_bytes,
+        )
+        for i, scene in enumerate(script.scenes)
+    ]
+    raw_images = [path for path, _ in raw_results]
+    scene_used_fallback = [used_fallback for _, used_fallback in raw_results]
+    return raw_images, scene_used_fallback
+
+
+def _reused_story_images(
+    script: Script, track: Track, produced_images: ProducedImages,
+) -> Optional[tuple[list[Path], list[bool]]]:
+    """Looks up a sibling track's already-generated images for this script's
+    source_script_id, produced earlier in this SAME run() call. Returns None
+    if unavailable — the caller falls back to independent generation."""
+    entry = produced_images.get((track.shares_images_with, script.source_script_id or script.id))
+    if entry is None:
+        return None
+    source_images_dir, scene_used_fallback = entry
+    if len(scene_used_fallback) != len(script.scenes):
+        # Paired scripts must have matching scene counts (visuals must line
+        # up 1:1) — a mismatch means these aren't really a matched pair.
+        return None
+    raw_images = [source_images_dir / f"scene_{i:02d}.png" for i in range(len(script.scenes))]
+    return raw_images, scene_used_fallback
+
+
+def run_track(
+    track: Track,
+    dry_run: bool = False,
+    privacy_status: str = "private",
+    produced_images: Optional[ProducedImages] = None,
+) -> bool:
     """Returns True if a video was produced (or there was legitimately
     nothing to do — empty queue, already produced today). Raises
     CloudflareQuotaExhausted if the image quota probe fails (caller decides
     whether to skip remaining tracks), or any other exception on a real
-    failure."""
+    failure. `produced_images` is shared across every track within one
+    run() call — see ProducedImages."""
+    if produced_images is None:
+        produced_images = {}
+
     if not dry_run and already_produced_today(track.key):
         print(f"[{track.key}] Already produced a video today — skipping until tomorrow.")
         return True
@@ -103,64 +182,68 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
     print(f"[{track.key}] Producing: {script.title} ({script.id})")
     run_dir = OUTPUT_DIR / track.key / script.id
     run_dir.mkdir(parents=True, exist_ok=True)
+    images_raw_dir = run_dir / "images_raw"
 
     # Serialized tracks (see Track.serialized) reuse ONE seed across the
     # whole series, not just within one episode, so the protagonist stays
     # visually consistent from episode 1 through episode N.
     seed = _story_seed(track.key if track.serialized else script.id)
 
-    print(f"[{track.key}] [1/4] Probing image generation availability...")
-    images_raw_dir = run_dir / "images_raw"
-    first_raw_path, first_used_fallback = generate_scene_image_raw(
-        script.scenes[0], images_raw_dir / "scene_00.png", track,
-        character_reference=script.character_reference, seed=seed, raise_on_quota_exhausted=True,
-    )
-    # The first scene's own generated image becomes the reference for every
-    # later scene — real image-to-image conditioning (see ai_image.py),
-    # not just a shared text description. Skipped if scene 1 itself fell
-    # back to the gradient (nothing meaningful to reference).
-    reference_image_bytes = None if first_used_fallback else first_raw_path.read_bytes()
+    reused = _reused_story_images(script, track, produced_images) if track.shares_images_with else None
+    if reused is not None:
+        print(f"[{track.key}] [1/4] Reusing images generated for "
+              f"'{script.source_script_id or script.id}' earlier this run — no image-generation cost.")
+        raw_images, scene_used_fallback = reused
+    else:
+        if track.shares_images_with:
+            print(f"[{track.key}] [1/4] No matching images from '{track.shares_images_with}' "
+                  f"this run yet — generating independently instead.")
+        else:
+            print(f"[{track.key}] [1/4] Probing image generation availability...")
+        raw_images, scene_used_fallback = _generate_story_images(script, track, seed, images_raw_dir)
+        produced_images[(track.key, script.id)] = (images_raw_dir, scene_used_fallback)
 
     voice_desc = f"{track.tts_provider}: {'/'.join(track.tts_voices) or track.voice}"
     print(f"[{track.key}] [2/4] Synthesizing voiceover ({voice_desc})...")
     scene_audios = synthesize_script_for_track(script, run_dir / "audio", track)
 
-    print(f"[{track.key}] [3/4] Generating remaining scene illustrations...")
-    raw_results = [(first_raw_path, first_used_fallback)] + [
-        generate_scene_image_raw(
-            scene, images_raw_dir / f"scene_{i:02d}.png", track,
-            character_reference=script.character_reference, seed=seed,
-            reference_image_bytes=reference_image_bytes,
-        )
-        for i, scene in enumerate(script.scenes[1:], start=1)
-    ]
-    raw_images = [path for path, _ in raw_results]
-    scene_used_fallback = [used_fallback for _, used_fallback in raw_results]
-    short_images = [
-        fit_scene_image(raw, run_dir / "images_short" / f"scene_{i:02d}.png", SHORT_RESOLUTION)
+    print(f"[{track.key}] [3/4] Fitting images for output...")
+    fit_images = [
+        fit_scene_image(raw, run_dir / "images_fit" / f"scene_{i:02d}.png", SHORT_RESOLUTION)
         for i, raw in enumerate(raw_images)
     ]
 
     music_path = pick_music_track()
-
-    print(f"[{track.key}] [4/4] Assembling video...")
-    video_path = assemble_short(
-        script, scene_audios, short_images,
-        work_dir=run_dir / "work", out_path=run_dir / "video.mp4",
-        music_path=music_path, scene_used_fallback=scene_used_fallback,
-        burn_captions=track.burn_captions,
-    )
-
     thumbnail_path = generate_thumbnail(
         script.title, run_dir / "thumbnail.jpg", draw_text=track.burn_captions,
     )
 
-    print(f"[{track.key}] Uploading (dry_run={dry_run})...")
-    upload_result = upload_daily_video(
-        script, video_path, thumbnail_path, track,
-        privacy_status=privacy_status, dry_run=dry_run,
+    print(f"[{track.key}] [4/4] Assembling and uploading Short (dry_run={dry_run})...")
+    short_path = assemble_short(
+        script, scene_audios, fit_images,
+        work_dir=run_dir / "work_short", out_path=run_dir / "video_short.mp4",
+        music_path=music_path, scene_used_fallback=scene_used_fallback,
+        burn_captions=track.burn_captions,
     )
-    print(upload_result)
+    short_upload = upload_daily_video(
+        script, short_path, thumbnail_path, track,
+        privacy_status=privacy_status, dry_run=dry_run, is_short=True,
+    )
+    print(short_upload)
+
+    if track.produce_long_form:
+        print(f"[{track.key}] Assembling and uploading long-form (dry_run={dry_run})...")
+        long_path = assemble_short(
+            script, scene_audios, fit_images,
+            work_dir=run_dir / "work_long", out_path=run_dir / "video_long.mp4",
+            music_path=music_path, max_seconds=None, scene_used_fallback=scene_used_fallback,
+            burn_captions=track.burn_captions,
+        )
+        long_upload = upload_daily_video(
+            script, long_path, thumbnail_path, track,
+            privacy_status=privacy_status, dry_run=dry_run, is_short=False,
+        )
+        print(long_upload)
 
     mark_used(script_path, used_dir)
     if not dry_run:
@@ -169,18 +252,19 @@ def run_track(track: Track, dry_run: bool = False, privacy_status: str = "privat
     return True
 
 
-def run(dry_run: bool = False, privacy_status: str = "private", track_key: str | None = None) -> int:
+def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optional[str] = None) -> int:
     tracks = [TRACKS[track_key]] if track_key else list(TRACKS.values())
 
     any_failed = False
     quota_exhausted = False
+    produced_images: ProducedImages = {}
     for track in tracks:
         if quota_exhausted:
             print(f"[{track.key}] Skipping — Cloudflare image quota already confirmed exhausted "
                   f"this run. Will retry on the next scheduled run.")
             continue
         try:
-            run_track(track, dry_run=dry_run, privacy_status=privacy_status)
+            run_track(track, dry_run=dry_run, privacy_status=privacy_status, produced_images=produced_images)
         except CloudflareQuotaExhausted as e:
             # Account-wide, not per-track — every other track would hit the
             # same wall, so stop here rather than burning time confirming

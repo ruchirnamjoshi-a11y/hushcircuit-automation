@@ -57,6 +57,18 @@ class Track:
     # (persistent character + running recap, see pipeline.story_writer.
     # generate_next_episode) rather than a fresh standalone story per video.
     serialized: bool = False
+    # When set, this track is a language variant of another track's stories
+    # (e.g. "kids" -> Hindi) rather than its own independent content. The
+    # Hindi script (Script.source_script_id pointing at the English script's
+    # id) reuses the primary track's already-generated scene images instead
+    # of calling Cloudflare again — narration/captions/upload are the only
+    # per-language work, so producing a second language costs no extra
+    # image-generation quota. See run_daily.py.
+    shares_images_with: str = ""
+    # Produces both the full-length long-form video and a trimmed Shorts
+    # highlight cut from the same generated images/audio (see run_daily.py).
+    # False keeps the original single-Short-only behavior.
+    produce_long_form: bool = False
 
 
 # Category IDs are YouTube's fixed video categories (24 = Entertainment,
@@ -89,6 +101,7 @@ TRACKS: dict[str, Track] = {
             "simple language. End on a clear, comforting moral."
         ),
         extra_tags=["bedtime story", "kids story", "story for kids"],
+        produce_long_form=True,
     ),
     "teens": Track(
         key="teens",
@@ -175,43 +188,50 @@ TRACKS: dict[str, Track] = {
         extra_tags=["short story", "women's story", "inspiring story"],
     ),
     "hindi_mythology": Track(
+        # Key/secret filenames kept as "hindi_mythology" (retiring the old
+        # mythology content, not the channel/OAuth token — see README) to
+        # avoid renaming the GitHub Actions secret and local token file.
+        # This channel now posts the Hindi-language version of the "kids"
+        # track's stories instead of Indian mythology episodes.
         key="hindi_mythology",
-        label="Indian Mythology (Hindi)",
+        label="Kids Stories (Hindi)",
         voice="hi-IN-MadhurNeural",
-        # Reverted from tts_provider="gemini": both gemini-2.5-flash-preview-tts
-        # and gemini-3.1-flash-tts-preview turned out to have a hard 10
-        # requests/DAY free-tier cap (confirmed live on both) — well under
-        # the ~8 calls a single 8-scene video needs, with zero margin for
-        # retries. Sounds noticeably better when it works, but not reliable
-        # enough for unattended daily production yet. tts_voices kept here,
-        # dormant, in case a model with a workable daily quota shows up.
+        # gemini-2.5-flash-preview-tts and gemini-3.1-flash-tts-preview both
+        # turned out to have a hard 10 requests/DAY free-tier cap (confirmed
+        # live) — far too tight for a 30+ scene long-form script. edge-tts's
+        # Hindi voice has no such limit. tts_voices kept here, dormant, in
+        # case a model with a workable daily quota shows up.
         tts_voices=["Kore", "Puck", "Aoede"],
+        # Unused while shares_images_with="kids" reuses the English track's
+        # already-generated images (see run_daily.py) — kept matching kids'
+        # style as a fallback for the rare case that reuse isn't available.
         image_style_prefix=(
-            "Illustration with absolutely no text, no letters, no words "
-            "anywhere in the image. A single traditional Indian "
-            "mythological illustration of "
+            "Children's picture book illustration with absolutely no text, "
+            "no letters, no words anywhere in the image. A single warm, "
+            "soft watercolor-style illustration of "
         ),
         image_style_suffix=(
-            ", inspired by Indian miniature and mural art, warm earthy "
-            "and golden color palette, ornate flowing linework, divine "
-            "glowing light, majestic and reverent mood, isolated scene "
-            "on simple background"
+            ", gentle pastel color palette, whimsical storybook art style, "
+            "soft rounded shapes, cheerful and cozy mood, isolated scene on "
+            "simple background"
         ),
-        made_for_kids=False,
+        made_for_kids=True,
         category_id=CATEGORY_ENTERTAINMENT,
         story_guidance=(
-            "Write every field — title, description, tags, narration, and "
-            "on_screen_text — in Hindi (Devanagari script), not English. "
-            "Base each story on well-known Indian mythology: Ramayana, "
-            "Mahabharata, Puranic tales — gods, heroes, cosmic events, "
-            "moral lessons. Majestic, reverent storytelling tone, natural "
-            "spoken Hindi (not a stiff word-for-word translation from "
-            "English). visual descriptions can stay in English since "
-            "they only drive the image generator, not what's shown "
-            "on-screen."
+            "The Hindi-language version of a 'kids' track story — same "
+            "plot, characters, and moral, translated (not a stiff "
+            "word-for-word translation — natural spoken Hindi) into "
+            "Devanagari script for title, description, tags, and every "
+            "scene's narration/on_screen_text. `visual` fields must stay "
+            "IDENTICAL to the English script's (word-for-word) so the "
+            "shared illustrations still match this scene's narration."
         ),
-        extra_tags=["indian mythology", "hindi story", "hindu mythology", "mythology story", "ramayana", "mahabharata"],
+        extra_tags=["hindi story", "kids story", "bedtime story", "moral story in hindi"],
+        # No Devanagari-glyph caption font wired up yet — video + audio
+        # only, rather than rendering missing-glyph boxes over the video.
         burn_captions=False,
+        shares_images_with="kids",
+        produce_long_form=True,
     ),
     "hero_saga": Track(
         key="hero_saga",
@@ -307,12 +327,14 @@ def youtube_token_path(track_key: str) -> Path:
         return Path(override)
     return SECRETS_DIR / f"youtube_token_{track_key}.json"
 
-# Shorts-only pipeline: every story is one vertical video. YouTube treats
-# vertical #shorts-tagged videos up to 3 minutes as eligible for the Shorts
-# shelf, and our ~8-scene stories run ~70-90s, so 180s is a generous safety
-# ceiling that only trims content on an unusually long script — normal
-# stories are never cut. LONG_FORM_RESOLUTION is kept for pipeline/assemble.py
-# (retained but unused by default — see README), matching pipeline/broll.py.
+# Every story is one vertical (9:16) video — SHORT_RESOLUTION is used for
+# both the Shorts cut AND the long-form cut (Track.produce_long_form) rather
+# than reintroducing a separate 16:9 pipeline. YouTube treats vertical
+# #shorts-tagged videos up to 3 minutes as eligible for the Shorts shelf, so
+# 180s caps the trimmed highlight cut; the long-form cut has no cap (full
+# story). LONG_FORM_RESOLUTION is kept for pipeline/assemble.py's legacy
+# 16:9 path (retained but unused by default — see README), matching
+# pipeline/broll.py.
 LONG_FORM_RESOLUTION = (1920, 1080)
 SHORT_RESOLUTION = (1080, 1920)
 SHORT_MAX_SECONDS = 180

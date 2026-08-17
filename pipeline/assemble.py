@@ -50,7 +50,6 @@ def assemble_long_form(
     work_dir.mkdir(parents=True, exist_ok=True)
     clip_paths = []
     all_words: list[tuple[str, float, float, bool]] = []
-    badge_lines: list[tuple[str, float, float]] = []
     cumulative = 0.0
 
     for i, scene_audio in enumerate(scene_audios):
@@ -66,7 +65,6 @@ def assemble_long_form(
 
         for w in scene_audio.word_timings:
             all_words.append((w.word, w.start + cumulative, w.end + cumulative, w.ends_sentence))
-        badge_lines.append((script.badge_text(i), cumulative, cumulative + scene_audio.duration))
         cumulative += scene_audio.duration
 
     combined_path = work_dir / "combined.mp4"
@@ -74,10 +72,7 @@ def assemble_long_form(
 
     caption_lines = group_words_into_captions(all_words, max_words=2)
     ass_path = work_dir / "captions.ass"
-    build_ass_captions(
-        caption_lines, ass_path, LONG_FORM_RESOLUTION,
-        font_size=100, badge_lines=badge_lines, badge_font_size=40, font_name=font_name,
-    )
+    build_ass_captions(caption_lines, ass_path, LONG_FORM_RESOLUTION, font_size=100, font_name=font_name)
 
     mix_final(
         combined_path.resolve(),

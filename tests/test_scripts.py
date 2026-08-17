@@ -53,17 +53,17 @@ def test_to_dict_round_trips_character_reference():
     assert to_dict(script)["character_reference"] == "a small cream-colored rabbit"
 
 
-def test_badge_text_for_hook_and_outro_is_just_on_screen_text():
+def test_validate_defaults_source_script_id_to_empty_string():
     script = validate(SAMPLE)
-    assert script.badge_text(0) == "ROBOT TYPING"
-    assert script.badge_text(len(script.scenes) - 1) == "SUBSCRIBE"
+    assert script.source_script_id == ""
 
 
-def test_badge_text_for_body_scene_includes_part_number_and_total():
-    script = validate(SAMPLE)
-    # SAMPLE has 2 body scenes (indices 1 and 2), scene 1 is the first part
-    assert script.badge_text(1) == "PART 1/2 · CODE EDITOR"
-    assert script.badge_text(2) == "PART 2/2 · CHATBOT UI"
+def test_to_dict_round_trips_source_script_id():
+    variant = json.loads(json.dumps(SAMPLE))
+    variant["source_script_id"] = "test-topic"
+    script = validate(variant)
+    assert script.source_script_id == "test-topic"
+    assert to_dict(script)["source_script_id"] == "test-topic"
 
 
 def test_scene_image_concept_falls_back_to_on_screen_text_when_visual_blank():

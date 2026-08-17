@@ -69,6 +69,19 @@ def test_upload_daily_video_dry_run_orchestrates_video_and_thumbnail(tmp_path):
     assert result["thumbnail"]["dry_run"] is True
 
 
+def test_upload_daily_video_is_short_false_omits_shorts_tag_and_suffix(tmp_path):
+    script = validate(SAMPLE)
+    video = tmp_path / "video.mp4"
+    thumb = tmp_path / "thumb.jpg"
+    for p in (video, thumb):
+        p.touch()
+
+    result = upload_daily_video(script, video, thumb, KIDS_TRACK, dry_run=True, is_short=False)
+
+    assert result["video"]["body"]["snippet"]["title"] == "Test Video Title"
+    assert "shorts" not in result["video"]["body"]["snippet"]["tags"]
+
+
 def test_upload_daily_video_survives_thumbnail_permission_failure(tmp_path):
     # Custom thumbnails require a phone-verified channel; a 403 here should
     # not abort the run since the video already uploaded successfully.

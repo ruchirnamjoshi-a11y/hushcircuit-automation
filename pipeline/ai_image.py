@@ -41,6 +41,24 @@ TRIGGER_WORD_SUBSTITUTIONS = {
     "subscribed": "followed",
 }
 
+# A dedicated, deliberately neutral "character sheet" portrait, generated
+# once per story and used as the fixed reference image for EVERY scene
+# (including the first) — validated in testing to hold character details
+# (proportions, colors, distinguishing features) far more consistently
+# across a long multi-scene story than the old approach of reusing scene 0's
+# own in-story action shot as the reference, which could carry that scene's
+# framing/pose/motion-blur quirks into every later generation.
+REFERENCE_PORTRAIT_SCENE = Scene(
+    narration="",
+    on_screen_text="REFERENCE",
+    duration_hint=1.0,
+    visual=(
+        "standing alone facing slightly to the side, clear full body view, "
+        "calm neutral pose, soft even studio-like lighting, plain simple "
+        "background, detailed character reference portrait"
+    ),
+)
+
 RETRY_DELAY_SECONDS = 2
 RATE_LIMIT_RETRY_DELAY_SECONDS = 20
 INTER_REQUEST_DELAY_SECONDS = 3  # paces successive calls so a 4-track run
@@ -94,7 +112,17 @@ def _call_cloudflare(
     text description, so a subsequent scene can be given the first scene's
     actual generated image to keep the character visually consistent."""
     url = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/ai/run/{AI_IMAGE_MODEL}"
-    files: dict = {"prompt": (None, prompt)}
+    files: dict = {
+        "prompt": (None, prompt),
+        # Requesting the output natively in (close to) our 9:16 target
+        # instead of the model's square default — verified live that the
+        # model honors width/height. Generating square and force-cropping
+        # to 1080x1920 afterward was throwing away 43.8% of every image's
+        # width; 720x1280 is an exact 9:16 match, so almost nothing needs
+        # to be cropped downstream.
+        "width": (None, "720"),
+        "height": (None, "1280"),
+    }
     if seed is not None:
         files["seed"] = (None, str(seed))
     if reference_image_bytes is not None:
