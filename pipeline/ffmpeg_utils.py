@@ -94,9 +94,6 @@ def _rgb_to_ass_style_color(rgb: tuple[int, int, int]) -> str:
 def _rgb_to_ass_inline_color(rgb: tuple[int, int, int]) -> str:
     r, g, b = rgb
     return f"&H{b:02X}{g:02X}{r:02X}&"  # inline \c override: &HBBGGRR&
-
-
-ACCENT_COLOR_ASS = _rgb_to_ass_style_color(ACCENT_RGB)
 ACCENT_INLINE_ASS = _rgb_to_ass_inline_color(ACCENT_RGB)
 WHITE_INLINE_ASS = "&HFFFFFF&"
 
@@ -160,16 +157,11 @@ def build_ass_captions(
     out_path: Path,
     resolution: tuple[int, int],
     font_size: int = 100,
-    badge_lines: Optional[list[tuple[str, float, float]]] = None,
-    badge_font_size: int = 40,
     font_name: str = "Arial",
 ) -> Path:
-    """caption_lines are big, center-screen, word-by-word "pop" captions —
+    """caption_lines are big, lower-third, word-by-word "pop" captions —
     1-2 words at a time with a scale-bounce entrance, white by default and
     accent-colored when flagged as emphasis (numbers/acronyms/tool names).
-
-    badge_lines are a small persistent top-left "PART 2/6 · THE OLD OWL"
-    style label per scene, rendered as a boxed pill (BorderStyle=3).
 
     font_name defaults to Arial (Latin script); a non-Latin-script track
     (e.g. Hindi/Devanagari) needs a font that actually has those glyphs —
@@ -178,6 +170,11 @@ def build_ass_captions(
     renders missing-glyph boxes.
     """
     width, height = resolution
+    # Bottom-center (Alignment=2), lifted clear of the frame edge and of
+    # platform UI that overlays the lower portion of vertical video
+    # (Shorts/Reels caption+like/share icons) — captions used to sit dead
+    # center (Alignment=5) and covered the middle of every illustration.
+    caption_margin_v = int(height * 0.14)
     header = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {width}
@@ -186,8 +183,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,{font_name},{font_size},&H00FFFFFF,&H00000000,&H00000000,1,0,1,5,0,5,60,60,0,1
-Style: Badge,{font_name},{badge_font_size},&H00101018,{ACCENT_COLOR_ASS},{ACCENT_COLOR_ASS},1,0,3,6,0,7,50,50,50,1
+Style: Caption,{font_name},{font_size},&H00FFFFFF,&H00000000,&H00000000,1,0,1,5,0,2,60,60,{caption_margin_v},1
 
 [Events]
 Format: Layer, Start, End, Style, Text
@@ -207,9 +203,6 @@ Format: Layer, Start, End, Style, Text
     for text, start, end, emphasize in caption_lines:
         color = ACCENT_INLINE_ASS if emphasize else WHITE_INLINE_ASS
         _add(text, start, end, "Caption", override=f"{pop_tags}\\c{color}")
-
-    for text, start, end in badge_lines or []:
-        _add(f" {text.upper()} ", start, end, "Badge")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text("".join(lines))

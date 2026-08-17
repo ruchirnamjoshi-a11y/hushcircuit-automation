@@ -144,6 +144,17 @@ def test_build_ass_captions_writes_valid_file_with_pop_animation(tmp_path):
     assert "Dialogue: 0,0:00:00.00,0:00:01.00,Caption," in content
 
 
+def test_build_ass_captions_caption_style_is_bottom_aligned(tmp_path):
+    # Regression test: the Caption style used to be Alignment=5 (dead
+    # center), which sat captions over the middle of every scene image.
+    out = build_ass_captions([("hi there", 0.0, 1.0, False)], tmp_path / "captions.ass", resolution=(1080, 1920))
+    style_line = next(l for l in out.read_text().splitlines() if l.startswith("Style: Caption,"))
+    fields = style_line.split(",")
+    alignment, margin_v = fields[11], fields[14]
+    assert alignment == "2"  # bottom-center, not 5 (middle-center)
+    assert int(margin_v) > 0  # lifted clear of the very bottom edge
+
+
 def test_build_ass_captions_colors_emphasized_words_with_accent(tmp_path):
     lines = [("regular text", 0.0, 1.0, False), ("chatgpt tip", 1.0, 2.0, True)]
     out = build_ass_captions(lines, tmp_path / "captions.ass", resolution=(1920, 1080))
@@ -155,26 +166,11 @@ def test_build_ass_captions_colors_emphasized_words_with_accent(tmp_path):
     assert f"\\c{ACCENT_INLINE_ASS}" in emphasized_line
 
 
-def test_build_ass_captions_includes_badge_style_and_uppercases_text(tmp_path):
-    caption_lines = [("hello world", 0.0, 1.0, False)]
-    badge_lines = [("give it a role", 0.0, 8.0)]
-    out = build_ass_captions(
-        caption_lines, tmp_path / "captions.ass", resolution=(1920, 1080),
-        badge_lines=badge_lines,
-    )
-    content = out.read_text()
-    assert "Style: Badge," in content
-    assert "GIVE IT A ROLE" in content
-    assert "Dialogue: 0,0:00:00.00,0:00:08.00,Badge," in content
-    # flowing captions stay on the Caption style, untouched
-    assert "Dialogue: 0,0:00:00.00,0:00:01.00,Caption," in content
-
-
-def test_build_ass_captions_works_without_badges(tmp_path):
+def test_build_ass_captions_has_no_badge_style(tmp_path):
     out = build_ass_captions([("just captions", 0.0, 1.0, False)], tmp_path / "captions.ass", resolution=(1920, 1080))
     content = out.read_text()
     assert "just captions" in content
-    assert "Style: Badge," in content  # style is always declared, just unused
+    assert "Style: Badge," not in content
 
 
 def test_mix_final_burns_captions_and_mixes_music(tmp_path):

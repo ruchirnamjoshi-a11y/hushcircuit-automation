@@ -85,8 +85,23 @@ def _zoompan_clip(
     zoom_expr = f"min(zoom+{ZOOM_PER_FRAME},{MAX_ZOOM})"
 
     inputs = ["-loop", "1", "-i", str(image_path)]
+    # zoompan needs headroom above the exact output resolution to avoid a
+    # well-known jitter artifact: cropping at the exact target size leaves
+    # zero sub-pixel precision, so tiny per-frame zoom increments round to
+    # different integer pixel offsets frame to frame and read as a shaking/
+    # vibrating image. The gradient background already got this (rendered
+    # at OVERSCAN size upstream); AI scene images didn't — this scale stage
+    # gives both the same headroom (a near no-op for the already-overscanned
+    # gradient, since it's already at ~this size).
+    overscan_w, overscan_h = int(width * OVERSCAN), int(height * OVERSCAN)
     stages = [
-        f"[0:v]zoompan=z='{zoom_expr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+        # flags=lanczos: the default (bilinear) scaler was the other half of
+        # the shake — confirmed via a controlled elimination test (constant
+        # zoom = no shake; zoom via zoompan = shake; overscan alone = still
+        # shake; lanczos scaling here + a higher-quality encode below =
+        # confirmed fixed, no shake, zoom motion intact).
+        f"[0:v]scale={overscan_w}:{overscan_h}:flags=lanczos[src]",
+        f"[src]zoompan=z='{zoom_expr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
         f"d={frames}:s={width}x{height}:fps={FPS}[bg]"
     ]
     video_out = "[bg]"
@@ -124,7 +139,12 @@ def _zoompan_clip(
         "-filter_complex", ";".join(stages),
         "-map", "[outv]",
         "-t", f"{duration:.3f}",
-        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+        # -preset slow -crf 16 (not veryfast/20): the low-quality encode was
+        # compounding the pre-lanczos shake by re-quantizing already-jittery
+        # sub-pixel motion every frame — the higher-quality encode alone
+        # doesn't fix shake, but combined with lanczos scaling above it was
+        # the confirmed-working combination (see comment above).
+        "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-pix_fmt", "yuv420p",
         str(out_path),
     ])
 

@@ -28,10 +28,13 @@ permissions:
 jobs:
   produce-and-upload:
     runs-on: ubuntu-latest
-    # run_daily.py produces one video per story track (kids/teens/adults/
-    # women/hindi_mythology) in a single run, so this needs headroom for
-    # ~5x the work of a single video.
-    timeout-minutes: 180
+    # run_daily.py produces one Short per story track, and TWO videos
+    # (Short + long-form) for tracks with Track.produce_long_form=True —
+    # currently kids (English) and hindi_mythology (the Hindi-language
+    # variant of the kids track, reusing kids' generated images at no
+    # extra image-generation cost — see run_daily.py's docstring). This
+    # needs headroom for that extra long-form assembly + upload work.
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
 
@@ -64,6 +67,9 @@ jobs:
           write_token teens "${{ secrets.YOUTUBE_TOKEN_B64_TEENS }}"
           write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
           write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
+          # Secret name kept as HINDI_MYTHOLOGY (retiring the old mythology
+          # content, not the channel/token) — this channel now posts the
+          # Hindi-language version of the "kids" track's stories.
           write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
           write_token hero_saga "${{ secrets.YOUTUBE_TOKEN_B64_HERO_SAGA }}"
 
@@ -73,9 +79,9 @@ jobs:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          # hindi_mythology's voiceover uses Gemini's native TTS (Track.
-          # tts_provider="gemini"), not just the weekly story-writing step —
-          # needed here too now, not only in weekly-analytics.yml.
+          # Not used by any track's TTS today (hindi_mythology uses
+          # edge-tts, same as every other track) — kept here in case a
+          # track's tts_provider gets switched to "gemini" again later.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         # Scheduled runs publish for real (public); manual runs default to
         # private so you can sanity-check a run without publishing it live.

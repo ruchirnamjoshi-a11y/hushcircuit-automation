@@ -1,7 +1,7 @@
-"""Stage 4: assemble the single vertical (9:16) Short that carries the full
-story — every scene, in order. `max_seconds` is a safety ceiling (not a
-highlight-reel trim target): our ~8-scene stories run ~70-90s, well under
-it, so it only ever trims an unusually long script."""
+"""Stage 4: assemble a vertical (9:16) story video — either the full story
+(max_seconds=None, used for the long-form upload) or a trimmed highlight cut
+capped at `max_seconds` (used for the Shorts upload, dropping the longest
+middle scenes first until the runtime fits the Shorts shelf)."""
 
 from __future__ import annotations
 
@@ -52,7 +52,7 @@ def assemble_short(
     work_dir: Path,
     out_path: Path,
     music_path: Optional[Path] = None,
-    max_seconds: float = SHORT_MAX_SECONDS,
+    max_seconds: Optional[float] = SHORT_MAX_SECONDS,
     scene_used_fallback: Optional[list[bool]] = None,
     burn_captions: bool = True,
 ) -> Path:
@@ -62,21 +62,25 @@ def assemble_short(
     plain fallback image, so a fallback scene doesn't look flatter than a
     real AI illustration.
 
-    burn_captions=False skips the word-pop captions and progress badge
-    entirely (video + audio only) — for tracks without a matching caption
-    font (e.g. non-Latin scripts), rather than rendering wrong/missing-glyph
-    text on top of the video."""
+    max_seconds=None skips highlight-trimming entirely and includes every
+    scene — the full-length long-form cut. Pass SHORT_MAX_SECONDS (the
+    default) for the trimmed Shorts cut instead.
+
+    burn_captions=False skips the word-pop captions entirely (video + audio
+    only) — for tracks without a matching caption font (e.g. non-Latin
+    scripts), rather than rendering wrong/missing-glyph text on top of the
+    video."""
     if len(scene_audios) != len(script.scenes):
         raise ValueError("scene_audios must cover every scene in the script")
     if len(scene_images) != len(script.scenes):
         raise ValueError("scene_images must cover every scene in the script")
 
-    indices = _select_within_budget(list(range(len(script.scenes))), scene_audios, max_seconds)
+    all_indices = list(range(len(script.scenes)))
+    indices = all_indices if max_seconds is None else _select_within_budget(all_indices, scene_audios, max_seconds)
 
     work_dir.mkdir(parents=True, exist_ok=True)
     clip_paths = []
     all_words: list[tuple[str, float, float, bool]] = []
-    badge_lines: list[tuple[str, float, float]] = []
     cumulative = 0.0
 
     for pos, scene_i in enumerate(indices):
@@ -94,7 +98,6 @@ def assemble_short(
 
         for w in scene_audio.word_timings:
             all_words.append((w.word, w.start + cumulative, w.end + cumulative, w.ends_sentence))
-        badge_lines.append((script.badge_text(scene_i), cumulative, cumulative + scene_audio.duration))
         cumulative += scene_audio.duration
 
     combined_path = work_dir / "short_combined.mp4"
@@ -104,10 +107,7 @@ def assemble_short(
     if burn_captions:
         caption_lines = group_words_into_captions(all_words, max_words=2)
         ass_path = work_dir / "short_captions.ass"
-        build_ass_captions(
-            caption_lines, ass_path, SHORT_RESOLUTION,
-            font_size=130, badge_lines=badge_lines, badge_font_size=48,
-        )
+        build_ass_captions(caption_lines, ass_path, SHORT_RESOLUTION, font_size=130)
 
     mix_final(
         combined_path.resolve(),

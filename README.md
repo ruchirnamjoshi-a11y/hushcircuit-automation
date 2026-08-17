@@ -1,84 +1,88 @@
 # Daily Stories, For Every Age
 
 Fully-free, script-driven pipeline that produces and publishes **one narrated
-short story per day, per audience track** — kids, teens & young adults,
-adults & middle-aged, women, Hindi mythology, and an ongoing original
-superhero saga — each with its own voice, illustration style, and **its own
-YouTube channel**, then feeds performance data back into future content
-decisions.
+story per day, per audience track** — kids, teens & young adults, adults &
+middle-aged, women, kids in Hindi, and an ongoing original superhero saga —
+each with its own voice, illustration style, and **its own YouTube
+channel**, then feeds performance data back into future content decisions.
 
-## The tracks, one channel each
+## The tracks, one channel each (except Kids/Kids-Hindi)
 
-Each track is a fully separate YouTube channel with its own OAuth token,
-own subscribers, own branding. Earlier this ran as one shared channel
-(YouTube's `made_for_kids` flag is set per video, not per channel, so that
-worked mechanically) but a kids bedtime-story subscriber getting a teen
-breakup drama in their feed — and vice versa — is bad for subscriber
-retention and channel identity, so it's one channel per track now. See
-"Multi-channel YouTube setup" below for how each channel/token maps to a
-track.
+Each track has its own OAuth token, and in the general case its own
+YouTube channel — a kids bedtime-story subscriber getting a teen breakup
+drama in their feed, and vice versa, is bad for subscriber retention and
+channel identity, so `teens`/`adults`/`women`/`hero_saga` each get a
+dedicated channel when their token is set up. **`kids` and `hindi_mythology`
+are the deliberate exception**: they authorize the same underlying YouTube
+channel, so English and Hindi kids content post side by side on one
+bilingual channel rather than two separate ones — that's fine here since
+both are the same audience (kids' stories), just two languages, not two
+different audiences the way kids vs. teens would be. See "Multi-channel
+YouTube setup" below for how each channel/token maps to a track.
 
-One vertical Short is produced daily per channel. There's no separate
-long-form (16:9) video: our ~8-scene stories run ~70-90s, so a distinct
-long-form cut added little, and uploading both would cost far more YouTube
-Data API quota than one upload per channel. `pipeline/assemble.py` (the
-long-form assembler) is kept in the codebase, tested, but unused by
-default — same pattern as `pipeline/broll.py`.
+One vertical (9:16) Short is produced daily per channel. Two tracks — kids
+and its Hindi variant — also produce a full-length **long-form** cut of the
+same story (`Track.produce_long_form=True`), built from the exact same
+generated scene images and narration audio at no extra image-generation
+cost, just a second ffmpeg assembly pass and upload. Both cuts stay 9:16
+(vertical long-form), not the separate 16:9 format `pipeline/assemble.py`
+still has kept-but-unused (same pattern as `pipeline/broll.py`) — see "Two
+uploads per day" below for the quota math this changes.
 
 | Track | Voice | Illustration style | Made for kids? | Notes |
 |---|---|---|---|---|
-| **Kids** | Sonia (British, warm) | Watercolor storybook | Yes — every kids upload is flagged `selfDeclaredMadeForKids` | Standalone story per day |
+| **Kids** | Sonia (British, warm) | Watercolor storybook | Yes — every kids upload is flagged `selfDeclaredMadeForKids` | Standalone story per day; Short **and** long-form |
 | **Teens & young adults** | Aria (confident) | Vibrant character-focused digital art | No | Standalone story per day |
 | **Adults & middle-aged** | Guy (warm, mature) | Cinematic, painterly, reflective | No | Standalone story per day |
 | **Women** | Jenny (warm, comforting) | Elegant, soft, rose-gold | No | Standalone story per day |
-| **Hindi mythology** | Gemini TTS, rotating Kore/Puck/Aoede | Indian miniature/mural art | No | Standalone story per day, written in Hindi, no captions burned in (`burn_captions=False` — see below) |
+| **Kids (Hindi)** (`hindi_mythology` key/channel — see below) | Madhur (edge-tts Hindi) | Same watercolor style as Kids (shares its images) | Yes | Hindi-translated version of that day's kids story; Short **and** long-form; no captions burned in (`burn_captions=False` — see below) |
 | **Original hero saga** | Christopher (deep, dramatic) | Bold comic-book/graphic-novel | No | **Serialized** — one ongoing story, new episode each day, not standalone (see below) |
 
 Configured in `pipeline/config.py`'s `TRACKS` dict — voice, illustration
 style prompt, YouTube category, `made_for_kids` flag, and extra tags per
 track all live there.
 
-### The Hindi mythology track has no burned-in captions
+### Kids (Hindi) is a language variant of Kids, not its own stories
 
-`Track.burn_captions=False` skips the ASS caption/progress-badge burn-in
+The `hindi_mythology` track used to run standalone Hindi mythology
+episodes; it's now the Hindi-language version of the kids track's stories
+instead — same plot, same illustrations, translated narration — posted to
+the **same YouTube channel** as `kids` (its OAuth token authorizes that
+same channel, not a separate one — see "one channel each (except
+Kids/Kids-Hindi)" above). The track key, secret name
+(`YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY`), and local token file
+(`secrets/youtube_token_hindi_mythology.json`) were kept as-is (retiring
+the content, not the OAuth setup) rather than renamed. Old mythology
+scripts moved to `archive/hindi_mythology_scripts/`.
+
+Two fields on `Track` make the pairing work (`pipeline/config.py`,
+`run_daily.py`):
+
+- **`Track.shares_images_with = "kids"`** — instead of generating its own
+  scene illustrations, this track reuses the kids track's already-generated
+  raw images from the same `run_daily.py` invocation (matched via
+  `Script.source_script_id`, which must equal the paired English script's
+  `id`), so a second language costs zero extra Cloudflare image-generation
+  quota. If the kids script hasn't been produced yet this run (e.g. it
+  already ran earlier today, or the queues are out of sync), this track
+  falls back to generating its own images independently instead of
+  stalling — using the same `visual` text, so results should still match
+  closely even without reuse.
+- When writing a paired Hindi script: every scene's `visual` field must be
+  **word-for-word identical** to the English script's (visuals only drive
+  the image model, not what's shown/spoken), while `narration`/
+  `on_screen_text`/`title`/`description`/`tags` are translated — natural
+  spoken Hindi (Devanagari), not a stiff word-for-word translation.
+
+`Track.burn_captions=False` on this track skips the ASS caption burn-in
 entirely (video + audio only) rather than rendering Devanagari text with a
 font that only has Latin glyphs wired up. `pipeline/thumbnail.py`'s
-`draw_text` flag mirrors this for the thumbnail's title overlay.
-
-### Hindi mythology uses Gemini's native TTS instead of edge-tts
-
-edge-tts only exposes two older Azure voices for Hindi
-(`hi-IN-MadhurNeural`/`hi-IN-SwaraNeural`), and neither sounded natural
-enough — tone/pitch/pacing tweaks (rate, pitch, silence-trimming between
-sentences, replacing sentence-ending punctuation with commas for shorter
-pauses) were all tested for real and none of them meaningfully helped; the
-plain original edge-tts voice was judged better than every tweak. The
-actual fix was a different TTS engine, not a different setting.
-
-`Track.tts_provider="gemini"` + `Track.tts_voices` (see
-`pipeline/tts.py`'s `synthesize_scene_gemini`/`synthesize_script_for_track`)
-uses Gemini's native TTS instead — genuinely more natural-sounding, and
-still free with the same `GEMINI_API_KEY` already used for story writing
-(no Google Cloud billing account, unlike the Cloud Text-to-Speech
-Chirp3-HD path that was considered and declined). One of three voices
-(Kore/Puck/Aoede) is picked deterministically per script
-(`zlib.crc32(script.id) % len(tts_voices)`) and reused for every scene in
-that script — consistent within an episode, varied across days.
-
-**A real free-tier trap worth knowing if you add more Gemini-TTS
-tracks/voices**: `gemini-2.5-flash-preview-tts` looks fine at first (a
-live 429 showed a 3 requests/minute limit, survivable with retries) but
-also has a much tighter **10 requests/DAY** cap per project — found only
-by actually exhausting it in production testing, not from any published
-number. That's under the ~8 calls one 8-scene video needs, with zero
-margin for retries or a second video. `gemini-3.1-flash-tts-preview` uses
-an independent quota bucket (different model name → different quotaId)
-and comfortably covers a full script (verified end-to-end: 8/8 scenes,
-~69s, zero retries needed) — that's the model actually configured
-(`GEMINI_TTS_MODEL`). Word-level caption timestamps aren't available from
-Gemini's TTS (only raw audio), which is fine here since this track already
-has `burn_captions=False` — this provider isn't wired up for any track
-that needs burned-in captions.
+`draw_text` flag mirrors this for the thumbnail's title overlay. Its
+voiceover uses edge-tts's `hi-IN-MadhurNeural` — same provider as every
+other track, no Gemini TTS involved (an earlier `tts_provider="gemini"`
+attempt was reverted after hitting a hard 10-requests/day free-tier cap;
+`tts_voices` is kept, dormant, in case a model with a workable quota shows
+up later).
 
 ### The hero saga track is a serialized, ongoing story
 
@@ -128,28 +132,38 @@ billing account required anywhere:
 
 ### Limits worth knowing, per tool
 
-- **Cloudflare Workers AI**: 10,000 Neurons/day. A normal day (4 tracks × 8
-  scenes) needs ~32 images, comfortably inside that — but heavy iteration/
-  testing burns through it fast (spot-checking prompts, re-running the
-  pipeline repeatedly), and there's no way to query a reset time from the
-  API. `pipeline/ai_image.py` distinguishes real rate-limiting (Cloudflare
-  error 429, retries with backoff) from daily quota exhaustion (error code
-  4006, fails fast — no point retrying). **Quota exhaustion aborts the
-  video rather than publishing it with placeholder gradients**: `run_daily.py`
-  generates each track's first scene as a real-work "probe" before doing
-  any TTS/assembly; if that hits quota exhaustion, the whole run stops
-  there (every other track would hit the same account-wide wall) and every
-  track's script stays queued, untouched, for a later run to retry — see
-  "Runs multiple times a day" below. A non-quota per-scene failure (network
-  blip, etc.) still falls back to the gradient as before; that's a one-off,
-  not a sign the rest of the video would fail too.
-- **YouTube Data API v3**: 10,000 quota units/day by default.
-  `videos.insert` costs 1,600 units; `thumbnails.set` costs 50. At one
-  upload per track per day, 4 tracks cost ~6,600 units/day — comfortable.
-  (Uploading a second long-form video per track, as earlier versions of
-  this pipeline did, pushed that to ~13,000/day and blew the cap — this is
-  why there's no long-form output anymore.) A quota increase can be
-  requested for free in Google Cloud Console but isn't instant.
+- **Cloudflare Workers AI**: 10,000 Neurons/day, account-wide (shared
+  across every track). A ~35-scene long-form kids story needs ~36 images
+  (one reference portrait + one per scene) at ~19 Neurons each ≈ 700
+  Neurons — and the Hindi variant reuses those same images at zero extra
+  cost (`Track.shares_images_with`), so pairing a second language doesn't
+  double this cost. Comfortably inside budget even with heavy iteration,
+  but there's no way to query a reset time from the API.
+  `pipeline/ai_image.py` distinguishes real rate-limiting (Cloudflare error
+  429, retries with backoff) from daily quota exhaustion (error code 4006,
+  fails fast — no point retrying). **Quota exhaustion aborts the video
+  rather than publishing it with placeholder gradients**: `run_daily.py`
+  generates a track's reference portrait as a real-work "probe" before
+  doing any TTS/assembly (skipped entirely for a track reusing a sibling's
+  images); if that hits quota exhaustion, the whole run stops there (every
+  other track would hit the same account-wide wall) and every track's
+  script stays queued, untouched, for a later run to retry — see "Runs
+  multiple times a day" below. A non-quota per-scene failure (network blip,
+  etc.) still falls back to the gradient as before; that's a one-off, not a
+  sign the rest of the video would fail too.
+- **YouTube Data API v3**: 10,000 quota units/day, **shared across every
+  track** — all of them authorize through the same Google Cloud OAuth
+  client/project (see "Multi-channel YouTube setup" below), so it's one
+  quota bucket total regardless of how many channels or tracks are active,
+  not one per channel. `videos.insert` costs 1,600 units;
+  `thumbnails.set` costs 50 — a track with `Track.produce_long_form=True`
+  (kids, kids-Hindi) uploads twice a day (Short + long-form) for ~3,300
+  units each; with only those two tracks currently live, that's ~6,600
+  units/day combined, comfortable inside the shared 10,000/day. Turning on
+  more tracks (teens/adults/women/hero_saga) adds to that same shared
+  total, so recheck the math before enabling several at once. A quota
+  increase can be requested for free in Google Cloud Console but isn't
+  instant.
 - **edge-tts**: not an official public API — it's a wrapper around
   Microsoft Edge's built-in read-aloud service, with no published rate
   limit and no SLA. It could change or stop working with zero notice since
@@ -193,42 +207,43 @@ write scripts by hand the same way as before — anything matching the schema
 in `pipeline/scripts.py` works regardless of how it was written.
 
 **Visuals are AI-generated per scene, not stock footage.** Each scene gets
-one AI illustration (`pipeline/ai_image.py`, FLUX.1-schnell via Cloudflare
-Workers AI) prompted from that scene's own content, animated with a Ken
-Burns zoom (`pipeline/textcard.py`), plus a numbered progress badge ("PART
-2/6 · ...") and big word-by-word "pop" captions with the current key term
-accent-colored. If the AI API call fails or `CF_ACCOUNT_ID`/`CF_API_TOKEN`
-aren't set, it falls back automatically to a generated brand gradient with
-drifting glow orbs — the pipeline never hard-fails on this stage.
-`pipeline/broll.py` (Pexels/Pixabay) is kept in the codebase, tested, but
-unused by default.
+one AI illustration (`pipeline/ai_image.py`, `flux-2-klein-4b` via
+Cloudflare Workers AI) prompted from that scene's own content, animated
+with a Ken Burns zoom (`pipeline/textcard.py`), plus big word-by-word "pop"
+captions with the current key term accent-colored, positioned in the lower
+third of the frame. If the AI API call fails or
+`CF_ACCOUNT_ID`/`CF_API_TOKEN` aren't set, it falls back automatically to a
+generated brand gradient with drifting glow orbs — the pipeline never
+hard-fails on this stage. `pipeline/broll.py` (Pexels/Pixabay) is kept in
+the codebase, tested, but unused by default.
 
 ### Keeping a character visually consistent across scenes
 
-Each scene's image is generated completely independently — Cloudflare's
-free `flux-1-schnell` has no image-to-image or reference-image input (see
-"Why Cloudflare" below), so there's no way to show it "the character from
-scene 1" directly. Two things approximate consistency instead, both wired
-into `pipeline/ai_image.py`/`run_daily.py`:
+`flux-2-klein-4b` (unlike the older `flux-1-schnell`) takes a real
+image-to-image reference (`input_image`), so scenes aren't generated in
+total isolation from each other. `run_daily.py` generates a dedicated,
+deliberately neutral "character sheet" portrait first — full body, clear
+side-facing pose, plain background, no action — and passes that SAME
+portrait as the reference for every scene in the story, including the
+first. This out-performed the earlier approach of reusing scene 1's own
+in-story action shot as the reference for later scenes: an action shot's
+own framing/pose/motion-blur quirks would carry into every later
+generation, where a clean neutral portrait doesn't. Two more things
+reinforce it:
 
 1. **`Script.character_reference`** — one detailed, reusable physical
    description of the protagonist (fur/hair color, clothing, distinguishing
-   features), written once per story by `pipeline/story_writer.py` and
-   prepended into every scene's image prompt. Per-scene `visual` fields
-   describe only the action/pose/setting, not the character's fixed
-   appearance, so the two don't conflict.
+   features), prepended into every scene's image prompt (portrait included).
+   Per-scene `visual` fields describe only the action/pose/setting, not the
+   character's fixed appearance, so the two don't conflict.
 2. **A fixed seed per story** — derived deterministically from the script's
-   `id` (`run_daily._story_seed`), passed to every scene's Cloudflare call
-   for that story, biasing the model toward a similar visual "random state"
-   across scenes.
+   `id` (`run_daily._story_seed`), passed to every Cloudflare call for that
+   story (portrait and every scene).
 
-This is prompt-engineering, not true reference conditioning, so it reduces
-cross-scene drift rather than eliminating it — but validated well in
-practice (same character recognizable — coloring, features, clothing —
-across differently-composed scenes). A paid model with real multi-reference
-support (Cloudflare's FLUX.2 [dev], priced per-tile-per-step rather than
-included in the free Neurons tier) would do better if that cost is ever
-worth taking on.
+Still prompt/reference-conditioning, not a guarantee, so it reduces
+cross-scene drift rather than eliminating it entirely — but validated well
+in practice across a 35-scene, ~8 minute story (same character recognizable
+scene to scene throughout).
 
 ### A real limitation worth knowing: FLUX-schnell sometimes renders garbled text
 
@@ -240,7 +255,7 @@ banner, or (worst offender) **institutional building exteriors/signage**
 
 1. Each `Scene` has an optional `visual` field — a concrete visual
    description used *only* for the image prompt, kept separate from the
-   narrated `narration` and the on-screen `on_screen_text` badge label.
+   narrated `narration` and the on-screen `on_screen_text` caption label.
    Writing `visual` as a close, concrete description (not a quoted
    slogan, not a full sentence, not a building exterior) is what makes
    this reliable — see the seed scripts in `scripts_queue/pending/` for

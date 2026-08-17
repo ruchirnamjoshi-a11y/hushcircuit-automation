@@ -130,19 +130,22 @@ def upload_daily_video(
     track: Track,
     privacy_status: str = "private",
     dry_run: bool = False,
+    is_short: bool = True,
 ) -> dict:
-    """Uploads the single vertical Short that carries the full story, to
-    `track`'s own YouTube channel. One upload per track per day — this
-    keeps YouTube Data API quota usage to ~1,650 units/track (video +
-    thumbnail), so 4 tracks/day fits well inside the default 10,000
-    units/day free quota per channel's project (and since each channel has
-    its own quota, multi-channel is if anything more comfortable than one
-    shared channel was)."""
+    """Uploads a vertical story video to `track`'s own YouTube channel.
+    is_short=True (default) tags/titles it for the Shorts shelf; pass False
+    for the full-length long-form cut of the same story (see
+    Track.produce_long_form) — no "#shorts"/"shorts" tag, since that would
+    make YouTube treat even a multi-minute upload as a Short. Tracks with
+    produce_long_form=True get two uploads/day (short + long), still well
+    inside the default 10,000 units/day free quota per channel's project."""
     token_path = youtube_token_path(track.key)
-    tags = [*script.tags, *track.extra_tags, "shorts"]
+    tags = [*script.tags, *track.extra_tags, *(["shorts"] if is_short else [])]
     title = script.title if len(script.title) <= 90 else script.title[:87] + "..."
+    if is_short:
+        title = f"{title} #shorts"
     video_result = upload_video(
-        video_path, f"{title} #shorts", script.description, tags, privacy_status, dry_run,
+        video_path, title, script.description, tags, privacy_status, dry_run,
         category_id=track.category_id, made_for_kids=track.made_for_kids, token_path=token_path,
     )
 

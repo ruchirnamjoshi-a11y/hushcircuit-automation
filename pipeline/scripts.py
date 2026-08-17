@@ -53,6 +53,13 @@ class Script:
     # pipeline.config.Track.serialized); 0 for standalone, non-serialized
     # stories.
     episode_number: int = 0
+    # For a language-variant track (see pipeline.config.Track.shares_images_
+    # with): the `id` of the primary-language script this is a translation
+    # of. Its `scenes[i].visual` must match the primary script's scene i
+    # visual word-for-word — run_daily.py reuses that script's already-
+    # generated images by this id instead of calling Cloudflare again.
+    # Blank for standalone scripts (the normal case).
+    source_script_id: str = ""
 
     @property
     def hook(self) -> Scene:
@@ -68,19 +75,6 @@ class Script:
 
     def total_duration(self) -> float:
         return sum(s.duration_hint for s in self.scenes)
-
-    def badge_text(self, scene_index: int) -> str:
-        """The on-screen progress badge for a scene, e.g. 'PART 2/6 · THE
-        OLD OWL' for a body scene, or just the scene's on_screen_text for
-        the hook/outro. Numbering reflects position in the full script, so
-        a Short that only includes a subset of scenes still shows correct
-        global numbers (e.g. 'PART 4/6') rather than renumbering 1..N."""
-        scene = self.scenes[scene_index]
-        if scene_index == 0 or scene_index == len(self.scenes) - 1:
-            return scene.on_screen_text
-        part_number = scene_index
-        total_parts = len(self.body_scenes)
-        return f"PART {part_number}/{total_parts} · {scene.on_screen_text}"
 
 
 class ScriptValidationError(ValueError):
@@ -118,6 +112,7 @@ def validate(data: dict) -> Script:
         scenes=scenes,
         character_reference=data.get("character_reference", ""),
         episode_number=int(data.get("episode_number", 0)),
+        source_script_id=data.get("source_script_id", ""),
     )
 
 
@@ -129,6 +124,7 @@ def to_dict(script: Script) -> dict:
         "tags": script.tags,
         "character_reference": script.character_reference,
         "episode_number": script.episode_number,
+        "source_script_id": script.source_script_id,
         "scenes": [
             {
                 "narration": s.narration,
