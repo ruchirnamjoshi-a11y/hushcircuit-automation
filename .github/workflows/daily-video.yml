@@ -52,17 +52,24 @@ jobs:
 
       - name: Ensure ffmpeg is installed
         run: |
-          # ubuntu-latest ships with ffmpeg preinstalled -- skip apt-get
-          # entirely in that (common) case. Doing the install unconditionally
-          # every run meant a slow/flaky apt mirror could stall this step
-          # for a very long time (observed: 50+ seconds per package,
-          # eventually exhausting the whole job timeout) for a package that
-          # was usually already there.
+          # Static binary download, not apt: this runner image turned out
+          # not to have ffmpeg preinstalled after all, and apt-get update
+          # itself (not even the install) hung indefinitely against a
+          # broken azure.archive.ubuntu.com mirror -- observed twice today,
+          # burning a full job timeout each time before ever reaching the
+          # actual pipeline. A static build from johnvansickle.com sidesteps
+          # Ubuntu's package mirrors entirely; --max-time bounds it so a
+          # bad download fails in under 2 minutes instead of hanging for
+          # hours again.
           if command -v ffmpeg >/dev/null 2>&1; then
             echo "ffmpeg already present: $(ffmpeg -version | head -1)"
           else
-            sudo apt-get update
-            sudo apt-get install -y ffmpeg
+            curl -sSL --max-time 120 --retry 2 \
+              https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz \
+              -o /tmp/ffmpeg.tar.xz
+            tar -xf /tmp/ffmpeg.tar.xz -C /tmp
+            sudo mv /tmp/ffmpeg-*-amd64-static/ffmpeg /tmp/ffmpeg-*-amd64-static/ffprobe /usr/local/bin/
+            ffmpeg -version | head -1
           fi
 
       - name: Install Python dependencies
