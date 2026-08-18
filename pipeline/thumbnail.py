@@ -1,14 +1,15 @@
-"""Stage 5: Pillow-generated thumbnail — the same brand gradient used for
-video backgrounds, with bold overlay text. No video-frame extraction needed,
-which keeps the thumbnail visually consistent with the video itself. Canva's
-API isn't scriptable on a free plan, so this is the default; README documents
-Canva as an optional manual override.
+"""Stage 5: Pillow-generated thumbnail — a real scene illustration (when one
+is available) with bold overlay text, falling back to the plain brand
+gradient only when no story artwork exists (e.g. every scene fell back to
+the gradient background). Canva's API isn't scriptable on a free plan, so
+this is the default; README documents Canva as an optional manual override.
 """
 
 from __future__ import annotations
 
 import textwrap
 from pathlib import Path
+from typing import Optional
 
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
@@ -27,20 +28,39 @@ def generate_thumbnail(
     out_path: Path,
     resolution: tuple[int, int] = THUMBNAIL_RESOLUTION,
     draw_text: bool = True,
+    source_image_path: Optional[Path] = None,
 ) -> Path:
     """draw_text=False skips the title overlay entirely (plain gradient
     thumbnail) — PIL's built-in default font only covers Latin script, so
     non-Latin-script tracks (e.g. Hindi) use this rather than rendering
-    missing-glyph boxes over the title."""
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    gradient_path = out_path.parent / f"_{out_path.stem}_gradient.png"
-    make_gradient_image(gradient_path, resolution)
+    missing-glyph boxes over the title.
 
-    base = ImageOps.fit(Image.open(gradient_path).convert("RGB"), resolution, Image.LANCZOS).convert("RGBA")
+    source_image_path: a real scene illustration to crop/fit as the
+    thumbnail background instead of the plain brand gradient — pass the
+    story's strongest non-fallback scene image (see run_daily.py). Falls
+    back to the gradient if omitted or the file can't be read (e.g. every
+    scene fell back to the gradient background itself)."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    base = None
+    if source_image_path is not None:
+        try:
+            base = ImageOps.fit(
+                Image.open(source_image_path).convert("RGB"), resolution, Image.LANCZOS
+            ).convert("RGBA")
+        except (OSError, ValueError):
+            base = None
+
+    gradient_path = None
+    if base is None:
+        gradient_path = out_path.parent / f"_{out_path.stem}_gradient.png"
+        make_gradient_image(gradient_path, resolution)
+        base = ImageOps.fit(Image.open(gradient_path).convert("RGB"), resolution, Image.LANCZOS).convert("RGBA")
 
     if not draw_text:
         base.convert("RGB").save(out_path, "JPEG", quality=92)
-        gradient_path.unlink(missing_ok=True)
+        if gradient_path is not None:
+            gradient_path.unlink(missing_ok=True)
         return out_path
 
     width, height = resolution
@@ -62,5 +82,6 @@ def generate_thumbnail(
         y += line_height
 
     composed.save(out_path, "JPEG", quality=92)
-    gradient_path.unlink(missing_ok=True)
+    if gradient_path is not None:
+        gradient_path.unlink(missing_ok=True)
     return out_path

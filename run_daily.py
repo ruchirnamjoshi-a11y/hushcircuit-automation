@@ -62,9 +62,10 @@ from pipeline.ai_image import (
     fit_scene_image,
     generate_scene_image_raw,
 )
-from pipeline.assemble import pick_music_track
+from pipeline.assemble import assemble_long_form, pick_music_track
 from pipeline.canvas_video import render_piece_video, synthesize_narration_lines
 from pipeline.config import (
+    LONG_FORM_RESOLUTION,
     MATH_PIECES_DIR,
     OUTPUT_DIR,
     QUEUE_PENDING_DIR,
@@ -114,14 +115,22 @@ def _generate_story_images(
     )
     reference_image_bytes = None if portrait_fallback else portrait_path.read_bytes()
 
-    raw_results = [
-        generate_scene_image_raw(
+    # Per-scene progress print: this loop is the slowest part of a run (one
+    # Cloudflare call + INTER_REQUEST_DELAY_SECONDS pacing per scene, times
+    # however many scenes the story has) and previously produced zero
+    # output until every scene finished — indistinguishable from a genuine
+    # hang in CI logs for a large story. A line per scene makes real, slow
+    # progress visible instead of going dark for the whole phase.
+    raw_results = []
+    total = len(script.scenes)
+    for i, scene in enumerate(script.scenes):
+        result = generate_scene_image_raw(
             scene, images_raw_dir / f"scene_{i:02d}.png", track,
             character_reference=script.character_reference, seed=seed,
             reference_image_bytes=reference_image_bytes,
         )
-        for i, scene in enumerate(script.scenes)
-    ]
+        raw_results.append(result)
+        print(f"[{track.key}] [1/4]   scene {i + 1}/{total} done")
     raw_images = [path for path, _ in raw_results]
     scene_used_fallback = [used_fallback for _, used_fallback in raw_results]
     return raw_images, scene_used_fallback
@@ -217,8 +226,18 @@ def run_track(
     ]
 
     music_path = pick_music_track()
+    # A real scene illustration (the first one that isn't a gradient
+    # fallback) reads far better as the thumbnail than the plain brand
+    # gradient — that was the only option before, regardless of how good
+    # the generated artwork was. Falls back to the gradient (source_image_
+    # path=None) only if every scene fell back too.
+    thumbnail_source = next(
+        (raw for raw, used_fallback in zip(raw_images, scene_used_fallback) if not used_fallback),
+        None,
+    )
     thumbnail_path = generate_thumbnail(
         script.title, run_dir / "thumbnail.jpg", draw_text=track.burn_captions,
+        source_image_path=thumbnail_source,
     )
 
     print(f"[{track.key}] [4/4] Assembling and uploading Short (dry_run={dry_run})...")
@@ -235,11 +254,21 @@ def run_track(
     print(short_upload)
 
     if track.produce_long_form:
+        # Long-form is a real 16:9 YouTube video, not a long vertical
+        # Short — needs its own fit pass at LONG_FORM_RESOLUTION (the Short's
+        # fit_images are cropped to 9:16 and would just be a tall, narrow
+        # crop of the scene, not a proper widescreen frame) and the
+        # dedicated 16:9 assembler rather than reusing assemble_short.
+        print(f"[{track.key}] Fitting images for long-form (16:9)...")
+        fit_images_long = [
+            fit_scene_image(raw, run_dir / "images_fit_long" / f"scene_{i:02d}.png", LONG_FORM_RESOLUTION)
+            for i, raw in enumerate(raw_images)
+        ]
         print(f"[{track.key}] Assembling and uploading long-form (dry_run={dry_run})...")
-        long_path = assemble_short(
-            script, scene_audios, fit_images,
+        long_path = assemble_long_form(
+            script, scene_audios, fit_images_long,
             work_dir=run_dir / "work_long", out_path=run_dir / "video_long.mp4",
-            music_path=music_path, max_seconds=None, scene_used_fallback=scene_used_fallback,
+            music_path=music_path, scene_used_fallback=scene_used_fallback,
             burn_captions=track.burn_captions,
         )
         long_upload = upload_daily_video(
