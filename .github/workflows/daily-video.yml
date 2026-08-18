@@ -34,12 +34,15 @@ jobs:
     # variant of the kids track, reusing kids' generated images at no
     # extra image-generation cost — see run_daily.py's docstring). This
     # needs headroom for that extra long-form assembly + upload work.
-    # 90 minutes, not 240: the job itself normally finishes in well under 30
-    # minutes even producing every track's Short + long-form. 240 was set as
-    # a generous ceiling but that meant a genuine hang (observed: a slow
-    # apt mirror stalling the ffmpeg install step) silently burned 4 hours
-    # of runner time before failing instead of surfacing the problem fast.
-    timeout-minutes: 90
+    # 150 minutes: 240 let a genuine hang (a slow apt mirror stalling the
+    # ffmpeg install step, since fixed below) silently burn 4 hours before
+    # failing. But 90 turned out too tight for real production once
+    # measured on GitHub's actual runners -- a full run (all tracks,
+    # Short + long-form) didn't finish a single track in 90 minutes even
+    # after the apt fix, so 90 was cutting into legitimate work, not just
+    # hangs. 150 gives real multi-track runs comfortable headroom while
+    # still failing far faster than 240 if something genuinely hangs again.
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
 
