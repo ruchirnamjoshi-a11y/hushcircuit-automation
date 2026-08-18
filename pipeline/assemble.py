@@ -33,6 +33,7 @@ def assemble_long_form(
     music_path: Optional[Path] = None,
     scene_used_fallback: Optional[list[bool]] = None,
     font_name: str = "Arial",
+    burn_captions: bool = True,
 ) -> Path:
     """scene_used_fallback (one bool per scene, from
     ai_image.generate_scene_image_raw) marks scenes that fell back to the
@@ -41,7 +42,11 @@ def assemble_long_form(
     than a real AI illustration or the original all-gradient design.
 
     font_name: pass a font with the right glyphs for non-Latin-script
-    narration (see build_ass_captions)."""
+    narration (see build_ass_captions).
+
+    burn_captions=False skips the word-pop captions entirely (video + audio
+    only) — for tracks without a matching caption font (e.g. non-Latin
+    scripts), matching pipeline.shorts.assemble_short's flag."""
     if len(scene_audios) != len(script.scenes):
         raise ValueError("scene_audios must cover every scene in the script")
     if len(scene_images) != len(script.scenes):
@@ -70,9 +75,11 @@ def assemble_long_form(
     combined_path = work_dir / "combined.mp4"
     concat_clips(clip_paths, combined_path)
 
-    caption_lines = group_words_into_captions(all_words, max_words=2)
-    ass_path = work_dir / "captions.ass"
-    build_ass_captions(caption_lines, ass_path, LONG_FORM_RESOLUTION, font_size=100, font_name=font_name)
+    ass_path = None
+    if burn_captions:
+        caption_lines = group_words_into_captions(all_words, max_words=2)
+        ass_path = work_dir / "captions.ass"
+        build_ass_captions(caption_lines, ass_path, LONG_FORM_RESOLUTION, font_size=100, font_name=font_name)
 
     mix_final(
         combined_path.resolve(),

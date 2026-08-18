@@ -21,6 +21,7 @@ def _patch_pipeline(**overrides):
         fit_scene_image=MagicMock(return_value=Path("/fake/fitted.png")),
         pick_music_track=MagicMock(return_value=None),
         assemble_short=MagicMock(return_value=Path("/fake/video.mp4")),
+        assemble_long_form=MagicMock(return_value=Path("/fake/video_long.mp4")),
         generate_thumbnail=MagicMock(return_value=Path("/fake/thumb.jpg")),
         upload_daily_video=MagicMock(return_value={"video": {}, "thumbnail": {}}),
         mark_used=MagicMock(),
@@ -349,12 +350,14 @@ def test_run_track_produce_long_form_uploads_both_short_and_long(tmp_path):
          patch.multiple("run_daily", **patches):
         run_daily.run_track(KIDS_TRACK, dry_run=False)  # produce_long_form=True
 
-    assemble_calls = patches["assemble_short"].call_args_list
+    # Short and long-form are two distinct assemblers now (9:16 vs the
+    # dedicated 16:9 long_form one) rather than assemble_short called twice
+    # with max_seconds toggled -- a long-form video used to come out as a
+    # long vertical Short instead of a real widescreen video.
+    assert len(patches["assemble_short"].call_args_list) == 1
+    assert len(patches["assemble_long_form"].call_args_list) == 1
     upload_calls = patches["upload_daily_video"].call_args_list
-    assert len(assemble_calls) == 2
     assert len(upload_calls) == 2
-    max_seconds_values = [c.kwargs.get("max_seconds", "default") for c in assemble_calls]
-    assert None in max_seconds_values  # the untrimmed long-form pass
     is_short_values = sorted(c.kwargs["is_short"] for c in upload_calls)
     assert is_short_values == [False, True]
 
