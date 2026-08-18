@@ -34,7 +34,12 @@ jobs:
     # variant of the kids track, reusing kids' generated images at no
     # extra image-generation cost — see run_daily.py's docstring). This
     # needs headroom for that extra long-form assembly + upload work.
-    timeout-minutes: 240
+    # 90 minutes, not 240: the job itself normally finishes in well under 30
+    # minutes even producing every track's Short + long-form. 240 was set as
+    # a generous ceiling but that meant a genuine hang (observed: a slow
+    # apt mirror stalling the ffmpeg install step) silently burned 4 hours
+    # of runner time before failing instead of surfacing the problem fast.
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -44,8 +49,18 @@ jobs:
 
       - name: Ensure ffmpeg is installed
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          # ubuntu-latest ships with ffmpeg preinstalled -- skip apt-get
+          # entirely in that (common) case. Doing the install unconditionally
+          # every run meant a slow/flaky apt mirror could stall this step
+          # for a very long time (observed: 50+ seconds per package,
+          # eventually exhausting the whole job timeout) for a package that
+          # was usually already there.
+          if command -v ffmpeg >/dev/null 2>&1; then
+            echo "ffmpeg already present: $(ffmpeg -version | head -1)"
+          else
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
@@ -111,5 +126,11 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add scripts_queue/
           git diff --cached --quiet || git commit -m "chore: consume queued scripts / update daily state [skip ci]"
+          # --rebase: this step's checkout can be hours old by the time a
+          # long production run finishes, so master has often moved on by
+          # push time (observed: a real push rejected as non-fast-forward
+          # because commits landed on master mid-run) -- rebase the local
+          # state-tracking commit on top instead of failing outright.
+          git pull --rebase origin master
           git push
 
