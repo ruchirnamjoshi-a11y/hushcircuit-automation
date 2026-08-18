@@ -15,7 +15,11 @@ from pipeline.ffmpeg_utils import FPS, run_ffmpeg
 
 GRADIENT_TOP = (12, 20, 48)      # deep navy
 GRADIENT_BOTTOM = (35, 16, 64)   # deep violet
-OVERSCAN = 1.15  # render the gradient larger than target so zoompan has room to move
+OVERSCAN = 4.0  # supersample factor feeding zoompan -- see _zoompan_clip's comment;
+# this is not about "room to move," it's about giving zoompan's internal
+# integer-pixel crop-position rounding enough sub-pixel headroom that a
+# 1px snap in the supersampled source is well under 1px in the final
+# output.
 ZOOM_PER_FRAME = 0.0006
 MAX_ZOOM = 1.12
 
@@ -85,21 +89,23 @@ def _zoompan_clip(
     zoom_expr = f"min(zoom+{ZOOM_PER_FRAME},{MAX_ZOOM})"
 
     inputs = ["-loop", "1", "-i", str(image_path)]
-    # zoompan needs headroom above the exact output resolution to avoid a
-    # well-known jitter artifact: cropping at the exact target size leaves
-    # zero sub-pixel precision, so tiny per-frame zoom increments round to
-    # different integer pixel offsets frame to frame and read as a shaking/
-    # vibrating image. The gradient background already got this (rendered
-    # at OVERSCAN size upstream); AI scene images didn't — this scale stage
-    # gives both the same headroom (a near no-op for the already-overscanned
-    # gradient, since it's already at ~this size).
+    # The real shake mechanism (confirmed via frame-by-frame ORB motion
+    # analysis, not just eyeballing): ffmpeg's zoompan filter computes its
+    # crop x/y from floating-point expressions but the actual crop position
+    # is an integer pixel offset, re-derived independently every frame. At
+    # low supersampling, tiny per-frame zoom deltas (ZOOM_PER_FRAME) round
+    # to the *same* integer offset most frames, then jump 1px whenever the
+    # fractional part crosses a boundary — in x and y independently, so it
+    # reads as random 1-2px trembling, not smooth motion. Measured on real
+    # output: ~1px mean / ~2.4px peak frame-to-frame jitter at OVERSCAN=1.15
+    # (a static, non-zoomed control video measured exactly 0px with the same
+    # method, ruling out encoder/measurement noise) vs. ~0.01px mean / 0.17px
+    # peak at OVERSCAN=4.0 — i.e. supersampling amount, not scaler choice,
+    # is what actually governs this. flags=lanczos below is still correct
+    # (it fixes a separate, real resampling-quality issue) but does nothing
+    # for this rounding jitter on its own.
     overscan_w, overscan_h = int(width * OVERSCAN), int(height * OVERSCAN)
     stages = [
-        # flags=lanczos: the default (bilinear) scaler was the other half of
-        # the shake — confirmed via a controlled elimination test (constant
-        # zoom = no shake; zoom via zoompan = shake; overscan alone = still
-        # shake; lanczos scaling here + a higher-quality encode below =
-        # confirmed fixed, no shake, zoom motion intact).
         f"[0:v]scale={overscan_w}:{overscan_h}:flags=lanczos[src]",
         f"[src]zoompan=z='{zoom_expr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
         f"d={frames}:s={width}x{height}:fps={FPS}[bg]"
