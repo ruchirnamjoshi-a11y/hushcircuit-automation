@@ -51,7 +51,12 @@ def build_scene_clip(
         "-filter_complex", f"[0:v]{scale_crop}",
         "-map", "[v]", "-map", "1:a",
         "-t", f"{duration:.3f}",
-        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+        # Matches pipeline.textcard._zoompan_clip's quality bar (slow/crf16,
+        # not veryfast/crf20) -- this re-encode runs on every scene clip, so
+        # using the old low-quality settings here was quietly re-compressing
+        # (and visibly degrading) the zoompan stage's fixed output right
+        # back down before it ever reached concat/final mux.
+        "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k", "-ar", str(AUDIO_RATE), "-ac", "2",
         str(out_path),
     ])
@@ -237,7 +242,10 @@ def mix_final(
         args += ["-filter_complex", ";".join(filters)]
     args += [
         "-map", video_out, "-map", audio_out,
-        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+        # See build_scene_clip's comment -- this is the final output encode,
+        # so re-compressing at veryfast/crf20 here undid the zoompan fix's
+        # quality all over again on every single delivered video.
+        "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k",
         str(out_path.resolve()),
     ]
