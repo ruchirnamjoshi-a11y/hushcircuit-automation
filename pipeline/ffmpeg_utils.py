@@ -41,8 +41,15 @@ def build_scene_clip(
     width, height = resolution
     out_path.parent.mkdir(parents=True, exist_ok=True)
     duration = probe_duration(audio_path)
+    # flags=lanczos: this scale is a geometric no-op for the common case
+    # (input already at exactly `resolution`, from pipeline.textcard's
+    # zoompan output), but the default scaler (bilinear) still re-resamples
+    # every pixel on a no-op scale -- the same shake-causing mechanism
+    # already diagnosed and fixed in _zoompan_clip, just never applied to
+    # this second scale pass. Matters for real (non-pre-sized) b-roll input
+    # too, where the resize is a genuine resize, not just a no-op.
     scale_crop = (
-        f"scale={width}:{height}:force_original_aspect_ratio=increase,"
+        f"scale={width}:{height}:force_original_aspect_ratio=increase:flags=lanczos,"
         f"crop={width}:{height},fps={FPS},setsar=1[v]"
     )
     run_ffmpeg([
