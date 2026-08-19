@@ -344,6 +344,9 @@ def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optio
     quota_exhausted = False
     produced_images: ProducedImages = {}
     for track in tracks:
+        if track.paused:
+            print(f"[{track.key}] Paused — skipping.")
+            continue
         if quota_exhausted:
             print(f"[{track.key}] Skipping — Cloudflare image quota already confirmed exhausted "
                   f"this run. Will retry on the next scheduled run.")
