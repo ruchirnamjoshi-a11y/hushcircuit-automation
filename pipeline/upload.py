@@ -110,7 +110,13 @@ def upload_video(
     request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
     response = None
     while response is None:
-        _, response = request.next_chunk()
+        # num_retries: googleapiclient's own built-in exponential-backoff
+        # retry for exactly this failure class -- transient 5xx/connection
+        # errors from YouTube's own servers. Without it, a single one-off
+        # "Internal error encountered" (real, observed) kills the whole
+        # upload outright with no retry at all, even though it's the kind
+        # of error that clears up on its own within seconds.
+        _, response = request.next_chunk(num_retries=5)
     return {"dry_run": False, "video_id": response["id"]}
 
 
@@ -120,7 +126,7 @@ def set_thumbnail(
     if dry_run:
         return {"dry_run": True, "video_id": video_id, "thumbnail_path": str(thumbnail_path)}
     youtube = get_service(token_path)
-    youtube.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(str(thumbnail_path))).execute()
+    youtube.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(str(thumbnail_path))).execute(num_retries=5)
     return {"dry_run": False, "video_id": video_id}
 
 
