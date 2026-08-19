@@ -1,0 +1,117 @@
+<title>Circumference of a Circle</title>
+<style>
+  :root { --board: #24303d; --board-2: #1c2833; --chalk: #ede9df; --chalk-dim: rgba(237,233,223,0.55); --gold: #d9a441; --coral: #e2725b; --blue: #7fa6c9; }
+  * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
+  #stage { position: relative; width: 100%; height: 100vh; min-height: 560px; overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--chalk); }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .kicker { position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim); }
+  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
+  .replay:hover { opacity: 1; }
+</style>
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker" id="kicker">what pi really means</div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const kickerEl = document.getElementById('kicker');
+  const replayBtn = document.getElementById('replayBtn');
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // { kicker, hook, radius, footnote } -- circle of given radius; C = 2*pi*r
+  // Narration (4 lines): 0=hook, 1=intro circle+radius, 2=explain pi/formula, 3=reveal.
+  const P = window.__PARAMS__ && window.__PARAMS__.radius ? window.__PARAMS__ : {
+    kicker: 'what pi really means', hook: 'Circumference of a circle?',
+    radius: 5, footnote: 'pi (≈3.14) is just how many "radiuses" wrap around, doubled',
+  };
+  kickerEl.textContent = P.kicker || 'what pi really means';
+  const PI = Math.PI;
+  const circumference = (2 * PI * P.radius).toFixed(1);
+
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0, end: 4 }, { start: 4, end: 9 }, { start: 9, end: 16 }, { start: 16, end: 22 },
+  ];
+  const T = { introStart: LT[1].start, introEnd: LT[1].end, fEnd: LT[2].end, finalStart: LT[3].start, total: LT[3].end };
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)'; ctx.lineWidth = 1;
+    const grid = 34;
+    for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const hookAlpha = t < T.introStart ? 1 : CP.clamp01(1 - (t - T.introStart) / 0.8);
+    if (hookAlpha > 0.01) {
+      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.font = `600 ${Math.min(W * 0.062, 40)}px ${MONO}`;
+      ctx.fillText(P.hook, W / 2, H * 0.14);
+      ctx.restore();
+    }
+
+    const cx = W / 2, cy = H * 0.40, r = Math.min(W, H) * 0.20;
+    const introP = CP.clamp01((t - T.introStart) / (T.introEnd - T.introStart));
+    if (t >= T.introStart) {
+      const sweep = CP.easeOutCubic(Math.min(1, introP * 1.3)) * Math.PI * 2;
+      ctx.save();
+      ctx.strokeStyle = '#7fa6c9'; ctx.lineWidth = 4;
+      ctx.beginPath(); ctx.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + sweep); ctx.stroke();
+      ctx.restore();
+      ctx.save();
+      ctx.strokeStyle = '#d9a441'; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx, cy - r); ctx.stroke();
+      ctx.fillStyle = '#d9a441'; ctx.textAlign = 'center'; ctx.font = `500 ${Math.min(W * 0.03, 20)}px ${MONO}`;
+      ctx.fillText(`r = ${P.radius}`, cx + 34, cy - r / 2);
+      ctx.restore();
+    }
+
+    const fP = CP.clamp01((t - T.introEnd) / (T.fEnd - T.introEnd));
+    if (t >= T.introEnd) {
+      ctx.save();
+      ctx.globalAlpha = CP.easeOutCubic(Math.min(1, fP * 1.3));
+      ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center';
+      ctx.font = `500 ${Math.min(W * 0.045, 30)}px ${MONO}`;
+      ctx.fillText('C = 2 × π × r', W / 2, H * 0.66);
+      ctx.restore();
+    }
+
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+    if (t >= T.finalStart) {
+      const fEase = CP.easeOutCubic(finP);
+      const y = H * 0.78;
+      ctx.save();
+      ctx.globalAlpha = fEase; ctx.textAlign = 'center'; ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
+      ctx.fillText(`2 × 3.14 × ${P.radius} =`, W / 2, y);
+      const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
+      ctx.save(); ctx.translate(W / 2, y + 54); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.1, 56)}px ${MONO}`;
+      ctx.fillText(circumference, 0, 0);
+      ctx.restore(); ctx.restore();
+      if (P.footnote && finP > 0.75) {
+        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8; ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`; ctx.textAlign = 'center';
+        ctx.fillText(P.footnote, W / 2, y + 96);
+        ctx.restore();
+      }
+    }
+  }
+  const timeline = CP.createTimeline({ draw, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

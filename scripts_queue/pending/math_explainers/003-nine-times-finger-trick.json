@@ -1,0 +1,15 @@
+{
+  "id": "nine-times-finger-trick",
+  "title": "The 9 Times Table Trick Using Just Your Fingers",
+  "description": "A simple, beginner-friendly trick for multiplying by 9 — no memorizing required, just your ten fingers. Great for anyone starting to learn multiplication tables.",
+  "tags": ["math trick", "multiplication table", "learn math", "basic math", "math for beginners", "times table"],
+  "piece": "nine_times_trick",
+  "narration_lines": [
+    "Multiplying by 9? There's a trick for that, using just your fingers.",
+    "Hold up both hands. Ten fingers, numbered 1 to 10.",
+    "Let's try 9 times 4. Fold down finger number 4.",
+    "Count the fingers before the fold, and the fingers after it.",
+    "Put those two counts side by side. 3 and 6 makes 36.",
+    "And that's it. 9 times 4 really is 36. Try it with any number from 1 to 10."
+  ]
+}

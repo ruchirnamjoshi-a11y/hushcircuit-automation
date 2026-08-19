@@ -1,0 +1,37 @@
+{
+  "id": "multiply-by-11-trick",
+  "title": "The Fast Trick to Multiply Any Number by 11",
+  "description": "A simple mental-math shortcut for multiplying two-digit numbers by 11 — add the digits, slot the sum in the middle. Great for anyone learning basic multiplication tricks.",
+  "tags": [
+    "math trick",
+    "multiplication",
+    "mental math",
+    "learn math",
+    "basic math",
+    "times table"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Multiplying by 11? Here's a fast trick.",
+    "First, add the two digits together. 5 plus 4 is 9.",
+    "Now slot that 9 right between the original digits.",
+    "5, 9, 4. So 54 times 11 is 594."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "54 × 11 = ?",
+    "steps": [
+      {
+        "label": "Add the two digits together",
+        "expr": "5 + 4 = 9"
+      },
+      {
+        "label": "Slot the sum between them",
+        "expr": "5 9 4"
+      }
+    ],
+    "answerLabel": "54 × 11 =",
+    "answer": "594",
+    "footnote": "works for any 2-digit number under 91"
+  }
+}

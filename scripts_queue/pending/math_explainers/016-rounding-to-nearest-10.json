@@ -1,0 +1,37 @@
+{
+  "id": "rounding-to-nearest-10",
+  "title": "How to Round Any Number to the Nearest 10",
+  "description": "A number-line trick for rounding numbers like 47 to the nearest 10, built for absolute beginners.",
+  "tags": [
+    "rounding",
+    "number sense",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "number_line",
+  "narration_lines": [
+    "Rounding a number to the nearest 10 is easier with a number line.",
+    "Here's 47, sitting between 40 and 50.",
+    "It's much closer to 50 than to 40.",
+    "So 47 rounds up to 50."
+  ],
+  "params": {
+    "kicker": "on the number line",
+    "hook": "Round 47 to the nearest 10",
+    "min": 0,
+    "max": 100,
+    "tick": 10,
+    "jumps": [
+      47,
+      50
+    ],
+    "highlightValues": [
+      40,
+      50
+    ],
+    "revealLabel": "47 rounds to",
+    "revealValue": "50",
+    "footnote": "closer to 50 than to 40"
+  }
+}

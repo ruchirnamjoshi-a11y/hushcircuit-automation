@@ -29,6 +29,12 @@ class MathScript:
     piece: str  # math_pieces/<piece>/piece.html must exist
     narration_lines: list[str]
     tags: list[str] = field(default_factory=list)
+    # Arbitrary JSON-serializable data injected into the piece's page as
+    # window.__PARAMS__ (see pipeline.canvas_video) — this is what lets one
+    # generic template (e.g. "a chain of transformation steps") serve many
+    # different topics/scripts without a new piece.html per topic. A piece
+    # that doesn't read window.__PARAMS__ just ignores this entirely.
+    params: dict = field(default_factory=dict)
 
 
 class MathScriptValidationError(ValueError):
@@ -56,6 +62,7 @@ def validate(data: dict) -> MathScript:
         tags=list(data.get("tags", [])),
         piece=piece,
         narration_lines=list(narration_lines),
+        params=dict(data.get("params", {})),
     )
 
 

@@ -1,0 +1,25 @@
+{
+  "id": "circumference-of-a-circle",
+  "title": "What Circumference Actually Measures",
+  "description": "A simple visual explanation of pi and the circumference formula, using a circle with radius 5.",
+  "tags": [
+    "geometry",
+    "circles",
+    "pi",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "circle_circumference",
+  "narration_lines": [
+    "What does circumference actually measure?",
+    "Here's a circle with a radius of 5.",
+    "The distance around it is always 2 times pi times the radius.",
+    "2 times 3.14 times 5 is 31.4. That's the circumference."
+  ],
+  "params": {
+    "kicker": "what pi really means",
+    "hook": "Circumference of a circle, radius 5?",
+    "radius": 5,
+    "footnote": "pi (≈3.14) is just how many 'radiuses' wrap around, doubled"
+  }
+}

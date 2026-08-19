@@ -1,0 +1,29 @@
+{
+  "id": "area-of-a-rectangle",
+  "title": "Why Area Is Just Rows Times Columns",
+  "description": "A grid-counting visual that shows where the 'length times width' area formula actually comes from.",
+  "tags": [
+    "geometry",
+    "area",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "grid_area",
+  "narration_lines": [
+    "How do you find the area of a rectangle?",
+    "Here's a rectangle, 6 across and 4 down.",
+    "Count every square inside it, one at a time.",
+    "24 squares in total. Rows times columns: 4 times 6 is 24."
+  ],
+  "params": {
+    "kicker": "area of a rectangle",
+    "hook": "Area of a 6 × 4 rectangle?",
+    "rows": 4,
+    "cols": 6,
+    "mode": "area",
+    "revealLabel": "rows × columns =",
+    "revealValue": "24",
+    "footnote": "count the rows, count the columns, multiply"
+  }
+}

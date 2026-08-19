@@ -1,0 +1,36 @@
+{
+  "id": "multiply-by-4-trick",
+  "title": "The Fast Trick to Multiply Any Number by 4",
+  "description": "Double it, then double it again — the simplest way to multiply by 4 in your head.",
+  "tags": [
+    "math trick",
+    "multiplication",
+    "mental math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Multiplying by 4? Just double it twice.",
+    "First, double 23. That's 46.",
+    "Now double 46 again. That's 92.",
+    "So 23 times 4 is 92. Double, then double again."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "23 × 4 = ?",
+    "steps": [
+      {
+        "label": "Double it once",
+        "expr": "23 × 2 = 46"
+      },
+      {
+        "label": "Double it again",
+        "expr": "46 × 2 = 92"
+      }
+    ],
+    "answerLabel": "23 × 4 =",
+    "answer": "92",
+    "footnote": "double, then double again"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "what-a-fraction-means",
+  "title": "What a Fraction Actually Means",
+  "description": "A visual, beginner-friendly explanation of what the top and bottom numbers in a fraction actually represent.",
+  "tags": [
+    "fractions",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "parts_of_whole",
+  "narration_lines": [
+    "What does a fraction like 3/4 actually mean?",
+    "Split a whole into 4 equal parts — that's the bottom number.",
+    "Now fill in 3 of those parts — that's the top number.",
+    "3 out of 4 parts filled. That's 75 percent of the whole."
+  ],
+  "params": {
+    "kicker": "parts of a whole",
+    "hook": "What does 3/4 mean?",
+    "total": 4,
+    "filled": 3,
+    "label": "3/4",
+    "revealLabel": "as a percent:",
+    "revealValue": "75%",
+    "footnote": "the bottom number is how many parts, the top is how many you have"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "multiply-by-25-trick",
+  "title": "The Fast Trick to Multiply Any Number by 25",
+  "description": "Divide by 4, then multiply by 100 — a shortcut that makes multiplying by 25 almost instant.",
+  "tags": [
+    "math trick",
+    "multiplication",
+    "mental math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Multiplying by 25? Here's a shortcut.",
+    "Divide by 4 first. 48 divided by 4 is 12.",
+    "Then multiply by 100. 12 times 100 is 1200.",
+    "So 48 times 25 is 1200. Divide by 4, then times 100."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "48 × 25 = ?",
+    "steps": [
+      {
+        "label": "Divide by 4 first",
+        "expr": "48 ÷ 4 = 12"
+      },
+      {
+        "label": "Multiply by 100",
+        "expr": "12 × 100 = 1200"
+      }
+    ],
+    "answerLabel": "48 × 25 =",
+    "answer": "1200",
+    "footnote": "÷4 then ×100 — because 25 is a quarter of 100"
+  }
+}

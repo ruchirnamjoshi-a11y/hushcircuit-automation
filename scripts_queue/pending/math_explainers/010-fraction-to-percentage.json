@@ -1,0 +1,28 @@
+{
+  "id": "fraction-to-percentage",
+  "title": "How to Turn Any Fraction Into a Percentage",
+  "description": "A simple visual trick for converting fractions like 1/5 into percentages, built for absolute beginners.",
+  "tags": [
+    "fractions",
+    "percentages",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "parts_of_whole",
+  "narration_lines": [
+    "How do you turn a fraction into a percent?",
+    "Split the whole into 5 equal parts.",
+    "Just 1 of those 5 parts is filled in.",
+    "That's 20 percent. Divide 100 by the bottom number."
+  ],
+  "params": {
+    "kicker": "parts of a whole",
+    "hook": "Turn 1/5 into a percent",
+    "total": 5,
+    "filled": 1,
+    "label": "1/5",
+    "revealLabel": "as a percent:",
+    "revealValue": "20%",
+    "footnote": "divide 100 by the bottom number"
+  }
+}

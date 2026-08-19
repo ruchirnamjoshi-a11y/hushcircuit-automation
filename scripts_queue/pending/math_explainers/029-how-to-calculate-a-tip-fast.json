@@ -1,0 +1,36 @@
+{
+  "id": "how-to-calculate-a-tip-fast",
+  "title": "How to Calculate a Tip Without a Calculator",
+  "description": "The find-10%-then-double shortcut for calculating a 20% tip fast, in your head.",
+  "tags": [
+    "percentages",
+    "everyday math",
+    "mental math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Calculating a tip fast, without a calculator.",
+    "First find 10% by moving the decimal point. 10% of 45 dollars is 4 dollars 50.",
+    "For a 20% tip, just double that.",
+    "4 fifty times 2 is 9 dollars. That's your 20% tip."
+  ],
+  "params": {
+    "kicker": "everyday math",
+    "hook": "20% tip on $45?",
+    "steps": [
+      {
+        "label": "Find 10% first — move the decimal",
+        "expr": "$45 → $4.50"
+      },
+      {
+        "label": "Double it for 20%",
+        "expr": "$4.50 × 2 = $9"
+      }
+    ],
+    "answerLabel": "20% tip on $45 =",
+    "answer": "$9",
+    "footnote": "10% then double is the fastest way to tip"
+  }
+}

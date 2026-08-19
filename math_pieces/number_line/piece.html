@@ -1,0 +1,224 @@
+<title>Number Line</title>
+<style>
+  :root {
+    --board: #24303d;
+    --board-2: #1c2833;
+    --chalk: #ede9df;
+    --chalk-dim: rgba(237,233,223,0.55);
+    --gold: #d9a441;
+    --coral: #e2725b;
+    --blue: #7fa6c9;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  #stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--chalk);
+  }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .kicker {
+    position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
+  }
+  .replay {
+    position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--chalk); background: transparent;
+    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    cursor: pointer; opacity: 0.7;
+  }
+  .replay:hover { opacity: 1; }
+  .replay:focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker" id="kicker">on the number line</div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const kickerEl = document.getElementById('kicker');
+  const replayBtn = document.getElementById('replayBtn');
+
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // ---- generic contract ----
+  // { kicker, hook, min, max, tick,       -- line range + tick spacing
+  //   jumps: [n0, n1, n2, ...],           -- marker visits these in order
+  //   highlightValues: [n, ...],          -- optional: ticks drawn in gold
+  //   revealLabel, revealValue, footnote }
+  // Narration-line contract (fixed 4 lines): 0=hook, 1=intro the line/start,
+  // 2=the jump(s), 3=final reveal.
+  const P = window.__PARAMS__ && window.__PARAMS__.jumps ? window.__PARAMS__ : {
+    kicker: 'on the number line', hook: 'Round 47 to the nearest 10',
+    min: 0, max: 100, tick: 10, jumps: [47, 50],
+    revealLabel: '47 rounds to', revealValue: '50',
+    footnote: 'closer to 50 than to 40',
+  };
+  kickerEl.textContent = P.kicker || 'on the number line';
+
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0, end: 4 }, { start: 4, end: 9 }, { start: 9, end: 15 }, { start: 15, end: 21 },
+  ];
+  const T = {
+    introStart: LT[1].start, introEnd: LT[1].end,
+    jumpStart: LT[2].start, jumpEnd: LT[2].end,
+    finalStart: LT[3].start,
+    total: LT[3].end,
+  };
+
+  function lineGeom() {
+    const W = getW(), H = getH();
+    return { left: W * 0.10, right: W * 0.90, y: H * 0.46, width: W * 0.80 };
+  }
+  function valueToX(v) {
+    const g = lineGeom();
+    return g.left + ((v - P.min) / (P.max - P.min)) * g.width;
+  }
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.lineWidth = 1;
+    const grid = 34;
+    for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const hookAlpha = t < T.introStart ? 1 : CP.clamp01(1 - (t - T.introStart) / 0.8);
+    if (hookAlpha > 0.01) {
+      ctx.save();
+      ctx.globalAlpha = hookAlpha;
+      ctx.fillStyle = '#ede9df';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = `600 ${Math.min(W * 0.062, 40)}px ${MONO}`;
+      ctx.fillText(P.hook, W / 2, H * 0.18);
+      ctx.restore();
+    }
+
+    const introP = CP.clamp01((t - T.introStart) / (T.introEnd - T.introStart));
+    if (t >= T.introStart) {
+      const g = lineGeom();
+      const lineReveal = CP.easeOutCubic(Math.min(1, introP * 1.4));
+      ctx.save();
+      ctx.globalAlpha = lineReveal;
+      ctx.strokeStyle = 'rgba(237,233,223,0.55)';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(g.left, g.y);
+      ctx.lineTo(g.left + (g.right - g.left) * lineReveal, g.y);
+      ctx.stroke();
+      ctx.restore();
+
+      const highlightSet = new Set(P.highlightValues || []);
+      for (let v = P.min; v <= P.max; v += P.tick) {
+        const x = valueToX(v);
+        if (x > g.left + (g.right - g.left) * lineReveal + 2) continue;
+        const isHi = highlightSet.has(v);
+        ctx.save();
+        ctx.strokeStyle = isHi ? '#d9a441' : 'rgba(237,233,223,0.5)';
+        ctx.lineWidth = isHi ? 3 : 2;
+        ctx.beginPath();
+        ctx.moveTo(x, g.y - 12);
+        ctx.lineTo(x, g.y + 12);
+        ctx.stroke();
+        ctx.fillStyle = isHi ? '#d9a441' : 'rgba(237,233,223,0.75)';
+        ctx.font = `${isHi ? 600 : 400} ${Math.min(W * 0.026, 16)}px ${MONO}`;
+        ctx.textAlign = 'center';
+        ctx.fillText(String(v), x, g.y + 34);
+        ctx.restore();
+      }
+    }
+
+    if (t >= T.jumpStart && P.jumps && P.jumps.length) {
+      const jumps = P.jumps;
+      const segCount = jumps.length - 1;
+      const jp = CP.clamp01((t - T.jumpStart) / (T.jumpEnd - T.jumpStart));
+      const posInSeq = jp * segCount;
+      const segIdx = Math.min(segCount - 1, Math.floor(posInSeq));
+      const segT = segCount > 0 ? CP.easeInOutSine(CP.clamp01(posInSeq - segIdx)) : 1;
+      const fromV = jumps[Math.max(0, segIdx)];
+      const toV = jumps[Math.max(0, segIdx) + 1] != null ? jumps[Math.max(0, segIdx) + 1] : fromV;
+      const curV = fromV + (toV - fromV) * segT;
+      const g = lineGeom();
+      const x = valueToX(curV);
+
+      // trail of visited jump points
+      ctx.save();
+      for (let i = 0; i <= segIdx; i++) {
+        const vx = valueToX(jumps[i]);
+        ctx.fillStyle = 'rgba(226,114,91,0.55)';
+        ctx.beginPath();
+        ctx.arc(vx, g.y, 5, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+
+      // marker (arc hop above the line)
+      const hopH = 34 * Math.sin(Math.PI * (segCount > 0 ? CP.clamp01(posInSeq - segIdx) : 1));
+      ctx.save();
+      ctx.fillStyle = '#e2725b';
+      ctx.beginPath();
+      ctx.arc(x, g.y - 16 - hopH, 10, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+    if (t >= T.finalStart && P.revealValue) {
+      const fEase = CP.easeOutCubic(finP);
+      const y = H * 0.68;
+      ctx.save();
+      ctx.globalAlpha = fEase;
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
+      ctx.fillText(P.revealLabel || '', W / 2, y);
+      const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
+      ctx.save();
+      ctx.translate(W / 2, y + 54);
+      ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop);
+      ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.11, 60)}px ${MONO}`;
+      ctx.fillText(P.revealValue, 0, 0);
+      ctx.restore();
+      ctx.restore();
+
+      if (P.footnote && finP > 0.75) {
+        ctx.save();
+        ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
+        ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
+        ctx.textAlign = 'center';
+        ctx.fillText(P.footnote, W / 2, y + 92);
+        ctx.restore();
+      }
+    }
+  }
+
+  const timeline = CP.createTimeline({ draw, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

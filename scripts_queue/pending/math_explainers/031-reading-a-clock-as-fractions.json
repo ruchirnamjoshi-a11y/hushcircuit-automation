@@ -1,0 +1,28 @@
+{
+  "id": "reading-a-clock-as-fractions",
+  "title": "Reading a Clock Using Fractions",
+  "description": "What 'quarter past' actually means — a clock-face visual connecting time-telling to fractions.",
+  "tags": [
+    "telling time",
+    "fractions",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "clock_face",
+  "narration_lines": [
+    "What does 'quarter past' actually mean on a clock?",
+    "Here's a clock showing 3:15, the hands pointing at 3 and 15 minutes.",
+    "15 minutes is 15 out of 60 total minutes in an hour.",
+    "That's exactly 1 quarter. Quarter past means a quarter of the way around."
+  ],
+  "params": {
+    "kicker": "time as fractions",
+    "hook": "What does quarter past mean?",
+    "hour": 3,
+    "minute": 15,
+    "fractionLabel": "15 out of 60 minutes",
+    "revealValue": "1/4",
+    "footnote": "quarter past = 1/4 of the way around the clock"
+  }
+}

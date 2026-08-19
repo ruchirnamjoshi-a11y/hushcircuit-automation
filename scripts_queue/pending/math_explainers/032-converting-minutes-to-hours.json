@@ -1,0 +1,36 @@
+{
+  "id": "converting-minutes-to-hours",
+  "title": "How to Convert Minutes Into Hours and Minutes",
+  "description": "A simple division trick for converting a minute count like 150 into hours and minutes.",
+  "tags": [
+    "telling time",
+    "division",
+    "everyday math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Converting minutes into hours is just division.",
+    "There are 60 minutes in every hour, so divide by 60.",
+    "150 divided by 60 is 2, with 30 left over.",
+    "That's 2 hours and 30 minutes."
+  ],
+  "params": {
+    "kicker": "everyday math",
+    "hook": "150 minutes = how many hours?",
+    "steps": [
+      {
+        "label": "There are 60 minutes in an hour",
+        "expr": "150 ÷ 60"
+      },
+      {
+        "label": "That's 2 hours, with 30 left over",
+        "expr": "2h 30m"
+      }
+    ],
+    "answerLabel": "150 minutes =",
+    "answer": "2h 30m",
+    "footnote": "divide by 60 — the remainder is extra minutes"
+  }
+}

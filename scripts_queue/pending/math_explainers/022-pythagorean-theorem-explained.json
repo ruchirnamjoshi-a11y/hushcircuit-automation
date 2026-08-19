@@ -1,0 +1,26 @@
+{
+  "id": "pythagorean-theorem-explained",
+  "title": "The Pythagorean Theorem, Visually Explained",
+  "description": "A visual proof of a² + b² = c² using real squares built on the sides of a right triangle.",
+  "tags": [
+    "geometry",
+    "pythagorean theorem",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "pythagorean",
+  "narration_lines": [
+    "Every right triangle hides the same secret.",
+    "Here's a right triangle with sides 3, 4, and 5.",
+    "Build a square on each side: 3 squared is 9, 4 squared is 16, and 5 squared is 25.",
+    "9 plus 16 equals 25. That's the Pythagorean theorem."
+  ],
+  "params": {
+    "kicker": "right triangles",
+    "hook": "Any right triangle: a² + b² = c²",
+    "a": 3,
+    "b": 4,
+    "c": 5,
+    "footnote": "true for every right triangle, any size"
+  }
+}

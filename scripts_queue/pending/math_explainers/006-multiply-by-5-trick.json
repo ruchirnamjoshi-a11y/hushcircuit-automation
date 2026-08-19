@@ -1,0 +1,36 @@
+{
+  "id": "multiply-by-5-trick",
+  "title": "The Fast Trick to Multiply Any Number by 5",
+  "description": "Halve, then multiply by 10 — a simple shortcut for multiplying by 5 without needing a calculator.",
+  "tags": [
+    "math trick",
+    "multiplication",
+    "mental math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Multiplying by 5 is easier than it looks.",
+    "First, cut the number in half. Half of 48 is 24.",
+    "Then just multiply by 10 — add a zero.",
+    "24 times 10 is 240. So 48 times 5 is 240."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "48 × 5 = ?",
+    "steps": [
+      {
+        "label": "Cut the number in half",
+        "expr": "48 ÷ 2 = 24"
+      },
+      {
+        "label": "Multiply by 10",
+        "expr": "24 × 10 = 240"
+      }
+    ],
+    "answerLabel": "48 × 5 =",
+    "answer": "240",
+    "footnote": "half it, then times 10 — because 5 is half of 10"
+  }
+}

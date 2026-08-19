@@ -1,0 +1,29 @@
+{
+  "id": "perimeter-vs-area",
+  "title": "Perimeter vs Area: What's the Difference?",
+  "description": "A side-by-side visual comparing perimeter (the distance around a shape) with area (the space inside it).",
+  "tags": [
+    "geometry",
+    "perimeter",
+    "area",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "grid_area",
+  "narration_lines": [
+    "Perimeter and area sound similar, but they're not the same thing.",
+    "Here's the same 6 by 4 rectangle as before.",
+    "This time, trace only the outline — the distance all the way around.",
+    "That's 20 units around. Perimeter is the edge; area is the space inside."
+  ],
+  "params": {
+    "kicker": "perimeter vs area",
+    "hook": "Perimeter of a 6 × 4 rectangle?",
+    "rows": 4,
+    "cols": 6,
+    "mode": "perimeter",
+    "revealLabel": "add all 4 sides:",
+    "revealValue": "20",
+    "footnote": "perimeter is the distance around; area is the space inside"
+  }
+}

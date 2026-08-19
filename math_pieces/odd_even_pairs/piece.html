@@ -1,0 +1,142 @@
+<title>Why Odd + Odd = Even</title>
+<style>
+  :root { --board: #24303d; --board-2: #1c2833; --chalk: #ede9df; --chalk-dim: rgba(237,233,223,0.55); --gold: #d9a441; --coral: #e2725b; --blue: #7fa6c9; }
+  * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
+  #stage { position: relative; width: 100%; height: 100vh; min-height: 560px; overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--chalk); }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .kicker { position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim); }
+  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
+  .replay:hover { opacity: 1; }
+</style>
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker" id="kicker">why it always works</div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const kickerEl = document.getElementById('kicker');
+  const replayBtn = document.getElementById('replayBtn');
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // { kicker, hook, a, b, footnote } -- a, b are two ODD numbers; shows each
+  // grouping into pairs with one leftover, then the two leftovers pairing up.
+  // Narration (4 lines): 0=hook, 1=show group a with its leftover, 2=show group b with its leftover, 3=reveal (pair up leftovers).
+  const P = window.__PARAMS__ && P_defOk(window.__PARAMS__) ? window.__PARAMS__ : {
+    kicker: 'why it always works', hook: 'Why does odd + odd = even?',
+    a: 5, b: 3, footnote: 'the two leftover dots always pair up with each other',
+  };
+  function P_defOk(p) { return p && p.a != null && p.b != null; }
+  kickerEl.textContent = P.kicker || 'why it always works';
+
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0, end: 4 }, { start: 4, end: 9 }, { start: 9, end: 15 }, { start: 15, end: 21 },
+  ];
+  const T = { aStart: LT[1].start, aEnd: LT[1].end, bStart: LT[2].start, bEnd: LT[2].end, finalStart: LT[3].start, total: LT[3].end };
+
+  function drawGroup(n, rowY, revealP, dotColor, leftoverColor, cx) {
+    const pairs = Math.floor(n / 2);
+    const dotR = 14, gap = 44;
+    const totalW = pairs * gap + (n % 2 ? gap : 0);
+    const startX = cx - totalW / 2;
+    let shown = Math.ceil(revealP * n);
+    for (let i = 0; i < n; i++) {
+      if (i >= shown) continue;
+      const pairIdx = Math.floor(i / 2);
+      const isLeftover = i === n - 1 && n % 2 === 1;
+      const x = startX + pairIdx * gap + (i % 2 === 0 ? 0 : dotR * 2 + 6);
+      ctx.save();
+      ctx.globalAlpha = 0.9;
+      ctx.fillStyle = isLeftover ? leftoverColor : dotColor;
+      ctx.beginPath(); ctx.arc(x, rowY, dotR, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+    }
+    return { startX, dotR, gap, pairs, n };
+  }
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)'; ctx.lineWidth = 1;
+    const grid = 34;
+    for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const hookAlpha = t < T.aStart ? 1 : CP.clamp01(1 - (t - T.aStart) / 0.8);
+    if (hookAlpha > 0.01) {
+      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.font = `600 ${Math.min(W * 0.062, 40)}px ${MONO}`;
+      ctx.fillText(P.hook, W / 2, H * 0.14);
+      ctx.restore();
+    }
+
+    const aP = CP.clamp01((t - T.aStart) / (T.aEnd - T.aStart));
+    const bP = CP.clamp01((t - T.bStart) / (T.bEnd - T.bStart));
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+
+    const rowAy = H * 0.34, rowBy = H * 0.48;
+    let aInfo = null, bInfo = null;
+    if (t >= T.aStart) {
+      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.028,18)}px ${SERIF}`; ctx.textAlign = 'center';
+      if (aP > 0.15) ctx.fillText(`${P.a} dots`, W / 2, rowAy - 30);
+      ctx.restore();
+      aInfo = drawGroup(P.a, rowAy, Math.min(1, aP * 1.3), '#7fa6c9', '#e2725b', W / 2);
+    }
+    if (t >= T.bStart) {
+      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.028,18)}px ${SERIF}`; ctx.textAlign = 'center';
+      if (bP > 0.15) ctx.fillText(`${P.b} dots`, W / 2, rowBy - 30);
+      ctx.restore();
+      bInfo = drawGroup(P.b, rowBy, Math.min(1, bP * 1.3), '#7fa6c9', '#e2725b', W / 2);
+    }
+
+    if (t >= T.finalStart && aInfo && bInfo) {
+      const p = CP.easeOutCubic(finP);
+      // draw a connecting line between the two leftover dots, animating them together
+      const aLeftoverX = aInfo.startX + Math.floor(aInfo.n / 2) * aInfo.gap;
+      const bLeftoverX = bInfo.startX + Math.floor(bInfo.n / 2) * bInfo.gap;
+      ctx.save();
+      ctx.globalAlpha = p;
+      ctx.strokeStyle = '#d9a441'; ctx.lineWidth = 3; ctx.setLineDash([6, 6]);
+      ctx.beginPath();
+      ctx.moveTo(aLeftoverX, rowAy);
+      ctx.lineTo(bLeftoverX, rowBy);
+      ctx.stroke();
+      ctx.restore();
+
+      const y = H * 0.64;
+      ctx.save();
+      ctx.globalAlpha = p; ctx.textAlign = 'center'; ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
+      ctx.fillText(`${P.a} + ${P.b} =`, W / 2, y);
+      const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
+      ctx.save(); ctx.translate(W / 2, y + 54); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.11, 60)}px ${MONO}`;
+      ctx.fillText(String(P.a + P.b), 0, 0);
+      ctx.restore(); ctx.restore();
+
+      if (P.footnote && finP > 0.7) {
+        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.7) / 0.3) * 0.8; ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`; ctx.textAlign = 'center';
+        ctx.fillText(P.footnote, W / 2, y + 92);
+        ctx.restore();
+      }
+    }
+  }
+  const timeline = CP.createTimeline({ draw, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

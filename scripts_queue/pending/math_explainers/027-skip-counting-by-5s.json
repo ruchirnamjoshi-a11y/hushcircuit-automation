@@ -1,0 +1,47 @@
+{
+  "id": "skip-counting-by-5s",
+  "title": "Skip Counting: The Fast Way to Count in Groups",
+  "description": "A number-line visual for skip counting by 5s — a foundational skill before learning multiplication.",
+  "tags": [
+    "skip counting",
+    "number sense",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "number_line",
+  "narration_lines": [
+    "Skip counting is a fast way to count in groups.",
+    "Start at zero on the number line, marked every 5.",
+    "Jump by 5 each time: 5, 10, 15, 20, 25, 30.",
+    "Six jumps of 5 gets you to 30, much faster than counting by ones."
+  ],
+  "params": {
+    "kicker": "on the number line",
+    "hook": "Skip count by 5s",
+    "min": 0,
+    "max": 30,
+    "tick": 5,
+    "jumps": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "highlightValues": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "revealLabel": "6 jumps of 5 =",
+    "revealValue": "30",
+    "footnote": "faster than counting one by one"
+  }
+}

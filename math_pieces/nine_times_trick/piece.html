@@ -1,0 +1,263 @@
+<title>The 9 Times Table Finger Trick</title>
+<style>
+  :root {
+    --board: #24303d;
+    --board-2: #1c2833;
+    --chalk: #ede9df;
+    --chalk-dim: rgba(237,233,223,0.55);
+    --gold: #d9a441;
+    --coral: #e2725b;
+    --rule: #3a4b5c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  #stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--chalk);
+  }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+  .frame {
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(237,233,223,0.14);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .kicker {
+    position: absolute;
+    top: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--chalk-dim);
+  }
+  .story {
+    position: absolute;
+    left: 50%;
+    bottom: 1.6rem;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 34rem;
+    padding: 0 1rem;
+    font-family: Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+    font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+    color: var(--chalk);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    text-wrap: balance;
+  }
+  .story.show { opacity: 1; }
+  html.render-mode .story { transition: none; }
+  .replay {
+    position: absolute;
+    right: 1.1rem;
+    top: 1.2rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--chalk);
+    background: transparent;
+    border: 1px solid rgba(237,233,223,0.4);
+    border-radius: 3px;
+    padding: 0.35rem 0.7rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .replay:hover { opacity: 1; }
+  .replay:focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker">a trick for your hands</div>
+  <div class="story" id="story"></div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const storyEl = document.getElementById('story');
+  const replayBtn = document.getElementById('replayBtn');
+
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // The worked example throughout: 9 x N, folding finger N (1-indexed, left to right).
+  const N = 4; // 9 x 4 = 36
+
+  // ---- timeline ----
+  // window.__LINE_TIMES__ (injected by pipeline.canvas_video before this
+  // script runs) is [{start, end}, ...] -- one entry per narration line,
+  // computed from REAL synthesized audio durations. Falls back to
+  // hand-tuned approximate values for standalone preview.
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0.0, end: 5.5 }, { start: 5.5, end: 9.0 }, { start: 9.0, end: 14.5 },
+    { start: 14.5, end: 21.0 }, { start: 21.0, end: 28.5 }, { start: 28.5, end: 35.0 },
+  ];
+  const T = {
+    handsStart: LT[1].start, handsEnd: LT[1].end,
+    foldStart: LT[2].start, foldEnd: LT[2].end,
+    countStart: LT[3].start, countEnd: LT[3].end,
+    combineStart: LT[4].start, combineEnd: LT[4].end,
+    finalStart: LT[4].end,
+    total: LT[5].end,
+  };
+
+  const storyLines = [
+    { t: LT[0].start, hold: LT[0].end - LT[0].start, text: 'Multiplying by 9? There’s a trick for that.' },
+    { t: LT[1].start, hold: LT[1].end - LT[1].start, text: 'Hold up both hands — ten fingers, numbered 1 to 10.' },
+    { t: LT[2].start, hold: LT[2].end - LT[2].start, text: `Let's try 9 × ${N}. Fold down finger number ${N}.` },
+    { t: LT[3].start, hold: LT[3].end - LT[3].start, text: 'Count the fingers before the fold, and the fingers after it.' },
+    { t: LT[4].start, hold: LT[4].end - LT[4].start, text: 'Put those two counts side by side — that’s your answer.' },
+  ];
+
+  function fingerGeom() {
+    const W = getW(), H = getH();
+    const count = 10;
+    const left = W * 0.10, right = W * 0.90;
+    const gap = (right - left) / count;
+    const baseY = H * 0.56;
+    const fingerH = H * 0.30;
+    const fingerW = gap * 0.62;
+    return { left, gap, baseY, fingerH, fingerW, count };
+  }
+
+  function drawFinger(x, baseY, w, h, folded, alpha, color) {
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = color;
+    const r = w * 0.45;
+    const topY = folded ? baseY - h * 0.32 : baseY - h;
+    const hh = folded ? h * 0.32 : h;
+    ctx.beginPath();
+    ctx.moveTo(x - w / 2, baseY);
+    ctx.lineTo(x - w / 2, topY + r);
+    ctx.arcTo(x - w / 2, topY, x - w / 2 + r, topY, r);
+    ctx.lineTo(x + w / 2 - r, topY);
+    ctx.arcTo(x + w / 2, topY, x + w / 2, topY + r, r);
+    ctx.lineTo(x + w / 2, baseY);
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
+  }
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.lineWidth = 1;
+    const step = 34;
+    for (let x = (W % step) / 2; x < W; x += step) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % step) / 2; y < H; y += step) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const hookAlpha = t < T.handsStart ? 1 : CP.clamp01(1 - (t - T.handsStart) / 1.0);
+    if (hookAlpha > 0.01) {
+      ctx.save();
+      ctx.globalAlpha = hookAlpha;
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `600 ${Math.min(W * 0.058, 46)}px ${MONO}`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('9 × ? = ?', W / 2, H * 0.16);
+      ctx.restore();
+    }
+
+    const g = fingerGeom();
+    const handsP = CP.clamp01((t - T.handsStart) / (T.handsEnd - T.handsStart));
+    const handsEase = CP.easeOutBack(handsP);
+
+    const foldP = CP.clamp01((t - T.foldStart) / (T.foldEnd - T.foldStart));
+    const foldEase = CP.easeOutCubic(foldP);
+
+    if (t >= T.handsStart) {
+      for (let i = 0; i < g.count; i++) {
+        const n = i + 1;
+        const x = g.left + g.gap * i + g.gap / 2;
+        const isFoldTarget = n === N;
+        const folded = isFoldTarget ? foldEase > 0.5 : false;
+        const color = isFoldTarget ? '#d9a441' : '#7fa6c9';
+        drawFinger(x, g.baseY, g.fingerW, g.fingerH, folded, Math.min(1, handsEase), color);
+
+        ctx.save();
+        ctx.globalAlpha = Math.min(1, handsEase);
+        ctx.fillStyle = '#ede9df';
+        ctx.font = `500 ${Math.max(10, Math.min(g.gap * 0.42, 16))}px ${MONO}`;
+        ctx.textAlign = 'center';
+        ctx.fillText(String(n), x, g.baseY + 22);
+        ctx.restore();
+      }
+    }
+
+    const countP = CP.clamp01((t - T.countStart) / (T.countEnd - T.countStart));
+    if (t >= T.countStart) {
+      const before = N - 1;
+      const after = 10 - N;
+      ctx.save();
+      ctx.globalAlpha = CP.clamp01(countP * 1.6);
+      ctx.fillStyle = '#e2725b';
+      ctx.font = `600 ${Math.min(W * 0.026, 18)}px ${MONO}`;
+      ctx.textAlign = 'center';
+      const beforeCx = g.left + g.gap * ((N - 1) / 2) - g.gap / 2 + g.gap / 2;
+      const afterCx = g.left + g.gap * (N + (g.count - N) / 2) - g.gap / 2 + g.gap/2;
+      if (before > 0) ctx.fillText(`${before} fingers`, g.left + (g.gap * (N - 1)) / 2, g.baseY - g.fingerH - 26);
+      if (after > 0) ctx.fillText(`${after} fingers`, g.left + g.gap * N + (g.gap * (g.count - N)) / 2, g.baseY - g.fingerH - 26);
+      ctx.restore();
+    }
+
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+    if (t >= T.finalStart) {
+      const before = N - 1, after = 10 - N;
+      const fEase = CP.easeOutCubic(finP);
+      ctx.save();
+      ctx.globalAlpha = fEase;
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.03, 22)}px ${MONO}`;
+      ctx.fillText(`9 × ${N} =`, W / 2, H * 0.80);
+      const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
+      ctx.save();
+      ctx.translate(W / 2, H * 0.80 + 50);
+      ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop);
+      ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.1, 62)}px ${MONO}`;
+      ctx.fillText(`${before}${after}`, 0, 0);
+      ctx.restore();
+      ctx.restore();
+
+      if (finP > 0.75) {
+        ctx.save();
+        ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
+        ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
+        ctx.fillText('works for any 9 × 1 through 9 × 10', W / 2, H * 0.80 + 92);
+        ctx.restore();
+      }
+    }
+  }
+
+  const updateStory = CP.createCaptionSync(storyEl, storyLines);
+  const timeline = CP.createTimeline({ draw, updateStory, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

@@ -1,0 +1,35 @@
+{
+  "id": "fibonacci-sequence-in-nature",
+  "title": "The Number Pattern Hiding in Nature",
+  "description": "An introduction to the Fibonacci sequence — how it's built, and why it shows up in flowers and seashells.",
+  "tags": [
+    "fibonacci",
+    "number patterns",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "This famous number pattern shows up all over nature.",
+    "Each number is just the sum of the two before it. 3 plus 5 is 8.",
+    "Keep going the same way. 5 plus 8 is 13.",
+    "The pattern continues forever, and it's found in flower petals and seashells."
+  ],
+  "params": {
+    "kicker": "a hidden pattern",
+    "hook": "1, 1, 2, 3, 5, 8, ...?",
+    "steps": [
+      {
+        "label": "Each number is the sum of the two before it",
+        "expr": "3 + 5 = 8"
+      },
+      {
+        "label": "Keep going the same way",
+        "expr": "5 + 8 = 13"
+      }
+    ],
+    "answerLabel": "next number:",
+    "answer": "13",
+    "footnote": "found in flower petals, pinecones, and seashells"
+  }
+}

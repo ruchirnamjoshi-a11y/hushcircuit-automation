@@ -1,0 +1,36 @@
+{
+  "id": "squaring-numbers-ending-in-5",
+  "title": "The Trick to Squaring Any Number Ending in 5",
+  "description": "A quick shortcut for squaring numbers like 15, 25, or 35 in your head — no long multiplication needed.",
+  "tags": [
+    "math trick",
+    "squares",
+    "mental math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Squaring a number that ends in 5? Try this.",
+    "Take the first digit, 3, and multiply it by one more than itself. 3 times 4 is 12.",
+    "Now just stick 25 on the end of that.",
+    "12, then 25. So 35 squared is 1225."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "35² = ?",
+    "steps": [
+      {
+        "label": "Multiply the first digit by one more than itself",
+        "expr": "3 × 4 = 12"
+      },
+      {
+        "label": "Always end with 25",
+        "expr": "12, then 25"
+      }
+    ],
+    "answerLabel": "35² =",
+    "answer": "1225",
+    "footnote": "works for any number ending in 5"
+  }
+}

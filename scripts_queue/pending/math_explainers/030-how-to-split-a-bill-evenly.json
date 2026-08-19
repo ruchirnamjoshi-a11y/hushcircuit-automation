@@ -1,0 +1,35 @@
+{
+  "id": "how-to-split-a-bill-evenly",
+  "title": "How to Split a Bill Evenly, Fast",
+  "description": "Simple division for splitting a restaurant bill evenly among friends, no calculator needed.",
+  "tags": [
+    "division",
+    "everyday math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Splitting a bill evenly is simple division.",
+    "The total bill comes to 60 dollars.",
+    "Divide that by how many people are splitting it. 60 divided by 4.",
+    "Each person pays 15 dollars."
+  ],
+  "params": {
+    "kicker": "everyday math",
+    "hook": "$60 bill split 4 ways?",
+    "steps": [
+      {
+        "label": "Total the bill",
+        "expr": "$60"
+      },
+      {
+        "label": "Divide by the number of people",
+        "expr": "$60 ÷ 4 = $15"
+      }
+    ],
+    "answerLabel": "each person pays:",
+    "answer": "$15",
+    "footnote": "just divide the total by how many people are splitting it"
+  }
+}

@@ -85,6 +85,7 @@ def render_piece_video(
     resolution: tuple[int, int] = (1080, 1920),
     fps: int = FPS,
     music_path: Optional[Path] = None,
+    params: Optional[dict] = None,
 ) -> Path:
     """Drives `piece_html?render=1` deterministically via window.__seek(t),
     screenshotting each frame, then muxes the PNG sequence with the
@@ -97,7 +98,9 @@ def render_piece_video(
     frame — nothing to burn in separately here. `line_times` (see
     synthesize_narration_lines) is injected as window.__LINE_TIMES__ before
     the piece's own script runs, so its internal timeline is built from
-    real speech durations."""
+    real speech durations. `params` (see pipeline.math_scripts.MathScript.
+    params) is injected the same way as window.__PARAMS__ — this is what
+    lets one generic piece template serve many different topic scripts."""
     total_duration = line_times[-1].end + TAIL_BUFFER_SECONDS
     total_frames = int(total_duration * fps)
 
@@ -107,11 +110,13 @@ def render_piece_video(
         p.unlink()
 
     line_times_json = json.dumps([{"start": lt.start, "end": lt.end} for lt in line_times])
+    params_json = json.dumps(params or {})
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page(viewport={"width": resolution[0], "height": resolution[1]})
         page.add_init_script(f"window.__LINE_TIMES__ = {line_times_json};")
+        page.add_init_script(f"window.__PARAMS__ = {params_json};")
         page.goto(f"file://{piece_html.resolve()}?render=1")
         page.wait_for_timeout(200)  # let fonts/layout settle before the first capture
 
