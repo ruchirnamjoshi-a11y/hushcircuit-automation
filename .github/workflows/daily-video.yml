@@ -125,7 +125,13 @@ jobs:
         # per-track failure, which fails this job so that's visible.
         run: |
           PRIVACY="${{ github.event_name == 'workflow_dispatch' && inputs.privacy || 'public' }}"
-          python run_daily.py --privacy "$PRIVACY"
+          # -u: unbuffered stdout. Without it, Python block-buffers output
+          # when it's not a real terminal (true of every GH Actions log
+          # capture pipe), so run_daily.py's per-track/per-scene progress
+          # prints never reach the log until the buffer fills or the
+          # process exits -- a run that's actually working looks identical
+          # to a hung one in the CI log for the entire buffered stretch.
+          python -u run_daily.py --privacy "$PRIVACY"
 
       - name: Commit consumed scripts and daily-production state
         # Runs even if the pipeline step failed a track, so any tracks that
