@@ -1,0 +1,205 @@
+<title>Step Chain</title>
+<style>
+  :root {
+    --board: #24303d;
+    --board-2: #1c2833;
+    --chalk: #ede9df;
+    --chalk-dim: rgba(237,233,223,0.55);
+    --gold: #d9a441;
+    --coral: #e2725b;
+    --blue: #7fa6c9;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  #stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--chalk);
+  }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .kicker {
+    position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
+  }
+  .replay {
+    position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--chalk); background: transparent;
+    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    cursor: pointer; opacity: 0.7;
+  }
+  .replay:hover { opacity: 1; }
+  .replay:focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker" id="kicker">a quick trick</div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const kickerEl = document.getElementById('kicker');
+  const replayBtn = document.getElementById('replayBtn');
+
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // ---- generic contract (see pipeline.math_scripts.MathScript.params) ----
+  // {
+  //   kicker: str,               // small label top-of-screen, e.g. "a quick trick"
+  //   hook: str,                 // big question shown before steps start, e.g. "54 × 11 = ?"
+  //   steps: [{label, expr}],    // one visual "card" per step, revealed in order
+  //   answerLabel: str,          // e.g. "54 × 11 ="
+  //   answer: str,               // e.g. "594"
+  //   footnote: str,             // optional small italic line under the answer
+  // }
+  // Narration-line contract: line 0 = hook, lines 1..N = one per step
+  // (matching step.label in spoken form), line N+1 = the final reveal.
+  const P = window.__PARAMS__ && window.__PARAMS__.steps ? window.__PARAMS__ : {
+    kicker: 'a quick trick', hook: '54 × 11 = ?',
+    steps: [
+      { label: 'Split the digits', expr: '5 _ 4' },
+      { label: 'Add them together', expr: '5 + 4 = 9' },
+      { label: 'Slot the sum in the middle', expr: '5 9 4' },
+    ],
+    answerLabel: '54 × 11 =', answer: '594',
+    footnote: 'works for any 2-digit number under 91',
+  };
+  kickerEl.textContent = P.kicker || 'a quick trick';
+
+  const LT = window.__LINE_TIMES__ || (function () {
+    // standalone-preview fallback: evenly spaced guesses
+    const n = P.steps.length + 2;
+    const each = 5.0;
+    return Array.from({ length: n }, (_, i) => ({ start: i * each, end: (i + 1) * each }));
+  })();
+
+  const stepCount = P.steps.length;
+  const T = {
+    hookEnd: LT[0].end,
+    stepStart: (i) => LT[1 + i].start,
+    stepEnd: (i) => LT[1 + i].end,
+    finalStart: LT[stepCount].end,
+    total: LT[LT.length - 1].end,
+  };
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.lineWidth = 1;
+    const grid = 34;
+    for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    // hook question, fades out once steps begin
+    const hookAlpha = t < T.stepStart(0) ? 1 : CP.clamp01(1 - (t - T.stepStart(0)) / 0.8);
+    if (hookAlpha > 0.01) {
+      ctx.save();
+      ctx.globalAlpha = hookAlpha;
+      ctx.fillStyle = '#ede9df';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = `600 ${Math.min(W * 0.09, 56)}px ${MONO}`;
+      ctx.fillText(P.hook, W / 2, H * 0.20);
+      ctx.restore();
+    }
+
+    // step cards, stacked vertically, each sliding/fading in when its narration line starts
+    const cardTop = H * 0.30;
+    const cardGap = Math.min(H * 0.13, 108);
+    for (let i = 0; i < stepCount; i++) {
+      const s = P.steps[i];
+      const p = CP.clamp01((t - T.stepStart(i)) / 0.7);
+      if (p <= 0) continue;
+      const ease = CP.easeOutBack(p);
+      const y = cardTop + i * cardGap;
+      const slide = (1 - ease) * 40;
+
+      ctx.save();
+      ctx.globalAlpha = Math.min(1, p * 1.4);
+      ctx.translate(0, slide);
+
+      // connecting arrow from previous card
+      if (i > 0) {
+        ctx.strokeStyle = 'rgba(237,233,223,0.35)';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(W / 2, y - cardGap + 30);
+        ctx.lineTo(W / 2, y - 22);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(W / 2 - 7, y - 30);
+        ctx.lineTo(W / 2, y - 20);
+        ctx.lineTo(W / 2 + 7, y - 30);
+        ctx.stroke();
+      }
+
+      ctx.fillStyle = '#ede9df';
+      ctx.textAlign = 'center';
+      ctx.font = `400 ${Math.min(W * 0.032, 20)}px ${SERIF}`;
+      ctx.fillText(s.label, W / 2, y - 6);
+
+      ctx.fillStyle = i === stepCount - 1 ? '#d9a441' : '#7fa6c9';
+      ctx.font = `600 ${Math.min(W * 0.075, 46)}px ${MONO}`;
+      ctx.fillText(s.expr, W / 2, y + 32);
+
+      ctx.restore();
+    }
+
+    // final answer reveal
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+    if (t >= T.finalStart) {
+      const fEase = CP.easeOutCubic(finP);
+      const y = H * 0.82;
+      ctx.save();
+      ctx.globalAlpha = fEase;
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.035, 24)}px ${MONO}`;
+      ctx.fillText(P.answerLabel, W / 2, y);
+      const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
+      ctx.save();
+      ctx.translate(W / 2, y + 54);
+      ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop);
+      ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.12, 66)}px ${MONO}`;
+      ctx.fillText(P.answer, 0, 0);
+      ctx.restore();
+      ctx.restore();
+
+      if (P.footnote && finP > 0.75) {
+        ctx.save();
+        ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
+        ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.022, 15)}px ${SERIF}`;
+        ctx.textAlign = 'center';
+        ctx.fillText(P.footnote, W / 2, y + 96);
+        ctx.restore();
+      }
+    }
+  }
+
+  const timeline = CP.createTimeline({ draw, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

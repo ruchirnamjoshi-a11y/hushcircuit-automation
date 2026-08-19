@@ -1,0 +1,37 @@
+{
+  "id": "negative-numbers-on-a-number-line",
+  "title": "What Happens When You Subtract Past Zero",
+  "description": "A number-line visual for understanding negative numbers, using a simple subtraction example.",
+  "tags": [
+    "negative numbers",
+    "number sense",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "number_line",
+  "narration_lines": [
+    "What happens when you subtract more than you have?",
+    "Start at 3 on the number line.",
+    "Now jump back 5 spaces — past zero, into negative numbers.",
+    "You land on negative 2. So 3 minus 5 is negative 2."
+  ],
+  "params": {
+    "kicker": "on the number line",
+    "hook": "3 - 5 = ?",
+    "min": -10,
+    "max": 10,
+    "tick": 1,
+    "jumps": [
+      3,
+      -2
+    ],
+    "highlightValues": [
+      0,
+      -2
+    ],
+    "revealLabel": "3 - 5 =",
+    "revealValue": "-2",
+    "footnote": "subtracting more than you have means going negative"
+  }
+}

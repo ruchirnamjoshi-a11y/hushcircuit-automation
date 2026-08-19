@@ -1,0 +1,37 @@
+{
+  "id": "rounding-prices-while-shopping",
+  "title": "How to Round Prices Fast While Shopping",
+  "description": "A number-line trick for quickly estimating totals at checkout by rounding to the nearest dollar.",
+  "tags": [
+    "rounding",
+    "everyday math",
+    "money",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "number_line",
+  "narration_lines": [
+    "Rounding helps you estimate totals while shopping.",
+    "Here's a number line from 0 to 10 dollars.",
+    "8 dollars 70 sits between 8 and 9, much closer to 9.",
+    "It rounds up to 9 dollars. Handy for a quick checkout estimate."
+  ],
+  "params": {
+    "kicker": "on the number line",
+    "hook": "Round $8.70 to the nearest dollar",
+    "min": 0,
+    "max": 10,
+    "tick": 1,
+    "jumps": [
+      8.7,
+      9
+    ],
+    "highlightValues": [
+      8,
+      9
+    ],
+    "revealLabel": "$8.70 rounds to",
+    "revealValue": "$9",
+    "footnote": "handy for quickly estimating your total at checkout"
+  }
+}

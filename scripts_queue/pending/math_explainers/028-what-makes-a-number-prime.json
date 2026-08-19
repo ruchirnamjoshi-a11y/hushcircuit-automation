@@ -1,0 +1,24 @@
+{
+  "id": "what-makes-a-number-prime",
+  "title": "What Makes a Number Prime?",
+  "description": "A visual sieve that crosses out composite numbers from 2 to 30, leaving only the primes behind.",
+  "tags": [
+    "prime numbers",
+    "number sense",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "prime_sieve",
+  "narration_lines": [
+    "What actually makes a number prime?",
+    "Here are the numbers from 2 to 30.",
+    "Cross out every number with more than two factors, one by one.",
+    "What's left are the primes, numbers only divisible by 1 and themselves."
+  ],
+  "params": {
+    "kicker": "the sieve",
+    "hook": "What makes a number prime?",
+    "max": 30,
+    "footnote": "a prime has exactly two factors: 1 and itself"
+  }
+}

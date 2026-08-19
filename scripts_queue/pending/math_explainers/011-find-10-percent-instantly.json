@@ -1,0 +1,35 @@
+{
+  "id": "find-10-percent-instantly",
+  "title": "How to Find 10% of Any Number Instantly",
+  "description": "The decimal-point trick that makes finding 10% of any number almost instant — useful for tips, discounts, and everyday math.",
+  "tags": [
+    "percentages",
+    "mental math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Finding 10% of a number is instant.",
+    "10% means one tenth, so divide by 10. 350 divided by 10.",
+    "That's the same as moving the decimal one place left.",
+    "35.0. So 10% of 350 is 35."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "10% of 350 = ?",
+    "steps": [
+      {
+        "label": "10% means one tenth of the number",
+        "expr": "350 ÷ 10"
+      },
+      {
+        "label": "Just move the decimal one place left",
+        "expr": "35.0"
+      }
+    ],
+    "answerLabel": "10% of 350 =",
+    "answer": "35",
+    "footnote": "10% of any number: move the decimal one place left"
+  }
+}

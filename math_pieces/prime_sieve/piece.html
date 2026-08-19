@@ -1,0 +1,132 @@
+<title>What Makes a Number Prime</title>
+<style>
+  :root { --board: #24303d; --board-2: #1c2833; --chalk: #ede9df; --chalk-dim: rgba(237,233,223,0.55); --gold: #d9a441; --coral: #e2725b; --blue: #7fa6c9; }
+  * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
+  #stage { position: relative; width: 100%; height: 100vh; min-height: 560px; overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--chalk); }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .kicker { position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim); }
+  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
+  .replay:hover { opacity: 1; }
+</style>
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker" id="kicker">the sieve</div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const kickerEl = document.getElementById('kicker');
+  const replayBtn = document.getElementById('replayBtn');
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // { kicker, hook, max, footnote } -- numbers 2..max, sieve out multiples of 2 and 3, leaving primes.
+  // Narration (4 lines): 0=hook, 1=intro the grid, 2=cross out multiples of 2 then 3, 3=reveal primes remain.
+  const P = window.__PARAMS__ && window.__PARAMS__.max ? window.__PARAMS__ : {
+    kicker: 'the sieve', hook: 'What makes a number prime?',
+    max: 30, footnote: 'a prime has exactly two factors: 1 and itself',
+  };
+  kickerEl.textContent = P.kicker || 'the sieve';
+
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0, end: 4 }, { start: 4, end: 9 }, { start: 9, end: 17 }, { start: 17, end: 23 },
+  ];
+  const T = { introStart: LT[1].start, introEnd: LT[1].end, sieveStart: LT[2].start, sieveEnd: LT[2].end, finalStart: LT[3].start, total: LT[3].end };
+
+  const nums = [];
+  for (let n = 2; n <= P.max; n++) nums.push(n);
+  const cols = 6;
+  const rows = Math.ceil(nums.length / cols);
+
+  function isPrime(n) {
+    if (n < 2) return false;
+    for (let i = 2; i * i <= n; i++) if (n % i === 0) return false;
+    return true;
+  }
+
+  function gridGeom() {
+    const W = getW(), H = getH();
+    const cell = Math.min(W * 0.13, H * 0.09, 76);
+    const gw = cell * cols, gh = cell * rows;
+    return { left: (W - gw) / 2, top: H * 0.30, cell, gw, gh };
+  }
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)'; ctx.lineWidth = 1;
+    const grid = 34;
+    for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const hookAlpha = t < T.introStart ? 1 : CP.clamp01(1 - (t - T.introStart) / 0.8);
+    if (hookAlpha > 0.01) {
+      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.font = `600 ${Math.min(W * 0.062, 40)}px ${MONO}`;
+      ctx.fillText(P.hook, W / 2, H * 0.14);
+      ctx.restore();
+    }
+
+    const g = gridGeom();
+    const introP = CP.clamp01((t - T.introStart) / (T.introEnd - T.introStart));
+    const sieveP = CP.clamp01((t - T.sieveStart) / (T.sieveEnd - T.sieveStart));
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+
+    if (t >= T.introStart) {
+      const shown = Math.ceil(Math.min(1, introP * 1.3) * nums.length);
+      ctx.save();
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.font = `500 ${Math.min(g.cell * 0.44, 28)}px ${MONO}`;
+      for (let i = 0; i < shown; i++) {
+        const n = nums[i];
+        const r = Math.floor(i / cols), c = i % cols;
+        const x = g.left + c * g.cell + g.cell / 2, y = g.top + r * g.cell + g.cell / 2;
+
+        let crossed = false;
+        if (t >= T.sieveStart && !isPrime(n)) {
+          const crossThreshold = 0.15 + (n / P.max) * 0.6;
+          crossed = sieveP > crossThreshold || finP > 0;
+        }
+        const isPrimeReveal = t >= T.finalStart && isPrime(n);
+
+        ctx.save();
+        ctx.globalAlpha = crossed ? 0.28 : 1;
+        ctx.fillStyle = isPrimeReveal ? '#d9a441' : '#ede9df';
+        ctx.fillText(String(n), x, y);
+        if (crossed) {
+          ctx.strokeStyle = '#e2725b'; ctx.lineWidth = 2.5; ctx.globalAlpha = 0.7;
+          ctx.beginPath();
+          ctx.moveTo(x - g.cell * 0.28, y - g.cell * 0.28);
+          ctx.lineTo(x + g.cell * 0.28, y + g.cell * 0.28);
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+      ctx.restore();
+    }
+
+    if (t >= T.finalStart && P.footnote) {
+      const fEase = CP.easeOutCubic(finP);
+      ctx.save();
+      ctx.globalAlpha = fEase * 0.85; ctx.fillStyle = '#e2725b'; ctx.textAlign = 'center';
+      ctx.font = `italic 400 ${Math.min(W * 0.022, 15)}px ${SERIF}`;
+      ctx.fillText(P.footnote, W / 2, g.top + g.gh + 50);
+      ctx.restore();
+    }
+  }
+  const timeline = CP.createTimeline({ draw, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

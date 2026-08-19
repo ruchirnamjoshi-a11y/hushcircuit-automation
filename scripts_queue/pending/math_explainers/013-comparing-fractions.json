@@ -1,0 +1,31 @@
+{
+  "id": "comparing-fractions",
+  "title": "How to Tell Which Fraction Is Bigger",
+  "description": "A visual way to compare fractions with different denominators, like 2/3 versus 3/5, without a calculator.",
+  "tags": [
+    "fractions",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "parts_of_whole",
+  "narration_lines": [
+    "Which is bigger, 2 thirds or 3 fifths? Let's compare them.",
+    "Split one whole into 3 parts, and fill in 2 of them.",
+    "Now split another whole into 5 parts, and fill in 3 of them.",
+    "2 thirds fills more of the bar. It's the bigger fraction."
+  ],
+  "params": {
+    "kicker": "parts of a whole",
+    "hook": "Which is bigger: 2/3 or 3/5?",
+    "total": 3,
+    "filled": 2,
+    "label": "2/3",
+    "total2": 5,
+    "filled2": 3,
+    "label2": "3/5",
+    "revealLabel": "bigger fraction:",
+    "revealValue": "2/3",
+    "footnote": "2/3 ≈ 67%, 3/5 = 60% — more of the bar is filled"
+  }
+}

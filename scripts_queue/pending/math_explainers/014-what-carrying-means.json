@@ -1,0 +1,32 @@
+{
+  "id": "what-carrying-means",
+  "title": "What 'Carrying' Actually Means in Addition",
+  "description": "A column-by-column breakdown of what carrying the 1 actually represents when adding two numbers.",
+  "tags": [
+    "addition",
+    "arithmetic",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "place_value_columns",
+  "narration_lines": [
+    "What does carrying the 1 actually mean?",
+    "Let's add 27 and 15, column by column.",
+    "Start on the right: 7 plus 5 is 12, so write the 2 and carry the 1. Then the left column: 2 plus 1, plus the carried 1, makes 4.",
+    "The answer is 42."
+  ],
+  "params": {
+    "kicker": "column by column",
+    "hook": "27 + 15 = ?",
+    "op": "+",
+    "top": "27",
+    "bottom": "15",
+    "notes": [
+      "2 + 1 + carried 1 = 4",
+      "7 + 5 = 12, write 2 carry 1"
+    ],
+    "answer": "42",
+    "footnote": "always start from the right"
+  }
+}

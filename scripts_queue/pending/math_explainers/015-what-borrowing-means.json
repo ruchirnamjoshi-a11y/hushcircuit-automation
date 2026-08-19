@@ -1,0 +1,32 @@
+{
+  "id": "what-borrowing-means",
+  "title": "What 'Borrowing' Actually Means in Subtraction",
+  "description": "A column-by-column breakdown of what borrowing from the next column really represents when subtracting.",
+  "tags": [
+    "subtraction",
+    "arithmetic",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "place_value_columns",
+  "narration_lines": [
+    "What does borrowing actually mean in subtraction?",
+    "Let's subtract 17 from 42, column by column.",
+    "Start on the right: 2 minus 7 doesn't work, so borrow 10 from the tens, making it 12 minus 7, which is 5. Then the tens: 3 minus 1 is 2.",
+    "The answer is 25."
+  ],
+  "params": {
+    "kicker": "column by column",
+    "hook": "42 - 17 = ?",
+    "op": "-",
+    "top": "42",
+    "bottom": "17",
+    "notes": [
+      "borrowed 1, so 3 - 1 = 2",
+      "borrow 10, 12 - 7 = 5"
+    ],
+    "answer": "25",
+    "footnote": "borrow from the left when the top digit is too small"
+  }
+}

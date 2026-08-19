@@ -1,0 +1,227 @@
+<title>Place Value Columns</title>
+<style>
+  :root {
+    --board: #24303d;
+    --board-2: #1c2833;
+    --chalk: #ede9df;
+    --chalk-dim: rgba(237,233,223,0.55);
+    --gold: #d9a441;
+    --coral: #e2725b;
+    --blue: #7fa6c9;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  #stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--chalk);
+  }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .kicker {
+    position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
+  }
+  .replay {
+    position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--chalk); background: transparent;
+    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    cursor: pointer; opacity: 0.7;
+  }
+  .replay:hover { opacity: 1; }
+  .replay:focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker" id="kicker">column by column</div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const kickerEl = document.getElementById('kicker');
+  const replayBtn = document.getElementById('replayBtn');
+
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // ---- generic contract ----
+  // { kicker, hook, op ("+"|"-"), top, bottom,   -- equal-length digit strings
+  //   notes: [str, ...],   -- one per column, LEFT-TO-RIGHT (blank string = no note),
+  //                           shown as the active column highlights
+  //   answer,               -- string, may be one digit longer than top/bottom
+  //   footnote }
+  // Narration-line contract (fixed 4 lines): 0=hook, 1=intro the two numbers,
+  // 2=work through the columns (right to left), 3=final reveal.
+  const P = window.__PARAMS__ && window.__PARAMS__.top ? window.__PARAMS__ : {
+    kicker: 'column by column', hook: '27 + 15 = ?',
+    op: '+', top: '27', bottom: '15',
+    notes: ['2 + 1 + carried 1 = 4', '7 + 5 = 12, write 2 carry 1'],
+    answer: '42',
+    footnote: 'always start from the right',
+  };
+  kickerEl.textContent = P.kicker || 'column by column';
+
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0, end: 4 }, { start: 4, end: 9 }, { start: 9, end: 17 }, { start: 17, end: 23 },
+  ];
+  const T = {
+    introStart: LT[1].start, introEnd: LT[1].end,
+    colStart: LT[2].start, colEnd: LT[2].end,
+    finalStart: LT[3].start,
+    total: LT[3].end,
+  };
+
+  const digits = P.top.length;
+
+  function colGeom() {
+    const W = getW(), H = getH();
+    const colW = Math.min(W * 0.16, 90);
+    const totalW = colW * digits;
+    const left = (W - totalW) / 2;
+    const topY = H * 0.34;
+    const rowH = colW * 1.05;
+    return { colW, left, topY, rowH };
+  }
+
+  function draw(t) {
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.lineWidth = 1;
+    const grid = 34;
+    for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const hookAlpha = t < T.introStart ? 1 : CP.clamp01(1 - (t - T.introStart) / 0.8);
+    if (hookAlpha > 0.01) {
+      ctx.save();
+      ctx.globalAlpha = hookAlpha;
+      ctx.fillStyle = '#ede9df';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = `600 ${Math.min(W * 0.07, 44)}px ${MONO}`;
+      ctx.fillText(P.hook, W / 2, H * 0.18);
+      ctx.restore();
+    }
+
+    const introP = CP.clamp01((t - T.introStart) / (T.introEnd - T.introStart));
+    const colP = CP.clamp01((t - T.colStart) / (T.colEnd - T.colStart));
+    // active column, working right to left (index 0 = rightmost)
+    const activeFromRight = Math.min(digits - 1, Math.floor(colP * digits));
+
+    if (t >= T.introStart) {
+      const g = colGeom();
+      ctx.save();
+      ctx.globalAlpha = CP.easeOutCubic(Math.min(1, introP * 1.4));
+      ctx.textAlign = 'center';
+      ctx.font = `600 ${Math.min(g.colW * 0.7, 52)}px ${MONO}`;
+
+      for (let row = 0; row < 2; row++) {
+        const str = row === 0 ? P.top : P.bottom;
+        const y = g.topY + row * g.rowH;
+        for (let i = 0; i < digits; i++) {
+          const x = g.left + i * g.colW + g.colW / 2;
+          const fromRight = digits - 1 - i;
+          const isActive = t >= T.colStart && fromRight === activeFromRight;
+          ctx.fillStyle = isActive ? '#d9a441' : '#ede9df';
+          ctx.fillText(str[i], x, y);
+        }
+      }
+      // operator + rule line
+      ctx.fillStyle = '#7fa6c9';
+      ctx.font = `600 ${Math.min(g.colW * 0.6, 44)}px ${MONO}`;
+      ctx.fillText(P.op, g.left - g.colW * 0.7, g.topY + g.rowH);
+      ctx.strokeStyle = 'rgba(237,233,223,0.6)';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(g.left - g.colW * 0.3, g.topY + g.rowH * 1.55);
+      ctx.lineTo(g.left + digits * g.colW, g.topY + g.rowH * 1.55);
+      ctx.stroke();
+      ctx.restore();
+
+      // active-column highlight box + note bubble (only before the final
+      // reveal -- otherwise the note text sits under the same spot the big
+      // answer digits pop into, and the two overlap)
+      if (t >= T.colStart && t < T.finalStart && P.notes) {
+        const note = P.notes[digits - 1 - activeFromRight];
+        const x = g.left + activeFromRight * g.colW + g.colW / 2;
+        // note index maps left-to-right array to right-to-left active col
+        const colX = g.left + (digits - 1 - activeFromRight) * g.colW;
+        ctx.save();
+        ctx.globalAlpha = 0.16;
+        ctx.fillStyle = '#d9a441';
+        ctx.fillRect(colX, g.topY - g.colW * 0.55, g.colW, g.rowH + g.colW * 0.55);
+        ctx.restore();
+
+        if (note) {
+          ctx.save();
+          ctx.globalAlpha = 0.95;
+          ctx.fillStyle = '#e2725b';
+          ctx.font = `500 ${Math.min(W * 0.028, 18)}px ${MONO}`;
+          ctx.textAlign = 'center';
+          const words = note.split(' ');
+          let line = '', ly = g.topY + g.rowH * 1.9, maxW = W * 0.7;
+          const cx = g.left + (digits - 1 - activeFromRight) * g.colW + g.colW / 2;
+          for (const w of words) {
+            const test = line ? line + ' ' + w : w;
+            if (ctx.measureText(test).width > maxW && line) {
+              ctx.fillText(line, W / 2, ly);
+              line = w; ly += 22;
+            } else line = test;
+          }
+          if (line) ctx.fillText(line, W / 2, ly);
+          ctx.restore();
+        }
+      }
+    }
+
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+    if (t >= T.finalStart) {
+      const g = colGeom();
+      const fEase = CP.easeOutCubic(finP);
+      const pop = finP > 0.4 ? CP.easeOutBack(CP.clamp01((finP - 0.4) / 0.6)) : 0;
+      ctx.save();
+      ctx.globalAlpha = CP.clamp01(pop);
+      ctx.fillStyle = '#d9a441';
+      ctx.textAlign = 'center';
+      ctx.font = `700 ${Math.min(g.colW * 0.72, 54)}px ${MONO}`;
+      const ansLeft = g.left + digits * g.colW - P.answer.length * g.colW;
+      for (let i = 0; i < P.answer.length; i++) {
+        ctx.fillText(P.answer[i], ansLeft + i * g.colW + g.colW / 2, g.topY + g.rowH * 2.1);
+      }
+      ctx.restore();
+
+      if (P.footnote && finP > 0.7) {
+        ctx.save();
+        ctx.globalAlpha = CP.clamp01((finP - 0.7) / 0.3) * 0.8;
+        ctx.fillStyle = 'rgba(237,233,223,0.7)';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
+        ctx.textAlign = 'center';
+        ctx.fillText(P.footnote, W / 2, g.topY + g.rowH * 3.0);
+        ctx.restore();
+      }
+    }
+  }
+
+  const timeline = CP.createTimeline({ draw, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

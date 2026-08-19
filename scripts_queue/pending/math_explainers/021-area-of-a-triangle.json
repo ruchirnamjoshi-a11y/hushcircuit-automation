@@ -1,0 +1,29 @@
+{
+  "id": "area-of-a-triangle",
+  "title": "Where the Triangle Area Formula Actually Comes From",
+  "description": "A visual proof that a right triangle is always exactly half of its surrounding rectangle.",
+  "tags": [
+    "geometry",
+    "area",
+    "triangles",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "grid_area",
+  "narration_lines": [
+    "Where does the triangle area formula actually come from?",
+    "Picture the same 6 by 4 rectangle.",
+    "A right triangle is exactly half of that rectangle, cut along the diagonal.",
+    "Half of 24 is 12. That's the triangle's area."
+  ],
+  "params": {
+    "kicker": "area of a triangle",
+    "hook": "Area of a right triangle, base 6 height 4?",
+    "rows": 4,
+    "cols": 6,
+    "mode": "triangle",
+    "revealLabel": "half of the rectangle:",
+    "revealValue": "12",
+    "footnote": "a right triangle is always exactly half its rectangle"
+  }
+}

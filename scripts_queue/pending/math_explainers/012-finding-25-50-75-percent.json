@@ -1,0 +1,35 @@
+{
+  "id": "finding-25-50-75-percent",
+  "title": "The Fast Way to Find 25%, 50%, or 75% of Anything",
+  "description": "Percentages are just fractions in disguise — halves and quarters make finding common percentages almost instant.",
+  "tags": [
+    "percentages",
+    "mental math",
+    "learn math",
+    "basic math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Finding 50, 25, or 75 percent is just fractions in disguise.",
+    "75% is three quarters, so first find one quarter. 80 divided by 4 is 20.",
+    "Then multiply that by 3 for three quarters.",
+    "20 times 3 is 60. So 75% of 80 is 60."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "75% of 80 = ?",
+    "steps": [
+      {
+        "label": "75% is 3 quarters — find one quarter first",
+        "expr": "80 ÷ 4 = 20"
+      },
+      {
+        "label": "Then multiply by 3",
+        "expr": "20 × 3 = 60"
+      }
+    ],
+    "answerLabel": "75% of 80 =",
+    "answer": "60",
+    "footnote": "quarters make percentages easy: 25%, 50%, 75%"
+  }
+}

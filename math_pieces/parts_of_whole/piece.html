@@ -1,0 +1,212 @@
+<title>Parts of a Whole</title>
+<style>
+  :root {
+    --board: #24303d;
+    --board-2: #1c2833;
+    --chalk: #ede9df;
+    --chalk-dim: rgba(237,233,223,0.55);
+    --gold: #d9a441;
+    --coral: #e2725b;
+    --blue: #7fa6c9;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  #stage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
+    background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--chalk);
+  }
+  canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .kicker {
+    position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
+  }
+  .replay {
+    position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--chalk); background: transparent;
+    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    cursor: pointer; opacity: 0.7;
+  }
+  .replay:hover { opacity: 1; }
+  .replay:focus-visible { outline: 2px solid var(--chalk); outline-offset: 2px; }
+</style>
+
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="frame"></div>
+  <div class="kicker" id="kicker">parts of a whole</div>
+  <button class="replay" id="replayBtn" type="button">Replay</button>
+</div>
+
+<script src="../../pipeline/canvas_lib/helpers.js"></script>
+<script>
+(function () {
+  const CP = window.CanvasPiece;
+  const canvas = document.getElementById('c');
+  const stage = document.getElementById('stage');
+  const kickerEl = document.getElementById('kicker');
+  const replayBtn = document.getElementById('replayBtn');
+
+  const { ctx } = CP.setupCanvas(canvas, stage);
+  const getW = () => stage.clientWidth, getH = () => stage.clientHeight;
+
+  const MONO = 'ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace';
+  const SERIF = 'Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif';
+
+  // ---- generic contract ----
+  // { kicker, hook, total, filled, label,
+  //   total2?, filled2?, label2?,     -- optional second bar, for comparisons
+  //   revealLabel, revealValue, footnote }
+  // Narration-line contract (fixed 4 lines): 0=hook, 1=explain the split
+  // into `total` parts, 2=explain filling `filled` (and bar 2 if present),
+  // 3=final reveal (revealLabel/revealValue).
+  const P = window.__PARAMS__ && window.__PARAMS__.total ? window.__PARAMS__ : {
+    kicker: 'parts of a whole', hook: 'What does 3/4 mean?',
+    total: 4, filled: 3, label: '3/4',
+    revealLabel: 'as a percent:', revealValue: '75%',
+    footnote: 'the bottom number is how many parts, the top is how many you have',
+  };
+  kickerEl.textContent = P.kicker || 'parts of a whole';
+
+  const LT = window.__LINE_TIMES__ || [
+    { start: 0, end: 4 }, { start: 4, end: 9 }, { start: 9, end: 15 }, { start: 15, end: 21 },
+  ];
+  const T = {
+    hookEnd: LT[0].end,
+    splitStart: LT[1].start, splitEnd: LT[1].end,
+    fillStart: LT[2].start, fillEnd: LT[2].end,
+    finalStart: LT[3].start,
+    total: LT[3].end,
+  };
+
+  function barGeom(rowIndex) {
+    const W = getW(), H = getH();
+    const left = W * 0.10, right = W * 0.90;
+    const barH = Math.min(H * 0.11, 90);
+    const y = H * 0.38 + rowIndex * (barH + H * 0.10);
+    return { left, right, y, barH, width: right - left };
+  }
+
+  function drawBar(rowIndex, total, filled, label, revealAlpha) {
+    const g = barGeom(rowIndex);
+    const segW = g.width / total;
+    const splitP = CP.clamp01((tGlobal - T.splitStart) / (T.splitEnd - T.splitStart) * 1.3);
+    const fillP = CP.clamp01((tGlobal - T.fillStart) / (T.fillEnd - T.fillStart) * 1.3);
+
+    for (let i = 0; i < total; i++) {
+      const segReveal = CP.clamp01(splitP * total - i);
+      if (segReveal <= 0) continue;
+      const x = g.left + i * segW;
+      const isFilled = i < filled;
+      const fillReveal = isFilled ? CP.clamp01(fillP * filled - i) : 0;
+
+      ctx.save();
+      ctx.globalAlpha = Math.min(1, segReveal);
+      ctx.fillStyle = 'rgba(127,166,201,0.18)';
+      ctx.strokeStyle = 'rgba(237,233,223,0.4)';
+      ctx.lineWidth = 2;
+      ctx.fillRect(x + 3, g.y, segW - 6, g.barH);
+      ctx.strokeRect(x + 3, g.y, segW - 6, g.barH);
+      if (fillReveal > 0) {
+        ctx.globalAlpha = Math.min(1, segReveal) * fillReveal;
+        ctx.fillStyle = '#d9a441';
+        ctx.fillRect(x + 3, g.y, segW - 6, g.barH);
+      }
+      ctx.restore();
+    }
+
+    if (label) {
+      ctx.save();
+      ctx.globalAlpha = Math.min(1, splitP);
+      ctx.fillStyle = '#ede9df';
+      ctx.textAlign = 'center';
+      ctx.font = `500 ${Math.min(getW() * 0.03, 20)}px ${MONO}`;
+      ctx.fillText(label, (g.left + g.right) / 2, g.y - 16);
+      ctx.restore();
+    }
+  }
+
+  let tGlobal = 0;
+
+  function draw(t) {
+    tGlobal = t;
+    const W = getW(), H = getH();
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.save();
+    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.lineWidth = 1;
+    const grid = 34;
+    for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.restore();
+
+    const hookAlpha = t < T.splitStart ? 1 : CP.clamp01(1 - (t - T.splitStart) / 0.8);
+    if (hookAlpha > 0.01) {
+      ctx.save();
+      ctx.globalAlpha = hookAlpha;
+      ctx.fillStyle = '#ede9df';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = `600 ${Math.min(W * 0.07, 44)}px ${MONO}`;
+      ctx.fillText(P.hook, W / 2, H * 0.18);
+      ctx.restore();
+    }
+
+    if (t >= T.splitStart) {
+      drawBar(0, P.total, P.filled, P.label);
+      if (P.total2) drawBar(1, P.total2, P.filled2, P.label2);
+    }
+
+    const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
+    if (t >= T.finalStart && P.revealValue) {
+      const fEase = CP.easeOutCubic(finP);
+      const y = H * (P.total2 ? 0.78 : 0.68);
+      ctx.save();
+      ctx.globalAlpha = fEase;
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ede9df';
+      ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
+      ctx.fillText(P.revealLabel || '', W / 2, y);
+      const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
+      ctx.save();
+      ctx.translate(W / 2, y + 54);
+      ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.globalAlpha = CP.clamp01(pop);
+      ctx.fillStyle = '#d9a441';
+      ctx.font = `700 ${Math.min(W * 0.11, 60)}px ${MONO}`;
+      ctx.fillText(P.revealValue, 0, 0);
+      ctx.restore();
+      ctx.restore();
+
+      if (P.footnote && finP > 0.75) {
+        ctx.save();
+        ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
+        ctx.fillStyle = '#e2725b';
+        ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
+        ctx.textAlign = 'center';
+        const words = P.footnote.split(' ');
+        let line = '', ly = y + 96, maxW = W * 0.78;
+        for (const w of words) {
+          const test = line ? line + ' ' + w : w;
+          if (ctx.measureText(test).width > maxW && line) {
+            ctx.fillText(line, W / 2, ly);
+            line = w; ly += 20;
+          } else line = test;
+        }
+        if (line) ctx.fillText(line, W / 2, ly);
+        ctx.restore();
+      }
+    }
+  }
+
+  const timeline = CP.createTimeline({ draw, total: T.total });
+  replayBtn.addEventListener('click', () => { timeline.reset(); });
+})();
+</script>

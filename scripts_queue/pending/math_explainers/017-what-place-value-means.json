@@ -1,0 +1,33 @@
+{
+  "id": "what-place-value-means",
+  "title": "What Each Digit in a Number Actually Means",
+  "description": "A column breakdown of place value — what the hundreds, tens, and ones digits in a number like 352 really represent.",
+  "tags": [
+    "place value",
+    "number sense",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "place_value_columns",
+  "narration_lines": [
+    "What does each digit in 352 actually mean?",
+    "Let's look at the number 352, column by column.",
+    "Hundreds, tens, and ones — 3 hundreds is 300, 5 tens is 50, and 2 ones is 2.",
+    "Add those up and you get 352. Each place is worth 10 times the next."
+  ],
+  "params": {
+    "kicker": "column by column",
+    "hook": "What does 352 really mean?",
+    "op": "+",
+    "top": "352",
+    "bottom": "000",
+    "notes": [
+      "3 hundreds = 300",
+      "5 tens = 50",
+      "2 ones = 2"
+    ],
+    "answer": "352",
+    "footnote": "each position is worth 10 times the one to its right"
+  }
+}

@@ -318,7 +318,7 @@ def run_math_track(track: Track, dry_run: bool = False, privacy_status: str = "p
     piece_html = MATH_PIECES_DIR / script.piece / "piece.html"
     video_path = render_piece_video(
         piece_html, line_times, narration_path, run_dir / "video.mp4",
-        music_path=pick_music_track(),
+        music_path=pick_music_track(), params=script.params,
     )
 
     thumbnail_path = generate_thumbnail(script.title, run_dir / "thumbnail.jpg")

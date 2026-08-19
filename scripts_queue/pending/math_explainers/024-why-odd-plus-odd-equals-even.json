@@ -1,0 +1,26 @@
+{
+  "id": "why-odd-plus-odd-equals-even",
+  "title": "Why Odd Plus Odd Always Equals Even",
+  "description": "A dot-pairing visual proof for why adding two odd numbers always gives an even result.",
+  "tags": [
+    "number sense",
+    "odd and even",
+    "learn math",
+    "basic math",
+    "math for beginners"
+  ],
+  "piece": "odd_even_pairs",
+  "narration_lines": [
+    "Why does an odd number plus an odd number always make an even number?",
+    "Take 5 dots. Pair them up: 2 pairs, with 1 left over.",
+    "Now take 3 dots. Pair them up: 1 pair, with 1 left over.",
+    "Those two leftover dots pair up with each other. 5 plus 3 is 8, fully paired, and even."
+  ],
+  "params": {
+    "kicker": "why it always works",
+    "hook": "Why does odd + odd = even?",
+    "a": 5,
+    "b": 3,
+    "footnote": "the two leftover dots always pair up with each other"
+  }
+}
