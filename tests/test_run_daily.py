@@ -109,6 +109,22 @@ def test_run_skips_remaining_tracks_after_quota_exhaustion():
     assert exit_code == 0  # quota exhaustion is expected/handled, not a failure
 
 
+def test_run_skips_paused_tracks_without_calling_run_track():
+    # hindi_mythology/teens/adults/women/hero_saga are paused=True (see
+    # pipeline.config) -- run() must skip them before ever calling
+    # run_track/run_math_track, not just before producing anything.
+    paused_keys = {k for k, t in TRACKS.items() if t.paused}
+    assert paused_keys, "this test needs at least one paused track to be meaningful"
+
+    with patch("run_daily.run_track", return_value=True) as mock_run_track, \
+         patch("run_daily.run_math_track", return_value=True) as mock_run_math_track:
+        run_daily.run(dry_run=False)
+
+    called_keys = {c.args[0].key for c in mock_run_track.call_args_list}
+    called_keys |= {c.args[0].key for c in mock_run_math_track.call_args_list}
+    assert paused_keys.isdisjoint(called_keys)
+
+
 def test_run_continues_past_a_real_failure_on_one_track():
     def fake_run_track(track, dry_run=False, privacy_status="private", produced_images=None):
         if track.key == "kids":
@@ -123,9 +139,9 @@ def test_run_continues_past_a_real_failure_on_one_track():
          patch("run_daily.run_math_track", return_value=True) as mock_run_math_track:
         exit_code = run_daily.run(dry_run=False)
 
-    story_tracks = [t for t in TRACKS.values() if t.content_type != "canvas"]
-    canvas_tracks = [t for t in TRACKS.values() if t.content_type == "canvas"]
-    assert mock_run_track.call_count == len(story_tracks)  # all story tracks still attempted
+    story_tracks = [t for t in TRACKS.values() if t.content_type != "canvas" and not t.paused]
+    canvas_tracks = [t for t in TRACKS.values() if t.content_type == "canvas" and not t.paused]
+    assert mock_run_track.call_count == len(story_tracks)  # all non-paused story tracks still attempted
     assert mock_run_math_track.call_count == len(canvas_tracks)
     assert exit_code == 1  # a real failure does affect the exit code
 

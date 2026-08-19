@@ -88,6 +88,14 @@ class Track:
     # does. Sustaining N/day still requires N pieces queued that day —
     # this only raises the ceiling, it doesn't create content.
     videos_per_day: int = 1
+    # True skips this track entirely in run_daily.run() (see the check at
+    # the top of the track loop), before it even looks at its queue or
+    # token. A deliberate, visible pause — not the same thing as "no
+    # YouTube token set" (teens/adults/women/hero_saga skip that way today,
+    # implicitly) — for a track whose channel is meant to keep existing but
+    # not produce right now. Flip back to False to resume; nothing about
+    # the track's config/content is touched.
+    paused: bool = False
 
 
 # Category IDs are YouTube's fixed video categories (24 = Entertainment,
@@ -154,6 +162,7 @@ TRACKS: dict[str, Track] = {
             "confidence or connection — not a moralizing lecture."
         ),
         extra_tags=["short story", "ya fiction", "relatable story"],
+        paused=True,
     ),
     "adults": Track(
         key="adults",
@@ -179,6 +188,7 @@ TRACKS: dict[str, Track] = {
             "hopeful without being saccharine."
         ),
         extra_tags=["short story", "life story", "story time"],
+        paused=True,
     ),
     "women": Track(
         key="women",
@@ -205,6 +215,7 @@ TRACKS: dict[str, Track] = {
             "affirming without being preachy."
         ),
         extra_tags=["short story", "women's story", "inspiring story"],
+        paused=True,
     ),
     "hindi_mythology": Track(
         # Key/secret filenames kept as "hindi_mythology" (retiring the old
@@ -251,6 +262,13 @@ TRACKS: dict[str, Track] = {
         burn_captions=False,
         shares_images_with="kids",
         produce_long_form=True,
+        # Paused: was starving math_explainers (last in TRACKS iteration
+        # order) whenever this track's slow path -- independently
+        # regenerating a whole story's scene images when the sibling
+        # "kids" script wasn't produced in the same run -- ate the entire
+        # CI job's time budget. Flip back to False to resume; nothing
+        # about its content/config is touched.
+        paused=True,
     ),
     "hero_saga": Track(
         key="hero_saga",
@@ -282,6 +300,7 @@ TRACKS: dict[str, Track] = {
         ),
         extra_tags=["superhero story", "original story", "action adventure", "animated series", "hero saga"],
         serialized=True,
+        paused=True,
     ),
     "math_explainers": Track(
         key="math_explainers",
