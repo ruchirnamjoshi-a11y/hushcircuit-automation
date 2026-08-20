@@ -75,6 +75,7 @@ from pipeline.config import (
     Track,
     youtube_token_path,
 )
+from pipeline.manifestation_video import ZeroGPUQuotaExhausted
 from pipeline.math_scripts import load_next_pending as load_next_pending_math
 from pipeline.scripts import Script, load_next_pending, mark_used
 from pipeline.shorts import assemble_short
@@ -337,23 +338,144 @@ def run_math_track(track: Track, dry_run: bool = False, privacy_status: str = "p
     return True
 
 
+def run_manifestation_track(track: Track, dry_run: bool = False, privacy_status: str = "private") -> bool:
+    """Produces + uploads one manifestation/affirmation song video. Unlike
+    every other track, there's no pre-authored queue to consume — lyrics
+    and per-line scenes are written live each run by pipeline.
+    manifestation_lyrics (Gemini), the song by pipeline.manifestation_video.
+    synthesize_song (ACE-Step on HF's free ZeroGPU — ZeroGPUQuotaExhausted
+    is this track's equivalent of CloudflareQuotaExhausted: real observed
+    daily budget is small, ~5 minutes, and a single song generation can
+    consume most of it, so hitting the wall here aborts the run the same
+    way Cloudflare's does, not a failure), and the video from per-line AI
+    scene images (Cloudflare, free, one consistent character across all of
+    them via image-to-image conditioning) with Ken Burns motion held for
+    each line's REAL sung duration and karaoke-style captions."""
+    import hashlib
+    from datetime import date
+
+    from pipeline.ffmpeg_utils import group_words_into_captions_adaptive, probe_duration
+    from pipeline.manifestation_lyrics import extract_lyric_lines, generate_line_scenes, generate_lyrics, pick_theme
+    from pipeline.manifestation_video import (
+        DEFAULT_CHARACTER,
+        SONG_SEED,
+        assemble_video,
+        build_line_clips,
+        generate_character_reference,
+        generate_scene_image,
+        match_words_to_lines,
+        synthesize_song,
+        transcribe_song,
+    )
+    from pipeline.upload import set_thumbnail, upload_video
+
+    if not dry_run and already_produced_today(track.key, limit=track.videos_per_day):
+        print(f"[{track.key}] Already produced a video today — skipping until tomorrow.")
+        return True
+    if not dry_run and not youtube_token_path(track.key).exists():
+        print(f"[{track.key}] No YouTube OAuth token yet for this channel — skipping until it's set up.")
+        return True
+
+    today = date.today()
+    run_dir = OUTPUT_DIR / track.key / today.isoformat()
+    run_dir.mkdir(parents=True, exist_ok=True)
+    theme = pick_theme(today.toordinal())  # naturally alternates forever, no stored counter needed
+
+    print(f"[{track.key}] [1/6] Writing lyrics (Gemini, theme={theme})...")
+    lyrics_result = generate_lyrics(theme)
+    lines = extract_lyric_lines(lyrics_result["lyrics"])
+    print(f"[{track.key}] '{lyrics_result['title']}' — {len(lines)} sung lines")
+
+    print(f"[{track.key}] [2/6] Writing per-line scene descriptions (Gemini)...")
+    scenes = generate_line_scenes(lines, DEFAULT_CHARACTER)
+
+    print(f"[{track.key}] [3/6] Synthesizing song (ACE-Step)...")
+    song_path = synthesize_song(lyrics_result["lyrics"], lyrics_result["style_tags"], 165.0, run_dir / "song.mp3")
+    song_duration = probe_duration(song_path)
+
+    print(f"[{track.key}] [4/6] Transcribing real per-word timing (faster-whisper)...")
+    words = transcribe_song(song_path)
+    caption_lines = group_words_into_captions_adaptive(words, gap_threshold=0.45, max_words=8)
+    matched_lines = match_words_to_lines(caption_lines, lines)
+
+    print(f"[{track.key}] [5/6] Generating character-consistent scene images + assembling video...")
+    ref_path = run_dir / "reference.png"
+    generate_character_reference(DEFAULT_CHARACTER, ref_path)
+    ref_bytes = ref_path.read_bytes()
+
+    images_dir = run_dir / "images"
+    line_image_paths: dict[str, list[Path]] = {}
+    for line, scene_list in scenes.items():
+        slug = hashlib.sha1(line.lower().encode()).hexdigest()[:10]
+        paths = []
+        for i, scene in enumerate(scene_list):
+            out_path = images_dir / f"{slug}_{i}.png"
+            generate_scene_image(scene, ref_bytes, out_path, seed=SONG_SEED + i)
+            paths.append(out_path)
+        line_image_paths[line] = paths
+
+    clip_paths = build_line_clips(matched_lines, line_image_paths, song_duration, run_dir / "clips")
+    video_path = assemble_video(clip_paths, song_path, words, run_dir / "final.mp4", run_dir / "work")
+
+    print(f"[{track.key}] [6/6] Uploading (dry_run={dry_run})...")
+    token_path = youtube_token_path(track.key)
+    title = lyrics_result["title"][:90]
+    description = (
+        f"A daily manifestation / affirmation song to play on repeat and let the words sink in.\n\n"
+        f"{lyrics_result['hook_phrase']}\n\n"
+        f"New affirmation songs daily. Let the lyrics become your mindset.\n\n"
+        f"#manifestation #affirmations #lawofattraction"
+    )
+    upload_result = upload_video(
+        video_path, title, description, [*track.extra_tags, theme],
+        privacy_status=privacy_status, dry_run=dry_run,
+        category_id=track.category_id, made_for_kids=track.made_for_kids, token_path=token_path,
+    )
+    print(upload_result)
+    if not dry_run and not upload_result.get("dry_run"):
+        try:
+            set_thumbnail(upload_result["video_id"], ref_path, dry_run=False, token_path=token_path)
+        except Exception as e:
+            # Same known restriction as every other track: custom
+            # thumbnails need a phone-verified channel. Don't fail the run
+            # over it -- YouTube's auto-generated thumbnail still works.
+            print(f"[{track.key}] thumbnail not set (channel likely needs phone verification): {e}")
+
+    if not dry_run:
+        mark_produced_today(track.key)
+    print(f"[{track.key}] Done.")
+    return True
+
+
 def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optional[str] = None) -> int:
     tracks = [TRACKS[track_key]] if track_key else list(TRACKS.values())
 
     any_failed = False
-    quota_exhausted = False
+    cloudflare_quota_exhausted = False
+    zerogpu_quota_exhausted = False
     produced_images: ProducedImages = {}
     for track in tracks:
         if track.paused:
             print(f"[{track.key}] Paused — skipping.")
             continue
-        if quota_exhausted:
+        if cloudflare_quota_exhausted:
+            # Every content_type calls Cloudflare for images (including
+            # "song" — see pipeline.manifestation_video), so this quota
+            # skips everything, same as before.
             print(f"[{track.key}] Skipping — Cloudflare image quota already confirmed exhausted "
+                  f"this run. Will retry on the next scheduled run.")
+            continue
+        if zerogpu_quota_exhausted and track.content_type == "song":
+            # Only "song" tracks call ACE-Step; a "story"/"canvas" track
+            # doesn't touch ZeroGPU at all and can still run this pass.
+            print(f"[{track.key}] Skipping — HF ZeroGPU quota already confirmed exhausted "
                   f"this run. Will retry on the next scheduled run.")
             continue
         try:
             if track.content_type == "canvas":
                 run_math_track(track, dry_run=dry_run, privacy_status=privacy_status)
+            elif track.content_type == "song":
+                run_manifestation_track(track, dry_run=dry_run, privacy_status=privacy_status)
             else:
                 run_track(track, dry_run=dry_run, privacy_status=privacy_status, produced_images=produced_images)
         except CloudflareQuotaExhausted as e:
@@ -361,10 +483,14 @@ def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optio
             # same wall, so stop here rather than burning time confirming
             # that 3 more times. Not a failure: this is the pipeline
             # working as designed, and the next scheduled run retries it.
-            quota_exhausted = True
+            cloudflare_quota_exhausted = True
             print(f"[{track.key}] Cloudflare image quota exhausted: {e}")
             print(f"[{track.key}] Aborting this track and skipping remaining tracks — "
                   f"script stays queued for the next scheduled run.")
+        except ZeroGPUQuotaExhausted as e:
+            zerogpu_quota_exhausted = True
+            print(f"[{track.key}] HF ZeroGPU quota exhausted: {e}")
+            print(f"[{track.key}] Aborting this track — will retry on the next scheduled run.")
         except Exception:
             any_failed = True
             print(f"[{track.key}] FAILED:")
