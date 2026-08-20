@@ -1,0 +1,58 @@
+{
+  "id": "nanhe-pippin-aur-ghaas-ka-dher",
+  "title": "नन्हे पिपिन और घास का प्यारा ढेर",
+  "description": "जब तेज़ हवा के झोंके ने पिपिन की सारी सूखी घास बिखेर दी, तब उसकी प्यारी दोस्त गिलहरी ने सिखाया कि मिलकर काम करने से हर मुश्किल कितनी आसान और मज़ेदार हो जाती है।",
+  "tags": [
+    "सोने के समय की कहानी",
+    "मिलकर काम करना",
+    "धैर्य",
+    "प्यारे जानवर",
+    "पहाड़ों की सैर"
+  ],
+  "character_reference": "A small, plump pika with soft brownish-gray fur, a pale cream-colored belly, large rounded ears with subtle white rims, and a tiny black nose.",
+  "source_script_id": "pippin-pikas-little-haystack",
+  "scenes": [
+    {
+      "narration": "नन्हा पिपिन पाइका ऊंचे, धूप से खिले चट्टानी पहाड़ पर रहता था। उसे मीठी-मीठी पहाड़ी घास चुनकर सर्दियों के लिए आरामदेह ढेर बनाना बहुत पसंद था।",
+      "on_screen_text": "हरी-भरी पहाड़ी घास",
+      "duration_hint": 9.6,
+      "visual": "A fluffy pika animal picking tall green stems of grass on a rocky hill"
+    },
+    {
+      "narration": "जैसे ही पिपिन ने घास का एक बड़ा सा ढेर तैयार किया, तभी अचानक एक तेज़ हवा का झोंका आया और उसकी सारी घास इधर-उधर उड़ा ले गया।",
+      "on_screen_text": "उड़ गई सारी घास",
+      "duration_hint": 9.6,
+      "visual": "Gusts of wind blowing dry grass stalks high into the blue sky"
+    },
+    {
+      "narration": "पिपिन एक गुनगुने पत्थर पर बैठ गया। सुबह की सारी मेहनत को पहाड़ी से नीचे लुढ़कते देख उसका नन्हा सा दिल थोड़ा उदास हो गया।",
+      "on_screen_text": "उदास नन्हा पिपिन",
+      "duration_hint": 8.7,
+      "visual": "A sad pika sitting on a stone watching grass drift away in wind"
+    },
+    {
+      "narration": "तभी, एक प्यारी सी गिलहरी मुस्कुराते हुए चट्टान से नीचे उतरी। उसके नन्हे हाथों में ताज़ी हरी घास का ढेर सारा गुच्छा था।",
+      "on_screen_text": "दोस्त की प्यारी मदद",
+      "duration_hint": 9.6,
+      "visual": "A friendly chipmunk carrying a armful of green grass stems toward a pika"
+    },
+    {
+      "narration": "फिर दोनों ने मिलकर चट्टानों पर दौड़ लगाई, बिखरी हुई घास के एक-एक तिनके को बटोरा और पहले से भी दोगुना बड़ा और सुंदर ढेर बना दिया।",
+      "on_screen_text": "साथ-साथ मिलकर काम",
+      "duration_hint": 9.6,
+      "visual": "A pika and a chipmunk bundling grass together on a sunlit stone"
+    },
+    {
+      "narration": "पिपिन ने खुशी से अपनी दोस्त गिलहरी को गले लगा लिया। साथ मिलकर काम करने से सारी परेशानी एक मज़ेदार खेल बन गई थी।",
+      "on_screen_text": "साथी हाथ बढ़ाना",
+      "duration_hint": 8.3,
+      "visual": "Two small mountain animals sitting beside a big pile of gathered grass"
+    },
+    {
+      "narration": "अब अपनी नन्हीं आंखें बंद कर लो और मीठे सपनों में खो जाओ। ऐसी ही प्यारी और शांत कहानियों के लिए हमारे साथ जुड़े रहिए। शुभ रात्रि।",
+      "on_screen_text": "मीठे सपने और शुभ रात्रि",
+      "duration_hint": 7.8,
+      "visual": "A calm twilight mountain view with soft orange clouds and gentle stars"
+    }
+  ]
+}

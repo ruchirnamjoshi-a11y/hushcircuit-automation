@@ -1,0 +1,58 @@
+{
+  "id": "elli-hathi-ki-pyari-lori",
+  "title": "एली हाथी की मीठी लोरी",
+  "description": "एली को लगता था कि उसकी आवाज़ बहुत तेज़ है, पर तभी उसने एक नन्ही चिड़िया को सुलाने के लिए एक बेहद कोमल और प्यारी लोरी गाना सीखा।",
+  "tags": [
+    "सोने के समय की कहानी",
+    "बच्चों की लोरी",
+    "कोमलता",
+    "हाथी की कहानी",
+    "जंगल की सैर"
+  ],
+  "character_reference": "A small pastel-grey elephant with a round chubby build, oversized floppy ears with soft pink inner lining, and a long curved trunk featuring a blush-pink tip.",
+  "source_script_id": "ellie-elephants-quiet-song",
+  "scenes": [
+    {
+      "narration": "एली हाथी को संगीत बहुत पसंद था, पर उसकी लंबी सूंड से निकलने वाली हर आवाज़ शांत जंगल में बादलों की गरज जैसी गूंजती थी।",
+      "on_screen_text": "एक भारी आवाज़",
+      "duration_hint": 9.1,
+      "visual": "A friendly baby elephant wearing a flower crown sitting under jungle leaves"
+    },
+    {
+      "narration": "उसे डर था कि कहीं दोस्तों की नींद न खराब हो जाए, इसलिए उसने बोलना ही छोड़ दिया और दबे पांव चुपके-चुपके चलने लगी।",
+      "on_screen_text": "बहुत तेज़ आवाज़",
+      "duration_hint": 9.6,
+      "visual": "An elephant looking down nervously while other jungle animals sleep softly"
+    },
+    {
+      "narration": "तभी एक ऊंचे पेड़ पर चिड़िया का एक छोटा सा बच्चा उदास होकर रो रहा था। रात घिर आई थी, पर नन्हे बच्चे को नींद नहीं आ रही थी।",
+      "on_screen_text": "उदास नन्ही चिड़िया",
+      "duration_hint": 10.4,
+      "visual": "A tiny red robin sitting shivering on a low wooden tree branch"
+    },
+    {
+      "narration": "एली धीरे से पेड़ के पास गई, अपनी सूंड को घोंसले के पास ले जाकर उसने बिल्कुल धीमी और गुनगुनी हवा का एक प्यार भरा झोंका दिया।",
+      "on_screen_text": "प्यार भरी फुसफुसाहट",
+      "duration_hint": 10.4,
+      "visual": "An elephant kneeling down close to a tiny bird nest in a tree"
+    },
+    {
+      "narration": "फिर उसने एक धीमी, सुकून भरी धुन गुनगुनाई। नन्हे बच्चे ने अपनी आंखें बंद कर लीं और घोंसले में सिमटकर चैन से सो गया।",
+      "on_screen_text": "नींद की लोरी",
+      "duration_hint": 10.9,
+      "visual": "A small bird sleeping peacefully curled up inside a warm feather nest"
+    },
+    {
+      "narration": "एली खुशी से मुस्कुरा उठी। वह समझ गई कि बड़ी आवाज़ भी अगर प्यार से निकाली जाए, तो बेहद कोमल और सुकून देने वाली बन सकती है।",
+      "on_screen_text": "कोमल और मीठी",
+      "duration_hint": 8.7,
+      "visual": "An elephant and a little bird cozy together under soft green fronds"
+    },
+    {
+      "narration": "जंगल की यह मीठी लोरी आपको भी सुकून भरी नींद में ले जाए। हर शाम ऐसे ही प्यारे सपनों के लिए हमारे साथ जुड़े रहें।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 8.3,
+      "visual": "A peaceful jungle sunset with glowing purple sky and gentle trees"
+    }
+  ]
+}
