@@ -322,6 +322,27 @@ TRACKS: dict[str, Track] = {
         content_type="canvas",
         videos_per_day=2,
     ),
+    "manifestation": Track(
+        key="manifestation",
+        label="Manifest & Money Affirmations",
+        voice="",  # unused -- content_type="song", no narration TTS
+        image_style_prefix="",  # unused -- see pipeline.manifestation
+        image_style_suffix="",
+        made_for_kids=False,
+        category_id="10",  # Music
+        story_guidance=(
+            "Not the narrated-story pipeline -- daily AI-generated "
+            "affirmation song (Gemini-written lyrics, ACE-Step music, a "
+            "looped short AI DJ-dancing clip as the visual). See "
+            "pipeline.manifestation. Paused until that generation path is "
+            "built and end-to-end verified; the OAuth channel is being set "
+            "up ahead of that."
+        ),
+        extra_tags=["manifestation", "affirmations", "law of attraction", "abundance", "money affirmations"],
+        produce_long_form=False,
+        content_type="song",
+        paused=True,
+    ),
 }
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
