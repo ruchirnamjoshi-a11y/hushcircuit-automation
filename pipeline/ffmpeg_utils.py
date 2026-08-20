@@ -158,6 +158,62 @@ def group_words_into_captions(
     ]
 
 
+def _group_words_adaptive_raw(
+    word_tuples: list[tuple[str, float, float, bool]],
+    gap_threshold: float,
+    max_words: int,
+) -> list[list[tuple[str, float, float, bool]]]:
+    """Shared chunk-boundary logic behind group_words_into_captions_adaptive
+    and build_ass_karaoke_captions — returns the raw per-word chunks (not
+    yet collapsed to a single string) so callers that need individual word
+    timing (karaoke) can use the same boundaries as the plain version."""
+    chunks: list[list[tuple[str, float, float, bool]]] = []
+    current: list[tuple[str, float, float, bool]] = []
+    for word, start, end, ends_sentence in word_tuples:
+        if current:
+            gap = start - current[-1][2]
+            if gap > gap_threshold or len(current) >= max_words:
+                chunks.append(current)
+                current = []
+        current.append((word, start, end, ends_sentence))
+        if ends_sentence:
+            chunks.append(current)
+            current = []
+    if current:
+        chunks.append(current)
+    return chunks
+
+
+def group_words_into_captions_adaptive(
+    word_tuples: list[tuple[str, float, float, bool]],
+    gap_threshold: float = 0.55,
+    max_words: int = 14,
+) -> list[tuple[str, float, float, bool]]:
+    """Groups (word, start, end, ends_sentence) into caption chunks that
+    prefer showing a WHOLE sentence/line at once — unlike
+    group_words_into_captions's fixed 1-2 word "pop" style — falling back
+    to a break only where the words themselves justify it: a real pause
+    (gap_threshold seconds of silence between two words, e.g. a breath or a
+    musical rest) or a sentence boundary. A hard max_words cap guards
+    against one giant caption if a "sentence" runs unnaturally long with no
+    natural pause in it (e.g. mis-punctuated ASR output).
+
+    Built for sung lyrics (song/manifestation captions), where a short
+    repeated phrase read whole ("Sita Ram, Sita Ram") is far more readable
+    than the same phrase chopped into two-word flashes.
+    """
+    chunks = _group_words_adaptive_raw(word_tuples, gap_threshold, max_words)
+    return [
+        (
+            " ".join(w for w, _, _, _ in chunk),
+            chunk[0][1],
+            chunk[-1][2],
+            any(_is_emphasis_word(w) for w, _, _, _ in chunk),
+        )
+        for chunk in chunks
+    ]
+
+
 def _pop_in_tags() -> str:
     """A quick scale-bounce + fade-in, applied at the start of each caption's
     on-screen window — the classic word-by-word 'pop' of short-form captions."""
@@ -215,6 +271,75 @@ Format: Layer, Start, End, Style, Text
     for text, start, end, emphasize in caption_lines:
         color = ACCENT_INLINE_ASS if emphasize else WHITE_INLINE_ASS
         _add(text, start, end, "Caption", override=f"{pop_tags}\\c{color}")
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text("".join(lines))
+    return out_path
+
+
+def build_ass_karaoke_captions(
+    word_tuples: list[tuple[str, float, float, bool]],
+    out_path: Path,
+    resolution: tuple[int, int],
+    font_size: int = 40,
+    font_name: str = "Avenir Next Heavy",
+    gap_threshold: float = 0.45,
+    max_words: int = 8,
+    sung_rgb: tuple[int, int, int] = ACCENT_RGB,
+    unsung_rgb: tuple[int, int, int] = (255, 255, 255),
+) -> Path:
+    """Same line-grouping as group_words_into_captions_adaptive (whole
+    lyric line at a time, breaking only on a real pause/sentence end), but
+    each word lights up individually via ASS karaoke (\\k) tags timed to
+    its own real start — the "streaming"/highlight-as-sung look, vs. the
+    whole line appearing/disappearing as one static block.
+
+    \\k switches color at a cumulative offset, not an absolute timestamp, so
+    each word's duration is measured from the previous word's *start* (any
+    silence before a word is folded into the previous word's held color
+    rather than creating a visible gap) — the standard karaoke-subtitle
+    convention.
+
+    sung_rgb/unsung_rgb are PrimaryColour (already-sung) and
+    SecondaryColour (not-yet-sung) respectively.
+    """
+    width, height = resolution
+    caption_margin_v = int(height * 0.14)
+    sung = _rgb_to_ass_style_color(sung_rgb)
+    unsung = _rgb_to_ass_style_color(unsung_rgb)
+    header = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {width}
+PlayResY: {height}
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,{font_name},{font_size},{sung},{unsung},&H00000000,&H00000000,1,0,1,5,0,2,60,60,{caption_margin_v},1
+
+[Events]
+Format: Layer, Start, End, Style, Text
+"""
+    lines = [header]
+    chunks = _group_words_adaptive_raw(word_tuples, gap_threshold, max_words)
+
+    for chunk in chunks:
+        line_start = chunk[0][1]
+        line_end = chunk[-1][2]
+        if line_end <= line_start:
+            continue
+        parts = []
+        prev_boundary = line_start
+        for i, (word, start, end, _) in enumerate(chunk):
+            next_boundary = chunk[i + 1][1] if i + 1 < len(chunk) else end
+            duration_cs = max(1, round((next_boundary - prev_boundary) * 100))
+            escaped = word.replace("\\", "").replace("{", "").replace("}", "")
+            parts.append(f"{{\\k{duration_cs}}}{escaped} ")
+            prev_boundary = next_boundary
+        text = "".join(parts).rstrip()
+        lines.append(
+            f"Dialogue: 0,{seconds_to_ass_timestamp(line_start)},{seconds_to_ass_timestamp(line_end)},Karaoke,{text}\n"
+        )
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text("".join(lines))
