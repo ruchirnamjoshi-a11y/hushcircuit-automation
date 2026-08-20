@@ -103,25 +103,29 @@ class CloudflareQuotaExhausted(RuntimeError):
 
 
 def _call_cloudflare(
-    prompt: str, seed: int | None = None, reference_image_bytes: bytes | None = None,
+    prompt: str,
+    seed: int | None = None,
+    reference_image_bytes: bytes | None = None,
+    resolution: tuple[int, int] = (720, 1280),
 ) -> Image.Image:
     """flux-2-klein-4b takes multipart form data, not JSON (unlike the
     older flux-1-schnell) — confirmed empirically, since Cloudflare's docs
     don't publish the field names. `reference_image_bytes`, when given, is
     sent as `input_image` — real image-to-image conditioning, not just a
     text description, so a subsequent scene can be given the first scene's
-    actual generated image to keep the character visually consistent."""
+    actual generated image to keep the character visually consistent.
+
+    `resolution` defaults to (720, 1280) — every story track's 9:16 target,
+    an exact match so almost nothing needs to be cropped downstream (see
+    original comment: force-cropping a square generation to 1080x1920 was
+    throwing away 43.8% of every image's width). Pass (1280, 720) for a
+    16:9 caller (e.g. pipeline.manifestation_video) instead."""
     url = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/ai/run/{AI_IMAGE_MODEL}"
+    width, height = resolution
     files: dict = {
         "prompt": (None, prompt),
-        # Requesting the output natively in (close to) our 9:16 target
-        # instead of the model's square default — verified live that the
-        # model honors width/height. Generating square and force-cropping
-        # to 1080x1920 afterward was throwing away 43.8% of every image's
-        # width; 720x1280 is an exact 9:16 match, so almost nothing needs
-        # to be cropped downstream.
-        "width": (None, "720"),
-        "height": (None, "1280"),
+        "width": (None, str(width)),
+        "height": (None, str(height)),
     }
     if seed is not None:
         files["seed"] = (None, str(seed))

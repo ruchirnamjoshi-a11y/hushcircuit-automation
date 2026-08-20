@@ -370,6 +370,12 @@ AI_IMAGE_MODEL = os.environ.get("AI_IMAGE_MODEL", "@cf/black-forest-labs/flux-2-
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 
+# Hugging Face account token -- unlocks the larger authenticated ZeroGPU
+# quota pool (vs. anonymous) for pipeline.manifestation_video's ACE-Step
+# song generation. Free account, no billing; see pipeline.manifestation_video
+# for the real observed daily-quota numbers.
+HF_TOKEN = os.environ.get("HF_TOKEN", "")
+
 TTS_VOICE = os.environ.get("TTS_VOICE", "en-US-GuyNeural")
 
 # Gemini's native TTS (Track.tts_provider="gemini") — noticeably more
