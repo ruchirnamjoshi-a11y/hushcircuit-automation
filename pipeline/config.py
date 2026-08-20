@@ -262,13 +262,17 @@ TRACKS: dict[str, Track] = {
         burn_captions=False,
         shares_images_with="kids",
         produce_long_form=True,
-        # Paused: was starving math_explainers (last in TRACKS iteration
-        # order) whenever this track's slow path -- independently
-        # regenerating a whole story's scene images when the sibling
-        # "kids" script wasn't produced in the same run -- ate the entire
-        # CI job's time budget. Flip back to False to resume; nothing
-        # about its content/config is touched.
-        paused=True,
+        # Resumed 2026-08-19: was paused because its SLOW path (independently
+        # regenerating a whole story's scene images when the sibling "kids"
+        # script wasn't produced in the same run) starved math_explainers of
+        # CI time. The actual fix isn't pausing the track — it's making sure
+        # real paired scripts (source_script_id matching a currently-pending
+        # "kids" script, scenes[].visual word-for-word identical) are queued
+        # so the fast/free shared-image path applies instead of the fallback.
+        # Backfilled scripts_queue/pending/hindi_mythology/ to match kids'
+        # 009-015 before flipping this back — watch the next few CI runs to
+        # confirm math_explainers isn't starved again.
+        paused=False,
     ),
     "hero_saga": Track(
         key="hero_saga",

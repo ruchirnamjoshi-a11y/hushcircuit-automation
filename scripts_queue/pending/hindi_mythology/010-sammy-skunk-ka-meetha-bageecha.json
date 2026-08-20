@@ -1,0 +1,58 @@
+{
+  "id": "sammy-skunk-ka-meetha-bageecha",
+  "title": "सैमी स्कंक का मीठा बगीचा",
+  "description": "सैमी नए दोस्त बनाने में थोड़ा झिझकता था, लेकिन उसके मीठे स्ट्रॉबेरी के बगीचे ने उसे कई प्यारे दोस्त दिला दिए।",
+  "tags": [
+    "सोने का समय",
+    "दोस्ती की कहानी",
+    "शर्मीलापन",
+    "बागवानी",
+    "प्यारे जानवर"
+  ],
+  "character_reference": "A small, chubby black skunk with plush fur and a classic broad white stripe extending down his back to a fluffy, bushy tail. He has large friendly dark eyes, a tiny pink nose, and wears a simple faded denim gardener's apron with a small front pocket.",
+  "source_script_id": "sammy-skunks-sweet-garden",
+  "scenes": [
+    {
+      "narration": "धूप से खिली पूरी घाटी में सैमी स्कंक सबसे मीठी और रसीली लाल बेरी उगाता था। वह रोज़ सुबह बहुत प्यार से अपने छोटे से हरे-भरे बगीचे की देखभाल करता था।",
+      "on_screen_text": "मीठे बेरी का बगीचा",
+      "duration_hint": 9.6,
+      "visual": "A cute skunk standing in a colorful garden filled with red berries"
+    },
+    {
+      "narration": "सैमी का बड़ा मन था कि उसके भी दोस्त होते जो इन मीठी बेरीज़ का स्वाद चखते, लेकिन उसे डर था कि स्कंक होने की वजह से शायद दूसरे जानवर उससे दूर भागेंगे।",
+      "on_screen_text": "नन्हा शर्मीला सैमी",
+      "duration_hint": 10.0,
+      "visual": "A skunk peeking timidly from behind a large green bush in a meadow"
+    },
+    {
+      "narration": "एक दोपहर, एक छोटी खरगोश पास ही लकड़ी के कुंदे पर आ बैठी। लंबी सैर के बाद वह थक चुकी थी और भूख के मारे उसके पेट में चूहे कूद रहे थे।",
+      "on_screen_text": "एक नन्ही भूखी खरगोश",
+      "duration_hint": 9.1,
+      "visual": "A small brown bunny resting on a log with a tummy rumble look"
+    },
+    {
+      "narration": "सैमी ने हिम्मत जुटाई, एक गहरी सांस ली, मीठी-मीठी बेरीज़ से भरी टोकरी उठाई और मुस्कुराते हुए खरगोश की तरफ बढ़ चला।",
+      "on_screen_text": "प्यार भरी दावत",
+      "duration_hint": 9.6,
+      "visual": "A skunk offering a wooden bowl packed with bright red berries to a bunny"
+    },
+    {
+      "narration": "खरगोश ने जैसे ही एक बेरी खाई, उसकी आँखें खुशी से चमक उठीं। उसने तुरंत अपने बाकी दोस्तों को भी इस लाजवाब दावत का मज़ा लेने के लिए बुला लिया।",
+      "on_screen_text": "बन गए नए दोस्त",
+      "duration_hint": 9.6,
+      "visual": "Three small woodland animals eating sweet berries together on a mossy mound"
+    },
+    {
+      "narration": "पूरी दोपहर सैमी जंगल के अपने नए साथियों के साथ हँसता और बातें करता रहा। उसने सीखा कि नेकी और प्यार ही दुनिया की सबसे प्यारी खुशबू है।",
+      "on_screen_text": "मीठी और सच्ची दोस्ती",
+      "duration_hint": 9.1,
+      "visual": "A warm sunny glade with animals laughing under a big oak tree"
+    },
+    {
+      "narration": "अब आप भी आराम से सो जाइए और मीठे सपनों में खो जाइए, यह जानकर कि अच्छे दोस्त हमेशा हमारे आस-पास ही होते हैं। कल ऐसी ही शांत और प्यारी कहानियों के लिए हमसे ज़रूर जुड़ें। शुभ रात्रि।",
+      "on_screen_text": "शुभ रात्रि और सब्सक्राइब",
+      "duration_hint": 8.3,
+      "visual": "Soft golden twilight over a quiet meadow with tall gentle wildflowers"
+    }
+  ]
+}

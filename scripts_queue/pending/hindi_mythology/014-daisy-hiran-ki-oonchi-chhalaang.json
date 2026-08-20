@@ -1,0 +1,58 @@
+{
+  "id": "daisy-hiran-ki-oonchi-chhalaang",
+  "title": "डेज़ी हिरन की ऊँची छलांग",
+  "description": "डेज़ी रास्ते में पड़े एक बड़े तने को पार करने से थोड़ा घबराती है, पर वह सीखती है कि छोटे-छोटे कदम उठाकर बड़ी से बड़ी हिम्मत पाई जा सकती है।",
+  "tags": [
+    "सोने का समय",
+    "हिम्मत",
+    "धैर्य",
+    "हिरन",
+    "जादुई जंगल"
+  ],
+  "character_reference": "A small fawn with warm chestnut-brown fur, delicate white spots scattered along her back, large dark brown eyes, and tiny black hooves.",
+  "source_script_id": "daisy-deers-high-jump",
+  "scenes": [
+    {
+      "narration": "नन्हीं डेज़ी हिरन को अपने प्यारे परिवार के साथ जादुई जंगल की हरी-भरी और मखमली पगडंडियों पर घूमना बहुत पसंद था।",
+      "on_screen_text": "जंगल की पगडंडी",
+      "duration_hint": 7.8,
+      "visual": "A young fawn walking along a soft mossy path inside a sunny forest"
+    },
+    {
+      "narration": "एक खिली हुई सुबह, रास्ते के बीचों-बीच एक बड़ा सा काई लगा तना गिरा हुआ था, जिसने डेज़ी के पसंदीदा मैदान का रास्ता रोक दिया।",
+      "on_screen_text": "एक बड़ा तना",
+      "duration_hint": 8.7,
+      "visual": "A small deer standing in front of a mossy fallen tree trunk"
+    },
+    {
+      "narration": "डेज़ी वहीं रुक गई और थोड़ी हिचकिचाई। उसकी नन्हीं टाँगों के लिए वह तना किसी ऊँचे पहाड़ जैसा लग रहा था।",
+      "on_screen_text": "मन में हिचकिचाहट",
+      "duration_hint": 8.7,
+      "visual": "A little fawn looking up doubtfully at a wooden log across the path"
+    },
+    {
+      "narration": "तभी उसकी माँ प्यार से पास आईं और डेज़ी के कान सहलाए। उन्होंने सिखाया कि कैसे एक-एक नन्हा कदम आगे बढ़ाकर उसे पार किया जाता है।",
+      "on_screen_text": "माँ का सहारा",
+      "duration_hint": 10.0,
+      "visual": "A mother deer standing next to her fawn offering encouragement on a trail"
+    },
+    {
+      "narration": "डेज़ी ने एक गहरी, शांत साँस ली। उसने पहले अपना बायाँ खुर उठाया, फिर दायाँ, और बड़े प्यार से तने के उस पार रख दिया।",
+      "on_screen_text": "एक छोटा कदम",
+      "duration_hint": 9.1,
+      "visual": "A tiny fawn stepping carefully over a small fallen branch in a wood"
+    },
+    {
+      "narration": "वह खुशी से झूमती हुई धूप से भरे मैदान में पहुँच गई। डेज़ी ने जाना कि छोटे-छोटे कदमों से हर बड़ी मुश्किल आसान हो जाती है।",
+      "on_screen_text": "हिम्मत भरे कदम",
+      "duration_hint": 10.4,
+      "visual": "A fawn bounding happily across a sunlit meadow full of butterflies"
+    },
+    {
+      "narration": "आज रात मीठी नींद सोइए, यह याद रखते हुए कि आप जितने सोचते हैं, उससे कहीं ज्यादा बहादुर हैं। ऐसी ही प्यारी कहानियों के लिए जुड़े रहें।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 7.8,
+      "visual": "A peaceful sunset over a quiet grassy meadow with distant blue hills"
+    }
+  ]
+}

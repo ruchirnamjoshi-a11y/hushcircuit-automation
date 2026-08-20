@@ -1,0 +1,58 @@
+{
+  "id": "fiona-ki-pyaar-bhari-jhappi",
+  "title": "फियोना की प्यारी झप्पी",
+  "description": "नन्हीं फियोना अपने जंगली दोस्तों को गले लगाना चाहती है, और पतझड़ के मुलायम पत्तों की मदद से वह ढूंढ निकालती है एक बहुत ही प्यारा और अनोखा तरीका।",
+  "tags": [
+    "सोने के समय की कहानी",
+    "प्यारी झप्पी",
+    "सुलभ सोच",
+    "कांटेदार चूहा",
+    "पतझड़"
+  ],
+  "character_reference": "A small hedgehog with soft light-tan fur on her face and belly, dark brown quills, a black button nose, and a cozy coat made of fluffy golden-yellow maple leaves wrapped around her back.",
+  "source_script_id": "fiona-hedgehogs-hug",
+  "scenes": [
+    {
+      "narration": "नन्हीं फियोना हेजहॉग को प्यार भरे पल बहुत अच्छे लगते थे। जब भी वो जंगल में अपने दोस्तों को गले मिलते देखती, उसका नन्हा सा दिल खुशी से भर जाता।",
+      "on_screen_text": "प्यारा सा दिल",
+      "duration_hint": 9.1,
+      "visual": "A round little hedgehog sitting happily in a golden autumn forest"
+    },
+    {
+      "narration": "लेकिन फियोना खुद किसी को गले लगाने में झिझकती थी। उसे डर लगता था कि कहीं उसकी पीठ के कांटे गलती से किसी दोस्त को चुभ न जाएं।",
+      "on_screen_text": "कांटेदार पीठ",
+      "duration_hint": 8.7,
+      "visual": "A hedgehog looking at her spiky back while watching woodland friends hug"
+    },
+    {
+      "narration": "एक सुनहरी दोपहर, पतझड़ के सूखे पत्ते हवा में धीरे-धीरे नीचे गिर रहे थे। फियोना ने देखा कि एक मुलायम सा पत्ता आराम से मखमली घास पर आ गिरा।",
+      "on_screen_text": "मुलायम पत्ते",
+      "duration_hint": 9.6,
+      "visual": "A hedgehog rolling in a big pile of colorful maple leaves"
+    },
+    {
+      "narration": "उसने झटपट ढेर सारे सुनहरे और मुलायम पत्ते उठाए और उन्हें अपनी पीठ पर एक प्यारे, गर्म कोट की तरह लपेट लिया।",
+      "on_screen_text": "पत्तों की चादर",
+      "duration_hint": 8.7,
+      "visual": "A tiny hedgehog wrapped snugly in a blanket of soft orange autumn leaves"
+    },
+    {
+      "narration": "तभी वहां से एक छोटा चूहा निकला। फियोना ने अपनी बाहें फैलाईं, और चूहा खुशी से पत्तों के उस नरम कोट में आकर झट से सिमट गया।",
+      "on_screen_text": "प्यार भरी झप्पी",
+      "duration_hint": 10.0,
+      "visual": "A small field mouse hugging a leaf-wrapped hedgehog on soft forest moss"
+    },
+    {
+      "narration": "फियोना खुशी से झूम उठी। अब वह बिना किसी डर के अपने दोस्तों को ढेर सारा प्यार और अपनापन दे सकती थी।",
+      "on_screen_text": "प्यार की राह",
+      "duration_hint": 8.7,
+      "visual": "Two small forest creatures smiling warmly together under a canopy of leaves"
+    },
+    {
+      "narration": "अब आप भी अपनी रजाई में आराम से दुबक जाइए और मीठे सपनों में खो जाइए। हर रात ऐसी ही प्यारी कहानियों के लिए हमारे साथ जुड़े रहिए।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 7.8,
+      "visual": "A gentle starry night sky over a sleeping autumn forest clearing"
+    }
+  ]
+}

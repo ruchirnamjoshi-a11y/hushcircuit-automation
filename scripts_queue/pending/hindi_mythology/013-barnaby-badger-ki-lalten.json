@@ -1,0 +1,58 @@
+{
+  "id": "barnaby-badger-ki-lalten",
+  "title": "बार्नबी की प्यारी लालटेन",
+  "description": "बार्नबी ने चमकती काई से एक नन्हीं लालटेन बनाई, ताकि घने अंधेरे में रास्ता भटके एक छोटे से भौंरे को उसके घर पहुँचा सके।",
+  "tags": [
+    "सोने का समय",
+    "दयालुता",
+    "रोशनी",
+    "बिज्जू",
+    "रात की कहानी"
+  ],
+  "character_reference": "A small, stocky badger with dense grey fur, a dark snout, and prominent black-and-white stripes running across his face. He wears a simple dark blue vest.",
+  "source_script_id": "barnaby-badgers-lantern",
+  "scenes": [
+    {
+      "narration": "बार्नबी बिज्जू एक बड़े और पुराने पेड़ के नीचे रहता था, जहाँ ज़मीन पर मखमली, हरी और चमकती हुई काई बिछी रहती थी।",
+      "on_screen_text": "चमकती हरी काई",
+      "duration_hint": 7.8,
+      "visual": "A young badger gathering glowing green moss inside a hollow tree trunk"
+    },
+    {
+      "narration": "जैसे ही जंगल में शाम ढली, बार्नबी को पास के एक पौधे के पीछे से धीरे-धीरे रोने की आवाज़ आई। अंधेरे सायों के बीच एक नन्हा सा भौंरा खो गया था।",
+      "on_screen_text": "अंधेरे में खोया साथी",
+      "duration_hint": 10.0,
+      "visual": "A tiny shiny beetle sitting lost on a dark forest path at twilight"
+    },
+    {
+      "narration": "जंगल के रास्ते में इतना अंधेरा था कि भौंरे को अपना घर ही नहीं दिख रहा था। बार्नबी ने बड़े प्यार से चमकती काई को एक काँच की शीशी में रख दिया।",
+      "on_screen_text": "नन्हीं लालटेन",
+      "duration_hint": 10.9,
+      "visual": "A badger carefully placing glowing green moss inside a clear glass lantern"
+    },
+    {
+      "narration": "उसने लालटेन को ऊपर उठाया, और उसकी प्यारी हरी रोशनी पूरे रास्ते पर नाचने लगी, जिससे हर कदम सुरक्षित और जगमगाता हुआ दिखने लगा।",
+      "on_screen_text": "रोशन रास्ता",
+      "duration_hint": 9.1,
+      "visual": "A badger holding a softly glowing lantern to illuminate a mossy pathway"
+    },
+    {
+      "narration": "दोनों मजे से पगडंडी पर आगे बढ़ते रहे, जब तक कि नन्हा भौंरा एक बड़े लाल मशरूम के नीचे बने अपने प्यारे से घर नहीं पहुँच गया।",
+      "on_screen_text": "सुरक्षित अपने घर",
+      "duration_hint": 9.6,
+      "visual": "A little beetle reuniting with tiny beetle family members under a mushroom"
+    },
+    {
+      "narration": "नन्हे भौंरे ने हाथ हिलाकर शुक्रिया कहा, तो बार्नबी मुस्कुरा उठा। जब हम किसी दोस्त का साथ देते हैं, तो एक छोटी सी रोशनी भी बहुत बड़ा उजाला बन जाती है।",
+      "on_screen_text": "दोस्ती की रोशनी",
+      "duration_hint": 9.1,
+      "visual": "A badger watching happy beetles under the warm light of a moss lantern"
+    },
+    {
+      "narration": "आज रात यह प्यारी रोशनी आपके सपनों को भी मीठा बनाए। ऐसी ही सुकून भरी कहानियों के लिए हर शाम हमारे साथ जुड़े रहें।",
+      "on_screen_text": "प्यारे सपने",
+      "duration_hint": 7.8,
+      "visual": "A cozy forest hollow under a quiet moonlight sky with faint fireflies"
+    }
+  ]
+}
