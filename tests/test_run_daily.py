@@ -348,11 +348,21 @@ def test_run_track_falls_back_to_independent_generation_when_no_sibling_images(t
     assert patches["generate_scene_image_raw"].call_count == 3
 
 
-def test_run_track_produce_long_form_uploads_both_short_and_long(tmp_path):
-    fake_script = MagicMock()
-    fake_script.title = "Test"
-    fake_script.id = "test-id"
-    fake_script.scenes = [MagicMock(), MagicMock()]
+def test_run_track_and_run_long_form_track_are_independent_pipelines(tmp_path):
+    # Short and long-form are two SEPARATE productions now (own queue, own
+    # script, own images) -- not one script cut two ways. run_track()
+    # produces only the Short; a produce_long_form=True track additionally
+    # needs a real run_long_form_track() call (see run_daily.run()'s
+    # dispatch) reading from scripts_queue/pending/<track>/long/.
+    short_script = MagicMock()
+    short_script.title = "Short Test"
+    short_script.id = "short-test-id"
+    short_script.scenes = [MagicMock(), MagicMock()]
+    long_script = MagicMock()
+    long_script.title = "Long Test"
+    long_script.id = "long-test-id"
+    long_script.scenes = [MagicMock() for _ in range(5)]
+
     existing_token = tmp_path / "token.json"
     existing_token.write_text("{}")
     fake_image_path = tmp_path / "img.png"
@@ -361,21 +371,30 @@ def test_run_track_produce_long_form_uploads_both_short_and_long(tmp_path):
     patches = _patch_pipeline(generate_scene_image_raw=MagicMock(return_value=(fake_image_path, False)))
     with patch("run_daily.already_produced_today", return_value=False), \
          patch("run_daily.youtube_token_path", return_value=existing_token), \
-         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", fake_script)), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "script.json", short_script)), \
          patch("run_daily.OUTPUT_DIR", tmp_path), \
          patch.multiple("run_daily", **patches):
-        run_daily.run_track(KIDS_TRACK, dry_run=False)  # produce_long_form=True
+        run_daily.run_track(KIDS_TRACK, dry_run=False)
 
-    # Short and long-form are two distinct assemblers now (9:16 vs the
-    # dedicated 16:9 long_form one) rather than assemble_short called twice
-    # with max_seconds toggled -- a long-form video used to come out as a
-    # long vertical Short instead of a real widescreen video.
     assert len(patches["assemble_short"].call_args_list) == 1
-    assert len(patches["assemble_long_form"].call_args_list) == 1
+    assert len(patches["assemble_long_form"].call_args_list) == 0
     upload_calls = patches["upload_daily_video"].call_args_list
-    assert len(upload_calls) == 2
-    is_short_values = sorted(c.kwargs["is_short"] for c in upload_calls)
-    assert is_short_values == [False, True]
+    assert len(upload_calls) == 1
+    assert upload_calls[0].kwargs["is_short"] is True
+
+    patches2 = _patch_pipeline(generate_scene_image_raw=MagicMock(return_value=(fake_image_path, False)))
+    with patch("run_daily.already_produced_today", return_value=False), \
+         patch("run_daily.youtube_token_path", return_value=existing_token), \
+         patch("run_daily.load_next_pending", return_value=(tmp_path / "long_script.json", long_script)), \
+         patch("run_daily.OUTPUT_DIR", tmp_path), \
+         patch.multiple("run_daily", **patches2):
+        run_daily.run_long_form_track(KIDS_TRACK, dry_run=False)
+
+    assert len(patches2["assemble_short"].call_args_list) == 0
+    assert len(patches2["assemble_long_form"].call_args_list) == 1
+    upload_calls2 = patches2["upload_daily_video"].call_args_list
+    assert len(upload_calls2) == 1
+    assert upload_calls2[0].kwargs["is_short"] is False
 
 
 def test_run_track_produce_long_form_false_uploads_only_short(tmp_path):

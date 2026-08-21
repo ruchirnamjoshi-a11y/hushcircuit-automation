@@ -104,15 +104,25 @@ def _story_seed(seed_key: str) -> int:
 
 def _generate_story_images(
     script: Script, track: Track, seed: int, images_raw_dir: Path,
+    resolution: tuple[int, int] = (720, 1280),
 ) -> tuple[list[Path], list[bool]]:
     """Generates a fixed reference portrait, then every scene's illustration
     conditioned on it. The portrait generation is the real-work quota probe
     (raises CloudflareQuotaExhausted if the daily free allocation is
     exhausted) — done before any other work so nothing's wasted if it
-    fails."""
+    fails.
+
+    `resolution` defaults to (720, 1280) — the Short's 9:16 (see
+    run_track, which crops the SAME raw images to both 9:16 and 16:9 to
+    share one Cloudflare call across formats). run_long_form_track passes
+    (1280, 720) instead: its own independent script has no format to
+    share images with, so generating natively in 16:9 avoids the
+    inconsistent, sometimes badly-cropped compositions that came from
+    center-cropping a 9:16 source down to widescreen."""
     portrait_path, portrait_fallback = generate_scene_image_raw(
         REFERENCE_PORTRAIT_SCENE, images_raw_dir / "reference_portrait.png", track,
         character_reference=script.character_reference, seed=seed, raise_on_quota_exhausted=True,
+        resolution=resolution,
     )
     reference_image_bytes = None if portrait_fallback else portrait_path.read_bytes()
 
@@ -128,7 +138,7 @@ def _generate_story_images(
         result = generate_scene_image_raw(
             scene, images_raw_dir / f"scene_{i:02d}.png", track,
             character_reference=script.character_reference, seed=seed,
-            reference_image_bytes=reference_image_bytes,
+            reference_image_bytes=reference_image_bytes, resolution=resolution,
         )
         raw_results.append(result)
         print(f"[{track.key}] [1/4]   scene {i + 1}/{total} done")
@@ -254,34 +264,115 @@ def run_track(
     )
     print(short_upload)
 
-    if track.produce_long_form:
-        # Long-form is a real 16:9 YouTube video, not a long vertical
-        # Short — needs its own fit pass at LONG_FORM_RESOLUTION (the Short's
-        # fit_images are cropped to 9:16 and would just be a tall, narrow
-        # crop of the scene, not a proper widescreen frame) and the
-        # dedicated 16:9 assembler rather than reusing assemble_short.
-        print(f"[{track.key}] Fitting images for long-form (16:9)...")
-        fit_images_long = [
-            fit_scene_image(raw, run_dir / "images_fit_long" / f"scene_{i:02d}.png", LONG_FORM_RESOLUTION)
-            for i, raw in enumerate(raw_images)
-        ]
-        print(f"[{track.key}] Assembling and uploading long-form (dry_run={dry_run})...")
-        long_path = assemble_long_form(
-            script, scene_audios, fit_images_long,
-            work_dir=run_dir / "work_long", out_path=run_dir / "video_long.mp4",
-            music_path=music_path, scene_used_fallback=scene_used_fallback,
-            burn_captions=track.burn_captions,
-        )
-        long_upload = upload_daily_video(
-            script, long_path, thumbnail_path, track,
-            privacy_status=privacy_status, dry_run=dry_run, is_short=False,
-        )
-        print(long_upload)
-
     mark_used(script_path, used_dir)
     if not dry_run:
         mark_produced_today(track.key)
     print(f"[{track.key}] Done. Moved {script_path.name} to scripts_queue/used/{track.key}/.")
+    return True
+
+
+LONG_FORM_STATE_SUFFIX = "_long"
+
+
+def run_long_form_track(
+    track: Track,
+    dry_run: bool = False,
+    privacy_status: str = "private",
+    produced_images: Optional[ProducedImages] = None,
+) -> bool:
+    """The long-form (8-10 min, 16:9) pipeline — a genuinely SEPARATE story
+    from the Short (run_track), not a longer cut of the same one: its own
+    queue (scripts_queue/pending/<track>/long/), its own scene count/images,
+    its own daily-production gate (state key "<track>_long", independent of
+    the Short's). Only called for Track.produce_long_form=True tracks.
+
+    Deliberately not a trimmed/expanded version of one shared script — a
+    Short and an 8-10 min video have different pacing needs (a handful of
+    punchy beats vs. a real multi-act story), so writing them as one script
+    and cutting it two ways either made the Short drag or made the
+    "long-form" video barely longer than the Short (the bug this was built
+    to fix — every kids script except one hand-authored outlier ended up
+    45-70s even in its "long-form" cut, since both formats shared the same
+    ~7-scene script)."""
+    if produced_images is None:
+        produced_images = {}
+    long_state_key = f"{track.key}{LONG_FORM_STATE_SUFFIX}"
+
+    if not dry_run and already_produced_today(long_state_key, limit=1):
+        print(f"[{track.key}] Long-form already produced today — skipping until tomorrow.")
+        return True
+    if not dry_run and not youtube_token_path(track.key).exists():
+        print(f"[{track.key}] No YouTube OAuth token yet for this channel — skipping until it's set up.")
+        return True
+
+    pending_dir = QUEUE_PENDING_DIR / track.key / "long"
+    used_dir = QUEUE_USED_DIR / track.key / "long"
+
+    result = load_next_pending(pending_dir)
+    if result is None:
+        print(f"[{track.key}] Long-form queue empty — refill needed. Skipping today.")
+        return True
+
+    script_path, script = result
+    print(f"[{track.key}] Producing long-form: {script.title} ({script.id})")
+    run_dir = OUTPUT_DIR / track.key / "long" / script.id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    images_raw_dir = run_dir / "images_raw"
+
+    seed = _story_seed(f"{track.key}_long" if track.serialized else script.id)
+
+    reused = _reused_story_images(script, track, produced_images) if track.shares_images_with else None
+    if reused is not None:
+        print(f"[{track.key}] [1/3] Reusing long-form images generated for "
+              f"'{script.source_script_id or script.id}' earlier this run — no image-generation cost.")
+        raw_images, scene_used_fallback = reused
+    else:
+        if track.shares_images_with:
+            print(f"[{track.key}] [1/3] No matching long-form images from '{track.shares_images_with}' "
+                  f"this run yet — generating independently instead.")
+        else:
+            print(f"[{track.key}] [1/3] Probing image generation availability...")
+        raw_images, scene_used_fallback = _generate_story_images(
+            script, track, seed, images_raw_dir, resolution=LONG_FORM_RESOLUTION,
+        )
+        produced_images[(track.key, script.id)] = (images_raw_dir, scene_used_fallback)
+
+    voice_desc = f"{track.tts_provider}: {'/'.join(track.tts_voices) or track.voice}"
+    print(f"[{track.key}] [2/3] Synthesizing voiceover ({voice_desc})...")
+    scene_audios = synthesize_script_for_track(script, run_dir / "audio", track)
+
+    print(f"[{track.key}] Fitting images for long-form (16:9)...")
+    fit_images_long = [
+        fit_scene_image(raw, run_dir / "images_fit_long" / f"scene_{i:02d}.png", LONG_FORM_RESOLUTION)
+        for i, raw in enumerate(raw_images)
+    ]
+
+    thumbnail_source = next(
+        (raw for raw, used_fallback in zip(raw_images, scene_used_fallback) if not used_fallback),
+        None,
+    )
+    thumbnail_path = generate_thumbnail(
+        script.title, run_dir / "thumbnail.jpg", draw_text=track.burn_captions,
+        source_image_path=thumbnail_source,
+    )
+
+    print(f"[{track.key}] [3/3] Assembling and uploading long-form (dry_run={dry_run})...")
+    long_path = assemble_long_form(
+        script, scene_audios, fit_images_long,
+        work_dir=run_dir / "work_long", out_path=run_dir / "video_long.mp4",
+        music_path=pick_music_track(), scene_used_fallback=scene_used_fallback,
+        burn_captions=track.burn_captions,
+    )
+    long_upload = upload_daily_video(
+        script, long_path, thumbnail_path, track,
+        privacy_status=privacy_status, dry_run=dry_run, is_short=False,
+    )
+    print(long_upload)
+
+    mark_used(script_path, used_dir)
+    if not dry_run:
+        mark_produced_today(long_state_key)
+    print(f"[{track.key}] Long-form done. Moved {script_path.name} to scripts_queue/used/{track.key}/long/.")
     return True
 
 
@@ -478,6 +569,13 @@ def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optio
                 run_manifestation_track(track, dry_run=dry_run, privacy_status=privacy_status)
             else:
                 run_track(track, dry_run=dry_run, privacy_status=privacy_status, produced_images=produced_images)
+                if track.produce_long_form:
+                    # A genuinely separate production (own queue, own
+                    # story, own images) — see run_long_form_track's
+                    # docstring. Same try/except as the Short above: a
+                    # Cloudflare quota hit here still aborts the rest of
+                    # this run() call, since the quota is account-wide.
+                    run_long_form_track(track, dry_run=dry_run, privacy_status=privacy_status, produced_images=produced_images)
         except CloudflareQuotaExhausted as e:
             # Account-wide, not per-track — every other track would hit the
             # same wall, so stop here rather than burning time confirming

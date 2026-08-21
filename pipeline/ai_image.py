@@ -161,12 +161,24 @@ def generate_scene_image_raw(
     reference_image_bytes: bytes | None = None,
     retries: int = 3,
     raise_on_quota_exhausted: bool = False,
+    resolution: tuple[int, int] = (720, 1280),
 ) -> tuple[Path, bool]:
     """Generates one illustration for a scene via Cloudflare Workers AI, saved
-    at its native resolution (no cropping yet) — call fit_scene_image() per
-    output format (long-form 16:9, Short 9:16) afterward so a scene only
-    costs one API call regardless of how many formats use it. Falls back to
-    the brand gradient if credentials are unset or every attempt fails.
+    at `resolution` (no cropping needed afterward if the caller's target
+    format already matches it). Falls back to the brand gradient if
+    credentials are unset or every attempt fails.
+
+    `resolution` defaults to (720, 1280) — the Short's 9:16, matching every
+    story track's shared-image path (one raw image, cropped per format
+    afterward via fit_scene_image, to cover both a Short and its long-form
+    cut from a single Cloudflare call — see run_daily.run_track). Pass
+    (1280, 720) for a caller with no such sharing to do (e.g. run_daily.
+    run_long_form_track, which generates its own independent long-form
+    script's images and gets no benefit from generating portrait and
+    center-cropping down to widescreen after the fact — that was producing
+    inconsistent, sometimes badly-cropped compositions, since a 720x1280
+    source only has a narrow horizontal band of "safe" content once
+    force-cropped to 16:9).
 
     `track` selects the illustration style (kids/teens/adults/women — see
     pipeline.config.TRACKS). `character_reference` (text) and
@@ -206,7 +218,7 @@ def generate_scene_image_raw(
         prompt = build_prompt(scene, track, character_reference)
         for attempt in range(retries + 1):
             try:
-                image = _call_cloudflare(prompt, seed, reference_image_bytes)
+                image = _call_cloudflare(prompt, seed, reference_image_bytes, resolution=resolution)
                 image.convert("RGB").save(out_path)
                 time.sleep(INTER_REQUEST_DELAY_SECONDS)
                 return out_path, False

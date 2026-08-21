@@ -1,0 +1,246 @@
+{
+  "id": "rosie-raccoon-and-the-longest-night",
+  "title": "Rosie Raccoon and the Longest Night",
+  "description": "A young raccoon chases a glowing beetle too far from home and must find her way back through the dark forest with the help of new friends -- a gentle story about courage and community.",
+  "tags": [
+    "raccoon",
+    "forest",
+    "bedtime story",
+    "courage",
+    "friendship",
+    "moral story"
+  ],
+  "character_reference": "a small young raccoon with soft grey-brown fur, a black bandit mask marking around her eyes, a fluffy ringed black-and-grey tail, and a little woven cloth treasure pouch slung across her chest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "In the heart of Willowbrook Forest, a small raccoon named Rosie loved nothing more than collecting shiny, sparkly things. Every evening she padded out from her den with a little cloth pouch, ready for a new treasure hunt.",
+      "on_screen_text": "MEET ROSIE",
+      "duration_hint": 16.5,
+      "visual": "a small raccoon with a treasure pouch stepping out of a cozy tree-hollow den at dusk, forest glowing with warm golden evening light"
+    },
+    {
+      "narration": "Rosie lived snug in a hollow oak with her mother Coral and her older brother Finn. Coral always said the same thing before Rosie wandered off: stay where you can still see our tree, little one.",
+      "on_screen_text": "ROSIE'S FAMILY",
+      "duration_hint": 15.7,
+      "visual": "a warm mother raccoon speaking gently to a small raccoon at the entrance of a large hollow oak tree, an older raccoon sibling watching nearby"
+    },
+    {
+      "narration": "Rosie's pouch was already full of pretty pebbles, a blue jay feather, and a piece of glass smoothed round by the creek. But tonight, she was sure the very best treasure was still out there waiting.",
+      "on_screen_text": "A POUCH OF TREASURES",
+      "duration_hint": 15.7,
+      "visual": "close up of a small raccoon peeking excitedly into a cloth pouch full of pebbles and a blue feather, forest ferns around her"
+    },
+    {
+      "narration": "Just as the sun began to dip, Rosie spotted something dazzling: a tiny beetle with wings that shimmered gold and green, flickering through the ferns like a little lantern.",
+      "on_screen_text": "A DAZZLING BEETLE",
+      "duration_hint": 12.6,
+      "visual": "a small raccoon crouched low staring wide-eyed at a glowing golden-green beetle hovering among tall ferns at sunset"
+    },
+    {
+      "narration": "She had never seen anything so beautiful. Without a second thought, Rosie forgot all about staying near her tree and scampered after the glimmering beetle, deeper into the ferns.",
+      "on_screen_text": "THE CHASE BEGINS",
+      "duration_hint": 12.6,
+      "visual": "a small raccoon bounding excitedly through tall ferns chasing a glowing beetle, motion blur suggesting quick playful movement"
+    },
+    {
+      "narration": "The beetle zigzagged between mossy roots and tall mushrooms, always just out of reach. Rosie giggled and scrambled after it, further than she had ever wandered before.",
+      "on_screen_text": "DEEPER INTO THE WOODS",
+      "duration_hint": 11.7,
+      "visual": "a small raccoon hopping over mossy roots and tall mushrooms in a deep unfamiliar part of the forest, chasing a small glowing light"
+    },
+    {
+      "narration": "At last, the beetle rose up into the branches and vanished into the darkening leaves above. Rosie stopped, panting happily, clutching at the empty air where it had been.",
+      "on_screen_text": "THE BEETLE VANISHES",
+      "duration_hint": 12.6,
+      "visual": "a small raccoon standing on hind legs reaching up toward dark tree branches where a glowing light just disappeared, out of breath"
+    },
+    {
+      "narration": "It was only then that Rosie looked around and realized she didn't recognize a single tree. The ferns, the rocks, the whole forest looked different, strange, and much too quiet.",
+      "on_screen_text": "A STRANGE PLACE",
+      "duration_hint": 13.0,
+      "visual": "a small raccoon turning slowly in place looking around nervously at unfamiliar dark trees and rocks, forest suddenly quiet and still"
+    },
+    {
+      "narration": "She turned in a circle, searching for her hollow oak. But every direction looked the same: tall dark trunks and long shadows stretching out longer by the minute.",
+      "on_screen_text": "SEARCHING FOR HOME",
+      "duration_hint": 12.2,
+      "visual": "a small raccoon spinning around anxiously surrounded by identical tall dark tree trunks and long stretching shadows"
+    },
+    {
+      "narration": "The sky above the treetops was turning from orange to deep, dusky blue. Somewhere far off, an owl gave a low, lonely hoot, and a cool breeze rustled through the leaves.",
+      "on_screen_text": "DUSK DEEPENS",
+      "duration_hint": 13.5,
+      "visual": "wide shot of a forest canopy at dusk transitioning from orange to deep blue sky, small raccoon silhouette standing small beneath tall trees"
+    },
+    {
+      "narration": "Rosie's heart began to thump. She called out for her mother, but her small voice seemed to disappear into the huge, darkening forest around her.",
+      "on_screen_text": "A SMALL VOICE",
+      "duration_hint": 10.9,
+      "visual": "a small raccoon standing on a rock calling out with a worried expression, mouth open, into a vast dark forest that swallows the sound"
+    },
+    {
+      "narration": "Thick clouds rolled in overhead, blotting out the last streaks of orange sun. A distant rumble of thunder rolled across the valley, and the wind began to pick up.",
+      "on_screen_text": "STORM BREWING",
+      "duration_hint": 12.6,
+      "visual": "dark storm clouds rolling in over a forest canopy, wind bending tree branches, distant flash of lightning on the horizon"
+    },
+    {
+      "narration": "Rosie's paws were trembling. She crawled beneath a fallen log and hugged her little pouch of treasures close, trying to make herself as small as possible.",
+      "on_screen_text": "HIDING UNDER A LOG",
+      "duration_hint": 11.3,
+      "visual": "a small raccoon curled up tightly beneath a large fallen log, hugging a small pouch, visibly trembling and frightened"
+    },
+    {
+      "narration": "Not far away, perched on a branch, sat Ollie, a young barn owl who had watched the little raccoon chase the firefly beetle earlier that evening.",
+      "on_screen_text": "SOMEONE IS WATCHING",
+      "duration_hint": 11.3,
+      "visual": "a young barn owl perched on a tree branch looking down attentively with large round eyes, moonlight behind him"
+    },
+    {
+      "narration": "Ollie had seen plenty of lost forest creatures before, but something about the small raccoon curled under the log made him swoop down at once to check on her.",
+      "on_screen_text": "OLLIE DECIDES TO HELP",
+      "duration_hint": 12.6,
+      "visual": "a barn owl swooping down through dark trees toward a fallen log on the forest floor, wings spread wide"
+    },
+    {
+      "narration": "Are you lost, little one, Ollie asked gently, landing on the log above her. Rosie peeked out, sniffling. I can't find my tree, she whispered. It's the big hollow oak.",
+      "on_screen_text": "ARE YOU LOST?",
+      "duration_hint": 13.0,
+      "visual": "a barn owl perched gently on a fallen log looking down kindly at a small raccoon peeking out from underneath, sniffling"
+    },
+    {
+      "narration": "Ollie's round eyes blinked kindly. I know that oak tree well, he said. It's a long way from here, but I know someone who can help us get you home.",
+      "on_screen_text": "OLLIE REASSURES HER",
+      "duration_hint": 13.0,
+      "visual": "close up of a barn owl's kind round eyes blinking warmly, small raccoon looking up hopefully from below"
+    },
+    {
+      "narration": "Ollie gave three soft hoots into the night air. One by one, a swarm of fireflies drifted out from the ferns, their tiny lights blinking on like a string of lanterns.",
+      "on_screen_text": "CALLING THE FIREFLIES",
+      "duration_hint": 13.5,
+      "visual": "a barn owl hooting softly with head tilted up, dozens of small fireflies glowing and drifting out from ferns in the darkness"
+    },
+    {
+      "narration": "These little lights will help us see the path, Ollie explained. And down by the creek, the otters know every twist and turn of this forest better than anyone.",
+      "on_screen_text": "A GLOWING TRAIL",
+      "duration_hint": 12.6,
+      "visual": "a small raccoon watching a glowing trail of fireflies forming a soft golden path through the dark forest"
+    },
+    {
+      "narration": "With the fireflies lighting a soft golden trail and Ollie gliding low overhead, Rosie took a deep breath and stepped out from under the log, ready to find her way home.",
+      "on_screen_text": "SETTING OFF",
+      "duration_hint": 13.5,
+      "visual": "a small raccoon stepping out from under a log onto a glowing firefly-lit path, an owl flying low overhead"
+    },
+    {
+      "narration": "At the edge of a bubbling creek, three sleek otters were finishing their evening swim. When Ollie called down to them, they slipped out of the water at once to help.",
+      "on_screen_text": "MEETING THE OTTERS",
+      "duration_hint": 13.5,
+      "visual": "three sleek otters climbing out of a moonlit bubbling creek, water droplets glistening, an owl circling above"
+    },
+    {
+      "narration": "The oak tree is past the stepping stones and over the ridge, said the biggest otter, shaking water from her fur. We'll show you the safest way across the creek.",
+      "on_screen_text": "THE SAFEST WAY",
+      "duration_hint": 13.0,
+      "visual": "a large otter shaking water from her fur while speaking to a small raccoon at the edge of a moonlit creek"
+    },
+    {
+      "narration": "The otters drew a little map in the soft mud with their claws, tracing the creek, the stepping stones, and the ridge beyond. Rosie leaned in close, watching every line carefully.",
+      "on_screen_text": "MAPPING THE ROUTE",
+      "duration_hint": 13.5,
+      "visual": "otters drawing a simple route map with their claws in soft creek-bank mud, a small raccoon leaning in closely to watch"
+    },
+    {
+      "narration": "As they walked, a family of field mice peeked out from a hollow log to wish them luck, their tiny whiskers twitching in the firefly light. Rosie waved back, feeling a little less alone.",
+      "on_screen_text": "A FRIENDLY FACE IN THE DARK",
+      "duration_hint": 14.8,
+      "visual": "a family of small field mice peeking out from a hollow log at night, waving whiskers twitching in soft firefly glow"
+    },
+    {
+      "narration": "The stepping stones stretched across the rushing creek, slick and wet in the moonlight. Rosie's paws froze at the very first stone, her treasure pouch clutched tight against her chest.",
+      "on_screen_text": "THE STEPPING STONES",
+      "duration_hint": 13.0,
+      "visual": "a line of wet mossy stepping stones crossing a fast-moving moonlit creek, a small raccoon frozen at the edge clutching a pouch"
+    },
+    {
+      "narration": "The water rushed loud and fast beneath her, and for a moment, Rosie wanted nothing more than to turn around and hide under another log instead.",
+      "on_screen_text": "A FLICKER OF FEAR",
+      "duration_hint": 11.3,
+      "visual": "close up of a small raccoon's worried face looking down at fast rushing water beneath stepping stones, ears pressed back"
+    },
+    {
+      "narration": "Ollie landed softly on the far bank, folding his wings. I'll be right here watching every step, he called gently across the water. You won't be crossing alone.",
+      "on_screen_text": "OLLIE'S STEADY VOICE",
+      "duration_hint": 12.2,
+      "visual": "a barn owl landing softly on a creek bank folding his wings, calling out gently across the water toward a small raccoon"
+    },
+    {
+      "narration": "You don't have to be fast, the otter said softly, floating right beside the stones. Just brave enough for one small step. We're right here beside you the whole way.",
+      "on_screen_text": "YOU DON'T HAVE TO BE FAST",
+      "duration_hint": 13.0,
+      "visual": "an otter floating calmly beside stepping stones looking up encouragingly at a small hesitant raccoon"
+    },
+    {
+      "narration": "Rosie squeezed her eyes shut, then opened them again, and placed one trembling paw onto the first stone. It held steady. She let out a shaky little breath.",
+      "on_screen_text": "THE FIRST STEP",
+      "duration_hint": 12.2,
+      "visual": "a small raccoon placing one trembling paw carefully onto a wet stepping stone, eyes squeezed shut then opening"
+    },
+    {
+      "narration": "Step by careful step, with fireflies glowing above and otters gliding alongside in the water below, Rosie made her way across the stones, one small hop at a time.",
+      "on_screen_text": "STEP BY STEP",
+      "duration_hint": 12.6,
+      "visual": "a small raccoon hopping carefully across stepping stones, fireflies glowing above and otters swimming alongside in the creek below"
+    },
+    {
+      "narration": "Her back paw slipped once on a mossy stone, and her heart leapt, but Ollie swooped down close, and the nearest otter nudged her steady again before she could fall.",
+      "on_screen_text": "A SLIP AND A SAVE",
+      "duration_hint": 13.0,
+      "visual": "a small raccoon's back paw slipping on a mossy stone, an owl swooping close and an otter nudging her steady"
+    },
+    {
+      "narration": "With one final hop, Rosie landed safely on the other bank. She turned back to look at the rushing water she had just crossed, and for the first time all night, she smiled.",
+      "on_screen_text": "MADE IT ACROSS",
+      "duration_hint": 14.3,
+      "visual": "a small raccoon landing safely on a grassy creek bank, turning back to look at the water with a relieved smile"
+    },
+    {
+      "narration": "From the top of the ridge, a familiar shape came into view through the trees: the wide, twisting branches of the old hollow oak, silhouetted against the clearing sky.",
+      "on_screen_text": "THE OLD OAK IN SIGHT",
+      "duration_hint": 12.6,
+      "visual": "wide shot from a forest ridge of a large twisting hollow oak tree silhouetted against a clearing night sky"
+    },
+    {
+      "narration": "Rosie! Coral's voice rang out across the clearing. She and Finn came bounding through the ferns, and Rosie ran the last few steps straight into her mother's warm, furry arms.",
+      "on_screen_text": "REUNITED",
+      "duration_hint": 13.0,
+      "visual": "a small raccoon running joyfully into the open arms of a mother raccoon in a moonlit forest clearing, an older sibling raccoon nearby"
+    },
+    {
+      "narration": "Coral thanked Ollie and the otters again and again, and Rosie promised she would remember every one of their names. The fireflies blinked happily before drifting off into the trees.",
+      "on_screen_text": "THANKING NEW FRIENDS",
+      "duration_hint": 13.0,
+      "visual": "a mother raccoon nodding gratefully toward an owl and otters gathered near a tree, fireflies blinking softly in the background"
+    },
+    {
+      "narration": "That night, curled up safe in the hollow oak, Rosie told her mother all about the beetle, the stepping stones, and her new friends. I was really scared, she admitted.",
+      "on_screen_text": "TELLING THE STORY",
+      "duration_hint": 13.0,
+      "visual": "a small raccoon curled up cozily inside a hollow tree den, talking animatedly to her mother by soft moonlight"
+    },
+    {
+      "narration": "Being brave doesn't mean you're never scared, Coral said softly, tucking Rosie's pouch of treasures beside her. It means taking that first small step anyway, and it helps to have friends nearby.",
+      "on_screen_text": "A GENTLE LESSON",
+      "duration_hint": 13.9,
+      "visual": "a mother raccoon tucking a small pouch beside a sleepy young raccoon inside a cozy tree hollow den, warm soft lighting"
+    },
+    {
+      "narration": "From that night on, Rosie still loved chasing shiny, sparkly things, but she always kept one eye on her tree. Sleep tight, little explorers, and follow along for more stories from Willowbrook Forest.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.3,
+      "visual": "a small raccoon sleeping peacefully curled up in a cozy tree hollow den, moonlight streaming softly through the entrance"
+    }
+  ]
+}
