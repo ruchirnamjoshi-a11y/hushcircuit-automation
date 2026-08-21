@@ -127,6 +127,10 @@ def _build_prompt(track: Track, count: int, avoid_titles: list[str]) -> str:
     )
 
 
+GEMINI_503_MAX_RETRIES = 3
+GEMINI_503_RETRY_DELAY_SECONDS = 15
+
+
 def _call_gemini_raw(prompt: str, response_schema: dict) -> dict:
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY is not set")
@@ -138,13 +142,19 @@ def _call_gemini_raw(prompt: str, response_schema: dict) -> dict:
             "responseSchema": response_schema,
         },
     }
-    response = requests.post(
-        url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS,
-    )
-    response.raise_for_status()
-    data = response.json()
-    text = data["candidates"][0]["content"]["parts"][0]["text"]
-    return json.loads(text)
+    # 503 (Service Unavailable) observed repeatedly this session on large/
+    # complex requests (e.g. the 32-40 scene long-form schema) -- genuinely
+    # transient (a same-prompt retry succeeds), but this call had no retry
+    # at all before, so it failed the whole batch on one bad moment.
+    for attempt in range(GEMINI_503_MAX_RETRIES + 1):
+        response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
+        if response.status_code == 503 and attempt < GEMINI_503_MAX_RETRIES:
+            time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
+            continue
+        response.raise_for_status()
+        data = response.json()
+        text = data["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(text)
 
 
 def _call_gemini(prompt: str) -> dict:
@@ -183,27 +193,145 @@ def generate_stories(track: Track, count: int = 7) -> list[Script]:
     return scripts
 
 
-def _next_file_number(track_key: str) -> int:
+def _next_file_number(track_key: str, subdir: str = "") -> int:
     max_n = 0
     for base_dir in (QUEUE_PENDING_DIR, QUEUE_USED_DIR):
-        for path in (base_dir / track_key).glob("*.json"):
+        for path in (base_dir / track_key / subdir).glob("*.json"):
             match = re.match(r"^(\d+)-", path.name)
             if match:
                 max_n = max(max_n, int(match.group(1)))
     return max_n + 1
 
 
-def write_stories(track: Track, scripts: list[Script]) -> list[Path]:
-    out_dir = QUEUE_PENDING_DIR / track.key
+def write_stories(track: Track, scripts: list[Script], subdir: str = "") -> list[Path]:
+    """subdir="" (default) writes to the Short queue, scripts_queue/pending/
+    <track>/ — pass subdir="long" for the long-form queue,
+    scripts_queue/pending/<track>/long/ (see generate_long_form_stories)."""
+    out_dir = QUEUE_PENDING_DIR / track.key / subdir
     out_dir.mkdir(parents=True, exist_ok=True)
-    next_n = _next_file_number(track.key)
+    next_n = _next_file_number(track.key, subdir)
 
     written = []
     for i, script in enumerate(scripts):
         out_path = out_dir / f"{next_n + i:03d}-{script.id}.json"
-        out_path.write_text(json.dumps(to_dict(script), indent=2))
+        out_path.write_text(json.dumps(to_dict(script), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         written.append(out_path)
     return written
+
+
+# --- Long-form (8-10 min, own queue) ------------------------------------
+# A genuinely SEPARATE story from the Short, not a longer cut of one --
+# see run_daily.run_long_form_track's docstring for why. minItems/maxItems
+# on "scenes" structurally enforces real long-form length (JSON schema, not
+# just a prompt instruction the model could round down on) -- the original
+# bug here was every batch-written script capping at 7-9 scenes (~45-70s)
+# even for tracks with Track.produce_long_form=True, because they all went
+# through the SAME generate_stories()/SCENE_STRUCTURE_RULES built for Shorts.
+
+SCENE_STRUCTURE_RULES_LONG = """- 30 to 38 scenes total. Scene 1 is the hook (sets up the situation in 1-2 \
+sentences, no title-card cliches). This is a real multi-act story (a setup, \
+a genuine complication or obstacle, a turning point, a resolution) — not a \
+Short's single beat stretched out. The last scene is a brief outro that \
+naturally invites the viewer to follow the channel for more stories \
+("follow along for more" style, not a hard sales pitch) — set its \
+on_screen_text to "SUBSCRIBE".
+- Each scene's "narration" is 2-4 natural spoken sentences (roughly \
+35-60 words) — this is read aloud by a text-to-speech voice, so write for \
+the ear, not the page. No stage directions, no dialogue tags like "she said \
+sadly" beyond simple ones.
+- "on_screen_text" is a short ALL-CAPS chapter-title label (2-5 words) \
+summarizing that scene, e.g. "THE STUMBLE" or "A NEW BEGINNING".
+- "duration_hint" is the approximate narration length in seconds at a \
+natural speaking pace (~2.3 words/second) — just estimate from the \
+narration's word count.
+- "visual" is a SEPARATE, DETAILED visual description (20-35 words) for an \
+AI image generator — NOT a copy of the narration, NOT a full sentence with \
+punctuation, NOT a quoted slogan. It must depict the SPECIFIC action \
+described in THIS scene's narration, not a generic or interchangeable \
+moment — if the narration says the character is striking, recoiling, \
+kneeling, or looking toward something specific, the visual must show \
+exactly that beat, not just "a dramatic scene". Be concrete about pose, \
+camera angle, and immediate surroundings — not the character's fixed \
+physical appearance (that belongs in "character_reference" below and gets \
+automatically added to every scene, so repeating it here just wastes words \
+and can conflict). CRITICAL: never describe any text, signs, banners, \
+logos, or readable words appearing in the scene, and never describe a \
+building exterior or storefront with visible signage (e.g. a school \
+entrance, a shop front) — describe close-up character moments, nature, or \
+interiors without signage instead.
+- "character_reference": ONE detailed, reusable physical description of \
+the story's main protagonist (species/build, hair or fur color, clothing, \
+1-2 distinguishing features — e.g. "a small cream-colored rabbit with \
+floppy brown-tipped ears and a red neckerchief"). This exact description \
+gets prepended to every scene's image prompt so the same character stays \
+visually recognizable across independently-generated images — write it \
+once, specifically, and don't repeat it inside individual scenes' \
+"visual" fields. If a story genuinely has no single recurring character \
+(e.g. it's about a place or an event), leave this as an empty string.
+- "id" is a unique kebab-case slug derived from the title (e.g. \
+"the-tryout"). "tags" is 4-6 relevant lowercase keyword tags."""
+
+PROMPT_TEMPLATE_LONG = """You are writing a real 8-10 minute narrated long-form video script (not a \
+Short) for a YouTube channel that posts for the "{label}" audience.
+
+AUDIENCE AND TONE
+{story_guidance}
+
+STORY STRUCTURE
+{scene_structure_rules}
+
+Write {count} DIFFERENT long-form stories with distinct premises (no repeated \
+plots, and distinct from any Short-length story on this channel). Do not \
+reuse any of these existing titles: {avoid_titles}
+
+Output must match the provided JSON schema exactly.
+"""
+
+LONG_SCENE_SCHEMA = dict(SCENE_SCHEMA)  # same per-scene shape as the Short
+
+LONG_STORY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "id": {"type": "string"},
+        "title": {"type": "string"},
+        "description": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "string"}},
+        "character_reference": {"type": "string"},
+        "scenes": {"type": "array", "items": LONG_SCENE_SCHEMA},
+    },
+    "required": ["id", "title", "description", "tags", "character_reference", "scenes"],
+}
+
+LONG_RESPONSE_SCHEMA = {
+    "type": "object",
+    "properties": {"stories": {"type": "array", "items": LONG_STORY_SCHEMA}},
+    "required": ["stories"],
+}
+
+
+def generate_long_form_stories(track: Track, count: int = 1) -> list[Script]:
+    """Same contract as generate_stories, but for the long-form (32-40
+    scene) queue. count defaults to 1: a single long-form generation is
+    already a large structured response (30+ scenes), and this queue only
+    needs to stay a few episodes ahead, not a week's batch at once."""
+    avoid_titles = _existing_titles(track.key) + _existing_titles(f"{track.key}/long")
+    prompt = PROMPT_TEMPLATE_LONG.format(
+        label=track.label, story_guidance=track.story_guidance, count=count,
+        avoid_titles=", ".join(f'"{t}"' for t in avoid_titles) if avoid_titles else "(none yet)",
+        scene_structure_rules=SCENE_STRUCTURE_RULES_LONG,
+    )
+    raw = _call_gemini_raw(prompt, LONG_RESPONSE_SCHEMA)
+
+    scripts = []
+    for i, story_data in enumerate(raw.get("stories", [])):
+        try:
+            scripts.append(validate(story_data))
+        except ScriptValidationError as e:
+            print(f"[story_writer] skipping long-form story {i} for track '{track.key}': {e}")
+
+    if not scripts:
+        raise RuntimeError(f"Gemini returned no valid long-form stories for track '{track.key}'")
+    return scripts
 
 
 EPISODE_SCHEMA = {
