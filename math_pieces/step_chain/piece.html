@@ -146,12 +146,16 @@
       ctx.globalAlpha = Math.min(1, p * 1.4);
       ctx.translate(0, slide);
 
-      // connecting arrow from previous card's expr down to this card's label
+      // connecting arrow: a short fixed-length connector just above this
+      // card's label, not a line spanning the full (now much larger)
+      // card-to-card gap -- that read as an oversized line down the
+      // middle of the frame once cards spread out to fill the height.
       if (i > 0) {
+        const arrowLen = 70;
         ctx.strokeStyle = 'rgba(237,233,223,0.35)';
         ctx.lineWidth = 2;
         ctx.beginPath();
-        ctx.moveTo(W / 2, y - cardGap + 70);
+        ctx.moveTo(W / 2, y - 80 - arrowLen);
         ctx.lineTo(W / 2, y - 80);
         ctx.stroke();
         ctx.beginPath();
