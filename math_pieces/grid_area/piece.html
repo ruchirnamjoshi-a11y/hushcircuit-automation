@@ -216,7 +216,7 @@
       ctx.fillText(P.revealLabel || '', W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
       ctx.save();
-      ctx.translate(W / 2, y + 54);
+      ctx.translate(W / 2, y + 80);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
       ctx.fillStyle = '#d9a441';
@@ -231,7 +231,7 @@
         ctx.fillStyle = '#e2725b';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.textAlign = 'center';
-        ctx.fillText(P.footnote, W / 2, y + 92);
+        ctx.fillText(P.footnote, W / 2, y + 118);
         ctx.restore();
       }
     }

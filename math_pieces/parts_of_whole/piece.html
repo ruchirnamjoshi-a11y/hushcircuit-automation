@@ -88,7 +88,10 @@
   function barGeom(rowIndex) {
     const W = getW(), H = getH();
     const left = W * 0.10, right = W * 0.90;
-    const barH = Math.min(H * 0.11, 90);
+    // was capped at 90px -- on the actual 1080x1920 render (H*0.11=211)
+    // that cap dominated and kept the bar a thin strip regardless of how
+    // tall the frame actually was.
+    const barH = Math.min(H * 0.11, 140);
     const y = H * 0.38 + rowIndex * (barH + H * 0.10);
     return { left, right, y, barH, width: right - left };
   }
@@ -167,7 +170,7 @@
     const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
     if (t >= T.finalStart && P.revealValue) {
       const fEase = CP.easeOutCubic(finP);
-      const y = H * (P.total2 ? 0.78 : 0.68);
+      const y = H * (P.total2 ? 0.78 : 0.58);
       ctx.save();
       ctx.globalAlpha = fEase;
       ctx.textAlign = 'center';
@@ -176,7 +179,7 @@
       ctx.fillText(P.revealLabel || '', W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
       ctx.save();
-      ctx.translate(W / 2, y + 54);
+      ctx.translate(W / 2, y + 80);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
       ctx.fillStyle = '#d9a441';
@@ -192,7 +195,7 @@
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.textAlign = 'center';
         const words = P.footnote.split(' ');
-        let line = '', ly = y + 96, maxW = W * 0.78;
+        let line = '', ly = y + 118, maxW = W * 0.78;
         for (const w of words) {
           const test = line ? line + ' ' + w : w;
           if (ctx.measureText(test).width > maxW && line) {

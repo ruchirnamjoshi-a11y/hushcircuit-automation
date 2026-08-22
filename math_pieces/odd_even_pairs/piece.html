@@ -46,16 +46,30 @@
   const T = { aStart: LT[1].start, aEnd: LT[1].end, bStart: LT[2].start, bEnd: LT[2].end, finalStart: LT[3].start, total: LT[3].end };
 
   function drawGroup(n, rowY, revealP, dotColor, leftoverColor, cx) {
+    const W = getW();
     const pairs = Math.floor(n / 2);
-    const dotR = 14, gap = 44;
-    const totalW = pairs * gap + (n % 2 ? gap : 0);
-    const startX = cx - totalW / 2;
+    // dotR/gap were hardcoded pixel constants sized for a much smaller
+    // canvas -- on the actual 1080x1920 render they stayed tiny (28px
+    // dots) regardless of frame size, which is why the whole diagram
+    // read as a small squished cluster.
+    const dotR = Math.min(W * 0.024, 26);
+    // Two dots within a pair sit pairInnerGap apart (a visible but small
+    // gap, so they still read as "grouped"); consecutive pairs start
+    // pairStride apart, which must clear a full pair's width (pairInnerGap
+    // + one more dot diameter) plus real breathing room, or the last dot
+    // of one pair lands on top of the first dot of the next -- exactly
+    // what happened when dotR was scaled up but this spacing wasn't.
+    const pairInnerGap = dotR * 2 + 14;
+    const pairStride = pairInnerGap + dotR * 2 + 24;
+    const gap = pairStride;
+    const maxOffset = (n % 2 ? pairs * pairStride : (pairs - 1) * pairStride + pairInnerGap);
+    const startX = cx - maxOffset / 2;
     let shown = Math.ceil(revealP * n);
     for (let i = 0; i < n; i++) {
       if (i >= shown) continue;
       const pairIdx = Math.floor(i / 2);
       const isLeftover = i === n - 1 && n % 2 === 1;
-      const x = startX + pairIdx * gap + (i % 2 === 0 ? 0 : dotR * 2 + 6);
+      const x = startX + pairIdx * pairStride + (i % 2 === 0 ? 0 : pairInnerGap);
       ctx.save();
       ctx.globalAlpha = 0.9;
       ctx.fillStyle = isLeftover ? leftoverColor : dotColor;
@@ -87,17 +101,20 @@
     const bP = CP.clamp01((t - T.bStart) / (T.bEnd - T.bStart));
     const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
 
-    const rowAy = H * 0.34, rowBy = H * 0.48;
+    // Rows spread across a much wider band (was 0.14H apart, ~270px on a
+    // 1920-tall canvas) so the diagram actually uses the frame instead of
+    // clustering into a thin strip with huge blank margins top/bottom.
+    const rowAy = H * 0.40, rowBy = H * 0.62;
     let aInfo = null, bInfo = null;
     if (t >= T.aStart) {
-      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.028,18)}px ${SERIF}`; ctx.textAlign = 'center';
-      if (aP > 0.15) ctx.fillText(`${P.a} dots`, W / 2, rowAy - 30);
+      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.04,26)}px ${SERIF}`; ctx.textAlign = 'center';
+      if (aP > 0.15) ctx.fillText(`${P.a} dots`, W / 2, rowAy - 46);
       ctx.restore();
       aInfo = drawGroup(P.a, rowAy, Math.min(1, aP * 1.3), '#7fa6c9', '#e2725b', W / 2);
     }
     if (t >= T.bStart) {
-      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.028,18)}px ${SERIF}`; ctx.textAlign = 'center';
-      if (bP > 0.15) ctx.fillText(`${P.b} dots`, W / 2, rowBy - 30);
+      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.04,26)}px ${SERIF}`; ctx.textAlign = 'center';
+      if (bP > 0.15) ctx.fillText(`${P.b} dots`, W / 2, rowBy - 46);
       ctx.restore();
       bInfo = drawGroup(P.b, rowBy, Math.min(1, bP * 1.3), '#7fa6c9', '#e2725b', W / 2);
     }
@@ -116,13 +133,13 @@
       ctx.stroke();
       ctx.restore();
 
-      const y = H * 0.64;
+      const y = H * 0.80;
       ctx.save();
       ctx.globalAlpha = p; ctx.textAlign = 'center'; ctx.fillStyle = '#ede9df';
       ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
       ctx.fillText(`${P.a} + ${P.b} =`, W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
-      ctx.save(); ctx.translate(W / 2, y + 54); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.save(); ctx.translate(W / 2, y + 80); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#d9a441';
       ctx.font = `700 ${Math.min(W * 0.11, 60)}px ${MONO}`;
       ctx.fillText(String(P.a + P.b), 0, 0);
@@ -131,7 +148,7 @@
       if (P.footnote && finP > 0.7) {
         ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.7) / 0.3) * 0.8; ctx.fillStyle = '#e2725b';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`; ctx.textAlign = 'center';
-        ctx.fillText(P.footnote, W / 2, y + 92);
+        ctx.fillText(P.footnote, W / 2, y + 118);
         ctx.restore();
       }
     }

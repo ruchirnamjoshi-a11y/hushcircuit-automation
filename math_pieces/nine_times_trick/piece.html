@@ -236,7 +236,7 @@
       ctx.fillText(`9 × ${N} =`, W / 2, H * 0.80);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
       ctx.save();
-      ctx.translate(W / 2, H * 0.80 + 50);
+      ctx.translate(W / 2, H * 0.80 + 78);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
       ctx.fillStyle = '#d9a441';

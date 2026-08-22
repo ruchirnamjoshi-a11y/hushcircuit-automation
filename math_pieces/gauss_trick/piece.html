@@ -196,11 +196,21 @@
         const restY = g.bottom - nBarH;
         const fromY = g.bottom - g.maxH - 40;
         const y = fromY + (restY - fromY) * slide;
-        drawBar(x, y + h, g.bw - 0.6, h, '#e2725b', 0.72);
+        // yBottom=y (not y+h): the flipped bar's bottom edge lands at
+        // restY (== the original bar's top), stacking upward from there.
+        // The old `y + h` anchor put the TOP edge at restY instead, so
+        // for short original bars (small n, restY close to g.bottom) the
+        // tall flipped bar (h close to maxH) hung mostly below g.bottom,
+        // spilling the whole shape off the bottom of the frame.
+        drawBar(x, y, g.bw - 0.6, h, '#e2725b', 0.72);
       }
 
+      // One "101" annotation per side, not three -- three copies only
+      // ~7px apart (cols=100 spread over the chart width) rendered as
+      // unreadable overlapping garble once all six became permanently
+      // visible at the end of the sweep.
       const sweepIdx = Math.floor(CP.clamp01((t - T.pairStart - 0.6) / (T.pairEnd - T.pairStart - 0.6)) * cols);
-      [0, 1, 2, cols - 3, cols - 2, cols - 1].forEach((i) => {
+      [1, cols - 2].forEach((i) => {
         if (Math.abs(i - sweepIdx) > 6 && sweepIdx < cols - 1) return;
         const x = g.left + i * g.bw + g.bw / 2;
         ctx.save();

@@ -90,7 +90,11 @@
 
   function colGeom() {
     const W = getW(), H = getH();
-    const colW = Math.min(W * 0.16, 90);
+    // was capped at 90px (W*0.16=173 on the actual 1080-wide render), which
+    // kept every digit/row/gap derived from colW tiny regardless of the
+    // frame's real size, since everything below is scaled off this one
+    // constant.
+    const colW = Math.min(W * 0.16, 150);
     const totalW = colW * digits;
     const left = (W - totalW) / 2;
     const topY = H * 0.34;
@@ -132,7 +136,7 @@
       ctx.save();
       ctx.globalAlpha = CP.easeOutCubic(Math.min(1, introP * 1.4));
       ctx.textAlign = 'center';
-      ctx.font = `600 ${Math.min(g.colW * 0.7, 52)}px ${MONO}`;
+      ctx.font = `600 ${Math.min(g.colW * 0.7, 88)}px ${MONO}`;
 
       for (let row = 0; row < 2; row++) {
         const str = row === 0 ? P.top : P.bottom;
@@ -147,7 +151,7 @@
       }
       // operator + rule line
       ctx.fillStyle = '#7fa6c9';
-      ctx.font = `600 ${Math.min(g.colW * 0.6, 44)}px ${MONO}`;
+      ctx.font = `600 ${Math.min(g.colW * 0.6, 76)}px ${MONO}`;
       ctx.fillText(P.op, g.left - g.colW * 0.7, g.topY + g.rowH);
       ctx.strokeStyle = 'rgba(237,233,223,0.6)';
       ctx.lineWidth = 3;
@@ -202,7 +206,7 @@
       ctx.globalAlpha = CP.clamp01(pop);
       ctx.fillStyle = '#d9a441';
       ctx.textAlign = 'center';
-      ctx.font = `700 ${Math.min(g.colW * 0.72, 54)}px ${MONO}`;
+      ctx.font = `700 ${Math.min(g.colW * 0.72, 92)}px ${MONO}`;
       const ansLeft = g.left + digits * g.colW - P.answer.length * g.colW;
       for (let i = 0; i < P.answer.length; i++) {
         ctx.fillText(P.answer[i], ansLeft + i * g.colW + g.colW / 2, g.topY + g.rowH * 2.1);

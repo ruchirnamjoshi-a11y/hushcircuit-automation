@@ -98,7 +98,7 @@
       ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
       ctx.fillText(`2 × 3.14 × ${P.radius} =`, W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
-      ctx.save(); ctx.translate(W / 2, y + 54); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
+      ctx.save(); ctx.translate(W / 2, y + 80); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#d9a441';
       ctx.font = `700 ${Math.min(W * 0.1, 56)}px ${MONO}`;
       ctx.fillText(circumference, 0, 0);
@@ -106,7 +106,7 @@
       if (P.footnote && finP > 0.75) {
         ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8; ctx.fillStyle = '#e2725b';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`; ctx.textAlign = 'center';
-        ctx.fillText(P.footnote, W / 2, y + 96);
+        ctx.fillText(P.footnote, W / 2, y + 122);
         ctx.restore();
       }
     }
