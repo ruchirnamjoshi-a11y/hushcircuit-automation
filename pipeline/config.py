@@ -336,16 +336,18 @@ TRACKS: dict[str, Track] = {
         category_id="10",  # Music
         story_guidance=(
             "Not the narrated-story pipeline -- daily AI-generated "
-            "affirmation song (Gemini-written lyrics, ACE-Step music, a "
-            "looped short AI DJ-dancing clip as the visual). See "
-            "pipeline.manifestation. Paused until that generation path is "
-            "built and end-to-end verified; the OAuth channel is being set "
-            "up ahead of that."
+            "affirmation song: Gemini writes the lyrics (alternating "
+            "motivation/money-affirmation themes) and a scene description "
+            "per unique lyric line, ACE-Step (HF ZeroGPU) generates the "
+            "song, and Cloudflare generates one consistent character across "
+            "as many pose variants as each line repeats -- see "
+            "pipeline.manifestation_lyrics / pipeline.manifestation_video, "
+            "wired in via run_daily.run_manifestation_track."
         ),
         extra_tags=["manifestation", "affirmations", "law of attraction", "abundance", "money affirmations"],
         produce_long_form=False,
         content_type="song",
-        paused=True,
+        paused=False,
     ),
 }
 
