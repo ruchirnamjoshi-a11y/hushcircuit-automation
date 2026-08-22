@@ -84,14 +84,30 @@ jobs:
       - name: Restore YouTube OAuth tokens (one per channel/track)
         # A track's secret being unset is fine — run_daily.py skips that
         # track cleanly (channel not set up yet) rather than failing.
+        #
+        # A track's secret being SET but not valid base64 must ALSO not be
+        # fatal — this `run:` block executes under GitHub Actions' default
+        # `bash -e`, so an unguarded `base64 -d` failure previously aborted
+        # this whole step (and therefore the whole job) on its first
+        # non-zero exit, taking every other already-working track down
+        # with it (confirmed live: one malformed YOUTUBE_TOKEN_B64_* value
+        # blocked kids/hindi_mythology/math_explainers from producing that
+        # day too, not just the track with the bad secret). The `if`
+        # wrapping below is deliberate: bash's `-e` does not abort on a
+        # command's failure when that command is the condition of an
+        # `if`/`while`/`until`, so a bad secret now just warns and leaves
+        # that one track's token file absent (== "not set up yet" to
+        # run_daily.py) instead of killing the run.
         run: |
           mkdir -p secrets
           write_token() {
-            if [ -n "$2" ]; then
-              echo "$2" | base64 -d > "secrets/youtube_token_$1.json"
+            if [ -z "$2" ]; then
+              echo "No YOUTUBE_TOKEN_B64_$(echo "$1" | tr a-z A-Z) secret set — $1 will be skipped"
+            elif echo "$2" | base64 -d > "secrets/youtube_token_$1.json" 2>/tmp/b64_err_$1; then
               echo "Restored token for $1"
             else
-              echo "No YOUTUBE_TOKEN_B64_$(echo "$1" | tr a-z A-Z) secret set — $1 will be skipped"
+              echo "WARNING: YOUTUBE_TOKEN_B64_$(echo "$1" | tr a-z A-Z) is not valid base64 ($(cat /tmp/b64_err_$1)) — $1 will be skipped this run. Re-encode and re-paste this secret (base64 -i secrets/youtube_token_$1.json, no surrounding quotes)."
+              rm -f "secrets/youtube_token_$1.json"
             fi
           }
           write_token kids "${{ secrets.YOUTUBE_TOKEN_B64_KIDS }}"
