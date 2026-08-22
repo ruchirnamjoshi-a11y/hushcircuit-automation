@@ -104,6 +104,7 @@ jobs:
           write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
           write_token hero_saga "${{ secrets.YOUTUBE_TOKEN_B64_HERO_SAGA }}"
           write_token math_explainers "${{ secrets.YOUTUBE_TOKEN_B64_MATH_EXPLAINERS }}"
+          write_token manifestation "${{ secrets.YOUTUBE_TOKEN_B64_MANIFESTATION }}"
 
       - name: Run daily pipeline (all story tracks)
         env:
@@ -114,7 +115,14 @@ jobs:
           # Not used by any track's TTS today (hindi_mythology uses
           # edge-tts, same as every other track) — kept here in case a
           # track's tts_provider gets switched to "gemini" again later.
+          # Also the manifestation track's lyric/scene-description writer
+          # (pipeline.manifestation_lyrics).
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # manifestation track only: ACE-Step song generation (HF ZeroGPU,
+          # see pipeline.manifestation_video.synthesize_song) — the
+          # authenticated token unlocks a larger free quota pool than
+          # anonymous calls get.
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         # Scheduled runs publish for real (public); manual runs default to
         # private so you can sanity-check a run without publishing it live.
         # run_daily.py loops over every track (kids/teens/adults/women),

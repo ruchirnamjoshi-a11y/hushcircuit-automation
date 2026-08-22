@@ -131,18 +131,33 @@ def test_run_continues_past_a_real_failure_on_one_track():
             raise RuntimeError("boom")
         return True
 
-    # run() dispatches content_type="canvas" tracks (math_explainers) to
-    # run_math_track instead of run_track -- both need mocking here, or the
-    # real (unmocked) run_math_track runs for real against whatever's
-    # actually queued/authorized on this machine.
+    # run() dispatches by content_type -- "canvas" (math_explainers) to
+    # run_math_track, "song" (manifestation) to run_manifestation_track,
+    # everything else to run_track (plus a SEPARATE run_long_form_track
+    # call for any Track.produce_long_form=True track, e.g. kids/
+    # hindi_mythology). All four need mocking here, or a real (unmocked)
+    # one runs for real against whatever's actually queued/authorized/
+    # live-API-reachable on this machine -- previously only "safe" because
+    # the long-form queues happened to be empty (an accident of test
+    # timing, not real isolation: queuing a long-form script, as this
+    # session did, would have made this test hit live Cloudflare calls).
     with patch("run_daily.run_track", side_effect=fake_run_track) as mock_run_track, \
-         patch("run_daily.run_math_track", return_value=True) as mock_run_math_track:
+         patch("run_daily.run_long_form_track", return_value=True) as mock_run_long_form_track, \
+         patch("run_daily.run_math_track", return_value=True) as mock_run_math_track, \
+         patch("run_daily.run_manifestation_track", return_value=True) as mock_run_manifestation_track:
         exit_code = run_daily.run(dry_run=False)
 
-    story_tracks = [t for t in TRACKS.values() if t.content_type != "canvas" and not t.paused]
+    story_tracks = [t for t in TRACKS.values() if t.content_type == "story" and not t.paused]
     canvas_tracks = [t for t in TRACKS.values() if t.content_type == "canvas" and not t.paused]
+    song_tracks = [t for t in TRACKS.values() if t.content_type == "song" and not t.paused]
+    # kids' run_track raises (fake_run_track's side_effect), so its
+    # run_long_form_track call is never reached -- every OTHER non-paused
+    # produce_long_form=True story track's is.
+    expect_long_form_calls = len([t for t in story_tracks if t.produce_long_form and t.key != "kids"])
     assert mock_run_track.call_count == len(story_tracks)  # all non-paused story tracks still attempted
+    assert mock_run_long_form_track.call_count == expect_long_form_calls
     assert mock_run_math_track.call_count == len(canvas_tracks)
+    assert mock_run_manifestation_track.call_count == len(song_tracks)
     assert exit_code == 1  # a real failure does affect the exit code
 
 
