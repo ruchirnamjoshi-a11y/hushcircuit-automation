@@ -151,24 +151,28 @@
         ctx.strokeStyle = 'rgba(237,233,223,0.35)';
         ctx.lineWidth = 2;
         ctx.beginPath();
-        ctx.moveTo(W / 2, y - cardGap + 44);
-        ctx.lineTo(W / 2, y - 54);
+        ctx.moveTo(W / 2, y - cardGap + 70);
+        ctx.lineTo(W / 2, y - 80);
         ctx.stroke();
         ctx.beginPath();
-        ctx.moveTo(W / 2 - 7, y - 62);
-        ctx.lineTo(W / 2, y - 52);
-        ctx.lineTo(W / 2 + 7, y - 62);
+        ctx.moveTo(W / 2 - 7, y - 88);
+        ctx.lineTo(W / 2, y - 78);
+        ctx.lineTo(W / 2 + 7, y - 88);
         ctx.stroke();
       }
 
+      // label and expr are two visually separate lines within the card --
+      // plenty of real whitespace between them, not just a few px of
+      // baseline offset (a small nudge here still read as "touching" next
+      // to fonts this large).
       ctx.fillStyle = '#ede9df';
       ctx.textAlign = 'center';
       ctx.font = `400 ${Math.min(W * 0.042, 28)}px ${SERIF}`;
-      ctx.fillText(s.label, W / 2, y - 26);
+      ctx.fillText(s.label, W / 2, y - 42);
 
       ctx.fillStyle = i === stepCount - 1 ? '#d9a441' : '#7fa6c9';
       ctx.font = `600 ${Math.min(W * 0.075, 46)}px ${MONO}`;
-      ctx.fillText(s.expr, W / 2, y + 34);
+      ctx.fillText(s.expr, W / 2, y + 52);
 
       ctx.restore();
     }
@@ -186,7 +190,7 @@
       ctx.fillText(P.answerLabel, W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
       ctx.save();
-      ctx.translate(W / 2, y + 54);
+      ctx.translate(W / 2, y + 80);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
       ctx.fillStyle = '#d9a441';
@@ -201,7 +205,7 @@
         ctx.fillStyle = '#e2725b';
         ctx.font = `italic 400 ${Math.min(W * 0.022, 15)}px ${SERIF}`;
         ctx.textAlign = 'center';
-        ctx.fillText(P.footnote, W / 2, y + 96);
+        ctx.fillText(P.footnote, W / 2, y + 130);
         ctx.restore();
       }
     }
