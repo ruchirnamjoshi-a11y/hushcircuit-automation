@@ -123,9 +123,17 @@
       ctx.restore();
     }
 
-    // step cards, stacked vertically, each sliding/fading in when its narration line starts
-    const cardTop = H * 0.30;
-    const cardGap = Math.min(H * 0.13, 108);
+    // step cards, stacked vertically, each sliding/fading in when its narration
+    // line starts. Spaced to fill the zone between the hook and the final
+    // answer reveal, not a fixed pixel gap -- this renders at 1080x1920
+    // (see canvas_video.render_piece_video), and a flat `Math.min(H*0.13, 108)`
+    // cap used to clump every step into a ~108px band near mid-frame while the
+    // hook (H*0.20) and answer (H*0.82) stayed pinned far above/below it,
+    // leaving huge blank margins top and bottom.
+    const cardZoneTop = H * 0.32;
+    const cardZoneBottom = H * 0.72;
+    const cardTop = stepCount > 1 ? cardZoneTop : (cardZoneTop + cardZoneBottom) / 2;
+    const cardGap = stepCount > 1 ? (cardZoneBottom - cardZoneTop) / (stepCount - 1) : 0;
     for (let i = 0; i < stepCount; i++) {
       const s = P.steps[i];
       const p = CP.clamp01((t - T.stepStart(i)) / 0.7);
@@ -138,29 +146,29 @@
       ctx.globalAlpha = Math.min(1, p * 1.4);
       ctx.translate(0, slide);
 
-      // connecting arrow from previous card
+      // connecting arrow from previous card's expr down to this card's label
       if (i > 0) {
         ctx.strokeStyle = 'rgba(237,233,223,0.35)';
         ctx.lineWidth = 2;
         ctx.beginPath();
-        ctx.moveTo(W / 2, y - cardGap + 30);
-        ctx.lineTo(W / 2, y - 22);
+        ctx.moveTo(W / 2, y - cardGap + 44);
+        ctx.lineTo(W / 2, y - 54);
         ctx.stroke();
         ctx.beginPath();
-        ctx.moveTo(W / 2 - 7, y - 30);
-        ctx.lineTo(W / 2, y - 20);
-        ctx.lineTo(W / 2 + 7, y - 30);
+        ctx.moveTo(W / 2 - 7, y - 62);
+        ctx.lineTo(W / 2, y - 52);
+        ctx.lineTo(W / 2 + 7, y - 62);
         ctx.stroke();
       }
 
       ctx.fillStyle = '#ede9df';
       ctx.textAlign = 'center';
-      ctx.font = `400 ${Math.min(W * 0.032, 20)}px ${SERIF}`;
-      ctx.fillText(s.label, W / 2, y - 6);
+      ctx.font = `400 ${Math.min(W * 0.042, 28)}px ${SERIF}`;
+      ctx.fillText(s.label, W / 2, y - 26);
 
       ctx.fillStyle = i === stepCount - 1 ? '#d9a441' : '#7fa6c9';
       ctx.font = `600 ${Math.min(W * 0.075, 46)}px ${MONO}`;
-      ctx.fillText(s.expr, W / 2, y + 32);
+      ctx.fillText(s.expr, W / 2, y + 34);
 
       ctx.restore();
     }
