@@ -248,9 +248,12 @@
       const finP = CP.clamp01((t - T.finalStart) / (T.total - T.finalStart));
       const fEase = CP.easeOutCubic(finP);
       const pop = finP > 0.4 ? CP.easeOutBack(CP.clamp01((finP - 0.4) / 0.6)) : 0;
+      // Near-opaque, not the ~85% combined opacity this had before: that
+      // left enough of the bright blue bar and milestone labels showing
+      // through to visibly ghost behind the big gold reveal number.
       ctx.save();
-      ctx.globalAlpha = fEase * 0.92;
-      ctx.fillStyle = 'rgba(28,40,51,0.92)';
+      ctx.globalAlpha = fEase * 0.97;
+      ctx.fillStyle = 'rgba(15,21,27,0.97)';
       ctx.fillRect(0, H * 0.30, W, H * 0.34);
       ctx.restore();
 
@@ -261,7 +264,7 @@
       ctx.font = `500 ${Math.min(W * 0.026, 18)}px ${MONO}`;
       ctx.fillText('42 FOLDS =', W / 2, H * 0.40);
       ctx.save();
-      ctx.translate(W / 2, H * 0.40 + 52);
+      ctx.translate(W / 2, H * 0.40 + 78);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
       ctx.fillStyle = '#d9a441';
@@ -273,7 +276,7 @@
         ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.85;
         ctx.fillStyle = '#e2725b';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
-        ctx.fillText('past the Moon, 384,400 km away', W / 2, H * 0.40 + 92);
+        ctx.fillText('past the Moon, 384,400 km away', W / 2, H * 0.40 + 122);
         ctx.restore();
       }
       ctx.restore();

@@ -61,8 +61,13 @@
       ctx.restore();
     }
 
-    const unit = Math.min(W, H) * 0.052;
-    const cx = W / 2, cy = H * 0.5;
+    // unit was 0.052 -- the whole triangle+squares composite stayed a
+    // small cluster; the squares on each leg extend further down/right
+    // than up/left from (cx,cy), so on the actual 1080x1920 canvas the
+    // figure sat low in the frame with dead space above it. Bigger unit
+    // and a higher cy fill the frame and recenter the composite shape.
+    const unit = Math.min(W, H) * 0.075;
+    const cx = W / 2, cy = H * 0.42;
     // right triangle with the right angle at bottom-left of this local frame
     const ax = -P.b * unit / 2, ay = P.a * unit / 2;   // top vertex offset
     const p0 = { x: cx - P.b * unit / 2, y: cy + P.a * unit / 2 }; // bottom-left (right angle)
