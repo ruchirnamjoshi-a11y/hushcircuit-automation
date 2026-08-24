@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from collections import Counter
 
 import requests
@@ -23,6 +24,14 @@ import requests
 from pipeline.config import GEMINI_API_KEY, GEMINI_MODEL
 
 REQUEST_TIMEOUT_SECONDS = 120
+
+# 503 (Service Unavailable) observed repeatedly in production CI runs (every
+# scheduled run failed on 2026-08-23 from this alone) -- genuinely transient,
+# but this call had no retry at all, so it failed the whole job on one bad
+# moment even though every other track had already succeeded or correctly
+# skipped. Same pattern as pipeline.story_writer's _call_gemini_raw.
+GEMINI_503_MAX_RETRIES = 3
+GEMINI_503_RETRY_DELAY_SECONDS = 15
 
 THEMES = {
     "motivation": (
@@ -106,11 +115,15 @@ def _call_gemini(prompt: str, schema: dict) -> dict:
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "responseSchema": schema},
     }
-    response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
-    response.raise_for_status()
-    data = response.json()
-    text = data["candidates"][0]["content"]["parts"][0]["text"]
-    return json.loads(text)
+    for attempt in range(GEMINI_503_MAX_RETRIES + 1):
+        response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
+        if response.status_code == 503 and attempt < GEMINI_503_MAX_RETRIES:
+            time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
+            continue
+        response.raise_for_status()
+        data = response.json()
+        text = data["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(text)
 
 
 def generate_lyrics(theme: str) -> dict:
