@@ -75,6 +75,7 @@ from pipeline.config import (
     Track,
     youtube_token_path,
 )
+from pipeline.manifestation_lyrics import GeminiUnavailable
 from pipeline.manifestation_video import ZeroGPUQuotaExhausted
 from pipeline.math_scripts import load_next_pending as load_next_pending_math
 from pipeline.scripts import Script, load_next_pending, mark_used
@@ -588,6 +589,14 @@ def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optio
         except ZeroGPUQuotaExhausted as e:
             zerogpu_quota_exhausted = True
             print(f"[{track.key}] HF ZeroGPU quota exhausted: {e}")
+            print(f"[{track.key}] Aborting this track — will retry on the next scheduled run.")
+        except GeminiUnavailable as e:
+            # Gemini stayed unreachable through every retry -- confirmed on
+            # 2026-08-25 to span many hours (09:55-20:59 UTC), well past
+            # what retries can ride out. Not a code defect: same "skip this
+            # track, retry next scheduled run" handling as the quota-
+            # exhaustion cases above, not a hard failure worth an alert.
+            print(f"[{track.key}] Gemini unavailable: {e}")
             print(f"[{track.key}] Aborting this track — will retry on the next scheduled run.")
         except Exception:
             any_failed = True
