@@ -147,7 +147,19 @@ def _call_gemini_raw(prompt: str, response_schema: dict) -> dict:
     # transient (a same-prompt retry succeeds), but this call had no retry
     # at all before, so it failed the whole batch on one bad moment.
     for attempt in range(GEMINI_503_MAX_RETRIES + 1):
-        response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
+        try:
+            response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
+        except requests.exceptions.Timeout:
+            # A read timeout raises before any response exists, so it never
+            # reached the status_code check below -- the retry loop above
+            # only covered 503s, not a genuinely stalled request (confirmed
+            # in production via the identical pattern in
+            # pipeline.manifestation_lyrics: run 32834495308 hit an uncaught
+            # ReadTimeoutError from this same Gemini endpoint).
+            if attempt < GEMINI_503_MAX_RETRIES:
+                time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
+                continue
+            raise
         if response.status_code == 503 and attempt < GEMINI_503_MAX_RETRIES:
             time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
             continue
