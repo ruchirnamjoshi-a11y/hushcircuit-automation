@@ -52,23 +52,35 @@ jobs:
 
       - name: Ensure ffmpeg is installed
         run: |
-          # Static binary download, not apt: this runner image turned out
-          # not to have ffmpeg preinstalled after all, and apt-get update
-          # itself (not even the install) hung indefinitely against a
-          # broken azure.archive.ubuntu.com mirror -- observed twice today,
-          # burning a full job timeout each time before ever reaching the
-          # actual pipeline. A static build from johnvansickle.com sidesteps
-          # Ubuntu's package mirrors entirely; --max-time bounds it so a
-          # bad download fails in under 2 minutes instead of hanging for
-          # hours again.
+          # Static binary download, not apt as the primary path: this runner
+          # image turned out not to have ffmpeg preinstalled after all, and
+          # apt-get update itself (not even the install) hung indefinitely
+          # against a broken azure.archive.ubuntu.com mirror -- observed
+          # twice, burning a full job timeout each time before ever reaching
+          # the actual pipeline. A static build from johnvansickle.com
+          # sidesteps Ubuntu's package mirrors entirely.
+          #
+          # -C -: resume instead of restart. Without it, a slow/throttled
+          # server (confirmed live: 3 straight attempts each hit the 120s
+          # cap with only 0-6.7MB of the 41.9MB archive, every one
+          # restarting from byte 0) never accumulates any progress across
+          # retries and can never finish. --retry 5 --retry-delay 5 gives
+          # more, gentler attempts than the old --retry 2 with no delay.
           if command -v ffmpeg >/dev/null 2>&1; then
             echo "ffmpeg already present: $(ffmpeg -version | head -1)"
-          else
-            curl -sSL --max-time 120 --retry 2 \
+          elif curl -sSL --max-time 90 --retry 5 --retry-delay 5 -C - \
               https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz \
-              -o /tmp/ffmpeg.tar.xz
-            tar -xf /tmp/ffmpeg.tar.xz -C /tmp
-            sudo mv /tmp/ffmpeg-*-amd64-static/ffmpeg /tmp/ffmpeg-*-amd64-static/ffprobe /usr/local/bin/
+              -o /tmp/ffmpeg.tar.xz \
+              && tar -xf /tmp/ffmpeg.tar.xz -C /tmp \
+              && sudo mv /tmp/ffmpeg-*-amd64-static/ffmpeg /tmp/ffmpeg-*-amd64-static/ffprobe /usr/local/bin/; then
+            ffmpeg -version | head -1
+          else
+            # Last-resort fallback: the static download source is having a
+            # genuinely bad day. apt is bounded with `timeout` this time
+            # (unlike the earlier unbounded hang) so a broken mirror fails
+            # fast instead of burning the whole job timeout again.
+            echo "static ffmpeg download failed after retries -- falling back to apt"
+            timeout 90 sudo apt-get update -qq && timeout 90 sudo apt-get install -y -qq ffmpeg
             ffmpeg -version | head -1
           fi
 

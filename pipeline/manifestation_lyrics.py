@@ -107,6 +107,17 @@ number (the model doesn't reliably follow requested tempo).
 """
 
 
+class GeminiUnavailable(RuntimeError):
+    """Gemini stayed unreachable/overloaded through every retry (confirmed
+    live on 2026-08-25: read timeouts and 503s spanning 09:55-20:59 UTC, well
+    past what 3 retries at 15s apart can ride out). This is Google's service
+    having a bad stretch, not a defect in this code -- run_daily.py treats it
+    the same as CloudflareQuotaExhausted/ZeroGPUQuotaExhausted: skip this
+    track, don't fail the whole job, retry on the next scheduled run.
+    Raising the raw Timeout/HTTPError instead used to fail the entire job
+    even on runs where every other track had already succeeded."""
+
+
 def _call_gemini(prompt: str, schema: dict) -> dict:
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY is not set")
@@ -118,7 +129,7 @@ def _call_gemini(prompt: str, schema: dict) -> dict:
     for attempt in range(GEMINI_503_MAX_RETRIES + 1):
         try:
             response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
-        except requests.exceptions.Timeout:
+        except requests.exceptions.Timeout as e:
             # A read timeout raises before any response exists, so it never
             # reaches the status_code check below and skipped this retry
             # loop entirely (confirmed in production: run 32834495308 hit
@@ -127,10 +138,12 @@ def _call_gemini(prompt: str, schema: dict) -> dict:
             if attempt < GEMINI_503_MAX_RETRIES:
                 time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
                 continue
-            raise
-        if response.status_code == 503 and attempt < GEMINI_503_MAX_RETRIES:
-            time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
-            continue
+            raise GeminiUnavailable(f"Gemini timed out on every retry: {e}") from e
+        if response.status_code == 503:
+            if attempt < GEMINI_503_MAX_RETRIES:
+                time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
+                continue
+            raise GeminiUnavailable(f"Gemini returned 503 on every retry: {response.text[:200]}")
         response.raise_for_status()
         data = response.json()
         text = data["candidates"][0]["content"]["parts"][0]["text"]
