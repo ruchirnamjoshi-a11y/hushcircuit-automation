@@ -116,7 +116,18 @@ def _call_gemini(prompt: str, schema: dict) -> dict:
         "generationConfig": {"responseMimeType": "application/json", "responseSchema": schema},
     }
     for attempt in range(GEMINI_503_MAX_RETRIES + 1):
-        response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
+        try:
+            response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
+        except requests.exceptions.Timeout:
+            # A read timeout raises before any response exists, so it never
+            # reaches the status_code check below and skipped this retry
+            # loop entirely (confirmed in production: run 32834495308 hit
+            # this exact ReadTimeoutError, uncaught, right after the 503
+            # retry logic above was added for a *different* failure mode).
+            if attempt < GEMINI_503_MAX_RETRIES:
+                time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
+                continue
+            raise
         if response.status_code == 503 and attempt < GEMINI_503_MAX_RETRIES:
             time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
             continue

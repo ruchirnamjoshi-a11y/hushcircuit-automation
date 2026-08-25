@@ -78,8 +78,16 @@ def synthesize_song(lyrics_text: str, style_tags: str, duration_seconds: float, 
             api_name="/__call__",
         )
     except Exception as e:
-        if "ZeroGPU quota" in str(e):
-            raise ZeroGPUQuotaExhausted(str(e)) from e
+        # Two distinct observed error texts share the same "retry later,
+        # don't fail the whole job" handling in run_daily.py: hard daily
+        # quota exhaustion ("ZeroGPU quota...") and live pool congestion
+        # ("No GPU was available after 60s..."). Only matching the first
+        # string let a real congestion error fall through as a raw
+        # AppError and hard-fail the job (confirmed in production: run
+        # 32814268463 failed the whole run on exactly this un-caught text).
+        msg = str(e)
+        if "ZeroGPU quota" in msg or "No GPU was available" in msg:
+            raise ZeroGPUQuotaExhausted(msg) from e
         raise
     audio_path = result[0] if isinstance(result, (list, tuple)) else result
     out_path.parent.mkdir(parents=True, exist_ok=True)
