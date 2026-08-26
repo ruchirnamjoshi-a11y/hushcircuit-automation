@@ -19,6 +19,7 @@ from pathlib import Path
 import requests
 
 from pipeline.config import GEMINI_API_KEY, GEMINI_MODEL, QUEUE_PENDING_DIR, QUEUE_USED_DIR, SERIES_STATE_DIR, Track
+from pipeline.manifestation_lyrics import GeminiUnavailable
 from pipeline.scripts import Script, ScriptValidationError, to_dict, validate
 
 REQUEST_TIMEOUT_SECONDS = 120
@@ -142,27 +143,31 @@ def _call_gemini_raw(prompt: str, response_schema: dict) -> dict:
             "responseSchema": response_schema,
         },
     }
-    # 503 (Service Unavailable) observed repeatedly this session on large/
-    # complex requests (e.g. the 32-40 scene long-form schema) -- genuinely
-    # transient (a same-prompt retry succeeds), but this call had no retry
-    # at all before, so it failed the whole batch on one bad moment.
+    # 503/429/timeout observed repeatedly in production (both on large
+    # requests like the 32-40 scene long-form schema, and independently via
+    # the identical pattern in pipeline.manifestation_lyrics, which shares
+    # this same Gemini endpoint) -- genuinely transient, but this call used
+    # to have no retry, or raised a raw exception once retries were
+    # exhausted, which run_daily.py's generic except Exception treats as a
+    # hard job failure even when every other track succeeded or correctly
+    # skipped. GeminiUnavailable gets the same graceful "skip this track,
+    # retry next run" handling as CloudflareQuotaExhausted/
+    # ZeroGPUQuotaExhausted -- see run_daily.py's except chain.
     for attempt in range(GEMINI_503_MAX_RETRIES + 1):
         try:
             response = requests.post(url, params={"key": GEMINI_API_KEY}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
-        except requests.exceptions.Timeout:
-            # A read timeout raises before any response exists, so it never
-            # reached the status_code check below -- the retry loop above
-            # only covered 503s, not a genuinely stalled request (confirmed
-            # in production via the identical pattern in
-            # pipeline.manifestation_lyrics: run 32834495308 hit an uncaught
-            # ReadTimeoutError from this same Gemini endpoint).
+        except requests.exceptions.Timeout as e:
             if attempt < GEMINI_503_MAX_RETRIES:
                 time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
                 continue
-            raise
-        if response.status_code == 503 and attempt < GEMINI_503_MAX_RETRIES:
-            time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
-            continue
+            raise GeminiUnavailable(f"Gemini timed out on every retry: {e}") from e
+        if response.status_code in (429, 503):
+            if attempt < GEMINI_503_MAX_RETRIES:
+                time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
+                continue
+            raise GeminiUnavailable(
+                f"Gemini returned {response.status_code} on every retry: {response.text[:200]}"
+            )
         response.raise_for_status()
         data = response.json()
         text = data["candidates"][0]["content"]["parts"][0]["text"]
