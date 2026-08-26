@@ -108,14 +108,15 @@ number (the model doesn't reliably follow requested tempo).
 
 
 class GeminiUnavailable(RuntimeError):
-    """Gemini stayed unreachable/overloaded through every retry (confirmed
-    live on 2026-08-25: read timeouts and 503s spanning 09:55-20:59 UTC, well
-    past what 3 retries at 15s apart can ride out). This is Google's service
-    having a bad stretch, not a defect in this code -- run_daily.py treats it
-    the same as CloudflareQuotaExhausted/ZeroGPUQuotaExhausted: skip this
-    track, don't fail the whole job, retry on the next scheduled run.
-    Raising the raw Timeout/HTTPError instead used to fail the entire job
-    even on runs where every other track had already succeeded."""
+    """Gemini stayed unreachable/overloaded/rate-limited through every retry
+    (confirmed live on 2026-08-25: read timeouts and 503s spanning
+    09:55-20:59 UTC; confirmed again on 2026-08-26 05:20 UTC with a 429 --
+    the 503/timeout handling below didn't cover that status code, so it
+    still fell through to a hard failure even after the first fix). This is
+    Google's service having a bad stretch or this key's free-tier request
+    rate being hit, not a defect in this code -- run_daily.py treats it the
+    same as CloudflareQuotaExhausted/ZeroGPUQuotaExhausted: skip this track,
+    don't fail the whole job, retry on the next scheduled run."""
 
 
 def _call_gemini(prompt: str, schema: dict) -> dict:
@@ -139,11 +140,13 @@ def _call_gemini(prompt: str, schema: dict) -> dict:
                 time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
                 continue
             raise GeminiUnavailable(f"Gemini timed out on every retry: {e}") from e
-        if response.status_code == 503:
+        if response.status_code in (429, 503):
             if attempt < GEMINI_503_MAX_RETRIES:
                 time.sleep(GEMINI_503_RETRY_DELAY_SECONDS)
                 continue
-            raise GeminiUnavailable(f"Gemini returned 503 on every retry: {response.text[:200]}")
+            raise GeminiUnavailable(
+                f"Gemini returned {response.status_code} on every retry: {response.text[:200]}"
+            )
         response.raise_for_status()
         data = response.json()
         text = data["candidates"][0]["content"]["parts"][0]["text"]
