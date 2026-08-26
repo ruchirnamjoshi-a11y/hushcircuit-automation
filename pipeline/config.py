@@ -369,12 +369,17 @@ CF_API_TOKEN = os.environ.get("CF_API_TOKEN", "")
 # with reference-image input tiles added on top.
 AI_IMAGE_MODEL = os.environ.get("AI_IMAGE_MODEL", "@cf/black-forest-labs/flux-2-klein-4b")
 
-# Weekly story generation: Gemini API, free tier. "gemini-flash-latest" is an
-# alias Google keeps pointed at their current recommended flash model, so it
-# doesn't need updating when a specific dated model (e.g. gemini-2.5-flash)
-# gets sunset for new callers.
+# Weekly story generation + manifestation's daily live Gemini calls, free
+# tier. Was "gemini-flash-latest" (-> gemini-3.7-flash) until 2026-08-26,
+# when live testing showed it failing 503 on 4/4 back-to-back real calls
+# during a demand spike while "gemini-flash-lite-latest" succeeded 4/4 in
+# ~1.7s each, with equivalent output quality (verified: real lyrics + real
+# scene-description calls, correct schema, on-theme content). The lite
+# model appears to get deprioritized less under load -- plausibly because
+# it's cheaper to serve -- so it's the new default. "gemini-flash-latest" is
+# still a real, valid alias if this needs reverting.
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-lite-latest")
 
 # Hugging Face account token -- unlocks the larger authenticated ZeroGPU
 # quota pool (vs. anonymous) for pipeline.manifestation_video's ACE-Step
