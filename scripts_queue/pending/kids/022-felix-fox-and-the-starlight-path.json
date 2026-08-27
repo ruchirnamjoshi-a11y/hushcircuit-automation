@@ -1,0 +1,71 @@
+{
+  "id": "felix-fox-and-the-starlight-path",
+  "title": "Felix Fox and the Starlight Path",
+  "description": "A clever little fox learns to trust his inner light when navigating a dark forest path.",
+  "tags": [
+    "fox",
+    "night",
+    "stars",
+    "forest",
+    "bedtime"
+  ],
+  "character_reference": "a bright red-orange fox kit with a white-tipped tail and large pointy ears",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Felix trotted along the edge of the whispering woods as dusk painted the evening sky in shades of purple and blue.",
+      "on_screen_text": "WHISPERING WOODS",
+      "duration_hint": 12.0,
+      "visual": "wide shot of an orange fox kit walking cautiously along a forest edge, twilight sky filled with deep purple and indigo clouds"
+    },
+    {
+      "narration": "He needed to reach the glowing meadow on the other side, but the trees grew thick and blocked the moonlight.",
+      "on_screen_text": "THICK TREES",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the fox looking into a dense, dark forest with twisting tree trunks and heavy shadows, mysterious atmosphere"
+    },
+    {
+      "narration": "Feeling nervous in the deep shadows, Felix stopped and curled his fluffy tail around his paws.",
+      "on_screen_text": "PAUSING IN THE DARK",
+      "duration_hint": 11.0,
+      "visual": "close up of the red fox kit sitting down with ears lowered, looking down thoughtfully, soft cool twilight illumination"
+    },
+    {
+      "narration": "He closed his eyes and remembered his mother's advice to look for the tiny sparks of light dancing in the leaves.",
+      "on_screen_text": "REMEMBERING ADVICE",
+      "duration_hint": 12.0,
+      "visual": "close up of the fox with eyes closed peacefully, soft golden glow reflecting on his fur, gentle cinematic focus"
+    },
+    {
+      "narration": "When he opened his eyes, glowing fireflies rose from the ferns, painting a shimmering path through the darkness.",
+      "on_screen_text": "SHIMMERING PATH",
+      "duration_hint": 12.0,
+      "visual": "medium shot of glowing green fireflies rising from ferns around the fox, lighting up the dark forest floor like tiny stars"
+    },
+    {
+      "narration": "Felix trotted forward eagerly, following the dancing lights as they guided his paws safely through the trees.",
+      "on_screen_text": "FOLLOWING THE LIGHT",
+      "duration_hint": 11.0,
+      "visual": "dynamic action shot of the fox trotting along a forest path lit by swarms of glowing fireflies, magical fairy tale lighting"
+    },
+    {
+      "narration": "He emerged into the bright meadow where stars twinkled overhead like a blanket of silver diamonds.",
+      "on_screen_text": "BRIGHT MEADOW",
+      "duration_hint": 11.0,
+      "visual": "wide view of the fox stepping out into a vast open meadow under a crystal clear starry night sky, breathtaking celestial view"
+    },
+    {
+      "narration": "Felix curled up in the warm grass, knowing that even in the darkest woods, a little light can guide the way.",
+      "on_screen_text": "SAFE AND SOUND",
+      "duration_hint": 12.0,
+      "visual": "close up of the cute fox sleeping peacefully curled in a ball on soft grass, starry sky above, tranquil bedtime mood"
+    },
+    {
+      "narration": "May your dreams be guided by gentle light tonight. Follow along for more magical stories tomorrow.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "magical night sky filled with glowing constellations, shooting stars streaking softly across deep blue twilight, soothing atmosphere"
+    }
+  ]
+}

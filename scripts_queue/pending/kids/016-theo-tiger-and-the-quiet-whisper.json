@@ -1,0 +1,71 @@
+{
+  "id": "theo-tiger-and-the-quiet-whisper",
+  "title": "Theo Tiger and the Quiet Whisper",
+  "description": "A little tiger learns that he does not need a loud roar to be brave and help his friends.",
+  "tags": [
+    "tiger",
+    "bravery",
+    "quiet",
+    "bedtime",
+    "animals"
+  ],
+  "character_reference": "a small orange tiger cub with fuzzy white cheeks and soft black stripes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Every animal in the sunny meadow had a big, booming voice except for little Theo. His roar always sounded more like a gentle autumn breeze.",
+      "on_screen_text": "THE SOFT ROAR",
+      "duration_hint": 12.0,
+      "visual": "close up of a tiny tiger cub opening his mouth timidly in a lush sunlit grassy clearing, low angle, soft golden hour lighting, rich greenery background"
+    },
+    {
+      "narration": "Theo worried that if a storm ever blew in, his tiny voice would never be strong enough to call his friends to safety.",
+      "on_screen_text": "A SILENT WORRY",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the tiger cub looking down thoughtfully at a patch of wildflowers, ears drooping slightly, overcast gentle lighting, forest edge"
+    },
+    {
+      "narration": "One afternoon, dark gray clouds rolled across the sky and a sudden gust of wind scattered the meadow animals.",
+      "on_screen_text": "CLOUDS ROLL IN",
+      "duration_hint": 11.0,
+      "visual": "wide view of wind bending tall meadow grass, swirling autumn leaves, dark blue grey sky overhead, dramatic atmospheric lighting"
+    },
+    {
+      "narration": "Little Pip the baby mouse was hiding underneath a heavy hollow log, too scared and frozen to crawl out on his own.",
+      "on_screen_text": "BABY MOUSE TRAPPED",
+      "duration_hint": 12.0,
+      "visual": "macro shot of a tiny scared field mouse cowering beneath a mossy decaying log, damp earth, moody shadows, soft cinematic focus"
+    },
+    {
+      "narration": "Theo crept over silently on soft paws, slipping right into the narrow space where the others could not fit.",
+      "on_screen_text": "SLIPPING THROUGH",
+      "duration_hint": 11.0,
+      "visual": "low angle side profile of the tiger cub squeezing his body under a dark mossy fallen tree trunk, focused expression, detailed fur texture"
+    },
+    {
+      "narration": "Instead of roaring, Theo offered a warm, soothing purr that vibrated softly against the damp earth to guide the lost mouse.",
+      "on_screen_text": "A GENTLE PURR",
+      "duration_hint": 12.0,
+      "visual": "close up of the tiger cub pressing his nose close to a tiny mouse, eyes closed in concentration, warm amber light filtering through leaves"
+    },
+    {
+      "narration": "Little Pip heard the kind rumble and followed it straight out into the open, safely tucked right beneath Theo's chin.",
+      "on_screen_text": "FOLLOWING THE WARMTH",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the tiger cub walking out from under a log carrying a tiny mouse safely under his chin, joyful friendly atmosphere"
+    },
+    {
+      "narration": "Theo learned that gentle kindness speaks louder than any roar, bringing comfort just when it is needed most.",
+      "on_screen_text": "THE TRUE STRENGTH",
+      "duration_hint": 11.0,
+      "visual": "wide portrait of the tiger sitting peacefully among bright yellow buttercups, soft glowing sunset light, tranquil meadow background"
+    },
+    {
+      "narration": "Thank you for listening to our bedtime story tonight. Follow along for more magical adventures every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "cute glowing fireflies drifting lazily over a peaceful twilight meadow, deep indigo sky, twinkling stars, magical fairy tale ambiance"
+    }
+  ]
+}

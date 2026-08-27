@@ -1,0 +1,71 @@
+{
+  "id": "bella-bunny-and-the-lost-button",
+  "title": "Bella Bunny and the Lost Button",
+  "description": "A helpful little bunny spends her afternoon reuniting lost trinkets with their owners.",
+  "tags": [
+    "bunny",
+    "kindness",
+    "helping",
+    "forest",
+    "bedtime"
+  ],
+  "character_reference": "a fluffy brown-and-white bunny with long floppy ears wearing a tiny blue cotton vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Bella hopped along the mossy woodland path, her bright eyes scanning the ground for shiny treasures left behind.",
+      "on_screen_text": "WOODLAND PATH",
+      "duration_hint": 11.0,
+      "visual": "medium shot of a fluffy bunny hopping carefully along a winding forest trail covered in soft green moss and tiny wild ferns, dappled light"
+    },
+    {
+      "narration": "Tucked underneath a giant green clover leaf, she spotted a polished wooden button that gleamed in the sunlight.",
+      "on_screen_text": "SHINY DISCOVERY",
+      "duration_hint": 11.0,
+      "visual": "macro shot of a bunny paw gently lifting a large green leaf to reveal a smooth round polished wooden button resting on dark soil"
+    },
+    {
+      "narration": "Bella picked up the round treasure in her paws, determined to find out which woodland neighbor it belonged to.",
+      "on_screen_text": "THE SEARCH BEGINS",
+      "duration_hint": 11.0,
+      "visual": "close up of the cute bunny holding a small wooden button thoughtfully between her paws, curious facial expression, soft forest background"
+    },
+    {
+      "narration": "She asked wise old Barnaby Badger near his burrow, but he shook his head with a gentle smile.",
+      "on_screen_text": "ASKING AROUND",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the bunny talking politely to a friendly plump badger near a cozy dirt burrow entrance under a tree root, warm afternoon sun"
+    },
+    {
+      "narration": "Further down the trail, she found little Oliver Owl resting on a branch, missing the very same button from his vest.",
+      "on_screen_text": "THE MISSING PIECE",
+      "duration_hint": 12.0,
+      "visual": "close up of a fluffy small owl perched on a low oak branch looking down with wide hopeful eyes at the ground below, soft foliage bokeh"
+    },
+    {
+      "narration": "Bella happily bounded up the tree roots and handed the polished wooden treasure right back to her grateful feathered friend.",
+      "on_screen_text": "A HAPPY RETURN",
+      "duration_hint": 12.0,
+      "visual": "medium close up of the bunny handing a tiny button upward toward a friendly owl sitting on a branch, warm golden sunlight streaming through trees"
+    },
+    {
+      "narration": "Oliver blinked his big golden eyes and thanked her warmly, sewing the button securely back onto his cozy winter vest.",
+      "on_screen_text": "A GRATEFUL SMILE",
+      "duration_hint": 12.0,
+      "visual": "close up of a fluffy owl looking content and smiling gently, soft warm lighting, cozy woodland interior nook background"
+    },
+    {
+      "narration": "Bella felt a warm glow in her heart because helping others is the sweetest reward of all.",
+      "on_screen_text": "WARM HEART",
+      "duration_hint": 11.0,
+      "visual": "portrait of the happy bunny sitting content among glowing wildflowers, warm sunset lighting, peaceful and comforting atmosphere"
+    },
+    {
+      "narration": "May your dreams be filled with kindness tonight. Follow along for more heartwarming stories tomorrow.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "serene forest scene at dusk, soft glowing fireflies rising from the ferns, gentle blue and amber twilight colors, magical calm mood"
+    }
+  ]
+}

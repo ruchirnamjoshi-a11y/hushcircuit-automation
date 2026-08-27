@@ -1,0 +1,71 @@
+{
+  "id": "pip-penguin-and-the-slippery-slide",
+  "title": "Pip Penguin and the Slippery Slide",
+  "description": "A young penguin learns to laugh at his mistakes when learning to slide on the ice.",
+  "tags": [
+    "penguin",
+    "snow",
+    "mistakes",
+    "learning",
+    "winter"
+  ],
+  "character_reference": "a plump baby penguin with a fuzzy black-and-white coat and bright orange webbed feet",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The morning sun glittered over the sparkling white glacier where the penguin colony gathered for sliding lessons.",
+      "on_screen_text": "ICY MORNING",
+      "duration_hint": 11.0,
+      "visual": "wide shot of a bright blue arctic glacier, sparkling snow crystals, soft morning sunlight reflecting off frozen slopes, distant icebergs"
+    },
+    {
+      "narration": "All the other little penguins zoomed down the slippery slope with smooth, graceful bellies, gliding effortlessly across the ice.",
+      "on_screen_text": "SPEEDY GLIDERS",
+      "duration_hint": 12.0,
+      "visual": "action shot of several small penguins sliding fast across glistening blue ice, motion blur, joyful splashing snow dust, bright daylight"
+    },
+    {
+      "narration": "Little Pip wobbled at the very top edge, his flippers shaking nervously as he looked down the steep, frosty path.",
+      "on_screen_text": "THE WOBBLY TOP",
+      "duration_hint": 11.0,
+      "visual": "high angle shot of a chubby penguin standing nervously at the edge of a snowy cliff, looking down with wide eyes, frosty blue tones"
+    },
+    {
+      "narration": "He pushed off with excitement, but his tail feathers caught a hidden patch of slush and he spun completely around.",
+      "on_screen_text": "A FUNNY SPIN",
+      "duration_hint": 12.0,
+      "visual": "dynamic medium shot of a baby penguin spinning mid air in a blur of black and white feathers, powdery snow flying around him"
+    },
+    {
+      "narration": "Instead of sliding smoothly, Pip tumbled head over flippers into a fluffy mound of untouched snow, making a funny shape.",
+      "on_screen_text": "SNOWBANK TUMBLE",
+      "duration_hint": 12.0,
+      "visual": "close up of a penguin stuck upside down in a deep snow drift with only his orange feet kicking in the air, comical pose"
+    },
+    {
+      "narration": "For a moment Pip felt embarrassed, but then he heard his friends giggling warmly instead of laughing at him unkindly.",
+      "on_screen_text": "WARM GIGGLES",
+      "duration_hint": 12.0,
+      "visual": "medium shot of several friendly penguins looking down into a snow drift with smiling friendly expressions, soft pastel winter lighting"
+    },
+    {
+      "narration": "Pip popped his head out of the snow and laughed out loud, realizing that making mistakes is just part of the fun.",
+      "on_screen_text": "A HAPPY LAUGH",
+      "duration_hint": 12.0,
+      "visual": "close up of a cheerful baby penguin shaking fluffy snow off his head with a big joyful expression, glowing winter sun flare"
+    },
+    {
+      "narration": "With a lighter heart, he tried again and slid all the way to the bottom with a huge grin on his beak.",
+      "on_screen_text": "SLIDING TOGETHER",
+      "duration_hint": 12.0,
+      "visual": "wide action shot of the happy penguin gliding smoothly across a wide icy basin, sunny blue sky, cheerful snowy landscape"
+    },
+    {
+      "narration": "Every stumble helps us grow a little more each day. Follow along for more bedtime stories tomorrow night.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "peaceful arctic scene at twilight, gentle purple and pink aurora borealis glowing above snow covered hills, cozy magical mood"
+    }
+  ]
+}

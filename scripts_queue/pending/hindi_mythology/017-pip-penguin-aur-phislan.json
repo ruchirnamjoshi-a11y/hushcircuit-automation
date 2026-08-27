@@ -1,0 +1,71 @@
+{
+  "id": "pip-penguin-aur-phislan",
+  "title": "पिप्प पेंगुइन और फिसलन",
+  "description": "एक नन्हा पेंगुइन बर्फ पर फिसलना सीखते समय अपनी गलतियों पर मुस्कुराना सीखता है।",
+  "tags": [
+    "पेंगुइन",
+    "बर्फ",
+    "गलतियां",
+    "सीखना",
+    "सर्दी"
+  ],
+  "character_reference": "a plump baby penguin with a fuzzy black-and-white coat and bright orange webbed feet",
+  "episode_number": 0,
+  "source_script_id": "pip-penguin-and-the-slippery-slide",
+  "scenes": [
+    {
+      "narration": "सुबह की सुनहरी धूप चमकीली सफेद बर्फ पर चमक रही थी, जहाँ पेंगुइन परिवार फिसलने का पाठ सीखने के लिए इकट्ठा हुआ था।",
+      "on_screen_text": "बर्फीली सुबह",
+      "duration_hint": 9.5,
+      "visual": "wide shot of a bright blue arctic glacier, sparkling snow crystals, soft morning sunlight reflecting off frozen slopes, distant icebergs"
+    },
+    {
+      "narration": "बाकी सभी नन्हें पेंगुइन अपने पेट के बल चिकनी ढलान से सरपट नीचे उतर गए, और बर्फ पर मज़े से फिसलने लगे।",
+      "on_screen_text": "तेज़ फिसलन",
+      "duration_hint": 9.0,
+      "visual": "action shot of several small penguins sliding fast across glistening blue ice, motion blur, joyful splashing snow dust, bright daylight"
+    },
+    {
+      "narration": "नन्हा पिप्प सबसे ऊपर किनारे पर थोड़ा डगमगाया, और ठंडी ढलान को नीचे देखते हुए उसके पंख डर से कांप रहे थे।",
+      "on_screen_text": "ऊपर डगमगाना",
+      "duration_hint": 9.5,
+      "visual": "high angle shot of a chubby penguin standing nervously at the edge of a snowy cliff, looking down with wide eyes, frosty blue tones"
+    },
+    {
+      "narration": "उसने जोश के साथ आगे छलांग लगाई, लेकिन उसकी पूंछ बर्फ के एक टुकड़े से उलझ गई और वह गोल-गोल घूमने लगा।",
+      "on_screen_text": "मज़ेदार चक्कर",
+      "duration_hint": 9.5,
+      "visual": "dynamic medium shot of a baby penguin spinning mid air in a blur of black and white feathers, powdery snow flying around him"
+    },
+    {
+      "narration": "आसानी से फिसलने के बजाय, पिप्प सिर के बल सीधे नरम बर्फ के ढेर में जा गिरा और एक अजीब सी आकृति बन गई।",
+      "on_screen_text": "बर्फ में गिरना",
+      "duration_hint": 9.5,
+      "visual": "close up of a penguin stuck upside down in a deep snow drift with only his orange feet kicking in the air, comical pose"
+    },
+    {
+      "narration": "एक पल के लिए तो पिप्प को शर्म आई, लेकिन तभी उसने सुना कि उसके दोस्त उस पर हंसने के बजाय प्यार से खिलखिला रहे थे।",
+      "on_screen_text": "प्यारी हंसी",
+      "duration_hint": 10.0,
+      "visual": "medium shot of several friendly penguins looking down into a snow drift with smiling friendly expressions, soft pastel winter lighting"
+    },
+    {
+      "narration": "पिप्प ने बर्फ से अपना सिर बाहर निकाला और ज़ोर से हंस पड़ा, यह समझकर कि गलतियां करना भी खेल का ही एक हिस्सा है।",
+      "on_screen_text": "खुशियों भरी हंसी",
+      "duration_hint": 9.5,
+      "visual": "close up of a cheerful baby penguin shaking fluffy snow off his head with a big joyful expression, glowing winter sun flare"
+    },
+    {
+      "narration": "एक हल्के दिल के साथ, उसने फिर से कोशिश की और अपनी चौंच पर एक बड़ी सी मुस्कान लिए सीधे नीचे तक फिसल गया।",
+      "on_screen_text": "साथ-साथ फिसलना",
+      "duration_hint": 9.5,
+      "visual": "wide action shot of the happy penguin gliding smoothly across a wide icy basin, sunny blue sky, cheerful snowy landscape"
+    },
+    {
+      "narration": "हर छोटी-मोटी ठोकर हमें हर दिन थोड़ा और आगे बढ़ाती है। कल रात फिर मिलेंगे एक नई कहानी के साथ।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 9.0,
+      "visual": "peaceful arctic scene at twilight, gentle purple and pink aurora borealis glowing above snow covered hills, cozy magical mood"
+    }
+  ]
+}
