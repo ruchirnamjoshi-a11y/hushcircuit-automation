@@ -23,6 +23,17 @@ from pipeline.config import TRACKS, youtube_token_path
 def run() -> int:
     any_failed = False
     for track in TRACKS.values():
+        if track.shares_youtube_channel_with:
+            # Confirmed live (2026-08-27, via YouTube's public oEmbed
+            # endpoint): this track's videos upload to the SAME channel as
+            # shares_youtube_channel_with, so channel==MINE would just
+            # return that other track's report again under a different
+            # label -- byte-identical and misleading, not a second real
+            # data point. See that track's report instead.
+            print(f"[{track.key}] Shares a YouTube channel with "
+                  f"'{track.shares_youtube_channel_with}' — see that track's report instead of "
+                  f"pulling a duplicate one here.")
+            continue
         token_path = youtube_token_path(track.key)
         if not token_path.exists():
             print(f"[{track.key}] No YouTube OAuth token at {token_path} — skipping.")

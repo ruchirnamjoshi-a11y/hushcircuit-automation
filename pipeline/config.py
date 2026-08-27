@@ -69,6 +69,18 @@ class Track:
     # per-language work, so producing a second language costs no extra
     # image-generation quota. See run_daily.py.
     shares_images_with: str = ""
+    # When set, this track's videos are uploaded to the SAME YouTube channel
+    # as another track (confirmed live for kids/hindi_mythology on
+    # 2026-08-27 via YouTube's public oEmbed endpoint: both tracks' real
+    # uploaded videos resolve to the same channel, "HushCircuit" —
+    # intentional, one bilingual channel, not a setup mistake). Distinct
+    # from shares_images_with, which is about image-generation reuse, not
+    # upload destination — the two happen to line up here but aren't the
+    # same concept. pipeline.analytics/run_weekly_analytics.py skip pulling
+    # a separate (byte-identical, misleading) report for a track with this
+    # set, since channel==MINE would just return the other track's data
+    # again under a different label.
+    shares_youtube_channel_with: str = ""
     # Produces both the full-length long-form video and a trimmed Shorts
     # highlight cut from the same generated images/audio (see run_daily.py).
     # False keeps the original single-Short-only behavior.
@@ -261,6 +273,7 @@ TRACKS: dict[str, Track] = {
         # only, rather than rendering missing-glyph boxes over the video.
         burn_captions=False,
         shares_images_with="kids",
+        shares_youtube_channel_with="kids",
         produce_long_form=True,
         # Resumed 2026-08-19: was paused because its SLOW path (independently
         # regenerating a whole story's scene images when the sibling "kids"
