@@ -1,0 +1,71 @@
+{
+  "id": "sammy-squirrel-and-the-sharing-tree",
+  "title": "Sammy Squirrel and the Sharing Tree",
+  "description": "A squirrel learns that sharing his winter stash brings more joy than keeping it all to himself.",
+  "tags": [
+    "squirrel",
+    "sharing",
+    "autumn",
+    "generosity",
+    "bedtime"
+  ],
+  "character_reference": "a bright red squirrel with a bushy tail and a tiny cream-colored belly patch",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sammy had spent the entire crisp autumn morning gathering the biggest, crunchiest acorns in the entire forest.",
+      "on_screen_text": "AUTUMN HARVEST",
+      "duration_hint": 11.0,
+      "visual": "medium shot of a vibrant red squirrel frantically gathering shiny brown acorns under a massive oak tree, scattered golden leaves"
+    },
+    {
+      "narration": "He packed his cozy hollow tree trunk right to the very top until no more nuts could possibly fit inside.",
+      "on_screen_text": "A FULL HOLLOW",
+      "duration_hint": 11.0,
+      "visual": "close up of a squirrel peeking out from inside a cozy tree trunk filled to the brim with shiny nuts, warm autumn sunlight"
+    },
+    {
+      "narration": "Just as he closed his stash, little Penny Hedgehog walked by, shivering slightly in the chilly autumn breeze.",
+      "on_screen_text": "A CHILLY VISITOR",
+      "duration_hint": 11.0,
+      "visual": "medium shot of a tiny hedgehog with spiky quills standing near a tree root looking cold and hungry, soft golden hour lighting"
+    },
+    {
+      "narration": "Penny looked at Sammy's enormous pile of acorns with sad, hungry eyes, wishing she had found some too.",
+      "on_screen_text": "HUNGRY EYES",
+      "duration_hint": 10.0,
+      "visual": "close up of a cute hedgehog looking upward with big hopeful eyes, soft blurry autumn leaves in the background"
+    },
+    {
+      "narration": "At first, Sammy held his tail tight and thought about keeping every single acorn for himself for the long winter.",
+      "on_screen_text": "HOLDING TIGHT",
+      "duration_hint": 12.0,
+      "visual": "close up of the red squirrel hugging a large pile of nuts defensively with a hesitant expression, rich autumn tones"
+    },
+    {
+      "narration": "Then he remembered how warm it feels to be kind, and he rolled his very favorite crunchy acorn right toward Penny.",
+      "on_screen_text": "SHARING THE BEST",
+      "duration_hint": 12.0,
+      "visual": "medium close up of the squirrel pushing a shiny nut across the grass toward a happy hedgehog, warm friendly lighting"
+    },
+    {
+      "narration": "Penny gasped with delight and nibbled the treat happily, her little quills relaxing in comfort and gratitude.",
+      "on_screen_text": "DELIGHTED SMILE",
+      "duration_hint": 11.0,
+      "visual": "close up of the small hedgehog happily nibbling a nut, smiling eyes, soft golden sunset glowing through the trees"
+    },
+    {
+      "narration": "Sammy smiled, discovering that sharing his harvest brought a much warmer feeling than hoarding ever could.",
+      "on_screen_text": "WARMER HEART",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the squirrel and hedgehog sitting side by side eating nuts happily on a mossy log, cozy autumn afternoon"
+    },
+    {
+      "narration": "May your heart be filled with generosity tonight. Follow along for more heartwarming stories tomorrow.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "peaceful forest twilight scene, soft glowing fireflies hovering above a bed of colorful fallen leaves, calming bedtime ambiance"
+    }
+  ]
+}

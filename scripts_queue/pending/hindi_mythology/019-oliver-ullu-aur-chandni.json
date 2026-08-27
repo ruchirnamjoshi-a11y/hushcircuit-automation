@@ -1,0 +1,71 @@
+{
+  "id": "oliver-ullu-aur-chandni",
+  "title": "ऑली उल्लू और चाँदनी",
+  "description": "एक छोटा सा उल्लू अंधेरे और परछाइयों का डर दूर भगाता है जब उसे चाँदनी की सुंदरता का अहसास होता है।",
+  "tags": [
+    "उल्लू",
+    "रात",
+    "बहादुरी",
+    "चाँदनी",
+    "सोने का समय"
+  ],
+  "character_reference": "a fluffy grey owlet with enormous amber eyes and speckled silver-tipped feathers",
+  "episode_number": 0,
+  "source_script_id": "oliver-owl-and-the-moonbeam",
+  "scenes": [
+    {
+      "narration": "पुराने बरगद के पेड़ की ऊंची डाल पर, नन्हे ऑली ने तारों भरे आसमान की तरफ अपनी गोल-गोल सुनहरी आँखें झपकाईं।",
+      "on_screen_text": "तारों भरी डाल",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a fluffy baby owl perched high on a thick mossy tree branch, looking up at a vast glittering night sky filled with stars"
+    },
+    {
+      "narration": "जहाँ बाकी उल्लुओं को रात बहुत पसंद थी, वहीं ऑली को जंगल में फैलती लंबी काली परछाइयों से थोड़ा डर लगता था।",
+      "on_screen_text": "काली परछाइयाँ",
+      "duration_hint": 9.5,
+      "visual": "close up of the cute owlet looking down anxiously with wide nervous eyes, dark moody forest floor far below, soft cool moonlight"
+    },
+    {
+      "narration": "उसकी माँ ने प्यार से अपने नरम पंख से उसे सहलाया, और उसे अपने पंख फैलाकर पहली बार रात की उड़ान भरने के लिए कहा।",
+      "on_screen_text": "प्यारा प्रोत्साहन",
+      "duration_hint": 10.9,
+      "visual": "medium close up of two owls sharing a tender moment on a branch, one wing gently touching the other, warm magical moonlight glow"
+    },
+    {
+      "narration": "ऑली ने डाल से छलांग लगाई और अपने पंख फैला दिए, ठंडी रात की हवा में धीरे-धीरे तैरते हुए उड़ चला।",
+      "on_screen_text": "पहली उड़ान",
+      "duration_hint": 9.1,
+      "visual": "dynamic action shot of a baby owl gliding gracefully through the night air, wings spread wide, starry backdrop, cinematic motion"
+    },
+    {
+      "narration": "जैसे ही वह थोड़ा नीचे उड़ा, चाँद की एक सुनहरी किरण ने पेड़ों के पत्तों को चमका दिया, और डरावनी परछाइयाँ सुंदर नाचती हुई रोशनी बन गईं।",
+      "on_screen_text": "चाँद की किरण",
+      "duration_hint": 12.7,
+      "visual": "wide shot of a bright beam of silver moonlight cutting through dark forest trees, illuminating floating dust motes and leaves"
+    },
+    {
+      "narration": "वह नीले फूलों के एक खुले मैदान के ऊपर मंडराया जो चमकते हुए आसमान के नीचे छोटे-छोटे हीरों की तरह जगमगा रहे थे।",
+      "on_screen_text": "सोते हुए फूल",
+      "duration_hint": 10.9,
+      "visual": "close up of a field of closed bluebell flowers glowing softly under silvery moonlight, magical fairy tale atmosphere, serene mood"
+    },
+    {
+      "narration": "ऑली को समझ आ गया कि रात का अंधेरा बिल्कुल भी डरावना नहीं है, बल्कि इसमें बहुत शांति और जादू है।",
+      "on_screen_text": "शांत खूबसूरती",
+      "duration_hint": 10.0,
+      "visual": "medium shot of the owlet perched peacefully on a stump, looking around with a calm, happy expression, gentle silvery lighting"
+    },
+    {
+      "narration": "उसका मन शांत हो गया, उसने अपने पंख पर अपना छोटा सा सिर टिकाया और मीठे सपनों में खो जाने के लिए तैयार हो गया।",
+      "on_screen_text": "मीठे सपने",
+      "duration_hint": 11.4,
+      "visual": "close up of the fluffy baby owl closing his amber eyes to sleep on a cozy branch, peaceful midnight atmosphere, soft moonlight"
+    },
+    {
+      "narration": "अब अपनी आँखें बंद करो और नींद की दुनिया में चले जाओ। हर शाम ऐसी ही और प्यारी कहानियों के लिए जुड़े रहो।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 10.5,
+      "visual": "peaceful night sky with a gentle crescent moon surrounded by twinkling stars and soft floating clouds, soothing bedtime colors"
+    }
+  ]
+}

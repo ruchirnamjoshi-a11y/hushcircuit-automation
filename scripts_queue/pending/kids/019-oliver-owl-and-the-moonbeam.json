@@ -1,0 +1,71 @@
+{
+  "id": "oliver-owl-and-the-moonbeam",
+  "title": "Oliver Owl and the Moonbeam",
+  "description": "A nocturnal owlet overcomes his fear of the dark shadows by discovering how beautiful moonlight can be.",
+  "tags": [
+    "owl",
+    "night",
+    "bravery",
+    "moonlight",
+    "bedtime"
+  ],
+  "character_reference": "a fluffy grey owlet with enormous amber eyes and speckled silver-tipped feathers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "High up in the branches of the ancient oak tree, little Oliver blinked his round amber eyes at the starry night sky.",
+      "on_screen_text": "STARRY BRANCH",
+      "duration_hint": 12.0,
+      "visual": "medium shot of a fluffy baby owl perched high on a thick mossy tree branch, looking up at a vast glittering night sky filled with stars"
+    },
+    {
+      "narration": "While most owls loved the dark, Oliver felt nervous about the long shadows stretching across the forest floor.",
+      "on_screen_text": "DARK SHADOWS",
+      "duration_hint": 11.0,
+      "visual": "close up of the cute owlet looking down anxiously with wide nervous eyes, dark moody forest floor far below, soft cool moonlight"
+    },
+    {
+      "narration": "His mother nudged him gently with her soft wing, encouraging him to spread his feathers and take his very first night flight.",
+      "on_screen_text": "GENTLE ENCOURAGEMENT",
+      "duration_hint": 12.0,
+      "visual": "medium close up of two owls sharing a tender moment on a branch, one wing gently touching the other, warm magical moonlight glow"
+    },
+    {
+      "narration": "Oliver leaped from the branch and stretched his wings wide, floating softly through the cool midnight air.",
+      "on_screen_text": "TAKING FLIGHT",
+      "duration_hint": 11.0,
+      "visual": "dynamic action shot of a baby owl gliding gracefully through the night air, wings spread wide, starry backdrop, cinematic motion"
+    },
+    {
+      "narration": "As he flew lower, a bright silver moonbeam illuminated the canopy, turning the dark shadows into dancing patterns of light.",
+      "on_screen_text": "SILVER MOONBEAM",
+      "duration_hint": 12.0,
+      "visual": "wide shot of a bright beam of silver moonlight cutting through dark forest trees, illuminating floating dust motes and leaves"
+    },
+    {
+      "narration": "He hovered over a clearing of sleeping bluebells that sparkled like tiny diamonds under the glowing night sky.",
+      "on_screen_text": "SLEEPING FLOWERS",
+      "duration_hint": 11.0,
+      "visual": "close up of a field of closed bluebell flowers glowing softly under silvery moonlight, magical fairy tale atmosphere, serene mood"
+    },
+    {
+      "narration": "Oliver realized that the dark night was not scary at all, but full of quiet beauty and gentle magic.",
+      "on_screen_text": "QUIET BEAUTY",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the owlet perched peacefully on a stump, looking around with a calm, happy expression, gentle silvery lighting"
+    },
+    {
+      "narration": "With a peaceful heart, he rested his sleepy head against his wing, ready for a night of sweet dreams.",
+      "on_screen_text": "SWEET DREAMS",
+      "duration_hint": 11.0,
+      "visual": "close up of the fluffy baby owl closing his amber eyes to sleep on a cozy branch, peaceful midnight atmosphere, soft moonlight"
+    },
+    {
+      "narration": "Close your eyes and drift off to sleep. Follow along for more bedtime stories every evening.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "peaceful night sky with a gentle crescent moon surrounded by twinkling stars and soft floating clouds, soothing bedtime colors"
+    }
+  ]
+}

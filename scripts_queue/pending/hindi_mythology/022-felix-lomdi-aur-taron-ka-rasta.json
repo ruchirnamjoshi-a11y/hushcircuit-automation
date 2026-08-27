@@ -1,0 +1,71 @@
+{
+  "id": "felix-lomdi-aur-taron-ka-rasta",
+  "title": "फ़ेलिक्स लोमड़ी और तारों का रास्ता",
+  "description": "एक नटखट छोटी लोमड़ी सीखती है कि अंधेरे जंगल में अपने अंदर की रोशनी पर कैसे भरोसा करना चाहिए।",
+  "tags": [
+    "लोमड़ी",
+    "रात",
+    "तारे",
+    "जंगल",
+    "सोने-का-समय"
+  ],
+  "character_reference": "a bright red-orange fox kit with a white-tipped tail and large pointy ears",
+  "episode_number": 0,
+  "source_script_id": "felix-fox-and-the-starlight-path",
+  "scenes": [
+    {
+      "narration": "फ़ेलिक्स फुसफुसाते हुए जंगल के किनारे-किनारे चल रहा था, जब शाम ने आसमान को जामुनी और नीले रंगों से रंग दिया था।",
+      "on_screen_text": "फुसफुसाता जंगल",
+      "duration_hint": 9.5,
+      "visual": "wide shot of an orange fox kit walking cautiously along a forest edge, twilight sky filled with deep purple and indigo clouds"
+    },
+    {
+      "narration": "उसे दूसरी तरफ़ चमकते हुए मैदान तक पहुँचना था, लेकिन पेड़ बहुत घने हो गए थे और चाँद की रोशनी को रोक रहे थे।",
+      "on_screen_text": "घने पेड़",
+      "duration_hint": 9.5,
+      "visual": "medium shot of the fox looking into a dense, dark forest with twisting tree trunks and heavy shadows, mysterious atmosphere"
+    },
+    {
+      "narration": "घने अंधेरे से थोड़ा डर कर, फ़ेलिक्स रुक गया और अपनी फुर्तीली पूँछ को अपने पंजों के चारों ओर लपेट लिया।",
+      "on_screen_text": "अंधेरे में रुकना",
+      "duration_hint": 8.5,
+      "visual": "close up of the red fox kit sitting down with ears lowered, looking down thoughtfully, soft cool twilight illumination"
+    },
+    {
+      "narration": "उसने अपनी आँखें बंद कीं और अपनी माँ की बात याद की कि पत्तों के बीच नाचती हुई रोशनी की नन्हीं चिनगारियों को ढूँढो।",
+      "on_screen_text": "माँ की सीख",
+      "duration_hint": 9.5,
+      "visual": "close up of the fox with eyes closed peacefully, soft golden glow reflecting on his fur, gentle cinematic focus"
+    },
+    {
+      "narration": "जब उसने अपनी आँखें खोलीं, तो फर्न के पौधों से चमकते हुए जुगनू उठे, जिन्होंने अंधेरे के बीच एक जगमगाता रास्ता बना दिया।",
+      "on_screen_text": "जगमगाता रास्ता",
+      "duration_hint": 9.5,
+      "visual": "medium shot of glowing green fireflies rising from ferns around the fox, lighting up the dark forest floor like tiny stars"
+    },
+    {
+      "narration": "फ़ेलिक्स खुशी से आगे बढ़ा, नाचती हुई रोशनी के पीछे-पीछे चलते हुए, जिसने पेड़ों के बीच उसके पंजों को सुरक्षित रास्ता दिखाया।",
+      "on_screen_text": "रोशनी के पीछे",
+      "duration_hint": 10.0,
+      "visual": "dynamic action shot of the fox trotting along a forest path lit by swarms of glowing fireflies, magical fairy tale lighting"
+    },
+    {
+      "narration": "वह चमकते हुए मैदान में पहुँच गया जहाँ ऊपर तारे ऐसे टिमटिमा रहे थे जैसे चाँदी के हीरों की कोई सुंदर चादर हो।",
+      "on_screen_text": "चमकता मैदान",
+      "duration_hint": 9.0,
+      "visual": "wide view of the fox stepping out into a vast open meadow under a crystal clear starry night sky, breathtaking celestial view"
+    },
+    {
+      "narration": "फ़ेलिक्स गर्म घास पर दुबक कर सो गया, यह जानते हुए कि सबसे घने अंधेरे जंगल में भी, थोड़ी सी रोशनी रास्ता दिखा सकती है।",
+      "on_screen_text": "सुरक्षित और सुकून",
+      "duration_hint": 10.0,
+      "visual": "close up of the cute fox sleeping peacefully curled in a ball on soft grass, starry sky above, tranquil bedtime mood"
+    },
+    {
+      "narration": "आज रात आपके सपने भी एक प्यारी सी रोशनी से रोशन हों। कल ऐसी ही और जादुई कहानियों के लिए हमारे साथ जुड़े रहें।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 9.5,
+      "visual": "magical night sky filled with glowing constellations, shooting stars streaking softly across deep blue twilight, soothing atmosphere"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "sammi-gilhari-aur-banta-ped",
+  "title": "सम्मी गिलहरी और बांटने का पेड़",
+  "description": "एक गिलहरी सीखती है कि सर्दियों का अपना संचय अकेले रखने से ज्यादा खुशी उसे बांटने में मिलती है।",
+  "tags": [
+    "गिलहरी",
+    "बांटना",
+    "पतझड़",
+    "उदारता",
+    "सोने का समय"
+  ],
+  "character_reference": "a bright red squirrel with a bushy tail and a tiny cream-colored belly patch",
+  "episode_number": 0,
+  "source_script_id": "sammy-squirrel-and-the-sharing-tree",
+  "scenes": [
+    {
+      "narration": "सम्मी ने ठंडी ठंडी पतझड़ की सुबह पूरे जंगल में सबसे बड़े और कड़क अखरोट इकट्ठा करने में बिताई।",
+      "on_screen_text": "पतझड़ की फसल",
+      "duration_hint": 7.5,
+      "visual": "medium shot of a vibrant red squirrel frantically gathering shiny brown acorns under a massive oak tree, scattered golden leaves"
+    },
+    {
+      "narration": "उसने अपने आरामदायक पेड़ के खोखले को ऊपर तक भर दिया जब तक कि उसमें एक भी और अखरोट समा न सके।",
+      "on_screen_text": "भरा हुआ खोखला",
+      "duration_hint": 7.5,
+      "visual": "close up of a squirrel peeking out from inside a cozy tree trunk filled to the brim with shiny nuts, warm autumn sunlight"
+    },
+    {
+      "narration": "जैसे ही उसने अपना भंडार बंद किया, छोटी पेनी सीही वहाँ से गुजरी, जो ठंडी हवा में थोड़ा कांप रही थी।",
+      "on_screen_text": "एक ठिठुरता हुआ मेहमान",
+      "duration_hint": 7.5,
+      "visual": "medium shot of a tiny hedgehog with spiky quills standing near a tree root looking cold and hungry, soft golden hour lighting"
+    },
+    {
+      "narration": "पेनी ने सम्मी के अखरोटों के विशाल ढेर को उदास और भूखी नज़रों से देखा, काश उसे भी कुछ मिल जाता।",
+      "on_screen_text": "भूखी नज़रें",
+      "duration_hint": 7.5,
+      "visual": "close up of a cute hedgehog looking upward with big hopeful eyes, soft blurry autumn leaves in the background"
+    },
+    {
+      "narration": "पहले तो सम्मी ने अपनी पूंछ कस ली और लंबी सर्दियों के लिए हर एक अखरोट अपने पास रखने की सोची।",
+      "on_screen_text": "कस कर पकड़ना",
+      "duration_hint": 7.5,
+      "visual": "close up of the red squirrel hugging a large pile of nuts defensively with a hesitant expression, rich autumn tones"
+    },
+    {
+      "narration": "फिर उसे याद आया कि दयालु होने में कितना सुकून मिलता है, और उसने अपना सबसे पसंदीदा अखरोट पेनी की तरफ लुढ़का दिया।",
+      "on_screen_text": "सबसे अच्छा हिस्सा बांटना",
+      "duration_hint": 8.0,
+      "visual": "medium close up of the squirrel pushing a shiny nut across the grass toward a happy hedgehog, warm friendly lighting"
+    },
+    {
+      "narration": "पेनी खुशी से चीख उठी और मजे से उस सौगात को कुतरने लगी, उसके छोटे कांटे आराम और कृतज्ञता में ढीले पड़ गए।",
+      "on_screen_text": "खुशहाल मुस्कान",
+      "duration_hint": 8.0,
+      "visual": "close up of the small hedgehog happily nibbling a nut, smiling eyes, soft golden sunset glowing through the trees"
+    },
+    {
+      "narration": "सम्मी मुस्कुराया, यह जानकर कि अपनी फसल बांटने से अकेले जमा करने की तुलना में दिल को कहीं ज्यादा गर्माहट मिलती है।",
+      "on_screen_text": "गर्माहट से भरा दिल",
+      "duration_hint": 8.0,
+      "visual": "medium shot of the squirrel and hedgehog sitting side by side eating nuts happily on a mossy log, cozy autumn afternoon"
+    },
+    {
+      "narration": "आज रात आपका दिल उदारता से भर जाए। कल ऐसी ही और दिल को छू लेने वाली कहानियों के लिए जुड़े रहें।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 7.5,
+      "visual": "peaceful forest twilight scene, soft glowing fireflies hovering above a bed of colorful fallen leaves, calming bedtime ambiance"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "lily-lamb-and-the-dandelion-wish",
+  "title": "Lily Lamb and the Dandelion Wish",
+  "description": "A sweet little lamb learns patience when waiting for her dandelion wishes to grow.",
+  "tags": [
+    "lamb",
+    "patience",
+    "meadow",
+    "dandelion",
+    "bedtime"
+  ],
+  "character_reference": "a fluffy white lamb with curly wool and tiny pink ears wearing a yellow ribbon",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Lily skipped through the lush green meadow where hundreds of bright yellow dandelions swayed in the gentle breeze.",
+      "on_screen_text": "MEADOW OF GOLD",
+      "duration_hint": 12.0,
+      "visual": "wide shot of a sunny green meadow filled with bright yellow dandelion flowers, soft rolling hills, gentle morning light"
+    },
+    {
+      "narration": "She found a tall, fluffy white seed head and closed her eyes to make a very special bedtime wish.",
+      "on_screen_text": "MAKING A WISH",
+      "duration_hint": 11.0,
+      "visual": "close up of a fluffy white lamb with curly wool closing her eyes peacefully next to a giant seed puff, soft sunlit grass"
+    },
+    {
+      "narration": "Lily blew with all her might, sending white parachute seeds floating lazily across the sunny blue sky.",
+      "on_screen_text": "BLOWING SEEDS",
+      "duration_hint": 11.0,
+      "visual": "medium close up of the lamb gently blowing air from her nose, fluffy white dandelion seeds scattering into the air like snow"
+    },
+    {
+      "narration": "She sat down right away on the grass, expecting her wish to magically appear the very next second.",
+      "on_screen_text": "WAITING PATIENTLY",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the curly lamb sitting upright on the grass with a hopeful, expectant look on her face, bright daylight"
+    },
+    {
+      "narration": "Minutes passed by, but nothing happened except for a buzzing bumblebee flying past her furry ear.",
+      "on_screen_text": "TIME PASSES",
+      "duration_hint": 11.0,
+      "visual": "close up of a tiny bumblebee flying near the lamb's pink ear, curious expression on the lamb's face, soft green bokeh background"
+    },
+    {
+      "narration": "Her mother walked over and gently explained that wonderful things, like flowers and dreams, take time to grow.",
+      "on_screen_text": "GENTLE LESSON",
+      "duration_hint": 12.0,
+      "visual": "medium shot of two fluffy sheep standing close together in a sunny field, one resting its head gently on the other's back"
+    },
+    {
+      "narration": "Lily nodded with a calm smile, understanding that patience makes the final reward feel even more special.",
+      "on_screen_text": "CALM UNDERSTANDING",
+      "duration_hint": 12.0,
+      "visual": "close up of the cute lamb smiling peacefully with eyes half closed, warm golden hour sunlight filtering through curly wool"
+    },
+    {
+      "narration": "She curled up in the warm grass for a nap, knowing good things come to those who wait.",
+      "on_screen_text": "SWEET SLUMBER",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the lamb curled up sleeping peacefully in a patch of clover, golden afternoon light, serene meadow atmosphere"
+    },
+    {
+      "narration": "Rest your eyes and dream sweet dreams tonight. Follow along for more gentle stories tomorrow.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "peaceful sunset over rolling green hills, soft pastel pink and orange sky, gentle glowing horizon, calming bedtime mood"
+    }
+  ]
+}

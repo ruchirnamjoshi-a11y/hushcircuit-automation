@@ -1,0 +1,71 @@
+{
+  "id": "lili-aur-pili-ghas-ka-sapna",
+  "title": "लिली मेमना और सफेद फूल की इच्छा",
+  "description": "एक प्यारी सी मेमने बच्ची धीरज रखना सीखती है जब वह अपने फूल वाले सपने के पूरे होने का इंतजार करती है।",
+  "tags": [
+    "मेमना",
+    "धीरज",
+    "मैदान",
+    "फूल",
+    "नींद"
+  ],
+  "character_reference": "a fluffy white lamb with curly wool and tiny pink ears wearing a yellow ribbon",
+  "episode_number": 0,
+  "source_script_id": "lily-lamb-and-the-dandelion-wish",
+  "scenes": [
+    {
+      "narration": "लिली हरे-भरे घास के मैदान में फुदक रही थी, जहाँ ठंडी हवा में पीले-पीले फूल झूल रहे थे।",
+      "on_screen_text": "सुनहरा मैदान",
+      "duration_hint": 7.5,
+      "visual": "wide shot of a sunny green meadow filled with bright yellow dandelion flowers, soft rolling hills, gentle morning light"
+    },
+    {
+      "narration": "उसने एक लंबा और रुई जैसा सफेद फूल देखा और अपनी आँखें बंद करके एक बहुत प्यारी सी इच्छा माँगी।",
+      "on_screen_text": "इच्छा माँगना",
+      "duration_hint": 7.5,
+      "visual": "close up of a fluffy white lamb with curly wool closing her eyes peacefully next to a giant seed puff, soft sunlit grass"
+    },
+    {
+      "narration": "लिली ने अपनी पूरी ताकत से फूँक मारी, जिससे सफेद बीज नीले आसमान में परी की तरह उड़ने लगे।",
+      "on_screen_text": "बीज उड़ाना",
+      "duration_hint": 7.5,
+      "visual": "medium close up of the lamb gently blowing air from her nose, fluffy white dandelion seeds scattering into the air like snow"
+    },
+    {
+      "narration": "वह तुरंत घास पर बैठ गई, यह सोचकर कि उसकी इच्छा अगले ही पल जादू से पूरी हो जाएगी।",
+      "on_screen_text": "सब्र से इंतजार",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the curly lamb sitting upright on the grass with a hopeful, expectant look on her face, bright daylight"
+    },
+    {
+      "narration": "कुछ पल बीत गए, पर कुछ नहीं हुआ सिवाय एक भौंरे के जो उसके कान के पास भिनभिनाता हुआ निकल गया।",
+      "on_screen_text": "समय बीतता है",
+      "duration_hint": 8.0,
+      "visual": "close up of a tiny bumblebee flying near the lamb's pink ear, curious expression on the lamb's face, soft green bokeh background"
+    },
+    {
+      "narration": "उसकी अम्मा पास आईं और प्यार से समझाया कि सुंदर चीजें, जैसे फूल और सपने, उगने में समय लेती हैं।",
+      "on_screen_text": "प्यारी सीख",
+      "duration_hint": 8.0,
+      "visual": "medium shot of two fluffy sheep standing close together in a sunny field, one resting its head gently on the other's back"
+    },
+    {
+      "narration": "लिली ने प्यार से मुस्कुराते हुए सिर हिलाया और समझ गई कि सब्र का फल मीठा होता है।",
+      "on_screen_text": "प्यारी समझ",
+      "duration_hint": 7.0,
+      "visual": "close up of the cute lamb smiling peacefully with eyes half closed, warm golden hour sunlight filtering through curly wool"
+    },
+    {
+      "narration": "वह सोने के लिए गर्म-गर्म घास परकुंडली मारकर लेट गई, यह जानते हुए कि अच्छी चीजें सब्र करने वालों को मिलती हैं।",
+      "on_screen_text": "मीठी नींद",
+      "duration_hint": 9.0,
+      "visual": "medium shot of the lamb curled up sleeping peacefully in a patch of clover, golden afternoon light, serene meadow atmosphere"
+    },
+    {
+      "narration": "अब अपनी आँखें बंद करो और प्यारे-प्यारे सपने देखो। कल फिर मिलेंगे एक नई कहानी के साथ।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 8.0,
+      "visual": "peaceful sunset over rolling green hills, soft pastel pink and orange sky, gentle glowing horizon, calming bedtime mood"
+    }
+  ]
+}

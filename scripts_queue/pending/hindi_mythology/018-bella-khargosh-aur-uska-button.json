@@ -1,0 +1,71 @@
+{
+  "id": "bella-khargosh-aur-uska-button",
+  "title": "बेला खरगोश और खोया हुआ बटन",
+  "description": "एक नन्हीं और मददगार खरगोश अपनी दोपहर जंगल के जानवरों की खोई हुई चीज़ें वापस दिलाने में बिताती है।",
+  "tags": [
+    "खरगोश",
+    "दयालुता",
+    "मदद",
+    "जंगल",
+    "सोने-का-समय"
+  ],
+  "character_reference": "a fluffy brown-and-white bunny with long floppy ears wearing a tiny blue cotton vest",
+  "episode_number": 0,
+  "source_script_id": "bella-bunny-and-the-lost-button",
+  "scenes": [
+    {
+      "narration": "बेला नरम-नरम घास वाले रास्ते पर फुदक रही थी, और उसकी बड़ी-बड़ी आंखें ज़मीन पर किसी चमकीली चीज़ को ढूंढ रही थीं।",
+      "on_screen_text": "जंगल का रास्ता",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a fluffy bunny hopping carefully along a winding forest trail covered in soft green moss and tiny wild ferns, dappled light"
+    },
+    {
+      "narration": "एक बड़े से हरे पत्ते के नीचे, उसे लकड़ी का एक चमकता हुआ बटन मिला जो धूप में चमक रहा था।",
+      "on_screen_text": "चमकीली खोज",
+      "duration_hint": 8.5,
+      "visual": "macro shot of a bunny paw gently lifting a large green leaf to reveal a smooth round polished wooden button resting on dark soil"
+    },
+    {
+      "narration": "बेला ने उस गोल बटन को अपने नन्हे पंजों में उठाया, और यह पता लगाने निकल पड़ी कि यह किसका है।",
+      "on_screen_text": "तलाश शुरू",
+      "duration_hint": 8.0,
+      "visual": "close up of the cute bunny holding a small wooden button thoughtfully between her paws, curious facial expression, soft forest background"
+    },
+    {
+      "narration": "उसने समझदार बिज्जू दादा से उनके बिल के पास पूछा, पर उन्होंने प्यार से मुस्कुराते हुए सिर हिला दिया।",
+      "on_screen_text": "सब से पूछना",
+      "duration_hint": 8.5,
+      "visual": "medium shot of the bunny talking politely to a friendly plump badger near a cozy dirt burrow entrance under a tree root, warm afternoon sun"
+    },
+    {
+      "narration": "थोड़ी दूर आगे बढ़ने पर, उसे उल्लू भैया पेड़ की टहनी पर बैठे मिले, जिनकी जैकेट का वही बटन खो गया था।",
+      "on_screen_text": "खोई हुई चीज़",
+      "duration_hint": 9.0,
+      "visual": "close up of a fluffy small owl perched on a low oak branch looking down with wide hopeful eyes at the ground below, soft foliage bokeh"
+    },
+    {
+      "narration": "बेला खुशी-खुशी पेड़ की जड़ों पर चढ़ी और चमकता हुआ वह बटन अपने उल्लू दोस्त को वापस दे दिया।",
+      "on_screen_text": "खुशी का पल",
+      "duration_hint": 8.5,
+      "visual": "medium close up of the bunny handing a tiny button upward toward a friendly owl sitting on a branch, warm golden sunlight streaming through trees"
+    },
+    {
+      "narration": "उल्लू भैया ने अपनी बड़ी-बड़ी आंखें झपकाईं और प्यार से धन्यवाद कहकर बटन अपनी जैकेट पर वापस सिल लिया।",
+      "on_screen_text": "शुक्रिया",
+      "duration_hint": 8.5,
+      "visual": "close up of a fluffy owl looking content and smiling gently, soft warm lighting, cozy woodland interior nook background"
+    },
+    {
+      "narration": "बेला का दिल खुशी से भर आया, क्योंकि सबकी मदद करने से बढ़कर दुनिया में कुछ नहीं होता।",
+      "on_screen_text": "प्यारा दिल",
+      "duration_hint": 7.5,
+      "visual": "portrait of the happy bunny sitting content among glowing wildflowers, warm sunset lighting, peaceful and comforting atmosphere"
+    },
+    {
+      "narration": "आज रात आपके सपने भी अच्छाई और प्यार से भरे हों। कल ऐसी ही और प्यारी कहानियों के लिए फिर मिलिएगा।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 9.5,
+      "visual": "serene forest scene at dusk, soft glowing fireflies rising from the ferns, gentle blue and amber twilight colors, magical calm mood"
+    }
+  ]
+}

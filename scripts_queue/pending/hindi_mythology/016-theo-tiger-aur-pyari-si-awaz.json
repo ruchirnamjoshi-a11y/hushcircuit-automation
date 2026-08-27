@@ -1,0 +1,71 @@
+{
+  "id": "theo-tiger-aur-pyari-si-awaz",
+  "title": "थियो टाइगर और शांत फुसफुसाहट",
+  "description": "एक नन्हा चीता सीखता है कि बहादुर बनने और अपने दोस्तों की मदद करने के लिए उसे जोर से दहाड़ने की जरूरत नहीं है।",
+  "tags": [
+    "चीता",
+    "बहादुरी",
+    "शांत",
+    "सोने का समय",
+    "जानवर"
+  ],
+  "character_reference": "a small orange tiger cub with fuzzy white cheeks and soft black stripes",
+  "episode_number": 0,
+  "source_script_id": "theo-tiger-and-the-quiet-whisper",
+  "scenes": [
+    {
+      "narration": "धूप से खिले मैदान में रहने वाले हर जानवर की आवाज़ बहुत तेज़ और गूंजती हुई थी, सिवाय नन्हे थियो के। उसकी दहाड़ हमेशा एक ठंडी हवा के झोंके जैसी लगती थी।",
+      "on_screen_text": "नरम सी दहाड़",
+      "duration_hint": 10.9,
+      "visual": "close up of a tiny tiger cub opening his mouth timidly in a lush sunlit grassy clearing, low angle, soft golden hour lighting, rich greenery background"
+    },
+    {
+      "narration": "थियो अक्सर यह सोचकर परेशान रहता था कि अगर कभी कोई बड़ा तूफान आया, तो उसकी छोटी सी आवाज़ उसके दोस्तों को सुरक्षित बुलाने के लिए काफ़ी नहीं होगी।",
+      "on_screen_text": "एक खामोश चिंता",
+      "duration_hint": 10.9,
+      "visual": "medium shot of the tiger cub looking down thoughtfully at a patch of wildflowers, ears drooping slightly, overcast gentle lighting, forest edge"
+    },
+    {
+      "narration": "एक दोपहर, आसमान में काले-काले बादल घिर आए और हवा का एक तेज़ झोंका आकर मैदान के सारे जानवरों को इधर-उधर भगा ले गया।",
+      "on_screen_text": "काले बादल छाए",
+      "duration_hint": 9.5,
+      "visual": "wide view of wind bending tall meadow grass, swirling autumn leaves, dark blue grey sky overhead, dramatic atmospheric lighting"
+    },
+    {
+      "narration": "छोटे चूहे का बच्चा पिप एक भारी खोखले तने के नीचे छुप गया था। वह डर के मारे इतना सहम गया था कि खुद बाहर नहीं निकल पा रहा था।",
+      "on_screen_text": "फंस गया चूहे का बच्चा",
+      "duration_hint": 10.5,
+      "visual": "macro shot of a tiny scared field mouse cowering beneath a mossy decaying log, damp earth, moody shadows, soft cinematic focus"
+    },
+    {
+      "narration": "थियो दबे पाँवों चुपचाप वहाँ गया और उस तंग जगह में फिसलकर अंदर चला गया जहाँ बाकी बड़े जानवर नहीं पहुँच सकते थे।",
+      "on_screen_text": "अंदर फिसलते हुए",
+      "duration_hint": 9.1,
+      "visual": "low angle side profile of the tiger cub squeezing his body under a dark mossy fallen tree trunk, focused expression, detailed fur texture"
+    },
+    {
+      "narration": "दहाड़ने के बजाय, थियो ने एक प्यारा सा और सुकून देने वाला गुर्राना शुरू किया जो गीली मिट्टी पर गूंजते हुए उस भटके हुए चूहे का रास्ता दिखाने लगा।",
+      "on_screen_text": "एक मीठा सा गुर्राना",
+      "duration_hint": 11.4,
+      "visual": "close up of the tiger cub pressing his nose close to a tiny mouse, eyes closed in concentration, warm amber light filtering through leaves"
+    },
+    {
+      "narration": "नन्हे पिप ने उस प्यार भरी आवाज़ को सुना और सीधे बाहर सुरक्षित मैदान में आ गया, जो प्यार से थियो की ठुड्डी के नीचे दुबका हुआ था।",
+      "on_screen_text": "गरमाहट के पीछे-पीछे",
+      "duration_hint": 10.0,
+      "visual": "medium shot of the tiger cub walking out from under a log carrying a tiny mouse safely under his chin, joyful friendly atmosphere"
+    },
+    {
+      "narration": "थियो समझ गया कि कोमल प्यार किसी भी दहाड़ से ज़्यादा ताकतवर होता है, और ठीक उसी वक्त सुकून देता है जब इसकी सबसे ज़्यादा ज़रूरत होती है।",
+      "on_screen_text": "असली ताक़त",
+      "duration_hint": 10.5,
+      "visual": "wide portrait of the tiger sitting peacefully among bright yellow buttercups, soft glowing sunset light, tranquil meadow background"
+    },
+    {
+      "narration": "आज रात की हमारी सोने की कहानी सुनने के लिए बहुत-बहुत शुक्रिया। रोज़ाना ऐसी ही जादुई कहानियों के लिए हमारे साथ जुड़े रहिए।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 9.5,
+      "visual": "cute glowing fireflies drifting lazily over a peaceful twilight meadow, deep indigo sky, twinkling stars, magical fairy tale ambiance"
+    }
+  ]
+}
