@@ -1,0 +1,26 @@
+{
+  "start_date": "2026-08-20",
+  "end_date": "2026-08-26",
+  "channel": {
+    "views": 30,
+    "estimatedMinutesWatched": 8,
+    "averageViewDuration": 16,
+    "averageViewPercentage": 9.99,
+    "subscribersGained": 1,
+    "subscribersLost": 0
+  },
+  "top_videos": [
+    {
+      "video": "g-lWG5MQpb0",
+      "views": 23,
+      "averageViewDuration": 14,
+      "averageViewPercentage": 8.86
+    },
+    {
+      "video": "H2uYn7nngok",
+      "views": 7,
+      "averageViewDuration": 22,
+      "averageViewPercentage": 13.69
+    }
+  ]
+}
