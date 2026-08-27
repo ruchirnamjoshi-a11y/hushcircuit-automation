@@ -48,6 +48,15 @@ jobs:
         run: python run_weekly_story_refill.py
 
       - name: Commit report and refilled queue
+        # Runs even if story refill failed a track (or all of them) --
+        # otherwise a single Gemini hiccup on one track discards the
+        # analytics report from the PRIOR step too, since it's the same
+        # job and this step wasn't gated to run regardless. Confirmed live:
+        # both the 2026-08-17 and 2026-08-24 runs wrote real analytics
+        # reports (kids, hindi_mythology) that were silently lost because
+        # story refill exited non-zero and this step never ran. Same fix
+        # daily-video.yml already has on its equivalent commit step.
+        if: always()
         run: |
           git config user.name "youtube-automation-bot"
           git config user.email "actions@users.noreply.github.com"

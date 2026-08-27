@@ -1,0 +1,74 @@
+{
+  "start_date": "2026-08-20",
+  "end_date": "2026-08-26",
+  "channel": {
+    "views": 1533,
+    "estimatedMinutesWatched": 159,
+    "averageViewDuration": 22,
+    "averageViewPercentage": 106.3,
+    "subscribersGained": 3,
+    "subscribersLost": 1
+  },
+  "top_videos": [
+    {
+      "video": "9_KXyoNw7BA",
+      "views": 268,
+      "averageViewDuration": 14,
+      "averageViewPercentage": 70.76
+    },
+    {
+      "video": "y_nJQm0atOE",
+      "views": 252,
+      "averageViewDuration": 35,
+      "averageViewPercentage": 199.85
+    },
+    {
+      "video": "RjrK8tzxl5o",
+      "views": 197,
+      "averageViewDuration": 12,
+      "averageViewPercentage": 64.95
+    },
+    {
+      "video": "QPf5P3Ygfu8",
+      "views": 167,
+      "averageViewDuration": 23,
+      "averageViewPercentage": 93.25
+    },
+    {
+      "video": "WpJ2dNs7WAs",
+      "views": 166,
+      "averageViewDuration": 15,
+      "averageViewPercentage": 106.27
+    },
+    {
+      "video": "l0L3Op1E5bI",
+      "views": 89,
+      "averageViewDuration": 19,
+      "averageViewPercentage": 83.63
+    },
+    {
+      "video": "oFmnRMEJVCU",
+      "views": 84,
+      "averageViewDuration": 37,
+      "averageViewPercentage": 179.84
+    },
+    {
+      "video": "7VXjKAIy1MM",
+      "views": 84,
+      "averageViewDuration": 13,
+      "averageViewPercentage": 54.88000000000001
+    },
+    {
+      "video": "qzGuFKFaEuo",
+      "views": 77,
+      "averageViewDuration": 12,
+      "averageViewPercentage": 64.49
+    },
+    {
+      "video": "xU3y1Pynkvo",
+      "views": 58,
+      "averageViewDuration": 13,
+      "averageViewPercentage": 62.67
+    }
+  ]
+}
