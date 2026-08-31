@@ -1,0 +1,71 @@
+{
+  "id": "rosie-robin-and-the-first-flight",
+  "title": "Rosie Robin and the First Flight",
+  "description": "Rosie Robin is nervous to fly from her branch to the garden fountain until her mother teaches her to count her blessings.",
+  "tags": [
+    "bird",
+    "courage",
+    "flying",
+    "nature",
+    "bedtime"
+  ],
+  "character_reference": "a plump little robin with a cheerful orange-red breast, soft grey feathers, and bright inquisitive eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Rosie perched high on the sturdy oak branch, looking down at the sparkling garden fountain far below.",
+      "on_screen_text": "HIGH UP",
+      "duration_hint": 11.0,
+      "visual": "A small plump robin perched on a high tree branch, looking down nervously at a distant stone fountain, bright morning sky."
+    },
+    {
+      "narration": "The wind ruffled her soft grey feathers, and her tummy fluttered with nervous little butterflies.",
+      "on_screen_text": "NERVOUS FLUTTER",
+      "duration_hint": 11.0,
+      "visual": "Close up of a bird ruffling her feathers against a gentle breeze, wide nervous eyes, tender morning light."
+    },
+    {
+      "narration": "What if my wings get too tired before I reach the flowers? she chirped softly to her mother.",
+      "on_screen_text": "WHAT IF",
+      "duration_hint": 11.0,
+      "visual": "Two robins sitting close together on a branch, one looking up anxiously while the mother offers a reassuring nudge."
+    },
+    {
+      "narration": "Her mother nuzzled her head tenderly and whispered, Just open your wings and trust the wind to carry you.",
+      "on_screen_text": "TRUST THE WIND",
+      "duration_hint": 12.0,
+      "visual": "Close up of a mother bird gently touching wings with her little one, warm comforting emotional atmosphere."
+    },
+    {
+      "narration": "Rosie took a deep breath, spread her wings wide, and gently leaped off the cozy branch into the air.",
+      "on_screen_text": "THE LEAP",
+      "duration_hint": 11.0,
+      "visual": "A small robin launching herself off a branch with wings fully extended, dynamic upward motion, soft golden sunlight."
+    },
+    {
+      "narration": "To her surprise, she didn't fall at all. She felt light as a dandelion seed dancing on the breeze.",
+      "on_screen_text": "FLYING HIGH",
+      "duration_hint": 12.0,
+      "visual": "A robin gliding smoothly through the air with a joyful expression, background of green leaves and blurry flowers."
+    },
+    {
+      "narration": "She landed safely right beside the bubbling fountain, singing a sweet little song of pure triumph.",
+      "on_screen_text": "SAFE LANDING",
+      "duration_hint": 11.0,
+      "visual": "A happy bird landing gracefully on the rim of a stone water fountain, splashing droplets catching the light."
+    },
+    {
+      "narration": "Courage isn't about not feeling afraid; it is about taking that first step anyway. Rest well tonight.",
+      "on_screen_text": "REST WELL",
+      "duration_hint": 12.0,
+      "visual": "A sleepy little bird tucked snugly inside a leafy nest at dusk, peaceful twilight sky, gentle bedtime mood."
+    },
+    {
+      "narration": "We share a brand new gentle story every single day. Follow along for more heartwarming bedtime tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "A serene twilight garden scene with glowing fireflies and twinkling stars, comforting bedtime aesthetic."
+    }
+  ]
+}

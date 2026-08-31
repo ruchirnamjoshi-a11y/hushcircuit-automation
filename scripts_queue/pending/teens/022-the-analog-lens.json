@@ -1,0 +1,65 @@
+{
+  "id": "the-analog-lens",
+  "title": "The Analog Lens",
+  "description": "A digital-native photographer discovers the value of patience while shooting on vintage film.",
+  "tags": [
+    "photography",
+    "film",
+    "vintage",
+    "patience",
+    "hobby"
+  ],
+  "character_reference": "a teenager with a silver septum piercing and messy dark pixie cut, wearing a black turtleneck and carrying an antique metal camera around the neck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My digital camera battery died right when the afternoon light hit the old brick alleyway in the most stunning way possible.",
+      "on_screen_text": "BATTERY DEAD",
+      "duration_hint": 14.0,
+      "visual": "looking in dismay at a blank LCD screen on a digital camera while standing in a narrow alleyway"
+    },
+    {
+      "narration": "The only backup gear I had in my bag was my grandfather's mechanical film camera loaded with thirty-six exposures.",
+      "on_screen_text": "THE OLD CAMERA",
+      "duration_hint": 13.0,
+      "visual": "pulling a heavy chrome and black vintage film SLR camera out from a canvas messenger bag"
+    },
+    {
+      "narration": "Without a screen to review my shots instantly, every single click of the shutter felt like firing an arrow into the dark.",
+      "on_screen_text": "NO PREVIEW",
+      "duration_hint": 13.0,
+      "visual": "holding the vintage camera up to one eye, winding the film advance lever with a thoughtful expression"
+    },
+    {
+      "narration": "I had to slow down, measure the light manually with a handheld meter, and compose the frame with absolute intentionality.",
+      "on_screen_text": "SLOWING DOWN",
+      "duration_hint": 14.0,
+      "visual": "adjusting the aperture ring on a mechanical camera lens while examining light levels in a sunlit courtyard"
+    },
+    {
+      "narration": "Days later, watching the negatives emerge in the darkroom developer bath felt like magic unfolding right before my eyes.",
+      "on_screen_text": "THE DARKROOM",
+      "duration_hint": 13.0,
+      "visual": "using tongs to lift a wet photographic film strip from a chemical tray under a dim red safelight"
+    },
+    {
+      "narration": "The prints weren't pixel-perfect, but they held a mood and depth that digital sensors could never quite replicate.",
+      "on_screen_text": "CAPTURED MOOD",
+      "duration_hint": 13.0,
+      "visual": "hanging wet photographic prints on a clothesline with wooden clothespins under warm ambient darkroom lighting"
+    },
+    {
+      "narration": "Sometimes stepping away from instant gratification allows you to capture moments that truly matter.",
+      "on_screen_text": "TIMELESS MOMENTS",
+      "duration_hint": 13.0,
+      "visual": "holding up a finished black and white photo print to the light with a satisfied and contemplative smile"
+    },
+    {
+      "narration": "Follow along for more daily stories about slowing down and seeing the world through a fresh lens.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "warm cinematic portrait of the photographer smiling softly in a cozy room filled with artistic prints"
+    }
+  ]
+}

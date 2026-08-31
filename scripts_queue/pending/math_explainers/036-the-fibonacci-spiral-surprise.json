@@ -1,0 +1,65 @@
+{
+  "id": "the-fibonacci-spiral-surprise",
+  "title": "The Fibonacci Spiral Surprise",
+  "description": "Uncover how a simple number sequence creates the most harmonious spirals in nature.",
+  "tags": [
+    "fibonacci",
+    "spiral",
+    "nature",
+    "geometry",
+    "math"
+  ],
+  "character_reference": "a curious young botanist with braided dark hair wearing a khaki field jacket and a small magnifying glass on a cord",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Start with the number one, add one to get two, then add those together to get three, then five, then eight.",
+      "on_screen_text": "THE SEQUENCE",
+      "duration_hint": 6.0,
+      "visual": "hand writing numbers neatly in a small leather bound field notebook with a wooden pencil"
+    },
+    {
+      "narration": "This famous sequence grows faster and faster, but it is not just a math puzzle meant for a classroom whiteboard.",
+      "on_screen_text": "GROWING FAST",
+      "duration_hint": 5.5,
+      "visual": "close up of pinecone scales resting on a mossy green forest floor under dappled sunlight"
+    },
+    {
+      "narration": "Step outside into any garden and you will find these exact numbers hiding in plain sight on flower heads and pinecones.",
+      "on_screen_text": "HIDING IN NATURE",
+      "duration_hint": 6.0,
+      "visual": "extreme close up of sunflower seed heads showing intricate intersecting spiral patterns in natural morning light"
+    },
+    {
+      "narration": "When you draw squares whose sides match these sequence numbers, something magical happens right before your eyes.",
+      "on_screen_text": "DRAWING SQUARES",
+      "duration_hint": 5.5,
+      "visual": "ruler and pencil sketching interlocking squares of increasing sizes on grid paper"
+    },
+    {
+      "narration": "Connect the corners of each square with a smooth curving arc, and you instantly reveal the perfect golden spiral.",
+      "on_screen_text": "THE GOLDEN SPIRAL",
+      "duration_hint": 5.5,
+      "visual": "smooth graceful curved line sweeping through the corners of drawn geometric squares"
+    },
+    {
+      "narration": "Nature uses this exact mathematical curve to pack seeds tightly together and build magnificent spiral seashell armor.",
+      "on_screen_text": "SEASHELL DESIGN",
+      "duration_hint": 6.0,
+      "visual": "detailed nautilus seashell resting on smooth wet beach sand with gentle waves in the background"
+    },
+    {
+      "narration": "From swirling hurricane clouds in the sky down to tiny flower petals, math shapes the beauty of our entire world.",
+      "on_screen_text": "SHAPING THE WORLD",
+      "duration_hint": 6.0,
+      "visual": "gorgeous view of swirling cloud patterns captured from high above the earth in soft golden hour light"
+    },
+    {
+      "narration": "Want to discover more hidden patterns all around us? Follow along for a new math story every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "smiling explorer holding a vintage compass and waving cheerfully toward the camera"
+    }
+  ]
+}

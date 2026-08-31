@@ -1,0 +1,65 @@
+{
+  "id": "the-balcony-forest",
+  "title": "The Balcony Forest",
+  "description": "An urban office worker transforms her high-rise concrete balcony into a thriving forest, finding roots in a life that felt completely rootless.",
+  "tags": [
+    "nature",
+    "urban",
+    "healing",
+    "patience",
+    "growth"
+  ],
+  "character_reference": "a woman in her late thirties with wavy dark hair tied in a loose clip, wearing an oversized denim work shirt and muddy gardening gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Fifteen floors above the grey concrete of the city center, my apartment felt less like a home and more like a waiting room.",
+      "on_screen_text": "FIFTEEN FLOORS UP",
+      "duration_hint": 11.0,
+      "visual": "medium shot of a woman looking out through a sliding glass balcony door at a sprawling concrete cityscape under an overcast sky"
+    },
+    {
+      "narration": "I carried out fifty bags of potting soil, three dozen cedar planters, and a stubborn hope that something green might survive the wind.",
+      "on_screen_text": "CARRYING THE EARTH",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the woman hauling a heavy bag of dark soil across a narrow concrete apartment balcony, straining slightly with the effort"
+    },
+    {
+      "narration": "The first month, the salt wind burned the delicate fern fronds down to bare stems. I almost gave up and turned the space back into a storage area.",
+      "on_screen_text": "THE FIRST FROST",
+      "duration_hint": 12.0,
+      "visual": "close-up of brown, withered fern leaves trembling in a strong wind against a grey metal balcony railing"
+    },
+    {
+      "narration": "Instead, I built a windbreak of cedar slats, hauled in dwarf pines, and learned to read the subtle language of wilting leaves and thirsty roots.",
+      "on_screen_text": "BUILDING SHELTER",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the woman carefully hammering a wooden slat onto a low trellis attached to the brick balcony wall"
+    },
+    {
+      "narration": "Two years later, the roar of highway traffic below is swallowed by the rustle of pine needles and the chatter of visiting sparrows.",
+      "on_screen_text": "THE CANOPY",
+      "duration_hint": 11.0,
+      "visual": "close-up of lush green pine branches swaying gently in the breeze against a bright morning sky, city skyline blurred softly in the background"
+    },
+    {
+      "narration": "Sitting among the branches with my morning tea, I realized I had not just grown a garden on a ledge. I had grown an anchor for myself.",
+      "on_screen_text": "FINDING AN ANCHOR",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the woman sitting comfortably in a woven wooden chair, holding a steaming mug surrounded by thick green potted plants"
+    },
+    {
+      "narration": "No matter how barren your surroundings seem today, you can cultivate a sanctuary anywhere with a little patience and fertile soil.",
+      "on_screen_text": "CULTIVATING PEACE",
+      "duration_hint": 11.0,
+      "visual": "close-up of water droplets glistening on vibrant green fern fronds as early morning sunlight filters through the leaves"
+    },
+    {
+      "narration": "If you are ready to plant new roots in your own life, stick around and let's grow together. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "wide shot of a lush, green balcony oasis overflowing with plants against a warm sunrise lighting up the morning sky"
+    }
+  ]
+}

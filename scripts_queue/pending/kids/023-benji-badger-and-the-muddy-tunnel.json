@@ -1,0 +1,71 @@
+{
+  "id": "benji-badger-and-the-muddy-tunnel",
+  "title": "Benji Badger and the Muddy Tunnel",
+  "description": "Benji Badger is afraid of the dark earth tunnel leading to his grandparents' den until his brother shows him how to look for glowing earthworms.",
+  "tags": [
+    "badger",
+    "bravery",
+    "darkness",
+    "family",
+    "bedtime"
+  ],
+  "character_reference": "a young badger with thick grey fur, a distinctive white stripe on his nose, and wide amber eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Little Benji stood at the entrance of the long earth tunnel, peering into the deep shadows. The cozy warmth of his home was right behind him, but his grandparents' den was on the other side.",
+      "on_screen_text": "THE DARK TUNNEL",
+      "duration_hint": 14.0,
+      "visual": "A young badger standing hesitantly at the rounded entrance of an earthy burrow, looking into complete darkness, warm golden light spilling from behind, low angle medium shot, soft forest floor textures."
+    },
+    {
+      "narration": "He took one tiny step backward, his paws trembling slightly. The tunnel felt so quiet and empty without any sunlight to guide his way.",
+      "on_screen_text": "A SHY PAW",
+      "duration_hint": 11.0,
+      "visual": "Close up on nervous furry paws retreating an inch on damp moss, soft volumetric light fading into blackness, tender emotional atmosphere."
+    },
+    {
+      "narration": "Suddenly, a friendly nudge touched his shoulder. It was his older sister Mia, smiling gently and holding a small clay jar filled with soft glowing moss.",
+      "on_screen_text": "A SISTER'S HELP",
+      "duration_hint": 13.0,
+      "visual": "An older badger companion leaning down warmly, offering a rustic little pot that casts a soft emerald green glow across both their smiling faces, intimate framing."
+    },
+    {
+      "narration": "Look closely with me, Mia whispered softly. The dark is just a cozy blanket where little glowing bugs come out to play.",
+      "on_screen_text": "GLOWING LIGHTS",
+      "duration_hint": 12.0,
+      "visual": "Two badgers sitting closely side by side inside the tunnel entrance, pointing tiny paws toward floating specks of magical light, whimsical atmosphere."
+    },
+    {
+      "narration": "Benji blinked his wide amber eyes and watched a tiny bright sparkle drift right past his whiskers. It looked just like a floating star.",
+      "on_screen_text": "A FLOATING STAR",
+      "duration_hint": 12.0,
+      "visual": "Extreme close up on curious furry face and twitching nose as a single bright bioluminescent speck floats past, magical cinematic lighting."
+    },
+    {
+      "narration": "Taking a deep, brave breath, Benji placed one paw firmly onto the cool dirt floor. He wasn't quite as worried anymore.",
+      "on_screen_text": "A BRAVE STEP",
+      "duration_hint": 11.0,
+      "visual": "Confident small paw stepping forward onto packed earth inside the illuminated tunnel, warm green light reflecting off moist soil, hopeful mood."
+    },
+    {
+      "narration": "Together, side by side, they walked slowly down the path as the glowing moss lit up their happy journey step by step.",
+      "on_screen_text": "THE GLOWING PATH",
+      "duration_hint": 12.0,
+      "visual": "Two badgers walking hand in paw down a charming underground passage lined with sparkling plants, warm cozy glow, beautiful children book style illustration."
+    },
+    {
+      "narration": "Even the darkest places can hold wonderful little surprises when we share them with someone we love. Sweet dreams.",
+      "on_screen_text": "SWEET DREAMS",
+      "duration_hint": 12.0,
+      "visual": "Cozy wide shot of an underground den filled with warm blankets and soft pillows, peaceful sleeping environment, gentle bedtime mood."
+    },
+    {
+      "narration": "We share a brand new gentle story every single day. Follow along for more heartwarming bedtime tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "A sleepy little animal curled up tightly under a patchwork quilt inside a cozy den, peaceful nighttime aesthetic, warm ambient lighting."
+    }
+  ]
+}

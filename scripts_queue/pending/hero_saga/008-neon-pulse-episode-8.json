@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-8",
+  "title": "Neon Pulse — Episode 8: Countdown to Collapse",
+  "description": "Kael races against a ticking self-destruct countdown on a secret offshore platform, facing unexpected opposition before a shocking revelation.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "suspense",
+    "original hero"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 8,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Alarms scream through the sinking offshore platform as red emergency strobes paint the flooded corridor. Time is running out fast.",
+      "on_screen_text": "THE CLOCK TICKS",
+      "duration_hint": 6.5,
+      "visual": "Wide low angle shot of a narrow industrial hallway flooding with water under flashing crimson emergency lights and rising heavy steam from ruptured pipes."
+    },
+    {
+      "narration": "I press my palm against the scorched blast door, channeling the surging energy from my sleeves to override the electronic lock.",
+      "on_screen_text": "FORCING THE GATE",
+      "duration_hint": 7.0,
+      "visual": "Close up over the shoulder showing a hand pressing against a scarred steel door while bright amber electrical arcs spark wildly across the metal surface."
+    },
+    {
+      "narration": "The heavy steel gives way with a deafening screech, revealing the central core chamber where the countdown timer flashes relentlessly.",
+      "on_screen_text": "THE CORE CHAMBER",
+      "duration_hint": 6.5,
+      "visual": "Medium shot of massive heavy metal doors tearing open to reveal a vast dark circular room dominated by a towering glowing pillar of green energy."
+    },
+    {
+      "narration": "Suddenly, a chilling voice echoes from the shadows above, warning me that this trap was specifically designed for my exact frequency.",
+      "on_screen_text": "A FROZEN VOICE",
+      "duration_hint": 7.0,
+      "visual": "Low angle shot looking up at a high metallic catwalk obscured in heavy shadows with faint glowing blue surveillance lenses peering down menacingly."
+    },
+    {
+      "narration": "Armed operatives drop from the overhead rafters, weapons drawn and ready to ensure I go down with this sinking facility.",
+      "on_screen_text": "AMBUSH FROM ABOVE",
+      "duration_hint": 6.5,
+      "visual": "Dynamic action shot of tactical figures rappelling rapidly down from dark overhead scaffolding into a smoky industrial chamber with sparks flying."
+    },
+    {
+      "narration": "I unleash a sweeping blast of kinetic force, sending the attackers flying backward into the shattered computer consoles.",
+      "on_screen_text": "KINETIC BURST",
+      "duration_hint": 6.0,
+      "visual": "Medium action shot of a powerful shockwave erupting outward from a central figure shattering nearby glass screens and sending sparks showering everywhere."
+    },
+    {
+      "narration": "The main console flickers, and the primary escape vessel status turns green just as the structural integrity drops below critical.",
+      "on_screen_text": "THE ESCAPE ROUTE",
+      "duration_hint": 6.5,
+      "visual": "Close up on a cracked glowing interface panel displaying rapidly changing warning indicators and a blinking green clearance light amidst heavy smoke."
+    },
+    {
+      "narration": "As I dive toward the hangar bay, a holographic transmission flickers to life, showing the scarred ally holding the master override key.",
+      "on_screen_text": "THE BETRAYAL REVEALED",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a glowing blue holographic projection hovering in midair displaying a stern face with a distinct facial scar inside a dark hangar."
+    },
+    {
+      "narration": "Follow along for more original hero adventures as the mystery unfolds.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Cinematic wide shot of a lone figure running toward an open hangar door overlooking a stormy dark ocean under a dramatic lightning-filled sky."
+    }
+  ]
+}

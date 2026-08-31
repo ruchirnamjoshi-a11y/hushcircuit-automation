@@ -1,0 +1,65 @@
+{
+  "id": "the-greenhouse-experiment",
+  "title": "The Greenhouse Experiment",
+  "description": "A botany enthusiast tries to revive a dying community garden plot before the final showcase.",
+  "tags": [
+    "plants",
+    "nature",
+    "community",
+    "botany",
+    "perseverance"
+  ],
+  "character_reference": "a young adult with messy blonde hair tucked under a worn canvas bucket hat, wearing earthy green overalls covered in soil stains",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Our shared greenhouse plot looked like a total disaster zone. Every single tomato seedling I planted had turned yellow and drooped.",
+      "on_screen_text": "THE WITHERED PLOT",
+      "duration_hint": 14.0,
+      "visual": "kneeling in damp dark soil inside a glass greenhouse, looking down at wilted yellow plant stems with a troubled expression"
+    },
+    {
+      "narration": "The annual neighborhood botanical showcase was only four days away. Everyone else's plants were thriving while mine looked completely hopeless.",
+      "on_screen_text": "COUNTDOWN BEGINS",
+      "duration_hint": 14.0,
+      "visual": "checking a small metal garden trowel in hand while glancing anxiously at lush green plants growing in neighboring wooden plots"
+    },
+    {
+      "narration": "I realized I had been overwatering the delicate roots out of sheer panic. Sometimes trying too hard is worse than doing nothing at all.",
+      "on_screen_text": "LESS IS MORE",
+      "duration_hint": 14.0,
+      "visual": "examining a damp root system closely under natural sunlight filtering through translucent greenhouse roof panels"
+    },
+    {
+      "narration": "I completely replaced the heavy soil with fresh compost, gave them breathing room, and hoped for a miraculous recovery.",
+      "on_screen_text": "A FRESH START",
+      "duration_hint": 13.0,
+      "visual": "pouring dark rich compost soil gently around the base of a small green stem using gloved hands"
+    },
+    {
+      "narration": "Over the next seventy-two hours, I spent every waking moment monitoring the temperature and humidity levels inside the glass enclosure.",
+      "on_screen_text": "PATIENT WATCH",
+      "duration_hint": 13.0,
+      "visual": "wiping sweat from the forehead while reading a tiny glass thermometer stuck into moist flower bed dirt"
+    },
+    {
+      "narration": "On the morning of the showcase, vibrant green leaves unfurled toward the morning sun. They had actually pulled through.",
+      "on_screen_text": "NEW GROWTH",
+      "duration_hint": 13.0,
+      "visual": "macro shot of healthy dew-kissed green leaves opening up under warm beams of early morning sunlight"
+    },
+    {
+      "narration": "Healing takes patience, gentle care, and knowing when to step back and let nature do its work.",
+      "on_screen_text": "NATURE'S PACE",
+      "duration_hint": 13.0,
+      "visual": "smiling gently while watering small potted herbs with a copper watering can inside a sunlit greenhouse"
+    },
+    {
+      "narration": "For more inspiring stories of growth and personal renewal, make sure to follow along.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "cheerful portrait of the gardener holding a small potted fern with soft natural lighting and leafy background blur"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-morning-run",
+  "title": "The Morning Run",
+  "description": "A woman who doubted her physical strength laces up her shoes before dawn and discovers the joy of moving just for herself.",
+  "tags": [
+    "running",
+    "fitness",
+    "strength",
+    "dawn",
+    "perseverance"
+  ],
+  "character_reference": "a woman in her late twenties with dark braided hair pulled back tightly, wearing a dark teal athletic zip-up jacket and reflective running leggings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The alarm went off at five in the morning, piercing the dark silence with a shrill reminder of the promise I made myself.",
+      "on_screen_text": "FIVE AM",
+      "duration_hint": 7.0,
+      "visual": "close-up of a digital alarm clock glowing brightly on a bedside table in a pitch-dark room, moody blue hues"
+    },
+    {
+      "narration": "My old self would have hit snooze, convincing me that running was only for athletes who never struggled for breath.",
+      "on_screen_text": "THE EXCUSE",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a hand hesitating above an alarm clock button, dim bedroom lighting, sleepy and contemplative mood"
+    },
+    {
+      "narration": "Instead, I sat up, pulled on my running shoes, and double-knotted the laces with a sudden, quiet determination.",
+      "on_screen_text": "LACING UP",
+      "duration_hint": 6.5,
+      "visual": "close-up of hands pulling running shoelaces tight into a double knot, athletic shoes on a wooden floor, sharp focus"
+    },
+    {
+      "narration": "Stepping out the front door, the cool predawn air hit my face like cold water, waking every sleepy nerve in my body.",
+      "on_screen_text": "THE COOL AIR",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a person stepping across a quiet residential porch into the blue twilight, mist rising from the pavement"
+    },
+    {
+      "narration": "The first mile burned in my chest, and every instinct told me to turn back, to return to the warm safety of the couch.",
+      "on_screen_text": "THE BURN",
+      "duration_hint": 7.0,
+      "visual": "close-up of feet hitting asphalt in motion blur, early morning street lamps casting long shadows on the empty road"
+    },
+    {
+      "narration": "Then I found my rhythm. Footsteps matching breath, steady and unbroken, carrying me forward into the pale morning light.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 7.0,
+      "visual": "wide shot of a solitary runner silhouetted against a pastel sunrise sky on a quiet park path lined with bare trees"
+    },
+    {
+      "narration": "Crossing the finish line back at my porch, my lungs were on fire, but my spirit had never felt lighter or more invincible.",
+      "on_screen_text": "THE RETURN",
+      "duration_hint": 7.5,
+      "visual": "medium shot of a runner standing on a front porch wiping sweat from her forehead with a towel, smiling as the sun breaks over the horizon"
+    },
+    {
+      "narration": "If you are learning to discover your own hidden strength, follow along for more stories of personal endurance.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "close-up portrait of a glowing, energized face smiling warmly in the golden morning light, vibrant and alive"
+    }
+  ]
+}

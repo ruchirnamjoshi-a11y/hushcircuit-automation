@@ -1,0 +1,65 @@
+{
+  "id": "the-power-of-exponential-growth",
+  "title": "The Power of Exponential Growth",
+  "description": "See how doubling numbers step by step leads to astonishingly huge results.",
+  "tags": [
+    "exponential",
+    "growth",
+    "math",
+    "puzzles",
+    "numbers"
+  ],
+  "character_reference": "an enthusiastic science presenter with neat dark hair wearing a crisp button down shirt and a smart silver watch",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Imagine someone offers you a choice for payment. You can take one million dollars right now today.",
+      "on_screen_text": "THE CHOICE",
+      "duration_hint": 5.0,
+      "visual": "stack of crisp paper currency resting on a polished wooden desk under bright warm lighting"
+    },
+    {
+      "narration": "Or, you can take a single penny, but have its value doubled every single day for thirty days.",
+      "on_screen_text": "THE PENNY DEAL",
+      "duration_hint": 5.5,
+      "visual": "close up of a single shiny copper penny resting in the center of an empty wooden table"
+    },
+    {
+      "narration": "At first, the penny deal sounds terrible. After five days, you have barely managed to collect thirty two cents.",
+      "on_screen_text": "SLOW START",
+      "duration_hint": 6.0,
+      "visual": "a small scattered handful of coins resting on a table next to a notepad"
+    },
+    {
+      "narration": "Even after ten days, your total is still sitting at just over five dollars while the million looks amazing.",
+      "on_screen_text": "DAY TEN",
+      "duration_hint": 5.5,
+      "visual": "person looking thoughtfully at a small growing pile of coins with a skeptical smile"
+    },
+    {
+      "narration": "But exponential growth plays a long game. By day twenty, your penny has quietly grown to over five thousand dollars.",
+      "on_screen_text": "THE TURNING POINT",
+      "duration_hint": 6.0,
+      "visual": "several neat stacks of paper currency lined up neatly on a wooden desk"
+    },
+    {
+      "narration": "Then something wild happens during the final week as the doubling effect explodes past all expectations.",
+      "on_screen_text": "THE EXPLOSION",
+      "duration_hint": 5.5,
+      "visual": "fast paced motion graphics showing a curved line shooting sharply upward on a dark grid"
+    },
+    {
+      "narration": "By day thirty, that single penny transforms into over five million dollars, easily beating the original million.",
+      "on_screen_text": "FIVE MILLION",
+      "duration_hint": 6.0,
+      "visual": "wide shot of large impressive piles of wealth arranged neatly under dramatic spotlighting"
+    },
+    {
+      "narration": "Want to outsmart everyday math puzzles? Follow along for new mathematical surprises every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "presenter smiling warmly and pointing toward the camera in a modern sunlit studio"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "chiku-or-jadu-ka-khilona",
+  "title": "चिक्कू और जादू का खिलौना",
+  "description": "एक छोटे भालू को ऐसा जादुई खिलौना मिलता है जो साझा करने से और चमकता है।",
+  "tags": [
+    "kids stories",
+    "hindi stories",
+    "moral story",
+    "magic toy",
+    "sharing"
+  ],
+  "character_reference": "a small brown bear cub with round fluffy ears, wearing a striped yellow and green shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "एक बार चिक्कू भालू को जंगल के बीचों-बीच एक चमकता हुआ लकड़ी का खिलौना मिला। वह बहुत खुश हो गया।",
+      "on_screen_text": "जादुई खिलौना मिला",
+      "duration_hint": 6.5,
+      "visual": "A wide angle shot of a small brown bear cub discovering a glowing wooden toy on the mossy forest floor, soft sunbeams filtering through dense green canopy."
+    },
+    {
+      "narration": "चिक्कू ने सोचा कि यह खिलौना सिर्फ उसका है। उसने इसे किसी को भी न दिखाने का फैसला किया।",
+      "on_screen_text": "अकेले खेलने की जिद",
+      "duration_hint": 5.2,
+      "visual": "Medium shot of the bear cub clutching the glowing toy tightly to his chest while looking defensively around the shadowy hollow of an old oak tree."
+    },
+    {
+      "narration": "तभी वहाँ उसका छोटा दोस्त खरगोश आया और उसने उदास मन से खिलौने को देखने की इच्छा जताई।",
+      "on_screen_text": "दोस्त का आना",
+      "duration_hint": 5.8,
+      "visual": "Close up of a small white rabbit looking longingly at the toy, standing near a patch of wild ferns under golden afternoon light."
+    },
+    {
+      "narration": "चिक्कू को पहले तो हिचकिचाहट हुई, पर उसने अपने दोस्त के साथ खिलौना बांटने का मन बनाया।",
+      "on_screen_text": "बांटने का फैसला",
+      "duration_hint": 5.2,
+      "visual": "Over the shoulder shot showing the bear cub extending the wooden toy forward toward his hesitant rabbit friend in a sunlit clearing."
+    },
+    {
+      "narration": "जैसे ही दोनों ने मिलकर खिलौने को छुआ, वह और भी तेज रोशनी से जगमगा उठा।",
+      "on_screen_text": "और तेज रोशनी",
+      "duration_hint": 5.5,
+      "visual": "Dynamic low angle shot of the bear and rabbit touching the toy together as a brilliant burst of warm golden sparks illuminates their happy faces."
+    },
+    {
+      "narration": "चारों तरफ खुशियों भरी चमक फैल गई और दोनों दोस्तों ने मिलकर खूब मजे किए।",
+      "on_screen_text": "खुशियों का जश्न",
+      "duration_hint": 5.2,
+      "visual": "Wide shot of the bear and rabbit playing joyfully together amidst a glowing cloud of magical light particles in the quiet evening woods."
+    },
+    {
+      "narration": "खुशियां बांटने से हमेशा बढ़ती हैं, यह बात चिक्कू को हमेशा के लिए समझ आ गई।",
+      "on_screen_text": "सीख",
+      "duration_hint": 5.2,
+      "visual": "Warm close up of the happy bear cub smiling brightly, sitting peacefully with the glowing toy resting gently between his paws."
+    },
+    {
+      "narration": "ऐसी ही और भी सुंदर कहानियां सुनने के लिए हमारे चैनल को जरूर फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Charming macro shot of a friendly firefly glowing softly near a cluster of wild bluebells at twilight, creating a magical storybook atmosphere."
+    }
+  ]
+}

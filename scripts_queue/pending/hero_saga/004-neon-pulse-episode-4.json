@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-4",
+  "title": "Neon Pulse — Episode 4: The Blueprint Revealed",
+  "description": "Kael confronts the shocking truth of his origin inside the abandoned facility, only to trigger a massive security lockdown as a shadowy figure watches from the shadows.",
+  "tags": [
+    "original hero saga",
+    "action adventure",
+    "superhero",
+    "sci-fi",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 4,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The data files flickered across the cracked terminal, confirming every dark suspicion. My entire life, my powers, my very memories had been engineered in this very room.",
+      "on_screen_text": "THE TRUTH UNLOCKED",
+      "duration_hint": 12.0,
+      "visual": "close-up shot of glowing blue holographic data files reflecting across wide tense eyes inside a dark subterranean control room filled with tangled wires and flickering monitors"
+    },
+    {
+      "narration": "Before I could download the master encryption keys, the facility's emergency sirens blared to life. Red strobe lights cut through the dusty air like bleeding blades.",
+      "on_screen_text": "SECURITY BREACH",
+      "duration_hint": 11.5,
+      "visual": "low angle shot of a man recoiling in shock as harsh crimson emergency lights sweep across rusted metallic walls and heavy overhead pipes in a narrow industrial hallway"
+    },
+    {
+      "narration": "Heavy blast doors slammed shut down every corridor, sealing off my only escape routes. They knew I was here, and they were locking the cage.",
+      "on_screen_text": "TRAPPED INSIDE",
+      "duration_hint": 10.5,
+      "visual": "medium wide shot of massive steel bulkhead doors crashing down into the floor, kicking up dust clouds while a lone figure reaches out desperately toward the closing gap"
+    },
+    {
+      "narration": "I channeled the energy coursing through my jacket, letting the amber circuits blaze with intense power. If they wanted a test subject, I would give them a detonation.",
+      "on_screen_text": "OVERCHARGED CIRCUIT",
+      "duration_hint": 12.0,
+      "visual": "close-up tracking shot of glowing amber patterns flaring up brightly along clothing fabric as intense electric arcs spark and snap wildly between clenched fingertips"
+    },
+    {
+      "narration": "With a deafening blast, I blew the reinforced maintenance hatch wide open, sending molten metal showering into the darkness below. Smoke filled the corridor as I lunged through.",
+      "on_screen_text": "EXPLOSIVE ESCAPE",
+      "duration_hint": 12.5,
+      "visual": "dynamic action shot of a figure diving forward through a shattered metallic doorway amid an explosion of orange sparks and swirling grey smoke clouds"
+    },
+    {
+      "narration": "Landing hard on the lower gantry, I caught my breath and looked up into the shadows of the upper catwalks. Someone was standing there, watching my every move.",
+      "on_screen_text": "WATCHFUL EYES",
+      "duration_hint": 11.5,
+      "visual": "over-the-shoulder medium shot looking up toward a dark elevated metal walkway where a mysterious silhouetted figure stands motionless in the gloom"
+    },
+    {
+      "narration": "The figure stepped into the dim amber glow, revealing a symbol identical to the one burned into my own memory. This hunt was far from over.",
+      "on_screen_text": "THE MATCHING MARK",
+      "duration_hint": 11.0,
+      "visual": "medium close-up shot of a shrouded figure emerging slightly into flickering amber light, raising a hand to display a glowing geometric emblem on the palm"
+    },
+    {
+      "narration": "The deeper I dig into my past, the more dangerous the conspiracy becomes. Follow along for more chapters of Neon Pulse as the hunt continues.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.5,
+      "visual": "cinematic profile portrait shot of a tense man standing before a vast sprawling underground city skyline, staring intently into the distance with glowing amber energy pulsing softly"
+    }
+  ]
+}

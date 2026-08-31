@@ -1,0 +1,65 @@
+{
+  "id": "the-quiet-corner",
+  "title": "The Quiet Corner",
+  "description": "A busy mother sneaks away to the local greenhouse just to sit among green leaves and rediscover her own quiet identity.",
+  "tags": [
+    "motherhood",
+    "nature",
+    "greenhouse",
+    "quiet",
+    "identity"
+  ],
+  "character_reference": "a woman in her early thirties with wavy chestnut-brown hair pinned back with a wooden hair stick, wearing an olive green utility jacket over a striped linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The noise of daily life had become a constant roar, a dizzying whirlwind of schedules, demands, and endless multitasking.",
+      "on_screen_text": "THE NOISE",
+      "duration_hint": 7.0,
+      "visual": "blurred abstract motion shot of a busy suburban hallway, warm indoor lighting, chaotic and overwhelming atmosphere"
+    },
+    {
+      "narration": "Without telling anyone, I slipped out for twenty minutes and drove down to the old greenhouse at the edge of town.",
+      "on_screen_text": "THE ESCAPE",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a steering wheel being turned gently, through the windshield a quaint glass greenhouse looms in the soft afternoon light"
+    },
+    {
+      "narration": "Pushing open the heavy glass door, I was enveloped instantly by the rich, warm scent of damp earth and blooming ferns.",
+      "on_screen_text": "THE GREENHOUSE",
+      "duration_hint": 7.0,
+      "visual": "wide shot from inside a sun-drenched glass greenhouse filled with rows of lush green plants, hanging baskets, and misty air"
+    },
+    {
+      "narration": "No one needed anything from me here. There were no questions to answer, no problems to solve, and no expectations to meet.",
+      "on_screen_text": "NO DEMANDS",
+      "duration_hint": 7.5,
+      "visual": "close-up of water droplets glistening on a large monstera leaf inside a greenhouse, soft natural backlighting"
+    },
+    {
+      "narration": "I reached out and brushed my fingertips across the velvety underside of a fern frond, feeling its cool, living texture.",
+      "on_screen_text": "TOUCHING GREEN",
+      "duration_hint": 7.0,
+      "visual": "macro shot of fingers gently brushing against a delicate green fern leaf, soft sunbeams filtering through the glass ceiling"
+    },
+    {
+      "narration": "Sitting on a wooden bench tucked behind a thick hedge of jasmine, I closed my eyes and simply listened to the water dripping.",
+      "on_screen_text": "THE BENCH",
+      "duration_hint": 7.5,
+      "visual": "medium shot of a person sitting on a rustic wooden bench surrounded by lush potted plants, eyes closed in deep relaxation"
+    },
+    {
+      "narration": "The woman I was before the chaos came back to visit me in that green sanctuary, reminding me she was still here.",
+      "on_screen_text": "REMEMBERING",
+      "duration_hint": 7.0,
+      "visual": "close-up profile of a peaceful face bathed in dappled sunlight filtering through leaves, serene and grounded expression"
+    },
+    {
+      "narration": "If you are finding your way back to yourself in the quiet moments, follow along for more stories of gentle renewal.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "warm portrait of a smiling woman surrounded by soft green foliage, gentle lighting reflecting in her eyes"
+    }
+  ]
+}

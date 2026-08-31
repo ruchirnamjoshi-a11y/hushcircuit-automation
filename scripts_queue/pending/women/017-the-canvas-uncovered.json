@@ -1,0 +1,65 @@
+{
+  "id": "the-canvas-uncovered",
+  "title": "The Canvas Uncovered",
+  "description": "After years of packing away her brushes to please others, a woman finally dedicates a Sunday afternoon to creating art purely for her own soul.",
+  "tags": [
+    "creativity",
+    "art",
+    "passion",
+    "self-expression",
+    "sunday"
+  ],
+  "character_reference": "a woman in her late twenties with curly red hair gathered in a messy topknot, wearing an oversized paint-splattered denim apron over a soft grey t-shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The heavy canvas had stood in the dark corner of the spare bedroom for nearly six years, gathering dust under a frayed canvas sheet.",
+      "on_screen_text": "DUST AND DREAMS",
+      "duration_hint": 7.5,
+      "visual": "wide shot of a quiet spare room, sunlight streaming through dusty window panes, a large wooden easel draped in an old white sheet standing in the corner"
+    },
+    {
+      "narration": "Whenever I picked up a paintbrush, old voices would whisper that art was impractical, a waste of precious time that should be spent elsewhere.",
+      "on_screen_text": "OLD VOICES",
+      "duration_hint": 7.0,
+      "visual": "close-up of fingers hesitating just above an old wooden palette loaded with dried acrylic paints, soft shadows, contemplative and melancholic atmosphere"
+    },
+    {
+      "narration": "Today, the silence in the room felt different. It was an invitation rather than an empty space waiting to be filled with someone else's expectations.",
+      "on_screen_text": "THE SILENCE",
+      "duration_hint": 7.5,
+      "visual": "medium shot of a person standing by a tall window holding a cup of tea, looking out at swaying tree branches, gentle golden hour lighting, calm mood"
+    },
+    {
+      "narration": "I pulled the old sheet away with one swift motion, watching the dust particles catch the afternoon sunlight like falling stars.",
+      "on_screen_text": "THE UNCOVERING",
+      "duration_hint": 7.0,
+      "visual": "dynamic action shot of hands pulling a white sheet off a blank canvas, dust swirling in a bright beam of sunlight, motion blur on the fabric"
+    },
+    {
+      "narration": "Squeezing thick, vibrant strokes of ultramarine and burnt sienna onto the wooden palette, my hands finally remembered the rhythm they had abandoned.",
+      "on_screen_text": "THE PALETTE",
+      "duration_hint": 7.5,
+      "visual": "macro shot of a metal tube squeezing bright blue paint onto a stained wooden board, rich textures, vibrant colors contrasting with neutral surroundings"
+    },
+    {
+      "narration": "The first brushstroke was hesitant, but the second one swept across the white surface with a bold, unapologetic energy.",
+      "on_screen_text": "FIRST STROKE",
+      "duration_hint": 6.5,
+      "visual": "close-up of a bristle brush loaded with dark blue paint making a sweeping, confident arc across a crisp white canvas surface, dramatic lighting"
+    },
+    {
+      "narration": "For the first time in years, I was creating something that did not need to please anyone else to be entirely complete.",
+      "on_screen_text": "PURE CREATION",
+      "duration_hint": 6.5,
+      "visual": "medium shot from behind a painter looking at a colorful abstract landscape taking shape on an easel, warm afternoon light illuminating the studio space"
+    },
+    {
+      "narration": "If you are ready to pick up the passions you left behind, follow along for more stories of creative reclamation.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "close-up of a joyful, paint-smudged smiling face looking directly at the camera with bright, contented eyes, soft indoor lighting, warm and welcoming"
+    }
+  ]
+}

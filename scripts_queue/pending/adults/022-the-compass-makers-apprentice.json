@@ -1,0 +1,65 @@
+{
+  "id": "the-compass-makers-apprentice",
+  "title": "The Compass Maker's Apprentice",
+  "description": "A retired surveyor learns from an aging artisan that the most important compass isn't the one that points north, but the one that points inward.",
+  "tags": [
+    "craftsmanship",
+    "wisdom",
+    "navigation",
+    "reflection",
+    "purpose"
+  ],
+  "character_reference": "an elderly man with a long white beard, wearing a tweed waistcoat over a blue cotton shirt and a magnifying loupe tucked in his pocket",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty-five years, my job was mapping mountains, rivers, and property lines with uncompromising precision using laser transits and brass needles.",
+      "on_screen_text": "MAPPING THE LAND",
+      "duration_hint": 12.0,
+      "visual": "medium shot of an older man in a tweed vest inspecting an old brass surveying instrument on a wooden tripod in a cluttered workshop"
+    },
+    {
+      "narration": "When retirement arrived, I realized I had mapped the entire earth while having virtually no idea where my own life was heading.",
+      "on_screen_text": "LOST AT HOME",
+      "duration_hint": 11.0,
+      "visual": "medium low-angle shot of the man staring down at an unfolded topographical map spread across a large wooden work table, brow furrowed"
+    },
+    {
+      "narration": "Seeking answers, I walked into a tiny clockmaker's shop run by an eighty-year-old artisan who spent his days repairing antique pocket compasses.",
+      "on_screen_text": "THE CLOCK SHOP",
+      "duration_hint": 11.0,
+      "visual": "medium shot of an elderly craftsman peering through a tiny magnifying eyepiece at the delicate brass gears of a pocket compass on a workbench"
+    },
+    {
+      "narration": "He handed me a rusted brass casing with a jammed needle and said, 'Fix the pointer, young man. It has been stuck pointing north for a century.'",
+      "on_screen_text": "A STUCK NEEDLE",
+      "duration_hint": 12.0,
+      "visual": "close-up of weathered hands holding a tarnished brass compass case with a tiny steel needle locked in a single fixed direction"
+    },
+    {
+      "narration": "I carefully opened the glass face, cleaned the jewel bearing with an oil-soaked feather, and watched the needle spin wildly before settling.",
+      "on_screen_text": "CLEANING THE BEARING",
+      "duration_hint": 11.0,
+      "visual": "extreme close-up of tweezers adjusting a microscopic sapphire pivot inside an open brass compass housing under bright task lighting"
+    },
+    {
+      "narration": "The old master smiled and whispered, 'A compass tells you where north is, but it takes courage to ask yourself if north is where you actually want to go.'",
+      "on_screen_text": "TRUE NORTH",
+      "duration_hint": 13.0,
+      "visual": "medium shot of the two elderly men looking down together at a fully functioning brass compass spinning freely in the warm light"
+    },
+    {
+      "narration": "I hung up my surveying maps and started listening to the quiet compass humming inside my own chest.",
+      "on_screen_text": "THE INNER COMPASS",
+      "duration_hint": 10.0,
+      "visual": "close-up of a gleaming brass pocket compass held in the palm of a hand, reflecting the soft amber glow of an antique desk lamp"
+    },
+    {
+      "narration": "If your life's navigation needs recalibrating, stay awhile and explore the map within. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "wide-angle shot of an artisan's workbench cluttered with vintage brass tools, compasses, and warm wood shavings bathed in afternoon sun"
+    }
+  ]
+}

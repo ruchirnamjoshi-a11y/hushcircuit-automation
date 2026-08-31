@@ -1,0 +1,71 @@
+{
+  "id": "lucas-lamb-and-the-shadow-monster",
+  "title": "Lucas Lamb and the Shadow Monster",
+  "description": "Lucas Lamb is frightened by a scary shadow on his bedroom wall until he discovers it is just his favorite teddy bear.",
+  "tags": [
+    "lamb",
+    "bedtime",
+    "shadows",
+    "bravery",
+    "comfort"
+  ],
+  "character_reference": "a fluffy little lamb with curly white wool, floppy ears, and gentle dark eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Lucas woke up in his cozy bed and saw a tall, spooky shadow stretching across his bedroom wall.",
+      "on_screen_text": "A SPOOKY SHADOW",
+      "duration_hint": 12.0,
+      "visual": "A fluffy lamb sitting up in bed wide-eyed, staring at a giant dark silhouette cast on the bedroom wall by moonlight."
+    },
+    {
+      "narration": "He pulled his warm blanket all the way up over his nose, trembling just a little bit in the dark.",
+      "on_screen_text": "HIDING AWAY",
+      "duration_hint": 11.0,
+      "visual": "Close up of a lamb hiding under a colorful quilt, only big worried eyes visible, soft moonlight filtering through curtains."
+    },
+    {
+      "narration": "The shadow seemed to wave back and forth whenever the nighttime breeze made the window curtains flutter.",
+      "on_screen_text": "WAVING SHADOW",
+      "duration_hint": 11.0,
+      "visual": "A distorted shadow moving on a bedroom wall next to a gently swaying window curtain, mysterious gentle mood."
+    },
+    {
+      "narration": "Taking a brave breath, Lucas clicked on his little bedside lamp and sat up to look closer.",
+      "on_screen_text": "TURNING ON THE LAMP",
+      "duration_hint": 11.0,
+      "visual": "A lamb reaching out a small hoof to turn on a warm yellow bedside lamp, soft golden light pushing back the shadows."
+    },
+    {
+      "narration": "To his surprise, the scary monster was just his favorite old teddy bear sitting crookedly on the bookshelf.",
+      "on_screen_text": "A TEDDY BEAR",
+      "duration_hint": 12.0,
+      "visual": "A cute teddy bear sitting on a wooden shelf casting a funny long shadow, warm friendly lighting."
+    },
+    {
+      "narration": "Lucas giggled softly at himself and shook his head, feeling silly for being so worried.",
+      "on_screen_text": "GIGGLING",
+      "duration_hint": 11.0,
+      "visual": "A fluffy lamb smiling warmly with a relieved expression, sitting upright in his cozy bed."
+    },
+    {
+      "narration": "He hopped out of bed, gave his teddy bear a warm hug, and placed him safely on the chair.",
+      "on_screen_text": "A WARM HUG",
+      "duration_hint": 11.0,
+      "visual": "A lamb hugging a stuffed teddy bear tightly with a happy, sleepy smile, cozy bedroom interior."
+    },
+    {
+      "narration": "Things often look much scarier in the dark until we turn on the light of understanding. Sweet dreams.",
+      "on_screen_text": "SWEET DREAMS",
+      "duration_hint": 12.0,
+      "visual": "A peaceful lamb sleeping soundly in a cozy bed with a warm nightlight glowing softly, bedtime aesthetic."
+    },
+    {
+      "narration": "We share a brand new gentle story every single day. Follow along for more heartwarming bedtime tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "A peaceful bedroom scene at night with soft moonlight and twinkling stars outside the window, comforting mood."
+    }
+  ]
+}

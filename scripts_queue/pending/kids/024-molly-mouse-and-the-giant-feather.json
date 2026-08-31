@@ -1,0 +1,71 @@
+{
+  "id": "molly-mouse-and-the-giant-feather",
+  "title": "Molly Mouse and the Giant Feather",
+  "description": "Molly Mouse tries to carry a giant blue feather back to her nest for extra warmth, learning to ask for help from friends.",
+  "tags": [
+    "mouse",
+    "friendship",
+    "teamwork",
+    "kindness",
+    "bedtime"
+  ],
+  "character_reference": "a tiny mouse with soft brown fur, big round ears, and a bright yellow knitted scarf",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Out in the dew-kissed meadow, Molly spotted the most magnificent bright blue feather lying softly in the clover.",
+      "on_screen_text": "A BLUE FEATHER",
+      "duration_hint": 12.0,
+      "visual": "A tiny mouse standing in tall green grass staring up in wonder at a vibrant turquoise feather that is twice her height, bright morning sunlight."
+    },
+    {
+      "narration": "Oh, this will make the softest blanket for my little bed, she whispered happily, grabbing the quill with both tiny paws.",
+      "on_screen_text": "A COZY BED",
+      "duration_hint": 12.0,
+      "visual": "Close up of small paws gripping a large quill tip tightly, determined expression, dew drops sparkling on surrounding grass blades."
+    },
+    {
+      "narration": "She pulled with all her might, but the heavy feather did not budge an inch. It was simply much too large for just one mouse.",
+      "on_screen_text": "TOO HEAVY",
+      "duration_hint": 12.0,
+      "visual": "A tiny mouse leaning backward with all her weight against a giant feather tip, straining slightly, humorous and cute composition."
+    },
+    {
+      "narration": "Just then, Pip the friendly hedgehog trotted by, spotting her struggle and tipping his little head with a kind smile.",
+      "on_screen_text": "A FRIEND ARRIVES",
+      "duration_hint": 12.0,
+      "visual": "A small friendly hedgehog wearing a blue vest walking into the frame, looking down at the mouse with a warm, helpful expression."
+    },
+    {
+      "narration": "Need a little extra muscle, friend? Pip asked gently. Many paws make light work, you know.",
+      "on_screen_text": "MANY PAWS",
+      "duration_hint": 11.0,
+      "visual": "Two animal friends standing side by side looking at the large feather, expressive friendly gestures, bright cheerful natural lighting."
+    },
+    {
+      "narration": "Molly smiled gratefully and nodded. Together, they lifted the fluffy treasure high into the air between them.",
+      "on_screen_text": "LIFTING TOGETHER",
+      "duration_hint": 11.0,
+      "visual": "A mouse and a hedgehog holding opposite ends of the big blue feather, hoisting it up triumphantly, joyful dynamic angle."
+    },
+    {
+      "narration": "They marched all the way to her cozy hollow, chatting and laughing under the golden afternoon sun.",
+      "on_screen_text": "THE JOURNEY HOME",
+      "duration_hint": 11.0,
+      "visual": "Two animal companions walking along a winding dirt path through wildflowers, carrying the feather between them, warm sunset glow."
+    },
+    {
+      "narration": "Sharing our troubles makes every heavy task feel light and turns everyday moments into wonderful adventures.",
+      "on_screen_text": "BETTER TOGETHER",
+      "duration_hint": 12.0,
+      "visual": "A mouse resting comfortably on a massive soft feather inside a warm wooden nook, peaceful sleepy expression, cozy shadows."
+    },
+    {
+      "narration": "We share a brand new gentle story every single day. Follow along for more heartwarming bedtime tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "A cute mouse tucked inside a nest waving a tiny paw goodbye, soft glowing moonlight, comforting storybook aesthetic."
+    }
+  ]
+}

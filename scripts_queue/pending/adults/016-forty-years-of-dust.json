@@ -1,0 +1,65 @@
+{
+  "id": "forty-years-of-dust",
+  "title": "Forty Years of Dust",
+  "description": "A veteran bookbinder decides to close his fading downtown bindery and finally read the single book he spent a lifetime repairing for someone who never returned.",
+  "tags": [
+    "books",
+    "career",
+    "regret",
+    "closure",
+    "middle-age"
+  ],
+  "character_reference": "a middle-aged man with thinning gray hair, round wire-rimmed glasses, and a faded green apron smudged with dried leather glue",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty-two years, the heavy brass bell above the door signaled my entire world. Today, it rang for the final time as I turned the heavy deadbolt from the inside.",
+      "on_screen_text": "THE FINAL LOCK",
+      "duration_hint": 12.0,
+      "visual": "close-up shot of weathered hands turning an old brass key inside a heavy black iron lock, afternoon sunlight catching floating dust motes in an antique workshop interior"
+    },
+    {
+      "narration": "The shelves were nearly bare now, stripped of the heavy ledgers and poetry collections I had nursed back to health with thread, paste, and patience.",
+      "on_screen_text": "EMPTY SHELVES",
+      "duration_hint": 10.0,
+      "visual": "medium shot looking down an aisle of tall wooden bookshelves stripped clean of books, wooden floorboards worn smooth by decades of footsteps"
+    },
+    {
+      "narration": "Only one volume remained on the oak workbench. Left behind in nineteen-eighty-four by a student who promised to return next Tuesday.",
+      "on_screen_text": "THE LEFTOVER BOOK",
+      "duration_hint": 11.0,
+      "visual": "close-up of a thick, leather-bound book with cracked spine resting alone on a scarred oak work surface, dust accumulated along the gilded page edges"
+    },
+    {
+      "narration": "I never opened it while she was alive, nor in the decades after. It was her book, bound with my own hands, waiting for an owner who vanished.",
+      "on_screen_text": "UNTOUCHED PAGES",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the man staring down at the solitary book, hands resting flat on the wooden table, warm lamp illumination casting a long shadow"
+    },
+    {
+      "narration": "With trembling thumbs, I slipped the ribbon marker and opened the cover. The heavy paper smelled of vanilla, old ink, and twenty-year-old dried roses.",
+      "on_screen_text": "BREAKING THE SEAL",
+      "duration_hint": 12.0,
+      "visual": "close-up of weathered fingers gently lifting the heavy front cover of an old leather book, revealing yellowed parchment pages inside"
+    },
+    {
+      "narration": "Tucked inside the spine was a handwritten note in violet ink, asking if I would keep the volume safe until the storm had passed.",
+      "on_screen_text": "THE HIDDEN NOTE",
+      "duration_hint": 11.0,
+      "visual": "extreme close-up of a folded piece of cream-colored paper with faded cursive handwriting resting against an open book page"
+    },
+    {
+      "narration": "The storm had passed decades ago, yet here I sat, finally reading the story she left behind while mine was just beginning anew.",
+      "on_screen_text": "A LATE CHAPTER",
+      "duration_hint": 11.0,
+      "visual": "medium low-angle shot of the man reading intently by the soft glow of a small green desk lamp, expression turning from melancholy to gentle peace"
+    },
+    {
+      "narration": "If you are standing at the threshold of your own quiet crossroads, remember that it is never too late to turn the page. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "wide-angle interior shot of the quiet workshop at dusk, a single warm light glowing softly against gathering shadows in the cozy room"
+    }
+  ]
+}

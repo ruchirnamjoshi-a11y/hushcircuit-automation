@@ -1,0 +1,65 @@
+{
+  "id": "the-mystery-of-pi",
+  "title": "The Mystery of Pi",
+  "description": "Learn what pi actually represents and why its decimals never end or repeat.",
+  "tags": [
+    "pi",
+    "circles",
+    "geometry",
+    "math",
+    "science"
+  ],
+  "character_reference": "a cheerful math teacher with neatly combed dark hair wearing a classic tweed blazer over a blue sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Take any circular object, wrap a piece of string tightly all the way around its outer edge, and measure that length.",
+      "on_screen_text": "MEASURING CIRCLES",
+      "duration_hint": 6.0,
+      "visual": "hands carefully wrapping a yellow measuring tape around the curved rim of a smooth ceramic bowl"
+    },
+    {
+      "narration": "Now take that same piece of string and see how many times it stretches straight across the exact center of the circle.",
+      "on_screen_text": "ACROSS THE CENTER",
+      "duration_hint": 6.0,
+      "visual": "laying a piece of string straight across the middle diameter of a round wooden table surface"
+    },
+    {
+      "narration": "No matter how big or small your circle is, that string will always fit across the center just over three times.",
+      "on_screen_text": "THE CONSTANT RATIO",
+      "duration_hint": 6.0,
+      "visual": "person nodding with a pleased expression next to a chalkboard covered in circular diagrams"
+    },
+    {
+      "narration": "That mysterious extra fraction is the famous number pi, starting with three point one four one five nine.",
+      "on_screen_text": "MEET PI",
+      "duration_hint": 5.5,
+      "visual": "glowing greek letter pi symbol hovering above a polished wooden desk with mathematical instruments"
+    },
+    {
+      "narration": "Supercomputers have calculated trillions of digits of pi, yet the decimals keep going forever without ever repeating a pattern.",
+      "on_screen_text": "INFINITE DECIMALS",
+      "duration_hint": 6.0,
+      "visual": "endless stream of glowing white numbers cascading down a dark blue computer screen"
+    },
+    {
+      "narration": "Ancient mathematicians spent their entire lives trying to calculate pi by drawing polygons inside and outside circles.",
+      "on_screen_text": "ANCIENT EFFORTS",
+      "duration_hint": 5.5,
+      "visual": "intricate geometric sketch of polygons nested tightly inside a large circle on aged parchment"
+    },
+    {
+      "narration": "Today, pi helps engineers calculate orbits, design roller coasters, and send signals across the entire solar system.",
+      "on_screen_text": "ENGINEERING MARVELS",
+      "duration_hint": 6.0,
+      "visual": "sleek model spacecraft rotating slowly against a backdrop of distant stars and glowing orbits"
+    },
+    {
+      "narration": "Ready to explore more mind blowing mathematical constants? Follow along for a new story every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "friendly teacher gesturing toward a glowing chalkboard in a warm sunlit classroom"
+    }
+  ]
+}

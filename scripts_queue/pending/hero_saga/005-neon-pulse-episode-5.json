@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-5",
+  "title": "Neon Pulse — Episode 5: Shadow of the Symbol",
+  "description": "Kael confronts the mysterious figure bearing his past symbol inside the calibration facility, leading to a shocking revelation about the conspiracy.",
+  "tags": [
+    "original superhero",
+    "action adventure",
+    "scifi thriller",
+    "neon pulse",
+    "original hero saga"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 5,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The heavy steel doors hiss open, revealing the cloaked figure who matches the exact emblem burning in my memories.",
+      "on_screen_text": "THE FIGURE REVEALED",
+      "duration_hint": 7.0,
+      "visual": "Low angle medium shot of a hooded figure standing in a dimly lit industrial corridor, casting a long shadow towards the camera under flickering fluorescent lights."
+    },
+    {
+      "narration": "Amber energy crackles along my jacket sleeves as I demand answers about who engineered my powers and why.",
+      "on_screen_text": "DEMANDING ANSWERS",
+      "duration_hint": 7.0,
+      "visual": "Close up profile of clenched fists generating bright electrical sparks, illuminating dark metallic walls with intense orange light in a narrow concrete hallway."
+    },
+    {
+      "narration": "The stranger lowers the hood slowly, exposing a face scarred by the very same experimental treatments that forged my own abilities.",
+      "on_screen_text": "SCARRED TRUTH",
+      "duration_hint": 8.0,
+      "visual": "Medium close up shot of a mysterious person revealing a scarred face in the shadows, illuminated only by a faint blue glow from a broken wall panel."
+    },
+    {
+      "narration": "Instead of attacking, they press a glowing data drive into my palm and whisper that the entire organization is collapsing from within.",
+      "on_screen_text": "THE DATA DRIVE",
+      "duration_hint": 8.0,
+      "visual": "Extreme close up of two hands exchanging a small metallic data chip that glows with a faint blue light against dark tactical fabric."
+    },
+    {
+      "narration": "Emergency sirens suddenly pierce the silence overhead, red warning lights flooding the corridor and cutting our brief truce short.",
+      "on_screen_text": "RED ALERT",
+      "duration_hint": 7.0,
+      "visual": "Wide angle shot of a long industrial tunnel washed in pulsing crimson alarm lights, casting deep shadows across exposed pipes and metallic flooring."
+    },
+    {
+      "narration": "When the smoke clears from a sudden perimeter breach, the figure is already gone, leaving me alone with the stolen drive and a bigger target on my back.",
+      "on_screen_text": "VANISHED INTO SMOKE",
+      "duration_hint": 9.0,
+      "visual": "Medium shot of a solitary figure standing in the center of a smoky industrial chamber, looking down at an empty floor where someone just stood."
+    },
+    {
+      "narration": "This battle is just beginning, and the secrets hidden in this chip change everything I thought I knew about my past.",
+      "on_screen_text": "EVERYTHING CHANGES",
+      "duration_hint": 7.0,
+      "visual": "Close up of determined eyes staring intently into the distance while holding a small glowing tech device, lit by moody shadows and warm rim lighting."
+    },
+    {
+      "narration": "Follow along and subscribe to the channel to catch the next chapter of this original hero saga as the conspiracy unravels.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "Cinematic wide angle landscape of a futuristic city skyline at dusk with glowing neon trails running through dark streets beneath a cloudy purple sky."
+    }
+  ]
+}

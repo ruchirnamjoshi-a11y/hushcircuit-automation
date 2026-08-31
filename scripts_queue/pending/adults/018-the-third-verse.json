@@ -1,0 +1,65 @@
+{
+  "id": "the-third-verse",
+  "title": "The Third Verse",
+  "description": "A retired lyricist finds an old cassette tape containing an unfinished song written with his estranged late brother.",
+  "tags": [
+    "music",
+    "brotherhood",
+    "loss",
+    "reconciliation",
+    "memory"
+  ],
+  "character_reference": "an older man with thick white hair, deep laugh lines around his eyes, and wearing a faded cable-knit wool sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Cleaning out the back of the garage is an archaeological dig through versions of yourself you no longer recognize.",
+      "on_screen_text": "THE GARAGE DIG",
+      "duration_hint": 10.0,
+      "visual": "medium shot of an older man kneeling in front of an open cardboard box inside a cluttered garage, sorting through old papers and cables"
+    },
+    {
+      "narration": "At the bottom of a rusted metal biscuit tin sat a grey cassette tape with my brother David's handwriting across the paper label.",
+      "on_screen_text": "THE GREY TAPE",
+      "duration_hint": 11.0,
+      "visual": "close-up of weathered hands holding an old audio cassette tape with handwritten ink text across the faded white adhesive label"
+    },
+    {
+      "narration": "We hadn't spoken in twelve years when he passed away. An argument over a bridge chord had built a wall neither of us knew how to climb.",
+      "on_screen_text": "TWELVE YEARS SILENT",
+      "duration_hint": 12.0,
+      "visual": "medium low-angle shot of the man staring thoughtfully into the middle distance, holding the cassette against his chest in a quiet interior room"
+    },
+    {
+      "narration": "I dusted off the old four-track recorder in the corner, pushed the plastic play button, and held my breath as the tape began to hum.",
+      "on_screen_text": "PRESSING PLAY",
+      "duration_hint": 11.0,
+      "visual": "close-up of a finger pressing down a mechanical plastic play button on a vintage tape recorder, reels beginning to turn slowly"
+    },
+    {
+      "narration": "His acoustic guitar filled the room, rough and bright. Then came his voice, singing the first two verses of a song we abandoned in nineteen-ninety-two.",
+      "on_screen_text": "HIS VOICE AGAIN",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the man closing his eyes as sound fills the room, warm lamplight highlighting the expression of sudden emotional release"
+    },
+    {
+      "narration": "The tape ended right where the third verse should have begun. The silence he left behind was heavy, but the guitar was still in my hands.",
+      "on_screen_text": "THE MISSING VERSE",
+      "duration_hint": 12.0,
+      "visual": "medium close-up of an acoustic guitar resting upright against an old wooden armchair inside a cozy, book-lined living room"
+    },
+    {
+      "narration": "I picked up a pen and wrote the final lines he never got to sing, finishing the melody we started half a lifetime ago.",
+      "on_screen_text": "FINISHING THE SONG",
+      "duration_hint": 11.0,
+      "visual": "close-up shot of a hand writing lyrics with a black fountain pen on lined paper, soft morning light illuminating the page"
+    },
+    {
+      "narration": "Some melodies take decades to resolve, but the music never truly stops if you are willing to listen. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "wide shot of a cozy music room with an acoustic guitar on a stand and warm sunlight streaming through sheer curtains"
+    }
+  ]
+}

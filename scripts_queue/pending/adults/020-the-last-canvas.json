@@ -1,0 +1,65 @@
+{
+  "id": "the-last-canvas",
+  "title": "The Last Canvas",
+  "description": "A retired art teacher who lost her sight to macular degeneration discovers a new way to paint through texture, memory, and touch.",
+  "tags": [
+    "art",
+    "adaptation",
+    "resilience",
+    "sight",
+    "creation"
+  ],
+  "character_reference": "an elderly woman with neatly braided silver hair, round tortoiseshell glasses, and a paint-spattered linen smock",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty years, color was my language. I taught students how to mix ultramarine skies and capture the golden slant of late afternoon light.",
+      "on_screen_text": "THE LANGUAGE OF COLOR",
+      "duration_hint": 12.0,
+      "visual": "medium shot of an elderly woman holding a wooden artist's palette smeared with vibrant oil paints, looking thoughtfully toward a sunlit window"
+    },
+    {
+      "narration": "When the doctor gently confirmed the macular degeneration was complete, the world did not go black all at once—it simply dissolved into soft grey fog.",
+      "on_screen_text": "THE FADING LIGHT",
+      "duration_hint": 13.0,
+      "visual": "close-up of the woman's face in soft focus, sunlight catching the edge of her glasses as she squints gently at a blurry canvas"
+    },
+    {
+      "narration": "I packed away my fine brushes and tube paints, believing my creative life was over. The blank canvases in the corner gathered dust for a year.",
+      "on_screen_text": "STORING THE BRUSHES",
+      "duration_hint": 12.0,
+      "visual": "medium shot of several blank white canvases stacked against a white studio wall, covered in a light film of grey dust"
+    },
+    {
+      "narration": "Then my granddaughter brought me a tub of coarse modeling paste, coarse sand, and a jar of thick acrylic polymer that smelled like fresh rain.",
+      "on_screen_text": "THE TEXTURE TUB",
+      "duration_hint": 11.0,
+      "visual": "close-up of wrinkled hands opening a plastic tub filled with thick, white textured paste on a wooden work table"
+    },
+    {
+      "narration": "I dipped my bare fingers directly into the heavy paste. Without needing to see, my hands remembered the curve of a shoreline and the rough bark of an oak.",
+      "on_screen_text": "PAINTING BY TOUCH",
+      "duration_hint": 13.0,
+      "visual": "close-up of weathered fingers aggressively spreading thick white paste across a textured canvas surface in a rhythmic motion"
+    },
+    {
+      "narration": "Art is not just about what meets the eye. It is about the pressure of the hand, the rhythm of the wrist, and the memory of beauty held within.",
+      "on_screen_text": "HELD IN THE HAND",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the artist leaning over a heavily textured abstract painting, running her fingertips across the hardened ridges of white paint"
+    },
+    {
+      "narration": "My gallery wall is filled with ridges and valleys now. People touch them with their eyes closed, feeling the exact landscape my heart still sees.",
+      "on_screen_text": "THE GALLERY OF TOUCH",
+      "duration_hint": 12.0,
+      "visual": "close-up of a visitor's hand gently tracing the raised white crests of an abstract relief painting on a neutral gallery wall"
+    },
+    {
+      "narration": "When your vision of the future changes, a deeper kind of creativity can take its place. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "wide shot of a bright art studio filled with textured white paintings catching warm natural light from a large skylight overhead"
+    }
+  ]
+}

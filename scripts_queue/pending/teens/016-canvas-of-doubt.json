@@ -1,0 +1,65 @@
+{
+  "id": "canvas-of-doubt",
+  "title": "Canvas of Doubt",
+  "description": "A young artist struggles with a looming portfolio deadline and overcomes perfectionism.",
+  "tags": [
+    "art",
+    "perfectionism",
+    "growth",
+    "highschool",
+    "creativity"
+  ],
+  "character_reference": "a tall teenager with messy dark curls, wearing a paint-splattered oversized denim jacket and round wire glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The blank canvas stared back at me for the third hour straight. Every brushstroke felt heavy, completely wrong, and destined for the recycling bin.",
+      "on_screen_text": "THE BLANK PAGE",
+      "duration_hint": 14.0,
+      "visual": "close up on a distressed teen staring intently at a stark white canvas in a dimly lit bedroom surrounded by scattered charcoal sketches"
+    },
+    {
+      "narration": "My portfolio deadline was tomorrow morning, and my confidence had completely evaporated. I reached for a thick tube of crimson paint in pure desperation.",
+      "on_screen_text": "RUNNING OUT OF TIME",
+      "duration_hint": 14.0,
+      "visual": "frantic hands clutching a red paint tube over a wooden table covered in used brushes and spilled water cups under a harsh desk lamp"
+    },
+    {
+      "narration": "Instead of planning the composition, I just let my hand move across the fabric without thinking. Mistakes started piling up immediately, defying my control.",
+      "on_screen_text": "LOSING CONTROL",
+      "duration_hint": 14.0,
+      "visual": "side angle of the teen aggressively slashing broad strokes of red paint across the canvas with eyes closed in frustration"
+    },
+    {
+      "narration": "I stopped breathing for a second as the messy red streak bled into the shadows. It wasn't the neat realism I had practiced for months.",
+      "on_screen_text": "AN ACCIDENTAL MISTAKE",
+      "duration_hint": 14.0,
+      "visual": "macro shot of a chaotic blend of red and black paint dripping down the textured canvas surface under direct warm illumination"
+    },
+    {
+      "narration": "Surprisingly, the chaotic texture actually gave the entire piece a pulse. The flaws weren't ruining the portrait anymore; they were bringing it to life.",
+      "on_screen_text": "FINDING THE RHYTHM",
+      "duration_hint": 14.0,
+      "visual": "the teen leaning back with a slight smile, holding a fine-tip brush while observing the emerging abstract shapes with renewed focus"
+    },
+    {
+      "narration": "When the sun finally peaked through my bedroom window, the painting was complete. It was messy, raw, and entirely my own voice.",
+      "on_screen_text": "THE FINISHED PIECE",
+      "duration_hint": 14.0,
+      "visual": "wide shot of the finished expressive painting resting against an easel bathed in soft golden morning light filtering through a window"
+    },
+    {
+      "narration": "Perfection is just an illusion that keeps us from creating anything real. I packed up my supplies, finally ready to share my work with the world.",
+      "on_screen_text": "READY TO SHARE",
+      "duration_hint": 14.0,
+      "visual": "the teen zipping up a black art portfolio case on the floor with a calm and confident expression in a cozy sunlit room"
+    },
+    {
+      "narration": "Thanks for watching, and follow along for more everyday stories of growth and creativity.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "warm cinematic portrait of the teen smiling directly at the camera holding a paintbrush with a softly blurred background"
+    }
+  ]
+}

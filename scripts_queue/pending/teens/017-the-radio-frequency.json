@@ -1,0 +1,65 @@
+{
+  "id": "the-radio-frequency",
+  "title": "The Radio Frequency",
+  "description": "A quiet student builds the courage to host their first live late-night campus radio show.",
+  "tags": [
+    "radio",
+    "voice",
+    "anxiety",
+    "college",
+    "music"
+  ],
+  "character_reference": "a slender young adult with bright teal dyed tips in short black hair, wearing an oversized vintage graphic sweatshirt and silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The red ON AIR light hummed quietly above the studio door. My stomach did actual backflips as the clock ticked closer to midnight.",
+      "on_screen_text": "THE RED LIGHT",
+      "duration_hint": 13.0,
+      "visual": "close up on a glowing red recording sign mounted on a dark wooden wall inside a small soundproof broadcast booth"
+    },
+    {
+      "narration": "Nobody outside this tiny room even knew I was running the station tonight. My hands shook so badly I almost dropped my playlist notes.",
+      "on_screen_text": "SECRET BROADCAST",
+      "duration_hint": 14.0,
+      "visual": "shaking hands holding wrinkled paper notes over a massive mixing console covered in glowing green and yellow audio sliders"
+    },
+    {
+      "narration": "I adjusted the heavy microphone closer to my mouth and stared at the empty glass window. Three, two, one, I was live.",
+      "on_screen_text": "GOING LIVE",
+      "duration_hint": 13.0,
+      "visual": "adjusting a vintage studio microphone with both hands while gazing nervously through a soundproof glass window into darkness"
+    },
+    {
+      "narration": "My voice sounded painfully small during the first few awkward sentences. I stumbled over an artist's name and wanted to vanish.",
+      "on_screen_text": "THE FIRST STUMBLE",
+      "duration_hint": 13.0,
+      "visual": "grimacing slightly while speaking into a microphone with eyes squeezed shut and headphones resting around the neck"
+    },
+    {
+      "narration": "Then I stopped worrying about sounding professional and just talked about why the next song meant everything to me. The tension vanished.",
+      "on_screen_text": "JUST SPEAKING",
+      "duration_hint": 14.0,
+      "visual": "laughing softly while gesturing naturally with one hand toward a laptop playing ambient indie music tracks"
+    },
+    {
+      "narration": "The studio phone on the console blinked once, then twice with incoming listener requests. Somebody out there was actually listening.",
+      "on_screen_text": "INCOMING CALLS",
+      "duration_hint": 13.0,
+      "visual": "close up on a vintage landline telephone on the mixing desk flashing amber lights in a dimly lit broadcast studio"
+    },
+    {
+      "narration": "Finding your voice doesn't require a megaphone, just the courage to speak your truth into the quiet dark.",
+      "on_screen_text": "SPEAKING UP",
+      "duration_hint": 13.0,
+      "visual": "smiling warmly while putting on large padded headphones and sliding an audio channel fader smoothly upward"
+    },
+    {
+      "narration": "If you love discovering authentic journeys every single day, make sure to follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "cozy medium shot in the broadcast booth with soft purple and blue ambient lighting reflecting off headphones"
+    }
+  ]
+}
