@@ -1,0 +1,65 @@
+{
+  "id": "titli-rani-or-pyaasa-poudha",
+  "title": "तितली रानी और प्यासा पौधा",
+  "description": "एक छोटी नीली तितली अपने छोटे से पौधे की मदद के लिए नदी पार करती है।",
+  "tags": [
+    "kids stories",
+    "hindi stories",
+    "butterfly story",
+    "kindness",
+    "nature"
+  ],
+  "character_reference": "a delicate blue butterfly with shimmering silver patterns on her wings and tiny sparkling antennae",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "एक सुंदर बगीचे में एक नन्हा सा पौधा मुरझाने लगा था क्योंकि उसे कई दिनों से पानी नहीं मिला था।",
+      "on_screen_text": "मुरझाता पौधा",
+      "duration_hint": 6.0,
+      "visual": "Close up shot of a tiny green seedling drooping sadly in dry, cracked earth under the warm afternoon sun."
+    },
+    {
+      "narration": "एक छोटी नीली तितली ने उस पौधे की उदासी देखी और उसकी मदद करने का निश्चय किया।",
+      "on_screen_text": "मदद की ठानी",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of a delicate blue butterfly hovering with concerned eyes above the sad, drooping little plant."
+    },
+    {
+      "narration": "तितली तुरंत उड़कर पास की कलकल बहती हुई नदी के पास पहुँची।",
+      "on_screen_text": "नदी की ओर",
+      "duration_hint": 4.8,
+      "visual": "Dynamic wide shot of the blue butterfly flying swiftly over a sparkling, pebble-strewn stream reflecting the bright blue sky."
+    },
+    {
+      "narration": "उसने अपनी नन्हीं सी चोंच में पानी की एक बूंद उठाई और पौधे की तरफ उड़ चली।",
+      "on_screen_text": "पानी की बूंद",
+      "duration_hint": 5.2,
+      "visual": "Macro close up of the butterfly carefully balancing a shimmering drop of water on the tip of her delicate leaf-like leg."
+    },
+    {
+      "narration": "थक जाने के बावजूद, तितली ने हार नहीं मानी और अपनी उड़ान जारी रखी।",
+      "on_screen_text": "हार न मानना",
+      "duration_hint": 5.0,
+      "visual": "Side angle shot of the tired butterfly fluttering against a gentle breeze across a field of tall, swaying green grass."
+    },
+    {
+      "narration": "आखिरकार उसने पानी की बूंद पौधे की जड़ में गिरा दी, जिससे पौधे में जान आ गई।",
+      "on_screen_text": "नई जान",
+      "duration_hint": 5.5,
+      "visual": "Close up shot of the water droplet falling onto the soil, and the tiny plant instantly straightening up with vibrant green leaves."
+    },
+    {
+      "narration": "छोटा सा प्रयास भी बहुत बड़ा बदलाव ला सकता है, यही इस नन्ही कहानी का सार है।",
+      "on_screen_text": "बड़ा बदलाव",
+      "duration_hint": 5.8,
+      "visual": "Wide angle shot of the blooming little plant glowing brightly in the sunshine next to the resting happy butterfly."
+    },
+    {
+      "narration": "ऐसी ही प्यारी कहानियों के लिए हमारे चैनल से जुड़ें और साथ बने रहें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "Soft focus view of a sunlit meadow filled with colorful wildflowers glowing warmly in the gentle evening light."
+    }
+  ]
+}

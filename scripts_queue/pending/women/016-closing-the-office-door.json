@@ -1,0 +1,65 @@
+{
+  "id": "closing-the-office-door",
+  "title": "Closing the Office Door",
+  "description": "A corporate manager realizes her worth isn't measured by how late she stays at work, choosing to leave the hustle behind for an evening of personal peace.",
+  "tags": [
+    "work-life-balance",
+    "self-worth",
+    "career",
+    "boundaries",
+    "peace"
+  ],
+  "character_reference": "a woman in her early thirties with warm hazel eyes, shoulder-length wavy dark brown hair tied in a loose claw clip, wearing a structured charcoal blazer over a simple cream silk blouse",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The clock on the wall blinked past eight PM, casting a harsh fluorescent glow over empty desks and a mountain of unread spreadsheets.",
+      "on_screen_text": "THE LATE SHIFT",
+      "duration_hint": 7.5,
+      "visual": "close-up shot of a digital clock glowing red on a messy desk, blurred office cubicles stretching into deep shadow behind it, cool blue and amber ambient light"
+    },
+    {
+      "narration": "My phone buzzed against the polished mahogany surface with yet another urgent request from a supervisor who had gone home hours ago.",
+      "on_screen_text": "THE PING",
+      "duration_hint": 7.0,
+      "visual": "macro shot of a smartphone vibrating on a wooden desk, screen lighting up with a harsh notification banner, shallow depth of field, moody indoor lighting"
+    },
+    {
+      "narration": "For five years, I thought staying until midnight was a badge of honor, a quiet proof of my dedication to a company that only asked for more.",
+      "on_screen_text": "YEARS OF HABIT",
+      "duration_hint": 7.5,
+      "visual": "medium shot of a person staring blankly at a glowing laptop screen, dark reflections on the glass pane, heavy shadows, introspective and exhausted mood"
+    },
+    {
+      "narration": "Today, the chest tightness felt different. It was not exhaustion speaking, but a sudden, piercing clarity reminding me of the life I was missing outside.",
+      "on_screen_text": "THE AWAKENING",
+      "duration_hint": 7.5,
+      "visual": "close-up of hands resting flat on a cool desk surface, fingers trembling slightly, soft overhead spotlight filtering through vertical window blinds"
+    },
+    {
+      "narration": "I closed the laptop lid with a soft, decisive click that echoed in the cavernous, silent room.",
+      "on_screen_text": "THE SHUTDOWN",
+      "duration_hint": 6.5,
+      "visual": "low angle shot of hands gently closing a sleek silver laptop, dust motes dancing in a single beam of warm desk lamp light, cinematic focus"
+    },
+    {
+      "narration": "Without drafting an apologetic explanation or checking the morning's calendar, I slipped my arms into my heavy wool coat.",
+      "on_screen_text": "THE COAT",
+      "duration_hint": 6.5,
+      "visual": "medium shot of arms sliding into the sleeves of a heavy dark coat, shoulders dropping in relief, warm indoor interior background out of focus"
+    },
+    {
+      "narration": "Stepping past the glass reception desk, I left the glowing tower behind me, breathing in the crisp night air that tasted entirely like freedom.",
+      "on_screen_text": "STEPPING OUT",
+      "duration_hint": 7.0,
+      "visual": "wide shot from inside a dimly lit lobby looking out toward dark city streets through large glass panels, a solitary figure walking away into the night"
+    },
+    {
+      "narration": "If you are learning to choose your own well-being over endless demands, follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "warm cinematic portrait of a smiling face turned slightly toward a glowing window, soft evening city lights bokeh in the background, peaceful expression"
+    }
+  ]
+}

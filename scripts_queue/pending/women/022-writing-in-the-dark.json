@@ -1,0 +1,65 @@
+{
+  "id": "writing-in-the-dark",
+  "title": "Writing in the Dark",
+  "description": "An aspiring writer wakes up before the household stirs to type the stories she kept hidden away in her heart.",
+  "tags": [
+    "writing",
+    "dreams",
+    "morning",
+    "creativity",
+    "authors"
+  ],
+  "character_reference": "a woman in her late twenties with messy blonde hair tucked behind her ears, wearing an oversized cable-knit cream sweater and round wire glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The house was fast asleep, wrapped in the deep stillness of three in the morning when the world belongs to dreamers.",
+      "on_screen_text": "THREE AM",
+      "duration_hint": 7.0,
+      "visual": "wide shot of a dark living room with moonlight streaming through a large window, a single glowing laptop screen casting light on a small desk"
+    },
+    {
+      "narration": "For years, my stories lived only in the margins of notebooks, dismissed as foolish daydreams that would never see the light.",
+      "on_screen_text": "THE MARGINS",
+      "duration_hint": 7.0,
+      "visual": "close-up of old paper notebooks stacked on a dark wooden desk, handwritten notes visible under moody, low-key lighting"
+    },
+    {
+      "narration": "Fear told me I wasn't a real writer, that every sentence I imagined was amateur and unworthy of being read.",
+      "on_screen_text": "THE DOUBT",
+      "duration_hint": 6.5,
+      "visual": "medium shot of hands hovering nervously over a keyboard, glowing blue screen light reflecting on glasses and fingers"
+    },
+    {
+      "narration": "Tonight, I decided that an imperfect story written by me was infinitely better than a perfect story left unwritten.",
+      "on_screen_text": "THE CHOICE",
+      "duration_hint": 7.0,
+      "visual": "close-up of fingers pressing down decisively on keyboard keys, crisp motion blur, focused and determined mood"
+    },
+    {
+      "narration": "Words began to flow across the blank white screen like ink spilled from a heart that could no longer stay silent.",
+      "on_screen_text": "FLOWING WORDS",
+      "duration_hint": 7.0,
+      "visual": "macro shot of a computer screen showing lines of text appearing one by one against a dark background, cinematic glow"
+    },
+    {
+      "narration": "Each paragraph felt like lifting a heavy stone off my chest, making room for the voice I had tried to stifle.",
+      "on_screen_text": "LIFTING STONES",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a person leaning back from the desk, exhaling a long breath with a relieved smile, soft shadows"
+    },
+    {
+      "narration": "As the first blue tint of dawn crept through the blinds, I saved my document and smiled at the glowing monitor.",
+      "on_screen_text": "DAWN SAVED",
+      "duration_hint": 7.0,
+      "visual": "close-up of a hand clicking a mouse on a glowing screen, cool blue dawn light mixing with warm indoor lamp light"
+    },
+    {
+      "narration": "If you are finally giving voice to the dreams you kept hidden, follow along for more stories of artistic courage.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "warm portrait of an inspired face looking toward the morning window with quiet pride and accomplishment"
+    }
+  ]
+}

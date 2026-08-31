@@ -1,0 +1,71 @@
+{
+  "id": "jasper-jay-and-the-shiny-wrapper",
+  "title": "Jasper Jay and the Shiny Wrapper",
+  "description": "Jasper Jay collects shiny trash thinking it is treasure until he learns the importance of keeping his forest clean.",
+  "tags": [
+    "jay",
+    "nature",
+    "cleanup",
+    "responsibility",
+    "bedtime"
+  ],
+  "character_reference": "a bright blue jay with striking azure feathers, a proud crest on his head, and sharp clever eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Jasper soared proudly through the pine trees, holding a sparkling piece of silver foil in his beak.",
+      "on_screen_text": "A SHINY FIND",
+      "duration_hint": 11.0,
+      "visual": "A bright blue jay flying through green pine branches with a gleaming piece of silver foil in his beak, bright sunny day."
+    },
+    {
+      "narration": "Look what wonderful treasure I found in the meadow, he chattered happily to his squirrel neighbor.",
+      "on_screen_text": "A NEW TREASURE",
+      "duration_hint": 11.0,
+      "visual": "A blue jay landing on a wooden fence, showing off a shiny wrapper in his beak to a curious squirrel."
+    },
+    {
+      "narration": "The squirrel wrinkled her nose and said, That's not a treasure, Jasper. That is human litter that doesn't belong here.",
+      "on_screen_text": "NOT A TREASURE",
+      "duration_hint": 12.0,
+      "visual": "A squirrel looking at the foil wrapper with a disapproving frown while the jay tilts his head in confusion."
+    },
+    {
+      "narration": "Jasper blinked in surprise, looking down at the crinkly silver paper resting in the green grass.",
+      "on_screen_text": "REALIZING MISTAKE",
+      "duration_hint": 11.0,
+      "visual": "Close up of a blue jay looking down thoughtfully at the bright wrapper on the forest floor, soft natural lighting."
+    },
+    {
+      "narration": "Our home is so beautiful because we keep it clean, the squirrel added gently. We should take care of it.",
+      "on_screen_text": "KEEP IT CLEAN",
+      "duration_hint": 12.0,
+      "visual": "Two forest animals standing together on a clean patch of green moss, warm cooperative atmosphere."
+    },
+    {
+      "narration": "Jasper nodded wisely. He picked the shiny wrapper back up in his beak with a helpful purpose.",
+      "on_screen_text": "A HELPFUL PURPOSE",
+      "duration_hint": 11.0,
+      "visual": "A blue jay gently picking up the piece of foil with his beak to carry it away, determined expression."
+    },
+    {
+      "narration": "He flew it all the way to the recycling bin at the edge of the woods, feeling proud of his forest home.",
+      "on_screen_text": "CLEAN FOREST",
+      "duration_hint": 12.0,
+      "visual": "Wide shot of a pristine, beautiful green forest bathed in golden sunlight, peaceful and clean environment."
+    },
+    {
+      "narration": "Caring for our environment makes the whole world shine brighter for everyone. Sleep tight.",
+      "on_screen_text": "SLEEP TIGHT",
+      "duration_hint": 11.0,
+      "visual": "A sleepy blue jay resting on a cozy branch under a starlit night sky, peaceful bedtime mood."
+    },
+    {
+      "narration": "We share a brand new gentle story every single day. Follow along for more heartwarming bedtime tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "A peaceful nighttime forest filled with soft glowing fireflies, comforting bedtime aesthetic."
+    }
+  ]
+}

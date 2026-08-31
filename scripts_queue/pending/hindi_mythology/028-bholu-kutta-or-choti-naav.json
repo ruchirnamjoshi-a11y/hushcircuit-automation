@@ -1,0 +1,65 @@
+{
+  "id": "bholu-kutta-or-choti-naav",
+  "title": "भोलू कुत्ता और छोटी नाव",
+  "description": "एक मिलनसार पिल्ला नदी पार करने वाले यात्रियों की मदद करता है।",
+  "tags": [
+    "kids stories",
+    "hindi stories",
+    "dog story",
+    "kindness",
+    "helpful pets"
+  ],
+  "character_reference": "a golden retriever puppy with floppy ears, wearing a bright blue scarf around his neck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "भोलू पिल्ला नदी किनारे रहता था और उसे दूसरों की मदद करना बहुत अच्छा लगता था।",
+      "on_screen_text": "दयालु पिल्ला",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of a cheerful golden retriever puppy sitting by the edge of a gentle, flowing blue river."
+    },
+    {
+      "narration": "एक दिन एक छोटी सी लकड़ी की नाव नदी के तेज बहाव में फंस गई थी।",
+      "on_screen_text": "फंसी हुई नाव",
+      "duration_hint": 5.2,
+      "visual": "Close up of a small wooden toy boat stuck amidst swirling ripples and rocks near the riverbank."
+    },
+    {
+      "narration": "नाव में कुछ नन्हीं चीटियां थीं जो डर के मारे कांप रही थीं।",
+      "on_screen_text": "डरी हुई चीटियां",
+      "duration_hint": 5.0,
+      "visual": "Macro shot of tiny ants huddled together inside the stranded wooden boat, looking worried."
+    },
+    {
+      "narration": "भोलू ने बिना एक पल गंवाए अपनी मजबूत पूंछ और पंजों से नाव को धक्का देना शुरू किया।",
+      "on_screen_text": "मदद के लिए हाथ",
+      "duration_hint": 6.0,
+      "visual": "Action shot of the golden puppy wading into the shallow water, gently pushing the wooden boat with his nose."
+    },
+    {
+      "narration": "उसकी ताकत और कोशिश रंग लाई, और नाव सुरक्षित किनारे पर आ लगी।",
+      "on_screen_text": "सुरक्षित किनारा",
+      "duration_hint": 5.2,
+      "visual": "Side shot of the boat sliding smoothly onto the dry, grassy riverbank as the puppy watches happily."
+    },
+    {
+      "narration": "चीटियों ने खुश होकर भोलू का धन्यवाद किया और वे अपने घर सुरक्षित पहुँच गईं।",
+      "on_screen_text": "धन्यवाद",
+      "duration_hint": 5.5,
+      "visual": "Close up of the smiling puppy looking down affectionately at the tiny ants waving from the grass."
+    },
+    {
+      "narration": "छोटा हो या बड़ा, हर कोई किसी की मदद करने की ताकत रखता है।",
+      "on_screen_text": "मदद की ताकत",
+      "duration_hint": 5.2,
+      "visual": "Warm wide shot of the happy puppy resting peacefully by the shimmering river under a clear blue sky."
+    },
+    {
+      "narration": "ऐसी ही दिल को छू लेने वाली कहानियों के लिए हमारे चैनल को सब्सक्राइब करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "Serene nature shot of sunlight reflecting in sparkling ripples of water near a grassy riverbank."
+    }
+  ]
+}

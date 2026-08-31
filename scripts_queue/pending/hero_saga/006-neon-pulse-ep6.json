@@ -1,0 +1,59 @@
+{
+  "id": "neon-pulse-ep6",
+  "title": "Neon Pulse — Episode 6: Secrets Decoded",
+  "description": "Kael analyzes the stolen data drive, revealing a massive conspiracy behind his powers and pointing toward a high-security offshore archive.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "thriller",
+    "mystery"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 6,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Alarms echoed through the dim hallway as I clutched the encrypted data drive tightly in my hand. The lockdown breach left me only seconds to disappear into the shadows.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 12.0,
+      "visual": "A tense wide shot of a frantic man sprinting down a smoky, dimly lit industrial corridor with red emergency strobe lights flashing against concrete walls, low camera angle, cinematic mood lighting."
+    },
+    {
+      "narration": "Safe inside a hidden rooftop hideout, I connected the stolen drive to my portable terminal. The amber circuitry on my sleeves pulsed with an anxious rhythm.",
+      "on_screen_text": "DECRYPTING DATA",
+      "duration_hint": 13.0,
+      "visual": "Close up shot of gloved hands inserting a glowing black data chip into a battered metallic interface, casting cool blue screen reflections across a cluttered desk surface."
+    },
+    {
+      "narration": "Lines of forbidden code cascaded across the screen revealing blueprints of my own biology. Someone engineered these abilities from scratch inside a secret laboratory.",
+      "on_screen_text": "BUILT NOT BORN",
+      "duration_hint": 13.5,
+      "visual": "Over-the-shoulder shot viewing complex holographic wireframe blueprints of human anatomy floating above a glowing computer terminal in a dark room, detailed futuristic graphics."
+    },
+    {
+      "narration": "Buried deep within the encrypted files was a single recurring coordinate pointing toward an abandoned offshore research platform. That is where the truth actually begins.",
+      "on_screen_text": "OFFSHORE COORDINATES",
+      "duration_hint": 13.0,
+      "visual": "A detailed close up of a digital map interface highlighting a pulsing red waypoint over a dark ocean expanse, illuminated only by the glow of the monitor."
+    },
+    {
+      "narration": "The scarred figure who helped me escape left a warning encoded in the metadata. The shadowy organization hunting me is already moving their chess pieces.",
+      "on_screen_text": "THE WARNING",
+      "duration_hint": 12.5,
+      "visual": "Medium close up of a man staring intensely at a flickering monitor with an expression of grim realization, deep shadows framing his face, dramatic cinematic lighting."
+    },
+    {
+      "narration": "I packed the terminal into my pack and prepared for the dangerous journey ahead. There is no turning back now that the game has started.",
+      "on_screen_text": "GEARING UP",
+      "duration_hint": 11.5,
+      "visual": "A medium shot of a man swiftly zipping up a tactical bag while standing near a rain-streaked window overlooking a sprawling cyberpunk city skyline at night."
+    },
+    {
+      "narration": "Follow along for more of this original hero saga as the mystery unfolds.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "A dramatic low angle medium shot of a man walking purposefully away from the camera into a dark misty alleyway, glowing amber patterns trailing behind him."
+    }
+  ]
+}

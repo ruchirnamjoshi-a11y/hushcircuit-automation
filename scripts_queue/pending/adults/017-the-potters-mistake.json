@@ -1,0 +1,65 @@
+{
+  "id": "the-potters-mistake",
+  "title": "The Potter's Mistake",
+  "description": "After a kiln accident ruins his signature ceramic collection, a perfectionist ceramist learns to embrace the beautiful asymmetry of life.",
+  "tags": [
+    "art",
+    "perfectionism",
+    "acceptance",
+    "ceramics",
+    "growth"
+  ],
+  "character_reference": "a man in his late forties with a salt-and-pepper beard, clay-stained forearms, and a dark canvas utility shirt with rolled-up sleeves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The heavy kiln door hissed as I pulled it open, releasing a wave of dry heat and the sickening scent of melted glaze gone entirely wrong.",
+      "on_screen_text": "THE RUPTURED KILN",
+      "duration_hint": 12.0,
+      "visual": "medium shot of a man pulling open a heavy industrial kiln door, white heat shimmering against his face in a dimly lit studio"
+    },
+    {
+      "narration": "Every single piece from my twenty-piece anniversary collection had warped, blistered, and fused into the kiln shelves during the night.",
+      "on_screen_text": "RUINED VESSELS",
+      "duration_hint": 11.0,
+      "visual": "close-up of misshapen clay pots with bubbling green glaze melted onto a firebrick shelf, illuminated by harsh overhead work lights"
+    },
+    {
+      "narration": "For twenty years, I chased clinical perfection. Straight walls, uniform thickness, absolute symmetry. Now, my entire life's work sat twisted like molten glass.",
+      "on_screen_text": "TWENTY YEARS GONE",
+      "duration_hint": 12.0,
+      "visual": "medium shot of the potter staring down inside the brick kiln with hands pressed against his hips, shoulders slumped in heavy defeat"
+    },
+    {
+      "narration": "I picked up the most deformed bowl, ready to toss it into the scrap bin, when my thumb caught an unexpected ridge in the folded clay.",
+      "on_screen_text": "THE UNEXPECTED RIDGE",
+      "duration_hint": 12.0,
+      "visual": "close-up of clay-dusted fingers tracing the jagged, folded lip of a collapsed ceramic bowl resting on a wooden workbench"
+    },
+    {
+      "narration": "The fire had forced the clay to ripple like water. It was no longer the vase I intended to make, but something wilder, shaped by the heat itself.",
+      "on_screen_text": "SHAPED BY FIRE",
+      "duration_hint": 12.0,
+      "visual": "close-up shot rotating slowly around a warped, beautifully textured ceramic pot catching natural morning sunlight through a large window"
+    },
+    {
+      "narration": "We spend so much energy trying to keep our lives from cracking, forgetting that the fractures let the true shape of things emerge.",
+      "on_screen_text": "THE FRACTURE",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the potter sitting on a wooden stool, gently cradling the deformed vessel in both hands with a soft, contemplative smile"
+    },
+    {
+      "narration": "I did not throw them away. I glazed the scars in gold and placed the strangest collection I ever made right in the center window.",
+      "on_screen_text": "GOLDEN SCARS",
+      "duration_hint": 12.0,
+      "visual": "medium shot of several unique, asymmetrical ceramic pots arranged on a sunlit wooden shelf, light reflecting off metallic gold cracks"
+    },
+    {
+      "narration": "If your own plans have melted down around you today, trust the heat and see what forms in the cooling air. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "wide shot of a sunlit pottery studio with shelves of unique handmade pottery reflecting warm amber light across the clean wooden floor"
+    }
+  ]
+}

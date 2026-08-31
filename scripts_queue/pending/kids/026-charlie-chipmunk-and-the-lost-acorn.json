@@ -1,0 +1,71 @@
+{
+  "id": "charlie-chipmunk-and-the-lost-acorn",
+  "title": "Charlie Chipmunk and the Lost Acorn",
+  "description": "Charlie Chipmunk loses his very special golden acorn and learns that honesty leads to wonderful new friendships.",
+  "tags": [
+    "chipmunk",
+    "honesty",
+    "forest",
+    "friendship",
+    "bedtime"
+  ],
+  "character_reference": "a bouncy little chipmunk with sandy brown fur, distinct dark stripes down his back, and bright curious eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Charlie bounded through the autumn leaves, proudly carrying the shinier acorn he had found all morning long.",
+      "on_screen_text": "THE SHINY ACORN",
+      "duration_hint": 12.0,
+      "visual": "A small chipmunk scampering across a vibrant carpet of orange and red fall leaves, holding a gleaming golden nut, dynamic low angle."
+    },
+    {
+      "narration": "Suddenly, a swift breeze swept past, and the golden acorn slipped right from his paws into a dense bramble.",
+      "on_screen_text": "OOPS",
+      "duration_hint": 11.0,
+      "visual": "A chipmunk pausing in mid-motion with paws outstretched in surprise as a nut bounces into thick thorny bushes, autumn wind blowing leaves."
+    },
+    {
+      "narration": "He searched everywhere among the tangled vines, but the special treasure seemed completely gone from sight.",
+      "on_screen_text": "LOST IN LEAVES",
+      "duration_hint": 11.0,
+      "visual": "Close up of a chipmunk parting dry twigs and colorful leaves with a worried expression, soft diffused woodland lighting."
+    },
+    {
+      "narration": "A gentle field mouse appeared from underneath a fallen log, holding up the exact same golden acorn in her paws.",
+      "on_screen_text": "FOUND IT",
+      "duration_hint": 11.0,
+      "visual": "A friendly mouse peeking out from beneath a mossy log, holding out a shiny acorn with a sweet helpful smile, close-up framing."
+    },
+    {
+      "narration": "Is this yours, little neighbor? she asked kindly. I saw it roll right over here near my doorway.",
+      "on_screen_text": "KIND WORDS",
+      "duration_hint": 11.0,
+      "visual": "Two woodland animals talking face-to-face among fallen leaves, warm expressive eyes, inviting and gentle atmosphere."
+    },
+    {
+      "narration": "Charlie nodded honestly with a relieved smile. Thank you so much for bringing it back to me.",
+      "on_screen_text": "THANK YOU",
+      "duration_hint": 11.0,
+      "visual": "A chipmunk accepting the acorn with both paws, smiling brightly at the mouse, warm golden hour sunlight filtering through trees."
+    },
+    {
+      "narration": "Instead of keeping it all to himself, Charlie invited his new friend to share a delicious autumn snack together.",
+      "on_screen_text": "SHARING A SNACK",
+      "duration_hint": 12.0,
+      "visual": "Two small animals sitting together happily munching on seeds on a flat rock, cozy autumn forest background, peaceful mood."
+    },
+    {
+      "narration": "True kindness and honesty always bring the warmest treasures right to our doorsteps. Sleep peacefully.",
+      "on_screen_text": "SLEEP PEACEFULLY",
+      "duration_hint": 11.0,
+      "visual": "A cozy underground burrow interior filled with soft moss and sleeping animals, warm amber lighting, bedtime story aesthetic."
+    },
+    {
+      "narration": "We share a brand new gentle story every single day. Follow along for more heartwarming bedtime tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "A peaceful autumn forest scene under a twilight sky with soft glowing stars, comforting bedtime atmosphere."
+    }
+  ]
+}

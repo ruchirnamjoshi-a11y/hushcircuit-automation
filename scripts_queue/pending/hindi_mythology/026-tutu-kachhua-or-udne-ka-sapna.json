@@ -1,0 +1,65 @@
+{
+  "id": "tutu-kachhua-or-udne-ka-sapna",
+  "title": "टूटू कछुआ और उड़ने का सपना",
+  "description": "एक छोटे कछुए की अनोखी जिद उसे आसमान के करीब ले जाती है।",
+  "tags": [
+    "kids stories",
+    "hindi stories",
+    "turtle story",
+    "dreams",
+    "bedtime tale"
+  ],
+  "character_reference": "a small gentle green tortoise with a polished patterned shell and a tiny yellow scarf tied around his neck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "टूटू कछुआ रोज आसमान में उड़ते हुए पक्षियों को देखता और खुद भी उड़ने का सपना देखता था।",
+      "on_screen_text": "उड़ने का सपना",
+      "duration_hint": 6.0,
+      "visual": "Medium shot of a small green tortoise looking longingly up at soaring birds from a grassy hilltop under a vast blue sky."
+    },
+    {
+      "narration": "बाकी जानवर उसकी इस इच्छा पर हंसते थे क्योंकि कछुए उड़ नहीं सकते थे।",
+      "on_screen_text": "दूसरों की हंसी",
+      "duration_hint": 5.2,
+      "visual": "Close up of mischievous forest animals giggling behind bushes while looking at the thoughtful little tortoise."
+    },
+    {
+      "narration": "लेकिन टूटूर ने हार नहीं मानी। उसने हवा में तैरने का एक अनूठा तरीका ढूंढने की ठानी।",
+      "on_screen_text": "नई तरकीब",
+      "duration_hint": 5.8,
+      "visual": "Side shot of the tortoise rolling out a large, lightweight dandelion parachute he crafted himself with great care."
+    },
+    {
+      "narration": "एक तेज हवा के झोंके के साथ, टूटूर ने पहाड़ी की चोटी से छलांग लगा दी।",
+      "on_screen_text": "बड़ी छलांग",
+      "duration_hint": 5.2,
+      "visual": "Action shot of the tortoise launching into the air from a windy cliff edge, holding onto a giant fluffy dandelion head."
+    },
+    {
+      "narration": "चमत्कार हुआ! हवा ने उसके पैराशूट को थाम लिया और वह धीरे-धीरे हवा में तैरने लगा।",
+      "on_screen_text": "हवा में तैरना",
+      "duration_hint": 5.8,
+      "visual": "Wide angle shot of the tortoise floating gently through the airy clouds, looking down with pure amazement and joy."
+    },
+    {
+      "narration": "नीचे खड़े सभी जानवर उसे हवा में उड़ता देख अचंभे से अपनी आंखें खुली की खुली रह गईं।",
+      "on_screen_text": "अचंभे में सब",
+      "duration_hint": 6.0,
+      "visual": "Low angle shot of forest animals staring upward with wide eyes and open mouths in sheer disbelief."
+    },
+    {
+      "narration": "अपने सपनों पर विश्वास हो तो हर नामुमकिन काम मुमकिन हो जाता है।",
+      "on_screen_text": "सपनों की उड़ान",
+      "duration_hint": 5.2,
+      "visual": "Close up of the smiling tortoise safely landing back on soft grass, glowing with a sense of proud accomplishment."
+    },
+    {
+      "narration": "ऐसी ही प्यारी कहानियों के सफर पर हमारे साथ बने रहने के लिए सब्सक्राइब करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "Magical wide shot of floating dandelion seeds glowing softly against a warm, sunset-colored evening sky."
+    }
+  ]
+}

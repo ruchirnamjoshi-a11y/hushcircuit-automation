@@ -1,0 +1,65 @@
+{
+  "id": "the-midnight-bakery",
+  "title": "The Midnight Bakery",
+  "description": "An insomniac accountant opens her kitchen at midnight to bake sourdough for neighborhood shift workers, finding community in the dark hours.",
+  "tags": [
+    "baking",
+    "community",
+    "insomnia",
+    "connection",
+    "night"
+  ],
+  "character_reference": "a woman in her early forties with shoulder-length red hair pulled back in a messy bun, wearing a flour-dusted grey hoodie and an apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "While the rest of the city slept behind locked doors and drawn curtains, my internal clock remained wide awake at three in the morning.",
+      "on_screen_text": "THREE IN THE MORNING",
+      "duration_hint": 11.0,
+      "visual": "medium shot of a woman staring out a dark kitchen window at a silent, streetlight-illuminated suburban street at night"
+    },
+    {
+      "narration": "Instead of staring at the ceiling counting anxiety, I turned on the oven light, measured out flour, water, and bubbly sourdough starter.",
+      "on_screen_text": "THE OVEN LIGHT",
+      "duration_hint": 11.0,
+      "visual": "close-up of flour being poured from a glass jar into a large ceramic mixing bowl on a clean marble kitchen counter"
+    },
+    {
+      "narration": "The rhythmic kneading became my meditation. Push, fold, turn, repeat. The heavy dough grew smooth and elastic under my palms.",
+      "on_screen_text": "RHYTHMIC KNEADING",
+      "duration_hint": 11.0,
+      "visual": "close-up of hands firmly kneading a mound of sticky sourdough dough on a wooden countertop dusted with white flour"
+    },
+    {
+      "narration": "One night, I left a warm loaf on the front porch with a small sign reading 'Fresh bread for night shift workers. Take one.'",
+      "on_screen_text": "THE PORCH LOAF",
+      "duration_hint": 11.0,
+      "visual": "medium shot of a golden-brown round loaf of artisan bread resting on a rustic wooden porch bench under the amber glow of a porch light"
+    },
+    {
+      "narration": "By morning, the loaf was gone, replaced by a handwritten thank-you note from a tired hospital nurse who walked past my house every dawn.",
+      "on_screen_text": "THE RETURN NOTE",
+      "duration_hint": 11.0,
+      "visual": "close-up of a small lined sticky note with handwritten cursive resting next to an empty bread basket on a wooden porch railing"
+    },
+    {
+      "narration": "Now, three ovens run every night. Porch baskets fill with warm crusts for nurses, bakers, police officers, and fellow insomniacs.",
+      "on_screen_text": "MIDNIGHT BAKING",
+      "duration_hint": 11.0,
+      "visual": "medium shot of three glowing oven windows in a cozy kitchen, steam rising from golden crusts cooling on wire racks"
+    },
+    {
+      "narration": "Insomnia used to feel like a lonely curse. Now it is the quiet bridge connecting me to the hidden heart of my neighborhood.",
+      "on_screen_text": "THE HIDDEN HEART",
+      "duration_hint": 11.0,
+      "visual": "medium shot of the baker smiling warmly as she pulls a hot, perfectly browned loaf of sourdough out of the oven with thick mitts"
+    },
+    {
+      "narration": "If you ever find yourself awake while the world rests, remember you are never truly alone in the dark. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "wide-angle kitchen interior shot at midnight, warm amber lights casting a cozy glow over rows of cooling artisan bread loaves"
+    }
+  ]
+}

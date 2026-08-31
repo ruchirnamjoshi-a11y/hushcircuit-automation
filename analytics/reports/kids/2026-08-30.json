@@ -1,0 +1,20 @@
+{
+  "start_date": "2026-08-24",
+  "end_date": "2026-08-30",
+  "channel": {
+    "views": 1,
+    "estimatedMinutesWatched": 0,
+    "averageViewDuration": 0,
+    "averageViewPercentage": 0,
+    "subscribersGained": 0,
+    "subscribersLost": 0
+  },
+  "top_videos": [
+    {
+      "video": "MiSph6LN-OU",
+      "views": 1,
+      "averageViewDuration": 0,
+      "averageViewPercentage": 0
+    }
+  ]
+}

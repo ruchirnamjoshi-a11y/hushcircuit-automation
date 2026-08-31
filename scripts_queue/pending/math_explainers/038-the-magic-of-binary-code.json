@@ -1,0 +1,65 @@
+{
+  "id": "the-magic-of-binary-code",
+  "title": "The Magic of Binary Code",
+  "description": "Discover how just two numbers power every digital device in the modern world.",
+  "tags": [
+    "binary",
+    "computers",
+    "coding",
+    "math",
+    "technology"
+  ],
+  "character_reference": "a young coder with spiky blonde hair wearing a dark blue zip up hoodie and glowing headphones around their neck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Every video, message, and game on your phone is built using only two options, zeros and ones.",
+      "on_screen_text": "TWO OPTIONS",
+      "duration_hint": 5.5,
+      "visual": "fingers rapidly typing on a sleek mechanical keyboard with glowing blue keycaps"
+    },
+    {
+      "narration": "Think of zero and one like a tiny light switch that can be flipped either completely off or fully on.",
+      "on_screen_text": "THE LIGHT SWITCH",
+      "duration_hint": 5.5,
+      "visual": "close up of a vintage toggle switch being pushed up into the glowing on position"
+    },
+    {
+      "narration": "By lining up thousands of these switches together, computers can represent letters, colors, and sounds.",
+      "on_screen_text": "LINING UP SWITCHES",
+      "duration_hint": 5.0,
+      "visual": "rows of tiny glowing indicator lights blinking in sequence on a futuristic circuit board"
+    },
+    {
+      "narration": "Instead of counting in tens like we do with our fingers, binary counts in powers of two.",
+      "on_screen_text": "POWERS OF TWO",
+      "duration_hint": 5.5,
+      "visual": "glowing digital columns showing numbers doubling from one to two to four and eight"
+    },
+    {
+      "narration": "The first column is worth one, the next is worth two, then four, then eight, and so on.",
+      "on_screen_text": "PLACE VALUES",
+      "duration_hint": 5.5,
+      "visual": "neatly organized columns of glowing binary digits hovering above a wooden workbench"
+    },
+    {
+      "narration": "When you turn on the one and four switches while leaving the others off, you get the number five.",
+      "on_screen_text": "MAKING NUMBERS",
+      "duration_hint": 6.0,
+      "visual": "tapping a glowing virtual panel to toggle binary bits into a specific combination"
+    },
+    {
+      "narration": "It sounds simple, yet this elementary math system powers everything from smartphones to deep space probes.",
+      "on_screen_text": "POWERING THE WORLD",
+      "duration_hint": 6.0,
+      "visual": "abstract digital globe spinning slowly with glowing network lines connecting across continents"
+    },
+    {
+      "narration": "If you love seeing how math brings technology to life, follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "smiling coder giving a friendly thumbs up in front of a softly glowing monitor"
+    }
+  ]
+}

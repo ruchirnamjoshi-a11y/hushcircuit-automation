@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-seven",
+  "title": "Neon Pulse — Episode 7: The Offshore Coordinates",
+  "description": "Kael tracks decrypted coordinates to an offshore research platform, only to discover automated defenses and a chilling countdown.",
+  "tags": [
+    "original hero saga",
+    "action adventure",
+    "sci-fi thriller",
+    "superhero",
+    "mystery"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 7,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The coordinates led me past the jagged coastline into the freezing open sea, where a massive industrial platform loomed through the fog.",
+      "on_screen_text": "THE OFFSHORE PLATFORM",
+      "duration_hint": 6.0,
+      "visual": "A massive steel industrial research platform rising from dark, choppy ocean waters under a thick, overcast night sky, wide cinematic angle, dramatic lighting."
+    },
+    {
+      "narration": "I scaled the rusted maintenance ladder in the biting wind, my jacket glowing faintly against the pitch-black metal hull.",
+      "on_screen_text": "SCALING THE HULL",
+      "duration_hint": 6.0,
+      "visual": "Close-up shot of hands gripping a rusted metal ladder against a dark ocean backdrop, sea spray catching the dim ambient light."
+    },
+    {
+      "narration": "Stepping onto the service deck, I forced open a heavy security hatch, sliding into the dark facility below.",
+      "on_screen_text": "FORCING ENTRY",
+      "duration_hint": 5.0,
+      "visual": "A heavy metal hatch pried open, revealing a dark, cavernous industrial corridor illuminated only by emergency red floor lights."
+    },
+    {
+      "narration": "The data drive in my hand vibrated, reacting to the complex network humming through the walls of this secret installation.",
+      "on_screen_text": "THE DRIVE REACTS",
+      "duration_hint": 6.0,
+      "visual": "Close-up of a hand holding a glowing data chip that pulses with bright energy inside a shadowed control room."
+    },
+    {
+      "narration": "Suddenly, automated turret systems pivoted from the ceiling, locking their targeting lasers directly onto my position.",
+      "on_screen_text": "TRAPPED BY TURRETS",
+      "duration_hint": 6.0,
+      "visual": "Multiple red laser targeting beams crisscrossing across a narrow industrial corridor, casting sharp shadows on metallic walls."
+    },
+    {
+      "narration": "I channeled the amber energy through my arms, unleashing a massive kinetic blast that shattered the security drones into scrap metal.",
+      "on_screen_text": "KINETIC BLAST",
+      "duration_hint": 6.0,
+      "visual": "A powerful shockwave of bright amber light exploding down a metal corridor, sending metallic debris flying in all directions."
+    },
+    {
+      "narration": "An alarm wailed overhead as a central holographic monitor activated, displaying a countdown and a message from the shadowy architects.",
+      "on_screen_text": "THE COUNTDOWN",
+      "duration_hint": 6.0,
+      "visual": "Glowing digital numbers counting down on a large circular control console in a high-tech laboratory, casting an eerie blue light."
+    },
+    {
+      "narration": "The facility was set to self-destruct, and the true mastermind was watching every move I made from the shadows.",
+      "on_screen_text": "THE MASTERMIND",
+      "duration_hint": 5.0,
+      "visual": "A pair of cold eyes watching from the darkened glass window of a high surveillance control booth overlooking the lower decks."
+    },
+    {
+      "narration": "Follow along for more chapters in the journey to uncover the truth.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "A dramatic low-angle shot looking up as a figure turns away from a glowing control panel, stepping resolutely into a dark hallway."
+    }
+  ]
+}

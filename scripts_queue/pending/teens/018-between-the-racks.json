@@ -1,0 +1,65 @@
+{
+  "id": "between-the-racks",
+  "title": "Between the Racks",
+  "description": "An introverted thrift store employee learns to stand up for their creative vision.",
+  "tags": [
+    "thrift",
+    "vintage",
+    "fashion",
+    "workplace",
+    "confidence"
+  ],
+  "character_reference": "a short teenager with curly ginger hair tied in a messy bun, wearing a patchwork denim vest and mismatched vintage button-up shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sorting through endless boxes of donated clothes was my daily escape from social chaos. I preferred old jackets to actual human conversation.",
+      "on_screen_text": "ENDLESS BOXES",
+      "duration_hint": 14.0,
+      "visual": "sitting cross-legged on a wooden floor surrounded by towering cardboard boxes overflowing with colorful vintage clothing items"
+    },
+    {
+      "narration": "My manager wanted me to hide the eccentric seventies pieces in the back corner. She said nobody in our town would ever buy them.",
+      "on_screen_text": "HIDDEN AWAY",
+      "duration_hint": 14.0,
+      "visual": "holding up a bright neon orange windbreaker with a doubtful expression in a crowded storage room filled with hanging garments"
+    },
+    {
+      "narration": "Instead of obeying blindly, I decided to curate the front window display using my absolute favorite retro items. It was a risky move.",
+      "on_screen_text": "THE WINDOW DISPLAY",
+      "duration_hint": 14.0,
+      "visual": "arranging a vibrant floral jacket on a vintage wooden mannequin near a large sunny glass window inside an independent shop"
+    },
+    {
+      "narration": "When my manager walked by the front display, she stopped dead in her tracks. My heart hammered against my ribs waiting for the scolding.",
+      "on_screen_text": "THE MANAGER'S REACTION",
+      "duration_hint": 14.0,
+      "visual": "peeking nervously from behind a clothing rack while watching an older person stare intently at the decorated storefront window"
+    },
+    {
+      "narration": "Instead of getting fired, she smiled and said the bold styling was the best thing our shop had featured all year.",
+      "on_screen_text": "AN UNEXPECTED PRAISE",
+      "duration_hint": 13.0,
+      "visual": "wide-eyed with pleasant surprise, exhaling a huge sigh of relief while leaning against a polished wooden counter"
+    },
+    {
+      "narration": "Customers started walking in specifically to ask who designed the front window. My quiet corner suddenly felt like a stage.",
+      "on_screen_text": "TURNING HEADS",
+      "duration_hint": 13.0,
+      "visual": "smiling brightly while handing a paper shopping bag across a rustic checkout counter to an appreciative shopper"
+    },
+    {
+      "narration": "Trusting your own aesthetic is the first step toward finding your place in any room.",
+      "on_screen_text": "YOUR OWN STYLE",
+      "duration_hint": 12.0,
+      "visual": "adjusting a colorful collar proudly while looking out over a neatly organized floor of vintage clothing racks"
+    },
+    {
+      "narration": "Follow along for more daily stories about finding confidence in unexpected places.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "friendly portrait of the teen in warm golden hour sunlight streaming through antique window panes"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-ten",
+  "title": "Neon Pulse — Episode 10: Echoes of Betrayal",
+  "description": "Kael pursues the true mastermind through the wreckage of the offshore facility while uncovering deeper secrets about his origins.",
+  "tags": [
+    "action",
+    "superhero",
+    "scifi",
+    "thriller",
+    "original"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 10,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The platform burned behind me, a raging inferno sinking into the dark ocean swells.",
+      "on_screen_text": "SINKING PLATFORM",
+      "duration_hint": 4.0,
+      "visual": "Low angle extreme wide shot of a crumbling industrial marine oil rig engulfed in roaring flames and thick black smoke against a stormy midnight sea horizon, cinematic lighting, photorealistic."
+    },
+    {
+      "narration": "My stolen datapad flashed with encrypted coordinates pointing toward the mainland coastline.",
+      "on_screen_text": "ENCRYPTED SIGNAL",
+      "duration_hint": 4.5,
+      "visual": "Close up on a rugged futuristic handheld device glowing with bright cyan holographic code projections illuminating a wet metal deck, dynamic hand-held camera perspective, moody atmosphere."
+    },
+    {
+      "narration": "That scarred traitor had not acted alone; an entire syndicate backed their twisted experiments.",
+      "on_screen_text": "THE SYNDICATE",
+      "duration_hint": 4.0,
+      "visual": "Medium wide shot of a solitary figure standing at the prow of a speeding inflatable motorboat cutting through choppy dark waves, leaving a churning white wake behind, epic cinematic composition."
+    },
+    {
+      "narration": "I leaped from the wreckage just as the final reactor core detonated into the night.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 4.0,
+      "visual": "Action shot of a figure launching backwards off a collapsing metal ramp while a massive fireball erupts in the background, high contrast lighting, motion blur on the edges, dramatic perspective."
+    },
+    {
+      "narration": "Washing ashore near the industrial docks, the amber pulse beneath my jacket flared violently.",
+      "on_screen_text": "SHORELINE ARRIVAL",
+      "duration_hint": 4.0,
+      "visual": "Low angle close up on heavy combat boots stepping onto wet sand and rusted steel debris, glowing amber light bleeding through fabric seams, foggy industrial harbor backdrop at dawn."
+    },
+    {
+      "narration": "A familiar silhouette waited by the shadows of the abandoned shipping container yard.",
+      "on_screen_text": "WAITING SHADOW",
+      "duration_hint": 4.0,
+      "visual": "Medium shot of a mysterious hooded figure standing motionless between towering stacks of weathered cargo containers, casting long eerie shadows under flickering yellow overhead lamps."
+    },
+    {
+      "narration": "They left a message carved into the steel, warning me that my power was never mine to keep.",
+      "on_screen_text": "WARNING MESSAGE",
+      "duration_hint": 4.5,
+      "visual": "Close up tracking shot of fresh deep slash marks and burnt circuitry symbols etched into a thick metal wall, steam hissing from the grooves, moody dramatic blue and orange lighting."
+    },
+    {
+      "narration": "The true hunt begins now, and I will track them to the very end of the line.",
+      "on_screen_text": "THE HUNT BEGINS",
+      "duration_hint": 4.0,
+      "visual": "Over the shoulder medium shot of a determined protagonist staring forward into a labyrinth of dark foggy alleyways, hands clenched into fists, glowing jacket details reflecting on wet pavement."
+    },
+    {
+      "narration": "Follow along on the channel for the next chapter of this ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.5,
+      "visual": "Cinematic portrait shot against a dark industrial alley backdrop with soft bokeh lights glowing in the distance, subtle atmospheric dust motes floating in the air, clean composition."
+    }
+  ]
+}

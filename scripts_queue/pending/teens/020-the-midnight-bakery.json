@@ -1,0 +1,65 @@
+{
+  "id": "the-midnight-bakery",
+  "title": "The Midnight Bakery",
+  "description": "An apprentice pastry chef learns that patience is the secret ingredient to mastering sourdough.",
+  "tags": [
+    "baking",
+    "food",
+    "patience",
+    "apprentice",
+    "craft"
+  ],
+  "character_reference": "a teenager with flour dusted across freckled cheeks and wavy brown hair tied back with a blue bandana, wearing a stained white apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My sourdough starter had been sitting on the kitchen counter for weeks, looking sluggish and smelling more like vinegar than yeast.",
+      "on_screen_text": "THE STUBBORN STARTER",
+      "duration_hint": 14.0,
+      "visual": "staring skeptically into a clear glass mason jar filled with bubbling white fermented dough on a rustic wooden table"
+    },
+    {
+      "narration": "The head baker told me that rushing the fermentation process always ruins the crust. I hated waiting more than anything else.",
+      "on_screen_text": "THE HARD LESSON",
+      "duration_hint": 14.0,
+      "visual": "kneading a sticky lump of bread dough vigorously on a flour-dusted wooden workbench under warm pendant lights"
+    },
+    {
+      "narration": "One night, instead of sleeping, I decided to stay up through the bulk fermentation cycle to watch every single bubble form.",
+      "on_screen_text": "NIGHT SHIFT",
+      "duration_hint": 13.0,
+      "visual": "resting chin on hands while peering closely at a covered dough bowl in a quiet, dark kitchen illuminated only by an oven light"
+    },
+    {
+      "narration": "I realized baking wasn't about rigid timelines; it was about listening to the rhythm of the ingredients and feeling the temperature.",
+      "on_screen_text": "LISTENING CLOSELY",
+      "duration_hint": 14.0,
+      "visual": "touching the surface of rising dough with fingertips to test its elasticity and airy texture in a warm kitchen"
+    },
+    {
+      "narration": "When I finally slid the heavy loaf into the scorching dutch oven, my hands didn't shake for the first time ever.",
+      "on_screen_text": "THE OVEN DROP",
+      "duration_hint": 13.0,
+      "visual": "carefully lowering unbaked scored dough into a heavy cast-iron pot using parchment paper slings"
+    },
+    {
+      "narration": "Pulling off the lid revealed a crackling dark golden crust with an ear that rose up like a triumphant wave.",
+      "on_screen_text": "GOLDEN CRUST",
+      "duration_hint": 13.0,
+      "visual": "lifting a heavy iron lid with oven mitts as thick steam rises from a perfectly baked golden-brown sourdough loaf"
+    },
+    {
+      "narration": "Good things take time to rise. You just have to trust the process and give yourself room to grow.",
+      "on_screen_text": "TRUST THE PROCESS",
+      "duration_hint": 13.0,
+      "visual": "smiling proudly while slicing through a warm crusty bread loaf with a serrated knife on a wooden cutting board"
+    },
+    {
+      "narration": "Follow along for more daily stories about mastering your craft and embracing the journey.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "warm portrait of the young baker holding a fresh loaf of bread with cozy rustic kitchen lighting"
+    }
+  ]
+}

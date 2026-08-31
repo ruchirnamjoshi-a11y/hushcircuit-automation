@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-nine",
+  "title": "Neon Pulse — Episode 9: Collapsing Foundations",
+  "description": "Kael faces his scarred ally in a crumbling offshore facility while racing against the clock.",
+  "tags": [
+    "action",
+    "superhero",
+    "sci-fi",
+    "thriller",
+    "suspense"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 9,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Steel beams groan overhead as the offshore platform violently tilts into the churning ocean below. Kael stumbles against a slanted bulkhead, fighting to keep his footing amidst the blinding alarms.",
+      "on_screen_text": "THE PLATFORM FALLS",
+      "duration_hint": 11.3,
+      "visual": "interior of a sinking industrial control room tilting heavily to one side, smoke and red emergency strobe lights flashing across buckled steel flooring, low angle shot"
+    },
+    {
+      "narration": "Smoke chokes the corridor, but the amber light pulsing down his sleeves cuts through the gloom. He channels the artificial surges through his palms, preparing for an immediate counter-attack.",
+      "on_screen_text": "POWER SURGE ACTIVE",
+      "duration_hint": 12.6,
+      "visual": "dark narrow metal corridor filled with thick gray smoke, hands raised forward glowing with intense orange energy lighting up the surrounding pipes, medium shot"
+    },
+    {
+      "narration": "Footsteps echo over the roar of rushing water from the lower decks. A familiar silhouette emerges from the heavy fog, blocking the only remaining escape route out of this sector.",
+      "on_screen_text": "A FAMILIAR ENEMY",
+      "duration_hint": 11.7,
+      "visual": "a scarred figure standing firm in the middle of a destroyed hallway, dramatic backlight cutting through heavy haze and airborne dust, over the shoulder perspective"
+    },
+    {
+      "narration": "You led them right to me, Kael shouts over the alarms, demanding answers for the ultimate betrayal. The scarred ally just offers a cold, dismissive smirk.",
+      "on_screen_text": "THE ULTIMATE BETRAYAL",
+      "duration_hint": 12.6,
+      "visual": "close up of a determined face staring intensely forward with narrowed eyes, background blurred out with flickering orange fire, cinematic portrait"
+    },
+    {
+      "narration": "Without a word, a kinetic blast shatters the wall between them, sending jagged shrapnel flying in all directions. Kael ducks instinctively, sliding across the slick metal floor.",
+      "on_screen_text": "BLAST OF ENERGY",
+      "duration_hint": 11.7,
+      "visual": "body sliding rapidly across a damaged floor while glowing debris and sparks rain down from a blown-out bulkhead, high action motion blur"
+    },
+    {
+      "narration": "He lunges forward with incredible speed, closing the distance in a fraction of a second. His fist ignites with blinding amber fire, ready to strike down his former partner.",
+      "on_screen_text": "LIGHTNING STRIKE",
+      "duration_hint": 11.7,
+      "visual": "dynamic action shot of a running leap through a shattered doorway, arm cocked back with a fist radiating bright orange light, dramatic low angle"
+    },
+    {
+      "narration": "A hidden defensive barrier flickers to life, intercepting the blow with a deafening shockwave that rattles the entire steel foundation. Kael is thrown backward by the violent feedback.",
+      "on_screen_text": "SHIELD ACTIVATED",
+      "duration_hint": 12.6,
+      "visual": "powerful energy shockwave expanding outward in a circular ripple, illuminating flying metallic fragments inside a ruined industrial chamber, wide action angle"
+    },
+    {
+      "narration": "As the platform begins its final plunge into the sea, a secondary escape pod launches into the dark night sky. Kael watches the vessel vanish, realizing the true mastermind is still out there.",
+      "on_screen_text": "THE ESCAPE POD",
+      "duration_hint": 13.0,
+      "visual": "silhouette standing at the edge of a collapsing concrete platform looking up at a fiery streak ascending into a stormy night sky, epic wide view"
+    },
+    {
+      "narration": "The battle for truth has only just begun in the neon shadows. Follow along for more chapters in the ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "dramatic close up of hands glowing with fading amber circuitry lines, soft cinematic lighting reflecting off wet metallic surfaces, calm atmospheric shot"
+    }
+  ]
+}

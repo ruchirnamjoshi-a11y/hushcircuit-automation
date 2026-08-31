@@ -1,0 +1,71 @@
+{
+  "id": "oliver-otter-and-the-pebble-song",
+  "title": "Oliver Otter and the Pebble Song",
+  "description": "Oliver Otter is worried his musical pebble toss sounds silly until he hears how happy it makes the river forest.",
+  "tags": [
+    "otter",
+    "music",
+    "confidence",
+    "nature",
+    "bedtime"
+  ],
+  "character_reference": "a playful young sea otter with glossy chocolate-brown fur, a creamy white chest, and bright cheerful eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Oliver sat on a smooth river rock, clutching three shiny flat pebbles in his paws. He loved making music where the water rippled.",
+      "on_screen_text": "RIVER MUSIC",
+      "duration_hint": 12.0,
+      "visual": "A young otter sitting on a mossy rock by a gently flowing river, holding smooth stones, dappled sunlight shimmering on the water surface."
+    },
+    {
+      "narration": "He tossed one small stone into the stream, listening to the soft plip sound. But then he stopped, worrying it sounded too quiet.",
+      "on_screen_text": "A QUIET SPLASH",
+      "duration_hint": 12.0,
+      "visual": "Close up of an otter looking down doubtfully at ripples spreading across clear blue water, thoughtful expression, soft focus background."
+    },
+    {
+      "narration": "What if the frogs and fish think my song is silly? he murmured, pulling his paws back into his lap.",
+      "on_screen_text": "FEELING SHY",
+      "duration_hint": 11.0,
+      "visual": "An otter hugging his knees on a riverbank, looking down shyly, gentle watercolor style illustration, warm afternoon lighting."
+    },
+    {
+      "narration": "A green frog popped up from the reeds nearby, blinking its large golden eyes and smiling a wide, welcoming smile.",
+      "on_screen_text": "A GREEN FRIEND",
+      "duration_hint": 11.0,
+      "visual": "A cheerful green frog sitting on a lily pad close to the rock, looking upward with bright friendly eyes, charming macro perspective."
+    },
+    {
+      "narration": "Please play more, the frog croaked gently. Your stones make the water dance and help us all feel peaceful.",
+      "on_screen_text": "PLAY MORE",
+      "duration_hint": 12.0,
+      "visual": "An otter looking surprised and delighted as a tiny frog near the water creates little ripples of its own, warm friendly atmosphere."
+    },
+    {
+      "narration": "Oliver beamed with joy. He tossed another smooth pebble into the current, creating a lovely rhythm.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 11.0,
+      "visual": "An otter tossing a stone with a joyful expression, water splashing in sparkling crystal droplets, bright uplifting colors."
+    },
+    {
+      "narration": "Soon, frogs and dragonflies joined the gentle tune, turning the quiet evening river into a symphony of happiness.",
+      "on_screen_text": "RIVER SYMPHONY",
+      "duration_hint": 12.0,
+      "visual": "Wide shot of a peaceful river at twilight filled with floating lily pads and glowing fireflies, magical tranquil mood."
+    },
+    {
+      "narration": "Your unique voice and special talents bring joy to the world just by being yourself. Rest well.",
+      "on_screen_text": "REST WELL",
+      "duration_hint": 12.0,
+      "visual": "An otter floating comfortably on its back in calm water under a starry night sky, closed eyes, peaceful sleepy expression."
+    },
+    {
+      "narration": "We share a brand new gentle story every single day. Follow along for more heartwarming bedtime tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "A cozy riverbank scene under moonlight with gentle twinkling stars, comforting bedtime aesthetic, soft glowing illumination."
+    }
+  ]
+}

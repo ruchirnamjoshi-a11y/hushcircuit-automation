@@ -1,0 +1,65 @@
+{
+  "id": "the-rhythm-of-pavement",
+  "title": "The Rhythm of Pavement",
+  "description": "A beginner longboarder overcomes the fear of falling down steep hills.",
+  "tags": [
+    "skate",
+    "longboard",
+    "courage",
+    "balance",
+    "teen"
+  ],
+  "character_reference": "a young adult with messy sandy blonde hair, wearing a striped hoodie, scuffed canvas sneakers, and knee pads",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The top of the paved park hill looked completely vertical from where my board sat trembling beneath my sneakers.",
+      "on_screen_text": "THE STEEP HILL",
+      "duration_hint": 13.0,
+      "visual": "looking down a steep sloping concrete pathway surrounded by tall green pine trees during late afternoon"
+    },
+    {
+      "narration": "Every time I tried to shift my weight forward, my legs turned to jelly and I bailed onto the grass before picking up speed.",
+      "on_screen_text": "FEELING THE FEAR",
+      "duration_hint": 14.0,
+      "visual": "sitting on a grassy hill shoulder holding a wooden longboard while looking frustrated and out of breath"
+    },
+    {
+      "narration": "Skateboarding wasn't about never wiping out; it was about learning how to absorb the impact and get back up instantly.",
+      "on_screen_text": "THE WIPE OUT",
+      "duration_hint": 14.0,
+      "visual": "feet pushing off the pavement with the longboard rolling forward while maintaining a low center of gravity"
+    },
+    {
+      "narration": "I took a deep breath, planted my back foot firmly on the tail, and pushed off the concrete without looking back.",
+      "on_screen_text": "PUSHING OFF",
+      "duration_hint": 13.0,
+      "visual": "carving a smooth turn on a smooth asphalt road with the board tilted at a sharp angle under golden hour light"
+    },
+    {
+      "narration": "The wind rushed past my ears as the wheels hummed loudly against the smooth asphalt surface. I wasn't falling anymore; I was flying.",
+      "on_screen_text": "CATCHING SPEED",
+      "duration_hint": 14.0,
+      "visual": "motion-blurred low angle shot of longboard wheels spinning rapidly across grey pavement with warm sunlight streaming through trees"
+    },
+    {
+      "narration": "Sliding to a smooth stop at the bottom of the slope, my heart pounded with an incredible rush of pure adrenaline.",
+      "on_screen_text": "THE BOTTOM TURN",
+      "duration_hint": 13.0,
+      "visual": "stepping off the longboard onto flat pavement with a wide triumphant grin and arms raised slightly in victory"
+    },
+    {
+      "narration": "Confidence isn't the absence of fear. It's the decision to roll right through it anyway.",
+      "on_screen_text": "ROLLING FORWARD",
+      "duration_hint": 12.0,
+      "visual": "holding the longboard under one arm while walking up a sunlit park path with a relaxed and confident posture"
+    },
+    {
+      "narration": "For more daily stories about conquering doubts and finding momentum, make sure to follow along.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "friendly portrait of the skater smiling against a scenic background of glowing trees at sunset"
+    }
+  ]
+}

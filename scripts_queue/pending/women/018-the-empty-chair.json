@@ -1,0 +1,65 @@
+{
+  "id": "the-empty-chair",
+  "title": "The Empty Chair",
+  "description": "A woman learns the quiet power of sitting alone at a busy restaurant table, shedding the fear of solitude and embracing her own company.",
+  "tags": [
+    "solitude",
+    "independence",
+    "self-love",
+    "restaurant",
+    "confidence"
+  ],
+  "character_reference": "an athletic woman in her early thirties with sleek black hair cut into a sharp bob, wearing a minimalist emerald green knit sweater and delicate gold hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The hostess smiled warmly, holding up a single menu and asking the dreaded question that used to make me turn around and leave.",
+      "on_screen_text": "TABLE FOR ONE",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a welcoming restaurant interior with warm ambient lighting, wooden tables, and copper pendant lamps hanging low from the ceiling"
+    },
+    {
+      "narration": "In the past, eating alone in public felt like wearing a neon sign that advertised my loneliness to every crowded table around me.",
+      "on_screen_text": "OLD HABITS",
+      "duration_hint": 7.5,
+      "visual": "blurred background of a bustling bistro with couples talking, dark moody foreground focusing on an empty chair pulled out at a small corner table"
+    },
+    {
+      "narration": "Tonight, I took a deep breath, looked past the hesitation, and nodded to the hostess with a quiet, genuine smile.",
+      "on_screen_text": "THE NOD",
+      "duration_hint": 6.5,
+      "visual": "close-up of a face lighting up with a confident smile, warm restaurant fairy lights creating soft bokeh in the background, elegant and poised"
+    },
+    {
+      "narration": "I chose a corner booth where I could watch the city move past the large glass window like a gentle, cinematic film.",
+      "on_screen_text": "THE CORNER BOOTH",
+      "duration_hint": 7.0,
+      "visual": "wide shot of a cozy corner booth next to a tall window showing rain streaks and passing car lights outside in the evening street"
+    },
+    {
+      "narration": "Instead of burying my face in a glowing phone screen to look busy, I simply rested my hands on the table and observed.",
+      "on_screen_text": "UNPLUGGED",
+      "duration_hint": 7.0,
+      "visual": "close-up of hands resting calmly on a dark wooden tabletop next to a silver water glass, relaxed fingers, soft candlelight flickering nearby"
+    },
+    {
+      "narration": "The food arrived, fragrant and steaming, and I tasted each bite with an attention that rushing through meals had always stolen from me.",
+      "on_screen_text": "SAVORING THE MOMENT",
+      "duration_hint": 7.5,
+      "visual": "macro shot of a beautifully plated warm dish on a ceramic plate, steam rising gently in the ambient restaurant lighting, shallow depth of field"
+    },
+    {
+      "narration": "Solitude was no longer a cold waiting room. It had transformed into a peaceful sanctuary where I finally enjoyed my own company.",
+      "on_screen_text": "SANCTUARY",
+      "duration_hint": 7.0,
+      "visual": "medium portrait of a person looking out a window with a calm, serene expression, warm interior reflection on the glass, peaceful atmosphere"
+    },
+    {
+      "narration": "If you are learning to enjoy the peace of your own company, follow along for more stories of quiet independence.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "close-up of a gentle, reassuring smile under warm restaurant lighting, looking toward the viewer with confidence and grace"
+    }
+  ]
+}
