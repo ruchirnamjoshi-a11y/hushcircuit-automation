@@ -174,7 +174,13 @@ TRACKS: dict[str, Track] = {
             "confidence or connection — not a moralizing lecture."
         ),
         extra_tags=["short story", "ya fiction", "relatable story"],
-        paused=True,
+        # Not deliberately paused -- there's simply no YOUTUBE_TOKEN_B64_TEENS
+        # GitHub secret yet (confirmed via `gh secret list`, 2026-09-05), so
+        # this channel was never actually connected. run_daily.py already
+        # skips a track with no token cleanly ("no token, skipping") rather
+        # than failing, so paused=False here is safe the moment a real
+        # channel + OAuth token exists -- it just does nothing until then.
+        paused=False,
     ),
     "adults": Track(
         key="adults",
@@ -200,7 +206,8 @@ TRACKS: dict[str, Track] = {
             "hopeful without being saccharine."
         ),
         extra_tags=["short story", "life story", "story time"],
-        paused=True,
+        # No YOUTUBE_TOKEN_B64_ADULTS secret set yet -- see teens' comment above.
+        paused=False,
     ),
     "women": Track(
         key="women",
@@ -227,7 +234,8 @@ TRACKS: dict[str, Track] = {
             "affirming without being preachy."
         ),
         extra_tags=["short story", "women's story", "inspiring story"],
-        paused=True,
+        # No YOUTUBE_TOKEN_B64_WOMEN secret set yet -- see teens' comment above.
+        paused=False,
     ),
     "hindi_mythology": Track(
         # Key/secret filenames kept as "hindi_mythology" (retiring the old
@@ -317,7 +325,8 @@ TRACKS: dict[str, Track] = {
         ),
         extra_tags=["superhero story", "original story", "action adventure", "animated series", "hero saga"],
         serialized=True,
-        paused=True,
+        # No YOUTUBE_TOKEN_B64_HERO_SAGA secret set yet -- see teens' comment above.
+        paused=False,
     ),
     "math_explainers": Track(
         key="math_explainers",
