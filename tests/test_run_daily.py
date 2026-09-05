@@ -110,19 +110,29 @@ def test_run_skips_remaining_tracks_after_quota_exhaustion():
 
 
 def test_run_skips_paused_tracks_without_calling_run_track():
-    # hindi_mythology/teens/adults/women/hero_saga are paused=True (see
-    # pipeline.config) -- run() must skip them before ever calling
-    # run_track/run_math_track, not just before producing anything.
-    paused_keys = {k for k, t in TRACKS.items() if t.paused}
-    assert paused_keys, "this test needs at least one paused track to be meaningful"
+    # run() must skip a paused track before ever calling run_track/
+    # run_math_track, not just before producing anything. Built from an
+    # isolated fixture rather than depending on some production track in
+    # pipeline.config actually being paused=True right now -- that's a
+    # content decision that changes over time (all four tracks that used to
+    # be paused for "not launched yet" reasons were unpaused 2026-09-05,
+    # since the real blocker was a missing OAuth token, not a deliberate
+    # pause), and this test's assertion shouldn't depend on it.
+    import dataclasses
 
-    with patch("run_daily.run_track", return_value=True) as mock_run_track, \
+    paused_track = dataclasses.replace(TEENS_TRACK, key="paused-fixture", paused=True)
+    active_track = dataclasses.replace(TEENS_TRACK, key="active-fixture", paused=False)
+    fixture_tracks = {paused_track.key: paused_track, active_track.key: active_track}
+
+    with patch("run_daily.TRACKS", fixture_tracks), \
+         patch("run_daily.run_track", return_value=True) as mock_run_track, \
          patch("run_daily.run_math_track", return_value=True) as mock_run_math_track:
         run_daily.run(dry_run=False)
 
     called_keys = {c.args[0].key for c in mock_run_track.call_args_list}
     called_keys |= {c.args[0].key for c in mock_run_math_track.call_args_list}
-    assert paused_keys.isdisjoint(called_keys)
+    assert paused_track.key not in called_keys
+    assert active_track.key in called_keys
 
 
 def test_run_continues_past_a_real_failure_on_one_track():
