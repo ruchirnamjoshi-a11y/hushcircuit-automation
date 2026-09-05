@@ -447,7 +447,14 @@ def run_manifestation_track(track: Track, dry_run: bool = False, privacy_status:
     from datetime import date
 
     from pipeline.ffmpeg_utils import group_words_into_captions_adaptive, probe_duration
-    from pipeline.manifestation_lyrics import extract_lyric_lines, generate_line_scenes, generate_lyrics, pick_theme
+    from pipeline.manifestation_lyrics import (
+        _load_title_history,
+        _save_title_history,
+        extract_lyric_lines,
+        generate_line_scenes,
+        generate_lyrics,
+        pick_theme,
+    )
     from pipeline.manifestation_video import (
         DEFAULT_CHARACTER,
         SONG_SEED,
@@ -473,8 +480,9 @@ def run_manifestation_track(track: Track, dry_run: bool = False, privacy_status:
     run_dir.mkdir(parents=True, exist_ok=True)
     theme = pick_theme(today.toordinal())  # naturally alternates forever, no stored counter needed
 
+    title_history = _load_title_history()
     print(f"[{track.key}] [1/6] Writing lyrics (Gemini, theme={theme})...")
-    lyrics_result = generate_lyrics(theme)
+    lyrics_result = generate_lyrics(theme, avoid_titles=title_history)
     lines = extract_lyric_lines(lyrics_result["lyrics"])
     print(f"[{track.key}] '{lyrics_result['title']}' — {len(lines)} sung lines")
 
@@ -535,6 +543,7 @@ def run_manifestation_track(track: Track, dry_run: bool = False, privacy_status:
 
     if not dry_run:
         mark_produced_today(track.key)
+        _save_title_history(title_history + [f"{lyrics_result['title']} ({lyrics_result['hook_phrase']})"])
     print(f"[{track.key}] Done.")
     return True
 
