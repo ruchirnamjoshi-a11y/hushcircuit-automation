@@ -1,0 +1,71 @@
+{
+  "id": "pip-aur-pathar-ka-pul",
+  "title": "पिप्प और पत्थर का पुल",
+  "description": "एक नन्हा चूहा एक दोस्त के साथ छोटे-छोटे बहादुरी भरे कदम उठाकर तेज बहती धारा के अपने डर पर काबू पाता है।",
+  "tags": [
+    "चूहा",
+    "बहादुरी",
+    "दोस्ती",
+    "धारा",
+    "सोने-का-समय"
+  ],
+  "character_reference": "a tiny gray field mouse with large round ears and a striped blue vest",
+  "episode_number": 0,
+  "source_script_id": "pip-and-the-pebble-bridge",
+  "scenes": [
+    {
+      "narration": "पिप्प तेजी से बहती धारा के किनारे खड़ा था, और उसका दिल घबराहट से धड़क रहा था। आज पैर रखने वाले पत्थर बहुत दूर-दूर लग रहे थे।",
+      "on_screen_text": "चौड़ी धारा",
+      "duration_hint": 10.5,
+      "visual": "close up shot looking across a bubbling stream at sunet with smooth wet stepping stones partially submerged in clear water"
+    },
+    {
+      "narration": "वह अपनी दादी की दोपहर की चाय के लिए दूसरी तरफ मौजूद जामुन के पास पहुँचना चाहता था, लेकिन पानी की आवाज़ बहुत तेज़ लग रही थी।",
+      "on_screen_text": "प्यारा मक़सद",
+      "duration_hint": 10.9,
+      "visual": "low angle view focusing on lush green grass and ripe red berries growing on the opposite riverbank in warm golden light"
+    },
+    {
+      "narration": "तभी बार्नबी भृंग उसके पास आया और एक छोटी सी टहनी से उसके कंधे पर प्यार से थपथपाकर ढांढस बंधाया।",
+      "on_screen_text": "एक मददगार दोस्त",
+      "duration_hint": 9.5,
+      "visual": "macro shot of a friendly green beetle standing near mossy pebbles holding a small twig like a walking stick"
+    },
+    {
+      "narration": "पिप्प ने अपनी माँ की बड़े डर से जुड़ी बात याद करते हुए खुद से फुसफुसाया, एक बार में एक ही पत्थर पर पैर रखो।",
+      "on_screen_text": "एक कदम",
+      "duration_hint": 10.0,
+      "visual": "close up of fuzzy paws gently testing the wet surface of the first flat river stone amidst swirling ripples"
+    },
+    {
+      "narration": "उसने बड़े ध्यान से अपना एक पंजा पहले काई वाले पत्थर पर रखा, और अपनी मूँछों पर पानी की ठंडी फुहार महसूस की।",
+      "on_screen_text": "पहला पत्थर",
+      "duration_hint": 10.0,
+      "visual": "medium shot capturing the tiny protagonist balancing delicately on a central boulder with water splashing softly around"
+    },
+    {
+      "narration": "एक गहरी साँस लेकर, वह अगले पत्थर पर कूद गया, और उसे अपनी उम्मीद से कहीं ज़्यादा जल्दी संतुलन मिल गया।",
+      "on_screen_text": "संतुलन बनाए रखना",
+      "duration_hint": 9.5,
+      "visual": "action shot mid hop between two smooth river stones with sparkling water drops frozen in motion"
+    },
+    {
+      "narration": "इससे पहले कि उसे कुछ पता चलता, उसके पंजे दूसरे किनारे की नरम घास पर सुरक्षित रूप से टिक गए, बिल्कुल सूखे और सुरक्षित।",
+      "on_screen_text": "कुशल-मंगल",
+      "duration_hint": 10.5,
+      "visual": "wide angle of the lush grassy riverbank showing the successful crossing with wildflowers swaying in the breeze"
+    },
+    {
+      "narration": "याद रखें कि सबसे बड़ी मुश्किलें भी छोटी हो जाती हैं जब हम उनका सामना एक समय में एक ही बहादुर कदम बढ़ाकर करते हैं।",
+      "on_screen_text": "बहादुर कदम",
+      "duration_hint": 10.5,
+      "visual": "warm sunset lighting filtering through tall reeds illuminating a peaceful meadow filled with gentle shadows"
+    },
+    {
+      "narration": "अगर आपको आज पिप्प के साथ उसके इस सफर पर मज़ा आया, तो हर रात ऐसी ही मीठी कहानियों के लिए हमारे साथ जुड़े रहें।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 10.5,
+      "visual": "cozy nighttime burrow interior illuminated by a glowing firefly jar with comfortable pillows and blankets"
+    }
+  ]
+}

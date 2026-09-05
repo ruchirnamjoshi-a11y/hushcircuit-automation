@@ -1,0 +1,71 @@
+{
+  "id": "barnaby-and-the-lost-shadow",
+  "title": "Barnaby and the Lost Shadow",
+  "description": "A young bear cub discovers that shadows do not disappear in the dark; they just rest until morning.",
+  "tags": [
+    "bear",
+    "darkness",
+    "bedtime",
+    "courage",
+    "forest"
+  ],
+  "character_reference": "a small brown bear cub with a light tan patch on his chest and big sleepy amber eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "As twilight settled over the pine forest, Barnaby noticed his shadow fading away against the darkening moss.",
+      "on_screen_text": "THE FADING SHADOW",
+      "duration_hint": 10.0,
+      "visual": "close up of a forest floor at dusk with long soft shadows stretching across green moss and fallen pine needles"
+    },
+    {
+      "narration": "Oh no, he whispered, looking around anxiously. Did the night swallow my shadow while I wasn't looking?",
+      "on_screen_text": "WHERE DID IT GO",
+      "duration_hint": 10.0,
+      "visual": "medium shot of a furry cub looking down at the ground with a worried expression under dim blue evening light"
+    },
+    {
+      "narration": "Wise old owl blinked from a high branch, tilting his feathered head down toward the worried cub.",
+      "on_screen_text": "WISE WORDS",
+      "duration_hint": 9.0,
+      "visual": "close up of an owl perched on a darkening pine branch with large luminous eyes looking downward kindly"
+    },
+    {
+      "narration": "Shadows do not get lost in the dark, little one, the owl hooted softly. They simply take a quiet nap.",
+      "on_screen_text": "A QUIET NAP",
+      "duration_hint": 10.0,
+      "visual": "soft focus shot of pine tree silhouettes against a deep purple twilight sky with the first evening star appearing"
+    },
+    {
+      "narration": "Barnaby looked up at the friendly twinkling stars spreading across the velvet blanket of the night sky.",
+      "on_screen_text": "STARRY BLANKET",
+      "duration_hint": 9.0,
+      "visual": "low angle view of a cub gazing upward at a magnificent starry night sky framed by dark pine treetops"
+    },
+    {
+      "narration": "He curled up snug inside his cozy den, resting his heavy head upon his soft paws.",
+      "on_screen_text": "COZY DEN",
+      "duration_hint": 9.0,
+      "visual": "interior shot of a warm earthen den lined with dry leaves and ferns where a small animal curls up to sleep"
+    },
+    {
+      "narration": "The darkness wasn't scary at all; it was just a quiet invitation for sweet and peaceful slumber.",
+      "on_screen_text": "SWEET SLUMBER",
+      "duration_hint": 9.0,
+      "visual": "close up of peaceful sleeping face with gentle breathing rhythm illuminated by soft amber ambient light"
+    },
+    {
+      "narration": "Remember that every night brings rest, and morning always brings back the bright light of a brand new day.",
+      "on_screen_text": "BRIGHT MORNING",
+      "duration_hint": 10.0,
+      "visual": "warm golden rays of dawn breaking through dense forest trees casting long beautiful morning shadows"
+    },
+    {
+      "narration": "If you are ready for more peaceful bedtime stories, follow along to join our nightly adventures.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "peaceful forest landscape at sunrise with sparkling dew drops on green leaves and a gentle misty haze"
+    }
+  ]
+}

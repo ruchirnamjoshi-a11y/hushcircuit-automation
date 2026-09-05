@@ -1,0 +1,203 @@
+{
+  "id": "theo-mendak-aur-shant-talab",
+  "title": "थियो मेंढक और शांत तालाब",
+  "description": "थियो मेंढक डरता है कि उसकी आवाज़ शांत शाम के तालाब के लिए बहुत तेज़ है, जब तक कि वह यह नहीं सीख जाता कि एक डरे हुए दोस्त की मदद करने के लिए अपनी आवाज़ का उपयोग कैसे करना चाहिए।",
+  "tags": [
+    "सोने की कहानी",
+    "जानवर",
+    "दोस्ती",
+    "आत्मविश्वास",
+    "नैतिक शिक्षा"
+  ],
+  "character_reference": "a small olive-green toad with large golden eyes, wearing a tiny blue woolen scarf",
+  "episode_number": 0,
+  "source_script_id": "theo-toads-quiet-pond",
+  "scenes": [
+    {
+      "narration": "शाम होते ही लंबे सरकंडों पर हवा ठहर गई और तालाब शांत हो गया। छोटा थियो अपने पसंदीदा काईदार पत्थर पर बैठकर झींगुरों का संगीत सुनने लगा।",
+      "on_screen_text": "शांत शाम का तालाब",
+      "duration_hint": 7.5,
+      "visual": "Wide shot of a tranquil twilight pond surrounded by tall reeds, soft lavender and blue tones, gentle ripples on the water surface, atmospheric evening lighting"
+    },
+    {
+      "narration": "उसके चारों ओर दूसरे मेंढक अपने मीठे रात के गीत गा रहे थे। उनकी आवाज़ें पानी पर ऐसे तैर रही थीं जैसे शांत धारा में हल्की लहरें उठती हैं।",
+      "on_screen_text": "रात के गीत",
+      "duration_hint": 7.5,
+      "visual": "Several small green frogs sitting on floating lily pads in the fading evening light, glowing fireflies drifting lazily above the dark water"
+    },
+    {
+      "narration": "थियो ने भी इस सुंदर धुन में शामिल होने के लिए अपना गला फुलाया। लेकिन जैसे ही उसने मुंह खोला, उसकी आवाज़ बहुत ज़्यादा तेज़ निकल पड़ी।",
+      "on_screen_text": "एक तेज़ आवाज़",
+      "duration_hint": 7.0,
+      "visual": "Medium close-up of the toad with puffed cheeks sitting on a moss-covered rock, looking slightly startled by his own noisy sound, soft shadows"
+    },
+    {
+      "narration": "पास ही बैठा एक ड्रैगनफ़्लाई झटपट उड़ गया, और सोता हुआ कछुआ अपना सिर खोल के अंदर खींच गया। थियो ने शर्म से अपना सिर झुका लिया।",
+      "on_screen_text": "अचानक खामोशी",
+      "duration_hint": 7.5,
+      "visual": "Close-up of the toad looking down sadly at his webbed feet on the damp moss, soft moonlight filtering through overhead weeping willow branches"
+    },
+    {
+      "narration": "उसने तय किया कि सबसे अच्छा यही होगा कि वह बिल्कुल चुप रहे। उसने अपने आगे के पैर मोड़ लिए और ऊपर टिमटिमाते तारों को देखने लगा।",
+      "on_screen_text": "चुपचाप रहना",
+      "duration_hint": 7.0,
+      "visual": "Low angle shot of the small toad sitting motionless on a smooth stone, looking up at a starry night sky filled with bright constellations"
+    },
+    {
+      "narration": "घंटे बीत गए और चाँद मखमली आसमान में और ऊँचा उठ गया। तालाब शांत लग रहा था, लेकिन थियो अपने पत्थर पर थोड़ा अकेला महसूस कर रहा था।",
+      "on_screen_text": "अकेला पत्थर",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of the toad alone on a rock surrounded by dark water, shimmering moonlight reflecting on the surface, quiet nocturnal atmosphere"
+    },
+    {
+      "narration": "अचानक किनारे के पास कांटेदार झाड़ियों के अंदर से सरसराहट की आवाज़ आई। एक बहुत छोटा बत्तख का बच्चा अपने घर से बहुत दूर निकल आया था।",
+      "on_screen_text": "अंधेरे में खोया",
+      "duration_hint": 7.5,
+      "visual": "Close-up of a fluffy yellow duckling hiding among dark green ferns, looking scared and shivering slightly in the cool night breeze"
+    },
+    {
+      "narration": "उस छोटे बत्तख के बच्चे ने एक धीमी, डरी हुई सी आवाज़ निकाली। वह घास-फूस के गर्म घोंसला सुरक्षित रास्ते को नहीं ढूंढ पा रहा था।",
+      "on_screen_text": "एक धीमी पुकार",
+      "duration_hint": 7.5,
+      "visual": "The small duckling standing near the water edge, looking around anxiously into the deep shadows of the riverbank"
+    },
+    {
+      "narration": "बाकी मेंढकों में से किसी ने भी अपने खुशमिज़ाज गीतों के शोर में उस छोटी सी आवाज़ को नहीं सुना। वे अपने ही संगीत में बहुत व्यस्त थे।",
+      "on_screen_text": "अनसुनी आवाज़ें",
+      "duration_hint": 7.5,
+      "visual": "Silhouettes of frogs sitting on lily pads in the distance, singing under the bright moon while mist rises gently from the water"
+    },
+    {
+      "narration": "थियो समझ गया कि उसे इस खोए हुए नन्हे पक्षी की मदद के लिए कुछ करना चाहिए। वह अपने काईदार पत्थर से कूदा और झाड़ियों के और करीब चला गया।",
+      "on_screen_text": "आगे बढ़ना",
+      "duration_hint": 7.5,
+      "visual": "The toad hopping carefully across damp mud and fallen leaves toward the edge of the dark bushes, focused expression"
+    },
+    {
+      "narration": "वह बत्तख के बच्चे को रास्ता दिखाना चाहता था, लेकिन उसे डर था कि अंधेरे में उसकी तेज़ आवाज़ उसे और ज़्यादा डरा न दे।",
+      "on_screen_text": "एक फिक्र",
+      "duration_hint": 7.0,
+      "visual": "Close-up of the toad pausing near a fern leaf, furrowing his brow with concern as he looks toward the hiding duckling"
+    },
+    {
+      "narration": "उसने एक गहरी सांस ली और अपनी आवाज़ को उतना ही नरम बनाने की कोशिश की जितनी लंबी पतझड़ की पत्तियों से टकराती ठंडी हवा होती है।",
+      "on_screen_text": "एक हल्की बयार",
+      "duration_hint": 7.5,
+      "visual": "The toad closing his eyes and taking a slow breath, soft moonlight illuminating his textured skin and tiny scarf"
+    },
+    {
+      "narration": "गड़गड़ाहट भरी टर्र-टर्र के बजाय, उसने एक धीमी, प्यारी सी गुनगुनाहट निकाली जो पानी पर तैरती हुई लोरी जैसी लग रही थी।",
+      "on_screen_text": "प्यारी गुनगुनाहट",
+      "duration_hint": 7.0,
+      "visual": "The toad humming softly with a gentle posture, small ripples forming gently in the puddle near his webbed feet"
+    },
+    {
+      "narration": "छोटा बत्तख का बच्चा कांपना बंद करके इस दोस्ताना आवाज़ की तरफ मुड़ गया। उसने हैरानी से अपनी बड़ी-बड़ी गोल आँखें झपकाईं।",
+      "on_screen_text": "मुड़कर देखना",
+      "duration_hint": 7.0,
+      "visual": "The fluffy yellow duckling turning its head toward the source of the sound, looking curious and comforted in the dim light"
+    },
+    {
+      "narration": "थियो ने दोबारा गुनगुनाया और यह दिखाने के लिए कि उसे कोई खतरा नहीं है, एक कदम आगे बढ़ाया। उसने खुले रास्ते की तरफ इशारा किया।",
+      "on_screen_text": "रास्ता दिखाना",
+      "duration_hint": 7.5,
+      "visual": "The toad extending a hand toward a clear dirt path leading back to the nest, warm and welcoming posture"
+    },
+    {
+      "narration": "इस भली आवाज़ पर भरोसा करके, बत्तख का नन्हा बच्चा अंधेरे से बाहर निकला और तालाब के किनारे-किनारे थियो के पीछे-पीछे चलने लगा।",
+      "on_screen_text": "आवाज़ के पीछे",
+      "duration_hint": 7.5,
+      "visual": "The toad leading the small yellow duckling along a muddy path lined with wild ferns and glowing fireflies"
+    },
+    {
+      "narration": "वे शांत रात में साथ-साथ चले, सोते हुए फूलों और हवा में झूमते सरकंडों के पास से गुज़रे।",
+      "on_screen_text": "रात की सैर",
+      "duration_hint": 6.0,
+      "visual": "Wide shot of the toad and duckling walking together along the curving shoreline under a canopy of starlight and drooping branches"
+    },
+    {
+      "narration": "जल्द ही, दो बड़े विलो के पेड़ों के बीच आरामदायक घोंसला दिखाई देने लगा। माँ बत्तख धैर्य के साथ इंतज़ार कर रही थी।",
+      "on_screen_text": "घर नज़र आया",
+      "duration_hint": 7.0,
+      "visual": "A cozy nest made of reeds and soft feathers nestled between tree roots, warm golden light glowing from within"
+    },
+    {
+      "narration": "बत्तख के छोटे बच्चे ने खुशी से आवाज़ निकाली और आखिरकार सुरक्षित होकर अपनी माँ के गर्म पंखों में जा छुपा।",
+      "on_screen_text": "आखिरकार सुरक्षित",
+      "duration_hint": 7.0,
+      "visual": "The fluffy duckling snuggling happily against a larger adult duck in a cozy nest, tender and heartwarming moment"
+    },
+    {
+      "narration": "माँ बत्तख ने पानी के पार देखा और थियो को शुक्रगुजार होकर सिर हिलाया। वह जानती थी कि उसके नन्हे बच्चे को घर कौन वापस लाया है।",
+      "on_screen_text": "शुक्रिया भरा सिर हिलाना",
+      "duration_hint": 7.5,
+      "visual": "An adult duck looking over its shoulder toward the waterbank with a kind expression, soft moonlight casting gentle highlights"
+    },
+    {
+      "narration": "थियो मुस्कुराया और उसके सीने में एक सुखद गरमी महसूस हुई। उसकी आवाज़ बहुत तेज़ नहीं थी; वह दूसरों की मदद करने के लिए बिल्कुल सही थी।",
+      "on_screen_text": "एक सुखद अहसास",
+      "duration_hint": 7.5,
+      "visual": "Close-up of the toad smiling gently with a contented expression, soft warm light reflecting in his golden eyes"
+    },
+    {
+      "narration": "वह कूदकर अपने पसंदीदा पत्थर पर वापस लौट आया, और आज शाम से पहले जितना उसने खुद को महसूस किया था, अब वह उससे ज़्यादा लंबा और बहादुर महसूस कर रहा था।",
+      "on_screen_text": "वापसी",
+      "duration_hint": 8.0,
+      "visual": "The toad jumping gracefully back onto his mossy stone, surrounded by dark water and shimmering stars"
+    },
+    {
+      "narration": "बाकी मेंढक अभी भी अपने रात के गीत गा रहे थे, और चमकीले गर्मियों के चाँद के नीचे हवा को संगीत से भर रहे थे।",
+      "on_screen_text": "कोरस गीत",
+      "duration_hint": 6.5,
+      "visual": "Multiple frogs sitting on lily pads across the pond, silhouetted against the bright silver moon and glowing night sky"
+    },
+    {
+      "narration": "इस बार थियो चुप नहीं रहा। वह संगीत में शामिल हो गया, और गीत में अपनापन जोड़ने के लिए अपनी अनोखी आवाज़ का इस्तेमाल किया।",
+      "on_screen_text": "साथ में गाना",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of the toad singing happily on his rock, his throat gently puffed out and a joyful expression on his face"
+    },
+    {
+      "narration": "उसकी आवाज़ दूसरों के साथ मिल गई, जिससे एक और प्यारा, गहरा संगीत बना जो शांत पानी पर धीरे-धीरे गूँज उठा।",
+      "on_screen_text": "सुरीली धुन",
+      "duration_hint": 7.0,
+      "visual": "Wide peaceful shot of the pond with gentle ripples spreading outward from the stones under a sky full of twinkling stars"
+    },
+    {
+      "narration": "झींगुरों ने सहमति में धीरे से आवाज की, और रात की हवा लंबी घास के बीच से किसी लोरी की तरह सरसराई।",
+      "on_screen_text": "सरसराती हवा",
+      "duration_hint": 6.5,
+      "visual": "Close-up of tall grass bending gently in the night breeze, fireflies dancing among the stems with soft magical glows"
+    },
+    {
+      "narration": "थियो ने अपनी ठुड्डी हाथों पर टिका ली, और उस सुंदर संगीत को सुनने लगा जिसे उसने अपने दोस्तों के साथ मिलकर बनाया था।",
+      "on_screen_text": "आराम करते नेत्र",
+      "duration_hint": 7.0,
+      "visual": "The toad resting his chin on his front webbed hands, looking sleepy and peaceful under the quiet moonlight"
+    },
+    {
+      "narration": "हर जीव के पास बांटने के लिए एक खास खूबी होती है, चाहे उसका अपना गीत कितना भी तेज या धीमा क्यों न हो।",
+      "on_screen_text": "हर खूबी अहम है",
+      "duration_hint": 7.0,
+      "visual": "Close-up of the toad closing his eyes for sleep, soft golden fireflies glowing gently around the mossy stone"
+    },
+    {
+      "narration": "जब हम एक-दूसरे की देखभाल के लिए अपनी आवाज़ का उपयोग करते हैं, तो सबसे अंधेरी रात भी रोशन और दोस्ताना बन जाती है।",
+      "on_screen_text": "प्यारी आवाज़ें",
+      "duration_hint": 7.0,
+      "visual": "The peaceful pond bathed in soft silver moonlight, a single glowing firefly resting near the toad's tiny scarf"
+    },
+    {
+      "narration": "आपके सपने प्यारे गीतों और ऐसे अच्छे दोस्तों से भरे हों जो आपके दिल के खास संगीत की कद्र करते हैं।",
+      "on_screen_text": "मीठे सपने",
+      "duration_hint": 7.0,
+      "visual": "The toad sleeping soundly on his rock, soft magical starlight reflecting in the quiet water all around him"
+    },
+    {
+      "narration": "हमारे साथ इस शांत शाम की यात्रा को साझा करने के लिए धन्यवाद। हर हफ्ते ऐसी और सोने की कहानियों के लिए जुड़े रहें।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 7.5,
+      "visual": "A serene twilight landscape with a glowing moon, fireflies twinkling above calm water, peaceful bedtime atmosphere"
+    }
+  ]
+}

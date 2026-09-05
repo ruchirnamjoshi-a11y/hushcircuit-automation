@@ -1,0 +1,71 @@
+{
+  "id": "barnaby-aur-uski-khoyi-hui-parchai",
+  "title": "बर्नाबी और खोई हुई परछाई",
+  "description": "एक नन्हा भालू सीखता है कि अंधेरे में परछाइयां खोती नहीं हैं, बल्कि सुबह तक आराम करती हैं।",
+  "tags": [
+    "भालू",
+    "अंधेरा",
+    "सोने-का-समय",
+    "साहस",
+    "जंगल"
+  ],
+  "character_reference": "a small brown bear cub with a light tan patch on his chest and big sleepy amber eyes",
+  "episode_number": 0,
+  "source_script_id": "barnaby-and-the-lost-shadow",
+  "scenes": [
+    {
+      "narration": "जब चीड़ के जंगल पर शाम घिरने लगी, तो बर्नाबी ने देखा कि उसकी परछाईं अंधेरे होते काई पर हल्की पड़ती जा रही है।",
+      "on_screen_text": "धुंधली होती परछाईं",
+      "duration_hint": 7.5,
+      "visual": "close up of a forest floor at dusk with long soft shadows stretching across green moss and fallen pine needles"
+    },
+    {
+      "narration": "अरे नहीं! उसने घबराकर चारों तरफ देखते हुए फुसफुसाया। क्या रात ने मेरी परछाईं को निगल लिया जब मैं देख नहीं रहा था?",
+      "on_screen_text": "वह कहाँ गई?",
+      "duration_hint": 8.0,
+      "visual": "medium shot of a furry cub looking down at the ground with a worried expression under dim blue evening light"
+    },
+    {
+      "narration": "एक ऊँची डाल पर बैठे समझदार बूढ़े उल्लू ने अपनी पंखों वाली गर्दन झुकाकर उस परेशान नन्हे भालू की तरफ देखा।",
+      "on_screen_text": "समझदार उल्लू",
+      "duration_hint": 7.0,
+      "visual": "close up of an owl perched on a darkening pine branch with large luminous eyes looking downward kindly"
+    },
+    {
+      "narration": "परछाइयां अंधेरे में खोती नहीं हैं, मेरे बच्चे, उल्लू ने प्यार से हू-हू करके कहा। वे बस थोड़ी देर आराम करती हैं।",
+      "on_screen_text": "मीठी नींद",
+      "duration_hint": 7.5,
+      "visual": "soft focus shot of pine tree silhouettes against a deep purple twilight sky with the first evening star appearing"
+    },
+    {
+      "narration": "बर्नाबी ने रात के मखमली आसमान पर टिमटिमाते हुए प्यारे तारों की तरफ ऊपर देखा।",
+      "on_screen_text": "तारों भरा आसमान",
+      "duration_hint": 5.5,
+      "visual": "low angle view of a cub gazing upward at a magnificent starry night sky framed by dark pine treetops"
+    },
+    {
+      "narration": "वह अपनी गुफा में आराम से दुबक कर लेट गया और अपना भारी सिर अपने मुलायम पंजों पर रख लिया।",
+      "on_screen_text": "प्यारी गुफा",
+      "duration_hint": 6.5,
+      "visual": "interior shot of a warm earthen den lined with dry leaves and ferns where a small animal curls up to sleep"
+    },
+    {
+      "narration": "यह अंधेरा बिल्कुल भी डरावना नहीं था; यह तो बस सुकून से सोने का एक प्यारा बुलावा था।",
+      "on_screen_text": "सुंदर नींद",
+      "duration_hint": 6.0,
+      "visual": "close up of peaceful sleeping face with gentle breathing rhythm illuminated by soft amber ambient light"
+    },
+    {
+      "narration": "याद रखो, हर रात आराम लाती है और सुबह होते ही नए दिन की चमकीली रोशनी वापस ले आती है।",
+      "on_screen_text": "सुंदर सुबह",
+      "duration_hint": 7.0,
+      "visual": "warm golden rays of dawn breaking through dense forest trees casting long beautiful morning shadows"
+    },
+    {
+      "narration": "अगर आपको सोने के समय की ऐसी ही प्यारी कहानियां पसंद हैं, तो हमारी रात की कहानियों से जुड़े रहें।",
+      "on_screen_text": "सब्सक्राइब करें",
+      "duration_hint": 7.0,
+      "visual": "peaceful forest landscape at sunrise with sparkling dew drops on green leaves and a gentle misty haze"
+    }
+  ]
+}
