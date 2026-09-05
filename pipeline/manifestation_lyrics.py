@@ -22,8 +22,38 @@ from collections import Counter
 import requests
 
 from pipeline.config import GEMINI_API_KEY, GEMINI_MODEL
+from pipeline.state import STATE_DIR
 
 REQUEST_TIMEOUT_SECONDS = 120
+
+# Unlike every other track, manifestation never writes a script into
+# scripts_queue/ -- lyrics are generated fresh live each run, so there was
+# no record anywhere of what's already been produced, and nothing analogous
+# to story_writer's _existing_titles avoid-repeat check. Confirmed in
+# production: the channel published "Money Comes To Me Easily" twice and
+# three separate "I'm unstoppable"-themed songs within one week, because
+# Gemini had zero signal that these concepts already existed. This is a
+# small persisted history (title + hook phrase per past video) so the
+# prompt can tell it what to avoid, same intent as every other track's
+# dedup, just backed by its own file instead of the shared queue.
+TITLE_HISTORY_PATH = STATE_DIR / "manifestation_history.json"
+TITLE_HISTORY_MAX = 30
+
+
+def _load_title_history() -> list[str]:
+    if not TITLE_HISTORY_PATH.exists():
+        return []
+    try:
+        return json.loads(TITLE_HISTORY_PATH.read_text())
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def _save_title_history(entries: list[str]) -> None:
+    TITLE_HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
+    TITLE_HISTORY_PATH.write_text(
+        json.dumps(entries[-TITLE_HISTORY_MAX:], ensure_ascii=False, indent=2)
+    )
 
 # 503 (Service Unavailable) observed repeatedly in production CI runs (every
 # scheduled run failed on 2026-08-23 from this alone) -- genuinely transient,
@@ -153,12 +183,24 @@ def _call_gemini(prompt: str, schema: dict) -> dict:
         return json.loads(text)
 
 
-def generate_lyrics(theme: str) -> dict:
+def generate_lyrics(theme: str, avoid_titles: list[str] | None = None) -> dict:
     """Returns {title, style_tags, lyrics, hook_phrase}. `theme` must be a
-    key in THEMES (see pick_theme for the daily-alternation policy)."""
+    key in THEMES (see pick_theme for the daily-alternation policy).
+    `avoid_titles` is past titles/hook phrases (see _load_title_history) --
+    without this, nothing stopped Gemini reconverging on the same handful
+    of obvious hooks ("I am unstoppable", "money comes to me easily") run
+    after run."""
     if theme not in THEMES:
         raise ValueError(f"unknown theme {theme!r}, expected one of {list(THEMES)}")
     prompt = LYRICS_PROMPT_TEMPLATE.format(theme_guidance=THEMES[theme])
+    if avoid_titles:
+        prompt += (
+            "\n\nAVOID REPEATING PAST SONGS\nDo not reuse any of these previous titles or hook "
+            "phrases, and write a genuinely different core angle -- not just a reworded restatement "
+            "of the same idea (e.g. if a past hook was about being unstoppable, don't write another "
+            "unstoppable/unbreakable/nothing-stops-me song; find a different facet of the theme):\n"
+            + "\n".join(f"- {t}" for t in avoid_titles)
+        )
     return _call_gemini(prompt, LYRICS_SCHEMA)
 
 
