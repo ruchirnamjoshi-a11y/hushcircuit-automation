@@ -1,0 +1,71 @@
+{
+  "id": "pip-and-the-pebble-bridge",
+  "title": "Pip and the Pebble Bridge",
+  "description": "A little mouse overcomes his fear of a rushing stream by taking small, brave steps with a friend.",
+  "tags": [
+    "mouse",
+    "bravery",
+    "friendship",
+    "stream",
+    "bedtime"
+  ],
+  "character_reference": "a tiny gray field mouse with large round ears and a striped blue vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Pip stood at the edge of the rushing brook, his heart doing a little flutter-dance. The stepping stones looked so far apart today.",
+      "on_screen_text": "THE WIDE BROOK",
+      "duration_hint": 10.0,
+      "visual": "close up shot looking across a bubbling stream at sunet with smooth wet stepping stones partially submerged in clear water"
+    },
+    {
+      "narration": "He wanted to reach the berry patch on the other side for his grandmother's afternoon tea, but the water sounded awfully loud.",
+      "on_screen_text": "THE SWEET GOAL",
+      "duration_hint": 10.0,
+      "visual": "low angle view focusing on lush green grass and ripe red berries growing on the opposite riverbank in warm golden light"
+    },
+    {
+      "narration": "Just then, Barnaby Beetle crawled up beside him, offering a reassuring pat on the shoulder with a twig.",
+      "on_screen_text": "A HELPFUL FRIEND",
+      "duration_hint": 10.0,
+      "visual": "macro shot of a friendly green beetle standing near mossy pebbles holding a small twig like a walking stick"
+    },
+    {
+      "narration": "Take it one stone at a time, Pip whispered to himself, remembering his mother's advice about big fears.",
+      "on_screen_text": "ONE STEP",
+      "duration_hint": 9.0,
+      "visual": "close up of fuzzy paws gently testing the wet surface of the first flat river stone amidst swirling ripples"
+    },
+    {
+      "narration": "He placed one paw carefully on the first mossy rock, feeling the cool spray of water against his whiskers.",
+      "on_screen_text": "THE FIRST ROCK",
+      "duration_hint": 9.0,
+      "visual": "medium shot capturing the tiny protagonist balancing delicately on a central boulder with water splashing softly around"
+    },
+    {
+      "narration": "With a steady breath, he hopped to the next stone, finding his balance much quicker than he expected.",
+      "on_screen_text": "KEEPING BALANCE",
+      "duration_hint": 9.0,
+      "visual": "action shot mid hop between two smooth river stones with sparkling water drops frozen in motion"
+    },
+    {
+      "narration": "Before he knew it, his paws landed safely in the soft grass of the far bank, completely dry and safe.",
+      "on_screen_text": "SAFE AND SOUND",
+      "duration_hint": 9.0,
+      "visual": "wide angle of the lush grassy riverbank showing the successful crossing with wildflowers swaying in the breeze"
+    },
+    {
+      "narration": "Remember that even the biggest challenges become small when we take them just one brave step at a time.",
+      "on_screen_text": "BRAVE STEPS",
+      "duration_hint": 10.0,
+      "visual": "warm sunset lighting filtering through tall reeds illuminating a peaceful meadow filled with gentle shadows"
+    },
+    {
+      "narration": "If you enjoyed joining Pip on his adventure today, follow along for more gentle bedtime stories every single night.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "cozy nighttime burrow interior illuminated by a glowing firefly jar with comfortable pillows and blankets"
+    }
+  ]
+}

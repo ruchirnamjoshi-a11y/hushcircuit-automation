@@ -1,0 +1,71 @@
+{
+  "id": "clover-and-the-cloud-sheep",
+  "title": "Clover and the Cloud Sheep",
+  "description": "A little lamb learns to embrace her unique curly wool after trying to straighten it out all morning.",
+  "tags": [
+    "lamb",
+    "self-love",
+    "fluffy",
+    "meadow",
+    "bedtime"
+  ],
+  "character_reference": "a small white lamb with impossibly bouncy tight corkscrew curls and a cheerful pink nose",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Clover gazed at her reflection in the pond, sighing as her bouncy wool puffed out in every direction.",
+      "on_screen_text": "THE PUFFY FLEECE",
+      "duration_hint": 10.0,
+      "visual": "close up of a calm woodland pond reflecting soft morning sky while a fluffy animal stares down at the water"
+    },
+    {
+      "narration": "All the other sheep had sleek, neat coats, while hers looked like a fluffy white powder puff that refused to settle.",
+      "on_screen_text": "WISHFUL SMOOTHNESS",
+      "duration_hint": 10.0,
+      "visual": "meadow scene showing distant sheep grazing peacefully on green hills under a bright blue morning sky"
+    },
+    {
+      "narration": "She spent the whole morning trying to flatten her curls with damp clover leaves and gentle pats.",
+      "on_screen_text": "TIDYING UP",
+      "duration_hint": 9.0,
+      "visual": "close up of small hooves trying to smooth down an unruly patch of fluffy white wool in a patch of green clover"
+    },
+    {
+      "narration": "An old butterfly fluttered down and rested right on top of her highest, springiest curl.",
+      "on_screen_text": "A SOFT VISITOR",
+      "duration_hint": 9.0,
+      "visual": "macro shot of a yellow butterfly perched delicately on a tuft of textured white wool against a soft green bokeh background"
+    },
+    {
+      "narration": "Your wool is like a cozy cloud, the butterfly whispered gently, soft enough to catch falling daydreams.",
+      "on_screen_text": "CLOUD COMFORT",
+      "duration_hint": 9.0,
+      "visual": "side profile of the fluffy protagonist smiling gently while looking upward at a resting insect"
+    },
+    {
+      "narration": "Clover shook her head playfully, and her curls bounced right back into their happy, cheerful shape.",
+      "on_screen_text": "HAPPY BOUNCE",
+      "duration_hint": 9.0,
+      "visual": "motion blur shot of white wool bouncing joyfully in the sunlight with grass blades rustling nearby"
+    },
+    {
+      "narration": "She realized her unique curls made her special, keeping her warm and ready for any cozy meadow game.",
+      "on_screen_text": "SPECIAL FLOOF",
+      "duration_hint": 10.0,
+      "visual": "wide shot of the sunny meadow with wildflowers blooming around the happy animal resting in the grass"
+    },
+    {
+      "narration": "Our differences are what make us wonderful, just like every cloud in the sky has its own lovely shape.",
+      "on_screen_text": "BE YOURSELF",
+      "duration_hint": 10.0,
+      "visual": "gorgeous sunset sky filled with fluffy golden and pink cumulus clouds drifting lazily overhead"
+    },
+    {
+      "narration": "If you love sweet animal stories as much as we do, follow along for more bedtime tales tomorrow.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "cozy twilight meadow scene with fireflies beginning to glow softly in the tall summer grass"
+    }
+  ]
+}
