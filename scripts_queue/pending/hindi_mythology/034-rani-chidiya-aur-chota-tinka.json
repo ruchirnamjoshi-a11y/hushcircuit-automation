@@ -1,0 +1,65 @@
+{
+  "id": "rani-chidiya-aur-chota-tinka",
+  "title": "रानी चिड़िया और छोटा तिनका",
+  "description": "एक छोटी चिड़िया को लगता है कि उसका तिनका बहुत छोटा है, लेकिन वही तिनका उसके घोंसले को तूफान से बचाता है।",
+  "tags": [
+    "चिड़िया",
+    "तिनका",
+    "घोंसला",
+    "हिम्मत",
+    "हिंदी कहानियां"
+  ],
+  "character_reference": "a fluffy turquoise blue bird with bright yellow wing tips and a cheerful chirp",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "रानी चिड़िया अपना नया घोंसला बना रही थी। उसके पास केवल एक बहुत छोटा सा सूखा तिनका बचा था।",
+      "on_screen_text": "छोटा तिनका",
+      "duration_hint": 6.0,
+      "visual": "A small blue bird looking down at a single tiny dry twig held delicately in its beak, perched high on a sturdy oak branch."
+    },
+    {
+      "narration": "उसने उदास होकर सोचा कि इस नन्हे तिनके से मजबूत घोंसला कभी नहीं बन पाएगा।",
+      "on_screen_text": "उदास मन",
+      "duration_hint": 6.0,
+      "visual": "Close-up of the bird drooping its head sadly, soft focus on green leaves swaying gently in the background breeze."
+    },
+    {
+      "narration": "तभी एक समझदार बुजुर्ग तोते ने आकर कहा कि हर छोटी चीज़ का अपना एक खास महत्व होता है।",
+      "on_screen_text": "बुजुर्ग की सलाह",
+      "duration_hint": 6.0,
+      "visual": "An emerald green parrot leaning in close to speak kindly to the blue bird, dappled sunlight filtering through the canopy."
+    },
+    {
+      "narration": "रानी ने हिम्मत नहीं हारी और उस छोटे तिनके को घोंसले के ठीक बीच में मजबूती से फंसा दिया।",
+      "on_screen_text": "मजबूत पकड़",
+      "duration_hint": 6.0,
+      "visual": "The bird intently weaving the tiny twig into the center of a half-built nest using its beak, highly detailed textures."
+    },
+    {
+      "narration": "रात को अचानक तेज आंधी और तूफान आ गया। जंगल के बड़े-बड़े पेड़ भी हिलने लगे।",
+      "on_screen_text": "तेज आंधी",
+      "duration_hint": 6.0,
+      "visual": "Dark stormy night with fierce wind bending tree branches violently, heavy raindrops splashing against dark foliage."
+    },
+    {
+      "narration": "बाकी बड़े तिनके बिखर गए, लेकिन रानी के घोंसले का वह छोटा तिनका एक मजबूत ताले की तरह जमा रहा।",
+      "on_screen_text": "अटल घोंसला",
+      "duration_hint": 7.0,
+      "visual": "The bird huddled tightly inside its secure, swaying nest while lightning flashes in the dramatic night sky."
+    },
+    {
+      "narration": "सुबह हुई तो रानी का घोंसला बिल्कुल सुरक्षित था। उसे समझ आ गया कि कोई भी चीज़ छोटी नहीं होती।",
+      "on_screen_text": "सुरक्षित सुबह",
+      "duration_hint": 7.0,
+      "visual": "The little bird standing proudly on the edge of its intact nest as bright morning rays pierce through retreating storm clouds."
+    },
+    {
+      "narration": "छोटी से छोटी चीज़ भी कभी-कभी सबसे बड़ा काम कर जाती है। ऐसी ही और प्रेरणादायक कहानियों के लिए हमें फॉलो करें!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "The happy blue bird singing cheerfully towards the rising sun, dewdrops sparkling on surrounding leaves, vibrant colors."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-early-canvas",
+  "title": "The Early Canvas",
+  "description": "A busy mother wakes up before dawn to reclaim the painter she used to be.",
+  "tags": [
+    "passion",
+    "motherhood",
+    "art",
+    "dedication",
+    "women"
+  ],
+  "character_reference": "a woman in her mid-thirties with blonde hair tied in a messy ponytail, wearing a faded gray sweatshirt with paint splatters",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The digital clock glowed 4:45 AM. The rest of the house was wrapped in deep, undisturbed sleep.",
+      "on_screen_text": "BEFORE DAWN",
+      "duration_hint": 8.0,
+      "visual": "close-up of a digital alarm clock glowing red numbers in a dark bedroom, soft blue morning light peeking through window blinds"
+    },
+    {
+      "narration": "Sarah tiptoed down the hallway, her bare feet padding softly against the cold wooden floorboards.",
+      "on_screen_text": "QUIET HALLWAY",
+      "duration_hint": 8.0,
+      "visual": "low-angle shot of bare feet walking quietly across a polished wooden hallway floor in the dim morning light, cinematic framing"
+    },
+    {
+      "narration": "She flicked on a single brass lamp in the corner of the sunroom. Her easel had waited three years for this.",
+      "on_screen_text": "THE BRASS LAMP",
+      "duration_hint": 9.0,
+      "visual": "medium shot of a wooden easel holding a blank canvas under the warm glow of a vintage brass desk lamp in a quiet room"
+    },
+    {
+      "narration": "Squeezing cobalt blue onto the wooden palette felt like greeting an old friend she thought she lost forever.",
+      "on_screen_text": "WELCOME BACK",
+      "duration_hint": 9.0,
+      "visual": "extreme close-up of vibrant blue oil paint being squeezed from a metal tube onto a wooden artist palette, rich textures, studio lighting"
+    },
+    {
+      "narration": "Her brush swept across the white canvas in wide, confident arcs. No one needed anything from her right now.",
+      "on_screen_text": "WIDE ARCS",
+      "duration_hint": 9.0,
+      "visual": "close-up of a paintbrush loaded with blue pigment sweeping across a white linen canvas, dynamic motion, dramatic side light"
+    },
+    {
+      "narration": "She wasn't painting for a gallery or an audience. She was painting to remember who she was.",
+      "on_screen_text": "REMEMBERING",
+      "duration_hint": 8.0,
+      "visual": "profile shot of a woman gazing intently at her half-finished painting, focused expression, soft morning light illuminating her face"
+    },
+    {
+      "narration": "As the first pink rays of sunrise hit the window, the canvas came alive with color and breath.",
+      "on_screen_text": "FIRST LIGHT",
+      "duration_hint": 8.0,
+      "visual": "shot of a colorful abstract painting catching warm golden morning sunlight through a large window, beautiful natural lighting"
+    },
+    {
+      "narration": "If you are finding time for your passions against the odds, follow along for daily encouragement.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "warm portrait of a woman smiling tiredly yet happily toward the camera, sunroom background bathed in morning light"
+    }
+  ]
+}

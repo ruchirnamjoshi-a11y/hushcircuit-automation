@@ -1,0 +1,71 @@
+{
+  "id": "the-spit-shine",
+  "title": "The Spit Shine",
+  "description": "Inheriting his grandfather's vintage shoeshine stand, an ambitious teen learns that listening is more valuable than making a quick buck.",
+  "tags": [
+    "grandfather",
+    "apprentice",
+    "craft",
+    "lessons",
+    "legacy"
+  ],
+  "character_reference": "a seventeen-year-old boy with a sharp fade haircut, wearing a neatly pressed chambray work shirt and rolled-up dark denim sleeves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The old wooden stool creaked under my weight as I looked down at the battered brass polish tins and horsehair brushes.",
+      "on_screen_text": "THE OLD STAND",
+      "duration_hint": 5.0,
+      "visual": "close-up of weathered wooden footrests and worn metal polish tins resting on an antique wooden shoeshine platform"
+    },
+    {
+      "narration": "I thought my job was just to scrub away scuffs and make leather shiny enough to see your own reflection in.",
+      "on_screen_text": "FIRST ATTEMPT",
+      "duration_hint": 5.0,
+      "visual": "close-up of a stiff brush vigorously scrubbing brown leather work boots, dust flying under harsh fluorescent station lights"
+    },
+    {
+      "narration": "An older man sat down with slumped shoulders and didn't say a word for the first five minutes.",
+      "on_screen_text": "SILENT CUSTOMER",
+      "duration_hint": 4.5,
+      "visual": "medium shot of a person sitting high on a wooden chair, staring straight ahead with a weary, pensive expression"
+    },
+    {
+      "narration": "Instead of rushing through the polish, I slowed my hands down and matched the steady, rhythmic cadence of his breathing.",
+      "on_screen_text": "SLOWING DOWN",
+      "duration_hint": 5.5,
+      "visual": "close-up of hands applying dark wax polish in smooth circular motions using a soft cotton cloth wrapped around two fingers"
+    },
+    {
+      "narration": "He finally started talking about his daughter leaving for college, and I realized he didn't need polish, he needed a listener.",
+      "on_screen_text": "THE REAL REASON",
+      "duration_hint": 5.5,
+      "visual": "tight shot of listening intently with a sympathetic nod, head tilted slightly, warm afternoon light hitting the side of the face"
+    },
+    {
+      "narration": "By the time I finished buffing the heel, the scuffs were gone and his shoulders didn't look quite so heavy anymore.",
+      "on_screen_text": "LIGHTER STEPS",
+      "duration_hint": 5.0,
+      "visual": "close-up of polished leather shoes gleaming under warm incandescent lighting, soft focus background"
+    },
+    {
+      "narration": "My grandfather left me tools to fix leather, but he really taught me how to connect with people.",
+      "on_screen_text": "BETTER TOOLS",
+      "duration_hint": 5.0,
+      "visual": "low angle shot looking at an old wooden workshop bench filled with neatly organized brushes and amber glass polish bottles"
+    },
+    {
+      "narration": "Every pair of shoes carries a story if you take the time to look closely at where they have been.",
+      "on_screen_text": "EVERY STEP",
+      "duration_hint": 5.0,
+      "visual": "wide shot of a cozy vintage storefront interior with warm wood panelling and soft, inviting illumination"
+    },
+    {
+      "narration": "If you believe the best conversations happen in unexpected places, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm, genuine smile looking directly into the camera lens while holding a soft polishing cloth, friendly atmosphere"
+    }
+  ]
+}

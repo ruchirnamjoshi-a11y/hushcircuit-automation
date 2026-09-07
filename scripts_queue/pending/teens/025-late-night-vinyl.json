@@ -1,0 +1,71 @@
+{
+  "id": "late-night-vinyl",
+  "title": "Late Night Vinyl",
+  "description": "Working the closing shift at a dusty local record shop, a music lover helps an eccentric stranger track down a forgotten childhood melody.",
+  "tags": [
+    "music",
+    "vinyl",
+    "nostalgia",
+    "job",
+    "connection"
+  ],
+  "character_reference": "a twenty-year-old guy with messy blonde hair tucked behind one ear, wearing a vintage striped polo shirt and a silver chain necklace",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The neon OPEN sign buzzed with a low, hypnotic hum as the rain hammered against the front display window.",
+      "on_screen_text": "THE CLOSING SHIFT",
+      "duration_hint": 5.0,
+      "visual": "close-up of rain streaming down a large glass window, glowing red neon light reflecting off wet pavement outside"
+    },
+    {
+      "narration": "Ten minutes before closing, the brass shop bell chimed and a shivering stranger walked in clutching a wet umbrella.",
+      "on_screen_text": "A LATE VISITOR",
+      "duration_hint": 5.0,
+      "visual": "medium shot of someone stepping through an antique wooden doorway, shaking out a dark umbrella in a dim record store aisle"
+    },
+    {
+      "narration": "They hummed three hesitant notes of a melody they could not name, searching my face for any sign of recognition.",
+      "on_screen_text": "THE MELODY",
+      "duration_hint": 5.5,
+      "visual": "close-up of lips humming softly with a concentrated expression, warm amber overhead track lighting casting gentle highlights"
+    },
+    {
+      "narration": "We spent an hour thumbing through crates of discarded seventy-fives, flipping past jazz legends and forgotten disco records.",
+      "on_screen_text": "DIGGING THROUGH CRATES",
+      "duration_hint": 5.5,
+      "visual": "over-the-shoulder view rapidly flipping through old cardboard record sleeves, dust motes swirling in the light of a desk lamp"
+    },
+    {
+      "narration": "My fingers brushed against a plain white paper sleeve tucked away in the very back corner of the bottom shelf.",
+      "on_screen_text": "THE DISCOVERY",
+      "duration_hint": 5.0,
+      "visual": "extreme close-up of a hand pulling a worn paper record sleeve from a tightly packed wooden bin, old catalog numbers visible"
+    },
+    {
+      "narration": "I placed the heavy vinyl onto the turntable and lowered the needle with practiced, careful reverence.",
+      "on_screen_text": "DROPPING THE NEEDLE",
+      "duration_hint": 4.5,
+      "visual": "close-up of a turntable arm slowly descending onto a spinning black vinyl record, glowing turntable indicator light"
+    },
+    {
+      "narration": "As the warm crackle of the intro filled the empty shop, the stranger closed their eyes and smiled through sudden tears.",
+      "on_screen_text": "THE MEMORY",
+      "duration_hint": 5.5,
+      "visual": "close-up of eyes closing slowly with an expression of profound relief, warm golden light spilling from a vintage desk lamp"
+    },
+    {
+      "narration": "Some songs are just waiting in the dark for the right person to come along and play them again.",
+      "on_screen_text": "WAITING SONGS",
+      "duration_hint": 5.0,
+      "visual": "wide shot of two people leaning against a wooden counter listening to music, surrounded by towering walls of vinyl records"
+    },
+    {
+      "narration": "If you love discovering the hidden soundtracks of everyday life, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "friendly smiling portrait leaning against a counter full of records, warm cozy lighting and welcoming expression"
+    }
+  ]
+}

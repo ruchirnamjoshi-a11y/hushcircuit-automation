@@ -1,0 +1,71 @@
+{
+  "id": "the-bakery-ledger",
+  "title": "The Bakery Ledger",
+  "description": "A baker finds an old notebook buried under her flour sacks containing recipes from her grandmother and the secrets of community resilience.",
+  "tags": [
+    "baking",
+    "heritage",
+    "family",
+    "tradition",
+    "nostalgia"
+  ],
+  "character_reference": "a woman in her late forties with flour-dusted dark hair pulled back in a bun, wearing a faded crimson apron over a linen blouse",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The old oven had been humming since dawn, filling the midnight bakery with the familiar scent of melted butter and dark rye.",
+      "on_screen_text": "MIDNIGHT BAKING",
+      "duration_hint": 5.2,
+      "visual": "interior of a warm rustic bakery kitchen at night, flour dust swirling around heavy iron mixers and wooden tables"
+    },
+    {
+      "narration": "While dragging out the bottom flour bin for a deep clean, my hand struck a heavy leather book wedged behind the floorboards.",
+      "on_screen_text": "HIDDEN BOOK",
+      "duration_hint": 5.2,
+      "visual": "hands pulling a thick, leather-bound notebook covered in flour stains out from a dark gap beneath a counter"
+    },
+    {
+      "narration": "Flipping the brittle pages revealed my grandmother's sprawling cursive, detailing loaves I had long forgotten how to make.",
+      "on_screen_text": "GRANDMOTHER'S HAND",
+      "duration_hint": 5.2,
+      "visual": "close-up of faded handwritten recipe notes and ink stains on yellowed paper pages under a yellow desk lamp"
+    },
+    {
+      "narration": "There were margins filled with notes on flour blends, sourdough starters fed through harsh winters, and names of neighborhood families.",
+      "on_screen_text": "MARGIN NOTES",
+      "duration_hint": 5.2,
+      "visual": "finger tracing handwritten margins filled with marginalia and dates from decades past in a ledger"
+    },
+    {
+      "narration": "I measured out the archaic proportions of honey and cracked wheat, trusting the ghosts of bakers past to guide my hands.",
+      "on_screen_text": "OLD RECIPE",
+      "duration_hint": 5.2,
+      "visual": "hands pouring golden amber honey from a heavy jar into a large earthenware bowl filled with flour"
+    },
+    {
+      "narration": "As the dough rose in the wooden trough, I felt the heavy weight of isolation lift from my tired shoulders.",
+      "on_screen_text": "THE DOUGH RISES",
+      "duration_hint": 4.8,
+      "visual": "time-lapse style shot of soft sourdough dough expanding inside a flour-dusted wooden proofing box"
+    },
+    {
+      "narration": "When the morning bell chimed above the door, I pulled the first crackling loaf from the deck oven to share.",
+      "on_screen_text": "MORNING CRUST",
+      "duration_hint": 5.2,
+      "visual": "baker pulling a steaming, golden-brown loaf of bread out of a brick oven using a long wooden peel"
+    },
+    {
+      "narration": "Connecting with our roots doesn't require looking backward in sorrow; sometimes it just means feeding the people around you.",
+      "on_screen_text": "ROOTS",
+      "duration_hint": 5.2,
+      "visual": "warm shot of a sliced crusty loaf on a cutting board with butter melting across the steaming crumb"
+    },
+    {
+      "narration": "If you enjoy heartwarming tales of heritage and hearth, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.3,
+      "visual": "baker smiling warmly while wiping flour from her cheek in a sunlit country kitchen"
+    }
+  ]
+}

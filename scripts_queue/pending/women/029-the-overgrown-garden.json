@@ -1,0 +1,65 @@
+{
+  "id": "the-overgrown-garden",
+  "title": "The Overgrown Garden",
+  "description": "Clearing out the weeds in an abandoned backyard helps a woman process a difficult breakup.",
+  "tags": [
+    "healing",
+    "gardening",
+    "renewal",
+    "women",
+    "lettinggo"
+  ],
+  "character_reference": "a woman in her early thirties with wavy honey-blonde hair tucked under a straw sunhat, wearing muddy gardening gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For six months, the backyard had grown wild with thorny vines and choking weeds. Today, Mia grabbed the shears.",
+      "on_screen_text": "WILD OVERGROWN",
+      "duration_hint": 9.0,
+      "visual": "wide shot of a neglected, overgrown backyard filled with tangled weeds and wild bushes, overcast natural daylight"
+    },
+    {
+      "narration": "The overgrowth mirrored the grief she had been carrying, tangled and heavy in the corners of her mind.",
+      "on_screen_text": "HEAVY GRIEF",
+      "duration_hint": 8.0,
+      "visual": "close-up of gloved hands gripping rusted garden shears near a thicket of thorny vines, moody natural lighting"
+    },
+    {
+      "narration": "With each loud snap of the pruning shears, another stubborn branch fell away to the damp soil.",
+      "on_screen_text": "SNAPPING BRANCHES",
+      "duration_hint": 9.0,
+      "visual": "action shot of shears cutting through a thick green stem, flying leaf bits captured mid-air, sharp focus, natural daylight"
+    },
+    {
+      "narration": "Beneath the tangled mess of dead stalks, she spotted tiny green shoots fighting their way toward the sun.",
+      "on_screen_text": "HIDDEN SHOOTS",
+      "duration_hint": 9.0,
+      "visual": "macro shot of delicate green seedlings emerging from dark damp soil beneath fallen leaves, soft natural morning light"
+    },
+    {
+      "narration": "She knelt in the dirt, pulling out roots that had choked the soil for years, feeling lighter with every heave.",
+      "on_screen_text": "PULLING ROOTS",
+      "duration_hint": 9.0,
+      "visual": "medium shot of a woman kneeling in garden soil, pulling up a long weed root with a determined expression, warm outdoor lighting"
+    },
+    {
+      "narration": "By sunset, the beds were clear, exposed to the open sky and ready for something new to take root.",
+      "on_screen_text": "OPEN SKY",
+      "duration_hint": 9.0,
+      "visual": "shot of cleared garden soil beds catching the golden light of a setting sun, peaceful rustic backyard setting"
+    },
+    {
+      "narration": "Healing wasn't about erasing the past. It was about clearing the space so life could bloom again.",
+      "on_screen_text": "BLOOMING AGAIN",
+      "duration_hint": 9.0,
+      "visual": "profile portrait of a woman wiping dirt from her cheek with a satisfied, peaceful smile, golden hour lighting"
+    },
+    {
+      "narration": "If you are growing through your own season of renewal, follow along for more uplifting stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "friendly close-up portrait of a woman smiling warmly at the camera in a sunny garden setting"
+    }
+  ]
+}

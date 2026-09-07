@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-chapter-thirteen",
+  "title": "Neon Pulse — Episode 13: Train Tracks Ambush",
+  "description": "Kael faces an oncoming high-speed train while trapped in a syndicate rail yard trap, forcing him to push his engineered abilities to the absolute limit.",
+  "tags": [
+    "action",
+    "superhero",
+    "scifi",
+    "thriller",
+    "suspense"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 13,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The roar of the high-speed engine shakes the rusted rail beneath my boots. Headlights slice through the smog, blinding and merciless.",
+      "on_screen_text": "BLINDING LIGHTS",
+      "duration_hint": 11.0,
+      "visual": "Low-angle action shot of the protagonist lunging sideways off steel rails, bright headlight beam cutting through dark industrial fog, dynamic motion blur, dramatic lighting."
+    },
+    {
+      "narration": "I throw my hands forward, channeling every ounce of compressed circuit energy into a localized magnetic shockwave.",
+      "on_screen_text": "MAGNETIC SURGE",
+      "duration_hint": 9.5,
+      "visual": "Medium close-up of outstretched hands emitting bright amber electrical arcs and sparks, gritty textures, intense focus, dramatic shadows casting across a dark industrial background."
+    },
+    {
+      "narration": "The impact slams into the locomotive nose, metal screeching in agony as the massive machine grinds violently to a sudden halt.",
+      "on_screen_text": "IMPACT SHOCK",
+      "duration_hint": 10.0,
+      "visual": "Dynamic shot of a massive metallic train nose crumpled and sparking violently, thick plumes of white steam venting upward into the dark night air, debris flying."
+    },
+    {
+      "narration": "Before the dust can even settle, heavy boots hit the ballast behind me. The syndicate never sends just one wave.",
+      "on_screen_text": "NEW THREAT",
+      "duration_hint": 9.0,
+      "visual": "Over-the-shoulder perspective looking at armed tactical operatives emerging from shadows among rusted railcars, holding high-tech rifles, dim moonlight reflecting off armor."
+    },
+    {
+      "narration": "I pivot on my heel, unleashing a sharp burst of amber plasma that shatters the nearest sniper tower's support beam.",
+      "on_screen_text": "PLASMA STRIKE",
+      "duration_hint": 10.0,
+      "visual": "Action shot of a glowing energy beam slicing through a rusted metal lattice structure, fiery explosion and flying sparks illuminating the dark yard."
+    },
+    {
+      "narration": "Alarms blare across the entire yard as the automated defense grid locks onto my position with lethal precision.",
+      "on_screen_text": "LOCKED GRID",
+      "duration_hint": 9.0,
+      "visual": "Wide cinematic view of an industrial rail yard flashing with pulsing red security lights, shadows stretching long across gravel and discarded metal containers."
+    },
+    {
+      "narration": "I slip into the dark undercarriage of a parked cargo carriage, vanishing just as a hail of plasma fire scorches the ground.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 10.0,
+      "visual": "Low-angle shot crawling beneath heavy steel wheels of a railway car, bright energy bolts scorching the ground just inches away in a shower of sparks."
+    },
+    {
+      "narration": "A data-pad falls from my pocket, projecting a live transmission that reveals the syndicate's true mastermind is someone I once called brother.",
+      "on_screen_text": "THE MASTERMIND",
+      "duration_hint": 11.5,
+      "visual": "Extreme close-up of a glowing holographic projection hovering above a discarded tactical device, showing a blurred menacing face in flickering blue light."
+    },
+    {
+      "narration": "If you want to find out who pulls the strings next time, follow along for more of Kael's story.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "Cinematic medium portrait of the protagonist looking intensely toward the camera under dim amber illumination, mysterious atmosphere, moody lighting."
+    }
+  ]
+}

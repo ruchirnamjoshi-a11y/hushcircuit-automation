@@ -1,0 +1,65 @@
+{
+  "id": "sonu-bandar-aur-sona-kela",
+  "title": "सोनू बंदर और सोना केला",
+  "description": "एक लालची बंदर को जंगल में सोने का केला मिलता है, लेकिन वह सीखता है कि असली खजाना खाने की चीज़ है न कि सोना।",
+  "tags": [
+    "बंदर",
+    "सोना",
+    "नैतिक कहानी",
+    "बच्चों की कहानी",
+    "लालच"
+  ],
+  "character_reference": "a small brown monkey with bright curious eyes and a long playful tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "घने जंगल में सोनू बंदर को एक चमकता हुआ केला मिला। पास जाने पर उसे पता चला कि वह साधारण नहीं, बल्कि असली सोने का केला था।",
+      "on_screen_text": "चमकता हुआ केला",
+      "duration_hint": 7.0,
+      "visual": "A small monkey staring in absolute amazement at a brilliant golden banana resting on a lush green jungle leaf, cinematic lighting, macro shot."
+    },
+    {
+      "narration": "सोनू खुशी से उछल पड़ा। उसने सोचा कि अब वह जंगल का सबसे अमीर और शक्तिशाली बंदर बन जाएगा।",
+      "on_screen_text": "खुशी का उछाल",
+      "duration_hint": 6.0,
+      "visual": "The same monkey leaping joyfully in the air with wide eyes, holding the heavy golden fruit tightly, dynamic low-angle shot amidst dense tropical foliage."
+    },
+    {
+      "narration": "वह तुरंत उस सोने के केले को अपने पेड़ की खोह में छिपाने के लिए भागा। उसने किसी को भी इसके बारे में नहीं बताया।",
+      "on_screen_text": "छिपाने की दौड़",
+      "duration_hint": 6.0,
+      "visual": "The monkey scurrying rapidly across tree branches while clutching the glowing treasure to its chest, motion blur background, moody forest twilight."
+    },
+    {
+      "narration": "शाम होते ही सोनू को बहुत तेज़ भूख लगी। उसने सोने के केले को छीलकर खाने की कोशिश की, लेकिन उसके दांत दर्द करने लगे।",
+      "on_screen_text": "तेज़ भूख",
+      "duration_hint": 7.0,
+      "visual": "The monkey sitting miserably inside a dark tree hollow, holding its aching jaw with one hand and staring sadly at the unyielding metal fruit."
+    },
+    {
+      "narration": "सोने का केला न तो मीठा था और न ही पेट भर सकता था। सोनू का पेट खाली था और वह अब रोने लगा था।",
+      "on_screen_text": "खाली पेट",
+      "duration_hint": 6.0,
+      "visual": "Close-up of the hungry monkey rubbing its rumbling tummy, tears welling in its eyes, soft golden rays filtering through the hollow opening."
+    },
+    {
+      "narration": "तभी एक बूढ़े बंदर ने उसे समझाया कि सोने से ज्यादा कीमती वह भोजन है जो जीवन देता है।",
+      "on_screen_text": "समझदारी की बात",
+      "duration_hint": 6.0,
+      "visual": "An older, wise monkey gently placing a comforting hand on the young protagonist's shoulder inside a cozy, sunlit nest."
+    },
+    {
+      "narration": "सोनू को अपनी गलती का अहसास हुआ। उसने सोने का केला जंगल में वापस रख दिया और ताजे मीठे फल खाए।",
+      "on_screen_text": "सही फैसला",
+      "duration_hint": 6.0,
+      "visual": "The monkey happily munching on a delicious ripe yellow banana, smiling brightly with a satisfied belly, warm afternoon sunlight."
+    },
+    {
+      "narration": "लालच बुरी बला है और असली दौलत हमारी ज़रूरतें पूरी करने वाली चीज़ें होती हैं। क्या आपने कभी ऐसा सबक सीखा है? हमारे चैनल को सब्सक्राइब करें!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "The cheerful monkey sitting peacefully on a sturdy tree branch, waving goodbye with a warm smile, vibrant green jungle background."
+    }
+  ]
+}

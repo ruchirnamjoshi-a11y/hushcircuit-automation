@@ -1,0 +1,71 @@
+{
+  "id": "echoes-of-betrayal",
+  "title": "Neon Pulse — Episode 14: Echoes of Betrayal",
+  "description": "Kael confronts the shocking identity of the syndicate mastermind and uncovers a deeper betrayal.",
+  "tags": [
+    "action",
+    "superhero",
+    "cyberpunk",
+    "mystery",
+    "original hero"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 14,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The audio transmission echoed in the empty warehouse, repeating the voice of the person Kael trusted most before everything fell apart.",
+      "on_screen_text": "A FAMILIAR VOICE",
+      "duration_hint": 7.0,
+      "visual": "close up of a cracked tactical radio sparking on a concrete floor with faint red warning lights reflecting in puddles"
+    },
+    {
+      "narration": "Commander Vance had not died in the facility explosion as the official records claimed, but was leading the syndicate all along.",
+      "on_screen_text": "THE SURVIVOR",
+      "duration_hint": 6.5,
+      "visual": "medium shot looking down a dark industrial corridor with heavy steel doors and hanging flickering pendant lamps casting harsh shadows"
+    },
+    {
+      "narration": "Memories flashed of Vance teaching him how to harness the very energy pulsing through his arms, turning his mentor into his greatest enemy.",
+      "on_screen_text": "TRAINED TO KILL",
+      "duration_hint": 6.5,
+      "visual": "low angle shot of glowing amber energy tracing across bruised knuckles inside a dimly lit concrete bunker"
+    },
+    {
+      "narration": "A sudden security alert shattered the silence, indicating that strike teams were already locking down every exit in the sector.",
+      "on_screen_text": "LOCKDOWN INITIATED",
+      "duration_hint": 6.0,
+      "visual": "fast paced interior view of heavy iron shutters slamming down across a wide warehouse bay with alarm strobes flashing amber"
+    },
+    {
+      "narration": "Kael channeled the pulsing current into his palms, ready to smash through the reinforced steel doors before they sealed completely.",
+      "on_screen_text": "BREAKING POINT",
+      "duration_hint": 6.0,
+      "visual": "close up of hands glowing with intense amber light pressed hard against a massive steel bulkhead that begins to buckle inward"
+    },
+    {
+      "narration": "As the metal warped under his engineered strength, a holographic projector flickered to life right in front of him.",
+      "on_screen_text": "HOLOGRAM MESSAGE",
+      "duration_hint": 6.0,
+      "visual": "wide shot of a glowing blue holographic interface projecting a detailed 3D topographical map of an underground facility"
+    },
+    {
+      "narration": "Vance appeared in the projection, smiling coldly and warning Kael that the ultimate weapon was already operational beneath the city.",
+      "on_screen_text": "THE ULTIMATE WEAPON",
+      "duration_hint": 6.5,
+      "visual": "over the shoulder view staring at a translucent blue projection of an older stern faced man in military uniform speaking inside a dark room"
+    },
+    {
+      "narration": "With the countdown timer ticking down, Kael bolted into the subterranean tunnels, determined to stop Vance before the syndicate struck again.",
+      "on_screen_text": "THE HUNT BEGINS",
+      "duration_hint": 6.5,
+      "visual": "dynamic chase angle tracking a figure sprinting down a long damp underground maintenance tunnel with steam hissing from rusted pipes"
+    },
+    {
+      "narration": "The battle for the truth is only just beginning. Follow along for the next chapter of Neon Pulse.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "dramatic cinematic silhouette standing in a narrow tunnel entrance with bright amber energy flaring intensely against the dark stone walls"
+    }
+  ]
+}

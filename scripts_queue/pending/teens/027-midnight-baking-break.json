@@ -1,0 +1,71 @@
+{
+  "id": "midnight-baking-break",
+  "title": "Midnight Flour",
+  "description": "After blowing her first culinary school exam, a sleep-deprived baker reinvents her signature recipe at two in the morning.",
+  "tags": [
+    "baking",
+    "culinary",
+    "failure",
+    "recipe",
+    "night"
+  ],
+  "character_reference": "a nineteen-year-old female culinary student with flour dusted across her cheek, wearing a black beanie over messy wavy auburn hair and an oversized grey sweatshirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The red failing mark on my practical exam glared from the kitchen counter like a neon warning sign.",
+      "on_screen_text": "THE FAILING MARK",
+      "duration_hint": 5.0,
+      "visual": "close-up of a heavy white ceramic bowl next to a crumpled piece of paper with bold red pen marks, moody kitchen lighting"
+    },
+    {
+      "narration": "At two in the morning, the stainless steel kitchen was entirely mine, quiet except for the hum of the refrigerator.",
+      "on_screen_text": "SILENT KITCHEN",
+      "duration_hint": 5.0,
+      "visual": "wide shot of an empty commercial kitchen at night, sleek metal counters reflecting blue light from a distant appliance"
+    },
+    {
+      "narration": "I threw out the textbook proportions and started tossing in dark brown sugar, sea salt, and extra toasted pecans.",
+      "on_screen_text": "BREAKING THE RULES",
+      "duration_hint": 5.5,
+      "visual": "close-up of dark brown sugar cascading from measuring spoons into a large glass mixing bowl, dust motes in the air"
+    },
+    {
+      "narration": "My hands kneaded the stubborn dough with frustration, channeling every ounce of doubt into the heavy wooden rolling pin.",
+      "on_screen_text": "CHANNELING DOUBT",
+      "duration_hint": 5.5,
+      "visual": "close-up of hands firmly pressing a wooden rolling pin across a dusted wooden board, powerful motion blur on the edges"
+    },
+    {
+      "narration": "The oven window fogged up as the butter melted and the sweet, nutty scent filled the dark room.",
+      "on_screen_text": "THE OVEN GLOW",
+      "duration_hint": 4.5,
+      "visual": "close-up of golden light glowing from an oven window, steam condensation bubbling on the hot glass surface"
+    },
+    {
+      "narration": "When I pulled the tray out, the edges were wonderfully imperfect and ruggedly caramelized.",
+      "on_screen_text": "IMPERFECT EDGES",
+      "duration_hint": 4.5,
+      "visual": "close-up of freshly baked pastries cooling on a metal wire rack, golden brown crusts glistening under warm lights"
+    },
+    {
+      "narration": "I took a bite and laughed out loud because it tasted better than any rigid recipe ever could.",
+      "on_screen_text": "TASTING SUCCESS",
+      "duration_hint": 5.0,
+      "visual": "close-up taking a bite of a warm pastry, eyes widening with genuine delight and surprise, flour dusting the cheek"
+    },
+    {
+      "narration": "Perfection is overrated when you can make something with real soul instead.",
+      "on_screen_text": "REAL SOUL",
+      "duration_hint": 4.5,
+      "visual": "warm still life of baked goods resting on parchment paper next to a dusting of white flour on a dark wood table"
+    },
+    {
+      "narration": "If you love stories about turning failures into your best work, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "friendly smiling portrait holding a warm baking tray, cozy kitchen background with soft yellow bokeh lights"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-climbing-hold",
+  "title": "The Climbing Hold",
+  "description": "A woman faces her fear of heights on a climbing wall and discovers her true physical resilience.",
+  "tags": [
+    "courage",
+    "strength",
+    " преодоление",
+    "fitness",
+    "women"
+  ],
+  "character_reference": "a woman in her late twenties with muscular arms, dark curly hair in a high ponytail, wearing a chalk-stained pink tank top",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Her palms were slick with white chalk as she looked up at the towering vertical wall of colorful resin holds.",
+      "on_screen_text": "THE WALL",
+      "duration_hint": 9.0,
+      "visual": "low-angle shot looking up a towering indoor climbing wall covered in colorful holds, dramatic gym lighting, chalk dust in the air"
+    },
+    {
+      "narration": "Heights had terrified her since childhood. Every instinct screamed at her to step back down to the padded mat.",
+      "on_screen_text": "PURE FEAR",
+      "duration_hint": 9.0,
+      "visual": "close-up of chalk-covered hands gripping tightly onto a bright orange climbing hold, tense knuckles, shallow depth of field"
+    },
+    {
+      "narration": "She took a deep breath, found her footing on a tiny plastic ledge, and reached up with her right hand.",
+      "on_screen_text": "FIRST MOVE",
+      "duration_hint": 9.0,
+      "visual": "action shot of a woman reaching one arm upward toward a blue climbing hold, focused expression, gym environment blurred behind"
+    },
+    {
+      "narration": "Halfway up, her muscles began to tremble. Doubt whispered that she wasn't strong enough to finish.",
+      "on_screen_text": "THE TREMBLE",
+      "duration_hint": 9.0,
+      "visual": "close-up of leg muscles flexing under tension against a climbing wall, dynamic lighting highlighting physical effort"
+    },
+    {
+      "narration": "Instead of freezing, she engaged her core, trusted her grip, and surged upward to the next secure ledge.",
+      "on_screen_text": "SURGING UP",
+      "duration_hint": 9.0,
+      "visual": "dynamic action shot of a climber pulling herself up to a high hold, intense concentration, dramatic athletic photography"
+    },
+    {
+      "narration": "Slapping her hand against the final top hold, a triumphant smile broke across her exhausted face.",
+      "on_screen_text": "THE TOP",
+      "duration_hint": 8.0,
+      "visual": "close-up of a hand touching the topmost grey hold on a climbing wall, bright gym lights overhead, joyful triumphant mood"
+    },
+    {
+      "narration": "Hanging safely in her harness, she realized she was far more capable than she had ever given herself credit for.",
+      "on_screen_text": "CAPABLE",
+      "duration_hint": 9.0,
+      "visual": "medium portrait of a woman hanging in a climbing harness, breathing heavily with a proud, beaming smile, indoor gym background"
+    },
+    {
+      "narration": "If you are ready to push past your own limits, follow along for daily stories of inner strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "warm close-up portrait of an athletic woman smiling directly at the camera, glowing indoor gym lighting"
+    }
+  ]
+}

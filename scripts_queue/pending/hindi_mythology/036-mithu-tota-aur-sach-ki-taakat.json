@@ -1,0 +1,65 @@
+{
+  "id": "mithu-tota-aur-sach-ki-taakat",
+  "title": "मीठू तोता और सच की ताकत",
+  "description": "मीठू से गलती से कांच का बर्तन टूट जाता है, लेकिन सच बोलने की उसकी हिम्मत उसे हीरो बना देती है।",
+  "tags": [
+    "तोता",
+    "सच",
+    "ईमानदारी",
+    "नैतिक पाठ",
+    "बच्चों की कहानियां"
+  ],
+  "character_reference": "a bright green parrot with a scarlet red beak and intelligent dark eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "मीठू तोता अपने घर के कमरे में खेल रहा था। खेलते-खेलते उसका पंख दादी का कीमती गुलदस्ता से टकरा गया।",
+      "on_screen_text": "बड़ी गलती",
+      "duration_hint": 6.0,
+      "visual": "A vibrant green parrot flapping its wings anxiously near a beautiful decorative glass vase on a wooden table."
+    },
+    {
+      "narration": "धड़ाम की आवाज़ के साथ कांच का गुलदस्ता जमीन पर गिरकर टूट गया। टुकड़े चारों तरफ बिखर गए।",
+      "on_screen_text": "टूटता कांच",
+      "duration_hint": 6.0,
+      "visual": "Glass shards scattering across a polished wooden floor, dynamic motion blur, soft indoor lighting."
+    },
+    {
+      "narration": "मीठू डर गया। उसने सोचा कि अगर वह झूठ बोल दे कि बिल्ली ने यह किया है, तो शायद वह बच जाएगा।",
+      "on_screen_text": "डर का विचार",
+      "duration_hint": 6.0,
+      "visual": "Close-up of the parrot looking nervous and guilty, biting its beak anxiously, soft warm indoor background."
+    },
+    {
+      "narration": "लेकिन उसका अंतरामन बोला कि झूठ बोलने से पाप और बढ़ जाता है। सच बोलना ही सबसे अच्छा रास्ता है।",
+      "on_screen_text": "सही रास्ता",
+      "duration_hint": 6.0,
+      "visual": "The parrot closing its eyes thoughtfully, a soft golden light illuminating its face as it makes a brave choice."
+    },
+    {
+      "narration": "जैसे ही दादी कमरे में आईं, मीठू ने बिना डरे अपनी गलती मान ली और माफी मांगी।",
+      "on_screen_text": "सच का स्वीकार",
+      "duration_hint": 6.0,
+      "visual": "The parrot bowing its head respectfully in front of an elderly gentle bird character, warm domestic interior."
+    },
+    {
+      "narration": "दादी गुस्सा होने के बजाय मुस्कुरा उठीं। उन्होंने मीठू को गले से लगा लिया और उसकी ईमानदारी की तारीफ की।",
+      "on_screen_text": "प्यार और माफी",
+      "duration_hint": 7.0,
+      "visual": "An affectionate moment showing the wise elder bird patting the young parrot lovingly on the head, gentle glow."
+    },
+    {
+      "narration": "मीठू को समझ आ गया कि सच बोलने से दिल हल्का हो जाता है और विश्वास कभी नहीं टूटता।",
+      "on_screen_text": "सुखी मन",
+      "duration_hint": 6.0,
+      "visual": "The parrot singing happily on a windowsill with a relieved expression, bright morning sunlight pouring in."
+    },
+    {
+      "narration": "ईमानदारी सबसे उत्तम नीति है। इस सीख को हमेशा याद रखें और हमारे चैनल को फॉलो करें!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "The happy green parrot flying gracefully towards a clear blue sky, vibrant and uplifting atmosphere."
+    }
+  ]
+}

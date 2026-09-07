@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-eleven",
+  "title": "Neon Pulse — Episode 11: Decrypted Coordinates",
+  "description": "Kael analyzes the stolen coordinates on the mainland, only to realize the syndicate's trap is already closing in around him.",
+  "tags": [
+    "action",
+    "superhero",
+    "sci-fi",
+    "thriller",
+    "original"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 11,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Washing up on the cold shore was only the beginning. The decrypted data chip hums in my hand, flashing warnings of an active lockdown.",
+      "on_screen_text": "COLD SHORELINE",
+      "duration_hint": 14.0,
+      "visual": "Drenched boots stepping onto wet pebble beach at dusk, holding a small glowing data chip, dramatic low angle, cinematic lighting, moody sea spray background."
+    },
+    {
+      "narration": "The coordinates point deep into an abandoned rail yard on the city outskirts. Every step feels heavier as the amber light on my sleeve pulses faster.",
+      "on_screen_text": "ABANDONED RAIL YARD",
+      "duration_hint": 14.0,
+      "visual": "Walking through rusty train tracks overgrown with weeds at night, glowing arm detail casting orange light on old iron, tight medium shot from behind."
+    },
+    {
+      "narration": "I hide behind a rusted freight car as a patrol drone sweeps the area. Its red optical sensor cuts through the fog, searching for my unique bio-signature.",
+      "on_screen_text": "DRONE PATROL",
+      "duration_hint": 14.0,
+      "visual": "Crouching low beside a weathered metal boxcar, peering upward nervously while a mechanical drone floats overhead casting a crimson scan beam."
+    },
+    {
+      "narration": "The syndicate knows I survived. They left this trail deliberately, testing how far I would run before the trap finally snapped shut.",
+      "on_screen_text": "A DELIBERATE TRAP",
+      "duration_hint": 13.0,
+      "visual": "Close-up expression of realization and grit in dark shadows, illuminated solely by the faint orange glow of tactical sleeve patterns reflecting on the face."
+    },
+    {
+      "narration": "Heavy footsteps echo off the concrete walls of the warehouse ahead. Someone is waiting for me in the dark, and they brought weapons.",
+      "on_screen_text": "WAITING IN THE DARK",
+      "duration_hint": 13.0,
+      "visual": "Stepping cautiously through a wide open industrial warehouse door, dust motes floating in shaft of moonlight, weapon raised in readiness."
+    },
+    {
+      "narration": "A familiar voice cuts through the silence, echoing off the metal rafters. The scarred ally who betrayed me steps out from the shadows.",
+      "on_screen_text": "THE BETRAYER",
+      "duration_hint": 13.0,
+      "visual": "Staring forward with narrowed eyes, facing an opposing figure emerging from deep warehouse shadows with a cold cynical grin, high contrast dramatic framing."
+    },
+    {
+      "narration": "Before I can react, sniper lasers lock onto my chest from every corner. There is no escape route left, only a fight for survival.",
+      "on_screen_text": "NO ESCAPE",
+      "duration_hint": 13.0,
+      "visual": "Multiple bright red targeting laser dots painting across tactical jacket, defensive stance with hands raised slightly, tense atmosphere, macro focus on jacket texture."
+    },
+    {
+      "narration": "Follow along for more of the Neon Pulse saga as the ultimate showdown begins.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Dynamic action freeze frame of glowing amber energy bursting from hands in a dark industrial interior, cinematic lighting, low angle hero shot."
+    }
+  ]
+}

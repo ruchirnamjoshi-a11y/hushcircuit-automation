@@ -1,0 +1,65 @@
+{
+  "id": "the-geometry-of-soap-bubbles",
+  "title": "The Geometry of Soap Bubbles",
+  "description": "How soap bubbles spontaneously solve complex calculus problems in fractions of a second using minimal surface area.",
+  "tags": [
+    "math",
+    "geometry",
+    "physics",
+    "calculus",
+    "nature"
+  ],
+  "character_reference": "a young scientist with tousled blonde hair and smudges of chalk dust on cheeks, wearing a worn denim apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Blow a soap bubble, and it instantly forms a sphere. Why? Because a sphere encloses the maximum volume with the minimum surface area.",
+      "on_screen_text": "MINIMUM SURFACE",
+      "duration_hint": 8.5,
+      "visual": "macro shot of a translucent soap bubble shimmering with rainbow interference colors against a dark background"
+    },
+    {
+      "narration": "Soap films are natural calculators. When stretched across wire frames, they instantly compute complex calculus optimization problems.",
+      "on_screen_text": "NATURAL CALCULATORS",
+      "duration_hint": 8.0,
+      "visual": "delicate wire geometric frame dipped in soapy water, creating shimmering iridescent curved membranes inside"
+    },
+    {
+      "narration": "Human engineers spend hours writing equations and running supercomputers to figure out the most efficient bridges and roofs.",
+      "on_screen_text": "ENGINEERING CHALLENGES",
+      "duration_hint": 7.5,
+      "visual": "blueprint drafts unrolling on a wooden table with brass compasses and rulers resting nearby"
+    },
+    {
+      "narration": "Meanwhile, a drop of soapy water solves those exact same multi-variable calculus equations in a fraction of a second.",
+      "on_screen_text": "INSTANT SOLUTIONS",
+      "duration_hint": 7.0,
+      "visual": "close-up of a shimmering soap film twisting into a minimal catenoid shape between two wire rings"
+    },
+    {
+      "narration": "When multiple bubbles meet, they always intersect at precise angles of exactly one hundred and twenty degrees.",
+      "on_screen_text": "THE 120 DEGREE RULE",
+      "duration_hint": 7.5,
+      "visual": "macro shot of a cluster of soap bubbles joined together, highlighting the sharp junctions where three walls meet"
+    },
+    {
+      "narration": "This exact network geometry minimizes total surface energy, creating the most stable structure possible.",
+      "on_screen_text": "STABLE STRUCTURES",
+      "duration_hint": 6.5,
+      "visual": "glowing geometric honeycomb lattice structure rotating slowly in soft diffused light"
+    },
+    {
+      "narration": "Physics and geometry work together seamlessly to find the path of least resistance in nature.",
+      "on_screen_text": "PATH OF LEAST RESISTANCE",
+      "duration_hint": 6.5,
+      "visual": "dewdrops resting on a spiderweb reflecting morning light like tiny scattered diamonds"
+    },
+    {
+      "narration": "Follow along for more breathtaking intersections of math and nature every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "peaceful sunlit window sill with a small glass jar filled with fresh green fern leaves"
+    }
+  ]
+}

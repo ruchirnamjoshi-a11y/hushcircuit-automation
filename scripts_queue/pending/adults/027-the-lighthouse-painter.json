@@ -1,0 +1,71 @@
+{
+  "id": "the-lighthouse-painter",
+  "title": "The Lighthouse Painter",
+  "description": "A man who spent decades painting corporate billboards takes a commission to restore a remote coastal beacon's weather-beaten murals.",
+  "tags": [
+    "art",
+    "coast",
+    "career",
+    "renewal",
+    "solitude"
+  ],
+  "character_reference": "a weathered man in his fifties with sun-bleached hair, wearing a paint-splattered yellow windbreaker and rugged denim trousers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty years I painted giant billboards over interstate highways, trading my artistic soul for flat corporate commissions.",
+      "on_screen_text": "BILLBOARD DAYS",
+      "duration_hint": 5.2,
+      "visual": "man standing on a high metal scaffolding against a gray sky, painting a giant commercial sign with a roller"
+    },
+    {
+      "narration": "When the agency retired me with a handshake and a gold watch, I packed my brushes and drove toward the crashing salt spray.",
+      "on_screen_text": "THE COAST",
+      "duration_hint": 5.2,
+      "visual": "pickup truck driving along a narrow winding coastal cliff road with turbulent ocean waves crashing below"
+    },
+    {
+      "narration": "The island lighthouse stood against the northern gale, its sea-facing wall stripped raw by salt and relentless winter winds.",
+      "on_screen_text": "THE BEACON",
+      "duration_hint": 5.2,
+      "visual": "tall white stone lighthouse tower battered by wind and sea spray under a dramatic brooding storm sky"
+    },
+    {
+      "narration": "Climbing the rusty iron scaffolding, I dipped my wide brush into thick white marine enamel instead of acrylic vinyl.",
+      "on_screen_text": "MARINE PAINT",
+      "duration_hint": 5.2,
+      "visual": "close-up of a paint brush loaded with thick white marine paint stroking across weathered, salt-crusted stone"
+    },
+    {
+      "narration": "The work was exhausting and cold, but every stroke felt like wiping away decades of compromise.",
+      "on_screen_text": "WIPING CLEAN",
+      "duration_hint": 4.8,
+      "visual": "painter leaning back on a scaffolding platform, wiping sweat from his forehead with the back of a paint-stained wrist"
+    },
+    {
+      "narration": "Gulls wheeled overhead as the afternoon sun broke through the clouds, painting the rolling sea in molten silver and blue.",
+      "on_screen_text": "SEA LIGHT",
+      "duration_hint": 5.2,
+      "visual": "dramatic wide shot of ocean waves glittering under breaking sunbeams hitting a rugged rocky coastline"
+    },
+    {
+      "narration": "By sunset, the tower gleamed pristine and proud against the horizon, guiding ships home just as it had for centuries.",
+      "on_screen_text": "GLEAMING TOWER",
+      "duration_hint": 5.2,
+      "visual": "freshly painted white lighthouse tower glowing under the golden light of a dramatic sunset horizon"
+    },
+    {
+      "narration": "I finally understood that our best work isn't measured by how many people see it, but by how true it feels to our hands.",
+      "on_screen_text": "TRUE WORK",
+      "duration_hint": 5.6,
+      "visual": "painter looking out over the endless ocean from the balcony of the lighthouse with a contented expression"
+    },
+    {
+      "narration": "If you love stories about rediscovering your true craft, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.3,
+      "visual": "cinematic portrait of the painter holding a wooden brush against a backdrop of peaceful sea spray at dusk"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "toby-the-turtle-who-wanted-to-dance",
+  "title": "Toby the Turtle Who Wanted to Dance",
+  "description": "A slow-moving turtle discovers his own unique rhythm for dancing under the moonlight.",
+  "tags": [
+    "bedtime",
+    "dance",
+    "music",
+    "turtle",
+    "kids"
+  ],
+  "character_reference": "a tiny green turtle with a shiny polished shell and yellow polka-dot flippers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Toby watched the forest animals spin and leap in the meadow, wishing he could dance like them. But his heavy green shell made him feel much too slow.",
+      "on_screen_text": "WATCHING DANCE",
+      "duration_hint": 16.0,
+      "visual": "medium shot of a small green turtle peeking out from under a polished shell while watching shadows of jumping animals nearby"
+    },
+    {
+      "narration": "A wise old cricket hopped over and chirped, You do not need to leap high to dance, Toby. Just listen to the drumbeat of your own slow footsteps.",
+      "on_screen_text": "SLOW RHYTHM",
+      "duration_hint": 15.0,
+      "visual": "close up of the turtle looking down thoughtfully while a tiny cricket sits on a blade of grass beside him"
+    },
+    {
+      "narration": "Toby tapped one yellow-spotted flipper against the soft moss. Tap, slow tap, went his foot. It felt steady and calm, like the ticking of a grandfather clock.",
+      "on_screen_text": "TAP AND SWAY",
+      "duration_hint": 15.0,
+      "visual": "macro shot of a tiny turtle flipper tapping gently against green velvety moss in the moonlight"
+    },
+    {
+      "narration": "He began to sway his shell from side to side in a slow, graceful waltz. The fireflies turned on their lights to make a glittering stage just for him.",
+      "on_screen_text": "MOONLIGHT WALTZ",
+      "duration_hint": 15.0,
+      "visual": "wide angle shot of the small turtle swaying gently on a patch of grass surrounded by floating golden firefly lights"
+    },
+    {
+      "narration": "The rabbits and foxes stopped their fast bouncing and watched in wonder as Toby performed his beautiful, peaceful turtle dance under the silver moon.",
+      "on_screen_text": "WONDERFUL DANCE",
+      "duration_hint": 15.0,
+      "visual": "medium shot of the turtle moving gracefully in a circle while soft silver moonlight illuminates his shiny shell"
+    },
+    {
+      "narration": "Toby tucked his head inside his shell with a happy grin, completely tired out from his wonderful performance. Dancing at your own pace is truly magical.",
+      "on_screen_text": "HAPPY SLEEP",
+      "duration_hint": 16.0,
+      "visual": "close up of the turtle resting comfortably with his head tucked slightly inside his shiny green shell on soft moss"
+    },
+    {
+      "narration": "There is no wrong way to dance your own unique song. Follow along for more bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "peaceful moonlit forest clearing with soft silver beams shining down through quiet tree branches"
+    }
+  ]
+}

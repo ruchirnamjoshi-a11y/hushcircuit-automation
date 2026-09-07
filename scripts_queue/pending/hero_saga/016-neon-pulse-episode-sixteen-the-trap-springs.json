@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-sixteen-the-trap-springs",
+  "title": "Neon Pulse — Episode 16: The Trap Springs",
+  "description": "Kael confronts Commander Vance inside the syndicate data hub only to realize it was all a carefully prepared trap.",
+  "tags": [
+    "original hero",
+    "action",
+    "sci-fi",
+    "superpower",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 16,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Heavy blast doors slam shut from the ceiling, sealing every exit of the circular chamber. Commander Vance stands calmly behind an impenetrable glass barrier, watching the sudden imprisonment.",
+      "on_screen_text": "THE DOORS SHUT",
+      "duration_hint": 7.0,
+      "visual": "Low angle shot of heavy steel blast doors crashing downward into a metallic floor inside a high tech control room, dramatic amber warning lights flashing along the reinforced walls"
+    },
+    {
+      "narration": "The amber circuitry patterns along my sleeves flare with intense light. I thrust my palm forward, unleashing a shockwave of kinetic energy directly at the reinforced glass.",
+      "on_screen_text": "ENERGY SURGE",
+      "duration_hint": 6.5,
+      "visual": "Close up on a hand thrusting forward with bright amber glowing energy bursting outward from the palm, striking a thick transparent barrier with blinding impact sparks"
+    },
+    {
+      "narration": "The barrier barely shatters, absorbing the blast entirely. Vance chuckles coldly from the console, tapping a sequence that activates the dampening fields.",
+      "on_screen_text": "ABSORBED IMPACT",
+      "duration_hint": 6.0,
+      "visual": "Medium shot of an older military commander smirking behind a glowing digital control console inside a sleek underground bunker, cold blue ambient illumination casting sharp shadows"
+    },
+    {
+      "narration": "A sharp, high-pitched hum echoes through the chamber as invisible suppression rings lock onto my arms. My knees buckle under the sudden crushing weight of the energy drain.",
+      "on_screen_text": "SUPPRESSION RINGS",
+      "duration_hint": 6.5,
+      "visual": "Medium close up of a man kneeling in defeat on a metallic grate floor, hands raised defensively as translucent energy rings bind tightly around his forearms"
+    },
+    {
+      "narration": "You built this power in me, Vance. But you clearly underestimated what it takes to break it. I grit my teeth and fight the suppression field.",
+      "on_screen_text": "FIGHTING BACK",
+      "duration_hint": 6.0,
+      "visual": "Close up of a determined face with gritted teeth and strained expression, sweat glistening on skin illuminated by pulsing amber light reflecting from the side"
+    },
+    {
+      "narration": "Before the containment field can fully neutralize my pulse, I channel every remaining ounce of energy inward. The console sparks violently as the system overloads.",
+      "on_screen_text": "SYSTEM OVERLOAD",
+      "duration_hint": 6.5,
+      "visual": "Wide shot of a massive server rack exploding with a cascade of fiery sparks and short-circuiting cables inside a dark industrial server hall"
+    },
+    {
+      "narration": "The entire facility shudders from the backlash, plunging the room into emergency darkness. When the backup lights flicker on, Vance is already gone.",
+      "on_screen_text": "GONE IN SECONDS",
+      "duration_hint": 6.0,
+      "visual": "Wide shot of a smoky, ruined control chamber lit only by dim red emergency beacons, an empty platform visible behind shattered glass"
+    },
+    {
+      "narration": "The trap failed to hold, but the war has only just begun. Follow along for more of the story every single week.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of a solitary figure standing heroically amidst curling smoke and glowing debris, looking ahead with unyielding resolve into the shadows"
+    }
+  ]
+}

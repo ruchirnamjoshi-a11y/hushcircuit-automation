@@ -1,0 +1,71 @@
+{
+  "id": "the-rookie-barista",
+  "title": "The Morning Rush",
+  "description": "During her first week working the espresso bar at a busy campus coffee shop, a clumsy barista masters the art of staying calm.",
+  "tags": [
+    "coffee",
+    "job",
+    "anxiety",
+    "growth",
+    "campus"
+  ],
+  "character_reference": "an eighteen-year-old young man with wavy brown hair, wearing a dark green canvas apron over a neutral beige crewneck sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Milk sprayed across the stainless steel counter as the steam wand shrieked like a frightened animal.",
+      "on_screen_text": "STEAM WAND PANIC",
+      "duration_hint": 5.0,
+      "visual": "close-up of a stainless steel milk pitcher with white foam overflowing onto a wet metallic counter, chaotic motion blur"
+    },
+    {
+      "narration": "The line of students snaked out the glass door, and my palms started sweating against the rubber tamper.",
+      "on_screen_text": "THE QUEUE",
+      "duration_hint": 5.0,
+      "visual": "medium shot looking past an espresso machine toward a crowded cafe floor filled with impatient patrons"
+    },
+    {
+      "narration": "My manager stepped in beside me, placed her hand over my shaking fingers, and whispered to breathe.",
+      "on_screen_text": "DEEP BREATH",
+      "duration_hint": 5.0,
+      "visual": "close-up of an experienced hand gently touching a trembling hand holding a coffee tamper, reassuring gesture"
+    },
+    {
+      "narration": "I forced my shoulders to drop, slowed down my pacing, and focused entirely on the steady grind of the beans.",
+      "on_screen_text": "FINDING RHYTHM",
+      "duration_hint": 5.5,
+      "visual": "close-up of dark coffee beans cascading from a grinder hopper into a silver portafilter, warm morning lighting"
+    },
+    {
+      "narration": "Pouring steamed milk into espresso, a crisp white fern shape bloomed effortlessly across the dark crema.",
+      "on_screen_text": "LATTE ART",
+      "duration_hint": 5.0,
+      "visual": "extreme close-up of white milk pouring into a brown ceramic cup, forming a delicate leaf pattern on the surface"
+    },
+    {
+      "narration": "I handed the cup across the counter with a genuine smile instead of a panicked apology.",
+      "on_screen_text": "SMILING BACK",
+      "duration_hint": 4.5,
+      "visual": "medium shot handing a warm coffee cup across a wooden counter, friendly eye contact and welcoming expression"
+    },
+    {
+      "narration": "The rush didn't slow down, but inside my head, everything suddenly felt entirely manageable.",
+      "on_screen_text": "CALM IN THE RUSH",
+      "duration_hint": 5.0,
+      "visual": "close-up portrait looking confident and relaxed while wiping down a gleaming espresso machine, soft lighting"
+    },
+    {
+      "narration": "Every storm eventually turns into a rhythm if you give yourself room to learn.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 4.5,
+      "visual": "wide cozy shot of a bustling coffee shop interior with warm amber hanging pendant lights and happy patrons"
+    },
+    {
+      "narration": "If you love uplifting stories about conquering first-day jitters, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "friendly smiling portrait wearing a green apron, holding a ceramic mug with soft morning light illuminating the scene"
+    }
+  ]
+}

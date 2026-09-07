@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-ep17",
+  "title": "Neon Pulse — Episode 17: Vance's End Game",
+  "description": "Kael tracks Commander Vance to a subterranean facility and uncovers a massive plot.",
+  "tags": [
+    "original hero",
+    "action",
+    "superhero",
+    "scifi",
+    "neon pulse"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 17,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Smoke cleared to reveal the shattered core of the data hub. Vance was already gone, leaving behind only a pulsing secondary beacon.",
+      "on_screen_text": "THE EMPTY VAULT",
+      "duration_hint": 7.0,
+      "visual": "Wide low angle shot of a ruined subterranean chamber filled with rising steam and dangling sparking wires, camera tracking forward slowly over scorched metallic debris"
+    },
+    {
+      "narration": "Tracing the beacon's frequency led straight into the abandoned railway tunnels beneath the city. The amber circuitry on my sleeves flared in response to the hidden power surge.",
+      "on_screen_text": "INTO THE TUNNELS",
+      "duration_hint": 8.0,
+      "visual": "Medium tracking shot inside a dark damp concrete subway tunnel illuminated only by faint orange light glowing from a man's outstretched arms"
+    },
+    {
+      "narration": "Heavy steel blast doors blocked the path forward, but my engineered resonance tore through the locking mechanism in seconds.",
+      "on_screen_text": "FORCING THE ENTRY",
+      "duration_hint": 7.5,
+      "visual": "Close up shot of hands pressed against massive scarred metal doors while bright golden energy arcs crackle across the heavy bolts"
+    },
+    {
+      "narration": "Beyond the doors lay a sprawling subterranean laboratory bathed in cold blue light. Hundreds of containment pods lined the walls, each one humming with trapped energy.",
+      "on_screen_text": "THE HIDDEN LAB",
+      "duration_hint": 7.5,
+      "visual": "Over the shoulder view looking into a vast high tech underground chamber filled with glowing vertical glass cylinders stretching into deep shadows"
+    },
+    {
+      "narration": "A familiar voice echoed from the central console. Commander Vance stepped out from the shadows, smiling as if expecting this exact reunion.",
+      "on_screen_text": "THE COMMANDER WAITS",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of an older military commander standing near glowing computer banks with arms crossed, looking directly forward with a confident expression"
+    },
+    {
+      "narration": "You cannot outrun what you were built to become, Kael. This entire facility was designed to harvest your exact frequency.",
+      "on_screen_text": "THE TRAP SPRINGS",
+      "duration_hint": 7.0,
+      "visual": "Close up shot of a man staring intensely forward with narrowed eyes while ambient blue monitors cast harsh light across his face"
+    },
+    {
+      "narration": "Floor plates dropped away instantly, plunging the center of the room into a deep chasm of raw, uncontained energy. Vance vanished upward on a security lift.",
+      "on_screen_text": "FALLING DEEPER",
+      "duration_hint": 7.5,
+      "visual": "High angle shot of concrete flooring collapsing downward into a glowing abyss while a figure lunges backward to grab a crumbling ledge"
+    },
+    {
+      "narration": "Hanging over the abyss, I had to channel every ounce of power just to keep from falling into the core. Vance had won this round, but the war was far from over.",
+      "on_screen_text": "THE EDGE OF DEFEAT",
+      "duration_hint": 8.0,
+      "visual": "Low angle dramatic shot of a man straining with one hand gripping a fractured concrete edge while bright amber energy surges up his arms"
+    },
+    {
+      "narration": "Follow along for more chapters of the Neon Pulse saga as the battle for the truth continues.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "Medium portrait shot of a man standing resolute in a dark industrial corridor with glowing amber patterns fading softly on his jacket"
+    }
+  ]
+}

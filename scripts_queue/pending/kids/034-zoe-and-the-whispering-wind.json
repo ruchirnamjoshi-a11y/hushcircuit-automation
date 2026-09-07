@@ -1,0 +1,59 @@
+{
+  "id": "zoe-and-the-whispering-wind",
+  "title": "Zoe and the Whispering Wind",
+  "description": "A little mouse learns to listen to the breeze to find her way home after wandering into the high grass.",
+  "tags": [
+    "bedtime",
+    "adventure",
+    "listening",
+    "home",
+    "kids"
+  ],
+  "character_reference": "a fluffy gray field mouse with oversized round ears and a yellow knitted scarf",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Zoe chased a bright blue butterfly deep into the giant meadow until the familiar paths disappeared behind walls of green grass. Suddenly, she had no idea which way led back to her cozy burrow.",
+      "on_screen_text": "LOST IN GRASS",
+      "duration_hint": 17.0,
+      "visual": "wide eye level shot of a tiny gray mouse looking around nervously in a thick forest of tall green grass swaying in the breeze"
+    },
+    {
+      "narration": "Her heart went thump-thump inside her tiny chest, and she squeezed her eyes shut, ready to cry. But then she felt a cool breath tickle her long whiskers.",
+      "on_screen_text": "DEEP BREATH",
+      "duration_hint": 14.0,
+      "visual": "close up of the small mouse standing still with closed eyes and twitching whiskers as a gentle breeze blows her fur gently"
+    },
+    {
+      "narration": "The wind seemed to sing a soft, whistling song that rustled the clover leaves in a very specific direction. Zoe tilted her head and decided to listen with her heart.",
+      "on_screen_text": "LISTENING CLOSE",
+      "duration_hint": 15.0,
+      "visual": "medium shot of the mouse tilting her head sideways with one paw raised to her large ear while green clover leaves flutter in the wind"
+    },
+    {
+      "narration": "Pitter-patter went her little feet as she followed the breezy melody past a patch of sweet wild berries and over a smooth flat stone. The wind whispered home, home, home.",
+      "on_screen_text": "FOLLOW THE BREEZE",
+      "duration_hint": 16.0,
+      "visual": "action shot of the little mouse running fast across a smooth gray rock with a trail of blurred green grass behind her"
+    },
+    {
+      "narration": "Right around the bend, the familiar wooden fence post and her warm burrow door came into view. She bounded inside just as the first evening stars popped out.",
+      "on_screen_text": "FOUND IT",
+      "duration_hint": 15.0,
+      "visual": "low angle shot of the mouse happily arriving at a round hole under a mossy root beneath the roots of an old oak tree"
+    },
+    {
+      "narration": "Snug in her bed with a tummy full of seeds, Zoe thanked the friendly wind for guiding her safely back to sleep. Quiet listening is a superpower all its own.",
+      "on_screen_text": "SAFE AND SOUND",
+      "duration_hint": 16.0,
+      "visual": "cozy interior shot of the small mouse tucked warmly inside a tiny bed made of soft moss and leaves looking sleepy and content"
+    },
+    {
+      "narration": "Whenever you feel lost, just stop, listen, and let kindness guide you home. Follow along for more bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "gentle close up of tall green grass swaying smoothly in a warm sunset glow with sparkling dust motes floating in the peaceful air"
+    }
+  ]
+}

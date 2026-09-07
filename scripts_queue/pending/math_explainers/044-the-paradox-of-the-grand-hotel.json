@@ -1,0 +1,65 @@
+{
+  "id": "the-paradox-of-the-grand-hotel",
+  "title": "The Paradox of the Grand Hotel",
+  "description": "Enter Hilbert's Infinite Hotel, where every room is always full, yet there is always room for more guests.",
+  "tags": [
+    "math",
+    "infinity",
+    "paradox",
+    "hilbert",
+    "logic"
+  ],
+  "character_reference": "an eccentric middle-aged innkeeper with wild gray hair, wearing a smart red bellhop jacket with gold brass buttons",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Imagine a grand hotel with an infinite number of rooms, and every single room is currently occupied by a guest.",
+      "on_screen_text": "THE INFINITE HOTEL",
+      "duration_hint": 7.5,
+      "visual": "wide-angle shot of an endless luxury hallway with rows of glowing wooden doors stretching infinitely into the distance"
+    },
+    {
+      "narration": "Suddenly, a new weary traveler arrives at the front desk asking for a place to sleep for the night.",
+      "on_screen_text": "A NEW ARRIVAL",
+      "duration_hint": 6.5,
+      "visual": "close-up of a polished wooden concierge desk with a brass bell and an open leather guest registry book"
+    },
+    {
+      "narration": "In a normal hotel, you would have to turn them away. But this is no normal hotel; this hotel has infinite rooms.",
+      "on_screen_text": "NO VACANCY",
+      "duration_hint": 7.5,
+      "visual": "neon sign flickering through a misty atmosphere, casting soft red and blue reflections on a wet pavement"
+    },
+    {
+      "narration": "The clever desk clerk asks every single guest currently staying in room N to pack up and move to room N plus one.",
+      "on_screen_text": "SHIFTING OVER",
+      "duration_hint": 7.5,
+      "visual": "a set of brass room keys dangling on leather tags swinging gently against a wall of numbered hooks"
+    },
+    {
+      "narration": "Because the number of rooms goes on forever, nobody is left out on the street. Room one is now completely vacant.",
+      "on_screen_text": "ROOM ONE IS OPEN",
+      "duration_hint": 7.5,
+      "visual": "a golden brass key sliding smoothly into the keyhole of a dark polished mahogany door"
+    },
+    {
+      "narration": "What happens if an infinite busload of new guests arrives all at once? Just move everyone to room two times N.",
+      "on_screen_text": "AN INFINITE BUS",
+      "duration_hint": 8.0,
+      "visual": "warm headlights cutting through a foggy night outside an ornate hotel entrance archway"
+    },
+    {
+      "narration": "Infinity breaks our everyday intuition about how quantity and space are supposed to work.",
+      "on_screen_text": "BREAKING INTUITION",
+      "duration_hint": 6.5,
+      "visual": "abstract tunnel of glowing light rings stretching endlessly forward, creating a mesmerizing optical depth"
+    },
+    {
+      "narration": "Follow along for more mind-bending mathematical puzzles every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "cozy vintage reception desk with a glowing green banker lamp and a neat stack of leather books"
+    }
+  ]
+}
