@@ -1,0 +1,65 @@
+{
+  "id": "the-unplugged-weekend",
+  "title": "The Unplugged Weekend",
+  "description": "A woman turns off her phone for forty-eight hours to hear her own thoughts for a change.",
+  "tags": [
+    "digitaldetox",
+    "peace",
+    "mindfulness",
+    "women",
+    "balance"
+  ],
+  "character_reference": "a woman in her early thirties with straight shoulder-length brown hair, wearing a chunky knitted green cardigan",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The screen went completely dark with a soft click. Zoe placed her phone inside a drawer and slid it shut.",
+      "on_screen_text": "GOING DARK",
+      "duration_hint": 9.0,
+      "visual": "close-up of a hand pushing a wooden drawer closed over a glowing smartphone, warm indoor lighting, shallow depth of field"
+    },
+    {
+      "narration": "The sudden quiet in the apartment felt loud at first, almost like a ringing in her ears.",
+      "on_screen_text": "SUDDEN QUIET",
+      "duration_hint": 8.0,
+      "visual": "medium shot of a woman standing in the center of a tidy living room, listening intently, thoughtful expression, cozy interior"
+    },
+    {
+      "narration": "Without notifications demanding her attention every five minutes, she finally heard the rain tapping on the glass.",
+      "on_screen_text": "TAPPING RAIN",
+      "duration_hint": 9.0,
+      "visual": "macro shot of raindrops sliding down a glass windowpane, soft blurred green garden view in the background, moody natural light"
+    },
+    {
+      "narration": "She spent Saturday afternoon baking sourdough from scratch, watching the dough rise without checking a timer.",
+      "on_screen_text": "SLOW BAKING",
+      "duration_hint": 9.0,
+      "visual": "close-up of floured hands gently kneading a ball of bread dough on a wooden kitchen counter, warm rustic lighting, cozy atmosphere"
+    },
+    {
+      "narration": "By Sunday evening, the constant hum of anxiety in her chest had been replaced by a deep, steady calm.",
+      "on_screen_text": "STEADY CALM",
+      "duration_hint": 9.0,
+      "visual": "profile shot of a woman reading a paperback book by the warm light of a floor lamp, peaceful expression, cozy evening setting"
+    },
+    {
+      "narration": "The world had kept spinning without her constant tapping and scrolling. Nothing had fallen apart.",
+      "on_screen_text": "SPINNING ON",
+      "duration_hint": 8.0,
+      "visual": "wide shot of a cozy living room with rain falling outside the large windows, warm lamp glow inside, peaceful cinematic mood"
+    },
+    {
+      "narration": "Unplugging wasn't about escaping life. It was about finally showing up for the one happening right in front of you.",
+      "on_screen_text": "SHOWING UP",
+      "duration_hint": 9.0,
+      "visual": "close-up of a steaming ceramic mug held in both hands, wisps of steam rising, soft warm lighting, comforting mood"
+    },
+    {
+      "narration": "If you want to reclaim your peace in a noisy world, follow along for more inspiring stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "friendly close-up portrait of a woman smiling genuinely at the camera, warm ambient indoor lighting"
+    }
+  ]
+}

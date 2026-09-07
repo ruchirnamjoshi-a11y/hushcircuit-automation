@@ -1,0 +1,65 @@
+{
+  "id": "the-pottery-wheel",
+  "title": "The Pottery Wheel",
+  "description": "After years of perfectionism, a woman learns to love the beautifully uneven things she creates.",
+  "tags": [
+    "creativity",
+    "perfectionism",
+    "self-acceptance",
+    "women",
+    "craft"
+  ],
+  "character_reference": "a woman in her early thirties with curly auburn hair pulled back with a wooden pin, wearing a clay-stained linen apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The wet clay spun beneath her palms, wobbling wildly against the centrifugal force. Maya refused to fight it this time.",
+      "on_screen_text": "SPINNING CLAY",
+      "duration_hint": 9.0,
+      "visual": "close-up of hands shaping spinning wet clay on a pottery wheel, water droplets flying off the spinning surface, dynamic motion, dramatic studio lighting"
+    },
+    {
+      "narration": "Her entire life, she had tried to mold herself into a flawless vessel for everyone else's approval.",
+      "on_screen_text": "ALWAYS FLAWLESS",
+      "duration_hint": 8.0,
+      "visual": "medium close-up of a woman staring down intently at her hands on a pottery wheel, thoughtful and introspective expression, moody workshop background"
+    },
+    {
+      "narration": "A crack formed along the rim of the bowl. In the past, she would have crushed it and started over.",
+      "on_screen_text": "THE CRACK",
+      "duration_hint": 8.0,
+      "visual": "macro shot of a delicate crack forming in the wet gray clay rim, side lighting highlighting the texture of the rough material, intense detail"
+    },
+    {
+      "narration": "Instead, she pressed her thumb deeper into the flaw, curving the edge into something entirely unexpected and organic.",
+      "on_screen_text": "EMBRACING FLAWS",
+      "duration_hint": 9.0,
+      "visual": "close-up of a thumb gently reshaping an uneven clay rim into a wavy organic fold, focused hands, warm workshop incandescent lighting"
+    },
+    {
+      "narration": "It wasn't symmetrical. It didn't look like the pictures in the design magazines. But it had character.",
+      "on_screen_text": "UNCONVENTIONAL",
+      "duration_hint": 8.0,
+      "visual": "close-up of an irregular, textured ceramic bowl resting on a wooden workbench, wet clay glistening under a single overhead pendant light"
+    },
+    {
+      "narration": "Maya lifted the finished piece off the wheel, her hands covered in gray mud and her heart completely at ease.",
+      "on_screen_text": "COMPLETE FREEDOM",
+      "duration_hint": 8.0,
+      "visual": "medium shot of a woman smiling down at her muddy hands holding a lopsided clay bowl, warm studio atmosphere, joyful expression"
+    },
+    {
+      "narration": "Perfection is a cage we build ourselves. True art, and true life, live in the rough edges.",
+      "on_screen_text": "TRUE ART",
+      "duration_hint": 8.0,
+      "visual": "shot of various finished ceramic pieces drying on wooden shelves, soft natural window light, artistic cozy interior setting"
+    },
+    {
+      "narration": "If you are ready to let go of perfection, follow along for daily stories of personal growth.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "friendly portrait of a woman looking directly into the camera with a warm, genuine smile, pottery studio background softly blurred"
+    }
+  ]
+}

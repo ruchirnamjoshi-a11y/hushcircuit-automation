@@ -1,0 +1,59 @@
+{
+  "id": "the-copper-compass",
+  "title": "The Copper Compass",
+  "description": "A struggling traveler finds an antique compass that points not to north, but toward opportunities for financial growth.",
+  "tags": [
+    "wealth creation",
+    "opportunity",
+    "manifestation",
+    "traveler",
+    "abundance"
+  ],
+  "character_reference": "a young man with tousled sandy hair and a heavy canvas backpack, wearing a worn green utility jacket",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Stranded in a new city with nearly empty pockets, the young traveler sat on a park bench wondering how he would fund the next leg of his journey.",
+      "on_screen_text": "STRANDED AND BROKE",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a traveler sitting slumped on a wooden park bench, staring thoughtfully down at an empty leather wallet held in his hands"
+    },
+    {
+      "narration": "He dug into his coat pocket and found an old, heavy copper compass he had bought at a flea market. Strangely, the needle began spinning wildly before pointing down a side street.",
+      "on_screen_text": "THE SPINNING NEEDLE",
+      "duration_hint": 15.0,
+      "visual": "macro shot of an antique copper pocket watch style compass held in a palm, the metallic needle twitching and spinning rapidly under glass"
+    },
+    {
+      "narration": "Curious, he followed the strange pull of the compass down a cobblestone alleyway until he reached a bustling artisanal market filled with eager vendors.",
+      "on_screen_text": "THE HIDDEN MARKET",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a narrow cobblestone alleyway crowded with colorful market stalls and glowing string lights under an overcast sky"
+    },
+    {
+      "narration": "A booth owner was frantically trying to translate export documents for foreign buyers. Speaking fluent languages effortlessly, the traveler stepped forward to offer his help.",
+      "on_screen_text": "STEPPING UP",
+      "duration_hint": 14.0,
+      "visual": "medium shot of the traveler talking animatedly with a market vendor behind a wooden table stacked with exotic textiles and handmade crafts"
+    },
+    {
+      "narration": "Impressed by his quick assistance, the merchant handed him a generous fee that instantly doubled his travel funds for the weeks ahead.",
+      "on_screen_text": "GENEROUS REWARD",
+      "duration_hint": 13.0,
+      "visual": "close up of a merchant handing a stack of foreign currency notes to the traveler against the warm backdrop of a market stall"
+    },
+    {
+      "narration": "He realized the true compass was his own intuition guiding him toward where his unique talents were valued most.",
+      "on_screen_text": "YOUR INNER COMPASS",
+      "duration_hint": 13.0,
+      "visual": "portrait of the traveler smiling brightly while adjusting his canvas backpack strap, sunlight breaking through the clouds behind him"
+    },
+    {
+      "narration": "Follow your intuition toward financial opportunity every single day. Follow along for more stories of unexpected abundance.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "medium shot of the traveler walking down a sunlit street, looking toward the camera with an encouraging grin"
+    }
+  ]
+}

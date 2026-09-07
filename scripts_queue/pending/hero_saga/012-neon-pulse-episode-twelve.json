@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-twelve",
+  "title": "Neon Pulse — Episode 12: The Syndicate's Trap",
+  "description": "Kael walks straight into a meticulously planned trap in an abandoned rail yard set by the syndicate and his former ally.",
+  "tags": [
+    "action",
+    "superhero",
+    "sci-fi",
+    "thriller",
+    "original"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 12,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Heavy iron gates slam shut behind me, sealing the perimeter of the decaying rail yard in a cage of rusted steel. Red searchlights sweep across the frost-covered tracks, cutting through the dense night fog with clinical precision.",
+      "on_screen_text": "TRAPPED IN THE YARD",
+      "duration_hint": 14.5,
+      "visual": "close-up of heavy iron gates slamming shut in a foggy abandoned rail yard with sweeping red searchlights cutting through the darkness, cinematic low angle, gritty textures"
+    },
+    {
+      "narration": "From the shadows of a derailed freight car, my former ally steps forward into the amber glow. The scarred mercenary smiles coldly, holding the decrypted coordinates I fought so hard to protect.",
+      "on_screen_text": "THE FORMER ALLY",
+      "duration_hint": 14.5,
+      "visual": "medium shot of a scarred mercenary holding decrypted coordinates in front of a derailed freight car, dim amber lighting, tense cinematic atmosphere"
+    },
+    {
+      "narration": "Sniper lasers paint red arcs across my tactical jacket, locking onto my chest from every rusted rooftop and signal tower. There is nowhere to run and no cover deep enough to hide from their crosshairs.",
+      "on_screen_text": "LASERS ON TARGET",
+      "duration_hint": 14.5,
+      "visual": "tight over-the-shoulder shot showing multiple red laser dots painting the back of a tactical jacket, shallow depth of field, high-tension atmosphere"
+    },
+    {
+      "narration": "Instead of backing down, I let the raw electrical energy surge through my arms until the amber circuitry patterns blaze with blinding intensity. The surrounding iron rails begin to vibrate and hum from the magnetic discharge.",
+      "on_screen_text": "SURGING POWER",
+      "duration_hint": 14.5,
+      "visual": "dramatic close-up of forearms glowing brightly with intense amber energy patterns, dark gritty background with vibrating metal tracks"
+    },
+    {
+      "narration": "With a deafening roar, I unleash a massive kinetic wave that shatters the rusted freight cars and blinds every sniper with a blinding flash of light. The shockwave tears up the gravel and hurls the surrounding barricades into the air.",
+      "on_screen_text": "KINETIC SHOCKWAVE",
+      "duration_hint": 15.2,
+      "visual": "action shot of a powerful shockwave erupting outward, tearing up gravel and shattering rusted metal debris in a blinding flash of light, dynamic camera angle"
+    },
+    {
+      "narration": "Through the settling dust, the mercenary fires an experimental EMP weapon directly at my chest, threatening to short-circuit the very power keeping me alive. I throw up my hands, bracing for the devastating impact.",
+      "on_screen_text": "EMP STRIKE",
+      "duration_hint": 14.5,
+      "visual": "medium action shot of a blue electrical beam striking forward toward defensive hands, settling dust and flying debris in a dark rail yard"
+    },
+    {
+      "narration": "The energy blast connects, sending a violent spasm through my nervous system and dimming my jacket's glow to a faint flicker. I stumble backward onto the edge of an active freight line as a high-speed cargo train bears down on us.",
+      "on_screen_text": "THE TRAIN APPROACHES",
+      "duration_hint": 15.2,
+      "visual": "dynamic low-angle shot of a glowing figure stumbling backward onto train tracks as massive glowing headlights of an oncoming train approach rapidly through the fog"
+    },
+    {
+      "narration": "Catching a glimpse of a hidden control panel inside the oncoming locomotive, I realize there is one final desperate chance to escape. Follow along for more chapters in the ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.9,
+      "visual": "extreme close-up of hand reaching desperately toward a glowing metal control panel inside a dark train cabin, dramatic lighting, high-stakes cinematic composition"
+    }
+  ]
+}

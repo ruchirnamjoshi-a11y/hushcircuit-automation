@@ -1,0 +1,71 @@
+{
+  "id": "the-skate-repair",
+  "title": "The Skate Repair",
+  "description": "A teenage skateboarder who breaks her board before the local competition learns to rebuild it using parts from her friends.",
+  "tags": [
+    "skateboarding",
+    "community",
+    "friends",
+    "competition",
+    "repair"
+  ],
+  "character_reference": "a sixteen-year-old girl with short dyed blue hair, wearing a worn black hoodie with rolled-up sleeves and scuffed canvas sneakers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My favorite deck snapped right down the middle on the very last stair set before the weekend contest.",
+      "on_screen_text": "THE SNAP",
+      "duration_hint": 5.0,
+      "visual": "close-up of a broken wooden skateboard deck splintered in half on gray concrete pavement, harsh daylight"
+    },
+    {
+      "narration": "Sitting on the curb with my head in my hands, I figured my summer skating season was officially over.",
+      "on_screen_text": "CURB SIDE",
+      "duration_hint": 5.0,
+      "visual": "medium shot sitting on a concrete curb holding broken skateboard pieces, looking down with a defeated posture"
+    },
+    {
+      "narration": "Then my friends rolled up, each dropping spare parts, mismatched trucks, and colorful wheels onto the pavement.",
+      "on_screen_text": "PARTS BIN",
+      "duration_hint": 5.0,
+      "visual": "close-up of various skateboard wheels and metal trucks clattering onto the asphalt next to battered sneakers"
+    },
+    {
+      "narration": "We spent the afternoon in a driveway, tightening bolts with a worn-out T-tool and laughing at the absurdity.",
+      "on_screen_text": "THE BUILD",
+      "duration_hint": 5.5,
+      "visual": "close-up of hands using a metal skate tool to tighten axle nuts on a brightly colored skateboard truck"
+    },
+    {
+      "narration": "The board looked like a mismatched frankenstein creation, but every scratch held a piece of friendship.",
+      "on_screen_text": "FRANKENSTEIN DECK",
+      "duration_hint": 5.0,
+      "visual": "low angle shot of a completed multicolored skateboard resting against a brick wall, vibrant custom grip tape visible"
+    },
+    {
+      "narration": "Rolling up to the park start line, my mismatched board felt surprisingly solid under my feet.",
+      "on_screen_text": "THE START LINE",
+      "duration_hint": 4.5,
+      "visual": "close-up of sneakers stepping onto grip tape, skate park ramps blurred in the sunlit background"
+    },
+    {
+      "narration": "I didn't take home first place, but landing that clean kickflip on a rebuilt board felt like the ultimate win.",
+      "on_screen_text": "THE KICKFLIP",
+      "duration_hint": 5.5,
+      "visual": "action shot mid-air of a skateboard spinning beneath jumping sneakers, skate park bowl in the background"
+    },
+    {
+      "narration": "Sometimes the best things we own are built out of the pieces our friends hand us.",
+      "on_screen_text": "BUILT TOGETHER",
+      "duration_hint": 5.0,
+      "visual": "group of teens smiling and laughing together sitting on skateboards under warm golden hour sunlight"
+    },
+    {
+      "narration": "If you love stories about bouncing back with your crew, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "portrait holding a colorful skateboard over one shoulder, friendly smile and bright afternoon lighting"
+    }
+  ]
+}

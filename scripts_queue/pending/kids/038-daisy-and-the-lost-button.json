@@ -1,0 +1,59 @@
+{
+  "id": "daisy-and-the-lost-button",
+  "title": "Daisy and the Lost Button",
+  "description": "A little lamb helps a lonely mole find his missing coat button, making a new friend along the way.",
+  "tags": [
+    "bedtime",
+    "kindness",
+    "friendship",
+    "lamb",
+    "kids"
+  ],
+  "character_reference": "a fluffy white lamb with curly wool and pink bow tied around one ear",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Daisy found a shiny wooden button nestled in the clover patch, polished as smooth as honey. She wondered whose special coat it might belong to.",
+      "on_screen_text": "SHINY FIND",
+      "duration_hint": 15.0,
+      "visual": "close up of a fluffy white lamb holding a round shiny wooden button carefully in her small hooves amidst green clover leaves"
+    },
+    {
+      "narration": "She trotted down the garden path and spotted a little mole sniffing the dirt with a very worried look on his face. His cozy brown coat was missing one button.",
+      "on_screen_text": "WORRIED MOLE",
+      "duration_hint": 15.0,
+      "visual": "medium shot of the white lamb walking toward a small furry mole who is looking down at his jacket with a sad expression"
+    },
+    {
+      "narration": "Excuse me, said Daisy gently, is this your treasure? She held out the smooth wooden button in her little hoof with a warm and friendly smile.",
+      "on_screen_text": "FOUND IT",
+      "duration_hint": 14.0,
+      "visual": "close up of the lamb offering the small wooden button toward a grateful mole who reaches out with his paws"
+    },
+    {
+      "narration": "The mole gasped with joy and clapped his paws together. My favorite button! You found it! Now my winter coat is complete again.",
+      "on_screen_text": "PURE JOY",
+      "duration_hint": 15.0,
+      "visual": "happy close up of the small mole smiling brightly while holding the wooden button close to his chest"
+    },
+    {
+      "narration": "To thank her, the mole shared a handful of sweet crunchy carrots from his underground pantry, and they sat together watching the sunset paint the sky.",
+      "on_screen_text": "SWEET TREAT",
+      "duration_hint": 15.0,
+      "visual": "wide shot of the lamb and the mole sitting side by side on a grassy mound eating carrots against a warm orange sunset"
+    },
+    {
+      "narration": "Daisy curled up in her cozy pen with a full tummy and a heart full of happiness. Helping someone else is the best way to end the day.",
+      "on_screen_text": "WARM HEART",
+      "duration_hint": 15.0,
+      "visual": "cozy shot of the white lamb sleeping peacefully in a nest of soft straw under a blanket of twilight stars"
+    },
+    {
+      "narration": "A simple act of kindness brightens everyone's world. Follow along for more bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "gentle dusk scene with soft pink and orange clouds fading slowly into a peaceful starry night sky"
+    }
+  ]
+}

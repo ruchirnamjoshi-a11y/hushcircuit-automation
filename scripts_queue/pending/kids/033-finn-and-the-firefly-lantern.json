@@ -1,0 +1,59 @@
+{
+  "id": "finn-and-the-firefly-lantern",
+  "title": "Finn and the Firefly Lantern",
+  "description": "A little frog overcomes his fear of the dark meadow by making friends with glowing fireflies.",
+  "tags": [
+    "bedtime",
+    "nature",
+    "bravery",
+    "friendship",
+    "kids"
+  ],
+  "character_reference": "a tiny green tree frog with big golden eyes and a blue leaf hat",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "When the sun dipped below the tall grass, the meadow turned completely dark, and Finn pulled the covers tight over his head. He loved the daytime sun, but nighttime felt scary and huge.",
+      "on_screen_text": "THE SCARE",
+      "duration_hint": 15.0,
+      "visual": "close up of a tiny frog hiding underneath a patterned blanket with wide worried golden eyes peeking out at the dark room"
+    },
+    {
+      "narration": "A soft golden blink flashed near his lily pad, making a tiny circle of warm light dance across the wet leaf. Finn peeked out from his hiding spot, feeling a little flutter of curiosity.",
+      "on_screen_text": "A WARM GLOW",
+      "duration_hint": 15.0,
+      "visual": "low angle shot of the green frog sitting on a floating green leaf looking up in wonder at a bright glowing insect hovering nearby"
+    },
+    {
+      "narration": "Three friendly fireflies landed softly on his blue leaf hat, lighting up the dark blades of grass like tiny floating stars. They buzzed a gentle tune that sounded like a lullaby.",
+      "on_screen_text": "FRIENDLY LIGHTS",
+      "duration_hint": 15.0,
+      "visual": "macro shot of several bright yellow glowing beetles resting on the brim of a small blue leaf hat while soft light illuminates the surrounding dark reeds"
+    },
+    {
+      "narration": "Finn smiled and stepped out onto the damp moss, letting his tiny webbed feet feel the cool night earth for the very first time. The shadows did not look so pointy anymore.",
+      "on_screen_text": "STEPPING OUT",
+      "duration_hint": 14.0,
+      "visual": "medium shot of the little frog stepping carefully onto dark damp moss surrounded by glowing bugs casting warm amber light on the foliage"
+    },
+    {
+      "narration": "Together, they hopped through the sleeping ferns, turning every shadowy corner into a magical playground of gold and green. The dark was just a blanket for the world to rest.",
+      "on_screen_text": "MAGICAL HOP",
+      "duration_hint": 16.0,
+      "visual": "side profile of the small frog leaping joyfully over dark fern leaves while a trail of sparkling yellow light follows through the air"
+    },
+    {
+      "narration": "Finn curled up on his leaf bed, surrounded by his glowing friends who kept watch until his heavy eyelids finally closed. He knew the night was full of gentle friends.",
+      "on_screen_text": "SWEET DREAMS",
+      "duration_hint": 15.0,
+      "visual": "top down view of the frog sleeping peacefully on a green lily pad while glowing insects float gently overhead like tiny nightlights"
+    },
+    {
+      "narration": "Remember, even the darkest nights are full of tiny lights waiting to be found. Follow along for more bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "serene close up of glowing fireflies drifting lazily in a dark magical forest creating a warm and peaceful bedtime atmosphere"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "pintu-chuha-aur-jaadvi-pustak",
+  "title": "पिंटू चूहा और जादुई पुस्तक",
+  "description": "पिंटू चूहे को एक पुरानी जादुई किताब मिलती है जो उसे पढ़ने का नया और अनोखा शौक सिखाती है।",
+  "tags": [
+    "चूहा",
+    "किताब",
+    "जादू",
+    "पढ़ाई",
+    "ज्ञान"
+  ],
+  "character_reference": "a small energetic grey mouse with oversized round ears and a tiny blue ribbon on his tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "पिंटू चूहा अपनी पुरानी अटारी में खेल रहा था। वहां उसे धूल से ढकी एक सुनहरी चमकीली किताब मिली।",
+      "on_screen_text": "जादुई खोज",
+      "duration_hint": 6.0,
+      "visual": "A tiny grey mouse exploring a dusty attic, shining a tiny lantern on a glowing golden book resting on a wooden crate."
+    },
+    {
+      "narration": "जैसे ही उसने किताब का पन्ना पलटा, पन्नों से रंग-बिरंगे जादुई फूल हवा में तैरने लगे।",
+      "on_screen_text": "रंगीन जादू",
+      "duration_hint": 6.0,
+      "visual": "Glowing magical flowers and sparkles floating out of an open antique book as the tiny mouse watches in wonder."
+    },
+    {
+      "narration": "किताब के अंदर लिखी कहानियों के पात्र जीवंत होकर पिंटू से बातें करने लगे।",
+      "on_screen_text": "जीवंत कहानियां",
+      "duration_hint": 6.0,
+      "visual": "Miniature fantasy characters stepping out of the book pages, interacting playfully with the astonished mouse."
+    },
+    {
+      "narration": "पिंटू को पहले पढ़ना नहीं आता था, लेकिन जादू ने उसे शब्द पढ़ना और उनका मतलब समझना सिखा दिया।",
+      "on_screen_text": "सीखने की शुरुआत",
+      "duration_hint": 7.0,
+      "visual": "The mouse sitting cross-legged on the book cover, intently looking at glowing letters with a focused expression."
+    },
+    {
+      "narration": "हर पन्ने के साथ पिंटू की दुनिया बड़ी होती गई। उसने अंतरिक्ष, समुद्र और आसमान के अनगिनत रहस्य जान लिए।",
+      "on_screen_text": "अनंत ज्ञान",
+      "duration_hint": 7.0,
+      "visual": "Vibrant magical projections of stars, planets, and deep oceans swirling around the tiny reading mouse in the dim room."
+    },
+    {
+      "narration": "किताब ने पिंटू को दिखाया कि ज्ञान से बढ़कर इस ब्रह्मांड में कोई दूसरा जादू नहीं है।",
+      "on_screen_text": "असली जादू",
+      "duration_hint": 6.0,
+      "visual": "The mouse holding a glowing magical quill, smiling with great wisdom as golden light surrounds him."
+    },
+    {
+      "narration": "पढ़ने की आदत हमारे जीवन को रोशन कर देती है। क्या आप भी नई किताबें पढ़ना पसंद करते हैं?",
+      "on_screen_text": "रोशन जीवन",
+      "duration_hint": 6.0,
+      "visual": "The cute mouse sitting happily atop a stack of colorful books, glowing warmly against a cozy background."
+    },
+    {
+      "narration": "ऐसी ही ज्ञानवर्धक कहानियों के लिए हमारे चैनल को तुरंत सब्सक्राइब करें!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "The grey mouse waving goodbye cheerfully with a glowing wand in paw, enchanting fairy-tale atmosphere."
+    }
+  ]
+}

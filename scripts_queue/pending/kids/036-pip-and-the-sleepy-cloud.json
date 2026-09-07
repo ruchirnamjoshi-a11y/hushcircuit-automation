@@ -1,0 +1,59 @@
+{
+  "id": "pip-and-the-sleepy-cloud",
+  "title": "Pip and the Sleepy Cloud",
+  "description": "A little bear helps a tired rain cloud find a cozy place to rest before it can rain.",
+  "tags": [
+    "bedtime",
+    "sky",
+    "helping",
+    "clouds",
+    "kids"
+  ],
+  "character_reference": "a small brown bear cub with patched fuzzy ears and a cream-colored belly",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "A fluffy little gray cloud drifted right down into Pip's treehouse balcony, looking completely exhausted. It was too tired to float back up to the big sky.",
+      "on_screen_text": "TIRED CLOUD",
+      "duration_hint": 16.0,
+      "visual": "medium shot of a small brown bear cub looking surprised at a soft fluffy gray cloud resting on his wooden porch railing"
+    },
+    {
+      "narration": "Oh dear, whispered Pip. You look like you need a wonderful nap. The cloud let out a sleepy puff of cool mist that felt like a refreshing morning breeze.",
+      "on_screen_text": "REST A WHILE",
+      "duration_hint": 15.0,
+      "visual": "close up of the cute bear cub gently patting the top of a fluffy floating vapor cloud with a kind expression"
+    },
+    {
+      "narration": "Pip fetched his softest spare quilt and tucked it gently around the puffy gray shape. The cloud sighed happily and turned the color of spun cotton candy.",
+      "on_screen_text": "COZY QUILT",
+      "duration_hint": 15.0,
+      "visual": "wide shot of the bear cub carefully draping a colorful patched blanket over a puffy cloud resting on a wooden deck"
+    },
+    {
+      "narration": "While the cloud slept, tiny drops of gentle rain sprinkled down just enough to water Pip's thirsty tomato plants in the garden below. It was the happiest nap ever.",
+      "on_screen_text": "GENTLE RAIN",
+      "duration_hint": 16.0,
+      "visual": "low angle shot looking up past green leaves as tiny sparkling raindrops fall softly from the resting cloud above"
+    },
+    {
+      "narration": "When the cloud woke up, it felt light and bouncy again, ready to float back up to join its fluffy family in the bright blue sky.",
+      "on_screen_text": "READY TO FLOAT",
+      "duration_hint": 15.0,
+      "visual": "medium shot of the bear waving goodbye as the puffy cloud rises slowly into the air trailing sparkling mist"
+    },
+    {
+      "narration": "The cloud left behind a sparkling rainbow bridge as a special thank-you gift for its good friend. Pip smiled up at the sky and felt ready for bed.",
+      "on_screen_text": "RAINBOW GIFT",
+      "duration_hint": 15.0,
+      "visual": "close up of the bear cub smiling warmly while looking up at a colorful pastel rainbow arching across the twilight sky"
+    },
+    {
+      "narration": "A little kindness makes the whole world feel bright and warm. Follow along for more bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "calming view of a pastel twilight sky with twinkling stars beginning to appear through soft clouds"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "the-potters-last-kiln",
+  "title": "The Potter's Last Kiln",
+  "description": "An aging artisan prepares to close his pottery studio, only to find new inspiration in an imperfection he once would have discarded.",
+  "tags": [
+    "artisan",
+    "craft",
+    "acceptance",
+    "aging",
+    "pottery"
+  ],
+  "character_reference": "a stocky older man with a thick grey beard, wearing a dusty clay-stained canvas apron and rolled-up flannel sleeves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty years, my hands shaped wet clay into symmetry, chasing a perfection that always remained just out of reach.",
+      "on_screen_text": "FORTY YEARS",
+      "duration_hint": 5.2,
+      "visual": "hands shaping spinning clay on a potter wheel, splattered with wet grey mud and terracotta dust"
+    },
+    {
+      "narration": "Now, surrounded by packed cardboard boxes, I loaded the final batch into the roaring brick kiln before locking the studio door.",
+      "on_screen_text": "FINAL BATCH",
+      "duration_hint": 5.6,
+      "visual": "older artisan opening the heavy metal door of a glowing red-hot electric kiln, heat haze rising against stone walls"
+    },
+    {
+      "narration": "The thermometer climbed steadily through the afternoon, threatening to warp the delicate porcelain pieces I had labored over.",
+      "on_screen_text": "RISING HEAT",
+      "duration_hint": 5.2,
+      "visual": "close-up of an analog dial thermometer strapped to brickwork, the needle creeping past the red warning line"
+    },
+    {
+      "narration": "When the kiln finally cooled the next morning, I reached inside and pulled out a vase marred by a jagged heat crack.",
+      "on_screen_text": "THE FLAW",
+      "duration_hint": 5.2,
+      "visual": "hands lifting a glazed ceramic vase from a dusty wire shelf, revealing a prominent dark fracture running down the side"
+    },
+    {
+      "narration": "Younger me would have smashed it into the scrap bin, labeling it a failure unworthy of the shelf.",
+      "on_screen_text": "OLD HABITS",
+      "duration_hint": 4.8,
+      "visual": "man staring down at a cracked clay pot with a critical frown, shadows falling across his workshop bench"
+    },
+    {
+      "narration": "Instead, I mixed liquid gold resin and began to trace the fracture line, filling the wound with bright metallic seams.",
+      "on_screen_text": "GOLDEN REPAIR",
+      "duration_hint": 5.2,
+      "visual": "close-up of a fine brush applying glittering gold lacquer into a jagged crack along a dark ceramic surface"
+    },
+    {
+      "narration": "The break did not ruin the vessel; it gave it a story of survival and transformation that smooth clay could never claim.",
+      "on_screen_text": "TRANSFORMATION",
+      "duration_hint": 5.2,
+      "visual": "the finished ceramic piece catching sunlight, glowing golden veins tracing across the dark glaze texture"
+    },
+    {
+      "narration": "I unpacked the shipping boxes and set the repaired vase in the center window, ready to begin my next chapter.",
+      "on_screen_text": "NEW BEGINNING",
+      "duration_hint": 5.2,
+      "visual": "man placing a golden-repaired vase onto a wooden display table illuminated by soft morning window light"
+    },
+    {
+      "narration": "If you appreciate stories about finding beauty in our imperfections, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.3,
+      "visual": "close-up of smiling artisan wiping clay dust from his hands while looking toward the camera with quiet pride"
+    }
+  ]
+}

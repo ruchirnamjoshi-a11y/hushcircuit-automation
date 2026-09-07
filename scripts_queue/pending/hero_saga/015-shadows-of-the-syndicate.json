@@ -1,0 +1,65 @@
+{
+  "id": "shadows-of-the-syndicate",
+  "title": "Neon Pulse — Episode 15: Shadows of the Syndicate",
+  "description": "Kael infiltrates a heavily guarded syndicate data hub, only to discover that Commander Vance is waiting for him inside.",
+  "tags": [
+    "original hero saga",
+    "action adventure",
+    "cyberpunk thriller",
+    "superhero",
+    "neon pulse"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 15,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Stepping through the scorched security doors of the syndicate compound, I knew there was no turning back. The air tasted of ozone and burning copper.",
+      "on_screen_text": "THE BREACH",
+      "duration_hint": 10.0,
+      "visual": "Low angle tracking shot through heavy charred metal blast doors, green emergency lighting casting harsh shadows down a long industrial corridor filled with smoke and debris."
+    },
+    {
+      "narration": "Amber energy surged along my forearms as I forced open the encoded elevator shaft. Every second brought me closer to the truth.",
+      "on_screen_text": "FORCING THE WAY",
+      "duration_hint": 10.0,
+      "visual": "Close up on glowing orange light flaring from fingertips against a massive steel wall panel, electric sparks flying around dark gloved hands in a narrow concrete shaft."
+    },
+    {
+      "narration": "Silent patrol drones swept the upper gantry with crimson beams. I melted into the shadow of a massive steel pillar, holding my breath.",
+      "on_screen_text": "UNSEEN PASSAGE",
+      "duration_hint": 10.0,
+      "visual": "Wide shot of a massive industrial server room from above, a single figure crouching flat against a massive metallic column while sweeping red laser lines cut through the dark air."
+    },
+    {
+      "narration": "The main terminal flickered to life, downloading encrypted files straight into my neural link. But the data stream was laced with a familiar tracking signature.",
+      "on_screen_text": "THE DOWNLOAD",
+      "duration_hint": 11.0,
+      "visual": "Medium shot of glowing blue holographic console projections reflecting across serious facial features, hands rapidly typing over floating green data displays in a dark chamber."
+    },
+    {
+      "narration": "A slow, deliberate applause echoed from the shadows behind me. The voice that followed sent a cold chill straight down my spine.",
+      "on_screen_text": "A FAMILIAR VOICE",
+      "duration_hint": 10.0,
+      "visual": "Over the shoulder shot facing a dimly lit control room, a mysterious older figure stepping forward from deep shadows with a calm smile while industrial machinery hums softly."
+    },
+    {
+      "narration": "Commander Vance stepped into the amber glow, alive and untouched by the past I thought had buried him. He had orchestrated every single step of my escape.",
+      "on_screen_text": "THE MASTERMIND",
+      "duration_hint": 12.0,
+      "visual": "Medium close up of a scarred older military commander in a dark tactical uniform standing calmly under an overhead spotlight, looking directly forward with a knowing grin."
+    },
+    {
+      "narration": "He smiled, telling me I had performed exactly as predicted. The final trap was finally springing shut around us.",
+      "on_screen_text": "THE TRAP CLOSES",
+      "duration_hint": 10.0,
+      "visual": "Wide angle view of two figures standing on opposite sides of a glowing central console, heavy steel blast doors dropping rapidly from the ceiling to seal all exits."
+    },
+    {
+      "narration": "Follow along for more original action and serialized superhero stories as the rebellion continues in the next episode.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Cinematic head and shoulders portrait against a dark textured background with subtle amber light pulses moving slowly across the frame."
+    }
+  ]
+}

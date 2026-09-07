@@ -1,0 +1,71 @@
+{
+  "id": "the-rooftop-greenhouse",
+  "title": "The Rooftop Greenhouse",
+  "description": "A retired engineer transforms a neglected city apartment balcony into a thriving ecosystem, reconnecting with the neighbor he never knew.",
+  "tags": [
+    "gardening",
+    "retirement",
+    "city",
+    "community",
+    "nature"
+  ],
+  "character_reference": "a slender older woman with curly silver hair tied in a loose clip, wearing wire-rimmed glasses and a moss-green knitted cardigan",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Retirement arrived with too much empty space and a balcony that caught nothing but soot and pigeon feathers.",
+      "on_screen_text": "EMPTY SPACE",
+      "duration_hint": 5.2,
+      "visual": "barren concrete apartment balcony covered in grey dust and dry leaves against a sprawling urban skyline backdrop"
+    },
+    {
+      "narration": "I cleared away the debris, hauling up bags of rich compost and cedar planks to build my first stubborn planter box.",
+      "on_screen_text": "FIRST PLANTER",
+      "duration_hint": 5.2,
+      "visual": "woman kneeling on a balcony floor hammering wooden planks together, surrounded by bags of dark soil"
+    },
+    {
+      "narration": "For weeks, nothing happened beneath the grey city sky except damp dirt and the whisper of passing subway cars.",
+      "on_screen_text": "WAITING",
+      "duration_hint": 4.8,
+      "visual": "close-up of wet dark soil in a wooden box under a misty urban drizzle, no sprouts visible"
+    },
+    {
+      "narration": "Then, after a sudden spring rain, a single pale green cotyledon poked its head through the soil.",
+      "on_screen_text": "FIRST SPROUT",
+      "duration_hint": 4.8,
+      "visual": "macro shot of a tiny vibrant green seedling emerging from damp brown earth, backlit by morning sun"
+    },
+    {
+      "narration": "My balcony soon drew more than sun; the retired carpenter from across the courtyard leaned over his railing with a curious smile.",
+      "on_screen_text": "A NEIGHBOR",
+      "duration_hint": 5.2,
+      "visual": "older woman looking up and waving across a narrow city alley toward an adjacent brick balcony"
+    },
+    {
+      "narration": "We traded tomato starts for hand-carved trellis stakes, turning two lonely ledges into a shared hanging garden.",
+      "on_screen_text": "SHARED HARVEST",
+      "duration_hint": 5.2,
+      "visual": "two pairs of older hands passing a small terracotta pot across a narrow gap between apartment railings"
+    },
+    {
+      "narration": "The concrete canyon below remained loud and frantic, but my little patch of green offered a sanctuary above the noise.",
+      "on_screen_text": "SANCTUARY",
+      "duration_hint": 5.2,
+      "visual": "lush tomato plants and trailing ivy overflowing from wooden boxes against a backdrop of distant city towers at dusk"
+    },
+    {
+      "narration": "Growing things taught me that patience isn't about waiting for time to pass, but tending to the present moment.",
+      "on_screen_text": "PATIENCE",
+      "duration_hint": 5.2,
+      "visual": "woman watering delicate herb leaves with a small copper watering can, water droplets sparkling in the sun"
+    },
+    {
+      "narration": "If you love stories about growing connections in unexpected places, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.3,
+      "visual": "smiling woman holding a basket of fresh basil leaves on a sunny balcony filled with leafy plants"
+    }
+  ]
+}

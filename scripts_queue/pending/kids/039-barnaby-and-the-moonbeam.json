@@ -1,0 +1,59 @@
+{
+  "id": "barnaby-and-the-moonbeam",
+  "title": "Barnaby and the Moonbeam",
+  "description": "A curious little owl tries to catch a dancing moonbeam on the forest floor before learning to appreciate it from above.",
+  "tags": [
+    "bedtime",
+    "owl",
+    "night",
+    "moon",
+    "kids"
+  ],
+  "character_reference": "a fluffy brown baby owl with huge amber eyes and speckled grey wing feathers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Barnaby fluttered down from his high branch to chase a bright silver strip of moonlight resting on the forest floor. He reached out his talons to scoop it up.",
+      "on_screen_text": "SILVER BEAM",
+      "duration_hint": 16.0,
+      "visual": "medium shot of a fluffy baby owl landing on dark soil trying to grab a bright patch of white moonlight with his claws"
+    },
+    {
+      "narration": "Every time he pounced, his claws only grabbed cool green grass and soft dirt. The moonbeam slipped right through his feathers like water.",
+      "on_screen_text": "SLIPPING AWAY",
+      "duration_hint": 14.0,
+      "visual": "close up of the confused little owl looking down at empty paws where a bright pool of light just vanished"
+    },
+    {
+      "narration": "A gentle moth landed on his beak and whispered, You cannot hold a moonbeam in your paws, Barnaby. You have to look up to enjoy its beauty.",
+      "on_screen_text": "LOOK UP",
+      "duration_hint": 15.0,
+      "visual": "macro shot of a tiny white moth resting on the beak of a wide-eyed baby owl surrounded by dark shadows"
+    },
+    {
+      "narration": "Barnaby blinked, spread his speckled wings, and flew back up to his cozy treetop home. From high above, the silver light washed over the whole forest.",
+      "on_screen_text": "SPREAD WINGS",
+      "duration_hint": 15.0,
+      "visual": "action shot of the small owl taking flight upward toward glowing tree branches lit by silvery moonlight"
+    },
+    {
+      "narration": "Sitting safely on his branch, he realized the moonlight wasn't meant to be caught. It was meant to guide everyone safely through the quiet night.",
+      "on_screen_text": "GENTLE GUIDE",
+      "duration_hint": 15.0,
+      "visual": "peaceful medium shot of the owl perched on a high tree branch looking out at a vast silvery forest below"
+    },
+    {
+      "narration": "He tucked his head beneath his wing and let the soft silver glow lull him into a deep, dreamless sleep. The night is full of quiet wonders.",
+      "on_screen_text": "DEEP SLEEP",
+      "duration_hint": 15.0,
+      "visual": "close up of the cute owl sleeping soundly with his head tucked under his fluffy wing in the cozy nest"
+    },
+    {
+      "narration": "Some things are most magical when we just sit back and admire them. Follow along for more bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "serene view of a bright full moon shining brightly through quiet starry night clouds"
+    }
+  ]
+}

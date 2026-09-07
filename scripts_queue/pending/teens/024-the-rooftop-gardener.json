@@ -1,0 +1,71 @@
+{
+  "id": "the-rooftop-gardener",
+  "title": "The Rooftop Gardener",
+  "description": "A city teen fighting burnout transforms an abandoned apartment roof into a hidden sanctuary, finding friendship among the potted green.",
+  "tags": [
+    "gardening",
+    "burnout",
+    "city",
+    "friendship",
+    "nature"
+  ],
+  "character_reference": "an eighteen-year-old girl with shoulder-length braided dark hair, wearing an oversized hunter green corduroy jacket and circular amber sunglasses pushed up on her head",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The screen glowed at three in the morning, illuminating my tired eyes and a list of assignments that never seemed to end.",
+      "on_screen_text": "SCREEN FATIGUE",
+      "duration_hint": 5.0,
+      "visual": "close-up of face illuminated by harsh blue light from a laptop screen in a dark room, eyes heavy with exhaustion, dramatic shadows"
+    },
+    {
+      "narration": "I pushed open the heavy steel fire exit door and stepped onto the forgotten asphalt desert of the apartment roof.",
+      "on_screen_text": "THE ESCAPE",
+      "duration_hint": 5.0,
+      "visual": "medium shot pushing open a weathered green metal door, stepping out into a vast empty gravel rooftop under a twilight sky"
+    },
+    {
+      "narration": "Carrying bags of potting soil up six flights of stairs nearly made me quit before the first seed even hit the dirt.",
+      "on_screen_text": "HEAVY LOADS",
+      "duration_hint": 5.5,
+      "visual": "straining to hoist a heavy plastic bag of soil onto a weathered wooden pallet, breath visible in the cool evening air"
+    },
+    {
+      "narration": "A neighbor I had never spoken to appeared beside me with a watering can and a quiet, knowing smile.",
+      "on_screen_text": "AN ALLY",
+      "duration_hint": 4.5,
+      "visual": "side profile of handing a rusted tin watering can across two wooden crates, mutual hesitant smiles exchanged under string lights"
+    },
+    {
+      "narration": "We spent hours untangling roots and burying tiny tomato starts into repurposed wooden crates while the city hummed below.",
+      "on_screen_text": "GETTING DIRTY",
+      "duration_hint": 5.5,
+      "visual": "close-up of hands gently pressing dark rich soil around the base of a delicate green tomato seedling, dirt smudged on wrists"
+    },
+    {
+      "narration": "Slowly, the dull hum of academic pressure was replaced by the crisp, earthy scent of damp earth and growing green vines.",
+      "on_screen_text": "GROWING GREEN",
+      "duration_hint": 5.5,
+      "visual": "low angle shot looking up at trailing green ivy leaves catching the golden hour sun against a backdrop of distant urban brick buildings"
+    },
+    {
+      "narration": "When the first tiny red fruit finally appeared, it felt like a victory no GPA could ever measure.",
+      "on_screen_text": "FIRST FRUIT",
+      "duration_hint": 5.0,
+      "visual": "extreme close-up of a single small red cherry tomato hanging among vibrant green leaves, illuminated by warm afternoon sunlight"
+    },
+    {
+      "narration": "We did not fix the world, but we carved out a living, breathing corner of it right above the concrete.",
+      "on_screen_text": "OUR CORNER",
+      "duration_hint": 5.0,
+      "visual": "two young adults sitting side by side on wooden crates among lush potted plants, looking out toward a hazy sunset horizon"
+    },
+    {
+      "narration": "If you are ready to find your own quiet escape from the noise, follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "close-up portrait laughing softly while holding a small potted fern, warm sunset glow reflecting in amber sunglasses"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-table",
+  "title": "The Solo Table",
+  "description": "A woman confronts the discomfort of eating alone in a bustling restaurant and finds unexpected peace.",
+  "tags": [
+    "solitude",
+    "confidence",
+    "self-love",
+    "boundaries",
+    "women"
+  ],
+  "character_reference": "a woman in her late twenties with short sleek black hair, wearing a forest green wool coat and silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The host asked if she was waiting for a party. Elena took a breath and said, just for one tonight.",
+      "on_screen_text": "TABLE FOR ONE",
+      "duration_hint": 9.0,
+      "visual": "medium shot of a woman standing at a restaurant entrance speaking to someone off-camera, warm ambient lighting, busy blurred restaurant interior background"
+    },
+    {
+      "narration": "Her fingers tightened around her phone out of pure habit. Everyone else seemed to be laughing in pairs.",
+      "on_screen_text": "THE HABIT",
+      "duration_hint": 8.0,
+      "visual": "close-up of hands nervously clutching a smartphone on a dark wooden table, dim candle light flickering, shallow depth of field"
+    },
+    {
+      "narration": "Instead of burying her face in a screen, she slid the phone into her bag and simply looked around.",
+      "on_screen_text": "LOOKING UP",
+      "duration_hint": 8.0,
+      "visual": "close-up of a woman sliding her phone into a leather handbag with a deliberate movement, calm expression, restaurant background bokeh"
+    },
+    {
+      "narration": "She watched the flicker of candlelight dance against the wine glasses, noticing details she always rushed past.",
+      "on_screen_text": "SMALL DETAILS",
+      "duration_hint": 8.0,
+      "visual": "macro shot of a glowing candle flame reflecting in the rim of a crystal wine glass, warm amber tones, cinematic lighting"
+    },
+    {
+      "narration": "When the plate of warm pasta arrived, she tasted every bite without rushing to fill the silence.",
+      "on_screen_text": "SAVORING THE MOMENT",
+      "duration_hint": 8.0,
+      "visual": "close-up of a fork lifting a twirl of pasta from a ceramic bowl, steaming gently under warm overhead spot lighting, appetizing food cinematography"
+    },
+    {
+      "narration": "Loneliness was a story she had been told to fear. Solitude, she realized now, was a sanctuary.",
+      "on_screen_text": "SANCTUARY",
+      "duration_hint": 8.0,
+      "visual": "profile portrait of a woman sitting peacefully at a restaurant table, sipping water, calm satisfied smile, warm indoor ambiance"
+    },
+    {
+      "narration": "She paid her own bill, left a generous tip, and walked out into the cool night air standing taller.",
+      "on_screen_text": "STANDING TALL",
+      "duration_hint": 9.0,
+      "visual": "wide shot of a woman walking out through glass doors onto a dimly lit city sidewalk at night, streetlights glowing in the mist, cinematic mood"
+    },
+    {
+      "narration": "If you love finding strength in your own company, follow along for more inspiring stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "close-up portrait of a woman smiling warmly at the camera on a city street at night, glowing bokeh lights in the background"
+    }
+  ]
+}

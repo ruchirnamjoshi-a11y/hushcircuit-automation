@@ -1,0 +1,71 @@
+{
+  "id": "the-late-shift-violin",
+  "title": "The Late Shift Violin",
+  "description": "A weary night-shift hospital cleaner rediscovers his passion for music when he finds a forgotten violin in a quiet recovery room.",
+  "tags": [
+    "music",
+    "career",
+    "passion",
+    "middle-aged",
+    "redemption"
+  ],
+  "character_reference": "a tall middle-aged man with thinning dark hair, silver temples, wearing a dark blue hospital custodian uniform and a silver wedding band",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The third floor was always the quietest after midnight, save for the hum of the vending machines and my own tired footsteps.",
+      "on_screen_text": "THE QUIET HALLWAY",
+      "duration_hint": 5.2,
+      "visual": "dimly lit hospital corridor at night with polished linoleum floors reflecting fluorescent ceiling lights, seen from a low angle tracking shot"
+    },
+    {
+      "narration": "I pushed my supply cart into room three twelve, expecting the usual routine of empty trays and discarded paper cups.",
+      "on_screen_text": "ROOM THREE TWELVE",
+      "duration_hint": 5.2,
+      "visual": "interior of a sterile hospital recovery room bathed in blue moonlight through a large window, empty bed with neatly folded white blankets"
+    },
+    {
+      "narration": "Resting on the wooden bedside chair was a battered mahogany case, left behind by someone who had checked out hours ago.",
+      "on_screen_text": "A LEFTOVER CASE",
+      "duration_hint": 5.2,
+      "visual": "close-up of a weathered wooden violin case resting on a simple chair, brass latches catching the dim light"
+    },
+    {
+      "narration": "My hands hovered over the brass latches, remembering the callus patterns I had lost twenty years ago when I traded bow for broom.",
+      "on_screen_text": "OLD MEMORIES",
+      "duration_hint": 5.2,
+      "visual": "close-up of worn hands with scarred knuckles gently touching a dusty instrument case, shallow depth of field"
+    },
+    {
+      "narration": "I lifted the lid to find a dark varnish instrument with a cracked bridge, whispering of forgotten concertos.",
+      "on_screen_text": "THE OLD WOOD",
+      "duration_hint": 4.8,
+      "visual": "open case revealing an antique violin inside dark velvet lining, warm amber polish gleaming under a single overhead lamp"
+    },
+    {
+      "narration": "Tucking the chin rest beneath my jaw, I drew the bow across the A string and let the first pure note fill the empty room.",
+      "on_screen_text": "FIRST NOTE",
+      "duration_hint": 5.2,
+      "visual": "medium shot of the man closing his eyes in concentration while holding a violin to his chin, bow drawn across strings"
+    },
+    {
+      "narration": "For three minutes, the hospital floors faded away, replaced by the soaring melodies I thought I had buried forever.",
+      "on_screen_text": "LOST MELODY",
+      "duration_hint": 4.8,
+      "visual": "profile view of the musician playing near a tall window, dust motes dancing in the moonlight beam around him"
+    },
+    {
+      "narration": "When the final chord died out, I knew the morning would bring my resignation letter, and a return to the music I loved.",
+      "on_screen_text": "THE CHOICE",
+      "duration_hint": 5.2,
+      "visual": "the man lowering the bow slowly with a gentle smile, looking out toward the brightening horizon through the glass"
+    },
+    {
+      "narration": "If you believe it is never too late to pick up your old dreams, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.3,
+      "visual": "warm cinematic portrait of a smiling man holding a violin case against his chest as dawn breaks softly"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "leo-the-lions-quiet-roar",
+  "title": "Leo the Lion's Quiet Roar",
+  "description": "A young lion cub discovers his roar does not need to be loud to show bravery and kindness.",
+  "tags": [
+    "bedtime",
+    "courage",
+    "gentle",
+    "lion",
+    "kids"
+  ],
+  "character_reference": "a fluffy golden lion cub with a tiny tuft of orange mane and a friendly curved tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "All the big lions in the pride could shake the leaves off the trees with their mighty roars. Leo tried his very best, but his voice came out as a tiny squeaky squeak.",
+      "on_screen_text": "A SQUEAKY ROAR",
+      "duration_hint": 16.0,
+      "visual": "close up of a tiny golden lion cub opening his mouth wide in a fierce pose while looking adorably small and fluffy"
+    },
+    {
+      "narration": "He felt so small among the loud grown-ups and worried he would never be brave enough to help his family. He walked off to sit alone by a quiet stream.",
+      "on_screen_text": "FEELING SMALL",
+      "duration_hint": 15.0,
+      "visual": "sad medium shot of the little cub sitting despondently by the edge of a calm blue stream looking down at his own reflection"
+    },
+    {
+      "narration": "Suddenly, a tiny blue butterfly fluttered down with a stuck wing, trapped underneath a fallen pebble. It couldn't fly away and looked very frightened.",
+      "on_screen_text": "A TRAPPED FRIEND",
+      "duration_hint": 14.0,
+      "visual": "macro view of a bright blue butterfly struggling underneath a small gray stone near wet sand and grass"
+    },
+    {
+      "narration": "Leo didn't need a loud roar for this. He used his softest, gentlest paw to roll the heavy pebble away so the little butterfly could finally stretch its wings.",
+      "on_screen_text": "A GENTLE TOUCH",
+      "duration_hint": 15.0,
+      "visual": "close up of the lion cub gently nudging a small stone with his paw to free a delicate blue butterfly"
+    },
+    {
+      "narration": "The butterfly landed right on Leo's nose and fluttered its wings in a joyful thank-you dance. Leo gave a happy little purr that rumbled deep in his chest.",
+      "on_screen_text": "HAPPY PURR",
+      "duration_hint": 15.0,
+      "visual": "cute close up of the small cub crossing his eyes happily to look at a blue butterfly resting right on the tip of his nose"
+    },
+    {
+      "narration": "He realized courage isn't about how loud you shout, but how kindly you help others in need. With a warm heart, he trotted back to his family.",
+      "on_screen_text": "TRUE BRAVERY",
+      "duration_hint": 15.0,
+      "visual": "warm lit shot of the happy lion cub walking proudly through golden tall grass with the blue butterfly flying gracefully above his head"
+    },
+    {
+      "narration": "True strength always lives inside a kind and gentle heart. Follow along for more bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "peaceful sunset over a grassy savanna with warm golden light spilling across the tranquil landscape"
+    }
+  ]
+}

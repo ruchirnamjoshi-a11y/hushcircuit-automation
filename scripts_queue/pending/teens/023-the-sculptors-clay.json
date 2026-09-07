@@ -1,0 +1,71 @@
+{
+  "id": "the-sculptors-clay",
+  "title": "The Sculptor's Clay",
+  "description": "A college art student struggles with perfectionism until a ruined sculpture teaches him to embrace the unpredictable texture of his own grief.",
+  "tags": [
+    "art",
+    "grief",
+    "perfectionism",
+    "college",
+    "growth"
+  ],
+  "character_reference": "a young nineteen-year-old male art student with tousled dark curls, wearing a paint-splattered charcoal apron over a plain white t-shirt, and silver wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The clay collapsed inward just as the kiln door shut, ruining three weeks of agonizing detail in a single second.",
+      "on_screen_text": "THE COLLAPSE",
+      "duration_hint": 5.0,
+      "visual": "close-up of slumped shoulders in a dimly lit pottery studio, hands resting in an empty wooden work tray, heavy shadow across the face, moody cinematic lighting"
+    },
+    {
+      "narration": "I sat on the cold concrete floor staring at the gray dust, wondering why I even bothered trying to make things whole.",
+      "on_screen_text": "SITTING IN SILENCE",
+      "duration_hint": 5.5,
+      "visual": "medium shot sitting cross-legged on a concrete floor next to a potter wheel, looking downward with a pensive expression, cluttered tools in background"
+    },
+    {
+      "narration": "My professor did not offer pity or praise, she just handed me a handful of rough, wet terracotta and walked away.",
+      "on_screen_text": "AN UNEXPECTED GIFT",
+      "duration_hint": 5.0,
+      "visual": "over-the-shoulder perspective of receiving heavy wet clay from a blurred mentor figure, warm studio lighting illuminating the textured earth"
+    },
+    {
+      "narration": "Instead of smoothing every surface, I started gouging deep, jagged lines into the raw mass, letting my hands shake.",
+      "on_screen_text": "EMBRACING THE FLW",
+      "duration_hint": 5.5,
+      "visual": "extreme close-up of fingers aggressively carving deep grooves into wet clay, dirt under fingernails, intense focused gaze visible in profile"
+    },
+    {
+      "narration": "It did not look like the pristine sculptures in the gallery books, but it held a strange, heavy weight that felt entirely real.",
+      "on_screen_text": "SOMETHING REAL",
+      "duration_hint": 5.5,
+      "visual": "low angle shot looking up at a jagged asymmetrical clay sculpture resting on a wooden stand, dramatic side lighting casting long shadows"
+    },
+    {
+      "narration": "When the critique finally came around, my heart hammered against my ribs like a trapped bird.",
+      "on_screen_text": "THE CRITIQUE",
+      "duration_hint": 4.5,
+      "visual": "tight head-on portrait showing anxious biting of the lower lip, eyes wide and looking forward across a crowded room, shallow depth of field"
+    },
+    {
+      "narration": "She touched the rough surface of my broken and rebuilt piece and simply nodded, and for the first time, that was enough.",
+      "on_screen_text": "A QUIET NOD",
+      "duration_hint": 5.5,
+      "visual": "close-up of a hand gently resting against the textured side of a newly fired ceramic sculpture, soft natural light streaming through a tall window"
+    },
+    {
+      "narration": "Art is not about avoiding the cracks, it is about what you build in the spaces where things break.",
+      "on_screen_text": "FINDING SHAPE",
+      "duration_hint": 5.0,
+      "visual": "wide interior view of a sunlit studio corner filled with pottery wheels and shelves, dust motes floating in beams of amber light"
+    },
+    {
+      "narration": "If stories like this remind you that making mistakes is just part of the process, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm centered portrait smiling slightly while looking directly into the camera lens, cozy indoor evening ambiance with soft bokeh lights"
+    }
+  ]
+}

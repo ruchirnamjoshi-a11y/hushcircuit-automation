@@ -1,0 +1,71 @@
+{
+  "id": "the-map-maker",
+  "title": "The Map Maker",
+  "description": "An aging cartographer retired by GPS technology spends his days hand-drawing topographical trails of his local hiking woods.",
+  "tags": [
+    "maps",
+    "hiking",
+    "nature",
+    "retirement",
+    "art"
+  ],
+  "character_reference": "a thoughtful man in his fifties with thick greying hair, wearing a corduroy jacket with leather elbow patches and reading glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Satellites and pocket screens rendered my life's work obsolete, turning hand-drawn contours into forgotten museum pieces.",
+      "on_screen_text": "OBSOLETE CRAFT",
+      "duration_hint": 5.2,
+      "visual": "man sitting at a drafting table covered in old folded paper maps and brass navigational compasses"
+    },
+    {
+      "narration": "Rather than surrender to the digital age, I laced up my hiking boots and walked every hidden trail in the county park.",
+      "on_screen_text": "THE WOODS",
+      "duration_hint": 5.2,
+      "visual": "man walking along a winding dirt forest path dappled with sunlight filtering through tall autumn oak trees"
+    },
+    {
+      "narration": "I noted ancient oak trees, hidden spring trickles, and rocky ridges that no satellite lens could ever see beneath the canopy.",
+      "on_screen_text": "HIDDEN DETAILS",
+      "duration_hint": 5.6,
+      "visual": "close-up of hands sketching terrain contour lines in a small leather-bound notebook with a fountain pen"
+    },
+    {
+      "narration": "Back at my wooden drafting table, I dipped my pen into sepia ink and translated dirt and stone into fine cartographic art.",
+      "on_screen_text": "SEPIA INK",
+      "duration_hint": 5.2,
+      "visual": "close-up of a fountain pen nib drawing delicate topographic curves on heavy cream parchment paper"
+    },
+    {
+      "narration": "I added little margin drawings of wildflowers and bird nests, details no navigation app would ever bother to record.",
+      "on_screen_text": "WILD FLOWERS",
+      "duration_hint": 5.2,
+      "visual": "man adding a delicate watercolor sketch of ferns to the corner of a hand-drawn forest trail map"
+    },
+    {
+      "narration": "Local hikers started stopping by my porch, asking for copies of my hand-drawn guides to navigate the wilderness.",
+      "on_screen_text": "LOCAL GUIDES",
+      "duration_hint": 5.2,
+      "visual": "man handing a rolled parchment map to a smiling hiker wearing a backpack on a sunny wooden porch"
+    },
+    {
+      "narration": "Technology can tell you where you are on earth, but it takes a human eye to show you where you belong.",
+      "on_screen_text": "BELONGING",
+      "duration_hint": 4.8,
+      "visual": "wide shot of the cartographer looking out over a rolling forest valley bathed in golden hour light"
+    },
+    {
+      "narration": "Progress moves fast, but the soul of a place is best captured one careful pen stroke at a time.",
+      "on_screen_text": "SLOW CRAFT",
+      "duration_hint": 4.8,
+      "visual": "close-up of a completed parchment map spread across a desk, featuring intricate ink-drawn mountains and trees"
+    },
+    {
+      "narration": "If you enjoy stories about preserving the slower, thoughtful side of life, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.3,
+      "visual": "warm cinematic shot of the smiling cartographer holding a fountain pen in his cozy, book-lined study"
+    }
+  ]
+}

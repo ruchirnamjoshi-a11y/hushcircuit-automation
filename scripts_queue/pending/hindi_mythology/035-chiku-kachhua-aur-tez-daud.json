@@ -1,0 +1,65 @@
+{
+  "id": "chiku-kachhua-aur-tez-daud",
+  "title": "चिक्कू कछुआ और तेज़ दौड़",
+  "description": "धीमा चलने वाला चिक्कू कछुआ अपनी रफ़्तार बदलने के बजाय अपनी खूबी से दौड़ जीतता है।",
+  "tags": [
+    "कछुआ",
+    "दौड़",
+    "जीत",
+    "बच्चों की सीख",
+    "धैर्य"
+  ],
+  "character_reference": "a tiny green turtle with a patterned shell shaped like glowing emerald stones and gentle amber eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "जंगल में वार्षिक दौड़ प्रतियोगिता शुरू होने वाली थी। सब जानते थे कि कछुआ सबसे धीमा चलता है।",
+      "on_screen_text": "दौड़ की तैयारी",
+      "duration_hint": 6.0,
+      "visual": "A small turtle standing at the starting line of a dusty forest path, looking up determinedly at a distant finish line banner."
+    },
+    {
+      "narration": "सभी जानवरों ने चिक्कू का मजाक उड़ाया और कहा कि वह कभी दौड़ पूरी नहीं कर पाएगा।",
+      "on_screen_text": "मजाक और हंसी",
+      "duration_hint": 6.0,
+      "visual": "Other forest animals laughing and pointing paws down at the tiny turtle, who remains calm and focused."
+    },
+    {
+      "narration": "दौड़ शुरू होते ही खरगोश हवा से बातें करने लगा, लेकिन चिक्कू ने बिना घबराए अपनी चाल जारी रखी।",
+      "on_screen_text": "अपनी चाल",
+      "duration_hint": 6.0,
+      "visual": "The turtle crawling steadily along the ground among wild mushrooms, leaving a tiny trail in the soft dirt."
+    },
+    {
+      "narration": "रास्ते में एक चौड़ी और शांत नदी आई। खरगोश तैर नहीं सकता था, इसलिए वह रुक गया।",
+      "on_screen_text": "नदी का रुकावट",
+      "duration_hint": 6.0,
+      "visual": "A wide flowing river blocking the path, with a flustered rabbit pacing back and forth on the grassy bank."
+    },
+    {
+      "narration": "चिक्कू पानी से नहीं डरा। उसने धीरे से नदी में छलांग लगाई और आसानी से तैरकर पार कर गया।",
+      "on_screen_text": "पानी का सफर",
+      "duration_hint": 6.0,
+      "visual": "The turtle paddling smoothly through clear blue river water, surrounded by floating lily pads and gentle ripples."
+    },
+    {
+      "narration": "किनारे पर पहुँचकर चिक्कू ने फिर से अपनी स्थिर चाल से चलना शुरू कर दिया।",
+      "on_screen_text": "आगे की ओर",
+      "duration_hint": 6.0,
+      "visual": "The turtle climbing out of the wet riverbank onto dry grassy soil, continuing its steady forward march."
+    },
+    {
+      "narration": "जब तक खरगोश नदी पार करने का रास्ता ढूंढता, चिक्कू ने फिनिश लाइन पार कर ली थी।",
+      "on_screen_text": "शानदार जीत",
+      "duration_hint": 6.0,
+      "visual": "The turtle crossing the finish line while cheering forest animals look on in absolute shock and wonder."
+    },
+    {
+      "narration": "हर किसी की अपनी खूबी होती है, अपनी ताकत पहचानें। ऐसी अद्भुत कहानियों के लिए हमारे चैनल को सब्सक्राइब करें!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "The victorious turtle wearing a tiny flower crown, smiling happily under the warm afternoon sun."
+    }
+  ]
+}

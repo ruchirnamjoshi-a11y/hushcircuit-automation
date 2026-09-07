@@ -1,0 +1,65 @@
+{
+  "id": "chhotu-bhaloo-aur-madhu-ka-chhatta",
+  "title": "छोटू भालू और मधु का छत्ता",
+  "description": "मीठे शहद का लालच छोटू भालू को मुश्किल में डालता है, तब मधुमक्खियां उसे बांटकर खाने का पाठ पढ़ाती हैं।",
+  "tags": [
+    "भालू",
+    "मधुमक्खी",
+    "शहद",
+    "बांटना",
+    "दोस्ती"
+  ],
+  "character_reference": "a chubby fluffy brown bear cub with a cream-colored patch on his chest and big round ears",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "छोटू भालू को शहद बहुत पसंद था। एक दिन उसे ऊंचे पेड़ पर एक बड़ा शहद का छत्ता दिखाई दिया।",
+      "on_screen_text": "मीठा लालच",
+      "duration_hint": 6.0,
+      "visual": "A chubby brown bear cub looking up longingly at a large golden honeycomb hanging from a high pine tree branch."
+    },
+    {
+      "narration": "वह बिना सोचे-समझे सीधे पेड़ पर चढ़ गया और सारा शहद अकेले ही खाने की जिद करने लगा।",
+      "on_screen_text": "अकेले खाना",
+      "duration_hint": 6.0,
+      "visual": "The bear cub greedily plunging its paws into the sticky honeycomb, surrounded by buzzing insects."
+    },
+    {
+      "narration": "मधुमक्खियों को यह बात बिल्कुल पसंद नहीं आई। उन्होंने गुस्से में छोटू को घेर लिया और डंक मारने लगीं।",
+      "on_screen_text": "गुस्साई मधुमक्खियां",
+      "duration_hint": 6.0,
+      "visual": "A swarm of tiny golden bees buzzing defensively around the panicking bear cub, dramatic action shot."
+    },
+    {
+      "narration": "छोटू डरकर पेड़ से नीचे गिर पड़ा और रोने लगा। एक बुजुर्ग मधुमक्खी ने उससे कहा कि सब कुछ अकेले हड़पना गलत है।",
+      "on_screen_text": "सबक",
+      "duration_hint": 7.0,
+      "visual": "The bear rubbing its bumped head on the soft mossy ground while looking up at a talking queen bee."
+    },
+    {
+      "narration": "छोटू को अपनी गलती का अहसास हुआ। उसने माफी मांगी और छत्ते से थोड़ा सा शहद सबके साथ बांटने का फैसला किया।",
+      "on_screen_text": "बंटवारे की सीख",
+      "duration_hint": 7.0,
+      "visual": "The repentant bear sharing dollops of sweet honey on large green leaves with other tiny forest animals."
+    },
+    {
+      "narration": "सबने मिलकर खुशी से शहद का आनंद लिया। छोटू को समझ आ गया कि बांटने से खुशियां बढ़ती हैं।",
+      "on_screen_text": "खुशियों का भोज",
+      "duration_hint": 6.0,
+      "visual": "A joyful group of forest animals eating together happily under the warm forest canopy, smiling faces."
+    },
+    {
+      "narration": "बांटने में जो आनंद है, वह अकेले खाने में कहां? यह बात हमेशा याद रखें।",
+      "on_screen_text": "प्यार और बांटना",
+      "duration_hint": 6.0,
+      "visual": "Close-up of the happy bear cub smiling warmly, holding a small honey jar, soft golden hour lighting."
+    },
+    {
+      "narration": "ऐसी प्यारी कहानियों के लिए हमारे चैनल को सब्सक्राइब करना न भूलें!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "The chubby bear waving cheerfully at the camera amidst blooming wildflowers, vibrant colors."
+    }
+  ]
+}

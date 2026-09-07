@@ -1,0 +1,71 @@
+{
+  "id": "the-carpenters-apprentice",
+  "title": "The Carpenter's Apprentice",
+  "description": "An established corporate executive decides to apprentice under an old-school woodworker to build a rocking chair for his first grandchild.",
+  "tags": [
+    "woodworking",
+    "grandfather",
+    "craft",
+    "legacy",
+    "family"
+  ],
+  "character_reference": "a man in his late forties wearing rimless glasses, a crisp button-down shirt with rolled-up sleeves, and a heavy leather workshop tool belt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My entire life had been built on spreadsheets and boardroom meetings, until my daughter called with news that changed everything.",
+      "on_screen_text": "THE CALL",
+      "duration_hint": 5.2,
+      "visual": "middle-aged man holding a smartphone in a sleek modern office, looking out a glass window at city towers"
+    },
+    {
+      "narration": "Instead of buying an expensive nursery chair online, I knocked on the weathered door of master carpenter Silas.",
+      "on_screen_text": "THE WORKSHOP",
+      "duration_hint": 5.2,
+      "visual": "man walking up to a rustic wooden barn workshop nestled among tall pine trees with sawdust on the ground"
+    },
+    {
+      "narration": "He looked at my soft corporate hands with skepticism before handing me a heavy block of rough-cut walnut lumber.",
+      "on_screen_text": "ROUGH TIMBER",
+      "duration_hint": 5.2,
+      "visual": "elderly woodworker handing a heavy piece of dark walnut wood to a hesitant man in a clean shirt"
+    },
+    {
+      "narration": "For three weekends, my fingers blistered as I learned to plane wood with grain instead of fighting against it.",
+      "on_screen_text": "LEARNING GRAIN",
+      "duration_hint": 5.2,
+      "visual": "close-up of a hand pushing a wooden hand plane across a walnut board, curling wood shavings spilling over"
+    },
+    {
+      "narration": "Silas didn't say much, only pointing out where my joints were sloppy and my dovetails needed more patience.",
+      "on_screen_text": "PATIENT JOINTS",
+      "duration_hint": 5.2,
+      "visual": "two men inspecting a hand-cut wooden dovetail joint under a bright adjustable workbench lamp"
+    },
+    {
+      "narration": "By the fourth Saturday, the curved rocker runners began to take shape under my clumsy but increasingly steady chisel.",
+      "on_screen_text": "SHAPING CURVES",
+      "duration_hint": 5.2,
+      "visual": "man carefully using a curved drawknife to shape the rocker runner of a wooden chair in soft daylight"
+    },
+    {
+      "narration": "Rubbing natural beeswax into the polished wood, I watched the rich grain patterns emerge like hidden maps.",
+      "on_screen_text": "BEESWAX SHINE",
+      "duration_hint": 5.2,
+      "visual": "close-up of a cloth rubbing warm amber beeswax into smooth brown walnut wood, revealing deep grain details"
+    },
+    {
+      "narration": "This chair wasn't perfect, but every hammer mark and sanded curve held hours of deliberate love for someone I hadn't met yet.",
+      "on_screen_text": "LABOR OF LOVE",
+      "duration_hint": 5.6,
+      "visual": "finished wooden rocking chair standing proudly in the center of a sunlit rustic workshop"
+    },
+    {
+      "narration": "If you believe the best gifts are the ones we build with our own hands, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.3,
+      "visual": "proud grandfather running his hand gently along the armrest of the newly finished wooden rocking chair"
+    }
+  ]
+}

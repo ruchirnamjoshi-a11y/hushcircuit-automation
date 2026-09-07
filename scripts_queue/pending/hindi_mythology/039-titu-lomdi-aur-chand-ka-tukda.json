@@ -1,0 +1,65 @@
+{
+  "id": "titu-lomdi-aur-chand-ka-tukda",
+  "title": "टिटू लोमड़ी और चांद का टुकड़ा",
+  "description": "टिटू लोमड़ी तालाब में चाँद की परछाई को असली टुकड़ा समझकर पाने की कोशिश करती है, और समझदारी सीखती है।",
+  "tags": [
+    "लोमड़ी",
+    "चांद",
+    "तालाब",
+    "परछाई",
+    "समझदारी"
+  ],
+  "character_reference": "a clever young orange fox with a fluffy white-tipped tail and bright emerald green eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "रात के समय टिटू लोमड़ी ने शांत तालाब के पानी में चमकता हुआ एक गोल चाँद का टुकड़ा देखा।",
+      "on_screen_text": "चाँद की झलक",
+      "duration_hint": 6.0,
+      "visual": "A sleek orange fox peering curiously down at the smooth surface of a dark forest pond reflecting a glowing moon."
+    },
+    {
+      "narration": "उसने सोचा कि अगर वह इस चाँद के टुकड़े को खा लेगी, तो वह रात में चमकने लगेगी।",
+      "on_screen_text": "लालची विचार",
+      "duration_hint": 6.0,
+      "visual": "Close-up of the fox licking its lips greedily, staring intently at the bright reflection in the water."
+    },
+    {
+      "narration": "टिटू ने पानी में छलांग लगा दी, लेकिन उसके हाथ सिर्फ ठंडे पानी के सिवा कुछ नहीं आया।",
+      "on_screen_text": "खाली हाथ",
+      "duration_hint": 6.0,
+      "visual": "The fox splashing clumsily into the shallow pond water, looking surprised and confused as ripples distort the reflection."
+    },
+    {
+      "narration": "वह थककर किनारे पर बैठ गई और उदास होकर रोने लगी कि उसका जादुई टुकड़ा खो गया।",
+      "on_screen_text": "उदासी की रात",
+      "duration_hint": 6.0,
+      "visual": "The wet fox sitting shivering on the muddy riverbank, looking mournfully down at its dripping paws."
+    },
+    {
+      "narration": "तभी एक पेड़ पर बैठे उल्लू ने हंसकर आसमान की तरफ देखने के लिए कहा।",
+      "on_screen_text": "ऊपर देखिए",
+      "duration_hint": 6.0,
+      "visual": "A wise old owl perched on a high tree branch, tilting its head downward to point with a wing toward the night sky."
+    },
+    {
+      "narration": "टिटू ने सिर ऊपर उठाया तो देखा कि असली चाँद तो आसमान में शान से चमक रहा था।",
+      "on_screen_text": "असली चाँद",
+      "duration_hint": 6.0,
+      "visual": "The fox gazing upward with wide astonished eyes at the magnificent full moon shining brightly in a starry sky."
+    },
+    {
+      "narration": "उसे समझ आया कि हर चमकने वाली चीज़ असली नहीं होती। हमें बिना सोचे कदम नहीं उठाना चाहिए।",
+      "on_screen_text": "बड़ी सीख",
+      "duration_hint": 7.0,
+      "visual": "The clever fox smiling sheepishly under the moonlight, surrounded by soft glowing fireflies in the grass."
+    },
+    {
+      "narration": "हर भ्रम को दूर करने वाली ऐसी मजेदार कहानियों के लिए हमारे चैनल को फॉलो करें!",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "The happy orange fox trotting playfully along a moonlit forest path, beautiful cinematic lighting."
+    }
+  ]
+}
