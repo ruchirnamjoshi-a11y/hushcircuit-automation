@@ -1,0 +1,19 @@
+{
+  "id": "bike-wheel-circumference",
+  "title": "How Far Your Bike Wheel Travels in One Spin",
+  "description": "Using circumference to figure out how far a wheel rolls in a single rotation.",
+  "tags": ["math tricks", "circumference", "pi", "learn math"],
+  "piece": "circle_circumference",
+  "narration_lines": [
+    "Ever wonder how far a bike wheel travels in just one spin?",
+    "The distance around a circle depends only on its radius.",
+    "For a wheel with a seven inch radius, that's two times pi times seven.",
+    "That works out to about forty four inches in a single turn of the wheel."
+  ],
+  "params": {
+    "kicker": "wheels and circles",
+    "hook": "One spin of a 7-inch-radius wheel?",
+    "radius": 7,
+    "footnote": "pi (≈3.14) is just how many \"radiuses\" wrap around, doubled"
+  }
+}

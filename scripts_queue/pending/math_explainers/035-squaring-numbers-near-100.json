@@ -1,0 +1,24 @@
+{
+  "id": "squaring-numbers-near-100",
+  "title": "How to Square Any Number Close to 100",
+  "description": "A mental-math shortcut for squaring numbers near 100, using the difference of squares.",
+  "tags": ["math tricks", "mental math", "squares", "learn math"],
+  "piece": "step_chain",
+  "narration_lines": [
+    "What's ninety eight squared? There's a fast way using nearby round numbers.",
+    "Move two away in each direction. Ninety six times one hundred is nine thousand six hundred.",
+    "Then add back two squared, which is four, giving nine thousand six hundred four.",
+    "So ninety eight squared is nine thousand six hundred four."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "98² = ?",
+    "steps": [
+      { "label": "Move 2 away in each direction", "expr": "96 × 100 = 9600" },
+      { "label": "Add back the difference squared", "expr": "9600 + 4 = 9604" }
+    ],
+    "answerLabel": "98² =",
+    "answer": "9604",
+    "footnote": "(n−d)(n+d) + d² always equals n²"
+  }
+}
