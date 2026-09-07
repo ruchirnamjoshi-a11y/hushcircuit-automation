@@ -1,0 +1,24 @@
+{
+  "id": "the-trick-to-multiply-by-9",
+  "title": "The Fast Trick to Multiply Any Number by 9",
+  "description": "A shortcut for multiplying by 9: multiply by 10, then subtract the original number once.",
+  "tags": ["math tricks", "mental math", "multiplication", "learn math"],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Forty seven times nine? Here's a shortcut that works for any number.",
+    "First, multiply by ten. Forty seven times ten is four hundred seventy.",
+    "Now subtract the original number once. Four hundred seventy minus forty seven is four hundred twenty three.",
+    "So forty seven times nine is four hundred twenty three, every time."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "47 × 9 = ?",
+    "steps": [
+      { "label": "Multiply by 10", "expr": "47 × 10 = 470" },
+      { "label": "Subtract the original number", "expr": "470 − 47 = 423" }
+    ],
+    "answerLabel": "47 × 9 =",
+    "answer": "423",
+    "footnote": "works because 9 is just 10 minus 1"
+  }
+}

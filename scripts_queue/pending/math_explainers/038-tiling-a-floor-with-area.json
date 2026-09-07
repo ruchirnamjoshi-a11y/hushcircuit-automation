@@ -1,0 +1,23 @@
+{
+  "id": "tiling-a-floor-with-area",
+  "title": "How Many Tiles Cover a 7 by 9 Floor?",
+  "description": "A real-world reason multiplying rows by columns beats counting one by one.",
+  "tags": ["math tricks", "area", "multiplication", "learn math"],
+  "piece": "grid_area",
+  "narration_lines": [
+    "You're tiling a floor that's seven tiles by nine tiles. How many tiles total?",
+    "Picture the floor as a grid, seven rows and nine columns.",
+    "Instead of counting one by one, just multiply the rows by the columns.",
+    "Seven times nine is sixty three tiles, no counting required."
+  ],
+  "params": {
+    "kicker": "tiling a floor",
+    "hook": "How many tiles for a 7 by 9 floor?",
+    "rows": 7,
+    "cols": 9,
+    "mode": "area",
+    "revealLabel": "rows × columns =",
+    "revealValue": "63",
+    "footnote": "count the rows, count the columns, multiply"
+  }
+}

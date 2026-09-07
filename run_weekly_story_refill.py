@@ -39,6 +39,22 @@ def run() -> int:
 
     any_failed = False
     for track in TRACKS.values():
+        if track.content_type != "story":
+            # generate_stories/write_stories only know the Script schema
+            # (id/title/description/tags/scenes[...]) -- content_type=
+            # "canvas" (math_explainers) needs MathScript's schema instead
+            # (piece/narration_lines/params, no AI-generatable "piece"
+            # picker built yet) and "song" (manifestation) never reads a
+            # pre-written queue at all (see run_daily.run_manifestation_
+            # track -- lyrics/scenes are generated live every run). Calling
+            # the story generator for either just wrote Script-shaped JSON
+            # into their queues, which run_math_track's MathScript.validate
+            # rejected outright -- confirmed in production: every scheduled
+            # run from 2026-09-05 onward failed on exactly this, and
+            # manifestation accumulated 14 dead files it never even reads.
+            print(f"[{track.key}] content_type={track.content_type!r} doesn't use the story-schema "
+                  f"generator -- skipping (see math_explainers/manifestation refill separately).")
+            continue
         try:
             if track.serialized:
                 print(f"[{track.key}] Generating {STORIES_PER_TRACK} more episodes...")

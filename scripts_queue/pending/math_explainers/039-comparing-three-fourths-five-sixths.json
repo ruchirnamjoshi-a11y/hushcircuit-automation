@@ -1,0 +1,26 @@
+{
+  "id": "comparing-three-fourths-five-sixths",
+  "title": "Which Is Bigger: 3/4 or 5/6?",
+  "description": "A visual way to compare two fractions with different denominators at a glance.",
+  "tags": ["math tricks", "fractions", "learn math", "basic math"],
+  "piece": "parts_of_whole",
+  "narration_lines": [
+    "Which is bigger, three fourths or five sixths?",
+    "Split one bar into fourths, and another into sixths.",
+    "Fill in three of the fourths, and five of the sixths.",
+    "Five sixths leaves a smaller empty gap, so five sixths is the bigger fraction."
+  ],
+  "params": {
+    "kicker": "comparing fractions",
+    "hook": "Which is bigger, 3/4 or 5/6?",
+    "total": 4,
+    "filled": 3,
+    "label": "3/4",
+    "total2": 6,
+    "filled2": 5,
+    "label2": "5/6",
+    "revealLabel": "bigger fraction =",
+    "revealValue": "5/6",
+    "footnote": "the smaller the empty gap, the bigger the fraction"
+  }
+}

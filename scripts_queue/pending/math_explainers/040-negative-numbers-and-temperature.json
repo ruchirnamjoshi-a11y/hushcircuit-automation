@@ -1,0 +1,25 @@
+{
+  "id": "negative-numbers-and-temperature",
+  "title": "Why Negative 8 Is Colder Than Negative 3",
+  "description": "Using the number line to compare two negative numbers without second-guessing.",
+  "tags": ["math tricks", "negative numbers", "number line", "learn math"],
+  "piece": "number_line",
+  "narration_lines": [
+    "Which is colder, negative eight degrees or negative three degrees?",
+    "On the number line, further left always means smaller.",
+    "Negative eight sits further to the left than negative three.",
+    "So negative eight degrees is the colder temperature."
+  ],
+  "params": {
+    "kicker": "on the number line",
+    "hook": "Colder: -8° or -3°?",
+    "min": -10,
+    "max": 10,
+    "tick": 2,
+    "jumps": [-8, -3],
+    "highlightValues": [-8, -3],
+    "revealLabel": "colder temperature =",
+    "revealValue": "-8°",
+    "footnote": "further left on the number line means smaller"
+  }
+}

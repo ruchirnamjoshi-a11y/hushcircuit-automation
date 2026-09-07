@@ -1,0 +1,21 @@
+{
+  "id": "the-other-pythagorean-triple",
+  "title": "The Other Famous Pythagorean Triple: 5, 12, 13",
+  "description": "Beyond 3-4-5, another whole-number right triangle that satisfies a² + b² = c².",
+  "tags": ["math tricks", "pythagorean theorem", "geometry", "learn math"],
+  "piece": "pythagorean",
+  "narration_lines": [
+    "You know three, four, five. But there's another whole-number triangle just like it.",
+    "This time the sides are five and twelve.",
+    "Five squared is twenty five, and twelve squared is one hundred forty four.",
+    "Add them together and you get one hundred sixty nine, which is exactly thirteen squared."
+  ],
+  "params": {
+    "kicker": "right triangles",
+    "hook": "5² + 12² = 13²?",
+    "a": 5,
+    "b": 12,
+    "c": 13,
+    "footnote": "there are infinitely many whole-number triples like this"
+  }
+}
