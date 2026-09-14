@@ -102,6 +102,19 @@ class CloudflareQuotaExhausted(RuntimeError):
     instead of burning time on backoff retries."""
 
 
+class CloudflareUnavailable(RuntimeError):
+    """_call_cloudflare stayed unreachable/erroring through every retry --
+    a read timeout, a transient 5xx, or (per generate_scene_image_raw's
+    docstring) an occasional false-positive content-flag that normally
+    clears on retry. Confirmed in production: manifestation's per-run
+    Cloudflare image-generation loop has no queue/retry safety net the
+    story tracks' generate_scene_image_raw already has (2026-09-10, three
+    runs in one day: one 400, two 60s read timeouts, each an uncaught
+    crash). Distinct from CloudflareQuotaExhausted, which is NOT retried
+    at all since it won't clear until the daily reset -- this is for
+    everything else, which usually does clear within a few seconds."""
+
+
 def _call_cloudflare(
     prompt: str,
     seed: int | None = None,
