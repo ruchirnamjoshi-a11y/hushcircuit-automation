@@ -1,0 +1,59 @@
+{
+  "id": "pintu-lomdi-aur-chhota-tara",
+  "title": "पिंटू लोमड़ी और छोटा तारा",
+  "description": "एक नन्ही लोमड़ी की कहानी जो रात को आसमान में चमकते एक गिरे हुए तारे की मदद करती है।",
+  "tags": [
+    "hindi kahaniyan",
+    "fox story",
+    "star tale",
+    "kids bedtime",
+    "magic"
+  ],
+  "character_reference": "a playful orange fox cub with a white-tipped tail and big curious eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "रात के सन्नाटे में पिंटू लोमड़ी अपनी गुफा के बाहर बैठकर आसमान के तारे गिन रहा था।",
+      "on_screen_text": "रात का सन्नाटा",
+      "duration_hint": 7.0,
+      "visual": "close-up of a cute orange fox cub gazing up at a starry night sky with wonder"
+    },
+    {
+      "narration": "अचानक उसे ज़मीन पर कुछ चमकता हुआ दिखा। पास जाकर देखा तो एक नन्हा तारा वहां गिरा हुआ था।",
+      "on_screen_text": "गिरा हुआ तारा",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the fox cub looking closely at a glowing sparkling star nestled in the grass"
+    },
+    {
+      "narration": "वह नन्हा तारा थोड़ा डरा हुआ था क्योंकि वह अपने घर यानी आसमान से बहुत दूर आ गया था।",
+      "on_screen_text": "डरा हुआ तारा",
+      "duration_hint": 7.5,
+      "visual": "close-up of the tiny glowing star pulsing with a soft timid light on the dark ground"
+    },
+    {
+      "narration": "पिंटू ने प्यार से उस तारे को उठाया और एक ऊंचे पहाड़ पर चढ़ गया ताकि उसे आसमान तक पहुंचा सके।",
+      "on_screen_text": "पहाड़ की चढ़ाई",
+      "duration_hint": 7.5,
+      "visual": "side view of the small fox climbing a steep rocky hill carrying a bright glowing light"
+    },
+    {
+      "narration": "पहाड़ की चोटी पर पहुंचकर पिंटू ने उस तारे को हवा में उछाल दिया। तारा खुशी से चमक उठा।",
+      "on_screen_text": "आसमान की उड़ान",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the fox tossing the glowing star gently upward toward the night sky"
+    },
+    {
+      "narration": "तारा वापस अपने बाकी साथियों के पास पहुँच गया और चमकते हुए पिंटू को धन्यवाद कहा।",
+      "on_screen_text": "धन्यवाद तारा",
+      "duration_hint": 7.5,
+      "visual": "wide shot of multiple stars twinkling brightly in the night sky above a happy smiling fox"
+    },
+    {
+      "narration": "दूसरों की मदद करने से दिल को सुकून मिलता है। ऐसी ही और कहानियों के लिए हमें फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "close-up of the sleepy fox cub yawning softly under the warm glow of moonlight"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-cafe-curator",
+  "title": "The Cafe Curator",
+  "description": "A quiet barista curates a community art board that brings a lonely neighborhood together.",
+  "tags": [
+    "community",
+    "art",
+    "coffee",
+    "connection",
+    "local"
+  ],
+  "character_reference": "a young person with warm hazel eyes, wearing a sage green apron over a black turtleneck, silver rings on fingers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Our coffee shop bulletin board was mostly ignored flyers and apartment lease notices.",
+      "on_screen_text": "THE EMPTY BOARD",
+      "duration_hint": 6.5,
+      "visual": "close-up of a corkboard covered in old paper flyers, warm indoor cafe lighting, shallow depth of field"
+    },
+    {
+      "narration": "I pinned up a blank sketchpad and a jar of colored pens with a simple question written on top.",
+      "on_screen_text": "THE INVITATION",
+      "duration_hint": 7.0,
+      "visual": "close-up of hands pinning a blank piece of paper to a corkboard, colorful pens sitting in a ceramic mug"
+    },
+    {
+      "narration": "For two days, nothing happened and I worried the idea was a complete flop.",
+      "on_screen_text": "WAITING IN SILENCE",
+      "duration_hint": 6.5,
+      "visual": "medium shot of a quiet coffee shop interior, warm wooden tables, empty chairs, soft ambient lighting"
+    },
+    {
+      "narration": "Then a regular left a tiny pencil drawing of a cat sipping an iced latte.",
+      "on_screen_text": "THE FIRST SPARK",
+      "duration_hint": 6.5,
+      "visual": "close-up of a small, charming sketch pinned to a corkboard, warm cafe background, soft focus"
+    },
+    {
+      "narration": "Soon, strangers were leaving poems, doodles, and notes of encouragement for each other.",
+      "on_screen_text": "GROWING CONNECTION",
+      "duration_hint": 7.0,
+      "visual": "close-up of hands pinning colorful sticky notes and drawings to a crowded corkboard, warm lighting"
+    },
+    {
+      "narration": "People who used to drink in silence started smiling and talking across tables.",
+      "on_screen_text": "A NEW VIBE",
+      "duration_hint": 6.0,
+      "visual": "blurred background of patrons smiling and chatting in a cozy coffee shop, warm golden hour light"
+    },
+    {
+      "narration": "A simple gesture created a community we never knew we were missing.",
+      "on_screen_text": "BOUND TOGETHER",
+      "duration_hint": 6.0,
+      "visual": "close-up of a corkboard completely covered in vibrant artwork and notes, warm cozy atmosphere"
+    },
+    {
+      "narration": "Small moments build big connections. Follow along for more heartwarming stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "pour-over coffee being brewed into a ceramic mug, warm steam rising, cozy cafe setting"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "rani-chidiya-aur-sukha-ped",
+  "title": "रानी चिड़िया और सूखा पेड़",
+  "description": "एक दयालु चिड़िया की कहानी जो एक सूखे पेड़ में नया जीवन डाल देती है।",
+  "tags": [
+    "hindi stories",
+    "kids moral",
+    "birds",
+    "nature",
+    "bedtime"
+  ],
+  "character_reference": "a bright yellow canary bird with orange wingtips and a tiny black beak",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "एक पुराने और सूखे पेड़ पर कोई पंछी नहीं रहता था। वह पेड़ बहुत उदास और अकेला महसूस करता था।",
+      "on_screen_text": "सूखा पेड़",
+      "duration_hint": 7.0,
+      "visual": "wide shot of a completely bare grey tree standing alone in an empty green meadow under a cloudy sky"
+    },
+    {
+      "narration": "एक दिन वहां रानी नाम की एक दयालु चिड़िया आई। उसने सूखे पेड़ की उदासी को तुरंत भांप लिया।",
+      "on_screen_text": "रानी का आगमन",
+      "duration_hint": 7.0,
+      "visual": "close-up of a small colorful bird perched on a dry branch looking thoughtfully at the cracked bark"
+    },
+    {
+      "narration": "रानी ने सोचा कि क्यों न इस पेड़ को फिर से हरा-भरा बनाया जाए। उसने नदी से पानी की बूंदें लाना शुरू किया।",
+      "on_screen_text": "नई शुरुआत",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the small bird carrying a tiny droplet of water in her beak near a sparkling riverbank"
+    },
+    {
+      "narration": "वह रोज़ सुबह नदी से पानी लाती और पेड़ की जड़ों में डालती। उसने अपनी मेहनत कभी कम नहीं होने दी।",
+      "on_screen_text": "रोज़ की मेहनत",
+      "duration_hint": 7.5,
+      "visual": "side view of the bird sprinkling water from her beak onto the dry soil at the base of the old tree"
+    },
+    {
+      "narration": "कई हफ्तों की कड़ी मेहनत के बाद उस सूखे पेड़ पर पहली हरी पत्ती उगी। पेड़ खुशी से झूम उठा।",
+      "on_screen_text": "पहली हरी पत्ती",
+      "duration_hint": 7.5,
+      "visual": "macro shot of a single tiny green sprout emerging from the rough bark of the previously dead branch"
+    },
+    {
+      "narration": "देखते ही देखते पूरा पेड़ सुंदर फूलों और हरी पत्तियों से भर गया। बाकी पक्षी भी वहां रहने आ गए।",
+      "on_screen_text": "हरा-भरा संसार",
+      "duration_hint": 7.5,
+      "visual": "wide shot of the same tree now fully bloomed with bright flowers and multiple birds singing happily"
+    },
+    {
+      "narration": "सच्ची लगन और मेहनत से नामुमकिन काम भी मुमकिन हो जाता है। ऐसी ही और कहानियों के लिए हमें फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "close-up of the happy little bird resting among blooming pink blossoms under the warm afternoon sun"
+    }
+  ]
+}

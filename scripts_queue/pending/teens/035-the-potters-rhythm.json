@@ -1,0 +1,59 @@
+{
+  "id": "the-potters-rhythm",
+  "title": "The Potter's Rhythm",
+  "description": "A perfectionist ceramicist learns to embrace warped shapes and happy accidents.",
+  "tags": [
+    "pottery",
+    "ceramics",
+    "art",
+    "craft",
+    "mindfulness"
+  ],
+  "character_reference": "a young artist with short platinum blonde hair, wearing a clay-splattered canvas apron over a striped shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The pottery wheel spun too fast, and my clay cylinder wobbled dangerously off center.",
+      "on_screen_text": "THE SPIN",
+      "duration_hint": 6.5,
+      "visual": "close-up of wet clay spinning rapidly on a potter's wheel, splattering water droplets, warm studio lighting"
+    },
+    {
+      "narration": "I tried to force it back into symmetry, but my heavy hands only made it worse.",
+      "on_screen_text": "FORCING SHAPE",
+      "duration_hint": 6.5,
+      "visual": "close-up of wet hands squeezing a misshapen lump of grey clay, intense concentration, studio background"
+    },
+    {
+      "narration": "My instructor smiled and told me to let the clay show me what it wanted to become.",
+      "on_screen_text": "LISTENING TO CLAY",
+      "duration_hint": 7.0,
+      "visual": "over-the-shoulder view of an instructor gently guiding hands on a spinning wheel, warm pottery studio"
+    },
+    {
+      "narration": "I softened my grip and let my fingers flow with the centripetal force instead.",
+      "on_screen_text": "SOFTENING GRIP",
+      "duration_hint": 6.5,
+      "visual": "close-up of relaxed hands shaping wet clay into a smooth curve, gentle motion, artistic lighting"
+    },
+    {
+      "narration": "The bowl didn't turn out round at all; it slumped into a gorgeous, organic wave.",
+      "on_screen_text": "ORGANIC CURVES",
+      "duration_hint": 7.0,
+      "visual": "close-up of a uniquely warped ceramic bowl sitting on a wooden bat, wet glossy finish, studio light"
+    },
+    {
+      "narration": "Holding the finished piece in my hands, I realized flaws have more character than perfection.",
+      "on_screen_text": "BEAUTIFUL FLAWS",
+      "duration_hint": 7.5,
+      "visual": "hands cradling a freshly glazed ceramic piece, warm afternoon window light, cozy studio interior"
+    },
+    {
+      "narration": "Letting go of control changes everything. Follow along for more stories of creation.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "shelves stacked with handmade ceramic mugs and bowls, warm pottery studio ambiance, soft focus"
+    }
+  ]
+}

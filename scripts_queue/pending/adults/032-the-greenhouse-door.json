@@ -1,0 +1,65 @@
+{
+  "id": "the-greenhouse-door",
+  "title": "The Greenhouse Door",
+  "description": "A retired botanist who shut himself away from society after losing his spouse finds a struggling rare orchid that forces him to open his doors again.",
+  "tags": [
+    "botany",
+    "grief",
+    "gardening",
+    "healing",
+    "solitude"
+  ],
+  "character_reference": "a retired man with a rugged salt-and-pepper beard, deep laugh lines, and a dark green gardener's apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The bolt on the greenhouse door had not been slid open in six long years. The rusty metal shrieked in protest.",
+      "on_screen_text": "THE SEALED DOOR",
+      "duration_hint": 14.0,
+      "visual": "Close up of a rusted iron bolt sliding across a weathered wooden door frame, overgrown vines wrapping around the edges, moody cinematic lighting"
+    },
+    {
+      "narration": "Inside, the glass roof was caked in grime and fallen leaves. Everything I had once loved had withered into dry stalks.",
+      "on_screen_text": "OVERGROWN MEMORIES",
+      "duration_hint": 14.0,
+      "visual": "Wide interior shot of a neglected glass greenhouse filled with dead brown ferns, cobwebs stretching between metal struts, dusty sunbeams cutting through"
+    },
+    {
+      "narration": "I came in only to clear out the remaining pots and lock the structure away for good, abandoning this sanctuary.",
+      "on_screen_text": "THE FINAL SWEEP",
+      "duration_hint": 14.0,
+      "visual": "Medium shot of a man holding an empty terracotta pot, walking slowly down a narrow brick pathway covered in fallen leaves, somber atmosphere"
+    },
+    {
+      "narration": "Then, tucked beneath a broken wooden crate in the darkest corner, a single flash of vibrant emerald green caught my eye.",
+      "on_screen_text": "UNEXPECTED LIFE",
+      "duration_hint": 14.0,
+      "visual": "Macro shot of a tiny green orchid shoot pushing its way up through dry, cracked potting soil inside a dark corner, bright spotlight effect"
+    },
+    {
+      "narration": "It was a rare mountain orchid that should have died years ago without water or sunlight. Yet, somehow, it was clinging to life.",
+      "on_screen_text": "THE SURVIVOR",
+      "duration_hint": 14.0,
+      "visual": "Close up of a delicate green plant stem with tiny budding leaves, illuminated by a single ray of warm golden sunlight breaking through dust"
+    },
+    {
+      "narration": "My hands instinctively reached for the watering can. For the first time in years, my heart felt a strange, terrifying flutter of hope.",
+      "on_screen_text": "TENDING TO HOPE",
+      "duration_hint": 15.0,
+      "visual": "Close up of water droplets gently falling from a brass watering can nozzle onto dry soil, glistening in bright daylight"
+    },
+    {
+      "narration": "Healing, I realized, isn't about forgetting the storm. It's about remembering how to nurture the small things that remain.",
+      "on_screen_text": "QUIET RENEWAL",
+      "duration_hint": 14.0,
+      "visual": "Wide shot of a restored glass greenhouse glowing warmly at dusk, surrounded by lush green foliage and evening mist, peaceful and evocative"
+    },
+    {
+      "narration": "If you enjoy quiet stories of personal redemption, follow along for more daily tales of new beginnings.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "Serene close up of a hand gently brushing a green leaf, soft natural lighting, tranquil mood"
+    }
+  ]
+}

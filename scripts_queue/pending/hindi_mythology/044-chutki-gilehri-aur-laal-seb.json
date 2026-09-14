@@ -1,0 +1,59 @@
+{
+  "id": "chutki-gilehri-aur-laal-seb",
+  "title": "चुड़की गिलहरी और लाल सेब",
+  "description": "एक नन्ही गिलहरी की कहानी जो अपने हिस्से का सबसे बड़ा सेब बांटना सीखती है।",
+  "tags": [
+    "hindi kahani",
+    "squirrel story",
+    "sharing",
+    "kids morals",
+    "bedtime"
+  ],
+  "character_reference": "a fluffy reddish-brown squirrel with large white-rimmed eyes and a striped tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "चुटकी गिलहरी को पेड़ों पर सबसे मीठे फल ढूंढना बहुत पसंद था। एक दिन उसे एक बहुत बड़ा लाल सेब मिला।",
+      "on_screen_text": "बड़ा सेब",
+      "duration_hint": 7.5,
+      "visual": "close-up of an eager squirrel staring at a giant red apple resting under a bush"
+    },
+    {
+      "narration": "वह सेब इतना बड़ा था कि चुटकी अकेले उसे खा नहीं सकती थी। फिर भी उसने किसी को देने से मना कर दिया।",
+      "on_screen_text": "अकेले खाना",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the squirrel guarding the large apple with her paws crossed defensively"
+    },
+    {
+      "narration": "तभी उसके भूखे नन्हें दोस्त वहां आ गए और उम्मीद भरी नज़रों से देखने लगे। चुटकी ने अपना मुंह फेर लिया।",
+      "on_screen_text": "भूखे दोस्त",
+      "duration_hint": 7.5,
+      "visual": "side view of two smaller animal friends looking sadly at the guarded apple"
+    },
+    {
+      "narration": "लेकिन जब चुटकी ने अपने दोस्तों के उदाس चेहरे देखे, तो उसका दिल पिघल गया। उसने सेब बांटने की ठान ली।",
+      "on_screen_text": "बदलका मन",
+      "duration_hint": 7.5,
+      "visual": "close-up of the squirrel looking thoughtfully at her friends with a softer expression"
+    },
+    {
+      "narration": "उसने अपने नुकीले दांतों से उस बड़े सेब के टुकड़े किए और सभी दोस्तों में बराबर बांट दिए।",
+      "on_screen_text": "खुशियां बांटना",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the squirrel happily sharing apple slices with her joyful animal friends"
+    },
+    {
+      "narration": "सबने मिलकर मजे से सेब खाया और चुटकी को अहसास हुआ कि बांटने से खुशी दुगुनी हो जाती है।",
+      "on_screen_text": "मीठा स्वाद",
+      "duration_hint": 7.5,
+      "visual": "wide shot of the animals eating happily together under the shade of a green apple tree"
+    },
+    {
+      "narration": "बांटकर खाने में ही असली आनंद है। ऐसी ही और सुंदर कहानियों के लिए हमें फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "close-up of the happy squirrel smiling warmly under the golden evening sun"
+    }
+  ]
+}

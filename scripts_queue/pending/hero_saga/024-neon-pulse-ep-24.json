@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-ep-24",
+  "title": "Neon Pulse — Episode 24: The Hidden Frequency",
+  "description": "Kael tracks a mysterious distress signal from the subterranean core to an abandoned railway tunnel, uncovering a secret network that connects Commander Vance to an even bigger threat.",
+  "tags": [
+    "original hero saga",
+    "action adventure",
+    "superhero",
+    "cyberpunk",
+    "mystery"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 24,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The datapad pulses erratically, guiding me through the damp, echoing labyrinth of the abandoned lower metro tunnels. The frequency matches the encrypted distress signal Vance tried to wipe from the mainframe.",
+      "on_screen_text": "THE DISTRESS SIGNAL",
+      "duration_hint": 14.5,
+      "visual": "close-up shot of hands holding a glowing datapad inside a dark tunnel, illuminated by an eerie blue screen light, low angle, cinematic lighting"
+    },
+    {
+      "narration": "Up ahead, a massive steel bulkhead door has been blown wide open from the inside. Heavy scorch marks coat the rusted hinges, smelling faintly of high-grade military explosives.",
+      "on_screen_text": "BLOWN OPEN",
+      "duration_hint": 13.0,
+      "visual": "medium shot looking down a dark subterranean corridor at a ruined metal door with glowing ember edges, heavy smoke swirling in the air"
+    },
+    {
+      "narration": "Stepping through the threshold, I discover rows of deactivated automated defense drones lined up like soldiers in a vault. Every single unit bears the exact same unidentified faction insignia.",
+      "on_screen_text": "DORMANT DRONES",
+      "duration_hint": 14.0,
+      "visual": "wide interior shot of rows of silent robotic drones standing in a dark underground hangar, faint blue optical sensors flickering off"
+    },
+    {
+      "narration": "Suddenly, the amber circuitry on my jacket flares violently in response to a localized magnetic surge. My pulse races as the dormant machines around me begin to hum back to life.",
+      "on_screen_text": "SYSTEM SURGE",
+      "duration_hint": 14.5,
+      "visual": "medium close-up of a tactical sleeve glowing brightly with intricate amber lines, dramatic rim lighting casting long shadows against concrete walls"
+    },
+    {
+      "narration": "A holographic projection flickers above the central console, casting a towering shadow against the damp brick walls. It is not Commander Vance standing there, but someone far more dangerous.",
+      "on_screen_text": "THE HOLOGRAM",
+      "duration_hint": 14.0,
+      "visual": "over-the-shoulder shot of a hooded figure gazing at a massive floating blue holographic map hovering in a dark subterranean chamber"
+    },
+    {
+      "narration": "The faceless projection speaks my name, revealing that every move I made tonight was anticipated from the very beginning. This entire facility was never a stronghold, it was a trap.",
+      "on_screen_text": "A LAID TRAP",
+      "duration_hint": 14.0,
+      "visual": "low angle shot looking up at a glowing translucent projection of a human face shimmering in mid-air amidst rising mist and dust"
+    },
+    {
+      "narration": "Before I can sever the connection, heavy blast doors slam shut overhead, sealing every exit from the underground complex. The countdown to total lockdown has just begun.",
+      "on_screen_text": "SEALED SHUT",
+      "duration_hint": 13.5,
+      "visual": "action shot of heavy steel security barriers slamming down simultaneously at the end of a long dark corridor, dust kicking up from the impact"
+    },
+    {
+      "narration": "Follow along for the next chapter as the conspiracy deepens and the true mastermind steps out of the shadows.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.5,
+      "visual": "close-up of determined eyes looking forward in low amber light, dramatic lens flare, cinematic framing, moody atmospheric fog"
+    }
+  ]
+}

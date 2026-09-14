@@ -1,0 +1,65 @@
+{
+  "id": "the-rooftop-greenhouse",
+  "title": "The Rooftop Greenhouse",
+  "description": "A retired architect transforms her concrete apartment balcony into a thriving urban sanctuary, proving that nature finds a home anywhere.",
+  "tags": [
+    "urban gardening",
+    "architecture",
+    "retirement",
+    "nature",
+    "city life"
+  ],
+  "character_reference": "an older woman with short silver curls, round tortoiseshell glasses, and a utility vest over a striped linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My balcony was fifty square feet of grey concrete overlooking a chaotic, roaring city intersection.",
+      "on_screen_text": "THE GREY HORIZON",
+      "duration_hint": 13.0,
+      "visual": "Wide shot of a stark, empty concrete apartment balcony looking out over a busy, blurry urban street below, overcast afternoon light"
+    },
+    {
+      "narration": "After forty years of designing sterile glass skyscrapers for corporate developers, I needed dirt beneath my fingernails.",
+      "on_screen_text": "CIVIL DESIGNS",
+      "duration_hint": 13.0,
+      "visual": "Close up of blueprints and drafting pencils on an indoor table with city traffic visible through a tall apartment window, cool tones"
+    },
+    {
+      "narration": "I hauled fifty bags of organic compost and cedar planter boxes up the narrow stairwell all by myself.",
+      "on_screen_text": "HEAVY LIFTING",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of a person stacking wooden garden planters on a balcony floor, sweat on forehead, determined expression, warm sunlight"
+    },
+    {
+      "narration": "I planted heirloom tomatoes, cascading jasmine, and sweet basil right where the exhaust fumes used to drift.",
+      "on_screen_text": "PLANTING SEEDS",
+      "duration_hint": 13.0,
+      "visual": "Close up of hands gently pressing dark soil around green tomato seedlings in a wooden planter box, bright natural daylight"
+    },
+    {
+      "narration": "Within months, bumblebees found their way up twelve stories of concrete to visit my unexpected sky garden.",
+      "on_screen_text": "VISITORS IN THE SKY",
+      "duration_hint": 13.0,
+      "visual": "Macro shot of a bumblebee landing on a purple blossom against a backdrop of distant urban skyscrapers, warm sun rays"
+    },
+    {
+      "narration": "Sitting among the green leaves with my morning coffee, the noise of the city faded into a gentle, distant hum.",
+      "on_screen_text": "URBAN SANCTUARY",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of an older woman relaxing in a wooden chair surrounded by lush green potted plants on a sunny balcony, serene and peaceful"
+    },
+    {
+      "narration": "We cannot always change the concrete jungles around us, but we can always cultivate our own patch of green.",
+      "on_screen_text": "CULTIVATED PEACE",
+      "duration_hint": 13.0,
+      "visual": "Wide cinematic shot of a lush green balcony garden glowing warmly in the golden light of late afternoon, inspiring atmosphere"
+    },
+    {
+      "narration": "If you appreciate stories about transforming ordinary spaces into sanctuaries, follow along for more daily tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "Close up of watering green leaves with a spray bottle, sun glinting off water droplets, peaceful and calm"
+    }
+  ]
+}

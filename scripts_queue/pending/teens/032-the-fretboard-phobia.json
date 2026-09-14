@@ -1,0 +1,65 @@
+{
+  "id": "the-fretboard-phobia",
+  "title": "The Fretboard Phobia",
+  "description": "A shy guitarist overcomes stage fright at a local open jam session.",
+  "tags": [
+    "music",
+    "guitar",
+    "stage-fright",
+    "growth",
+    "jam"
+  ],
+  "character_reference": "a young woman with curly red hair tied in a messy bun, wearing a faded denim jacket and silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My guitar felt impossibly heavy as I clutched it in the corner of the crowded room.",
+      "on_screen_text": "THE CORNER SEAT",
+      "duration_hint": 7.0,
+      "visual": "close-up of hands gripping an acoustic guitar neck tightly, warm amber ambient lighting, cozy indoor setting"
+    },
+    {
+      "narration": "Every musician on stage played with a terrifying level of effortless mastery.",
+      "on_screen_text": "WATCHING THE PROS",
+      "duration_hint": 6.5,
+      "visual": "view from the back of a dimly lit room looking toward a stage bathed in warm spotlight, silhouetted audience"
+    },
+    {
+      "narration": "The host called my name, and my stomach instantly dropped into freefall.",
+      "on_screen_text": "CALLED UP",
+      "duration_hint": 6.5,
+      "visual": "medium shot looking back over a shoulder toward an empty wooden stool under a single spotlight"
+    },
+    {
+      "narration": "I walked to the microphone, feeling every single eye in the room turn toward me.",
+      "on_screen_text": "THE WALK OF DREAD",
+      "duration_hint": 7.0,
+      "visual": "low-angle shot walking toward a vintage microphone stand on a small wooden stage, moody shadows"
+    },
+    {
+      "narration": "My fingers stumbled on the first chord, threatening to derail the whole song.",
+      "on_screen_text": "THE STUMBLE",
+      "duration_hint": 6.5,
+      "visual": "close-up of fingers missing a guitar fret, blurred background of ambient room lights, emotional tension"
+    },
+    {
+      "narration": "I took a slow breath, remembered the melody, and let my muscle memory take over.",
+      "on_screen_text": "FINDING THE GROOVE",
+      "duration_hint": 7.0,
+      "visual": "close-up of fingers strumming guitar strings smoothly, warm stage lighting, shallow depth of field"
+    },
+    {
+      "narration": "When the final chord rang out, the room erupted into genuine applause.",
+      "on_screen_text": "THE APPLAUSE",
+      "duration_hint": 6.0,
+      "visual": "medium shot looking out from the stage toward smiling audience members clapping in warm light"
+    },
+    {
+      "narration": "Never let fear keep you quiet. Follow along for more everyday victories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "close-up of a guitar case resting open on a wooden floor, warm lamplight reflecting off metal latches"
+    }
+  ]
+}

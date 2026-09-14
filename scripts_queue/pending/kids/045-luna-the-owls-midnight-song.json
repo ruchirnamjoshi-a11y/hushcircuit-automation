@@ -1,0 +1,72 @@
+{
+  "id": "luna-the-owls-midnight-song",
+  "title": "Luna the Owl's Midnight Song",
+  "description": "Luna forgets her nightly hooting melody and learns that simple, sincere notes are better than trying to be perfect.",
+  "tags": [
+    "owl",
+    "night",
+    "music",
+    "confidence",
+    "bedtime",
+    "story"
+  ],
+  "character_reference": "a fluffy grey owlet with large golden eyes and silvery feathers tipped with white",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Luna the owlet sat upon her favorite high branch, preparing to sing the midnight lullaby for the forest.",
+      "on_screen_text": "MIDNIGHT LULLABY",
+      "duration_hint": 11.3,
+      "visual": "fluffy grey owlet sitting on high oak branch looking out over misty moonlit forest night sky background"
+    },
+    {
+      "narration": "She opened her beak to begin, but suddenly realized she had forgotten the second half of her tune.",
+      "on_screen_text": "OH NO",
+      "duration_hint": 10.4,
+      "visual": "owlet looking confused with beak open head tilted sideways moonlight shining on silver tipped feathers"
+    },
+    {
+      "narration": "Panicking inside, she tried to force a complicated trill, but her voice cracked and squeaked awkwardly.",
+      "on_screen_text": "A SQUEAKY NOTE",
+      "duration_hint": 10.9,
+      "visual": "owlet wincing as awkward squeak sound wave visualizes in blue glowing air close up expression"
+    },
+    {
+      "narration": "Below her, a mother deer looked up with gentle, understanding eyes and gave an encouraging nod.",
+      "on_screen_text": "GENTLE EYES",
+      "duration_hint": 10.0,
+      "visual": "mother deer standing below tree looking up with warm caring expression moonlight filtering through leaves"
+    },
+    {
+      "narration": "Luna took a slow breath, forgot about being fancy, and simply hummed a soft, sweet two-note melody.",
+      "on_screen_text": "KEEP IT SIMPLE",
+      "duration_hint": 11.3,
+      "visual": "owlet closing eyes peacefully humming soft glowing musical notes drifting down into forest air"
+    },
+    {
+      "narration": "The simple sound floated across the sleeping trees, calming every animal and hushing the leaves.",
+      "on_screen_text": "SWEET SOUNDS",
+      "duration_hint": 10.0,
+      "visual": "serene forest landscape at night bathed in blue moonlight peaceful resting woodland creatures"
+    },
+    {
+      "narration": "The forest creatures drifted off to sleep, comforted by the honest and heartfelt lullaby.",
+      "on_screen_text": "DEEP SLEEP",
+      "duration_hint": 9.6,
+      "visual": "various small animals sleeping cozily in burrows and nests under starry night sky"
+    },
+    {
+      "narration": "Luna smiled in the dark, learning that true beauty comes from simplicity and sincerity.",
+      "on_screen_text": "TRUE BEAUTY",
+      "duration_hint": 9.6,
+      "visual": "owlet resting chin on chest eyes half closed smiling contentedly in moonlight high angle"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime tales designed to bring sweet dreams every night.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "starry night sky with gentle shooting star and glowing crescent moon whimsical bedtime animation"
+    }
+  ]
+}

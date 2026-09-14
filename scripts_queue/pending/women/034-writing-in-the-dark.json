@@ -1,0 +1,65 @@
+{
+  "id": "writing-in-the-dark",
+  "title": "Writing in the Dark",
+  "description": "An aspiring writer finds her authentic voice by waking up before dawn to write her stories in secret.",
+  "tags": [
+    "writing",
+    "creativity",
+    "discipline",
+    "dreams",
+    "women"
+  ],
+  "character_reference": "a woman in her late twenties with messy dark hair, wearing an oversized flannel shirt and woolen socks",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Daytime belonged to everyone else—the demanding job, the chores, the endless stream of obligations that left my creative well bone dry.",
+      "on_screen_text": "THE BUSY DAY",
+      "duration_hint": 13.0,
+      "visual": "timelapse-style blurred indoor room with shadows shifting quickly across a cluttered desk"
+    },
+    {
+      "narration": "So I started setting my alarm for four in the morning, claiming the quietest hours of the world before the sun even bothered to wake up.",
+      "on_screen_text": "4:00 AM",
+      "duration_hint": 13.5,
+      "visual": "close-up of a vintage mechanical alarm clock on a wooden nightstand showing early morning hours"
+    },
+    {
+      "narration": "The house was pitch black except for the amber glow of a small desk lamp casting shadows against the peeling wallpaper.",
+      "on_screen_text": "AMBER LIGHT",
+      "duration_hint": 12.1,
+      "visual": "wide shot of a cozy corner desk illuminated by a single warm desk lamp in a dark room"
+    },
+    {
+      "narration": "At first, the blank page intimidated me with its stark white expanse, demanding brilliance I didn't feel equipped to provide.",
+      "on_screen_text": "THE BLANK PAGE",
+      "duration_hint": 12.6,
+      "visual": "close-up of a fountain pen resting on an empty notebook page with soft shadows falling across the paper"
+    },
+    {
+      "narration": "Then I stopped trying to write something profound and simply started writing the raw, messy truth of how it felt to be alive.",
+      "on_screen_text": "THE RAW TRUTH",
+      "duration_hint": 13.0,
+      "visual": "close-up of a hand writing quickly in cursive across lined paper, ink glistening under the light"
+    },
+    {
+      "narration": "Words spilled across the margins without permission, carrying characters and emotions I didn't even know were hiding inside my head.",
+      "on_screen_text": "FLOWING WORDS",
+      "duration_hint": 13.0,
+      "visual": "macro shot of ink flowing smoothly from a nib onto textured paper, rich warm tones"
+    },
+    {
+      "narration": "When the first pale stripe of dawn painted the horizon pink, I closed the notebook with a quiet sense of triumph.",
+      "on_screen_text": "DAWN ARRIVES",
+      "duration_hint": 12.1,
+      "visual": "profile view looking out a bedroom window at a soft pink and orange morning sky"
+    },
+    {
+      "narration": "Your dreams deserve the best hours of your day, not just the leftovers. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.6,
+      "visual": "holding a filled notebook against her chest with a contented, peaceful smile, soft morning light"
+    }
+  ]
+}

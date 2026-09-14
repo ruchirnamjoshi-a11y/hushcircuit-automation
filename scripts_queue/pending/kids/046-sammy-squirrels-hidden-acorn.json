@@ -1,0 +1,72 @@
+{
+  "id": "sammy-squirrels-hidden-acorn",
+  "title": "Sammy Squirrel's Hidden Acorn",
+  "description": "Sammy hides his special acorn so well that he forgets where it is, learning the joy of sharing instead of hoarding.",
+  "tags": [
+    "squirrel",
+    "acorn",
+    "sharing",
+    "memory",
+    "forest",
+    "bedtime"
+  ],
+  "character_reference": "a bushy-tailed red squirrel with a bright orange vest and a patch on his left knee",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sammy Squirrel found the biggest, shiniest acorn in the entire park and decided to hide it.",
+      "on_screen_text": "THE BIG ACORN",
+      "duration_hint": 10.4,
+      "visual": "red squirrel holding massive shiny brown acorn admiring it proudly in sunny park grass close up"
+    },
+    {
+      "narration": "He dug a deep hole beneath a pine tree root, dropped his prize inside, and covered it with dirt.",
+      "on_screen_text": "HIDING THE PRIZE",
+      "duration_hint": 10.4,
+      "visual": "squirrel digging frantically with paws burying large acorn beneath pine tree roots side view sunny day"
+    },
+    {
+      "narration": "He placed a small twig on top for a marker, but when he turned around, twenty other twigs looked identical.",
+      "on_screen_text": "TOO MANY TWIGS",
+      "duration_hint": 11.7,
+      "visual": "confused squirrel surrounded by dozens of identical pine twigs scratching head in frustration wide shot"
+    },
+    {
+      "narration": "Sitting on a rock, he let out a sad little sigh because he could no longer find his treasure.",
+      "on_screen_text": "LOST TREASURE",
+      "duration_hint": 10.0,
+      "visual": "squirrel sitting on mossy rock looking down with drooping ears and sad expression front view"
+    },
+    {
+      "narration": "His neighbor Bella mouse hopped over and offered to share her stash of sweet berries with him instead.",
+      "on_screen_text": "SHARING SNACKS",
+      "duration_hint": 10.4,
+      "visual": "friendly mouse offering red berries to sad squirrel sitting on log warm friendly lighting"
+    },
+    {
+      "narration": "Sammy smiled and realized that food tastes much better when shared than when locked away alone.",
+      "on_screen_text": "TASTES BETTER",
+      "duration_hint": 10.4,
+      "visual": "squirrel and mouse eating berries together happily smiling outdoors in sunny garden clearing"
+    },
+    {
+      "narration": "Months later, a tiny oak sapling sprouted right where he lost his acorn, creating shade for everyone.",
+      "on_screen_text": "NEW LIFE",
+      "duration_hint": 10.9,
+      "visual": "small green oak sapling growing out of soil in bright sunlight peaceful nature shot macro view"
+    },
+    {
+      "narration": "Sammy learned that holding onto things too tightly keeps you from discovering the joy of sharing.",
+      "on_screen_text": "THE JOY OF GIVING",
+      "duration_hint": 11.3,
+      "visual": "squirrel resting happily against trunk of young tree looking at friendly forest animals passing by"
+    },
+    {
+      "narration": "Be sure to follow along for more heartwarming bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "peaceful forest under sunset sky warm orange and purple hues gentle whimsical bedtime mood"
+    }
+  ]
+}

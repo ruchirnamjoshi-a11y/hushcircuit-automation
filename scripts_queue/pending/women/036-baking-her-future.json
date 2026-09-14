@@ -1,0 +1,65 @@
+{
+  "id": "baking-her-future",
+  "title": "Baking Her Future",
+  "description": "After years of baking for everyone else's celebrations, a baker finally opens a tiny morning stall of her own.",
+  "tags": [
+    "baking",
+    "entrepreneurship",
+    "passion",
+    "women",
+    "courage"
+  ],
+  "character_reference": "a woman in her early thirties with dark braided hair, wearing a flour-dusted linen apron and silver stud earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For years, my sourdough starters and pastry dough lived entirely in my home kitchen while I baked wedding cakes for everyone else.",
+      "on_screen_text": "HOME BAKING",
+      "duration_hint": 13.5,
+      "visual": "close-up of hands kneading sticky sourdough dough on a flour-covered wooden kitchen counter"
+    },
+    {
+      "narration": "People praised my treats at every family gathering, but compliments don't pay the rent or fulfill a long-buried ambition.",
+      "on_screen_text": "THE COMPLIMENTS",
+      "duration_hint": 12.1,
+      "visual": "close-up of golden crust artisan bread cooling on a wire rack, warm morning window light"
+    },
+    {
+      "narration": "When the tiny vacant stall at the corner of the market became available, my heart hammered against my ribs like a trapped bird.",
+      "on_screen_text": "THE STALL",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a small empty wooden market booth with a chalkboard counter and warm string lights"
+    },
+    {
+      "narration": "Signing the lease meant risking savings, sleep, and the comfortable anonymity of baking safely behind closed doors.",
+      "on_screen_text": "THE LEASE",
+      "duration_hint": 12.6,
+      "visual": "close-up of a pen signing a document on a wooden table, warm ambient cafe lighting"
+    },
+    {
+      "narration": "On opening morning, the oven doors swung open at three am, releasing clouds of cinnamon and toasted yeast into the cool air.",
+      "on_screen_text": "FIRST BATCH",
+      "duration_hint": 13.0,
+      "visual": "medium shot of an open commercial oven billowing warm steam, baking sheets filled with pastries"
+    },
+    {
+      "narration": "As the sun crested the market awnings, the first customer walked up to the counter and smiled at the display trays.",
+      "on_screen_text": "FIRST CUSTOMER",
+      "duration_hint": 12.6,
+      "visual": "close-up of fresh flaky croissants arranged on parchment paper inside a wooden display case"
+    },
+    {
+      "narration": "Handing over that warm morning pastry across my own counter, I knew the risk was worth every single sleepless hour.",
+      "on_screen_text": "THE REWARD",
+      "duration_hint": 13.0,
+      "visual": "hands sliding a paper pastry bag across a clean wooden counter top, warm morning light"
+    },
+    {
+      "narration": "Never keep your best gifts locked away in the kitchen of what-ifs. Follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.6,
+      "visual": "smiling warmly toward the camera in a cozy market stall setting with blurred rustic shelves behind"
+    }
+  ]
+}

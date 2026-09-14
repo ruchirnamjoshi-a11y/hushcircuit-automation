@@ -1,0 +1,65 @@
+{
+  "id": "the-final-lap",
+  "title": "The Final Lap",
+  "description": "A runner battles social anxiety and self-doubt during a pivotal campus track meet.",
+  "tags": [
+    "running",
+    "anxiety",
+    "college",
+    "sports",
+    "growth"
+  ],
+  "character_reference": "a young woman with a sharp bob cut of dark hair, wearing a teal athletic singlet and taped running shoes, focused expression",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My hands shook as I laced my running spikes while the stadium hummed with restless energy.",
+      "on_screen_text": "THE STARTING LINE",
+      "duration_hint": 7.5,
+      "visual": "close-up of hands trembling while tying athletic laces, stadium blurred background, low camera angle, cinematic lighting"
+    },
+    {
+      "narration": "Everyone else seemed to float through their warmups with effortless confidence.",
+      "on_screen_text": "COMPARISON TRAP",
+      "duration_hint": 6.5,
+      "visual": "medium shot of competitors stretching casually on a green turf field, overcast daylight, shallow depth of field"
+    },
+    {
+      "narration": "Coach patted my shoulder and told me to run my own race, not the field's.",
+      "on_screen_text": "A GROUNDING VOICE",
+      "duration_hint": 6.0,
+      "visual": "over-the-shoulder view of a coach offering reassurance, blurred track background, warm afternoon sun"
+    },
+    {
+      "narration": "When the starting pistol fired, my mind went entirely blank and my legs just moved.",
+      "on_screen_text": "THE PISTOL CRACKS",
+      "duration_hint": 7.0,
+      "visual": "low-angle action shot of feet exploding off starting blocks on a red running track, dynamic motion blur"
+    },
+    {
+      "narration": "By the final turn, my lungs burned and doubt crept in with every heavy stride.",
+      "on_screen_text": "HITTING THE WALL",
+      "duration_hint": 6.5,
+      "visual": "side profile of runner gasping for breath on a curved track, beads of sweat glistening, intense focus"
+    },
+    {
+      "narration": "I pushed past the pain and focused on the red line leading to the finish.",
+      "on_screen_text": "THE FINAL PUSH",
+      "duration_hint": 6.0,
+      "visual": "head-on tracking shot of runner sprinting hard with determination, dramatic stadium lighting"
+    },
+    {
+      "narration": "Crossing that line, the victory wasn't the medal, but knowing I refused to quit.",
+      "on_screen_text": "CROSSING OVER",
+      "duration_hint": 7.0,
+      "visual": "wide shot of runner slowing down past the finish line, hands on knees catching breath, empty stadium backdrop"
+    },
+    {
+      "narration": "New stories drop daily. Follow along for more moments that test what we are made of.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "close-up of a smiling face looking toward the horizon, sunset glow, warm cinematic bokeh"
+    }
+  ]
+}

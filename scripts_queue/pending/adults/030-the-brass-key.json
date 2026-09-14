@@ -1,0 +1,65 @@
+{
+  "id": "the-brass-key",
+  "title": "The Brass Key",
+  "description": "A middle-aged accountant finds an old heavy key in his childhood coat pocket and confronts the forgotten ambition of building custom wooden furniture.",
+  "tags": [
+    "career change",
+    "woodworking",
+    "regret",
+    "second chances",
+    "middle-age"
+  ],
+  "character_reference": "a tall middle-aged man with thinning dark hair, rectangular silver-rimmed glasses, and a worn flannel shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My fingers brushed against something cold and jagged at the bottom of the old wool coat. It was a heavy brass key I had completely forgotten existed.",
+      "on_screen_text": "THE HIDDEN POCKET",
+      "duration_hint": 14.0,
+      "visual": "Close up shot of hand pulling a heavy brass key from a dark wool coat pocket in a dimly lit hallway, cinematic lighting, shallow depth of field, highly detailed textures"
+    },
+    {
+      "narration": "Thirty years ago, that key unlocked a dusty neighborhood workshop where I spent every afternoon planing cedar and carving dovetail joints.",
+      "on_screen_text": "OLD AMBITIONS",
+      "duration_hint": 14.0,
+      "visual": "Warm nostalgic flashback perspective of sunlight streaming through a cluttered garage workshop window filled with sawdust particles floating in the air, vintage woodworking hand tools on a wooden bench"
+    },
+    {
+      "narration": "Now my calloused hands only hold a red pen to sign quarterly financial reports in a windowless corporate cubicle.",
+      "on_screen_text": "THE CORPORATE CUBE",
+      "duration_hint": 13.0,
+      "visual": "Overhead wide angle shot of a bored office worker staring blankly at glowing spreadsheets on a computer monitor surrounded by stacks of paper files, muted blue tones, melancholic mood"
+    },
+    {
+      "narration": "I drove past the old brick warehouse during my lunch break. The ",
+      "on_screen_text": "THE ABANDONED SPACE",
+      "duration_hint": 13.0,
+      "visual": "Exterior perspective of a weathered brick building with tall arched industrial windows overgrown with climbing ivy, overcast daylight, somber and quiet atmosphere"
+    },
+    {
+      "narration": "To my surprise, the heavy double doors were unlocked. A local carpenter was busy clearing out the remaining dust and debris.",
+      "on_screen_text": "A CHANCE ENCOUNTER",
+      "duration_hint": 13.0,
+      "visual": "Interior medium shot of a person sweeping sawdust off wooden floorboards inside a vast empty industrial room, warm morning light cutting through dust clouds"
+    },
+    {
+      "narration": "We talked for an hour about white oak grain patterns and the timeless satisfaction of hand-finished joinery.",
+      "on_screen_text": "SHARED PASSION",
+      "duration_hint": 12.0,
+      "visual": "Two people standing side by side examining a rough wooden plank resting on trestles inside a sunlit workshop, engaging in deep conversation, natural shadows"
+    },
+    {
+      "narration": "Holding that brass key in my palm tonight, I finally realized it is never too late to trade a safe routine for a genuine creation.",
+      "on_screen_text": "THE DECISION",
+      "duration_hint": 14.0,
+      "visual": "Extreme close up of a brass key resting on top of a dark wooden workbench next to a sharp hand chisel, dramatic side lighting casting deep shadows"
+    },
+    {
+      "narration": "If this quiet story resonated with your own journey, follow along for more reflections on life's turning points.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Calm portrait of a thoughtful person standing by a large window looking out at a soft evening horizon, warm amber backlighting, serene mood"
+    }
+  ]
+}

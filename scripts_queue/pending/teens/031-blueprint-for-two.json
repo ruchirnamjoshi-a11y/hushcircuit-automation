@@ -1,0 +1,65 @@
+{
+  "id": "blueprint-for-two",
+  "title": "Blueprint For Two",
+  "description": "Two architecture students collaborate under pressure on a midnight model-building marathon.",
+  "tags": [
+    "architecture",
+    "design",
+    "college",
+    "friendship",
+    "creativity"
+  ],
+  "character_reference": "a tall young man with messy blonde curls, wearing an oversized charcoal hoodie and smudged safety glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "At three in the morning, our architecture studio smelled entirely of coffee and burning hot glue.",
+      "on_screen_text": "THE MIDNIGHT SHIFT",
+      "duration_hint": 7.0,
+      "visual": "cluttered wooden workbench covered in drafting tools, cutting mats, and foam board scraps, dim desk lamp lighting"
+    },
+    {
+      "narration": "We had completely opposite visions for the facade, and neither of us wanted to compromise.",
+      "on_screen_text": "CREATIVE CLASH",
+      "duration_hint": 7.5,
+      "visual": "two people arguing passionately over a half-built cardboard architectural model, moody ambient lighting, interior room"
+    },
+    {
+      "narration": "Then my partner pointed out a structural flaw in my grand design that I had completely missed.",
+      "on_screen_text": "THE REALIZATION",
+      "duration_hint": 7.0,
+      "visual": "close-up of a finger pointing at a tiny structural error on a miniature building model, sharp focus"
+    },
+    {
+      "narration": "Instead of arguing, we started laughing at how chaotic our miniature city had become.",
+      "on_screen_text": "BREAKING THE TENSION",
+      "duration_hint": 7.0,
+      "visual": "candid shot of someone smiling while holding an exacto knife, warm lamp glow, cozy workshop interior"
+    },
+    {
+      "narration": "We combined our best ideas into something neither of us could have built alone.",
+      "on_screen_text": "THE HYBRID DESIGN",
+      "duration_hint": 6.5,
+      "visual": "close-up of hands gluing intricate pieces of basswood together, precise delicate movement, soft desk lighting"
+    },
+    {
+      "narration": "The sun crested the horizon just as we placed the final roof panel in place.",
+      "on_screen_text": "DAWN BREAKS",
+      "duration_hint": 6.5,
+      "visual": "morning sunlight streaming through a large dusty window onto a completed architectural model, dust motes floating"
+    },
+    {
+      "narration": "Exhausted but proud, we knew this project was our best work yet.",
+      "on_screen_text": "TIRED TRIUMPH",
+      "duration_hint": 6.0,
+      "visual": "relaxed portrait leaning against a drafting table, holding a ceramic mug, soft morning light"
+    },
+    {
+      "narration": "Want more stories about creative breakthroughs? Follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "close-up of blueprint paper rolling up on a desk, soft ambient lighting, cozy room background"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bholu-aur-chota-jugnu",
+  "title": "भोलू और छोटा जुगनू",
+  "description": "एक छोटे भालू की कहानी जो अंधेरे जंगल में रास्ता भटक जाता है और एक छोटे जुगनू की मदद से घर पहुंचता है।",
+  "tags": [
+    "kids stories",
+    "hindi kahani",
+    "bedtime story",
+    "moral story",
+    "animals"
+  ],
+  "character_reference": "a small fluffy brown bear cub with round black ears and a bright blue vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "एक शाम भोलू भालू घने जंगल में खेलते-खेलते बहुत दूर निकल आया। सूरज ढल चुका था और चारों तरफ घना अंधेरा छाने लगा था।",
+      "on_screen_text": "अंधेरी शाम",
+      "duration_hint": 7.0,
+      "visual": "close-up of a small bear looking worried in a dense dark forest at dusk with deep shadows and towering trees"
+    },
+    {
+      "narration": "भोलू को रास्ता नहीं मिल रहा था और वह बहुत डर गया था। उसने धीरे-धीरे रोना शुरू कर दिया क्योंकि उसे घर जाना था।",
+      "on_screen_text": "डरा हुआ भोलू",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the bear cub whimpering with paws held near his face sitting on the dark mossy ground"
+    },
+    {
+      "narration": "तभी अचानक झाड़ियों के बीच से एक छोटी सी चमकती हुई रोशनी निकली। वह एक नन्हा जुगनू था जो बहुत तेज चमक रहा था।",
+      "on_screen_text": "रोशनी की किरण",
+      "duration_hint": 7.0,
+      "visual": "close-up of a glowing firefly hovering near the ground casting a warm golden light on the surrounding leaves"
+    },
+    {
+      "narration": "जुगनू ने अपनी मीठी आवाज़ में भोलू से कहा कि डरो मत, मैं तुम्हें रास्ता दिखाता हूँ। मेरे पीछे-पीछे आओ।",
+      "on_screen_text": "जुगनू की मदद",
+      "duration_hint": 7.5,
+      "visual": "low angle shot of the bear cub looking up in wonder at a bright glowing insect floating in mid-air"
+    },
+    {
+      "narration": "भोलू ने उस छोटे जुगनू की बात मानी और उसके पीछे-पीछे चलने लगा। जुगनू अपनी रोशनी से रास्ता रोशन कर रहा था।",
+      "on_screen_text": "साथ-साथ चलना",
+      "duration_hint": 7.5,
+      "visual": "side view of the bear walking carefully along a winding forest path guided by a glowing light ahead"
+    },
+    {
+      "narration": "कुछ ही देर में वे दोनों भोलू के घर के पास पहुँच गए। भोलू की माँ दरवाज़े पर ही उसका इंतज़ार कर रही थी।",
+      "on_screen_text": "घर की वापसी",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a cozy forest den entrance with a mother bear waiting anxiously in the warm light"
+    },
+    {
+      "narration": "भोलू ने खुशी से दौड़कर अपनी माँ को गले लगा लिया और छोटे जुगनू का दिल से शुक्रिया अदा किया।",
+      "on_screen_text": "खुशियों भरा मिलन",
+      "duration_hint": 7.5,
+      "visual": "close-up of the bear cub happily hugging another larger bear with the tiny glowing insect smiling nearby"
+    },
+    {
+      "narration": "छोटी से छोटी चीज़ भी हमारी बड़ी मदद कर सकती है। ऐसी ही और सुंदर कहानियों के लिए हमें फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "wide peaceful shot of the forest clearing under a starry night sky with a warm glowing light from a cozy den"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "tikku-kachhua-aur-chandi-ka-sikka",
+  "title": "टिककू कछुआ और चांदी का सिक्का",
+  "description": "एक ईमानदार कछुए की कहानी जिसे एक खोया हुआ सिक्का मिलता है और वह उसके असली मालिक को ढूँढता है।",
+  "tags": [
+    "hindi kahaniyan",
+    "kids morals",
+    "turtle story",
+    "honesty",
+    "bedtime"
+  ],
+  "character_reference": "a small green turtle with shiny emerald shell patterns and a tiny straw hat",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "टिककू कछुआ धीरे-धीरे नदी किनारे टहल रहा था। तभी उसकी नज़र ज़मीन पर पड़ी एक चमकती हुई चीज़ पर पड़ी।",
+      "on_screen_text": "चमकती चीज़",
+      "duration_hint": 7.0,
+      "visual": "close-up of a small turtle looking down at a shiny metallic object half-buried in river sand"
+    },
+    {
+      "narration": "टिककू ने पास जाकर देखा तो वह एक सुंदर चांदी का सिक्का था। वह बहुत हैरान और खुश हुआ।",
+      "on_screen_text": "चांदी का सिक्का",
+      "duration_hint": 7.0,
+      "visual": "medium shot of the turtle inspecting a round glowing coin with his tiny front paws"
+    },
+    {
+      "narration": "उसने सोचा कि यह सिक्का ज़रूर किसी का खो गया होगा। मुझे इसके असली मालिक को ढूंढना चाहिए।",
+      "on_screen_text": "ईमानदार सोच",
+      "duration_hint": 7.0,
+      "visual": "close-up of the turtle wearing a thoughtful expression while holding the coin carefully"
+    },
+    {
+      "narration": "टिककू ने जंगल के सभी जानवरों से पूछा कि क्या किसी का चांदी का सिक्का खो गया है।",
+      "on_screen_text": "सवालों का सफर",
+      "duration_hint": 7.0,
+      "visual": "side view of the turtle talking to a friendly squirrel sitting on a fallen log near the path"
+    },
+    {
+      "narration": "काफी देर ढूंढने के बाद एक उदास खरगोश मिला जिसका सिक्का सुबह ही कहीं गिर गया था।",
+      "on_screen_text": "असली मालिक",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a sad rabbit looking down while the little turtle approaches with the coin"
+    },
+    {
+      "narration": "टिककू ने मुस्कुराकर वह सिक्का खरगोश को वापस दे दिया। खरगोश की आँखें खुशी से चमक उठीं।",
+      "on_screen_text": "सिक्का वापसी",
+      "duration_hint": 7.5,
+      "visual": "close-up of the turtle handing the shiny coin to the joyful rabbit who smiles with wide eyes"
+    },
+    {
+      "narration": "ईमानदारी सबसे बड़ा धन है। ऐसी ही और प्यारी कहानियों के लिए हमें फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "wide peaceful shot of the riverbank at sunset with the two animal friends sitting together happily"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-19",
+  "title": "Neon Pulse — Episode 19: Core Meltdown",
+  "description": "Kael faces armed operatives in the underground laboratory while the unstable energy core threatens to detonate.",
+  "tags": [
+    "action",
+    "superhero",
+    "sci-fi",
+    "thriller",
+    "original"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 19,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Laser fire scorches the concrete pillars as Kael dives behind a rusted bulkhead.",
+      "on_screen_text": "AMBUSH IN THE LAB",
+      "duration_hint": 5.2,
+      "visual": "dynamic low angle shot of the man dodging bright red laser beams inside a dark industrial tunnel with exposed pipes and steam vents"
+    },
+    {
+      "narration": "Armed operatives advance from the shadows, their weapons locked onto his position.",
+      "on_screen_text": "CLOSING IN",
+      "duration_hint": 4.8,
+      "visual": "close up of tactical boots stepping over metal debris while armed figures in dark armored suits press forward with raised rifles"
+    },
+    {
+      "narration": "The glowing energy core hums loudly, sending jagged fractures across the stone floor.",
+      "on_screen_text": "UNSTABLE POWER",
+      "duration_hint": 4.5,
+      "visual": "pulsing cyan energy orb resting on a cracked concrete pedestal casting harsh blue light across damp underground walls"
+    },
+    {
+      "narration": "Kael thrusts his hand forward, channeling the amber current through his sleeves to deflect the incoming blast.",
+      "on_screen_text": "DEFENSIVE SURGE",
+      "duration_hint": 5.0,
+      "visual": "medium shot of the man pressing both palms outward generating a glowing yellow force shield that blocks flying sparks and debris"
+    },
+    {
+      "narration": "Commander Vance watches from the upper catwalk, his expression cold as the facility alarms blare.",
+      "on_screen_text": "VANCE WATCHES",
+      "duration_hint": 4.8,
+      "visual": "older stern commander leaning over a metal railing looking down into a smoky cavernous basement lit by flashing red emergency lights"
+    },
+    {
+      "narration": "With a burst of speed, Kael scales the rusted iron ladder leading toward the upper level.",
+      "on_screen_text": "VERTICAL ESCAPE",
+      "duration_hint": 4.6,
+      "visual": "worm eye view of the man rapidly climbing a vertical metal caged ladder against a dark concrete backdrop"
+    },
+    {
+      "narration": "A massive secondary explosion rocks the foundation, threatening to collapse the entire subterranean chamber.",
+      "on_screen_text": "GROUND SHATTER",
+      "duration_hint": 5.1,
+      "visual": "wide chaotic shot of stone pillars fracturing and huge chunks of ceiling crashing down into a glowing abyss"
+    },
+    {
+      "narration": "Kael reaches the exit hatch just as the floor beneath gives way into total darkness.",
+      "on_screen_text": "THE EDGE",
+      "duration_hint": 4.4,
+      "visual": "dramatic close up of the man hanging by one hand from a steel ledge while rubble falls past him into a bottomless chasm"
+    },
+    {
+      "narration": "The battle for the syndicate's core is far from over, and the truth awaits those who dare to seek it.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "cinematic silhouette of the man standing atop a high ridge looking out over a neon lit dystopian skyline at dawn"
+    }
+  ]
+}
