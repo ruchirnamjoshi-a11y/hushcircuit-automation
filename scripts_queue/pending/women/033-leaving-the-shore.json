@@ -1,0 +1,65 @@
+{
+  "id": "leaving-the-shore",
+  "title": "Leaving the Shore",
+  "description": "A woman lets go of a safe, predictable career path to pursue the restoration of vintage wooden boats.",
+  "tags": [
+    "career-change",
+    "courage",
+    "craftsmanship",
+    "passion",
+    "women"
+  ],
+  "character_reference": "a woman in her thirties with blonde hair tied in a bandana, wearing a denim shirt with sawdust on the sleeves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The cubicle was safe, climate-controlled, and utterly soul-crushing. Every afternoon I stared out the window at the distant harbor mastheads.",
+      "on_screen_text": "THE VIEW",
+      "duration_hint": 12.6,
+      "visual": "close-up of fingers resting on a keyboard with a blurred window showing distant blue water and boats"
+    },
+    {
+      "narration": "People called it a mid-career crisis when I handed in my resignation letter, but it felt more like waking up from a very long sleep.",
+      "on_screen_text": "THE LETTER",
+      "duration_hint": 13.5,
+      "visual": "close-up of a pen resting on a crisp white sheet of paper on a wooden desk, warm natural light"
+    },
+    {
+      "narration": "My new office smelled of pine tar, aged oak, and saltwater, tucked away inside a drafty boat shed right by the edge of the dock.",
+      "on_screen_text": "THE BOAT SHED",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a rustic wooden boat workshop with tools hanging on pegboards and sunlight streaming through open double doors"
+    },
+    {
+      "narration": "Restoring vintage hulls required patience, sandpaper, and an intimate understanding of how wood bends under pressure.",
+      "on_screen_text": "SANDING WOOD",
+      "duration_hint": 12.1,
+      "visual": "close-up of sandpaper moving across a curved wooden plank, fine sawdust floating in a beam of sunlight"
+    },
+    {
+      "narration": "There was no manual for fixing the structural rot of a fifty-year-old sloop; I had to learn by trusting the instincts in my fingertips.",
+      "on_screen_text": "TRUSTING INSTINCT",
+      "duration_hint": 13.5,
+      "visual": "close-up of hands applying varnish with a brush along the wooden rib of a boat hull"
+    },
+    {
+      "narration": "When the freshly coated mahogany caught the afternoon sun for the very first time, the grain seemed to sing back to me.",
+      "on_screen_text": "THE FINISH",
+      "duration_hint": 12.6,
+      "visual": "macro shot of polished dark wood reflecting golden afternoon light with glistening varnish textures"
+    },
+    {
+      "narration": "Stepping off the dock with calloused hands and paint-stained jeans, I knew I was finally exactly where I belonged.",
+      "on_screen_text": "HOME WATER",
+      "duration_hint": 12.1,
+      "visual": "low-angle shot of heavy work boots standing on a weathered wooden pier overlooking calm water"
+    },
+    {
+      "narration": "It is never too late to trade the familiar harbor for the open sea of your own dreams. Follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "smiling warmly toward the camera with the shimmering harbor water softly blurred in the background"
+    }
+  ]
+}

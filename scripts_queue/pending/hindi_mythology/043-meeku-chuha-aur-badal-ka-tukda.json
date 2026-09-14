@@ -1,0 +1,59 @@
+{
+  "id": "meeku-chuha-aur-badal-ka-tukda",
+  "title": "मीकू चूहा और बादल का टुकड़ा",
+  "description": "एक नटखट चूहे की कहानी जो आसमान से गिरे बादल के टुकड़े से दोस्ती करता है।",
+  "tags": [
+    "hindi stories for kids",
+    "cute mouse",
+    "cloud story",
+    "fantasy",
+    "bedtime"
+  ],
+  "character_reference": "a tiny grey mouse with oversized round ears and a striped wool scarf",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "एक ठंडी सुबह मीकू चूहा अपने बिल से बाहर आया। उसने घास पर रुई जैसा कुछ सफेद और नरम देखा।",
+      "on_screen_text": "नरम चीज़",
+      "duration_hint": 7.0,
+      "visual": "close-up of a tiny mouse sniffing a fluffy white cloud puff resting on the green grass"
+    },
+    {
+      "narration": "वह आसमान से टूटकर गिरा हुआ बादल का एक छोटा सा टुकड़ा था। छूने में वह बहुत ठंडा और स्पंज जैसा था।",
+      "on_screen_text": "बादल का टुकड़ा",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the mouse gently poking the bouncy white cloud with his little paw"
+    },
+    {
+      "narration": "मीकू ने उसे गोद में उठाया और अपने साथ खेलने लगा। वह बादल हवा में हल्के-हल्के तैर रहा था।",
+      "on_screen_text": "नया खिलौना",
+      "duration_hint": 7.0,
+      "visual": "close-up of the mouse hugging the tiny glowing cloud while floating slightly above the ground"
+    },
+    {
+      "narration": "दोनों ने मिलकर पूरा दिन लुकाछिपी खेली। मीकू बादलों के पीछे छिप जाता और बादल गायब हो जाता।",
+      "on_screen_text": "मज़ेदार खेल",
+      "duration_hint": 7.5,
+      "visual": "side view of the mouse laughing playfully around a shifting misty cloud in a sunny meadow"
+    },
+    {
+      "narration": "शाम होते ही सूरज की गर्मी से वह बादल का टुकड़ा धीरे-धीरे पिघलकर फिर से आसमान में उड़ चला।",
+      "on_screen_text": "आसमान की ओर",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the cloud turning into gentle mist rising toward the orange sunset sky"
+    },
+    {
+      "narration": "मीकू ने प्यार से हाथ हिलाकर उसे विदा किया। उसे पता था कि दोस्त दिल में हमेशा रहते हैं।",
+      "on_screen_text": "प्यारा अलविदा",
+      "duration_hint": 7.0,
+      "visual": "close-up of the little mouse waving goodbye with a warm smile against the twilight horizon"
+    },
+    {
+      "narration": "हर छोटी मुलाकात एक मीठी याद बन जाती है। ऐसी ही और कहानियों के लिए हमें फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "wide shot of the starry night sky with a gentle glowing cloud shape twinkling in the distance"
+    }
+  ]
+}

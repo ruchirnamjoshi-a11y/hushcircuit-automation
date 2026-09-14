@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-ep-21",
+  "title": "Neon Pulse — Episode 21: Secrets in the Static",
+  "description": "Kael decrypts the stolen syndicate data drive, revealing a devastating countdown and a hidden stronghold deep within the city.",
+  "tags": [
+    "original hero",
+    "action adventure",
+    "cyberpunk thriller",
+    "superhero saga",
+    "neon pulse"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 21,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Rain lashed against the rusted windowpanes of the safehouse as Kael slammed the stolen data drive onto the steel workbench. The amber circuitry along his sleeves flickered in rhythm with the blinking decryption terminal.",
+      "on_screen_text": "THE STOLEN DRIVE",
+      "duration_hint": 14.0,
+      "visual": "close up of hands plugging a high tech data drive into a glowing terminal on a dark industrial workbench illuminated by neon light reflecting through rain slicked windowpanes"
+    },
+    {
+      "narration": "Lines of encrypted code cascaded across the glowing monitors, scrolling faster than a normal human could track. Commander Vance had gone to great lengths to secure these files, but Kael's enhanced neural link began to bridge the firewall.",
+      "on_screen_text": "DECRYPTING THE FILES",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a man staring intensely at multiple glowing computer screens displaying cascades of green and amber digital code reflecting in his wide eyes in a dim room"
+    },
+    {
+      "narration": "A sharp alarm tone pierced the silence of the room as a hidden folder finally unlocked itself. The amber glow on Kael's jacket flared blindingly bright, reacting to the sheer volume of classified architecture blueprints flooding the screen.",
+      "on_screen_text": "THE HIDDEN FOLDER",
+      "duration_hint": 15.0,
+      "visual": "low angle shot of a man leaning back slightly in surprise as a sudden burst of intense amber light erupts from computer monitors casting dramatic shadows across the walls"
+    },
+    {
+      "narration": "Blueprints of an underground subterranean facility materialized, revealing a massive energy grid hidden beneath the city's old waterworks. A chilling red countdown timer flashed in the corner of every single schematic.",
+      "on_screen_text": "THE SUBTERRANEAN GRID",
+      "duration_hint": 15.0,
+      "visual": "extreme close up of complex architectural blueprints and a glowing red digital timer displayed on a cracked computer monitor in a dark dusty room"
+    },
+    {
+      "narration": "Buried deep within the data logs, an audio transmission from Commander Vance played aloud. The syndicate was not merely extracting resources; they were preparing to trigger a catastrophic citywide blackout by dawn.",
+      "on_screen_text": "VANCE'S TRANSMISSION",
+      "duration_hint": 15.0,
+      "visual": "close up profile shot of a man listening intently with a grim expression while holding a small smoking device near a glowing audio interface panel"
+    },
+    {
+      "narration": "Kael gripped the edge of the steel workbench until his knuckles turned white, realizing the sheer scale of the conspiracy. There was no time to rest and no one else left to warn before the clock ran out.",
+      "on_screen_text": "THE GRIM REALIZATION",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a man gripping the edge of a heavy metallic table with both hands staring down intensely with furrowed brow and shadowed lighting"
+    },
+    {
+      "narration": "He pulled the glowing data drive from the terminal and fastened his heavy gear, stepping toward the shadowy exit. The real war against the syndicate was about to begin beneath the streets.",
+      "on_screen_text": "PREPARING FOR WAR",
+      "duration_hint": 14.0,
+      "visual": "wide shot of a man pulling up his collar and walking decisively toward a dark industrial doorway lit by a single flickering overhead bulb"
+    },
+    {
+      "narration": "Will Kael reach the subterranean stronghold before the syndicate activates the blackout device? Follow along for more of the original hero saga and never miss an episode.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "close up of a determined man turning his head sharply toward the camera with dramatic rim lighting highlighting his intense expression against a dark background"
+    }
+  ]
+}

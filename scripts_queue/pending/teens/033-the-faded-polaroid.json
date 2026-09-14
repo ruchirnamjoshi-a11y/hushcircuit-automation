@@ -1,0 +1,65 @@
+{
+  "id": "the-faded-polaroid",
+  "title": "The Faded Polaroid",
+  "description": "An aspiring photographer learns to capture authentic moments instead of staged perfection.",
+  "tags": [
+    "photography",
+    "art",
+    "authenticity",
+    "hobby",
+    "creative"
+  ],
+  "character_reference": "a young man with tousled brown hair, round wire-rim glasses, wearing an olive utility vest over a black t-shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My portfolio was full of technically flawless photos that felt completely lifeless.",
+      "on_screen_text": "EMPTY PERFECTION",
+      "duration_hint": 6.5,
+      "visual": "close-up of pristine architectural photographs laid out neatly on a dark wooden table, studio lighting"
+    },
+    {
+      "narration": "My mentor told me to stop chasing lighting ratios and start watching real life unfold.",
+      "on_screen_text": "A NEW LENS",
+      "duration_hint": 7.0,
+      "visual": "person holding a vintage film camera up to their eye, indoor natural window light, candid moment"
+    },
+    {
+      "narration": "I put away the tripod and walked through the busy neighborhood without a plan.",
+      "on_screen_text": "HITTING THE STREETS",
+      "duration_hint": 6.5,
+      "visual": "walking shot through a bustling indoor plant greenhouse, dappled sunlight, lush green foliage"
+    },
+    {
+      "narration": "Instead of waiting for posed smiles, I watched for candid laughs and quiet gestures.",
+      "on_screen_text": "CATCHING CANDIDS",
+      "duration_hint": 7.0,
+      "visual": "close-up of hands adjusting the focus ring on a camera lens, warm afternoon sun filtering through blinds"
+    },
+    {
+      "narration": "I snapped a quick photo of an old friend laughing mid-sentence with flour on her cheek.",
+      "on_screen_text": "THE MOMENT",
+      "duration_hint": 7.0,
+      "visual": "person smiling warmly with flour dusting their cheek, bright kitchen interior, natural window lighting"
+    },
+    {
+      "narration": "Watching the image develop in my hands, I finally saw actual soul in my work.",
+      "on_screen_text": "DEVELOPING TRUTH",
+      "duration_hint": 6.5,
+      "visual": "close-up of hands holding a developing instant photo, warm lamplight, cozy room setting"
+    },
+    {
+      "narration": "Perfection is overrated. Real stories are messy, alive, and completely worth capturing.",
+      "on_screen_text": "REAL LIFE",
+      "duration_hint": 6.5,
+      "visual": "stack of Polaroid photos pinned to a corkboard with warm string lights, cozy bedroom interior"
+    },
+    {
+      "narration": "Love creative journeys? Follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "close-up of a vintage camera lens reflecting soft window light, moody atmospheric tones"
+    }
+  ]
+}

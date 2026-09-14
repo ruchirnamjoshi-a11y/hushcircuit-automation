@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-chapter-23",
+  "title": "Neon Pulse — Episode 23: The Core Meltdown",
+  "description": "Kael battles Commander Vance in the subterranean core chamber while the countdown to the citywide blackout ticks away.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "thriller",
+    "animation"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 23,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sparks rain down as heavy automated turret fire slams into the metallic floor around Kael. He ducks low, using a fractured reactor console as temporary cover while Commander Vance watches from the elevated command walkway.",
+      "on_screen_text": "THE AMBUSH",
+      "duration_hint": 14.0,
+      "visual": "dynamic low angle shot of a man dodging heavy automated turret fire behind a shattered metal console inside a dark subterranean industrial reactor room with flying sparks and glowing red warning lights in background"
+    },
+    {
+      "narration": "The amber patterns on Kael's sleeves flare violently as he channels raw energy into his palms. With a sharp shove, he unleashes a concussive shockwave that shatters the incoming attack drones into thousands of burning pieces.",
+      "on_screen_text": "ENERGY SURGE",
+      "duration_hint": 15.0,
+      "visual": "medium action shot of a man thrusting both hands forward while brilliant amber energy pulses from his sleeves, obliterating mechanical flying drones in a brilliant flash of light and flying debris inside a concrete chamber"
+    },
+    {
+      "narration": "Commander Vance steps down from the gantry, weapon raised and face twisted in a cold sneer. The red countdown timer on the main central terminal hits thirty seconds, casting a crimson glow across the entire underground facility.",
+      "on_screen_text": "VANCE ADVANCES",
+      "duration_hint": 15.0,
+      "visual": "medium shot of a stern military commander holding an advanced energy pistol while walking down a metal staircase, illuminated entirely by harsh crimson emergency light pulsing from a massive countdown screen in the background"
+    },
+    {
+      "narration": "Kael lunges forward, closing the distance instantly before Vance can squeeze the trigger. They collide in midair, crashing hard against the reinforced glass of the primary energy core.",
+      "on_screen_text": "BRUTAL CLASH",
+      "duration_hint": 13.0,
+      "visual": "close action shot of two men wrestling fiercely against a massive glowing green energy glass cylinder, with one man pinning the other against the vibrating hazard-marked surface"
+    },
+    {
+      "narration": "Vance manages to drive the butt of his weapon into Kael's shoulder, sending him staggering back toward the precipice. Below them, a bottomless reactor shaft hums with volatile, unstable power.",
+      "on_screen_text": "THE PRECIPICE",
+      "duration_hint": 14.0,
+      "visual": "wide angle shot of a man stumbling backward near the open edge of a deep industrial chasm, looking down in horror as blue and purple plasma swirls violently in the abyss below"
+    },
+    {
+      "narration": "With only five seconds remaining on the clock, Kael spots the manual override port hidden beneath the main console panel. He dives blindly toward it, ignoring the searing pain in his injured arm.",
+      "on_screen_text": "DESPERATE DIVE",
+      "duration_hint": 14.0,
+      "visual": "dramatic side profile shot of a man lunging horizontally through the air toward a flashing control panel with multiple exposed wires and glowing buttons inside a high-tech control room"
+    },
+    {
+      "narration": "Kael jams his glowing hand directly into the override port as the countdown hits zero. The facility trembles violently, but the red alarms suddenly shift to a steady, pulsing blue.",
+      "on_screen_text": "SYSTEM OVERRIDE",
+      "duration_hint": 14.0,
+      "visual": "extreme close-up of a hand with glowing amber circuitry touching a smoking metallic port, causing a wave of bright blue light to ripple across the entire console and metal walls"
+    },
+    {
+      "narration": "Silence falls over the core chamber as Commander Vance vanishes into the emergency smoke evacuation tunnels. Kael stands victorious, yet the datapad in his pocket begins to pulse with an unknown, encrypted distress signal.",
+      "on_screen_text": "HIDDEN SIGNAL",
+      "duration_hint": 15.0,
+      "visual": "medium shot of a man standing alone amidst drifting smoke in a darkened high-tech room, looking down at a small handheld device glowing with an unfamiliar green code message"
+    },
+    {
+      "narration": "The blackout has been averted, but the true conspiracy runs far deeper than Commander Vance. Follow along for more chapters of Neon Pulse as the mystery unfolds.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "cinematic hero portrait of a man looking intently toward a shadowy corridor while holding a glowing futuristic gadget, with dramatic rim lighting highlighting his rugged expression and textured jacket"
+    }
+  ]
+}

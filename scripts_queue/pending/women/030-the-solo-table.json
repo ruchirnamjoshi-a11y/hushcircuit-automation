@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-table",
+  "title": "The Solo Table",
+  "description": "A woman chooses to sit by herself at a busy restaurant instead of waiting for a date who never shows.",
+  "tags": [
+    "self-worth",
+    "boundaries",
+    "empowerment",
+    "resilience",
+    "choosing-yourself"
+  ],
+  "character_reference": "a woman in her early thirties with shoulder-length dark wavy hair, wearing an emerald green wrap dress and delicate gold hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The reservation was for two, but the minutes kept ticking past the hour mark with no sign of him. Instead of shrinking into my phone, I looked around the crowded dining room.",
+      "on_screen_text": "THE WAITING GAME",
+      "duration_hint": 14.3,
+      "visual": "close-up of a place setting at a dimly lit restaurant table, one glass untouched, warm ambient candle flicker, shallow depth of field"
+    },
+    {
+      "narration": "My phone buzzed with another vague excuse, a text asking if I could just reschedule for next week. My thumb hovered over the keyboard before I typed a simple no.",
+      "on_screen_text": "THE LAST TEXT",
+      "duration_hint": 14.3,
+      "visual": "tight angle on a glowing smartphone screen resting on a white tablecloth, displaying message notifications, dark moody atmosphere"
+    },
+    {
+      "narration": "I locked the screen and placed the phone face down, listening to the gentle hum of conversation and clinking glassware surrounding me.",
+      "on_screen_text": "LETTING IT GO",
+      "duration_hint": 12.6,
+      "visual": "hands sliding a smartphone face down on a wooden table surface, soft bokeh lights twinkling in the background restaurant interior"
+    },
+    {
+      "narration": "When the host approached with a concerned expression, asking if I wanted to cancel the second seat, I surprised myself with the answer.",
+      "on_screen_text": "THE QUESTION",
+      "duration_hint": 12.1,
+      "visual": "low-angle medium shot of a waiter standing nearby with a notepad, looking down empathetically with a polite inquiring expression"
+    },
+    {
+      "narration": "I asked to keep the table and ordered the meal I had actually wanted all along, not the one that would fit safely across from someone else's preferences.",
+      "on_screen_text": "ORDERING FOR ONE",
+      "duration_hint": 13.9,
+      "visual": "hands opening a leather menu under warm overhead pendant lighting, restaurant interior blurred in the background"
+    },
+    {
+      "narration": "The food arrived steaming and aromatic, and every single bite tasted remarkably different when it was fueled entirely by my own hunger and my own time.",
+      "on_screen_text": "SAVORING THE MOMENT",
+      "duration_hint": 13.5,
+      "visual": "close-up of a plate of artisan pasta with fresh herbs, steam rising gently, captured with vibrant colors and rich textures"
+    },
+    {
+      "narration": "Sitting alone used to feel like a quiet punishment, but tonight it felt like the most luxurious form of freedom I had experienced in years.",
+      "on_screen_text": "TASTING FREEDOM",
+      "duration_hint": 13.9,
+      "visual": "profile view looking out over a bustling dining room with a calm, contented expression, warm golden hour reflections"
+    },
+    {
+      "narration": "If you are ever waiting for someone to choose you, remember you can always choose yourself instead. Follow along for more stories like this.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.9,
+      "visual": "direct eye contact with the camera, a warm genuine smile of self-assurance, softly lit interior background"
+    }
+  ]
+}

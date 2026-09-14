@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-ep-twenty",
+  "title": "Neon Pulse — Episode 20: Vance Revealed",
+  "description": "Kael confronts Commander Vance at the upper level facility, uncovering the devastating truth behind the amber circuitry syndicate.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "thriller",
+    "animation"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 20,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Bursting through the emergency hatch, I emerged onto the windy upper platform as alarms wailed below.",
+      "on_screen_text": "THE ESCAPE",
+      "duration_hint": 5.0,
+      "visual": "steaming industrial hatch opening wide on a rain slicked metal rooftop against a dark stormy sky low angle action shot cinematic lighting no text"
+    },
+    {
+      "narration": "Commander Vance stood waiting by the extraction chopper, bathed in the red glare of warning lights.",
+      "on_screen_text": "VANCE WAITS",
+      "duration_hint": 5.5,
+      "visual": "silver haired military commander standing beside a idling helicopter on a rooftop platform glowing red warning beacons casting harsh shadows no text"
+    },
+    {
+      "narration": "My jacket surged with blinding amber light as the pulse matched the volatile energy signature in the air.",
+      "on_screen_text": "SURGING POWER",
+      "duration_hint": 5.2,
+      "visual": "close up on glowing amber circuitry lines flaring brightly across dark fabric while sparks crackle in the damp night air dynamic camera angle no text"
+    },
+    {
+      "narration": "You cannot stop what has already been initiated, Vance shouted over the rising turbine roar.",
+      "on_screen_text": "THE WARNING",
+      "duration_hint": 5.0,
+      "visual": "mature commander shouting angrily with hand raised in command stance against spinning helicopter blades wind whipping his uniform no text"
+    },
+    {
+      "narration": "I fired a concentrated pulse of energy straight at the control console, shorting out the launch sequence.",
+      "on_screen_text": "DIRECT HIT",
+      "duration_hint": 5.2,
+      "visual": "bright beam of amber light striking a metal control panel sending cascading blue sparks and smoke flying toward the camera no text"
+    },
+    {
+      "narration": "The explosion threw us both backward, shattering the glass walkway into a cascade of sparkling debris.",
+      "on_screen_text": "SHATTERED GLASS",
+      "duration_hint": 5.0,
+      "visual": "shockwave blast blowing apart a glass bridge into thousands of floating shards with silhouetted figures tumbling backward slow motion no text"
+    },
+    {
+      "narration": "As Vance dragged himself toward the departing aircraft, he dropped a data drive bearing the syndicate symbol.",
+      "on_screen_text": "DROPPED INTEL",
+      "duration_hint": 5.5,
+      "visual": "metallic data drive falling through the air toward wet grating with glowing embers drifting downward dramatic side profile close up no text"
+    },
+    {
+      "narration": "I gripped the drive as the chopper vanished into the clouds, knowing the real war had just begun.",
+      "on_screen_text": "THE CLOUDS",
+      "duration_hint": 5.2,
+      "visual": "determined hero clenching a small glowing data drive tightly in his fist while watching a distant aircraft disappear into heavy storm clouds no text"
+    },
+    {
+      "narration": "Follow along for more chapters of the original hero saga every single week.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "dramatic cinematic portrait shot of a glowing hero standing proudly against a futuristic neon lit skyline at night looking forward no text"
+    }
+  ]
+}

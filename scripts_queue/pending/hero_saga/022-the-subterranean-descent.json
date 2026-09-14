@@ -1,0 +1,71 @@
+{
+  "id": "the-subterranean-descent",
+  "title": "Neon Pulse — Episode 22: The Subterranean Descent",
+  "description": "Kael infiltrates the hidden facility beneath the city, racing against the red countdown timer to prevent a blackout.",
+  "tags": [
+    "action",
+    "cyberpunk",
+    "superhero",
+    "infiltration",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 22,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Midnight shadows swallowed the rusted industrial grate as I pried it open, plunging into the freezing gloom below the city streets.",
+      "on_screen_text": "THE HIDDEN INFILTRATION",
+      "duration_hint": 7.5,
+      "visual": "Low angle close up of heavy metal grating being pulled apart revealing dark damp tunnel below dramatic blue rim lighting cinematic atmosphere highly detailed grit and rust textures"
+    },
+    {
+      "narration": "The stolen blueprints pointed straight to this maintenance tunnel, the forgotten gateway to Commander Vance's underground stronghold.",
+      "on_screen_text": "FOLLOWING THE BLUEPRINT",
+      "duration_hint": 7.0,
+      "visual": "Medium wide shot holding a glowing holographic map tablet inside a narrow concrete pipe dim green emergency lights casting long shadows across wet walls"
+    },
+    {
+      "narration": "Amber energy pulsed down my sleeves, warming my veins as I primed my abilities for the inevitable confrontation waiting ahead.",
+      "on_screen_text": "POWERING UP",
+      "duration_hint": 6.5,
+      "visual": "Close up shot of arms flexing with bright orange light tracing through fabric sleeves intense energetic glow reflecting in dark brooding eyes focused concentration"
+    },
+    {
+      "narration": "Heavy armored patrols marched past the junction just feet away, their sharp boot steps echoing off the damp concrete walls.",
+      "on_screen_text": "AVOIDING THE PATROL",
+      "duration_hint": 6.8,
+      "visual": "Crouching behind a large rusted pipe looking around the corner at armed guards in heavy tactical gear walking down a dim hallway dynamic perspective"
+    },
+    {
+      "narration": "I slipped past their blind spots and reached the primary heavy vault door, securing the access bypass with rapid precision.",
+      "on_screen_text": "BYPASSING THE VAULT",
+      "duration_hint": 6.2,
+      "visual": "Close up hands frantically tapping a futuristic electronic panel sparking with blue electrical discharge dramatic lighting casting harsh shadows on face"
+    },
+    {
+      "narration": "The massive steel barrier hissed open to reveal the horrifying core chamber and the pulsing red countdown timer ticking down fast.",
+      "on_screen_text": "THE COUNTDOWN ENGINE",
+      "duration_hint": 7.0,
+      "visual": "Wide angle shot of a massive subterranean chamber filled with glowing red digital displays and towering machinery ominous red lighting reflecting on wet floors"
+    },
+    {
+      "narration": "Before I could step inside, heavy lockdown shutters slammed shut behind me, trapping me alone with an armed squad.",
+      "on_screen_text": "TRAPPED IN THE CORE",
+      "duration_hint": 6.5,
+      "visual": "Quick reaction shot spinning around as heavy steel doors crash shut blocking the exit harsh alarm lights flashing red and white reflecting in tense expression"
+    },
+    {
+      "narration": "Commander Vance stepped out from the shadows above, smiling coldly as the facility alarms wailed into the dark.",
+      "on_screen_text": "THE COMMANDER WAITS",
+      "duration_hint": 6.5,
+      "visual": "Medium shot looking up toward an elevated catwalk where an imposing villain in dark military attire stands watching with a sinister grin dramatic upward angle"
+    },
+    {
+      "narration": "Follow along for more of this original action series every single week.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Cinematic head and shoulders portrait looking intensely forward ready for battle with glowing amber energy fading out in the background dark moody lighting"
+    }
+  ]
+}

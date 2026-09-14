@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-abyss-ascend",
+  "title": "Neon Pulse — Episode 18: Abyss Ascend",
+  "description": "Kael fights his way out of the underground chasm and discovers Vance's ultimate weapon.",
+  "tags": [
+    "action",
+    "superhero",
+    "scifi",
+    "thriller",
+    "original hero"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 18,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Suspended over the glowing chasm, I channeled every ounce of energy into my fingertips to scale the sheer rock face.",
+      "on_screen_text": "THE CHASM CLIMB",
+      "duration_hint": 4.5,
+      "visual": "Low angle shot of hands gripping crumbling dark stone, amber energy glowing faintly beneath the fingertips, deep glowing orange abyss far below, intense strain, cinematic lighting"
+    },
+    {
+      "narration": "My muscles burned as the seismic tremors shook the cavern walls, threatening to send me plummeting back into the depths.",
+      "on_screen_text": "TREMORS BELOW",
+      "duration_hint": 4.5,
+      "visual": "Medium wide shot of a solitary figure hanging onto a steep rock wall as massive cracks fracture the stone surface, falling debris, fiery orange glow from underneath"
+    },
+    {
+      "narration": "Pulling myself over the final ledge, I stepped directly into the heart of Vance's hidden subterranean research facility.",
+      "on_screen_text": "SECRET FACILITY",
+      "duration_hint": 4.3,
+      "visual": "Over-the-shoulder shot looking into a vast high-tech underground laboratory filled with metallic walkways, glowing blue computer terminals, and swirling energy conduits in the background"
+    },
+    {
+      "narration": "Holographic schematics flickered across the massive central terminal, revealing the true scale of the syndicate's global network.",
+      "on_screen_text": "GLOBAL NETWORK",
+      "duration_hint": 4.3,
+      "visual": "Close up of glowing blue holographic world maps and complex data nodes floating in mid-air inside a dark metallic room, illuminated by digital projections"
+    },
+    {
+      "narration": "Commander Vance's recorded voice echoed through the empty chambers, mocking my futile attempts to stop what had already begun.",
+      "on_screen_text": "MOCKING ECHO",
+      "duration_hint": 4.6,
+      "visual": "Wide shot of an empty metallic corridor with overhead industrial lights flickering, casting long dramatic shadows, moody atmospheric haze, intense suspense"
+    },
+    {
+      "narration": "Before me stood the prototype core, a pulsing sphere of raw synthetic power that hummed with a deafening, unstable frequency.",
+      "on_screen_text": "THE CORE",
+      "duration_hint": 4.8,
+      "visual": "Close-up of a massive levitating metallic sphere pulsing with intense white and amber light inside a glass containment cylinder, electrical arcs sparking outward"
+    },
+    {
+      "narration": "Security alarms suddenly blared to life as heavy blast doors began sealing off every possible exit from the chamber.",
+      "on_screen_text": "TRAPPED AGAIN",
+      "duration_hint": 4.3,
+      "visual": "Dynamic perspective shot of heavy steel blast doors slamming shut at the end of a corridor, flashing red warning lights reflecting off polished metal floors"
+    },
+    {
+      "narration": "As the shadows shifted around me, armed operatives emerged from the gloom, leaving no choice but to fight my way out once more.",
+      "on_screen_text": "AMBUSH WAITING",
+      "duration_hint": 4.8,
+      "visual": "Medium shot of multiple silhouettes in tactical gear stepping out from dark industrial archways, weapons raised, defensive stance ready for combat, dramatic side lighting"
+    },
+    {
+      "narration": "Catch what comes next in the saga and follow along for more original hero adventures.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.0,
+      "visual": "Cinematic portrait shot looking back over the shoulder with a determined expression, subtle glowing energy crackling along the sleeves, dark moody background"
+    }
+  ]
+}

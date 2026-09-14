@@ -1,0 +1,72 @@
+{
+  "id": "ruby-rabbits-jumping-puddle",
+  "title": "Ruby Rabbit's Jumping Puddle",
+  "description": "Ruby is afraid of jumping over a big puddle, but encouragement from her friends helps her make the leap.",
+  "tags": [
+    "rabbit",
+    "puddle",
+    "courage",
+    "rain",
+    "friends",
+    "bedtime"
+  ],
+  "character_reference": "a snowy white rabbit with one floppy ear and bright pink overalls",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Ruby Rabbit hopped down the muddy trail after the morning rain, stopping short at a surprisingly wide puddle.",
+      "on_screen_text": "THE WIDE PUDDLE",
+      "duration_hint": 11.7,
+      "visual": "white rabbit standing at edge of large glossy puddle reflecting blue sky hesitant posture ground level shot"
+    },
+    {
+      "narration": "It stretched all the way across the path, looking more like a small glittering lake than a puddle.",
+      "on_screen_text": "A SHINY LAKE",
+      "duration_hint": 10.4,
+      "visual": "wide reflective water puddle covering dirt path green grass borders bright daylight ripples on surface"
+    },
+    {
+      "narration": "She backed up three big hops, her nose twitching nervously as she stared across the watery gap.",
+      "on_screen_text": "TAKING STEPS BACK",
+      "duration_hint": 10.9,
+      "visual": "rabbit hopping backward setting up jump nose twitching intensely focused expression low angle perspective"
+    },
+    {
+      "narration": "Her friend Pip the hedgehog waddled up to the opposite side and waved his tiny paws in encouragement.",
+      "on_screen_text": "YOU CAN DO IT",
+      "duration_hint": 11.3,
+      "visual": "small hedgehog standing on far side of puddle waving paws encouragingly across the water smiling face"
+    },
+    {
+      "narration": "Pip called out that she was lighter than a feather and stronger than she knew.",
+      "on_screen_text": "WORDS OF BRAVERY",
+      "duration_hint": 9.6,
+      "visual": "close up of hedgehog talking with cheerful expression leafy green background soft morning light"
+    },
+    {
+      "narration": "Taking a deep breath, Ruby sprinted forward and launched herself up into the bright spring air.",
+      "on_screen_text": "THE BIG LEAP",
+      "duration_hint": 10.4,
+      "visual": "rabbit mid air flying across puddle with joyful expression outstretched paws action shot side profile"
+    },
+    {
+      "narration": "With a soft thud, she landed safely on the dry grass on the other side, splashing zero mud.",
+      "on_screen_text": "SAFE LANDING",
+      "duration_hint": 10.4,
+      "visual": "rabbit landing gracefully on green grass smiling triumphantly ripples seen behind her in water"
+    },
+    {
+      "narration": "Ruby giggled with joy, realizing that facing your fears is much easier with a cheering friend by your side.",
+      "on_screen_text": "BRAVE BUNNY",
+      "duration_hint": 11.7,
+      "visual": "two happy animal friends walking down trail together arm in arm sunny meadow background warm tones"
+    },
+    {
+      "narration": "Follow along for more gentle stories to help you wind down and smile before bedtime.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "peaceful meadow under twilight sky glowing fireflies resting on soft clover patch bedtime ambiance"
+    }
+  ]
+}

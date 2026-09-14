@@ -1,0 +1,65 @@
+{
+  "id": "the-map-maker",
+  "title": "The Map Maker",
+  "description": "A retired cartographer stops drawing imaginary borders and embarks on a cross-country train journey to truly see the landscape he spent a lifetime mapping.",
+  "tags": [
+    "travel",
+    "retirement",
+    "exploration",
+    "railway",
+    "perspective"
+  ],
+  "character_reference": "an elderly man with a neat white mustache, round wire spectacles, and a tweed travel jacket with leather elbow patches",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty years, I drew the mountains, rivers, and borders of this country without ever stepping foot outside my office.",
+      "on_screen_text": "INK AND PAPER",
+      "duration_hint": 14.0,
+      "visual": "Close up of an elderly cartographer meticulously drawing fine ink lines with a specialized pen on a vintage parchment map, warm desk lamp illumination"
+    },
+    {
+      "narration": "My desk was stacked with topographical surveys and aerial photographs. I knew the land by numbers, not by soul.",
+      "on_screen_text": "NUMBERS ON A GRID",
+      "duration_hint": 13.0,
+      "visual": "Overhead shot of compasses, rulers, magnifying glasses, and folded paper maps scattered across a large wooden drafting table, moody and academic"
+    },
+    {
+      "narration": "When the pension papers arrived, I didn't book a cruise or buy a rocking chair. I bought a one-way cross-country train ticket.",
+      "on_screen_text": "THE DEPARTURE",
+      "duration_hint": 14.0,
+      "visual": "Medium shot of an elderly man holding a vintage leather suitcase while standing on a historic railway platform, steam rising from a classic locomotive engine"
+    },
+    {
+      "narration": "The train rattled across steel bridges over wide rivers I had only ever represented as thin blue ink strokes on paper.",
+      "on_screen_text": "CROSSING RIVERS",
+      "duration_hint": 14.0,
+      "visual": "Side view through a train window showing a vast, winding blue river cutting through green autumn valleys, dramatic afternoon sunlight, motion blur"
+    },
+    {
+      "narration": "Looking out the dusty window, the flat plains weren't empty spaces. They were seas of tall grass swaying in the wind.",
+      "on_screen_text": "THE LIVING LAND",
+      "duration_hint": 13.0,
+      "visual": "Wide panoramic landscape shot of golden prairie grass rolling toward distant blue mountain ranges under a vast, cloud-filled sky, cinematic golden hour"
+    },
+    {
+      "narration": "A map can tell you where things are located, but it can never capture the way the evening light touches a valley.",
+      "on_screen_text": "BEYOND THE LINES",
+      "duration_hint": 14.0,
+      "visual": "Close up of an elderly face reflecting warm sunset colors through a train glass window, contemplative expression, serene mood"
+    },
+    {
+      "narration": "The best journeys in life begin right when you finally close your maps and let the world surprise you.",
+      "on_screen_text": "THE OPEN ROAD",
+      "duration_hint": 13.0,
+      "visual": "Wide cinematic shot of a vintage passenger train curving along a dramatic mountain pass at sunset, inspiring and majestic"
+    },
+    {
+      "narration": "If you enjoy stories about late-life adventures and discovering new horizons, follow along for more daily tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "Close up of an old compass resting on top of a leather-bound journal, warm lighting, cozy traveler aesthetic"
+    }
+  ]
+}

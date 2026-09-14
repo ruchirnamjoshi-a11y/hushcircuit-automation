@@ -1,0 +1,72 @@
+{
+  "id": "felix-foxs-glow-in-the-dark-leaf",
+  "title": "Felix Fox's Glow-in-the-Dark Leaf",
+  "description": "Felix finds a magical leaf that glows when he helps a friend, teaching him that kindness shines brightest in the dark.",
+  "tags": [
+    "fox",
+    "night",
+    "kindness",
+    "magic",
+    "bedtime",
+    "morals"
+  ],
+  "character_reference": "a young orange fox with bright green eyes and a tiny white patch on his left paw",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Felix the little fox sat by the edge of the dark forest, feeling a bit too nervous to explore the shadows alone.",
+      "on_screen_text": "THE DARK WOODS",
+      "duration_hint": 10.4,
+      "visual": "close-up of young fox peering into dark woodland thicket at twilight hesitant posture low angle perspective soft glowing moss on tree roots"
+    },
+    {
+      "narration": "Suddenly, a glowing green leaf fluttered down from the branches, landing right at his trembling paws.",
+      "on_screen_text": "A MAGICAL ARRIVAL",
+      "duration_hint": 9.1,
+      "visual": "single neon bioluminescent leaf floating downward against dark soil downward camera tilt paws reaching out in surprise"
+    },
+    {
+      "narration": "He picked it up in his teeth, and to his surprise, it cast a warm, friendly light that lit up the winding path ahead.",
+      "on_screen_text": "WARM GLOW",
+      "duration_hint": 11.7,
+      "visual": "fox holding glowing leaf in mouth lighting up dark fern leaves around him medium shot side profile warm amber illumination"
+    },
+    {
+      "narration": "Further down the trail, he heard a tiny sniffle and saw Oliver Owl sitting on a stump, having lost his favorite reading glasses.",
+      "on_screen_text": "A CRY FOR HELP",
+      "duration_hint": 12.2,
+      "visual": "small owl sitting disconsolately on old wooden stump looking down sadly twilight shadows deep in forest setting"
+    },
+    {
+      "narration": "Without a second thought, Felix trotted over and held his glowing leaf close to the ground to search.",
+      "on_screen_text": "SHARING THE LIGHT",
+      "duration_hint": 10.0,
+      "visual": "fox lowering glowing leaf toward forest floor sniffing near roots looking intently at ground level camera angle"
+    },
+    {
+      "narration": "Together, the bright green light swept across the moss until they spotted the sparkling wire frames tucked beneath a mushroom.",
+      "on_screen_text": "THE DISCOVERY",
+      "duration_hint": 11.3,
+      "visual": "pair of small metal glasses resting under red toadstool cap illuminated by bright magical leaf light top down view"
+    },
+    {
+      "narration": "Oliver hooted happily and thanked his furry friend, making Felix feel warm and brave inside.",
+      "on_screen_text": "HAPPY HOOTS",
+      "duration_hint": 9.6,
+      "visual": "owl spreading wings in joy next to smiling fox sitting on mossy log warm golden light reflecting in their eyes"
+    },
+    {
+      "narration": "Felix learned that sharing your light with others makes even the scariest darkness feel small.",
+      "on_screen_text": "KINDNESS SHINES",
+      "duration_hint": 9.1,
+      "visual": "wide peaceful shot of forest at night with glowing green leaf resting gently on a friendly log peaceful bedtime atmosphere"
+    },
+    {
+      "narration": "If you enjoyed this peaceful bedtime story, follow along for more magical tales every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.4,
+      "visual": "cozy woodland clearing under starry night sky soft magical twinkling stars gentle whimsical animation style"
+    }
+  ]
+}

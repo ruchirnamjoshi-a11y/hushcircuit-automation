@@ -1,0 +1,65 @@
+{
+  "id": "crossing-the-bridge",
+  "title": "Crossing the Bridge",
+  "description": "A woman confronts her fear of heights by walking across a suspension bridge to reach a remote mountain trail.",
+  "tags": [
+    "fear",
+    "courage",
+    "nature",
+    "overcoming",
+    "growth"
+  ],
+  "character_reference": "a woman in her thirties with reddish-brown hair in a ponytail, wearing a waterproof olive jacket and hiking boots",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The wooden suspension bridge swayed violently in the mountain breeze, stretching across a deep gorge that made my stomach drop.",
+      "on_screen_text": "THE CHASM",
+      "duration_hint": 13.0,
+      "visual": "low-angle shot looking up at a rustic wooden rope bridge spanning across a misty evergreen canyon"
+    },
+    {
+      "narration": "Every hiking guide recommended this trail for the summit view, but nobody mentioned the terrifying obstacle course required to reach it.",
+      "on_screen_text": "THE OBSTACLE",
+      "duration_hint": 13.0,
+      "visual": "close-up of hiking boots standing firmly on the wooden planks of a swinging bridge edge"
+    },
+    {
+      "narration": "My heels felt glued to the solid earth of the trailhead. Turning back would be easy, quiet, and profoundly disappointing.",
+      "on_screen_text": "THE CHOICE",
+      "duration_hint": 12.1,
+      "visual": "close-up of gloved hands gripping tightly onto thick hemp bridge ropes, knuckles white with tension"
+    },
+    {
+      "narration": "I took a deep breath, planted my hiking boot onto the first swaying plank, and forced my gaze straight ahead instead of down.",
+      "on_screen_text": "FIRST STEP",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a hiker taking a deliberate step forward on a suspended walkway amidst misty trees"
+    },
+    {
+      "narration": "With every rhythmic sway, my breathing steadied. The metal cables hummed a low, vibrating note in the mountain wind.",
+      "on_screen_text": "FINDING RHYTHM",
+      "duration_hint": 12.6,
+      "visual": "close-up of weathered wooden slats and steel cables stretching into the misty mountain fog"
+    },
+    {
+      "narration": "Halfway across, I stopped to look down at the rushing river far below, realizing the fear was louder in my mind than in reality.",
+      "on_screen_text": "THE VIEW DOWN",
+      "duration_hint": 13.5,
+      "visual": "high-angle shot looking down through bridge slats at a roaring white-water stream far beneath"
+    },
+    {
+      "narration": "Stepping onto the firm dirt of the opposite bank, I felt a rush of fierce pride that had nothing to do with the mountain peak.",
+      "on_screen_text": "SOLID GROUND",
+      "duration_hint": 13.0,
+      "visual": "close-up of hiking boots stepping off wood planks onto rich soil, pine needles scattered around"
+    },
+    {
+      "narration": "Whatever you are afraid of crossing today, take the first step anyway. Follow along for more inspiring stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "smiling with wind-swept hair against a backdrop of distant pine forests and mountain peaks"
+    }
+  ]
+}

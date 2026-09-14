@@ -1,0 +1,65 @@
+{
+  "id": "the-climbing-wall",
+  "title": "The Climbing Wall",
+  "description": "A beginner bouldering enthusiast conquers their fear of heights on a challenging overhang.",
+  "tags": [
+    "climbing",
+    "bouldering",
+    "sports",
+    "fear",
+    "overcoming"
+  ],
+  "character_reference": "an athletic young woman with braided dark brown hair, wearing a chalk-dusted purple t-shirt and climbing leggings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Looking up at the overhang, the multicolored holds felt like an impossible puzzle.",
+      "on_screen_text": "THE OVERHANG",
+      "duration_hint": 6.5,
+      "visual": "low-angle shot looking up a tall indoor climbing wall with colorful resin holds, bright gym lighting"
+    },
+    {
+      "narration": "My palms were sweating before I even touched the starting hold.",
+      "on_screen_text": "PRE-CLIMB NERVES",
+      "duration_hint": 5.5,
+      "visual": "close-up of hands dipping into a white chalk bucket, textured skin, indoor gym background"
+    },
+    {
+      "narration": "Halfway up, my arms started to quiver and my foot slipped off a tiny foothold.",
+      "on_screen_text": "THE SLIP",
+      "duration_hint": 6.5,
+      "visual": "action shot of climber reaching for a high hold on an indoor wall, tense muscular effort, chalk dust in air"
+    },
+    {
+      "narration": "Panic whispered in my ear to just let go and drop to the padded floor below.",
+      "on_screen_text": "THE TEMPTATION",
+      "duration_hint": 6.5,
+      "visual": "medium shot of climber clinging tightly to a wall, looking down nervously, dramatic side lighting"
+    },
+    {
+      "narration": "I closed my eyes for three seconds, reset my grip, and found a better stance.",
+      "on_screen_text": "RESETTING",
+      "duration_hint": 6.5,
+      "visual": "close-up of chalk-covered hands gripping a blue climbing hold securely, sharp focus"
+    },
+    {
+      "narration": "With one final explosive move, I locked my hand onto the top ledge.",
+      "on_screen_text": "THE CRUX",
+      "duration_hint": 6.0,
+      "visual": "dynamic shot of climber reaching over the top edge of a bouldering wall, intense expression"
+    },
+    {
+      "narration": "Pulling myself onto the top platform, the view from up here was worth every ounce of fear.",
+      "on_screen_text": "THE SUMMIT",
+      "duration_hint": 7.0,
+      "visual": "climber sitting on top of an indoor wall, wiping sweat from forehead, smiling proudly, soft gym lighting"
+    },
+    {
+      "narration": "Every summit starts with a single scary move. Follow along for more daily inspiration.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.0,
+      "visual": "close-up of climbing shoes hanging from a backpack strap, warm indoor lighting, adventure vibe"
+    }
+  ]
+}

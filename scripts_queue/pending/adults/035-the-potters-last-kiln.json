@@ -1,0 +1,65 @@
+{
+  "id": "the-potters-last-kiln",
+  "title": "The Potter's Last Kiln",
+  "description": "An aging ceramic artist accepts that his hands are growing too weak for large sculptures and pivots to creating delicate, miniature tea bowls.",
+  "tags": [
+    "ceramics",
+    "craft",
+    "aging",
+    "adaptation",
+    "art"
+  ],
+  "character_reference": "a man in his sixties with clay-stained hands, kind crinkled eyes, and a faded indigo tunic",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The heavy stoneware clay kept slipping between my trembling fingers, collapsing the tall vase I had spent hours centering.",
+      "on_screen_text": "FROZEN HANDS",
+      "duration_hint": 14.0,
+      "visual": "Close up of clay collapsing on a spinning pottery wheel as hands tremble slightly, moody studio lighting, sense of frustration"
+    },
+    {
+      "narration": "Arthritis had finally caught up with my joints. The grand, towering vessels of my youth were now beyond my physical reach.",
+      "on_screen_text": "THE LIMIT",
+      "duration_hint": 13.0,
+      "visual": "Close up of swollen knuckles resting on a wooden workbench filled with pottery tools, dramatic side light, melancholic atmosphere"
+    },
+    {
+      "narration": "For weeks, I sat in the silent studio, staring at the pottery wheel as if it were a judge sentencing me to retirement.",
+      "on_screen_text": "STUDIO SILENCE",
+      "duration_hint": 14.0,
+      "visual": "Medium shot of a potter sitting alone on a wooden stool in a quiet, sunlit ceramic studio, surrounded by unfinished shelves of clay work"
+    },
+    {
+      "narration": "Then, I picked up a tiny lump of porcelain clay no larger than a plum, wondering what it might become.",
+      "on_screen_text": "A SMALL START",
+      "duration_hint": 13.0,
+      "visual": "Extreme close up of clay-stained fingers gently shaping a tiny white lump of porcelain on a small hand-turned wheel head, warm spotlight"
+    },
+    {
+      "narration": "Instead of massive amphoras, my hands found grace in throwing delicate, miniature tea bowls meant to be held in two fingers.",
+      "on_screen_text": "DELICATE FORMS",
+      "duration_hint": 14.0,
+      "visual": "Close up of hands carefully smoothing the rim of a tiny, translucent porcelain cup on a spinning wheel, beautiful soft backlighting"
+    },
+    {
+      "narration": "When pulled from the blazing kiln, their subtle crackle glazes and tiny imperfections held more character than anything I made before.",
+      "on_screen_text": "IMPERFECT BEAUTY",
+      "duration_hint": 14.0,
+      "visual": "Close up of small, exquisite ceramic tea bowls featuring unique glaze patterns arranged on a dark wooden plank, warm studio lighting"
+    },
+    {
+      "narration": "Growing older doesn't mean your creative voice grows quiet. It just means you learn to speak in softer, deeper whispers.",
+      "on_screen_text": "QUIET WISDOM",
+      "duration_hint": 14.0,
+      "visual": "Portrait of an older artisan smiling softly while holding a small ceramic bowl in his palms, warm golden hour glow, authentic emotion"
+    },
+    {
+      "narration": "If you love stories about creative perseverance and inner growth, follow along for more daily reflections.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "Close up of ceramic tools resting next to a small pottery piece on a rustic workbench, cozy and warm aesthetic"
+    }
+  ]
+}

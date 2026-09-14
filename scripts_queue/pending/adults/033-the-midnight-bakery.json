@@ -1,0 +1,65 @@
+{
+  "id": "the-midnight-bakery",
+  "title": "The Midnight Bakery",
+  "description": "A weary corporate lawyer leaves her high-stress career behind to bake artisanal sourdough bread through the quiet hours of the night.",
+  "tags": [
+    "baking",
+    "career shift",
+    "burnout",
+    "craftsmanship",
+    "peace"
+  ],
+  "character_reference": "a woman in her late forties with curly dark hair tied back in a messy scarf, wearing a flour-dusted canvas apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "At three in the morning, while the rest of the city slept, my only companions were the hum of the oven and floating flour.",
+      "on_screen_text": "THE WEE HOURS",
+      "duration_hint": 14.0,
+      "visual": "Medium shot of a woman kneading sticky dough on a wooden island counter in a cozy, softly lit kitchen, flour dust swirling in warm pendant light"
+    },
+    {
+      "narration": "Just one year ago, those same morning hours found me crying at my desk over endless corporate litigation contracts.",
+      "on_screen_text": "THE BREAKING POINT",
+      "duration_hint": 14.0,
+      "visual": "Close up of a tired face illuminated only by a laptop screen in a dark corporate office, stacks of paper binders in the background, cold blue tones"
+    },
+    {
+      "narration": "Walking away from a six-figure salary terrified everyone who knew me. They called it a reckless mid-life crisis.",
+      "on_screen_text": "THE LEAP",
+      "duration_hint": 13.0,
+      "visual": "Silhouette of a person carrying a cardboard box filled with office items out through heavy glass doors into a dark, rainy night street, cinematic"
+    },
+    {
+      "narration": "Dough doesn't care about billable hours or aggressive negotiations. It only demands patience, warmth, and genuine care.",
+      "on_screen_text": "SIMPLE TRUTHS",
+      "duration_hint": 13.0,
+      "visual": "Close up of flour being gently sifted over a mound of wet sourdough starter on a wooden board, slow motion, dramatic overhead lighting"
+    },
+    {
+      "narration": "When the heavy iron oven doors finally swung open, the golden crusts and rich yeast aroma made every single doubt vanish.",
+      "on_screen_text": "GOLDEN HARVEST",
+      "duration_hint": 14.0,
+      "visual": "Extreme close up of golden-brown artisan loaves of bread fresh out of a stone oven, steam rising into warm, amber-lit air"
+    },
+    {
+      "narration": "The local neighbors began lining up at dawn, not for legal advice, but for a warm loaf of bread made with love.",
+      "on_screen_text": "MORNING COMMUNION",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of a rustic wooden bakery counter with loaves arranged neatly, warm morning light filtering through an interior window, inviting atmosphere"
+    },
+    {
+      "narration": "Success isn't measured by the prestige of your title. It's measured by the peace you feel when you wake up.",
+      "on_screen_text": "TRUE SUCCESS",
+      "duration_hint": 13.0,
+      "visual": "Portrait of a smiling woman looking proudly at her fresh bakes, warm golden sidelight, authentic and heartwarming"
+    },
+    {
+      "narration": "If you love stories about finding a simpler, truer path, follow along for more daily inspiration.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Close up of a warm loaf of sourdough bread being sliced with a serrated knife on a cutting board, crumbs flying, cozy lighting"
+    }
+  ]
+}

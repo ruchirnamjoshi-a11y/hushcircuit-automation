@@ -1,0 +1,72 @@
+{
+  "id": "mila-mouses-singing-thimble",
+  "title": "Mila Mouse's Singing Thimble",
+  "description": "Mila finds a tiny metal thimble that makes music when she hums, teaching her that her small voice is worth sharing.",
+  "tags": [
+    "mouse",
+    "music",
+    "confidence",
+    "thimble",
+    "bedtime",
+    "story"
+  ],
+  "character_reference": "a tiny grey field mouse with oversized round ears and a polka-dot yellow handkerchief tied around her neck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Mila Mouse was so quiet that nobody ever heard her speak when the forest animals gathered around the old oak tree.",
+      "on_screen_text": "THE QUIET MOUSE",
+      "duration_hint": 11.7,
+      "visual": "tiny grey mouse hiding behind large green fern leaf looking shyly at distant group of animals in sunny glade"
+    },
+    {
+      "narration": "While digging in the garden, she uncovered a shiny silver sewing thimble half-buried in the damp soil.",
+      "on_screen_text": "BURIED TREASURE",
+      "duration_hint": 10.4,
+      "visual": "mouse digging with tiny paws unearthing polished silver thimble close-up macro perspective bright morning dew drops"
+    },
+    {
+      "narration": "She tapped it gently with her fingernail, and a lovely, bell-like chime rang out through the tall grass.",
+      "on_screen_text": "A CLEAR CHIME",
+      "duration_hint": 10.4,
+      "visual": "mouse tapping silver thimble with twig wide-eyed with wonder sound wave visual ripples in soft focus meadow background"
+    },
+    {
+      "narration": "Curious, Mila hummed a gentle tune into the open end, and the thimble amplified her voice into a sweet melody.",
+      "on_screen_text": "SINGING ALONG",
+      "duration_hint": 11.3,
+      "visual": "mouse holding thimble up to mouth singing softly glowing musical notes floating upward into the air close up"
+    },
+    {
+      "narration": "The nearby squirrels stopped gathering acorns and turned their heads, listening to the enchanting little song.",
+      "on_screen_text": "ATTENTION PLEASE",
+      "duration_hint": 10.4,
+      "visual": "two fluffy squirrels pausing mid-stride turning ears forward listening attentively in sunlit forest clearing"
+    },
+    {
+      "narration": "Instead of hiding, Mila took a deep breath and sang a little louder, letting her true voice shine through the thimble.",
+      "on_screen_text": "FINDING HER VOICE",
+      "duration_hint": 11.7,
+      "visual": "mouse standing proudly on smooth river stone singing into silver thimble chest puffed out confident posture bright lighting"
+    },
+    {
+      "narration": "All the animals cheered for her performance, clapping their paws and praising her wonderful musical talent.",
+      "on_screen_text": "CHEERS AND CLAPS",
+      "duration_hint": 10.4,
+      "visual": "forest animals clapping paws and smiling warmly down at tiny mouse who is bowing gracefully in center frame"
+    },
+    {
+      "narration": "Mila realized that even the smallest voice can fill the whole forest with joy when you dare to share it.",
+      "on_screen_text": "SMALL YET MIGHTY",
+      "duration_hint": 11.3,
+      "visual": "mouse walking happily along forest path holding silver thimble sunset rays filtering through trees peaceful mood"
+    },
+    {
+      "narration": "Be sure to follow along for more sweet bedtime stories delivered right to your feed every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.4,
+      "visual": "magical woodland nook under twilight sky twinkling fireflies drifting gently past cozy animal burrow entrance"
+    }
+  ]
+}

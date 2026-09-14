@@ -1,0 +1,59 @@
+{
+  "id": "tinku-mendhak-aur-barish-ki-boond",
+  "title": "टिंकू मेंढक और बारिश की बूंद",
+  "description": "एक छोटे मेंढक की कहानी जो पहली बारिश की बूंद के साथ गाना सीखता है।",
+  "tags": [
+    "hindi stories",
+    "frog story",
+    "rain song",
+    "kids moral",
+    "bedtime"
+  ],
+  "character_reference": "a bright lime-green frog with large golden eyes and tiny webbed feet",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "गर्मी के दिनों में तालाब का पानी सूख रहा था। टिंकू मेंढक उदास होकर एक बड़े पत्ते पर बैठा था।",
+      "on_screen_text": "सूखा तालाब",
+      "duration_hint": 7.0,
+      "visual": "close-up of a sad green frog sitting on a dry withered lotus leaf near cracked mud"
+    },
+    {
+      "narration": "तभी आसमान में काले-काले बादल घिर आए और ठंडी हवा चलने लगी। मौसम एकदम बदल गया।",
+      "on_screen_text": "काले बादल",
+      "duration_hint": 7.0,
+      "visual": "wide shot of dark grey monsoon clouds gathering over a peaceful green valley"
+    },
+    {
+      "narration": "आसमान से पानी की एक बड़ी बूंद सीधी टिंकू के सिर पर आकर गिरी। टप! आवाज़ सुनकर वह चौंक गया।",
+      "on_screen_text": "पहली बूंद",
+      "duration_hint": 7.5,
+      "visual": "macro shot of a water droplet splashing right on top of the frog's head"
+    },
+    {
+      "narration": "टिंकू खुशी से उछल पड़ा और टर-टर करके गाने लगा। उसकी आवाज़ सुनकर बाकी मेंढक भी बाहर आ गए।",
+      "on_screen_text": "खुशी का गीत",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the frog leaping joyfully into the air as gentle rain begins to fall"
+    },
+    {
+      "narration": "झमाझम बारिश होने लगी और पूरा तालाब फिर से पानी से भर गया। पौधे भी खुशी से झूमने लगे।",
+      "on_screen_text": "झमाझम बारिश",
+      "duration_hint": 7.5,
+      "visual": "wide view of heavy rain ripples forming across a refreshing blue pond surrounded by green ferns"
+    },
+    {
+      "narration": "टिंकू अपने दोस्तों के साथ बारिश के पानी में तैरने लगा। उसका हर दिन अब संगीत से भर गया था।",
+      "on_screen_text": "नया आनंद",
+      "duration_hint": 7.5,
+      "visual": "close-up of the happy frog swimming with water splashes glistening in the soft daylight"
+    },
+    {
+      "narration": "मुश्किल समय के बाद सुख की धूप ज़रूर आती है। ऐसी ही और कहानियों के लिए हमें फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "close-up of a vibrant rainbow arching over a lush green wetland under a clear sky"
+    }
+  ]
+}

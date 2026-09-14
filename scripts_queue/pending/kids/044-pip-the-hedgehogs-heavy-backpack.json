@@ -1,0 +1,72 @@
+{
+  "id": "pip-the-hedgehogs-heavy-backpack",
+  "title": "Pip the Hedgehog's Heavy Backpack",
+  "description": "Pip carries too many unnecessary things on his walk, learning that letting go of heavy worries makes the journey lighter.",
+  "tags": [
+    "hedgehog",
+    "backpack",
+    "letting-go",
+    "nature",
+    "bedtime",
+    "story"
+  ],
+  "character_reference": "a small brown hedgehog with a tiny blue backpack and golden spectacles perched on his nose",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Pip the hedgehog packed his little blue backpack with smooth stones, heavy pinecones, and shiny acorns.",
+      "on_screen_text": "PACKING UP",
+      "duration_hint": 10.9,
+      "visual": "small hedgehog stuffing heavy acorns and round stones into tiny blue backpack on mossy table close up"
+    },
+    {
+      "narration": "He wanted to be ready for any adventure, but the bag felt heavier than a basket of boulders.",
+      "on_screen_text": "SO HEAVY",
+      "duration_hint": 10.0,
+      "visual": "hedgehog slouching under weight of oversized backpack walking slowly on dirt path strain on face"
+    },
+    {
+      "narration": "Before long, his little legs began to wobble and he had to sit down on a soft patch of clover.",
+      "on_screen_text": "A TIRED REST",
+      "duration_hint": 11.3,
+      "visual": "exhausted hedgehog sitting down on clover patch wiping sweat from forehead heavy bag resting on ground"
+    },
+    {
+      "narration": "Wise old Badger walked by and suggested that Pip didn't need to carry the whole forest on his back.",
+      "on_screen_text": "WISE WORDS",
+      "duration_hint": 10.9,
+      "visual": "large friendly badger looking down kindly at tired hedgehog in sunny woodland glade soft focus"
+    },
+    {
+      "narration": "Pip unzipped the bag and let the heavy stones tumble out into the soft grass, keeping only a single feather.",
+      "on_screen_text": "LIGHTENING THE LOAD",
+      "duration_hint": 11.7,
+      "visual": "hedgehog unpacking heavy rocks out of backpack leaving only light feather smiling with relief"
+    },
+    {
+      "narration": "When he stood back up, he felt as light as a gentle breeze drifting through the tree branches.",
+      "on_screen_text": "FEELING LIGHT",
+      "duration_hint": 10.4,
+      "visual": "hedgehog bouncing up energetically on path backpack looking flat and light happy expression"
+    },
+    {
+      "narration": "He skipped down the remainder of the trail, enjoying the sunshine without any extra burdens.",
+      "on_screen_text": "HAPPY TRAILS",
+      "duration_hint": 10.0,
+      "visual": "hedgehog skipping happily down sunny forest trail dappled light through green leaves wide shot"
+    },
+    {
+      "narration": "Pip learned that letting go of unnecessary worries makes every journey joyful and free.",
+      "on_screen_text": "FREE TO ROAM",
+      "duration_hint": 9.6,
+      "visual": "hedgehog resting peacefully on green moss looking at sunset sky calm bedtime atmosphere"
+    },
+    {
+      "narration": "Hit subscribe and follow along for more cozy bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "cozy burrow interior warm lamplight glowing softly on miniature wooden bed peaceful night"
+    }
+  ]
+}

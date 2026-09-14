@@ -1,0 +1,65 @@
+{
+  "id": "the-last-composition",
+  "title": "The Last Composition",
+  "description": "An aging classical pianist loses her hearing in one ear and learns to compose music through the vibrations felt in her fingertips.",
+  "tags": [
+    "music",
+    "loss",
+    "aging",
+    "artistry",
+    "perseverance"
+  ],
+  "character_reference": "an older woman with silver hair pulled back in a neat bun, wearing a dark velvet shawl and a silver brooch",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The audiologist's office was agonizingly quiet. The doctor laid his pen down and confirmed my worst fear.",
+      "on_screen_text": "THE DIAGNOSIS",
+      "duration_hint": 13.0,
+      "visual": "Close up of an older woman looking down at her hands resting nervously on her lap inside a sterile medical examination room, soft muted lighting, emotional weight"
+    },
+    {
+      "narration": "For fifty years, classical piano had been my entire life, my voice, and my absolute refuge from the world.",
+      "on_screen_text": "DECADE OF MELODIES",
+      "duration_hint": 13.0,
+      "visual": "Low angle view of polished black grand piano keys reflecting warm overhead lamp light in a quiet, book-lined living room, elegant and timeless"
+    },
+    {
+      "narration": "When I struck the middle C key, the right side of the room was completely silent. Only a dull, distant thud remained.",
+      "on_screen_text": "SILENT KEYS",
+      "duration_hint": 14.0,
+      "visual": "Close up of trembling fingers pressing down on a single ivory piano key, dramatic shallow focus on the hammer mechanism inside the wooden casing"
+    },
+    {
+      "narration": "I wanted to close the keyboard lid forever and walk away from the instrument that now mocked my broken hearing.",
+      "on_screen_text": "THE TEMPTATION",
+      "duration_hint": 13.0,
+      "visual": "An older woman gently resting both hands on top of a closed wooden piano lid in an empty, shadowed room, poignant solitude"
+    },
+    {
+      "narration": "Instead, I placed my bare palms flat against the warm wooden soundboard and pressed down hard on the bass notes.",
+      "on_screen_text": "FEELING THE SOUND",
+      "duration_hint": 13.0,
+      "visual": "Close up of hands pressed firmly against the varnished wooden soundboard of an upright piano, vibrations rippling through the air, moody cinematic lighting"
+    },
+    {
+      "narration": "The music didn't need my ears anymore. It traveled straight through my fingertips, vibrating deep within my bones.",
+      "on_screen_text": "A NEW LANGUAGE",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of an older woman closing her eyes in deep concentration while playing chords with absolute focus, dramatic side light highlighting facial features"
+    },
+    {
+      "narration": "Sometimes we have to lose what we relied upon to discover the deeper, truer strength we always possessed.",
+      "on_screen_text": "TRUE RESILIENCE",
+      "duration_hint": 13.0,
+      "visual": "Wide shot of a grand piano bathed in golden hour light streaming through lace curtains, peaceful and triumphant ambiance"
+    },
+    {
+      "narration": "If you appreciate stories about finding light in unexpected places, follow along for more daily tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "Close up of hands turning the cream-colored pages of an old blank music manuscript book on a wooden desk, soft warm pencil light"
+    }
+  ]
+}

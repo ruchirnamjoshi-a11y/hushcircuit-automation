@@ -1,0 +1,65 @@
+{
+  "id": "the-quiet-corner",
+  "title": "The Quiet Corner",
+  "description": "An introvert finds the courage to carve out personal time in a household that demands her constant attention.",
+  "tags": [
+    "boundaries",
+    "introvert",
+    "self-care",
+    "family",
+    "peace"
+  ],
+  "character_reference": "a woman in her mid-forties with short salt-and-pepper hair, wearing an oversized knit cream sweater and round glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "By seven in the evening, the house was a symphony of competing requests, running footsteps, and background noise that echoed in my chest.",
+      "on_screen_text": "THE NOISE",
+      "duration_hint": 13.0,
+      "visual": "blurred interior of a cozy home living room with warm lamps casting long shadows across the floorboards"
+    },
+    {
+      "narration": "I used to absorb every single demand, keeping everyone else afloat while my own energy slipped away like water through cupped hands.",
+      "on_screen_text": "EMPTY WELL",
+      "duration_hint": 13.5,
+      "visual": "close-up of hands resting tiredly on a kitchen counter, warm overhead glow reflecting on the surface"
+    },
+    {
+      "narration": "Tonight, I paused by the hallway mirror, took a slow breath, and made a decision that felt both terrifying and entirely necessary.",
+      "on_screen_text": "THE PAUSE",
+      "duration_hint": 12.6,
+      "visual": "reflection in a vintage brass-framed mirror showing a calm, resolute gaze, soft ambient lighting"
+    },
+    {
+      "narration": "I walked past the living room chatter, climbed the stairs to the little attic landing, and closed the door behind me.",
+      "on_screen_text": "UPSTAIRS",
+      "duration_hint": 12.1,
+      "visual": "pov shot climbing wooden stairs toward a bright landing lit by a small round window"
+    },
+    {
+      "narration": "There was no television up here, no laundry waiting to be folded, and no one asking where the car keys were hidden.",
+      "on_screen_text": "EMPTY SPACE",
+      "duration_hint": 12.6,
+      "visual": "pan across an empty wooden floorboards corner with a comfortable armchair and a stack of old books"
+    },
+    {
+      "narration": "I sat in the old armchair by the window, wrapping my fingers around a mug of herbal tea that stayed hot for more than two minutes.",
+      "on_screen_text": "WARM TEA",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands holding a ceramic mug with wisps of steam rising into the cool evening air"
+    },
+    {
+      "narration": "The world downstairs did not fall apart because I took twenty minutes to breathe. In fact, everything kept right on spinning.",
+      "on_screen_text": "STILLNESS",
+      "duration_hint": 12.1,
+      "visual": "silhouette of a person sitting peacefully by a window looking out at twilight trees against a purple sky"
+    },
+    {
+      "narration": "Protecting your peace is not selfish; it is how you keep your light burning. Follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "gentle smile looking out the window into the dusk, soft rim lighting highlighting the profile"
+    }
+  ]
+}
