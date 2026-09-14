@@ -30,14 +30,53 @@ from __future__ import annotations
 import os
 import re
 import subprocess
+import time
 from pathlib import Path
 
-from pipeline.ai_image import CloudflareQuotaExhausted, _call_cloudflare
+from pipeline.ai_image import CloudflareQuotaExhausted, CloudflareUnavailable, _call_cloudflare
 from pipeline.config import GEMINI_API_KEY, HF_TOKEN
 from pipeline.ffmpeg_utils import build_ass_karaoke_captions, concat_clips, probe_duration, run_ffmpeg
-from pipeline.textcard import generate_image_background_clip
+from pipeline.textcard import generate_image_background_clip, make_gradient_image
 
 RESOLUTION = (1280, 720)
+
+CLOUDFLARE_RETRIES = 3
+CLOUDFLARE_RETRY_DELAY_SECONDS = 2
+CLOUDFLARE_RATE_LIMIT_RETRY_DELAY_SECONDS = 20
+
+
+def _call_cloudflare_with_retry(
+    prompt: str, seed: int | None = None, reference_image_bytes: bytes | None = None,
+    resolution: tuple[int, int] = RESOLUTION, label: str = "",
+):
+    """Retries _call_cloudflare on transient failures -- unlike the story
+    tracks' generate_scene_image_raw, every call in this module used to be
+    naked (no retry at all), so a single timeout or transient 5xx crashed
+    the whole run even after every earlier stage (lyrics, song synthesis,
+    transcription) had already succeeded. Mirrors generate_scene_image_
+    raw's proven retry/backoff shape. CloudflareQuotaExhausted is NOT
+    retried -- every remaining call this run would hit the same wall until
+    the daily reset, so it propagates immediately for the caller to handle
+    the same way run_daily.py already does for story tracks."""
+    last_exc: Exception | None = None
+    for attempt in range(CLOUDFLARE_RETRIES + 1):
+        try:
+            return _call_cloudflare(prompt, seed=seed, reference_image_bytes=reference_image_bytes, resolution=resolution)
+        except CloudflareQuotaExhausted:
+            raise
+        except Exception as e:
+            last_exc = e
+            suffix = f" ({label})" if label else ""
+            print(f"[manifestation] Cloudflare attempt {attempt + 1}/{CLOUDFLARE_RETRIES + 1} failed{suffix}: {e}")
+            if attempt < CLOUDFLARE_RETRIES:
+                is_rate_limited = getattr(e, "response", None) is not None and e.response.status_code == 429
+                if is_rate_limited:
+                    retry_after = e.response.headers.get("Retry-After")
+                    delay = float(retry_after) if retry_after else CLOUDFLARE_RATE_LIMIT_RETRY_DELAY_SECONDS
+                else:
+                    delay = CLOUDFLARE_RETRY_DELAY_SECONDS
+                time.sleep(delay)
+    raise CloudflareUnavailable(f"Cloudflare stayed unavailable after {CLOUDFLARE_RETRIES} retries: {last_exc}") from last_exc
 SONG_SEED = 4242  # fixed per-run seed for the reference portrait + every
                    # scene image -- same lever pipeline.ai_image uses for
                    # cross-scene consistency on the story tracks.
@@ -152,21 +191,42 @@ def match_words_to_lines(
 
 
 def generate_character_reference(character_description: str, out_path: Path) -> Path:
+    # No gradient fallback here (unlike generate_scene_image below): every
+    # scene's image-to-image conditioning depends on this ONE portrait, so
+    # a gradient "reference" would degrade every single scene, not just
+    # one. Retries, then propagates CloudflareUnavailable for the caller
+    # to skip this track and retry next run instead.
     prompt = (
         f"{STYLE_PREFIX}A confident portrait of {character_description}, "
         f"standing outdoors in soft natural daylight, calm self-assured "
         f"expression, looking directly at the camera{STYLE_SUFFIX}"
     )
-    img = _call_cloudflare(prompt, seed=SONG_SEED, resolution=RESOLUTION)
+    img = _call_cloudflare_with_retry(prompt, seed=SONG_SEED, resolution=RESOLUTION, label="reference portrait")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     img.save(out_path)
     return out_path
 
 
 def generate_scene_image(scene_description: str, reference_bytes: bytes, out_path: Path, seed: int = SONG_SEED) -> Path:
+    # Falls back to a gradient for just THIS scene after exhausting
+    # retries (same degrade-gracefully strategy as the story tracks'
+    # generate_scene_image_raw) -- one gradient scene out of ~15 beats
+    # crashing the whole run. CloudflareQuotaExhausted still propagates
+    # immediately (see _call_cloudflare_with_retry): every remaining scene
+    # would hit the same wall, so there's no point falling back scene by
+    # scene -- the caller aborts the track the same way run_daily.py
+    # already does for story tracks hitting this.
     prompt = f"{STYLE_PREFIX}{scene_description}{STYLE_SUFFIX}"
-    img = _call_cloudflare(prompt, seed=seed, reference_image_bytes=reference_bytes, resolution=RESOLUTION)
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        img = _call_cloudflare_with_retry(
+            prompt, seed=seed, reference_image_bytes=reference_bytes, resolution=RESOLUTION,
+            label=scene_description[:40],
+        )
+    except CloudflareUnavailable as e:
+        print(f"[manifestation] scene image unavailable after retries, using gradient fallback: {e}")
+        make_gradient_image(out_path, RESOLUTION)
+        return out_path
     img.save(out_path)
     return out_path
 

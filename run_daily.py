@@ -57,6 +57,7 @@ from pathlib import Path
 from typing import Optional
 
 from pipeline.ai_image import (
+    CloudflareUnavailable,
     REFERENCE_PORTRAIT_SCENE,
     CloudflareQuotaExhausted,
     fit_scene_image,
@@ -606,6 +607,16 @@ def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optio
             # track, retry next scheduled run" handling as the quota-
             # exhaustion cases above, not a hard failure worth an alert.
             print(f"[{track.key}] Gemini unavailable: {e}")
+            print(f"[{track.key}] Aborting this track — will retry on the next scheduled run.")
+        except CloudflareUnavailable as e:
+            # manifestation's character-reference call stayed unreachable
+            # through every retry (a scene image failing this way instead
+            # falls back to a gradient for just that scene -- see
+            # pipeline.manifestation_video.generate_scene_image -- so this
+            # only fires for the one call with no safe degraded option).
+            # Confirmed in production (2026-09-10): a 400 and two 60s read
+            # timeouts, each an uncaught crash before this existed.
+            print(f"[{track.key}] Cloudflare unavailable: {e}")
             print(f"[{track.key}] Aborting this track — will retry on the next scheduled run.")
         except Exception:
             any_failed = True
