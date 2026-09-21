@@ -1,0 +1,65 @@
+{
+  "id": "oliver-otters-puddle-song",
+  "title": "Oliver Otter's Puddle Song",
+  "description": "Oliver Otter worries his singing voice sounds too squeaky until he learns how happy it makes the river frogs.",
+  "tags": [
+    "music",
+    "otter",
+    "river",
+    "singing",
+    "bedtime"
+  ],
+  "character_reference": "a playful young river otter with sleek brown fur, a light cream belly, and webbed paws splashing in shallow water",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Oliver floated lazily on his back in the calm river current, humming a quiet tune into the twilight air.",
+      "on_screen_text": "HUMMING A TUNE",
+      "duration_hint": 7.5,
+      "visual": "close-up of a sleek furry snout pointed upward with closed eyes while floating on gentle ripples"
+    },
+    {
+      "narration": "He stopped suddenly, worrying his voice was much too high and squeaky compared to the deep bullfrogs.",
+      "on_screen_text": "SQUEAKY VOICE",
+      "duration_hint": 7.0,
+      "visual": "expression of doubt with whiskers twitching while looking down at the moving water reflection"
+    },
+    {
+      "narration": "A tiny green frog hopped onto a floating lily pad and blinked its big golden eyes at him.",
+      "on_screen_text": "A GREEN FRIEND",
+      "duration_hint": 6.5,
+      "visual": "macro shot of a wet green frog sitting closely on a broad circular leaf pad"
+    },
+    {
+      "narration": "Instead of swimming away, the frog let out a gentle ribbit that harmonized perfectly with his melody.",
+      "on_screen_text": "HARMONY",
+      "duration_hint": 7.0,
+      "visual": "side angle showing the otter smiling broadly while the green frog tilts its head in rhythm"
+    },
+    {
+      "narration": "Encouraged, Oliver sang a little louder, turning his ripples into a joyful splashing song.",
+      "on_screen_text": "JOYFUL SPLASHING",
+      "duration_hint": 6.5,
+      "visual": "dynamic action shot of webbed paws gently patting the water surface sending glittering drops into the air"
+    },
+    {
+      "narration": "More frogs joined in the chorus until the entire riverbank echoed with a sweet bedtime lullaby.",
+      "on_screen_text": "RIVER CHORUS",
+      "duration_hint": 7.0,
+      "visual": "wide serene river view reflecting pale stars and glowing fireflies along the grassy banks"
+    },
+    {
+      "narration": "Our unique voice is always welcome in the great chorus of life.",
+      "on_screen_text": "UNIQUE VOICE",
+      "duration_hint": 6.0,
+      "visual": "peaceful twilight scene of the otter resting his chin on a smooth mossy rock"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm glowing close-up of a friendly woodland creature waving happily toward the camera"
+    }
+  ]
+}

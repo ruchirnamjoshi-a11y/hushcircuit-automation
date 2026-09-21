@@ -1,0 +1,65 @@
+{
+  "id": "the-second-hand-violin",
+  "title": "The Second-Hand Violin",
+  "description": "An adult picks up the violin she abandoned in childhood, learning to embrace the squeaks and sour notes.",
+  "tags": [
+    "music",
+    "violin",
+    "hobbies",
+    "adult-learning",
+    "resilience"
+  ],
+  "character_reference": "a woman with shoulder-length chestnut hair and round wire-rimmed glasses wearing an oversized cream cable-knit sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The dusty wooden case had sat in the back of her closet for twenty years, a monument to an abandoned childhood dream.",
+      "on_screen_text": "THE DUSTY CASE",
+      "duration_hint": 13.9,
+      "visual": "Close-up of a weathered vintage violin case resting on a closet floor with dust motes floating in a beam of light"
+    },
+    {
+      "narration": "She unlatched the rusty metal clips, revealing the golden-brown instrument resting quietly in faded velvet lining.",
+      "on_screen_text": "OPENING THE LID",
+      "duration_hint": 12.6,
+      "visual": "Close-up of hands unbuckling metal latches on a dark wood instrument case lined with faded green velvet"
+    },
+    {
+      "narration": "When she tucked the violin under her chin, her muscles remembered the shape, but her fingers felt stiff and hesitant.",
+      "on_screen_text": "MUSCLE MEMORY",
+      "duration_hint": 13.0,
+      "visual": "Close-up of a wooden violin scroll and chin rest against a woolen collar with soft indoor background blur"
+    },
+    {
+      "narration": "She drew the bow across the strings, and the resulting sound was a sharp, screeching groan that made her wince.",
+      "on_screen_text": "THE SOUR NOTE",
+      "duration_hint": 13.5,
+      "visual": "Close-up of a horsehair bow resting on steel violin strings with warm light catching the polished wood grain"
+    },
+    {
+      "narration": "Her inner critic immediately whispered that she was too old to start over, that beginners belong in children's rooms.",
+      "on_screen_text": "INNER CRITIC",
+      "duration_hint": 13.0,
+      "visual": "Thoughtful expression with head bowed slightly in quiet concentration under warm desk lamp illumination"
+    },
+    {
+      "narration": "Instead of putting the instrument away, she laughed out loud, adjusted her grip, and tried the scale once more.",
+      "on_screen_text": "A LAUGH AND A TRY",
+      "duration_hint": 13.5,
+      "visual": "Close-up of fingers pressing down on polished fingerboard with a genuine smile starting to form"
+    },
+    {
+      "narration": "By the third attempt, a sweet, clear melody emerged, trembling slightly in the quiet air of the room.",
+      "on_screen_text": "THE CLEAR NOTE",
+      "duration_hint": 13.5,
+      "visual": "Close-up of a wooden bridge and fine tuners with soft afternoon light illuminating the instrument's warm varnish"
+    },
+    {
+      "narration": "It is never too late to revive the music inside you. Follow along for more stories of rediscovery.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.3,
+      "visual": "A violin resting safely on a wooden stand beside a window with green houseplants bathed in golden hour light"
+    }
+  ]
+}

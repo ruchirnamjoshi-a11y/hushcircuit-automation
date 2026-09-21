@@ -1,0 +1,65 @@
+{
+  "id": "barnaby-bears-lost-button",
+  "title": "Barnaby Bear's Lost Button",
+  "description": "Barnaby Bear retraces his steps through the blueberry patch to find his shiny brass coat button.",
+  "tags": [
+    "bears",
+    "buttons",
+    "forest",
+    "search",
+    "bedtime"
+  ],
+  "character_reference": "a small round honey-colored bear cub with fluffy rounded ears and a chunky green sweater with big brass buttons",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Barnaby looked down at his green sweater and noticed one shiny brass button was missing from the front.",
+      "on_screen_text": "MISSING BUTTON",
+      "duration_hint": 7.0,
+      "visual": "close-up of furry paws touching an empty thread loop on a knitted green garment"
+    },
+    {
+      "narration": "He retraced his paw prints back through the dewy blueberry bushes where he had been foraging earlier.",
+      "on_screen_text": "TRACING STEPS",
+      "duration_hint": 7.0,
+      "visual": "low angle shot following small bear tracks through dark soil and tangled green blueberry leaves"
+    },
+    {
+      "narration": "The bushes were thick and dark, making it tricky to spot anything small hidden in the rich soil.",
+      "on_screen_text": "THICK BUSHES",
+      "duration_hint": 6.5,
+      "visual": "peering through dense leafy branches with dark shadows hiding the forest floor"
+    },
+    {
+      "narration": "A helpful blue jay landed on a branch above, chirping softly and pointing downward with its beak.",
+      "on_screen_text": "A HELPFUL BIRD",
+      "duration_hint": 7.0,
+      "visual": "close-up of a bright blue feathered bird tilting its head toward a patch of dark earth"
+    },
+    {
+      "narration": "Barnaby peered beneath a fallen fern frond and spotted a golden gleam reflecting the fading light.",
+      "on_screen_text": "GOLDEN GLEAM",
+      "duration_hint": 7.0,
+      "visual": "macro view of a shiny round metal disc resting among dark pine needles"
+    },
+    {
+      "narration": "With a happy chuckle, he carefully picked it up and tucked it safely into his sweater pocket.",
+      "on_screen_text": "SAFE AND SOUND",
+      "duration_hint": 7.0,
+      "visual": "close-up of paws sliding a small metallic object into a knitted pocket with a contented smile"
+    },
+    {
+      "narration": "Every lost treasure can be found when we take our time to look.",
+      "on_screen_text": "PATIENT SEARCH",
+      "duration_hint": 6.0,
+      "visual": "cozy den interior glowing with warm amber lamplight as the little bear yawns sleepily"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm glowing close-up of a friendly woodland creature waving happily toward the camera"
+    }
+  ]
+}

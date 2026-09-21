@@ -1,0 +1,65 @@
+{
+  "id": "golu-bhalu-or-shahad-ka-matka",
+  "title": "गोलू भालू और शहद का मटका",
+  "description": "एक लालची भालू को सबक मिलता है जब वह जंगल में मिला शहद का मटका अकेले ही चट कर जाना चाहता है।",
+  "tags": [
+    "hindi stories",
+    "moral kahani",
+    "greedy bear",
+    "kids moral",
+    "bedtime tales"
+  ],
+  "character_reference": "a chubby brown bear with round fluffy ears and a yellow striped apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "गोलू भालू को जंगल के पुराने पेड़ के नीचे शहद से भरा एक मिट्टी का मटका मिला।",
+      "on_screen_text": "शहद का मटका",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a clay pot resting on roots beneath a massive tree trunk, golden honey dripping down the side, rich earthy tones"
+    },
+    {
+      "narration": "उसने सोचा कि वह इस मीठे शहद को किसी के साथ नहीं बांटेगा और अकेले खाएगा।",
+      "on_screen_text": "अकेले खाना",
+      "duration_hint": 7.0,
+      "visual": "close-up of wide excited eyes staring greedily at the pot with paws rubbed together, mischievous grin, soft forest background blur"
+    },
+    {
+      "narration": "जैसे ही उसने मटके में हाथ डाला, बहुत सारी मधुमक्खियां वहां भिनभिनाने लगीं।",
+      "on_screen_text": "मधुमक्खियों का हमला",
+      "duration_hint": 6.5,
+      "visual": "medium shot pulling paw back in surprise as a buzzing swarm of small cartoon bees circles around the clay pot, dynamic motion blur"
+    },
+    {
+      "narration": "डर के मारे गोलू ने मटका छोड़ दिया और वहां से भागने लगा।",
+      "on_screen_text": "भागना पड़ा",
+      "duration_hint": 6.0,
+      "visual": "action shot running hastily through ferns and bushes with arms flailing, panicked expression, low angle camera capturing the fast movement"
+    },
+    {
+      "narration": "कुछ दूर जाकर वह थक गया और उदास होकर एक पेड़ के सहारे बैठ गया।",
+      "on_screen_text": "थक कर बैठना",
+      "duration_hint": 6.5,
+      "visual": "medium shot slumping down dejectedly against a tree trunk, sighing with a disappointed face, soft overcast lighting"
+    },
+    {
+      "narration": "तभी उसके नन्हे दोस्तों ने आकर उसे अपने फल बांटे और उसे सांत्वना दी।",
+      "on_screen_text": "दोस्तों का साथ",
+      "duration_hint": 7.0,
+      "visual": "wide shot of smaller woodland animals offering colorful berries to the seated bear, friendly gestures, warm sunlight breaking through leaves"
+    },
+    {
+      "narration": "गोलू समझ गया कि बांटकर खाने से मिलने वाली खुशी सबसे बड़ी होती है।",
+      "on_screen_text": "बांटकर खाना",
+      "duration_hint": 6.5,
+      "visual": "close-up sharing a sweet smile while happily munching on a colorful berry, gentle and contented expression, glowing warm background"
+    },
+    {
+      "narration": "ऐसी ही और प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "medium shot waving paws cheerfully toward the viewer, bright forest glade setting with colorful wildflowers blooming around"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "theo-badgers-starlight-painting",
+  "title": "Theo Badger's Starlight Painting",
+  "description": "Theo Badger worries his nighttime artwork isn't bright enough until his firefly friends show him the beauty of gentle glows.",
+  "tags": [
+    "bedtime",
+    "art",
+    "fireflies",
+    "confidence",
+    "animals"
+  ],
+  "character_reference": "a small chubby badger with soft gray fur, white facial stripes, and a bright yellow painter's apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Deep in the whispering forest, Theo sat by his hollow stump with a palette of dark blue and purple paint.",
+      "on_screen_text": "THE DARK CANVAA",
+      "duration_hint": 7.0,
+      "visual": "close-up low angle of the protagonist holding a tiny wooden brush over a dark canvas resting on a mossy log at dusk"
+    },
+    {
+      "narration": "He dipped his brush into the indigo paint, wishing his picture could shine as brightly as the daytime sun.",
+      "on_screen_text": "WISHING FOR LIGHT",
+      "duration_hint": 7.0,
+      "visual": "medium shot looking down at the paint pots reflecting pale twilight light while the protagonist frowns thoughtfully"
+    },
+    {
+      "narration": "Suddenly, a friendly cluster of glowing fireflies landed softly on the edge of his wooden palette.",
+      "on_screen_text": "GLOWING VISITORS",
+      "duration_hint": 6.5,
+      "visual": "macro view of bright amber insect lights illuminating the paws and the edge of the wooden board"
+    },
+    {
+      "narration": "They danced across the dark paper, leaving tiny trails of warm golden light wherever their little feet stepped.",
+      "on_screen_text": "DANCING LIGHTS",
+      "duration_hint": 7.0,
+      "visual": "overhead dynamic shot showing sparkling trails of yellow light winding across deep blue paper"
+    },
+    {
+      "narration": "Theo gasped in wonder as the dark night painting suddenly transformed into a sparkling galaxy of gentle stars.",
+      "on_screen_text": "A STARRY WONDER",
+      "duration_hint": 7.0,
+      "visual": "wide-eyed joyful facial expression illuminated entirely by the soft glow rising from the artwork below"
+    },
+    {
+      "narration": "He realized that the night did not need the loud sun to be beautiful, because quiet glows have magic of their own.",
+      "on_screen_text": "QUIET MAGIC",
+      "duration_hint": 7.5,
+      "visual": "soft profile shot of the protagonist smiling peacefully while watching floating insects drift toward the starry canopy"
+    },
+    {
+      "narration": "Even the softest light can make the darkest night feel like home.",
+      "on_screen_text": "GENTLE GLOWS",
+      "duration_hint": 5.0,
+      "visual": "cozy wide shot of the illuminated stump surrounded by tall ferns under a quiet twilight sky"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm glowing close-up of a friendly woodland creature waving happily toward the camera"
+    }
+  ]
+}

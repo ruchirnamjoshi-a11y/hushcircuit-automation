@@ -1,0 +1,59 @@
+{
+  "id": "the-porch-light",
+  "title": "The Porch Light",
+  "description": "A retired carpenter decides to spend his twilight years repairing broken front steps for neighbors who can no longer manage the work themselves.",
+  "tags": [
+    "woodworking",
+    "community",
+    "retirement",
+    "kindness",
+    "neighborhood"
+  ],
+  "character_reference": "an older man in his late fifties with a thick white beard and weather-lined face, wearing a plaid flannel shirt and a canvas tool belt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "When the town council bought my workshop for a parking lot, they offered me a gold watch and a handshake. I took my grandfather's chisel set instead and walked away.",
+      "on_screen_text": "THE LAST DAY",
+      "duration_hint": 13.5,
+      "visual": "close up of calloused hands placing a set of old wooden-handled chisels into a worn leather tool roll on a workbench"
+    },
+    {
+      "narration": "Mrs. Gable next door had been stepping over her rotting front porch board with a cane for two winters. I didn't wait for her to ask; I just showed up with my crowbar at dawn.",
+      "on_screen_text": "THE ROTTEN STEP",
+      "duration_hint": 15.0,
+      "visual": "close up of a metal crowbar prying up a decayed, moss-covered pine floorboard from a rustic outdoor porch"
+    },
+    {
+      "narration": "Measuring twice and cutting once was a habit drilled into me by my father, but now the measurements didn't have to meet building codes. They just had to keep a neighbor safe.",
+      "on_screen_text": "SAFE PASSAGE",
+      "duration_hint": 15.0,
+      "visual": "close up of a yellow carpenter's pencil marking a straight line across a thick cedar plank outdoors in bright morning light"
+    },
+    {
+      "narration": "Working with pressure-treated lumber smells like pine resin and hard labor. Each hammered nail felt like an anchor securing me deeper into the neighborhood I had ignored for forty years.",
+      "on_screen_text": "HAMMER AND NAIL",
+      "duration_hint": 15.5,
+      "visual": "close up of a steel hammer striking a galvanized nail head into fresh golden wood, wood shavings scattering around"
+    },
+    {
+      "narration": "When Mrs. Gable stepped out onto her new solid pine landing without her cane wobbling, she handed me a mug of hot black coffee without a word. That was better than any paycheck.",
+      "on_screen_text": "THE TEST WALK",
+      "duration_hint": 16.0,
+      "visual": "medium shot of an elderly woman stepping carefully onto a freshly built wooden porch, holding a steaming mug in her hands"
+    },
+    {
+      "narration": "Retirement isn't an ending where you sit back and watch the world go by; it's a chance to finally fix what is broken right outside your front door.",
+      "on_screen_text": "FIXING WHAT'S NEAR",
+      "duration_hint": 14.5,
+      "visual": "wide shot of a man carrying a wooden toolbox across a sunlit suburban lawn toward a small cottage with blooming flower beds"
+    },
+    {
+      "narration": "If you believe that small acts of craftsmanship can rebuild a community, follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.5,
+      "visual": "warm portrait of a smiling older carpenter in a flannel shirt, resting against a wooden porch railing in golden hour light"
+    }
+  ]
+}

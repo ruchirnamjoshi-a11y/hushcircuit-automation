@@ -1,0 +1,53 @@
+{
+  "id": "the-climbing-hold",
+  "title": "The Climbing Hold",
+  "description": "A beginner bouldering enthusiast conquers a difficult overhang route after multiple falls.",
+  "tags": [
+    "climbing",
+    "bouldering",
+    "sports",
+    "perseverance",
+    "fitness"
+  ],
+  "character_reference": "an athletic young woman with short curly brown hair, chalk dust on her hands, and a bright teal athletic tank top",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My fingers slipped off the overhang route for the fifth time today, sending me swinging into the padded mats below.",
+      "on_screen_text": "THE FIFTH FALL",
+      "duration_hint": 9.6,
+      "visual": "medium action shot of a climber dropping onto thick blue gym mats, chalk dust puffing into the air, indoor boulder gym interior"
+    },
+    {
+      "narration": "My forearms were burning and my grip strength was completely gone. I wanted to quit and go home.",
+      "on_screen_text": "RUNNING ON EMPTY",
+      "duration_hint": 9.1,
+      "visual": "close up of exhausted hands covered in white chalk resting on knees, heavy breathing, dramatic gym lighting"
+    },
+    {
+      "narration": "I watched an experienced climber tackle the same route, noticing how she shifted her hips closer to the wall instead of pulling with her arms.",
+      "on_screen_text": "WATCHING THE EXPERT",
+      "duration_hint": 10.4,
+      "visual": "over the shoulder view of a climber studying an intricate textured climbing wall covered in colorful resin holds, soft ambient light"
+    },
+    {
+      "narration": "Taking a deep breath, I stepped back onto the starting holds and trusted my footwork for one final attempt.",
+      "on_screen_text": "ONE MORE TRY",
+      "duration_hint": 9.1,
+      "visual": "low angle shot of a focused climber reaching up toward a yellow handhold on a steep vertical wall, muscles tensed"
+    },
+    {
+      "narration": "My feet found the friction they needed. I executed the tricky heel hook flawlessly and crested the top ledge.",
+      "on_screen_text": "THE CRUX",
+      "duration_hint": 9.6,
+      "visual": "dynamic medium shot of a climber hoisting herself over the top edge of a bouldering wall, triumph on her face, warm overhead lights"
+    },
+    {
+      "narration": "Progress is built on every single fall that taught you how to move better. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.6,
+      "visual": "cinematic portrait of a smiling athlete wiping sweat from her forehead with a towel inside a bright indoor gym, warm friendly lighting"
+    }
+  ]
+}

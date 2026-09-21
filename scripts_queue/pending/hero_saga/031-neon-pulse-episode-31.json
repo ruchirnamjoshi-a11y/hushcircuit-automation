@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-31",
+  "title": "Neon Pulse — Episode 31: Subterranean Coordinates",
+  "description": "Trapped in a subterranean crystal labyrinth, Kael decodes deep-sea coordinates while an unseen hunter closes in from the shadows.",
+  "tags": [
+    "original hero saga",
+    "action adventure",
+    "cyberpunk",
+    "superhero",
+    "mysterious"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 31,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The crystal chamber vibrates with a low, bone-deep hum as the deep-sea coordinates lock into my mind.",
+      "on_screen_text": "CRYSTAL RESONANCE",
+      "duration_hint": 4.5,
+      "visual": "close up of glowing amber energy pulsing across stone walls and jagged crystal formations inside a dark underground cavern"
+    },
+    {
+      "narration": "Footsteps echo from the upper tunnel, heavy and deliberate, cutting through the hum of the data crystals.",
+      "on_screen_text": "APPROACHING THREAT",
+      "duration_hint": 4.0,
+      "visual": "low angle shot looking up a steep stone staircase into deep shadows where metallic armor gleams faintly"
+    },
+    {
+      "narration": "I press my palm against the largest data crystal, forcing my amber energy to siphon the remaining coordinates before they fade.",
+      "on_screen_text": "SIPHONING DATA",
+      "duration_hint": 4.5,
+      "visual": "medium shot of outstretched hand touching a massive glowing crystal cluster with bright amber light swirling around fingertips"
+    },
+    {
+      "narration": "A massive energy blade slams into the cavern floor inches from my boots, shattering stone and sending sharp debris flying.",
+      "on_screen_text": "SUDDEN STRIKE",
+      "duration_hint": 4.5,
+      "visual": "dynamic action shot of glowing projectile weapon embedding deeply into rocky ground with dust clouds erupting outward"
+    },
+    {
+      "narration": "I spin around, holding my glowing hands up as a heavy mechanical silhouette steps out of the gloom.",
+      "on_screen_text": "THE PURSUER",
+      "duration_hint": 4.0,
+      "visual": "over the shoulder view facing a menacing heavily armored figure holding a glowing weapon inside a dark cavern"
+    },
+    {
+      "narration": "Commander Vance sent hounds to finish what the server hub started, but I am not planning to stick around.",
+      "on_screen_text": "NO SURRENDER",
+      "duration_hint": 4.5,
+      "visual": "determined facial expression with bright amber energy reflecting in eyes amid swirling dust and dim lighting"
+    },
+    {
+      "narration": "I fire an amber shockwave straight up into the ceiling supports, bringing down a cascade of rock to block the tunnel.",
+      "on_screen_text": "CAVE IN",
+      "duration_hint": 4.5,
+      "visual": "wide shot of powerful energy blast erupting upward toward a crumbling stone ceiling with falling boulders"
+    },
+    {
+      "narration": "Diving through a narrow fissure into the dark ocean trench below, I follow the glowing coordinates toward an unknown truth.",
+      "on_screen_text": "DEEP DESCENT",
+      "duration_hint": 4.5,
+      "visual": "silhouette of a figure diving forward through a jagged cavern opening into deep blue underwater depths"
+    },
+    {
+      "narration": "The journey continues, so follow along for more original hero adventures.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.0,
+      "visual": "cinematic moody lighting over dark subterranean water with faint glowing amber particles drifting in the current"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "the-last-composition",
+  "title": "The Last Composition",
+  "description": "A weary orchestral cellist takes a sabbatical in a coastal cabin, discovering that silence is often the best music of all.",
+  "tags": [
+    "music",
+    "burnout",
+    "solitude",
+    "coastal",
+    "recovery"
+  ],
+  "character_reference": "a man in his early fifties with thinning silver hair, wearing an oversized charcoal-gray turtleneck sweater and dark trousers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For twenty-five years, my life was dictated by metronomes, conductors, and the harsh glare of concert hall spotlights. When my bow snapped during the final movement in Vienna, I knew I was done.",
+      "on_screen_text": "THE SNAPPED BOW",
+      "duration_hint": 16.5,
+      "visual": "close up of a broken wooden violin bow with loose white horsehair resting on a dark velvet case under harsh stage lights"
+    },
+    {
+      "narration": "I rented a wind-battered cottage at the edge of the cliffs where the only audience was passing gulls and the crashing grey tide. I didn't open my instrument case for three whole weeks.",
+      "on_screen_text": "THE CLIFFSIDE COTTAGE",
+      "duration_hint": 15.5,
+      "visual": "wide shot of a small weather-beaten wooden cabin perched on a steep green cliff overlooking a vast choppy ocean under overcast skies"
+    },
+    {
+      "narration": "Instead of practicing scales, I sat on the porch wrapped in a wool blanket, listening to the rhythmic percussion of rain hitting the tin roof and the deep drone of distant foghorns.",
+      "on_screen_text": "LISTENING CLOSE",
+      "duration_hint": 15.5,
+      "visual": "medium shot of a person sitting in a wooden rocking chair on a porch, holding a ceramic mug with steam rising against a misty backdrop"
+    },
+    {
+      "narration": "One foggy afternoon, I finally opened the heavy leather case and lifted my cello out into the salt air. The wood felt colder and lighter than I remembered.",
+      "on_screen_text": "OPENING THE CASE",
+      "duration_hint": 13.5,
+      "visual": "close up of hands unlatching brass buckles on an old leather instrument case, revealing the rich polished wood of a cello inside"
+    },
+    {
+      "narration": "I didn't play a masterwork or a complex concerto. I simply drew a single, long note across the strings that vibrated in harmony with the low rumble of the ocean below.",
+      "on_screen_text": "THE FIRST NOTE",
+      "duration_hint": 14.5,
+      "visual": "close up of a wooden cello bridge and strings being touched by a bow, blurred ocean spray visible through a window behind"
+    },
+    {
+      "narration": "Music was never about perfection or applause; it was about resonance. For the first time in decades, I was playing just for myself.",
+      "on_screen_text": "TRUE RESONANCE",
+      "duration_hint": 13.5,
+      "visual": "medium shot of a man closing his eyes while playing a cello indoors, warm afternoon light catching the polished amber wood"
+    },
+    {
+      "narration": "If you enjoy quiet moments of personal renewal and finding peace away from the noise, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "peaceful cinematic portrait of a middle-aged man looking out a window toward the horizon with a calm, relieved expression"
+    }
+  ]
+}

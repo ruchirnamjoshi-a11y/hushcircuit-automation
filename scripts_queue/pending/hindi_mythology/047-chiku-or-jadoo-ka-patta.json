@@ -1,0 +1,65 @@
+{
+  "id": "chiku-or-jadoo-ka-patta",
+  "title": "चिक्कू खरगोश और जादुई पत्ता",
+  "description": "एक नन्हा खरगोश जंगल में एक ऐसा चमकता हुआ पत्ता ढूंढता है जो दूसरों की मदद करने पर ही अपनी असली रोशनी बिखेरता है।",
+  "tags": [
+    "kids story",
+    "hindi kahani",
+    "magic leaf",
+    "bedtime story",
+    "moral story"
+  ],
+  "character_reference": "a small fluffy white rabbit with long ears and a light blue vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "चिक्कू ने हरी घास के बीच एक अजीब सा सुनहरा पत्ता देखा जो हल्की रोशनी दे रहा था।",
+      "on_screen_text": "सुनहरा पत्ता",
+      "duration_hint": 6.5,
+      "visual": "close-up of vibrant green grass blades where a single glowing golden leaf rests, soft morning sunlight filtering through the canopy, low angle macro shot"
+    },
+    {
+      "narration": "उसने पत्ते को उठाया और महसूस किया कि यह कोई साधारण पत्ता नहीं, बल्कि जादुई है।",
+      "on_screen_text": "जादुई अहसास",
+      "duration_hint": 7.0,
+      "visual": "medium shot holding the leaf in paws with a look of pure wonder, sparkling golden dust particles floating in the air around the paws, soft focus forest background"
+    },
+    {
+      "narration": "रास्ते में उसे एक नन्ही चींटी मिली जो भारी तिनके के नीचे दबी हुई थी।",
+      "on_screen_text": "फंसी हुई चींटी",
+      "duration_hint": 6.5,
+      "visual": "ground level shot of a tiny red ant struggling under a fallen twig among damp soil and pebbles, dramatic lighting highlighting the small obstacle"
+    },
+    {
+      "narration": "चिक्कू ने जैसे ही जादुई पत्ते को चींटी के पास किया, पत्ता और भी तेज़ चमक उठा।",
+      "on_screen_text": "तेज़ चमक",
+      "duration_hint": 6.5,
+      "visual": "close-up of paws gently lowering the glowing leaf near the ground, golden light illuminating the tiny ant and surrounding moss, shallow depth of field"
+    },
+    {
+      "narration": "उस जादुई रोशनी से तिनका हल्का हो गया और चींटी तुरंत बाहर निकल आई।",
+      "on_screen_text": "आसान मदद",
+      "duration_hint": 6.5,
+      "visual": "wide shot of the ant happily scurrying away from the illuminated twig, sparkling magical trails fading into the grass, joyful atmosphere"
+    },
+    {
+      "narration": "खुशी से चींटी ने धन्यवाद कहा और चिक्कू का दिल भी गर्व से भर गया।",
+      "on_screen_text": "धन्यवाद",
+      "duration_hint": 6.0,
+      "visual": "medium shot smiling warmly while looking down towards the ground, soft golden rim light outlining the fur, gentle cheerful expression"
+    },
+    {
+      "narration": "उसे समझ आ गया कि जादू दूसरों की मदद करने में ही छिपा होता है।",
+      "on_screen_text": "सच्चा जादू",
+      "duration_hint": 6.5,
+      "visual": "wide shot sitting peacefully on a mossy log as the leaf glows steadily, warm sunset light filtering through tall trees, peaceful mood"
+    },
+    {
+      "narration": "ऐसी ही और प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "medium shot waving a paw gently towards the camera with a bright friendly smile, soft glowing fireflies twinkling in the twilight background"
+    }
+  ]
+}

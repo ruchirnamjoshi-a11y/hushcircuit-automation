@@ -1,0 +1,65 @@
+{
+  "id": "chiku-kachhua-or-chandni-raat",
+  "title": "चिक्कू कछुआ और चांदनी रात",
+  "description": "एक नन्हा कछुआ जिसे अंधेरे से डर लगता है, चांदनी रात में अपनी हिम्मत जुटाकर तालाब पार करता है।",
+  "tags": [
+    "hindi kahani",
+    "brave turtle",
+    "night story",
+    "kids moral",
+    "bedtime tales"
+  ],
+  "character_reference": "a small green turtle with a patterned golden shell and big curious eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "सूरज ढलने के बाद जंगल में अंधेरा छा गया और नन्हे चिक्कू को डर लगने लगा।",
+      "on_screen_text": "अंधेरी रात",
+      "duration_hint": 6.5,
+      "visual": "wide shot of a dark forest floor illuminated only by faint shadows, tall trees silhouetted against a deep blue twilight sky"
+    },
+    {
+      "narration": "उसे तालाब के उस पार अपने घर जाना था, लेकिन रास्ता बहुत अंधेरा था।",
+      "on_screen_text": "लंबा सफर",
+      "duration_hint": 6.5,
+      "visual": "medium shot peering anxiously ahead toward a dark winding path leading to a shimmering pond in the distance, moody atmospheric lighting"
+    },
+    {
+      "narration": "तभी आसमान में चाँद बाहर आया और उसने अपनी चांदी जैसी रोशनी बिखेर दी।",
+      "on_screen_text": "चाँद की रोशनी",
+      "duration_hint": 7.0,
+      "visual": "close-up of a bright silver crescent moon shining in the night sky, casting long gentle beams down through branches"
+    },
+    {
+      "narration": "उस चमकती रोशनी ने तालाब तक जाने वाले रास्ते को साफ-साफ दिखा दिया।",
+      "on_screen_text": "साफ रास्ता",
+      "duration_hint": 6.5,
+      "visual": "medium shot of the shell glowing softly under the moonlight, showing a clear pebble path ahead, peaceful night ambiance"
+    },
+    {
+      "narration": "चिक्कू ने गहरी सांस ली और अपनी नन्हे पैरों से आगे बढ़ने लगा।",
+      "on_screen_text": "हिम्मत",
+      "duration_hint": 6.0,
+      "visual": "close-up of determined face stepping forward onto the glowing path, focused expression, soft silvery highlights on the scales"
+    },
+    {
+      "narration": "रास्ते में जुगनू ने आकर उसका मार्ग रोशन कर दिया और उसका डर भाग गया।",
+      "on_screen_text": "जुगनू का साथ",
+      "duration_hint": 6.5,
+      "visual": "medium shot of glowing fireflies dancing around the walking turtle, magical sparkling lights reflecting in the shell"
+    },
+    {
+      "narration": "वह मुस्कुराते हुए अपने घर पहुंच गया और जान गया कि हर डर के बाद उजाला होता है।",
+      "on_screen_text": "सुरक्षित घर",
+      "duration_hint": 7.0,
+      "visual": "wide shot arriving safely at a cozy resting spot by the calm pond, gentle ripples in the water reflecting the starry sky"
+    },
+    {
+      "narration": "ऐसी ही और प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "medium shot looking toward the camera with a happy reassuring smile, soft glowing stars twinkling in the background"
+    }
+  ]
+}

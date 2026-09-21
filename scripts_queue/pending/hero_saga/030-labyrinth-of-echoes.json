@@ -1,0 +1,65 @@
+{
+  "id": "labyrinth-of-echoes",
+  "title": "Neon Pulse — Episode 30: Labyrinth Of Echoes",
+  "description": "Trapped in a subterranean labyrinth beneath Commander Vance's facility, Kael discovers that the ancient data crystals are glowing in response to his presence.",
+  "tags": [
+    "cyberpunk",
+    "action",
+    "scifi",
+    "superhero",
+    "mystery"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 30,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Heavy steel blast doors slammed shut, sealing off the upper tiers and plunging the sub-basement into absolute silence. Kael stood alone amidst towering stacks of ancient, humming data monoliths.",
+      "on_screen_text": "SEALED BENEATH",
+      "duration_hint": 10.0,
+      "visual": "dark underground chamber with massive towering monolithic servers casting blue light low angle tracking shot of a lone figure standing amidst falling dust"
+    },
+    {
+      "narration": "The crimson warning light pulsed rhythmically against the damp stone walls, casting long and jagged shadows across the floor. He pressed a hand against the nearest monolith, feeling a deep vibrational hum.",
+      "on_screen_text": "CRIMSON WARNING",
+      "duration_hint": 10.0,
+      "visual": "close up of a hand touching a futuristic pillar emitting a soft amber glow with harsh red emergency lights flashing across cracked concrete walls"
+    },
+    {
+      "narration": "Suddenly, the amber circuitry lining his sleeves flared to life, burning brighter than ever before. The ancient data crystals began to crackle, responding directly to his raw energy signature.",
+      "on_screen_text": "RESONANT SURGE",
+      "duration_hint": 10.0,
+      "visual": "medium shot of glowing amber patterns illuminating jacket sleeves while floating crystal shards hover in the air glowing with electric energy"
+    },
+    {
+      "narration": "A holographic projection erupted from the central console, displaying a star map of a forgotten sector. Coordinates blinked frantically, pointing to an uncharted facility deep beneath the ocean.",
+      "on_screen_text": "HIDDEN COORDINATES",
+      "duration_hint": 10.0,
+      "visual": "glowing blue holographic star map projecting upward from a rusted metallic console illuminating a focused face in a dark room"
+    },
+    {
+      "narration": "Footsteps echoed from the ventilation shafts high above, cutting through the low hum of machinery. Someone—or something—was hunting him through the labyrinthine maintenance tunnels.",
+      "on_screen_text": "UNSEEN PURSUER",
+      "duration_hint": 10.0,
+      "visual": "looking straight up into a dark industrial ventilation shaft with metallic grating and faint scratching sounds implied by a tense upward gaze"
+    },
+    {
+      "narration": "Kael drew a concealed energy blade from his belt as the shadows began to shift and separate. The air grew dangerously cold, freezing the moisture on the walls instantly.",
+      "on_screen_text": "BLADE DRAWN",
+      "duration_hint": 10.0,
+      "visual": "profile shot of a man drawing a glowing blue energy blade casting a bright beam of light across a dark narrow stone corridor"
+    },
+    {
+      "narration": "A familiar voice echoed through the comm channel, breaking the tense silence with a chilling ultimatum. Vance knew he was still alive down here.",
+      "on_screen_text": "THE VOICE",
+      "duration_hint": 8.0,
+      "visual": "close up of an ear piece glowing with static light while a tense expression reflects approaching danger in a dim subterranean bunker"
+    },
+    {
+      "narration": "With no way back up, Kael lunged into the darkest tunnel, embracing the unknown depths. Follow along for more chapters of Neon Pulse as the mystery deepens.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "dynamic motion shot of a figure sprinting into a dark descending tunnel while amber light trails behind in a cinematic wide angle"
+    }
+  ]
+}

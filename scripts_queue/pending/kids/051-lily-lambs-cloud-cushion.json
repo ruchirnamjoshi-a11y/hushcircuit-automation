@@ -1,0 +1,65 @@
+{
+  "id": "lily-lambs-cloud-cushion",
+  "title": "Lily Lamb's Cloud Cushion",
+  "description": "Lily Lamb searches the meadow for the softest spot to rest her tired hooves before bedtime.",
+  "tags": [
+    "sleepy",
+    "lamb",
+    "meadow",
+    "clouds",
+    "bedtime"
+  ],
+  "character_reference": "a fluffy white baby lamb with curly wool on her head, sleepy drooping eyelids, and a polka-dot bow tied around her neck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The evening stars began to twinkle as Lily stretched her tired white legs across the meadow grass.",
+      "on_screen_text": "EVENING STARS",
+      "duration_hint": 7.0,
+      "visual": "wide shot of a peaceful meadow at dusk with pale purple clouds floating low overhead"
+    },
+    {
+      "narration": "She wanted a resting spot as soft as a cotton pillow, but the grass felt prickly against her fleece.",
+      "on_screen_text": "PRICKLY GRASS",
+      "duration_hint": 7.0,
+      "visual": "close-up of curly white wool brushing against sharp dandelion stems while looking dissatisfied"
+    },
+    {
+      "narration": "She tried curling up under a mossy log, but it was much too hard for her sleepy head.",
+      "on_screen_text": "TOO HARD",
+      "duration_hint": 6.5,
+      "visual": "medium shot of the small lamb resting her chin uncomfortably on a dark damp piece of wood"
+    },
+    {
+      "narration": "Looking up, she noticed a patch of dandelion fluff drifting gently down on the evening breeze.",
+      "on_screen_text": "DRIFTING FLUFF",
+      "duration_hint": 6.5,
+      "visual": "macro view of white seed parachutes floating through the golden twilight air"
+    },
+    {
+      "narration": "She gathered a soft mound of dry moss and scattered fluffy petals into a cozy little nest.",
+      "on_screen_text": "A COZY NEST",
+      "duration_hint": 7.0,
+      "visual": "paws arranging soft green moss and white petals into a neat circular bed on the ground"
+    },
+    {
+      "narration": "Crawling into her handmade bed, she sighed happily as sleep wrapped around her like a warm blanket.",
+      "on_screen_text": "SLEEPY SIGH",
+      "duration_hint": 7.0,
+      "visual": "close-up of closed eyes and relaxed fluffy ears resting deeply into a soft cushion of moss"
+    },
+    {
+      "narration": "Comfort is something we can always create with a little care.",
+      "on_screen_text": "CREATING COMFORT",
+      "duration_hint": 6.0,
+      "visual": "serene night landscape illuminated by gentle moonlight filtering through clover leaves"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm glowing close-up of a friendly woodland creature waving happily toward the camera"
+    }
+  ]
+}

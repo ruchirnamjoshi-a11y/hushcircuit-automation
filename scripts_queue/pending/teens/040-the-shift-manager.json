@@ -1,0 +1,53 @@
+{
+  "id": "the-shift-manager",
+  "title": "The Shift Manager",
+  "description": "A quiet team member steps up to handle a chaotic dinner rush at a local cafe.",
+  "tags": [
+    "work",
+    "leadership",
+    "chaos",
+    "coming of age",
+    "composure"
+  ],
+  "character_reference": "a young woman with braided dark hair, a plain black apron, and small silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The espresso machine hissed and died right in the middle of the Saturday afternoon rush. Panic rippled through the counter.",
+      "on_screen_text": "MACHINE DOWN",
+      "duration_hint": 9.6,
+      "visual": "close up of steam spewing from a stainless steel espresso machine handle while frantic hands try to steady a row of empty mugs, moody indoor lighting"
+    },
+    {
+      "narration": "The rest of the crew froze, looking to me for instructions. I had only been working here for three weeks.",
+      "on_screen_text": "ALL EYES ON ME",
+      "duration_hint": 9.1,
+      "visual": "medium shot of a barista surrounded by stainless steel counters, looking overwhelmed with wide eyes, blurred background of crowded tables"
+    },
+    {
+      "narration": "I took a deep breath, stepped past the broken machine, and switched us entirely to cold brew and pour overs.",
+      "on_screen_text": "CHANGING TACTICS",
+      "duration_hint": 9.6,
+      "visual": "close up of steady hands pouring hot water from a kettle in a slow spiral circle over a paper coffee dripper, warm ambient glow"
+    },
+    {
+      "narration": "I called out orders clearly and assigned station roles with a calm voice that surprised even myself.",
+      "on_screen_text": "TAKING CONTROL",
+      "duration_hint": 8.7,
+      "visual": "medium shot of a kitchen team member gesturing confidently to coworkers with a reassuring smile, energetic action pose"
+    },
+    {
+      "narration": "The line kept moving, the customers got their drinks, and the disaster turned into our smoothest hour of the week.",
+      "on_screen_text": "THE RUSH",
+      "duration_hint": 9.6,
+      "visual": "wide interior shot of a bustling coffee counter operating efficiently with happy customers receiving drinks across a clean wooden bar"
+    },
+    {
+      "narration": "Leadership is not about knowing everything; it is about staying steady when things fall apart. Follow for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.6,
+      "visual": "cinematic close up of a smiling young woman wiping down a shiny wooden counter with a clean cloth, warm golden afternoon lighting"
+    }
+  ]
+}

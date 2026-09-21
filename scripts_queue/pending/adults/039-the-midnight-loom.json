@@ -1,0 +1,59 @@
+{
+  "id": "the-midnight-loom",
+  "title": "The Midnight Loom",
+  "description": "A meticulous architect puts aside blueprints to restore an antique wooden loom, weaving together fragments of a forgotten family history.",
+  "tags": [
+    "craftsmanship",
+    "family history",
+    "restoration",
+    "middle-aged",
+    "patience"
+  ],
+  "character_reference": "a woman in her late forties with curly dark hair tied back in a loose wooden clip, wearing a paint-stained chambray work shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My computer screen flickered with digital floor plans while a pile of warped cedar beams sat untouched in the corner of the barn. My grandfather's loom had waited thirty years for someone to untangle its knots.",
+      "on_screen_text": "THE WAITING LOOM",
+      "duration_hint": 17.0,
+      "visual": "wide shot of a dusty wooden barn interior with ancient heavy wooden beams and a large dismantled loom leaning against stone walls"
+    },
+    {
+      "narration": "Every evening after sunset, I traded my mouse for a block of beeswax and a fine-toothed comb. Wood remembers the hands that shaped it, and this frame was desperately thirsty for care.",
+      "on_screen_text": "BEESWAX AND TIME",
+      "duration_hint": 15.0,
+      "visual": "close up of hands rubbing yellow beeswax into dry, cracked dark oak wood with a soft white cotton cloth"
+    },
+    {
+      "narration": "The hardest part was replacing the snapped heddles with hand-spun linen thread, matching the exact tension my grandmother used in nineteen-fifty-two. One wrong knot meant starting the entire harness over.",
+      "on_screen_text": "TENSION AND KNOTS",
+      "duration_hint": 17.0,
+      "visual": "extreme close up of nimble fingers tying a precise knot in fine natural linen thread under the focused glow of a brass desk lamp"
+    },
+    {
+      "narration": "As the wooden shuttle began to glide back and forth through the warp threads, the rhythmic clicking filled the quiet barn like a beating heart. Precision was no longer about angles; it was about rhythm.",
+      "on_screen_text": "THE RHYTHM RETURNS",
+      "duration_hint": 17.0,
+      "visual": "medium shot of a wooden shuttle moving smoothly across vertical threads, hands guiding the movement with practiced steady grace"
+    },
+    {
+      "narration": "Deep indigo wool mixed with threads of muted gold, creating a pattern I had only ever seen in faded black-and-white photographs from my childhood summers.",
+      "on_screen_text": "COLORS OF THE PAST",
+      "duration_hint": 13.5,
+      "visual": "close up of woven fabric showing rich dark blue and golden yellow threads interlocking tightly in a traditional geometric pattern"
+    },
+    {
+      "narration": "Architects design buildings for futures they will never see, but a weaver holds the entire past and present right between their fingertips on every single pass.",
+      "on_screen_text": "FINGERTIP HISTORY",
+      "duration_hint": 14.5,
+      "visual": "close up of calloused fingertips gently brushing across the freshly woven surface of a heavy wool blanket on a loom"
+    },
+    {
+      "narration": "If you love stories about reviving forgotten crafts and finding your rhythm again, follow along for more daily journeys.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.5,
+      "visual": "warm cinematic portrait of a woman looking down at her hands with a gentle, satisfied smile in a softly lit rustic workshop"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-overgrown-herb-garden",
+  "title": "The Overgrown Herb Garden",
+  "description": "Tending to a neglected balcony garden helps a woman restore her own sense of daily routine.",
+  "tags": [
+    "gardening",
+    "healing",
+    "routine",
+    "plants",
+    "balcony"
+  ],
+  "character_reference": "a woman with wavy golden-brown hair tied back with a turquoise scarf wearing an olive green utility shirt with rolled-up sleeves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For months, the balcony pots had sat neglected, filled with dry soil and dead stems from a season she barely survived.",
+      "on_screen_text": "NEGLECTED POTS",
+      "duration_hint": 14.3,
+      "visual": "Close-up of dry cracked soil inside a terracotta flowerpot with dead brown plant stalks under harsh daylight"
+    },
+    {
+      "narration": "Stepping outside into the morning air, she picked up her garden trowel, deciding it was time to clear away the dead weight.",
+      "on_screen_text": "CLEARING THE WEIGHT",
+      "duration_hint": 14.8,
+      "visual": "Close-up of gloved hands holding a small metal garden trowel pushing into dry earth on a sunny balcony"
+    },
+    {
+      "narration": "Root by root, she pulled out the old debris, turning the rich soil over and breathing in the sharp scent of damp earth.",
+      "on_screen_text": "TURNING THE SOIL",
+      "duration_hint": 13.9,
+      "visual": "Close-up of hands crumbling dark, rich compost between fingers with natural morning sunlight highlighting the texture"
+    },
+    {
+      "narration": "She pressed tiny green basil and rosemary seedlings into the warm earth, tucking them in gently with her palms.",
+      "on_screen_text": "PLANTING SEEDS",
+      "duration_hint": 13.5,
+      "visual": "Close-up of tender green herb sprouts being gently planted in rich brown soil with water droplets glistening"
+    },
+    {
+      "narration": "With a small watering can, she showered the pots, watching the dry dirt drink deeply and turn a rich, dark shade.",
+      "on_screen_text": "THE WATERING",
+      "duration_hint": 13.9,
+      "visual": "Close-up of a metal watering can pouring a gentle stream of water over fresh green leaves in a terracotta pot"
+    },
+    {
+      "narration": "Taking care of something small and living reminded her that healing happens in quiet, daily increments.",
+      "on_screen_text": "DAILY INCREMENTS",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of a woman wiping soil from her hands with a smile while looking down at thriving green plants"
+    },
+    {
+      "narration": "Every small act of nurturing yourself is a promise that brighter seasons are ahead.",
+      "on_screen_text": "BRIGHTER SEASONS",
+      "duration_hint": 13.0,
+      "visual": "Close-up of vibrant green herb leaves backlit by warm morning sunlight on a peaceful apartment balcony"
+    },
+    {
+      "narration": "Cultivate your own peace every day. Follow along for more heartwarming stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.6,
+      "visual": "A neat row of terracotta herb pots sitting on a wooden railing with soft morning bokeh in the background"
+    }
+  ]
+}

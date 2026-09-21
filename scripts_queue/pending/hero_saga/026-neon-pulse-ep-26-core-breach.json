@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-ep-26-core-breach",
+  "title": "Neon Pulse — Episode 26: Core Breach",
+  "description": "Kael breaches the underground server hub and uncovers a massive countdown before a shadowy entity awakens.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "original hero saga",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 26,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sparks rained down as Kael forced open the heavy blast doors of the underground server hub. Rows of massive quantum mainframes hummed with an ominous, rhythmic vibration.",
+      "on_screen_text": "THE SERVER CORE",
+      "duration_hint": 7.5,
+      "visual": "Low angle shot of a man prying open a massive steel door in a dark high-tech subterranean server room lit by blue and orange glow, casting dramatic shadows, cinematic lighting, photorealistic."
+    },
+    {
+      "narration": "Terminal screens flickered to life across the cavernous room, displaying a live global network map. A massive countdown timer dominated the central display, showing less than an hour remaining.",
+      "on_screen_text": "COUNTDOWN TO ZERO",
+      "duration_hint": 7.0,
+      "visual": "Close up of glowing holographic control panels and a massive digital countdown timer against a dark metallic wall, chaotic red data streams reflecting in the air, highly detailed."
+    },
+    {
+      "narration": "He touched the primary data terminal, attempting to override the sequence. Painful feedback surged through his arms as the amber circuitry flared with blinding intensity.",
+      "on_screen_text": "PAINFUL FEEDBACK",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a man recoiling in pain while touching a futuristic glowing console, bright amber energy pulsing violently up his arms and shoulders, dark industrial background."
+    },
+    {
+      "narration": "Encrypted files spilled onto the screen, revealing the true scale of the syndicate. They weren't just monitoring the city; they were weaponizing the entire grid.",
+      "on_screen_text": "PROJECT OVERRIDE",
+      "duration_hint": 7.0,
+      "visual": "Over-the-shoulder shot looking at a wall of glowing monitors displaying complex geometric schematics and city infrastructure maps in bright orange hues, dark gloomy room."
+    },
+    {
+      "narration": "Suddenly, all the server racks powered down into dead silence. The emergency lighting shifted from bright blue to a deep, menacing crimson.",
+      "on_screen_text": "SYSTEM LOCKDOWN",
+      "duration_hint": 6.5,
+      "visual": "Wide shot of a massive underground server hall as rows of glowing lights instantly shift from blue to aggressive blood-red, deep shadows, moody atmospheric fog."
+    },
+    {
+      "narration": "A heavy voice echoed through the hidden speakers, addressing him by name. The mysterious authority had known he was coming all along.",
+      "on_screen_text": "THE VOICE",
+      "duration_hint": 6.0,
+      "visual": "Medium closeup of a man standing tensely in a dimly lit industrial corridor, looking up alertly toward ceiling vents, tense expression, dramatic rim lighting."
+    },
+    {
+      "narration": "Heavy metallic footsteps approached from the shadows of the lower maintenance tunnel. A towering figure emerged, flanked by crackling energy shields.",
+      "on_screen_text": "THE ENFORCER",
+      "duration_hint": 6.5,
+      "visual": "Low angle shot of a massive armored figure stepping out of heavy dark fog into a glowing red corridor, holding a heavy weapon, ominous and intimidating presence."
+    },
+    {
+      "narration": "Kael braced himself as his jacket glowed at maximum capacity, preparing for a fight he could not afford to lose. Follow along for more chapters of this ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "Medium shot of a man taking a fierce combat stance in a dark corridor, his jacket sleeves flaring with intense bright amber energy, dynamic action camera angle."
+    }
+  ]
+}

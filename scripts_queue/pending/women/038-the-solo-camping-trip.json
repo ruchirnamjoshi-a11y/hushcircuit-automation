@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-camping-trip",
+  "title": "The Solo Camping Trip",
+  "description": "After years of waiting for companions to join her adventures, a woman takes her first solo weekend in the mountains.",
+  "tags": [
+    "solo-travel",
+    "courage",
+    "mountains",
+    "independence",
+    "nature"
+  ],
+  "character_reference": "a tall athletic woman with long red hair braided into a single tail wearing a durable terracotta canvas jacket and hiking boots",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Everyone told her that camping alone in the deep woods was far too risky for someone with no prior wilderness experience.",
+      "on_screen_text": "WELL-MEANING WARNINGS",
+      "duration_hint": 13.5,
+      "visual": "Medium shot of a packed hiking backpack sitting on a wooden porch with towering pine trees blurred in the background"
+    },
+    {
+      "narration": "She spent months waiting for friends to finally match their schedules with hers, until she realized her life was slipping away in the waiting room.",
+      "on_screen_text": "STOP WAITING",
+      "duration_hint": 15.2,
+      "visual": "Close-up of a calendar lying flat on a wooden table with several canceled dates circled in red ink"
+    },
+    {
+      "narration": "Now, the nylon tent fabric fluttered in the crisp mountain breeze as she wrestled the stubborn metal poles into place all by herself.",
+      "on_screen_text": "PITCHING THE TENT",
+      "duration_hint": 14.8,
+      "visual": "Wide angle of a lone orange tent being secured on a grassy clearing surrounded by tall dense evergreens under a clear sky"
+    },
+    {
+      "narration": "As the sun dipped below the jagged ridge, painting the sky in shades of violet and gold, a sudden wave of self-doubt rolled in.",
+      "on_screen_text": "THE MOUNTAIN DUSK",
+      "duration_hint": 14.3,
+      "visual": "Wide landscape shot of vibrant sunset colors breaking across a mountain valley with long shadows stretching across the forest floor"
+    },
+    {
+      "narration": "She sat on a fallen log and listened to the wind whisper through the pines, discovering that solitude could sound like peace instead of loneliness.",
+      "on_screen_text": "SOUND OF PEACE",
+      "duration_hint": 15.2,
+      "visual": "Profile shot of a woman sitting quietly on a mossy log holding a tin cup of hot tea while looking toward the horizon"
+    },
+    {
+      "narration": "Striking a match against the rough box, she coaxed a small campfire to life, watching the bright orange sparks dance upward into the dark.",
+      "on_screen_text": "THE FIRST FLAME",
+      "duration_hint": 14.8,
+      "visual": "Close-up of hands shielding a flickering match flame as it catches dry pine kindling in a stone ring"
+    },
+    {
+      "narration": "She had built this fire with her own hands. No permission needed, no compromises made, entirely free.",
+      "on_screen_text": "ENTIRELY FREE",
+      "duration_hint": 12.6,
+      "visual": "Warm firelight illuminating a relaxed, smiling face looking down at crackling logs in a quiet forest setting"
+    },
+    {
+      "narration": "Adventure is waiting for you too. Follow along for more stories on finding your own courage.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.6,
+      "visual": "Wide scenic shot of a mountain trail winding up into morning mist with golden sunlight filtering through the trees"
+    }
+  ]
+}

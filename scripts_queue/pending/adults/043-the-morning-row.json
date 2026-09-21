@@ -1,0 +1,59 @@
+{
+  "id": "the-morning-row",
+  "title": "The Morning Row",
+  "description": "An empty-nester takes up sculling on a foggy lake, finding peace in the repetitive motion of oars cutting through dark water.",
+  "tags": [
+    "rowing",
+    "empty nest",
+    "solitude",
+    "nature",
+    "morning"
+  ],
+  "character_reference": "a man in his early fifties with short grey hair and laugh lines around his eyes, wearing a dark waterproof windbreaker and fleece beanie",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The house was suddenly deafeningly quiet after our youngest left for university. I found myself wandering down to the misty lake at dawn just to escape the echo in the hallways.",
+      "on_screen_text": "THE EMPTY HALL",
+      "duration_hint": 15.5,
+      "visual": "medium shot of an empty wooden hallway with sunlight streaming through a doorway, casting long shadows across bare hardwood floors"
+    },
+    {
+      "narration": "An old cedar rowing shell sat upside down on wooden trestles by the boathouse, coated in a fine layer of pine needles. I dusted off the hull and pushed it down the muddy bank.",
+      "on_screen_text": "THE OLD SHELL",
+      "duration_hint": 15.0,
+      "visual": "close up of hands brushing pine needles off the sleek wooden hull of a narrow racing canoe resting on wooden sawhorses"
+    },
+    {
+      "narration": "Stepping into the narrow boat required absolute balance and trust. The water was glass-smooth, reflecting the pale pink clouds of a breaking dawn.",
+      "on_screen_text": "STEPPING IN",
+      "duration_hint": 13.5,
+      "visual": "close up of rubber-soled shoes stepping carefully onto the wooden footstretcher of a narrow boat floating on glassy dark water"
+    },
+    {
+      "narration": "Catch, drive, finish, recovery. The rhythm of the oars became my new mantra, replacing the endless mental loops of worry about what my children were facing out in the world.",
+      "on_screen_text": "CATCH AND DRIVE",
+      "duration_hint": 15.5,
+      "visual": "medium shot of wooden oars pulling through dark water, creating swirling ripples and white foam in the early morning light"
+    },
+    {
+      "narration": "Out on the center of the lake, surrounded by rising mist and silent pines, I realized my job as a father wasn't over; it had simply evolved into being a steady shore they could always return to.",
+      "on_screen_text": "THE STEADY SHORE",
+      "duration_hint": 17.5,
+      "visual": "wide shot of a lone person rowing a sleek boat across a misty, mirror-flat lake surrounded by dense pine forests at sunrise"
+    },
+    {
+      "narration": "Letting go doesn't mean losing touch; it means learning how to glide forward on your own terms when the water gets deep.",
+      "on_screen_text": "GLIDING FORWARD",
+      "duration_hint": 13.5,
+      "visual": "close up of a hand resting on a polished wooden oar handle, water droplets glittering in the warm morning sun"
+    },
+    {
+      "narration": "If you enjoy reflective stories about finding calm in life's quiet transitions, follow along for more daily inspiration.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.5,
+      "visual": "warm portrait of a middle-aged man smiling gently in a boat with a misty lake background in golden morning light"
+    }
+  ]
+}

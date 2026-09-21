@@ -1,0 +1,53 @@
+{
+  "id": "the-fretboard",
+  "title": "The Fretboard",
+  "description": "A shy music student overcomes self-doubt during a rooftop jam session.",
+  "tags": [
+    "music",
+    "guitar",
+    "practice",
+    "overcoming fear",
+    "acoustic"
+  ],
+  "character_reference": "a young man with curly red hair, freckles, and a vintage brown leather jacket over a black t-shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My fingers refused to cooperate on the guitar strings while anyone else was in the room listening. Every chord sounded clumsy.",
+      "on_screen_text": "FROZEN STRINGS",
+      "duration_hint": 9.6,
+      "visual": "close up of trembling fingers pressing down on steel guitar frets, shallow depth of field, warm indoor ambient lighting"
+    },
+    {
+      "narration": "I carried the battered acoustic up to the empty roof at dusk, away from all the critical ears downstairs.",
+      "on_screen_text": "THE ESCAPE",
+      "duration_hint": 9.1,
+      "visual": "wide shot of a silhouette carrying an acoustic guitar case across a gravel rooftop during a moody sunset with orange and purple skies"
+    },
+    {
+      "narration": "Sitting against the brick wall, I stopped trying to impress an imaginary crowd and just played the melody for myself.",
+      "on_screen_text": "PLAYING FOR ME",
+      "duration_hint": 9.6,
+      "visual": "medium shot of a musician strumming an acoustic guitar while leaning back against a weathered brick wall, soft evening glow on face"
+    },
+    {
+      "narration": "A stray cat wandered over and sat right by my boot, purring in time with the gentle rhythm of the slow blues progression.",
+      "on_screen_text": "UNEXPECTED AUDIENCE",
+      "duration_hint": 10.0,
+      "visual": "low angle shot focusing on a tabby cat sitting calmly next to a pair of worn canvas sneakers, guitar body visible in upper frame"
+    },
+    {
+      "narration": "For the first time in months, I stopped worrying about making mistakes and just got lost in the music.",
+      "on_screen_text": "GETTING LOST",
+      "duration_hint": 8.7,
+      "visual": "close up of closed eyes and serene expression while fingers expertly slide along the fretboard of a wooden guitar, golden hour light"
+    },
+    {
+      "narration": "Growth happens the moment you stop performing and start expressing. Follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "cinematic portrait of a musician smiling softly while holding an acoustic guitar under string lights on a cozy balcony at night"
+    }
+  ]
+}

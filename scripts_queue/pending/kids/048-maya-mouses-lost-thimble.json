@@ -1,0 +1,65 @@
+{
+  "id": "maya-mouses-lost-thimble",
+  "title": "Maya Mouse's Lost Thimble",
+  "description": "Maya Mouse loses her favorite silver sewing thimble in the tall clover and learns that asking friends for help makes any search an adventure.",
+  "tags": [
+    "friendship",
+    "mice",
+    "help",
+    "clover",
+    "bedtime"
+  ],
+  "character_reference": "a tiny brown field mouse with oversized round ears, twitching pink whiskers, and a patchwork vest made of green wool",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Maya clutched her tiny sewing basket tightly as she searched her cozy burrow for her favorite shiny silver thimble.",
+      "on_screen_text": "THE MISSING THIMBLE",
+      "duration_hint": 7.5,
+      "visual": "close-up of tiny paws frantically rummaging through an overturned woven basket filled with colorful yarn scraps"
+    },
+    {
+      "narration": "It had rolled out the front door and tumbled straight down into the thick, emerald green clover patch.",
+      "on_screen_text": "IN THE CLOVER",
+      "duration_hint": 7.0,
+      "visual": "ground-level view peering out through giant dewy clover leaves toward an open grassy meadow"
+    },
+    {
+      "narration": "Feeling overwhelmed by the giant leaves, Maya sat down on a smooth pebble and let out a quiet sigh.",
+      "on_screen_text": "A BIG FIELD",
+      "duration_hint": 6.5,
+      "visual": "sad drooping posture sitting hunched over on a damp round stone surrounded by towering blades of grass"
+    },
+    {
+      "narration": "Just then, Barnaby Beetle crawled up the stem, offering a cheerful wave with his front leg.",
+      "on_screen_text": "A HELPFUL FRIEND",
+      "duration_hint": 6.5,
+      "visual": "macro shot of a shiny beetle perched on a bending stem looking down encouragingly"
+    },
+    {
+      "narration": "Together, they peeked under every leaf and mossy root until something bright caught the afternoon sun.",
+      "on_screen_text": "SEARCHING TOGETHER",
+      "duration_hint": 7.0,
+      "visual": "two tiny characters side by side lifting a heavy fern frond together in a sunlit patch of earth"
+    },
+    {
+      "narration": "Maya held up the sparkling silver thimble with a joyful squeak, thanking her wonderful little helper.",
+      "on_screen_text": "FOUND AT LAST",
+      "duration_hint": 6.5,
+      "visual": "enthusiastic close-up holding a tiny metal cup aloft while beaming a wide happy smile"
+    },
+    {
+      "narration": "Troubles are always smaller when we share them with friends.",
+      "on_screen_text": "SHARED TROUBLES",
+      "duration_hint": 5.0,
+      "visual": "two tiny animals sitting happily together eating a blackberry under the afternoon shade"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm glowing close-up of a friendly woodland creature waving happily toward the camera"
+    }
+  ]
+}

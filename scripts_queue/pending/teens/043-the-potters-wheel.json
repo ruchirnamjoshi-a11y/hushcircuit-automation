@@ -1,0 +1,53 @@
+{
+  "id": "the-potters-wheel",
+  "title": "The Potter's Wheel",
+  "description": "A ceramics hobbyist learns to let go of control when her clay collapses on the wheel.",
+  "tags": [
+    "ceramics",
+    "pottery",
+    "craft",
+    "patience",
+    "mindfulness"
+  ],
+  "character_reference": "a young woman with blonde hair tied in a messy bun, wearing a clay-stained linen apron over a striped shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The clay wobbled violently on the spinning wheel, twisting into a lopsided mess before my eyes.",
+      "on_screen_text": "THE WOBBLE",
+      "duration_hint": 9.1,
+      "visual": "close up of a spinning mound of wet gray clay twisting out of shape between wet fingers, warm pottery studio lighting"
+    },
+    {
+      "narration": "I was trying to force it into a tall, perfect vase, but my rigid grip kept destroying the center.",
+      "on_screen_text": "TOO MUCH CONTROL",
+      "duration_hint": 9.1,
+      "visual": "close up of white-knuckled hands pressing too hard against a collapsing clay cylinder, wet splatters on a wooden splash pan"
+    },
+    {
+      "narration": "I closed my eyes, relaxed my shoulders, and let my hands soften against the spinning earth.",
+      "on_screen_text": "SOFTENING MY GRIP",
+      "duration_hint": 9.1,
+      "visual": "close up of relaxed hands gently resting around a centered lump of gray clay on a spinning metal wheel head, peaceful mood"
+    },
+    {
+      "narration": "Instead of a rigid vase, I guided the clay outward into a wide, organic bowl with gentle, patient pressure.",
+      "on_screen_text": "GOING WITH THE FLOW",
+      "duration_hint": 9.6,
+      "visual": "medium shot of a potter shaping a wide ceramic bowl with curved fingers, water glistening under a warm overhead lamp"
+    },
+    {
+      "narration": "It was asymmetrical and imperfect, but it had a genuine soul that my rigid designs never possessed.",
+      "on_screen_text": "BEAUTIFUL FLAWS",
+      "duration_hint": 9.1,
+      "visual": "close up of a finished, textured clay bowl resting on a wooden board, wet surface catching soft studio highlights"
+    },
+    {
+      "narration": "True creativity means letting go of perfection to find what is real. Follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "cinematic portrait of a smiling artisan holding a raw clay vessel with both hands in a sunlit pottery studio, warm cozy aesthetic"
+    }
+  ]
+}

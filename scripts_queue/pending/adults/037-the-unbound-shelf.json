@@ -1,0 +1,65 @@
+{
+  "id": "the-unbound-shelf",
+  "title": "The Unbound Shelf",
+  "description": "A retired librarian decides to dismantle her life's safety net and open a mobile book cart, discovering that stories are meant to roam.",
+  "tags": [
+    "career change",
+    "second chances",
+    "books",
+    "middle-aged",
+    "quiet regrets"
+  ],
+  "character_reference": "a woman in her late forties with shoulder-length silver-streaked dark hair, wearing a forest-green cardigan and round wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For twenty-eight years, every book in the municipal archive stayed precisely where I put it. Today, I wheeled my personal collection out onto the pavement and locked the heavy glass doors behind me for the very last time.",
+      "on_screen_text": "THE FINAL LOCK",
+      "duration_hint": 14.0,
+      "visual": "medium shot of hands turning an old brass key in a glass entryway, afternoon sunlight casting long shadows across worn stone steps"
+    },
+    {
+      "narration": "My colleagues thought I had lost my mind when I traded my pension paperwork for a custom wooden cart. But routine is just a well-decorated cage, and I was finally ready to test the latch.",
+      "on_screen_text": "A CUSTOM CART",
+      "duration_hint": 14.5,
+      "visual": "close up of weathered hands running along polished oak wood, checking brass hinges and leather straps in a sunlit workshop"
+    },
+    {
+      "narration": "The morning air smelled of wet asphalt and roasting coffee beans as I pushed the heavy wheels up the incline of Elm Street. My shoulders burned, but my chest felt remarkably light.",
+      "on_screen_text": "THE FIRST HILL",
+      "duration_hint": 13.5,
+      "visual": "low angle shot pushing a wooden cart up a gentle city slope, brick facades blurred in the background, autumn leaves swirling around ankles"
+    },
+    {
+      "narration": "I parked beneath the sprawling branches of an old oak tree and folded down the side panels to reveal rows of paperbacks. For the first time, literature had no permanent address.",
+      "on_screen_text": "OPEN FOR READERS",
+      "duration_hint": 13.5,
+      "visual": "wide shot of a wooden cart unfolding beneath a massive green canopy, colorful book spines catching bright morning rays"
+    },
+    {
+      "narration": "A young man in a paint-spattered jacket stopped to browse, his fingers hesitating over a poetry collection I had bought during my own college years. We stood in silence, sharing a quiet understanding across the wooden counter.",
+      "on_screen_text": "A STRAY BROWSER",
+      "duration_hint": 16.5,
+      "visual": "over the shoulder view of hands flipping through yellowed pages of a paperback book outdoors, dappled sunlight falling on paper"
+    },
+    {
+      "narration": "By mid-afternoon, half the shelves were empty and my coin jar rattled with loose change. Letting go of stability had not broken me; it had simply invited the world inside.",
+      "on_screen_text": "THE EMPTY SHELVES",
+      "duration_hint": 14.5,
+      "visual": "close up of a ceramic jar with silver coins clinking inside, soft blurred green park background in the warm afternoon glow"
+    },
+    {
+      "narration": "As dusk painted the sky in shades of amber and slate, I latched the wooden shutters and turned the cart toward home. Life was never meant to be shelved in alphabetical order.",
+      "on_screen_text": "RETURNING HOME",
+      "duration_hint": 14.5,
+      "visual": "silhouette of a person pushing a wheeled cart down a quiet residential street during a vibrant sunset with purple and orange clouds"
+    },
+    {
+      "narration": "If you are standing at your own crossroads and wondering what waits beyond the familiar, follow along for more stories of quiet courage.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.5,
+      "visual": "warm golden hour portrait of someone smiling gently while looking directly into the camera with soft natural lighting"
+    }
+  ]
+}
