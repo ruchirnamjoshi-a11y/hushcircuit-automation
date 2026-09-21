@@ -1,0 +1,65 @@
+{
+  "id": "the-pottery-wheel-rhythm",
+  "title": "The Pottery Wheel Rhythm",
+  "description": "A perfectionist corporate worker learns to let go of flawless control while taking up pottery.",
+  "tags": [
+    "pottery",
+    "perfectionism",
+    "craft",
+    "letting-go",
+    "art"
+  ],
+  "character_reference": "a woman with freckled skin and unruly blonde hair tied in a messy bun wearing a clay-stained blue apron over a white linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For decades, her life had been governed by strict spreadsheets and zero margin for error, where a misplaced comma felt like a catastrophe.",
+      "on_screen_text": "THE MARGIN FOR ERROR",
+      "duration_hint": 14.8,
+      "visual": "Close-up of fingers scrolling through endless lines of financial data on a bright computer monitor with a tense expression"
+    },
+    {
+      "narration": "Seeking a clumsy escape, she signed up for an evening ceramics class, stepping into a room smelling of damp earth and wet stone.",
+      "on_screen_text": "DAMP EARTH",
+      "duration_hint": 14.3,
+      "visual": "Medium shot of shelves lined with unfinished ceramic bowls and jars in a sunlit workshop with large windows"
+    },
+    {
+      "narration": "The motorized wheel spun with a hypnotic hum, and when she pressed her palms into the grey clay, it immediately wobbled out of shape.",
+      "on_screen_text": "THE FIRST WOBBLE",
+      "duration_hint": 15.2,
+      "visual": "Close-up of wet grey clay spinning rapidly on a metal pottery wheel while hands attempt to center it"
+    },
+    {
+      "narration": "Her instinct was to panic and start over, demanding absolute symmetry on the very first try.",
+      "on_screen_text": "INSTANT PANIC",
+      "duration_hint": 11.7,
+      "visual": "Close-up of furrowed brows and lips pressed tightly together in concentration under warm overhead studio lighting"
+    },
+    {
+      "narration": "Then the instructor walked by, gently placing a hand over hers and saying, stop fighting the clay; just listen to what it wants to become.",
+      "on_screen_text": "LISTEN TO THE CLAY",
+      "duration_hint": 15.6,
+      "visual": "Two pairs of hands working together to shape a rising cylinder of wet clay on a spinning wheel head"
+    },
+    {
+      "narration": "She relaxed her shoulders, softening her grip, and let her fingers curve fluidly with the spinning mass instead of forcing it.",
+      "on_screen_text": "SOFTENING THE GRIP",
+      "duration_hint": 13.9,
+      "visual": "Close-up of relaxed hands guiding the soft rim of a growing clay bowl with water glistening on the surface"
+    },
+    {
+      "narration": "The finished bowl was slightly lopsided, totally asymmetrical, and absolute perfection in its own unique way.",
+      "on_screen_text": "UNIQUE PERFECTION",
+      "duration_hint": 13.5,
+      "visual": "Close-up of a damp, freshly thrown clay vessel resting on a wooden board with gentle natural side lighting"
+    },
+    {
+      "narration": "True beauty is found when we stop forcing perfection. Follow along for more stories of quiet release.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.5,
+      "visual": "Hands gently wiping wet clay from dusty fingers with a small damp sponge in a warm pottery studio"
+    }
+  ]
+}

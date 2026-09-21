@@ -1,0 +1,59 @@
+{
+  "id": "the-glassblower-s-apprentice",
+  "title": "The Glassblower's Apprentice",
+  "description": "A high-powered accountant leaves the corporate ladder to study glassblowing, learning that molten art requires both intense heat and absolute surrender.",
+  "tags": [
+    "craft",
+    "career shift",
+    "artistry",
+    "midlife crisis",
+    "fire"
+  ],
+  "character_reference": "a woman in her late forties with pulled-back dark hair and safety goggles pushed up on her forehead, wearing a heavy cotton workshop tunic",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My spreadsheet had columns for everything except joy. When I accidentally deleted a decade of quarterly projections and felt a wave of pure relief, I knew my desk job was finished.",
+      "on_screen_text": "THE DELETION",
+      "duration_hint": 15.0,
+      "visual": "close up of fingers pressing the delete key on a silver computer keyboard under the harsh glare of an office fluorescent light"
+    },
+    {
+      "narration": "The glass studio was an inferno of orange light and roaring gas burners. Master Alistair didn't ask about my resume; he just handed me a steel blowpipe and pointed to the furnace.",
+      "on_screen_text": "THE FURNACE",
+      "duration_hint": 14.5,
+      "visual": "wide shot of a dark industrial studio with a glowing orange brick furnace door open, casting intense warm light across stone floors"
+    },
+    {
+      "narration": "Molten glass has a mind of its own, sagging and twisting if you hesitate for even a fraction of a second. Controlling it requires strength, but fighting it only ruins the piece.",
+      "on_screen_text": "MOLTEN WILL",
+      "duration_hint": 15.0,
+      "visual": "close up of glowing orange molten glass on the end of a steel pipe being shaped with a wet wooden block by hand"
+    },
+    {
+      "narration": "My forearms were covered in tiny red burns and my lungs ached from blowing steady air into the glowing orb. Yet every breath felt more honest than a thousand corporate memos.",
+      "on_screen_text": "SCARS AND BREATH",
+      "duration_hint": 15.0,
+      "visual": "close up of a person blowing gently into the end of a long metal rod, cheeks puffed and focused in the orange glow"
+    },
+    {
+      "narration": "As the red-hot sphere cooled into a deep, translucent emerald vase on the annealing shelf, I realized that true beauty is born from embracing the heat and letting go of control.",
+      "on_screen_text": "THE COOLING",
+      "duration_hint": 16.0,
+      "visual": "close up of a glowing emerald-green glass vase resting on a metal cooling rack, slowly fading from orange to deep rich green"
+    },
+    {
+      "narration": "You cannot rush molten glass into a mold, and you cannot force your life into a path that no longer fits. You have to melt it down and shape something new.",
+      "on_screen_text": "RESHAPING LIFE",
+      "duration_hint": 15.0,
+      "visual": "medium shot of a woman holding metal tongs in a brightly lit workshop, watching a cooling glass sculpture with quiet satisfaction"
+    },
+    {
+      "narration": "If you love stories about breaking the mold and starting over from scratch, follow along for more daily inspiration.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.5,
+      "visual": "warm cinematic portrait of a woman smiling with safety goggles on her forehead, workshop glow reflecting in her eyes"
+    }
+  ]
+}

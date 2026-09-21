@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-27",
+  "title": "Neon Pulse — Episode 27: The Armored Vanguard",
+  "description": "Kael faces off against the shadow organization's heavy enforcer in the subterranean server hub.",
+  "tags": [
+    "action",
+    "cyberpunk",
+    "superhero",
+    "scifi",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 27,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Heavy steel boots strike the concrete floor as the towering enforcer advances through the crackling electricity.",
+      "on_screen_text": "THE ENFORCER AWAKES",
+      "duration_hint": 4.5,
+      "visual": "Low angle shot of a massive armored fighter stepping forward from shadows, glowing mechanical joints, sparks flying, concrete floor, cinematic lighting, moody atmosphere"
+    },
+    {
+      "narration": "Kael raises his hands as the amber circuitry across his sleeves flares with blinding kinetic energy.",
+      "on_screen_text": "POWER UNLEASHED",
+      "duration_hint": 4.0,
+      "visual": "Medium close up of hands glowing with bright amber energy patterns, dark industrial server room background, intense concentration, dynamic composition"
+    },
+    {
+      "narration": "A massive shockwave tears through the server racks, sending glass and metallic debris flying in all directions.",
+      "on_screen_text": "SHOCKWAVE IMPACT",
+      "duration_hint": 4.5,
+      "visual": "Explosive kinetic blast shattering server equipment, flying sparks and shrapnel, dramatic action pose, high contrast shadows, cinematic motion blur"
+    },
+    {
+      "narration": "The enforcer lunges forward with a devastating hydraulic punch that fractures the reinforced stone wall behind.",
+      "on_screen_text": "BRUTE FORCE",
+      "duration_hint": 4.5,
+      "visual": "Heavy mechanical fist smashing into a crumbling stone wall, flying debris, aggressive close-up angle, gritty texture, dramatic lighting"
+    },
+    {
+      "narration": "Diverging the kinetic current, Kael slides beneath the heavy blow and drives an amber-charged strike into the armored chestplate.",
+      "on_screen_text": "COUNTER STRIKE",
+      "duration_hint": 4.8,
+      "visual": "Dynamic action shot sliding under a massive arm, striking a glowing metallic chestplate with glowing energy fists, underground chamber backdrop"
+    },
+    {
+      "narration": "The armored giant stumbles backward, the global countdown display flickering wildly above their heads in red alarm light.",
+      "on_screen_text": "THE COUNTDOWN TICKS",
+      "duration_hint": 5.0,
+      "visual": "Stumbling armored figure in the foreground, massive digital countdown timer glowing red on a distant wall, smoky industrial interior"
+    },
+    {
+      "narration": "As the central console overloads, a secret ceiling hatch splits open to reveal a descending escape pod.",
+      "on_screen_text": "HIDDEN ESCAPE",
+      "duration_hint": 4.2,
+      "visual": "Looking upward at a circular ceiling hatch opening, bright blue light beaming down, metallic framework, swirling smoke, wide angle shot"
+    },
+    {
+      "narration": "Kael glances back at the defeated enforcer before leaping upward toward the rising transport.",
+      "on_screen_text": "THE ASCENT",
+      "duration_hint": 3.8,
+      "visual": "Leaping upward toward a descending metallic pod, dynamic mid-air shot, glowing energy trails, dark cavernous background, heroic pose"
+    },
+    {
+      "narration": "Follow along for more chapters of this ongoing original saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.0,
+      "visual": "Close up profile silhouette against a glowing amber neon light, dramatic cinematic vignette, clean composition, minimalist background"
+    }
+  ]
+}

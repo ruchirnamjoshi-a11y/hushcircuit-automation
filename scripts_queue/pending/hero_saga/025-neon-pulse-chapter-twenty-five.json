@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-chapter-twenty-five",
+  "title": "Neon Pulse — Episode 25: Shadows in the Grid",
+  "description": "Kael faces a subterranean ambush as dormant drone networks activate around him.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "cyberpunk",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 25,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The magnetic trap sparks violently against the steel floor. Sparks cast harsh orange shadows across the damp concrete tunnels as the dormant drones begin to hum.",
+      "on_screen_text": "THE TRAP SPRINGS",
+      "duration_hint": 7.0,
+      "visual": "Low angle shot of glowing amber sparks erupting from a steel grate on a dark subterranean tunnel floor, illuminating wet stone walls and metallic debris"
+    },
+    {
+      "narration": "Hundreds of red optical sensors flash to life in the darkness. Each machine rises on jointed metallic legs, locking their targeting reticles directly onto my position.",
+      "on_screen_text": "RED EYES AWAKE",
+      "duration_hint": 7.0,
+      "visual": "Close up of multiple crimson camera lenses glowing menacingly in the pitch black recess of an abandoned subway maintenance tunnel, narrow depth of field"
+    },
+    {
+      "narration": "I push the amber circuitry into overdrive. The glowing energy surges up my forearms, forming a barrier of solid light just as the first wave fires.",
+      "on_screen_text": "ENERGY SHIELD",
+      "duration_hint": 6.5,
+      "visual": "Medium action shot of a man kneeling defensively behind a shimmering translucent amber energy barrier while intense blue laser fire impacts the surface"
+    },
+    {
+      "narration": "The concussive blast shatters the concrete pillar beside me. Choking dust fills the air, but the signal analyzer in my hand still points deeper into the dark.",
+      "on_screen_text": "DEBRIS AND DUST",
+      "duration_hint": 7.0,
+      "visual": "Over-the-shoulder view through billowing grey concrete dust toward a cracked subterranean tunnel wall, holding a futuristic handheld device blinking with green data"
+    },
+    {
+      "narration": "I vault over the wreckage and sprint down the flooded maintenance corridor. Heavy mechanical footsteps echo relentlessly right behind my heels.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 6.5,
+      "visual": "Dynamic motion blur shot running through a flooded underground concrete pipe, splashing water droplets caught in mid air under flickering overhead emergency lights"
+    },
+    {
+      "narration": "A heavy blast door blocks the end of the tunnel. I slam my palm against the emergency manual release, praying the override code holds.",
+      "on_screen_text": "SEALED SHUT",
+      "duration_hint": 6.0,
+      "visual": "Close up shot of a hand pressing against a massive rusted steel bulkhead door, illuminated by the harsh amber glow radiating from sleeve patterns"
+    },
+    {
+      "narration": "The massive vault door grinds open to reveal a massive subterranean data hub. Thousands of server racks stretch into the infinite black horizon.",
+      "on_screen_text": "THE SERVER CORE",
+      "duration_hint": 6.5,
+      "visual": "Wide angle shot looking into a vast subterranean chamber filled with towering rows of blinking server towers casting pale blue light across vast metallic floors"
+    },
+    {
+      "narration": "At the center of the room, a holographic console projects a familiar crest. Commander Vance was only the messenger, and someone is waiting for me.",
+      "on_screen_text": "THE REAL ENEMY",
+      "duration_hint": 7.0,
+      "visual": "Medium shot staring in shock at a floating holographic projection of an intricate geometric crest hovering above a sleek black pedestal in a dark server room"
+    },
+    {
+      "narration": "Follow along for more original superhero action in the next chapter of Neon Pulse.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Cinematic head and shoulders portrait shot looking intently toward the camera with a serious expression inside a dimly lit high tech control center"
+    }
+  ]
+}

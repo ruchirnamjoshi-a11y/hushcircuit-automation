@@ -1,0 +1,65 @@
+{
+  "id": "finn-foxs-whispering-wind",
+  "title": "Finn Fox's Whispering Wind",
+  "description": "Finn Fox is frightened by the whistling nighttime wind until his mother shows him that the wind is just the forest singing its lullaby.",
+  "tags": [
+    "bravery",
+    "fox",
+    "wind",
+    "lullaby",
+    "bedtime"
+  ],
+  "character_reference": "a young bright red fox kit with an oversized fluffy white-tipped tail and big curious amber eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Inside his cozy den, Finn pulled his wool blanket up over his pointy ears as the trees rattled outside.",
+      "on_screen_text": "THE RUSTLING TREES",
+      "duration_hint": 7.0,
+      "visual": "cozy underground burrow interior with straw bedding while dark shadows stretch across the dirt wall"
+    },
+    {
+      "narration": "Whoosh went the wind through the high pine branches, sounding like a giant ghost sweeping through the dark.",
+      "on_screen_text": "WHOOSHING WIND",
+      "duration_hint": 7.5,
+      "visual": "close-up of trembling whiskers and wide amber eyes staring anxiously toward the tunnel entrance"
+    },
+    {
+      "narration": "His mother sat beside him, wrapping her warm bushy tail around his shoulders to help him feel safe.",
+      "on_screen_text": "A WARM HUG",
+      "duration_hint": 7.0,
+      "visual": "adult red fox gently nuzzling the younger kit inside a softly lit earthen den"
+    },
+    {
+      "narration": "Listen closely, she whispered, tilting her head toward the rustling entrance.",
+      "on_screen_text": "LISTEN CLOSELY",
+      "duration_hint": 5.5,
+      "visual": "profile shot of two furry heads tilted upward in unison listening to distant sounds"
+    },
+    {
+      "narration": "It is not a scary monster at all, but the wind singing a sleepy song to the sleeping forest.",
+      "on_screen_text": "FOREST LULLABY",
+      "duration_hint": 7.0,
+      "visual": "soft moonlight filtering down through pine needles onto quiet mossy ground outside"
+    },
+    {
+      "narration": "Finn closed his eyes and listened again, hearing a sweet whistling tune instead of a frightening roar.",
+      "on_screen_text": "A SWEET TUNE",
+      "duration_hint": 7.0,
+      "visual": "peaceful sleepy expression with relaxed ears resting against soft straw bedding"
+    },
+    {
+      "narration": "The world is full of music if we listen with a calm heart.",
+      "on_screen_text": "CALM HEART",
+      "duration_hint": 5.5,
+      "visual": "wide peaceful shot of the cozy den entrance glowing warmly under a starlit sky"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm glowing close-up of a friendly woodland creature waving happily toward the camera"
+    }
+  ]
+}

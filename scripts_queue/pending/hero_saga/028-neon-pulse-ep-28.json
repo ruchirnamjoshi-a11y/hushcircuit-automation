@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-ep-28",
+  "title": "Neon Pulse — Episode 28: Ascent Into Darkness",
+  "description": "Kael launches upward in the emergency escape pod, breaking through the surface only to find a far more sinister reality waiting above.",
+  "tags": [
+    "neon-pulse",
+    "action-adventure",
+    "original-hero",
+    "scifi-thriller",
+    "escape-pod"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 28,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The heavy seals of the escape pod hissed open, venting stale air into the freezing night. Kael climbed out, coughing against the biting wind.",
+      "on_screen_text": "SURFACING FROM THE DEPTHS",
+      "duration_hint": 6.1,
+      "visual": "Cinematic low angle shot of a man emerging from a jagged metal hatch in a dark alleyway, gasping for breath, dramatic smoke curling around his boots."
+    },
+    {
+      "narration": "Above him, the city skyline of the upper tier glittered like a false paradise. But the global countdown timer on his wrist was still ticking down.",
+      "on_screen_text": "THE TICKING CLOCK",
+      "duration_hint": 6.5,
+      "visual": "Close up of a glowing amber digital timer strapped to a forearm, frantic numbers counting backward against the backdrop of distant skyscrapers illuminated by neon lights."
+    },
+    {
+      "narration": "Suddenly, the amber circuitry on his jacket flared brightly, reacting to a massive energy signature nearby. He ducked behind a rusted crate just in time.",
+      "on_screen_text": "HIDDEN ENERGY SURGE",
+      "duration_hint": 6.1,
+      "visual": "A man diving behind industrial metallic debris in a shadowy courtyard while vibrant amber patterns on his clothing pulse intensely with brilliant light."
+    },
+    {
+      "narration": "Stepping out from the shadows were three elite operatives bearing the mark of Vance's inner guard. Their heavy plasma rifles hummed with lethal intent.",
+      "on_screen_text": "VANCE S ELITE GUARD",
+      "duration_hint": 6.1,
+      "visual": "Three imposing heavily armored guards holding advanced glowing weapons marching purposefully through a dark industrial zone, casting long menacing shadows."
+    },
+    {
+      "narration": "Kael channeled the pulsing energy into his palms, feeling the familiar warmth flood his veins. There was no running away this time.",
+      "on_screen_text": "CHANNELING THE POWER",
+      "duration_hint": 5.7,
+      "visual": "Medium close up of a determined man holding his glowing hands outward, bright amber energy swirling intensely around his fingers and palms in the dark."
+    },
+    {
+      "narration": "With a sudden burst of speed, he closed the distance and unleashed a shockwave that shattered the pavement. The guards stumbled backward in shock.",
+      "on_screen_text": "THE COUNTERATTACK",
+      "duration_hint": 6.1,
+      "visual": "Dynamic action shot of a shockwave erupting from the ground, sending concrete debris flying upward as armed opponents recoil and lose their balance."
+    },
+    {
+      "narration": "Before the smoke could clear, a holographic projection flickered to life right above the courtyard. Commander Vance's cold smile looked down from the sky.",
+      "on_screen_text": "THE COMMANDER SPEAKS",
+      "duration_hint": 6.5,
+      "visual": "A massive glowing blue holographic face of a stern older man hovering in the night sky, looking down mockingly over a ruined courtyard."
+    },
+    {
+      "narration": "The game was changing, and Kael realized he was walking straight into a trap. Follow along for more chapters in the ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.1,
+      "visual": "A man looking up intently toward a glowing holographic projection in a dark futuristic alley, expression filled with grim realization and resolve."
+    }
+  ]
+}

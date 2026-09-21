@@ -1,0 +1,65 @@
+{
+  "id": "tinku-lomdi-or-suraj-ka-phool",
+  "title": "टिंकू लोमड़ी और सूरज का फूल",
+  "description": "एक छोटी लोमड़ी सूरजमुखी के बड़े फूल से दोस्ती करती है जो उसे बादलों के पीछे छुपे सूरज का रास्ता दिखाता है।",
+  "tags": [
+    "hindi kahani",
+    "little fox",
+    "sunflower",
+    "kids morals",
+    "bedtime story"
+  ],
+  "character_reference": "a small orange fox kit with a white-tipped tail and big pointy ears",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "वर्षा के दिनों में टिंकू लोमड़ी उदास बैठी थी क्योंकि कई दिनों से सूरज नहीं निकला था।",
+      "on_screen_text": "उदासी भरा दिन",
+      "duration_hint": 7.0,
+      "visual": "medium shot sitting gloomily under a large green leaf, gray overcast sky reflecting in puddles around, quiet atmosphere"
+    },
+    {
+      "narration": "तभी उसे बगीचे के कोने में एक बहुत बड़ा और चमकीला सूरजमुखी का फूल दिखा।",
+      "on_screen_text": "चमकीला फूल",
+      "duration_hint": 6.5,
+      "visual": "wide shot of a vibrant yellow sunflower standing tall amongst dull green plants, glowing with a soft internal warmth"
+    },
+    {
+      "narration": "टिंकू उसके पास गई और बोली कि तुम इतने उदास मौसम में भी कैसे चमकते हो?",
+      "on_screen_text": "प्यारा सवाल",
+      "duration_hint": 7.0,
+      "visual": "close-up looking up inquisitively at the large golden petals, gentle tilt of the head, soft natural daylight"
+    },
+    {
+      "narration": "फूल मुस्कुराया और बोला कि मैं हमेशा आसमान की उस रोशनी को याद रखता हूँ जो मेरे अंदर है।",
+      "on_screen_text": "भीतरी रोशनी",
+      "duration_hint": 7.5,
+      "visual": "medium shot of the golden petals gently swaying as if whispering back, sparkling pollen dust floating in the gentle breeze"
+    },
+    {
+      "narration": "उसकी बात सुनकर टिंकू को समझ आया कि खुशी बाहर नहीं बल्कि हमारे अंदर होती है।",
+      "on_screen_text": "नया सबक",
+      "duration_hint": 7.0,
+      "visual": "close-up with a sudden realization on the face, bright sparkling eyes, warm golden rim light outlining the fur"
+    },
+    {
+      "narration": "उसने मुस्कुराकर फूल को छुआ और उसका सारा अकेलापन पल भर में दूर हो गया।",
+      "on_screen_text": "दूर हुआ अकेलापन",
+      "duration_hint": 7.0,
+      "visual": "medium shot gently touching a golden petal with a paw, joyful and content expression, bright cheerful lighting"
+    },
+    {
+      "narration": "तब से टिंकू कभी उदास नहीं हुई क्योंकि उसने अपने अंदर की खुशी पा ली थी।",
+      "on_screen_text": "खुशहाल जीवन",
+      "duration_hint": 7.0,
+      "visual": "wide shot sitting happily beside the radiant sunflower as the clouds finally part and sunlight beams down, beautiful garden view"
+    },
+    {
+      "narration": "ऐसी ही और प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "medium shot waving a paw cheerfully toward the camera, bright sunny garden setting with colorful flowers all around"
+    }
+  ]
+}

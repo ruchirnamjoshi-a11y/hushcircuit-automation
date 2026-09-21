@@ -1,0 +1,59 @@
+{
+  "id": "the-copper-kettle",
+  "title": "The Copper Kettle",
+  "description": "After inheriting a failing roadside diner, a weary corporate manager learns to slow down and listen to the people who sit at his counter.",
+  "tags": [
+    "career change",
+    "hospitality",
+    "midlife",
+    "new beginnings",
+    "community"
+  ],
+  "character_reference": "a man in his early fifties with short salt-and-pepper hair, wearing a simple navy blue apron over a crisp white rolled-sleeve shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The spreadsheet on my laptop predicted bankruptcy by November, but the smell of burnt toast and pine cleaner told the real story of my uncle's diner. I closed the lid and set it on a flour-dusted shelf.",
+      "on_screen_text": "THE INHERITANCE",
+      "duration_hint": 16.0,
+      "visual": "close up of a silver laptop lid closing on a wooden counter covered in white flour dust, dim warm interior lighting"
+    },
+    {
+      "narration": "For twenty years I managed stock portfolios in windowless offices, measuring success in fractions of a percentage point. Here, success was a hot cup of coffee and a clean formica table.",
+      "on_screen_text": "NEW METRICS",
+      "duration_hint": 15.0,
+      "visual": "medium shot of a ceramic mug being filled with dark steaming coffee from a glass carafe behind a diner counter"
+    },
+    {
+      "narration": "An elderly regular named Arthur sat in the corner booth every morning at six, reading the obituary section with a magnifying glass. When I brought him fresh coffee without asking, he finally looked up and smiled.",
+      "on_screen_text": "THE CORNER BOOTH",
+      "duration_hint": 17.5,
+      "visual": "close up of a hand setting a white coffee mug down on an old red vinyl table next to a folded newspaper"
+    },
+    {
+      "narration": "I spent the afternoons scrubbing grease from the exhaust hood and scraping decades of old grease off the griddle. Physical labor has a strange way of clearing the static from your thoughts.",
+      "on_screen_text": "SCRUBBING PASTS",
+      "duration_hint": 15.0,
+      "visual": "close up of gloved hands scrubbing a stainless steel griddle with a metal scouring pad, water droplets catching the overhead light"
+    },
+    {
+      "narration": "By the third month, the locals stopped treating me like a corporate spy and started sharing their family recipes over the sizzling flat top. The diner was no longer just a business; it was a living room.",
+      "on_screen_text": "THE LIVING ROOM",
+      "duration_hint": 16.5,
+      "visual": "medium shot of spatula flipping pancakes on a hot iron grill, steam rising in soft curls toward an industrial ceiling hood"
+    },
+    {
+      "narration": "I didn't save the diner by cutting costs or modernizing the brand; I saved it by slowing down long enough to hear the stories behind the empty stools.",
+      "on_screen_text": "SLOWING DOWN",
+      "duration_hint": 14.5,
+      "visual": "over the shoulder view looking out through a rain-streaked diner window at a quiet, mist-covered small-town highway at dawn"
+    },
+    {
+      "narration": "If you have ever felt the urge to trade your spreadsheets for something real, follow along for more daily stories about turning the page.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.5,
+      "visual": "warm portrait of a middle-aged man leaning against a clean wooden counter, smiling softly toward the side with natural lighting"
+    }
+  ]
+}

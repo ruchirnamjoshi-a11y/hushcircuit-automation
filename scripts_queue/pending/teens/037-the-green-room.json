@@ -1,0 +1,59 @@
+{
+  "id": "the-green-room",
+  "title": "The Green Room",
+  "description": "A nervous college student struggles to deliver a presentation on stage, finds her footing, and wins over the lecture hall.",
+  "tags": [
+    "college",
+    "public speaking",
+    "anxiety",
+    "growth",
+    "confidence"
+  ],
+  "character_reference": "a young woman with shoulder-length dark curly hair, wearing an oversized beige cardigan and round glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My palms were ice cold as the professor called my name to the podium. The lecture hall stretched out endlessly, a sea of waiting faces.",
+      "on_screen_text": "THE COLD CALL",
+      "duration_hint": 10.4,
+      "visual": "medium shot of a young woman sweating under bright overhead lights, hands trembling slightly against a dark wooden podium, blurred auditorium seating in background, cinematic depth of field"
+    },
+    {
+      "narration": "I opened my slides, but my throat locked up completely. The first three words vanished from my mind like smoke.",
+      "on_screen_text": "MIND GOES BLANK",
+      "duration_hint": 9.1,
+      "visual": "extreme close up of nervous eyes staring fixedly at a glowing laptop screen reflecting blue light, fingers frozen over a touchpad, dark moody interior atmosphere"
+    },
+    {
+      "narration": "Instead of bolting for the exit, I took a deliberate, shaky breath and gripped the edge of the desk. I needed to reset.",
+      "on_screen_text": "TAKING A BREATH",
+      "duration_hint": 9.1,
+      "visual": "close up of knuckles whitening from gripping a wooden lectern edge, shoulders dropping in a slow exhale, warm ambient lighting"
+    },
+    {
+      "narration": "I skipped the rehearsed intro and just started talking about why the topic mattered to me personally. My voice stopped shaking.",
+      "on_screen_text": "FINDING MY VOICE",
+      "duration_hint": 9.6,
+      "visual": "medium shot looking upward at a confident speaker gesturing naturally with one open hand, soft spotlight illuminating the center stage"
+    },
+    {
+      "narration": "Rows of people who had been staring at their phones actually looked up. Someone in the front row nodded in quiet agreement.",
+      "on_screen_text": "GAINING MOMENTUM",
+      "duration_hint": 9.6,
+      "visual": "over the shoulder view of a speaker looking down at an engaged audience member nodding attentively in a softly lit lecture hall"
+    },
+    {
+      "narration": "When I delivered my final sentence, the silence broke into genuine applause. I did not just survive the room, I owned it.",
+      "on_screen_text": "THE APPLAUSE",
+      "duration_hint": 9.1,
+      "visual": "medium profile shot of a smiling student standing tall at a wooden podium, bathed in warm applause lighting, sense of relief and triumph"
+    },
+    {
+      "narration": "If you love real stories about figuring life out one step at a time, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.3,
+      "visual": "warm cinematic portrait of a smiling young adult looking directly into the camera lens with genuine confidence, cozy room background"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-ep-29",
+  "title": "Neon Pulse — Episode 29: The Holographic Trap",
+  "description": "Kael confronts Commander Vance's holographic trap and discovers a deeper conspiracy hiding beneath the surface tier.",
+  "tags": [
+    "original hero saga",
+    "sci-fi action",
+    "cyberpunk thriller",
+    "superhero animation",
+    "neon pulse"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 29,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The glowing projection flickers and dissolves into empty air. Vance is gone, leaving only a mocking digital echo bouncing off the reinforced concrete walls.",
+      "on_screen_text": "THE EMPTY ROOM",
+      "duration_hint": 7.5,
+      "visual": "Low angle shot inside a dark concrete chamber, amber light fading from the center where a digital projection just vanished, empty metal corridors stretching into deep shadows"
+    },
+    {
+      "narration": "My powers surge through the tactical jacket, overloading the nearby security terminals. Sparks cascade across the floor like falling stars.",
+      "on_screen_text": "OVERLOAD SPARK",
+      "duration_hint": 7.0,
+      "visual": "Close up of hands generating bright amber energy against a shattered control console, intense blue and orange electrical sparks bouncing off stone flooring in a tight space"
+    },
+    {
+      "narration": "A hidden floor panel rattles open, revealing a dusty ladder descending into total darkness. This wasn't on any of Vance's decrypted schematics.",
+      "on_screen_text": "THE SECRET DESCENT",
+      "duration_hint": 7.0,
+      "visual": "Kneeling beside a dark rectangular opening in the metal floor, peering downward into a deep vertical shaft illuminated only by faint amber sleeve glow"
+    },
+    {
+      "narration": "Descending into the sub-basement, the air grows freezing and thick with the hum of forbidden technology. Massive server banks tower into the gloom.",
+      "on_screen_text": "FORBIDDEN VAULT",
+      "duration_hint": 7.0,
+      "visual": "Looking up from the bottom of a massive industrial chamber filled with towering black server towers humming with dim violet lights in the heavy mist"
+    },
+    {
+      "narration": "Glowing data crystals line the walls, pulsing in a rhythm that matches my own racing heartbeat. Someone built this facility long before Vance ever arrived.",
+      "on_screen_text": "ANCIENT CRYSTALS",
+      "duration_hint": 7.5,
+      "visual": "Reaching out to touch a cluster of jagged purple crystals embedded in a damp rock wall, warm amber energy creeping along the fingers toward the stone surface"
+    },
+    {
+      "narration": "A sudden holographic broadcast activates overhead, showing an unfamiliar symbol blinking in crimson. The voice tells me I was never meant to survive.",
+      "on_screen_text": "THE WARNING",
+      "duration_hint": 7.0,
+      "visual": "Staring upward with a tense expression as a harsh crimson light washes over the underground cavern from an unseen overhead emitter"
+    },
+    {
+      "narration": "Heavy blast doors begin to seal shut at both ends of the chamber. There is no going back now.",
+      "on_screen_text": "TRAPPED AGAIN",
+      "duration_hint": 5.5,
+      "visual": "Quick motion shot of thick steel doors slamming shut in a narrow corridor, throwing up tiny clouds of dust under harsh overhead emergency lighting"
+    },
+    {
+      "narration": "Follow along for the next chapter of Neon Pulse to see how Kael escapes this subterranean labyrinth.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Cinematic portrait shot facing the camera with a determined expression, surrounded by subtle glowing amber electrical particles drifting slowly in the air"
+    }
+  ]
+}

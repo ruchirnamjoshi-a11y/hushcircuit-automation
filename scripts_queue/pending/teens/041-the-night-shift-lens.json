@@ -1,0 +1,53 @@
+{
+  "id": "the-night-shift-lens",
+  "title": "The Night Shift Lens",
+  "description": "An amateur photographer learns to capture the beauty of the city after dark.",
+  "tags": [
+    "photography",
+    "night",
+    "city",
+    "creativity",
+    "perspective"
+  ],
+  "character_reference": "a young man with short wavy dark hair, wearing a black beanie and a worn canvas utility vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My night photography was coming out blurry, dark, and completely lifeless. I was ready to sell my camera gear.",
+      "on_screen_text": "DARK AND BLURRY",
+      "duration_hint": 9.6,
+      "visual": "close up of a digital camera LCD screen displaying a grainy, underexposed night photograph under a streetlamp, moody shadows"
+    },
+    {
+      "narration": "Instead of packing up, I sat on a concrete bench and watched the headlights streak past through the rain.",
+      "on_screen_text": "SLOWING DOWN",
+      "duration_hint": 9.1,
+      "visual": "medium shot of a photographer sitting alone on a park bench holding a DSLR camera, watching wet pavement reflect city lights"
+    },
+    {
+      "narration": "I adjusted my shutter speed to a full ten seconds and rested the camera firmly on the back of the bench.",
+      "on_screen_text": "THE ADJUSTMENT",
+      "duration_hint": 9.6,
+      "visual": "close up of hands adjusting a metal camera lens ring in the dark, glowing orange streetlights casting dramatic reflections"
+    },
+    {
+      "narration": "When the shutter clicked open, the stillness turned ordinary traffic into rivers of glowing red and white light.",
+      "on_screen_text": "PAINTING WITH LIGHT",
+      "duration_hint": 9.6,
+      "visual": "close up of a camera screen revealing a stunning long exposure photograph of streaking vehicle lights on a wet urban street"
+    },
+    {
+      "narration": "The city looked entirely different when I stopped fighting the darkness and started working with it.",
+      "on_screen_text": "A NEW PERSPECTIVE",
+      "duration_hint": 9.1,
+      "visual": "medium profile shot of a photographer smiling while reviewing a brilliant image on a camera screen in a dark alleyway"
+    },
+    {
+      "narration": "Sometimes your biggest creative breakthrough hides right inside your biggest frustration. Follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.6,
+      "visual": "cinematic portrait of a young creator looking up with a satisfied smile against a warm, bokeh-filled night background"
+    }
+  ]
+}

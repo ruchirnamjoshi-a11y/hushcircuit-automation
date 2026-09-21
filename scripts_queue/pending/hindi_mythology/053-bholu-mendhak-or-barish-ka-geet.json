@@ -1,0 +1,65 @@
+{
+  "id": "bholu-mendhak-or-barish-ka-geet",
+  "title": "भोलू मेंढक और बारिश का गीत",
+  "description": "एक नन्हा मेंढक जिसे गाना पसंद नहीं था, अपनी सुरीली आवाज से पहली बारिश का स्वागत करता है।",
+  "tags": [
+    "hindi stories",
+    "little frog",
+    "rain song",
+    "kids moral",
+    "bedtime tales"
+  ],
+  "character_reference": "a bright green little frog with large friendly eyes and round pink cheeks",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "तालाब के किनारे बैठा भोलू मेंढक सोच रहा था कि वह कभी अच्छा गाना नहीं गा सकता।",
+      "on_screen_text": "उदासन मन",
+      "duration_hint": 7.0,
+      "visual": "medium shot sitting despondently on a wet lily pad, looking down at the rippling water, soft overcast sky reflection"
+    },
+    {
+      "narration": "बाकी सभी मेंढक बारिश आने से पहले खुशी से टर्र-टर्र करके गा रहे थे।",
+      "on_screen_text": "गीतों की गूंज",
+      "duration_hint": 6.5,
+      "visual": "wide shot of several green frogs gathered on large lotus leaves with puffed-out throats, lively natural setting"
+    },
+    {
+      "narration": "तभी आसमान में पहली काली घटा छाई और ठंडी हवा का झोंका बह निकला।",
+      "on_screen_text": "काली घटा",
+      "duration_hint": 6.5,
+      "visual": "low angle shot of dark grey clouds rolling across the sky, tall reeds bending slightly in the fresh breeze"
+    },
+    {
+      "narration": "दोस्तों ने भोलू को भी अपने साथ सुर मिलाने के लिए प्यार से पुकारा।",
+      "on_screen_text": "प्यारा बुलावा",
+      "duration_hint": 6.0,
+      "visual": "close-up looking up with surprised eyes as another friendly frog nudges him gently, encouraging expressions"
+    },
+    {
+      "narration": "भोलू ने डरते-डरते अपनी आवाज़ निकाली और एक प्यारा सा सुर छेड़ दिया।",
+      "on_screen_text": "पहला सुर",
+      "duration_hint": 6.5,
+      "visual": "close-up of the frog opening its mouth wide to sing, ripples spreading outward in the water around the lily pad"
+    },
+    {
+      "narration": "उसकी मीठी आवाज सुनकर सभी ने तालियां बजाईं और बारिश झमाझम बरस पड़ी।",
+      "on_screen_text": "झमाझम बारिश",
+      "duration_hint": 7.0,
+      "visual": "wide shot of raindrops creating endless ripples across the calm pond, vibrant green surroundings glistening in the rain"
+    },
+    {
+      "narration": "भोलू समझ गया कि हर किसी की आवाज में अपना एक खास जादू होता है।",
+      "on_screen_text": "खास जादू",
+      "duration_hint": 6.5,
+      "visual": "medium shot sitting proudly on a large leaf with a big confident smile, soft gentle raindrops falling around"
+    },
+    {
+      "narration": "ऐसी ही और प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "medium shot waving a webbed paw cheerfully toward the camera, lush green pondside setting with soft sparkling raindrops"
+    }
+  ]
+}

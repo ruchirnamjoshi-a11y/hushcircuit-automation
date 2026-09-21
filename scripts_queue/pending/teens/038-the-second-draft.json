@@ -1,0 +1,53 @@
+{
+  "id": "the-second-draft",
+  "title": "The Second Draft",
+  "description": "An aspiring comic book artist realizes his protagonist is too cliché and starts over from scratch.",
+  "tags": [
+    "art",
+    "creative block",
+    "comic book",
+    "redemption",
+    "storytelling"
+  ],
+  "character_reference": "a tall teenager with messy blonde hair, paint-stained fingers, and an olive green zip-up hoodie",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I stared at the finished comic panel in pure disappointment. It looked like every generic superhero story ever printed.",
+      "on_screen_text": "THE STALE PAGE",
+      "duration_hint": 9.6,
+      "visual": "close up of a desk lamp illuminating an ink-stained drawing board covered in crumpled pencil sketches and eraser shavings, moody shadows"
+    },
+    {
+      "narration": "Months of late night sketching felt entirely wasted on a character nobody could possibly care about. The hero lacked a real heart.",
+      "on_screen_text": "WIPING THE SLATE",
+      "duration_hint": 10.0,
+      "visual": "medium shot of a frustrated artist aggressively tearing a large sheet of paper from a sketch pad, motion blur on hands, cluttered room background"
+    },
+    {
+      "narration": "Instead of saving the world, I decided my main character would just be trying to fix her broken bicycle before sundown.",
+      "on_screen_text": "SMALLER STAKES",
+      "duration_hint": 9.6,
+      "visual": "close up of a pencil rapidly sketching dynamic lines of a bicycle chain and wrench onto a clean white sheet of paper, warm desk lighting"
+    },
+    {
+      "narration": "The lines started flowing naturally. Every pen stroke carried real weight and genuine emotion this time around.",
+      "on_screen_text": "NEW ENERGY",
+      "duration_hint": 8.7,
+      "visual": "side profile of an artist intensely focused on drawing fine details with a black ink pen, glowing desk lamp casting warm highlights on hair"
+    },
+    {
+      "narration": "By dawn, the pages were alive with messy, imperfect, but utterly honest storytelling. This was the story I actually wanted to tell.",
+      "on_screen_text": "THE BREAKTHROUGH",
+      "duration_hint": 10.4,
+      "visual": "overhead flat lay shot of finished comic panels scattered across a wooden desk alongside colored markers and half-empty coffee mug, morning sunlight"
+    },
+    {
+      "narration": "Perfection is overrated, but authenticity changes everything. Follow along for more everyday journeys.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.3,
+      "visual": "cinematic medium shot of a creator holding up a finished illustrated page and smiling proudly toward the camera, soft indoor lighting"
+    }
+  ]
+}

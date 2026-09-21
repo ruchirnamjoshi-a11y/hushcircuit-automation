@@ -1,0 +1,65 @@
+{
+  "id": "pip-the-hedgehogs-heavy-shell",
+  "title": "Pip the Hedgehog's Heavy Shell",
+  "description": "Pip collects too many pretty pebbles for his backpack until he realizes traveling light makes the journey much sweeter.",
+  "tags": [
+    "lightness",
+    "hedgehog",
+    "journey",
+    "nature",
+    "bedtime"
+  ],
+  "character_reference": "a tiny round hedgehog with golden-brown quills, round spectacles perched on his nose, and a little blue canvas knapsack",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Pip waddled down the forest trail, his tiny canvas bag stuffed completely full of shiny smooth river stones.",
+      "on_screen_text": "HEAVY STONES",
+      "duration_hint": 7.0,
+      "visual": "side profile of a small hedgehog leaning forward under the weight of a bulging fabric knapsack"
+    },
+    {
+      "narration": "Every time he found a pretty pebble, he simply had to pick it up and add it to his growing collection.",
+      "on_screen_text": "MORE TREASURES",
+      "duration_hint": 7.0,
+      "visual": "close-up of small paws carefully placing a wet gray river stone into an already overflowing bag"
+    },
+    {
+      "narration": "Soon his little legs began to wobble, and walking up the gentle grassy hill felt like climbing a mountain.",
+      "on_screen_text": "TIRED LEGS",
+      "duration_hint": 7.0,
+      "visual": "low angle shot showing the struggling posture while climbing a steep incline of green moss"
+    },
+    {
+      "narration": "He sat down on a broad dock leaf to catch his breath, feeling much too tired to enjoy the lovely evening.",
+      "on_screen_text": "A RESTING SPOT",
+      "duration_hint": 7.5,
+      "visual": "slumped posture sitting on a green leaf with glasses sliding down the snout"
+    },
+    {
+      "narration": "With a gentle smile, Pip decided to leave his heaviest stones right there on the path for others to find.",
+      "on_screen_text": "LEAVING THEM BE",
+      "duration_hint": 7.0,
+      "visual": "paws gently unloading smooth gray stones onto the rich dark soil next to a fern"
+    },
+    {
+      "narration": "As soon as he stood back up, he felt light as a feather and skipped all the way home.",
+      "on_screen_text": "LIGHT AS A FEATHER",
+      "duration_hint": 7.0,
+      "visual": "dynamic action shot of the hedgehog bounding cheerfully along a sun-dappled path with a nearly empty bag"
+    },
+    {
+      "narration": "Sometimes letting go of excess weight helps our spirits soar.",
+      "on_screen_text": "LIGHTER SPIRITS",
+      "duration_hint": 6.0,
+      "visual": "peaceful dusk scene of the little hedgehog entering a warm glowing burrow under roots"
+    },
+    {
+      "narration": "Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm glowing close-up of a friendly woodland creature waving happily toward the camera"
+    }
+  ]
+}
