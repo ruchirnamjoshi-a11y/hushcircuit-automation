@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-table",
+  "title": "The Solo Table",
+  "description": "A woman overcomes the lingering anxiety of dining out alone and discovers the quiet pleasure of her own company.",
+  "tags": [
+    "solo dining",
+    "self love",
+    "confidence",
+    "mindfulness",
+    "women growth"
+  ],
+  "character_reference": "a woman in her late twenties with shoulder-length sleek blonde hair, wearing a navy blue wrap dress",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The bistro window glowed with warm amber light, revealing couples and large lively groups laughing over crowded dinner plates.",
+      "on_screen_text": "THE BISTRO WINDOW",
+      "duration_hint": 13.0,
+      "visual": "warm exterior shot looking through a glowing restaurant window filled with happy diners and cozy lighting"
+    },
+    {
+      "narration": "She stood on the sidewalk for a moment, wrestling with the irrational fear that everyone inside was judging her for being by herself.",
+      "on_screen_text": "HESITATION",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a woman hesitating outside a restaurant door, holding a small leather purse and looking thoughtfully down"
+    },
+    {
+      "narration": "Taking a deep breath, she pushed the glass door open and asked the host for a table for one without a hint of hesitation.",
+      "on_screen_text": "STEPPING INSIDE",
+      "duration_hint": 13.0,
+      "visual": "interior shot of a woman speaking politely to a host near a warm wooden entrance stand"
+    },
+    {
+      "narration": "The host guided her to a charming corner table lit by a small candle, offering a perfect view of the bustling room.",
+      "on_screen_text": "THE CORNER TABLE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a lit pillar candle flickering on a neatly set wooden restaurant table with cloth napkins"
+    },
+    {
+      "narration": "Instead of reaching nervously for her phone to hide behind a screen, she left it in her bag and opened a worn paperback book.",
+      "on_screen_text": "PRESENT MOMENT",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands opening a hardcover novel on a restaurant table next to a sparkling water glass"
+    },
+    {
+      "narration": "She ordered her favorite meal simply because she wanted it, savoring every single bite without rushing through the courses.",
+      "on_screen_text": "SAVORING THE MOMENT",
+      "duration_hint": 13.0,
+      "visual": "shallow depth of field shot of a delicious meal served on a ceramic plate with warm ambient restaurant blur behind"
+    },
+    {
+      "narration": "Looking around the room, she realized no one was watching her at all. She was completely free to enjoy her own peaceful evening.",
+      "on_screen_text": "TOTAL FREEDOM",
+      "duration_hint": 13.0,
+      "visual": "medium portrait of a smiling woman looking relaxed and content while dining alone in a cozy restaurant"
+    },
+    {
+      "narration": "Your own company is the best company you can keep. Follow along for more daily stories of self-empowerment.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "warm cozy restaurant interior with soft lighting, exposed brick walls, and inviting ambiance"
+    }
+  ]
+}

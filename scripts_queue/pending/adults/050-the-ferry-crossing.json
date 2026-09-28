@@ -1,0 +1,59 @@
+{
+  "id": "the-ferry-crossing",
+  "title": "The Ferry Crossing",
+  "description": "After years of highway commutes, a tollbooth worker takes a job on a quiet river ferry and finds peace in the crossing.",
+  "tags": [
+    "commute",
+    "river",
+    "peace",
+    "career shift",
+    "water"
+  ],
+  "character_reference": "a weathered woman with short graying hair, wearing a navy blue wool captain coat and a warm knitted scarf",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Headlights blurred past my tollbooth window every night in a rush of exhaust fumes and endless highway noise.",
+      "on_screen_text": "HIGHWAY NOISE",
+      "duration_hint": 11.0,
+      "visual": "blurs of red and white car taillights streaming past a glowing highway tollbooth in the dark rain"
+    },
+    {
+      "narration": "I traded the concrete asphalt for the steady churn of a diesel engine on a small river ferryboat.",
+      "on_screen_text": "THE RIVER BOAT",
+      "duration_hint": 11.0,
+      "visual": "stepping aboard the wooden deck of a green river ferry while dark water laps gently against the hull"
+    },
+    {
+      "narration": "Steering the heavy vessel across the wide river required feeling the currents rather than fighting against them.",
+      "on_screen_text": "RIVER CURRENTS",
+      "duration_hint": 12.0,
+      "visual": "hands gripping a large wooden ship steering wheel inside a cozy wooden wheelhouse overlooking the water"
+    },
+    {
+      "narration": "Morning fog wrapped around the hull, turning every crossing into a silent voyage through a dreamy white canvas.",
+      "on_screen_text": "SILENT VOYAGE",
+      "duration_hint": 11.0,
+      "visual": "thick white river fog surrounding the bow of a moving ferry cutting through calm gray water"
+    },
+    {
+      "narration": "Passengers sat quietly on the wooden benches, reading books or simply watching the water ripple away.",
+      "on_screen_text": "QUIET PASSENGERS",
+      "duration_hint": 11.0,
+      "visual": "passengers sitting quietly on outdoor wooden benches of a ferry wrapped in coats while looking at the river"
+    },
+    {
+      "narration": "Life is not about how fast you arrive at the destination, but how gently you navigate the middle.",
+      "on_screen_text": "THE MIDDLE WAY",
+      "duration_hint": 11.0,
+      "visual": "looking out a wheelhouse window at a sparkling river reflecting the orange light of a rising sun"
+    },
+    {
+      "narration": "Find your own smooth water in a turbulent world. Follow along for more stories of mindful transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "wide shot of a small ferry crossing a calm river under a breathtaking pastel sunrise sky"
+    }
+  ]
+}

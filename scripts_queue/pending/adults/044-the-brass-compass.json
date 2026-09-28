@@ -1,0 +1,59 @@
+{
+  "id": "the-brass-compass",
+  "title": "The Brass Compass",
+  "description": "A middle-aged cartographer finds a forgotten pocket compass that redirects his path away from retirement and toward unexplored local trails.",
+  "tags": [
+    "life crossroads",
+    "career change",
+    "middle age",
+    "walking",
+    "new beginnings"
+  ],
+  "character_reference": "a middle-aged man with silvering temples, wearing a worn wool vest and round wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Thirty years of drawing other people's property lines left my own world feeling entirely flat. I packed away my drafting pens, convinced the best adventures were already behind me.",
+      "on_screen_text": "THE FINAL DRAFT",
+      "duration_hint": 14.0,
+      "visual": "close-up of hands packing brass drafting tools into a velvet-lined wooden box on a cluttered mahogany desk under a green banker lamp"
+    },
+    {
+      "narration": "Deep in a forgotten desk drawer, I uncovered my grandfather's heavy brass pocket compass, its glass scratched by decades of forgotten travels.",
+      "on_screen_text": "A HIDDEN RELIC",
+      "duration_hint": 12.0,
+      "visual": "fingers lifting a tarnished heavy brass pocket compass from the dusty darkness of a wooden desk drawer"
+    },
+    {
+      "narration": "I stepped outside just as the morning mist began to lift, turning the familiar neighborhood streets into an unread map.",
+      "on_screen_text": "MORNING MIST",
+      "duration_hint": 10.0,
+      "visual": "low angle shot stepping out onto a damp cobblestone pathway while thick gray morning fog obscures the distant horizon"
+    },
+    {
+      "narration": "The compass needle spun freely before settling firmly toward a narrow footpath I had walked past a thousand times without noticing.",
+      "on_screen_text": "THE UNKNOWN TURN",
+      "duration_hint": 12.0,
+      "visual": "close-up of a vibrating brass compass needle pointing directly toward a narrow overgrown dirt trail flanked by dense ferns"
+    },
+    {
+      "narration": "Branches brushed against my shoulders as the paved roads gave way to the quiet rustle of ancient oaks and towering pines.",
+      "on_screen_text": "DEEPER INTO GREEN",
+      "duration_hint": 11.0,
+      "visual": "medium shot pushing through a dense thicket of green forest leaves with dappled sunlight filtering through tall branches"
+    },
+    {
+      "narration": "At the summit of the ridge, the valley spread out beneath me, offering a wide, unbroken view of possibilities I had stopped looking for.",
+      "on_screen_text": "THE HIGH RIDGE",
+      "duration_hint": 13.0,
+      "visual": "wide panoramic view from a grassy hill overlooking a vast sunlit green valley with winding rivers reflecting the bright sky"
+    },
+    {
+      "narration": "It is never too late to redraw the borders of your life. Follow along for more quiet stories of everyday transformation.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "over-the-shoulder shot holding a brass compass open against the backdrop of a warm golden sunset over open hills"
+    }
+  ]
+}

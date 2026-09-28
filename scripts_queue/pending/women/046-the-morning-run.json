@@ -1,0 +1,65 @@
+{
+  "id": "the-morning-run",
+  "title": "The Morning Run",
+  "description": "A woman who always made time for everyone else starts waking up early to claim a quiet hour entirely for her own physical strength.",
+  "tags": [
+    "morning routine",
+    "physical strength",
+    "self care",
+    "personal growth",
+    "boundaries"
+  ],
+  "character_reference": "an athletic woman in her late twenties with short dark hair in a ponytail, wearing a dark teal athletic zip-up jacket",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The alarm buzzed at five in the morning, cutting sharply through the peaceful pre-dawn silence of the sleeping house.",
+      "on_screen_text": "EARLY MORNING",
+      "duration_hint": 12.0,
+      "visual": "close-up of an analog alarm clock on a wooden nightstand with soft blue morning twilight filtering through the blinds"
+    },
+    {
+      "narration": "For years, those early hours were spent prepping breakfast, packing lunches, and clearing away everyone else's clutter.",
+      "on_screen_text": "CARING FOR OTHERS",
+      "duration_hint": 13.0,
+      "visual": "dimly lit kitchen counter with a stack of dishes and lunch containers waiting in the quiet shadows"
+    },
+    {
+      "narration": "Today, she laced up her running shoes in the dim hallway, making a silent promise that this hour belonged strictly to her.",
+      "on_screen_text": "CHOOSING HERSELF",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands double-knotting the laces of gray running shoes on a wooden entryway floor"
+    },
+    {
+      "narration": "Stepping out the door, the crisp morning air filled her lungs, waking her senses and washing away lingering fatigue.",
+      "on_screen_text": "FRESH AIR",
+      "duration_hint": 12.0,
+      "visual": "wide-angle shot of a quiet suburban sidewalk shrouded in a light morning mist under a pale purple dawn sky"
+    },
+    {
+      "narration": "Her feet hit the pavement in a steady, rhythmic cadence that matched the powerful beat of her own heartbeat.",
+      "on_screen_text": "FINDING RHYTHM",
+      "duration_hint": 12.0,
+      "visual": "low-angle tracking shot of running shoes pounding rhythmically against asphalt covered in fallen leaves"
+    },
+    {
+      "narration": "With every stride up the steep hill, she felt a surge of unshakeable strength replacing the weariness she had carried for months.",
+      "on_screen_text": "BUILDING STRENGTH",
+      "duration_hint": 13.0,
+      "visual": "medium side profile shot of a woman running up a gentle slope with determination and focus etched on her face"
+    },
+    {
+      "narration": "As the sun crested the horizon, painting the sky in brilliant orange, she stopped to catch her breath and smiled at the view.",
+      "on_screen_text": "SUNRISE MOMENT",
+      "duration_hint": 14.0,
+      "visual": "wide shot of a runner pausing on a hilltop, silhouetted against a vibrant golden and pink sunrise sky"
+    },
+    {
+      "narration": "Never feel guilty for putting your own well-being first. Follow along for more daily reminders of your inner power.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "warm golden morning light filtering through tree branches along a quiet park pathway"
+    }
+  ]
+}

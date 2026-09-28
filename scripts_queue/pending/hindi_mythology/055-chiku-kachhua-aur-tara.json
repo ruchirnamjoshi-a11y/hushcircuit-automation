@@ -1,0 +1,71 @@
+{
+  "id": "chiku-kachhua-aur-tara",
+  "title": "चिक्कू कछुआ और टूटा तारा",
+  "description": "चिक्कू कछुआ रात के समय जंगल में एक गिरते हुए तारे को ढूंढने निकलता है और एक नया दोस्त बनाता है।",
+  "tags": [
+    "कछुआ",
+    "तारा",
+    "रात",
+    "दोस्ती",
+    "बच्चों की कहानी"
+  ],
+  "character_reference": "a small green turtle with a polished amber-brown patterned shell and bright friendly eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "रात के अंधेरे में आसमान से चमकता हुआ एक टूटा तारा सीधे जंगल के कोनों में जा गिरा।",
+      "on_screen_text": "टूटता तारा",
+      "duration_hint": 7.5,
+      "visual": "Wide shot of a dark night sky filled with sparkling stars, with a bright glowing streak of light shooting down toward a dense, shadowy forest canopy."
+    },
+    {
+      "narration": "अपनी धीमी चाल से चलने वाले चिक्कू कछुए ने उस चमक को अपनी झाड़ियों के पास देखा।",
+      "on_screen_text": "अद्भुत चमक",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a small green turtle with a polished amber-brown patterned shell and bright friendly eyes peering out from under a large dark fern leaf toward a strange glowing light."
+    },
+    {
+      "narration": "वह बिना डरे अपनी छोटी गर्दन बाहर निकालकर उस जादुई रोशनी की तरफ बढ़ने लगा।",
+      "on_screen_text": "आगे की यात्रा",
+      "duration_hint": 7.0,
+      "visual": "Close up tracking shot of the small green turtle with a polished amber-brown patterned shell and bright friendly eyes crawling slowly over dewy dark soil and moss."
+    },
+    {
+      "narration": "करीब पहुंचने पर उसने देखा कि वह कोई तारा नहीं, बल्कि एक चमकने वाला नन्हा जुगनू था।",
+      "on_screen_text": "नन्हा जुगनू",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of the small green turtle with a polished amber-brown patterned shell and bright friendly eyes looking up in wonder at a tiny glowing insect hovering near a mushroom."
+    },
+    {
+      "narration": "जुगनू अपने पंख चोट लगने के कारण उड़ नहीं पा रहा था और बहुत डरा हुआ था।",
+      "on_screen_text": "परेशान जुगनू",
+      "duration_hint": 7.0,
+      "visual": "Close up of a tiny glowing beetle resting on a damp leaf with folded wings, looking sad while the small green turtle with a polished amber-brown patterned shell and bright friendly eyes watches."
+    },
+    {
+      "narration": "चिक्कू ने प्यार से अपनी पीठ झुकाई और जुगनू से उस पर बैठने के लिए कहा।",
+      "on_screen_text": "प्यार की मदद",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of the small green turtle with a polished amber-brown patterned shell and bright friendly eyes lowering its head invitingly toward the glowing insect."
+    },
+    {
+      "narration": "जुगनू उसकी पीठ पर बैठ गया और उसकी रोशनी से कछुए का रास्ता रोशन हो गया।",
+      "on_screen_text": "रोशन सफर",
+      "duration_hint": 7.0,
+      "visual": "Close up of the small green turtle with a polished amber-brown patterned shell and bright friendly eyes crawling forward with the glowing insect riding safely on its shell, casting a warm golden light."
+    },
+    {
+      "narration": "दोनों ने मिलकर रात का आनंद लिया और समझ गए कि हर छोटी मदद बड़ी होती है।",
+      "on_screen_text": "नया दोस्त",
+      "duration_hint": 7.5,
+      "visual": "Wide shot of a peaceful nocturnal forest clearing lit by fireflies, with the small green turtle with a polished amber-brown patterned shell and bright friendly eyes resting happily near glowing mushrooms."
+    },
+    {
+      "narration": "ऐसी ही प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "Close up of dewdrops on grass blades reflecting the gentle blue light of the breaking dawn sky."
+    }
+  ]
+}

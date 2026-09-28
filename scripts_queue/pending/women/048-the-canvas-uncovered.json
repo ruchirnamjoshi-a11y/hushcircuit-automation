@@ -1,0 +1,65 @@
+{
+  "id": "the-canvas-uncovered",
+  "title": "The Canvas Uncovered",
+  "description": "A woman who abandoned painting to pursue a practical career finally takes the drop cloth off her easel and picks up a brush.",
+  "tags": [
+    "artistic journey",
+    "practical career",
+    "finding passion",
+    "creative freedom",
+    "women stories"
+  ],
+  "character_reference": "a woman in her late twenties with messy blonde hair tucked behind her ears, wearing a paint-splattered denim shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "A heavy, dust-covered white sheet hung like a ghost over the corner of the spare bedroom, hiding memories of a forgotten hobby.",
+      "on_screen_text": "THE COVERED EASEL",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a tall wooden easel draped with a dusty white canvas sheet in a quiet sunlit room"
+    },
+    {
+      "narration": "Her career in finance paid the bills safely, but left her creative soul feeling starved of color and spontaneous expression.",
+      "on_screen_text": "SAFE CHOICES",
+      "duration_hint": 13.0,
+      "visual": "close-up of a sleek calculator and financial spreadsheets resting on a neat glass desk with no personal touches"
+    },
+    {
+      "narration": "She walked across the hardwood floor and gripped the hem of the drop cloth, feeling a nervous flutter in her stomach.",
+      "on_screen_text": "TAKING THE RISK",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands clutching a white fabric sheet, ready to pull it away with tense anticipation"
+    },
+    {
+      "narration": "With one swift pull, the sheet flew off into the air, revealing a blank white canvas waiting eagerly for a fresh start.",
+      "on_screen_text": "A BLANK SLATE",
+      "duration_hint": 13.0,
+      "visual": "action shot of a white drop cloth being swept away to reveal a pristine blank wooden artist's canvas"
+    },
+    {
+      "narration": "She squeezed bright pools of crimson and ultramarine paint onto her wooden palette, enjoying the rich textures of the pigment.",
+      "on_screen_text": "MIXING COLORS",
+      "duration_hint": 13.0,
+      "visual": "macro shot of a wooden palette with vibrant globs of oil paint being mixed together by a metal spatula"
+    },
+    {
+      "narration": "Without sketching a preliminary plan, she pressed the bristle brush firmly against the fabric and let her intuition guide her hand.",
+      "on_screen_text": "FIRST STROKE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a paintbrush dragging rich blue paint across a blank white canvas in a sweeping, confident arc"
+    },
+    {
+      "narration": "Hours melted away as color flooded the surface, turning the empty white square into a vibrant landscape of pure emotion.",
+      "on_screen_text": "FLOWING CREATIVITY",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a woman stepping back to admire her colorful abstract painting with a joyful and relaxed smile"
+    },
+    {
+      "narration": "It is never too late to return to the things that make your spirit feel alive. Follow along for more empowering stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "warm artistic studio space filled with paint jars, brushes, and natural light streaming through a large window"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "neon-pulse-abyss-awakening",
+  "title": "Neon Pulse — Episode 32: Abyss Awakening",
+  "description": "Kael plunges into an uncharted underground ocean trench, dodging collapsing rock walls while his amber circuitry absorbs the pressure and reveals a submerged alien facility.",
+  "tags": [
+    "original hero saga",
+    "action adventure",
+    "sci fi",
+    "underwater trench",
+    "secret facility",
+    "cliffhanger"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 32,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The freezing water slams against my chest as I plummet deep into the black abyss. Jagged stone walls rush past in a terrifying blur of foam and shadow.",
+      "on_screen_text": "THE PLUNGE",
+      "duration_hint": 11.3,
+      "visual": "Wide angle shot of a solitary figure hurtling down a massive underwater trench, turbulent white water foaming around them, dark rock faces rushing past in a blur, dramatic lighting."
+    },
+    {
+      "narration": "My jacket pulses with a harsh amber glare, fighting off the crushing deep-sea pressure. The downloaded coordinates burn hot against my skin, pointing straight down into the void.",
+      "on_screen_text": "PRESSURE SURGE",
+      "duration_hint": 12.2,
+      "visual": "Close-up of glowing amber patterns flaring brightly across dark fabric sleeves underwater, micro-bubbles floating past, tense expression illuminated by warm orange light."
+    },
+    {
+      "narration": "Through the murky depths, massive metallic silhouettes begin to loom. These are not natural rock formations, but colossal submerged spires of ancient alien architecture.",
+      "on_screen_text": "SUNKEN SPIRES",
+      "duration_hint": 12.6,
+      "visual": "Mid shot looking upward past a swimming figure toward gigantic, barnacle-encrusted metal towers half-buried in ocean silt, eerie blue aquatic lighting casting long shadows."
+    },
+    {
+      "narration": "I kick hard toward a glowing fissure in the sunken metal hull. The amber circuits flare brighter, guiding my descent past rusted bulkheads and floating debris.",
+      "on_screen_text": "THE BREACH",
+      "duration_hint": 12.2,
+      "visual": "Over-the-shoulder perspective of a swimmer approaching a jagged tear in a massive metallic wall, dark water swirling around the glowing orange patterns on the sleeves."
+    },
+    {
+      "narration": "I pull myself through the hull breach and tumble onto a dry, pressurized observation deck. Water drains away instantly through automated floor grates with a loud hiss.",
+      "on_screen_text": "DRY LANDING",
+      "duration_hint": 13.0,
+      "visual": "Action shot of a figure landing on a metallic grated floor inside a dark, cavernous room, water spraying off clothing while automated panels hiss open in the background."
+    },
+    {
+      "narration": "Thousands of dormant holographic consoles flicker back to life around me. They display the exact schematics of Commander Vance's server hub and something far larger.",
+      "on_screen_text": "WAKING SCREENS",
+      "duration_hint": 12.2,
+      "visual": "Low angle view of a person standing amidst towering arrays of glowing holographic blue displays, faces illuminated by complex architectural wireframe projections."
+    },
+    {
+      "narration": "A deep, resonant hum vibrates through the metal floor beneath my boots. The entire sunken complex is powering up, and my jacket is acting as the primary master key.",
+      "on_screen_text": "MASTER KEY",
+      "duration_hint": 12.6,
+      "visual": "Medium close-up of boots planted firmly on shaking steel grating, amber light pulsing in synchronization with rhythmic waves of blue energy rippling across the floor."
+    },
+    {
+      "narration": "Before I can process the terminal data, heavy blast doors at the end of the corridor begin to grind open. A pair of glowing mechanical red eyes stares back from the dark.",
+      "on_screen_text": "THE WATCHER",
+      "duration_hint": 13.0,
+      "visual": "POV shot looking down a long, dark metallic corridor as massive heavy doors part slowly, revealing two menacing crimson optic lights shining through steam and shadow."
+    },
+    {
+      "narration": "Join me for the next chapter as this mystery unfolds. Hit subscribe to follow along for more original hero adventures.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.4,
+      "visual": "Cinematic portrait shot of a determined hero looking directly toward the camera with glowing amber accents on clothing, dramatic blue and orange backlighting."
+    }
+  ]
+}

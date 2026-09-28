@@ -1,0 +1,59 @@
+{
+  "id": "the-orchard-ladder",
+  "title": "The Orchard Ladder",
+  "description": "A retired accountant inherits an overgrown apple orchard and learns the slow art of tending things that take years to grow.",
+  "tags": [
+    "retirement",
+    "nature",
+    "patience",
+    "orchard",
+    "second act"
+  ],
+  "character_reference": "a stocky middle-aged man with a trimmed gray beard, wearing a green canvas jacket and mud-stained leather boots",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Spreadsheets and ledgers were all I knew until my uncle left me twenty acres of gnarled, forgotten apple trees.",
+      "on_screen_text": "TWENTY ACRES",
+      "duration_hint": 11.0,
+      "visual": "wide shot of an overgrown orchard filled with wild tangled apple trees under an overcast afternoon sky"
+    },
+    {
+      "narration": "The branches were tangled and choked with deadwood, crying out for someone to care for them properly.",
+      "on_screen_text": "TANGLED BRANCHES",
+      "duration_hint": 11.0,
+      "visual": "close-up of weathered hands gripping a pair of long-handled red pruning shears near a thick, mossy tree branch"
+    },
+    {
+      "narration": "I propped a weathered wooden ladder against the trunk of a majestic old tree and climbed into its leafy canopy.",
+      "on_screen_text": "THE CLIMB",
+      "duration_hint": 11.0,
+      "visual": "climbing an old wooden ladder resting against the thick trunk of a massive untamed apple tree in full leaf"
+    },
+    {
+      "narration": "With every careful snip of the shears, sunlight poured deeper into the center of the crown where it had been blocked for years.",
+      "on_screen_text": "LET IN THE LIGHT",
+      "duration_hint": 13.0,
+      "visual": "pruning shears slicing through a small dead branch as golden sunbeams break through the thick foliage"
+    },
+    {
+      "narration": "Harvest season arrived with branches bowed low under the weight of crisp, red fruit born from renewed attention.",
+      "on_screen_text": "HEAVY BRANCHES",
+      "duration_hint": 11.0,
+      "visual": "close-up of hands gently cupping a large, ripe red apple hanging from a branch weighed down by fruit"
+    },
+    {
+      "narration": "You cannot rush an apple tree, and as it turned out, you cannot rush peace of mind either.",
+      "on_screen_text": "SLOW PEACE",
+      "duration_hint": 11.0,
+      "visual": "sitting on an overturned wooden crate in the orchard eating a fresh apple while watching autumn leaves drift down"
+    },
+    {
+      "narration": "Cultivate the life you actually want to harvest. Follow along for more inspiring midlife journeys.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "sunlit orchard rows stretching into the distance with baskets full of freshly picked red apples resting on the grass"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "bholu-bhalu-aur-chhoti-titli",
+  "title": "भोलू भालू और छोटी तितली",
+  "description": "विशालकाय भोलू भालू एक छोटी सी तितली की रक्षा करता है और सीखता है कि आकार कोई मायने नहीं रखता।",
+  "tags": [
+    "भालू",
+    "तितली",
+    "दयालुता",
+    "मित्रता",
+    "बच्चों की कहानी"
+  ],
+  "character_reference": "a large fluffy brown bear with a patch of lighter golden fur on his chest and gentle dark eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "जंगल के राजा कहे जाने वाले विशाल भोलू भालू को फूलों से बहुत प्यार था।",
+      "on_screen_text": "फूलों का प्रेमी",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a large fluffy brown bear with a patch of lighter golden fur on his chest and gentle dark eyes gently sniffing a cluster of bright yellow wildflowers."
+    },
+    {
+      "narration": "एक दिन एक तेज हवा का झोंका आया और एक नन्ही पीली तितली हवा में उड़ गई।",
+      "on_screen_text": "तेज हवा",
+      "duration_hint": 7.0,
+      "visual": "Wide shot of swirling autumn leaves and a tiny yellow butterfly tumbling helplessly through the air above green meadow grass."
+    },
+    {
+      "narration": "तितली डरकर सीधे भोलू की भारी नाक पर आकर गिर पड़ी।",
+      "on_screen_text": "अचानक मेहमान",
+      "duration_hint": 6.5,
+      "visual": "Close up of the large fluffy brown bear with a patch of lighter golden fur on his chest and gentle dark eyes cross-eyed, looking down at a tiny yellow butterfly perched right on his black nose."
+    },
+    {
+      "narration": "भोलू बिल्कुल नहीं हिला ताकि उस नन्ही जान को कोई चोट न पहुंचे।",
+      "on_screen_text": "सावधानी और प्यार",
+      "duration_hint": 7.0,
+      "visual": "Medium close up of the large fluffy brown bear with a patch of lighter golden fur on his chest and gentle dark eyes holding completely still with a very gentle expression on his furry face."
+    },
+    {
+      "narration": "तितली संभली और भोलू की नाक पर ही अपने पंख आराम से फैला दिए।",
+      "on_screen_text": "सुंदर पल",
+      "duration_hint": 6.5,
+      "visual": "Macro close up of the delicate yellow wings of the butterfly spread wide open against the furry brown texture of the bear's nose."
+    },
+    {
+      "narration": "जब हवा थमी, तो तितली उड़ी और भोलू के चारों ओर धन्यवाद देने के लिए चक्कर काटने लगी।",
+      "on_screen_text": "धन्यवाद का नृत्य",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of the large fluffy brown bear with a patch of lighter golden fur on his chest and gentle dark eyes smiling broadly as a yellow butterfly flutters in circles around his head."
+    },
+    {
+      "narration": "भोलू ने मुस्कुराकर उसे विदा किया और समझ गया कि छोटे दोस्त भी बहुत खास होते हैं।",
+      "on_screen_text": "प्यारी विदाई",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of the large fluffy brown bear with a patch of lighter golden fur on his chest and gentle dark eyes waving a paw slowly as the butterfly flies toward the sunny sky."
+    },
+    {
+      "narration": "उस दिन से दोनों अक्सर उसी घास के मैदान में मिलने लगे।",
+      "on_screen_text": "पक्की दोस्ती",
+      "duration_hint": 6.0,
+      "visual": "Wide peaceful shot of the sunny meadow filled with blooming flowers and tall green grass swaying in the gentle breeze."
+    },
+    {
+      "narration": "ऐसी ही प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "Close up of wild daisies glowing warmly in the soft light of late afternoon sunbeams."
+    }
+  ]
+}

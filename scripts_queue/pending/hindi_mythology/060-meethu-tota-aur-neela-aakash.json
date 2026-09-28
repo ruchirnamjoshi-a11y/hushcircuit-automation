@@ -1,0 +1,71 @@
+{
+  "id": "meethu-tota-aur-neela-aakash",
+  "title": "मीठू तोता और नीला आकाश",
+  "description": "मीठू तोता पहली बार बादलों से ऊपर उड़ान भरने की हिम्मत जुटाता है और नई दुनिया देखता है.",
+  "tags": [
+    "तोता",
+    "आकाश",
+    "उड़ान",
+    "साहस",
+    "बच्चों की कहानी"
+  ],
+  "character_reference": "a bright green parrot with a curved red beak and yellow-tipped tail feathers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "हरे-भरे जंगलों के बीच रहने वाले मीठू तोते का सपना हमेशा से बादलों को छूने का था।",
+      "on_screen_text": "बड़ा सपना",
+      "duration_hint": 7.5,
+      "visual": "Wide shot of a vibrant green forest canopy stretching out toward a massive expanse of bright blue sky filled with fluffy white clouds."
+    },
+    {
+      "narration": "लेकिन ऊंचे बादलों की तेज हवाओं से वह हमेशा थोड़ा डरता रहता था।",
+      "on_screen_text": "छोटा डर",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a bright green parrot with a curved red beak and yellow-tipped tail feathers perched anxiously on a thin twig, looking upward with wide eyes."
+    },
+    {
+      "narration": "एक दिन उसने अपने पंखों को फैलाया और डर को पीछे छोड़कर उड़ान भर दी।",
+      "on_screen_text": "साहसी उड़ान",
+      "duration_hint": 7.5,
+      "visual": "Action shot of the bright green parrot with a curved red beak and yellow-tipped tail feathers launching powerfully off a branch into the open sky with wings fully spread."
+    },
+    {
+      "narration": "वह पंख फड़फड़ाता हुआ बादलों के बीचों-बीच जा पहुंचा जहां धूप सुनहरी लग रही थी।",
+      "on_screen_text": "बादलों के पार",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of the bright green parrot with a curved red beak and yellow-tipped tail feathers soaring smoothly through soft, glowing white cloud formations."
+    },
+    {
+      "narration": "वहां का नजारा इतना सुंदर था कि उसका सारा डर पल भर में गायब हो गया।",
+      "on_screen_text": "अद्भुत नजारा",
+      "duration_hint": 7.5,
+      "visual": "Close up of the bright green parrot with a curved red beak and yellow-tipped tail feathers gliding with a joyful, relaxed expression against a vast azure sky."
+    },
+    {
+      "narration": "उसने ऊंचे आसमान में गोल-गोल चक्कर काटे और आज़ादी का असली मतलब जाना।",
+      "on_screen_text": "आज़ाद उड़ान",
+      "duration_hint": 7.0,
+      "visual": "Wide shot of the bright green parrot banking gracefully in a wide loop high above the distant green treetops."
+    },
+    {
+      "narration": "खुशी से चहकते हुए वह अपने साथियों को यह अद्भुत कहानी सुनाने नीचे उतरा।",
+      "on_screen_text": "वापसी का उत्साह",
+      "duration_hint": 7.5,
+      "visual": "Action shot of the bright green parrot with a curved red beak and yellow-tipped tail feathers diving downward in a swift, controlled arc toward the forest."
+    },
+    {
+      "narration": "मीठू ने सीख लिया कि डर का सामना करने पर ही बड़े सपने सच होते हैं।",
+      "on_screen_text": "सच्चा साहस",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of the bright green parrot with a curved red beak and yellow-tipped tail feathers perched happily on a high branch surrounded by admiring forest friends."
+    },
+    {
+      "narration": "ऐसी ही प्रेरणादायक कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "Close up of golden sun rays breaking through soft white clouds in a peaceful evening sky."
+    }
+  ]
+}

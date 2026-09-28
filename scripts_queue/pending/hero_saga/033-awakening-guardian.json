@@ -1,0 +1,65 @@
+{
+  "id": "awakening-guardian",
+  "title": "Neon Pulse — Episode 33: Awakening Guardian",
+  "description": "Kael faces the terrifying automated guardian inside the sunken alien facility.",
+  "tags": [
+    "neon-pulse",
+    "sci-fi",
+    "action",
+    "alien-facility",
+    "cliffhanger"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 33,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Heavy blast doors grind open, revealing a towering mechanical silhouette standing amidst swirling azure mist.",
+      "on_screen_text": "THE GAUNTLET",
+      "duration_hint": 4.5,
+      "visual": "Wide low-angle shot of massive steel doors parting to reveal a towering robotic entity radiating blue light inside a dark metallic chamber."
+    },
+    {
+      "narration": "Red optic sensors ignite across the machine's face, locking directly onto the sudden surge of energy from my sleeves.",
+      "on_screen_text": "TARGET LOCKED",
+      "duration_hint": 4.5,
+      "visual": "Close-up of glowing crimson optical sensors activating in the darkness, pointing aggressively toward the camera."
+    },
+    {
+      "narration": "I throw my arms forward, sending a blinding wave of amber light crashing against the heavy armor plating.",
+      "on_screen_text": "PULSE STRIKE",
+      "duration_hint": 4.0,
+      "visual": "Medium action shot of a man thrusting his arms outward, unleashing a brilliant shockwave of orange energy ripples across a dark metallic hallway."
+    },
+    {
+      "narration": "The shockwave shatters the first layer of defense, but the machine retaliates with a blinding energy beam.",
+      "on_screen_text": "FIERY RETALIATION",
+      "duration_hint": 4.0,
+      "visual": "Dynamic perspective shot of a bright blue laser beam cutting through the air toward a ducking figure in a dimly lit industrial room."
+    },
+    {
+      "narration": "I slide across the slick grated floor, narrowly dodging the searing heat as it melts the steel bulkhead behind me.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 4.5,
+      "visual": "Low-angle side shot of a man sliding desperately across a metal floor while a searing beam of light scorches the wall right behind him."
+    },
+    {
+      "narration": "My amber circuitry pulses erratically, whispering a forgotten alien frequency directly into my racing mind.",
+      "on_screen_text": "STRANGE FREQUENCY",
+      "duration_hint": 4.0,
+      "visual": "Close-up profile of a man clutching his head in pain as bright orange patterns on his clothing flare with intense pulsating light."
+    },
+    {
+      "narration": "The guardian steps forward, raising a massive blade forged from the very same alien metal as the sunken walls.",
+      "on_screen_text": "BLADE DRAWN",
+      "duration_hint": 4.5,
+      "visual": "Medium shot of a towering robotic combatant raising a jagged glowing weapon in a cavernous underwater installation."
+    },
+    {
+      "narration": "Follow along for more of the Neon Pulse saga as the mysteries of the deep ocean unfold.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.0,
+      "visual": "Cinematic wide shot of a solitary figure standing defiantly before a massive glowing portal in a dark sunken chamber."
+    }
+  ]
+}

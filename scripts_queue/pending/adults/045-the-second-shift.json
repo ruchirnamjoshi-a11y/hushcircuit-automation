@@ -1,0 +1,59 @@
+{
+  "id": "the-second-shift",
+  "title": "The Second Shift",
+  "description": "After losing his decades-long factory job, an experienced machinist learns to carve wooden toys for local children.",
+  "tags": [
+    "career change",
+    "craftsmanship",
+    "midlife",
+    "second chance",
+    "hope"
+  ],
+  "character_reference": "a weathered man with deep laugh lines around his eyes, wearing a faded plaid flannel shirt and canvas work apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The factory lights clicked off for the very last time, leaving behind a silence that echoed louder than any machinery.",
+      "on_screen_text": "THE FINAL WHISTLE",
+      "duration_hint": 11.0,
+      "visual": "dim industrial workshop with heavy shadows cast by idle steel presses and empty workbench surfaces"
+    },
+    {
+      "narration": "My hands were used to tightening bolts and calibrating steel, but empty palms felt strangely light and terrifying.",
+      "on_screen_text": "EMPTY HANDS",
+      "duration_hint": 11.0,
+      "visual": "close-up of calloused hands turning over slowly in a shaft of pale afternoon light coming through a dusty window"
+    },
+    {
+      "narration": "In the corner of my small garage, a block of soft pine sat waiting for a purpose far simpler than any engine part.",
+      "on_screen_text": "A BLOCK OF PINE",
+      "duration_hint": 11.0,
+      "visual": "workbench surface piled with wood shavings holding a single rough square block of pale yellow pine wood"
+    },
+    {
+      "narration": "I picked up a whittling knife, letting muscle memory guide the blade through the fragrant, yielding wood.",
+      "on_screen_text": "THE FIRST CUT",
+      "duration_hint": 10.0,
+      "visual": "close-up of a sharp pocketknife slicing a long, curling ribbon of fragrant light wood from a pine block"
+    },
+    {
+      "narration": "Slowly, the block took the shape of a clumsy little wooden horse with sturdy legs and a proud, rounded neck.",
+      "on_screen_text": "SHAPING WOOD",
+      "duration_hint": 11.0,
+      "visual": "hands smoothing the rough edges of a small handmade wooden toy horse using fine-grained sandpaper"
+    },
+    {
+      "narration": "When a neighborhood child smiled at the unfinished toy, I realized my working life was only beginning anew.",
+      "on_screen_text": "A NEW SPARK",
+      "duration_hint": 11.0,
+      "visual": "close-up of a smiling child's small hand reaching out to touch a polished wooden horse on a rustic wooden table"
+    },
+    {
+      "narration": "Every ending makes room for something handmade and true. Follow along for more stories of fresh starts.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "warm glowing workshop interior filled with rows of wooden toys drying under soft incandescent work lamps"
+    }
+  ]
+}
