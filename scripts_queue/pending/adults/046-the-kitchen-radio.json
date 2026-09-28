@@ -1,0 +1,59 @@
+{
+  "id": "the-kitchen-radio",
+  "title": "The Kitchen Radio",
+  "description": "A woman living alone after her children leave for college repairs an old tube radio and reconnects with the world.",
+  "tags": [
+    "empty nest",
+    "solitude",
+    "connection",
+    "middle age",
+    "radio"
+  ],
+  "character_reference": "a woman in her late forties with curly auburn hair tied back in a messy knot, wearing an oversized knit sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The kitchen felt impossibly large once the moving boxes were loaded and the last car drove down the driveway.",
+      "on_screen_text": "THE QUIET HOUSE",
+      "duration_hint": 11.0,
+      "visual": "empty sunlit kitchen with cardboard packing boxes sitting neatly against pale wooden cabinets"
+    },
+    {
+      "narration": "In the pantry sat my grandmother's old bakelite radio, silent and gathering dust since the Nixon administration.",
+      "on_screen_text": "DUSTY RELIC",
+      "duration_hint": 11.0,
+      "visual": "close-up of a dusty brown vintage bakelite radio sitting on a high kitchen shelf draped in cobwebs"
+    },
+    {
+      "narration": "With a screwdriver and steady patience, I unscrewed the back panel to see what made the ancient electronics tick.",
+      "on_screen_text": "INSIDE THE DIAL",
+      "duration_hint": 11.0,
+      "visual": "fingers using a small silver screwdriver to remove tiny brass screws from the back panel of a vintage radio chassis"
+    },
+    {
+      "narration": "A loose wire was re-soldered, and the glass vacuum tubes began to glow with a warm, amber invitation.",
+      "on_screen_text": "AMBER GLOW",
+      "duration_hint": 11.0,
+      "visual": "close-up of glowing orange vacuum tubes illuminating the dark interior wiring of an open vintage radio"
+    },
+    {
+      "narration": "Static hissed before fading into a rich jazz broadcast that filled the hollow rooms with life and rhythm.",
+      "on_screen_text": "THE MUSIC RETURNS",
+      "duration_hint": 12.0,
+      "visual": "turning a round brass tuning knob on the front of a restored radio while dancing dust motes catch the light"
+    },
+    {
+      "narration": "Solitude stopped feeling like an empty room and started feeling like a space entirely my own to fill.",
+      "on_screen_text": "YOUR OWN SPACE",
+      "duration_hint": 11.0,
+      "visual": "medium shot sitting at a kitchen table drinking hot tea while soft jazz music plays from the restored radio nearby"
+    },
+    {
+      "narration": "Tune into the quiet frequencies of everyday reinvention. Follow along for more stories of personal growth.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "warm evening sunlight streaming through a kitchen window reflecting off the polished brown surface of a working vintage radio"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "the-sundial-maker",
+  "title": "The Sundial Maker",
+  "description": "A former watchmaker trades digital clocks for stone carving, crafting sundials that measure time by the sun.",
+  "tags": [
+    "craft",
+    "time",
+    "stone carving",
+    "mindfulness",
+    "retirement"
+  ],
+  "character_reference": "an older man with deeply tanned skin and powerful forearms, wearing a dusty canvas smock and leather wrist wrap",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Digital screens flashed numbers at me second by second, turning human time into an exhausting race against the clock.",
+      "on_screen_text": "DIGITAL RACE",
+      "duration_hint": 11.0,
+      "visual": "glowing digital alarm clock numbers changing rapidly in a dark room casting a harsh red light"
+    },
+    {
+      "narration": "I traded microchips for river slate, choosing to measure the hours by the shifting shadows of the sun instead.",
+      "on_screen_text": "RIVER SLATE",
+      "duration_hint": 11.0,
+      "visual": "heavy chisel striking a flat slab of dark gray slate stone resting on a sturdy wooden workbench"
+    },
+    {
+      "narration": "Calculating the gnomon angle required precise geometry, aligning the brass blade with the axis of the earth.",
+      "on_screen_text": "THE GNOMON",
+      "duration_hint": 11.0,
+      "visual": "measuring the angle of a brass metal pin inserted into a carved stone disc using a small silver protractor"
+    },
+    {
+      "narration": "Chisel taps echoed in the quiet shed as Roman numerals emerged from the rough gray stone surface.",
+      "on_screen_text": "CHISELED HOURS",
+      "duration_hint": 10.0,
+      "visual": "close-up of a metal chisel carving the Roman numeral twelve into the surface of a dark slate sundial"
+    },
+    {
+      "narration": "When installed in the garden, the shadow moved with agonizing, beautiful slowness across the polished slate.",
+      "on_screen_text": "THE SHADOW MOVES",
+      "duration_hint": 12.0,
+      "visual": "sunlight casting a sharp shadow from a brass gnomon across carved stone markings on a garden sundial"
+    },
+    {
+      "narration": "Time is not something to defeat; it is something to inhabit with patience and grace.",
+      "on_screen_text": "INHABITING TIME",
+      "duration_hint": 10.0,
+      "visual": "brushing stone dust off a finished slate sundial while sitting in a tranquil, flower-filled garden"
+    },
+    {
+      "narration": "Slow down and watch the right shadows fall. Follow along for more thoughtful reflections on living well.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "warm golden hour sunlight illuminating a hand-carved stone sundial surrounded by blooming lavender plants"
+    }
+  ]
+}

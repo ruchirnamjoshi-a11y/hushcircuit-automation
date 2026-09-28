@@ -1,0 +1,71 @@
+{
+  "id": "meeku-chuha-aur-pyaasa-pakshi",
+  "title": "मीकू चूहा और प्यासा पक्षी",
+  "description": "मीकू चूहा अपनी सूझबूझ से एक प्यासे पक्षी की जान बचाता है और उसे पानी तक पहुंचाता है।",
+  "tags": [
+    "चूहा",
+    "पक्षी",
+    "प्यास",
+    "मदद",
+    "बच्चों की कहानी"
+  ],
+  "character_reference": "a tiny grey mouse with oversized round ears and a pink button nose",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "गर्मी के एक कड़े दिन में जंगल की सूखी जमीन पर एक छोटा पक्षी प्यास से बेहाल बैठा था।",
+      "on_screen_text": "प्यासा पक्षी",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of a small blue bird with drooping wings resting dejectedly on cracked, dry earth under the harsh glare of a summer sun."
+    },
+    {
+      "narration": "पास ही के बिल से मीकू चूहा निकला और उसने पक्षी की हालत तुरंत भांप ली।",
+      "on_screen_text": "नजर पड़ी",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a tiny grey mouse with oversized round ears and a pink button nose peeking out from a small dirt burrow, looking with concern at the struggling bird."
+    },
+    {
+      "narration": "मीकू तुरंत पक्षी के पास गया और अपनी पतली आवाज में उससे पानी के बारे में पूछा।",
+      "on_screen_text": "संवेदना भरी पुकार",
+      "duration_hint": 7.0,
+      "visual": "Close up of the tiny grey mouse with oversized round ears and a pink button nose standing close to the blue bird, tilting its head sympathetically."
+    },
+    {
+      "narration": "आसपास कोई नदी या तालाब नहीं था, लेकिन मीकू को पुराने बगीचे का घड़ा याद आ गया।",
+      "on_screen_text": "पुरानी याद",
+      "duration_hint": 7.5,
+      "visual": "Wide shot of a neglected overgrown garden patch with tall dry weeds and wild bushes under a bright sky."
+    },
+    {
+      "narration": "मीकू ने पक्षी को अपने पीछे आने का इशारा किया और तेजी से बगीचे की ओर दौड़ा।",
+      "on_screen_text": "साथ चलो",
+      "duration_hint": 7.0,
+      "visual": "Action shot of the tiny grey mouse with oversized round ears and a pink button nose scurrying rapidly across dusty ground while the blue bird flaps its wings to follow closely."
+    },
+    {
+      "narration": "वहां एक पुराना मिट्टी का बर्तन रखा था जिसके तल पर थोड़ा सा पानी बचा था।",
+      "on_screen_text": "मिट्टी का घड़ा",
+      "duration_hint": 7.0,
+      "visual": "Close up of a tilted clay pot lying in the dirt with a tiny puddle of cool water glittering inside the rim."
+    },
+    {
+      "narration": "पक्षी ने अपनी लंबी चोंच से पानी पिया और उसकी जान में जान आ गई।",
+      "on_screen_text": "राहत का पानी",
+      "duration_hint": 7.0,
+      "visual": "Close up of the blue bird dipping its beak happily into the water inside the broken pot with closed eyes of pure satisfaction."
+    },
+    {
+      "narration": "पक्षी ने मीकू का धन्यवाद किया और दोनों अच्छे दोस्त बन गए।",
+      "on_screen_text": "सच्ची दोस्ती",
+      "duration_hint": 6.5,
+      "visual": "Medium shot of the tiny grey mouse with oversized round ears and a pink button nose standing side-by-side with the cheerful blue bird near green clover leaves."
+    },
+    {
+      "narration": "ऐसी ही सुंदर कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "Close up of green clover leaves swaying gently in a cool evening breeze under soft natural light."
+    }
+  ]
+}

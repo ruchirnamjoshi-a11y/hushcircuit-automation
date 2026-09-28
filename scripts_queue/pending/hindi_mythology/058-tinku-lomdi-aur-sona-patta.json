@@ -1,0 +1,71 @@
+{
+  "id": "tinku-lomdi-aur-sona-patta",
+  "title": "टिंकू लोमड़ी और सोना पत्ता",
+  "description": "टिंकू लोमड़ी जंगल में एक चमकीले सुनहरे पत्ते की तलाश में निकलती है जो खुशियां लाता है।",
+  "tags": [
+    "लोमड़ी",
+    "सोना पत्ता",
+    "खुशियां",
+    "जंगल",
+    "बच्चों की कहानी"
+  ],
+  "character_reference": "a sleek orange-red fox with white-tipped tail fur and clever amber eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "शरद ऋतु की सुबह जब कोहरा छाया था, टिंकू लोमड़ी ने एक जादुई पत्ते के बारे में सुना।",
+      "on_screen_text": "जादुई अफवाह",
+      "duration_hint": 7.5,
+      "visual": "Wide atmospheric shot of a misty forest floor covered in fallen golden leaves under a cool, foggy morning sky."
+    },
+    {
+      "narration": "कहते थे कि जो वह सुनहरा पत्ता ढूंढ लेता है, उसके जीवन में कभी उदासी नहीं आती।",
+      "on_screen_text": "सुनहरी उम्मीद",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of a sleek orange-red fox with white-tipped tail fur and clever amber eyes standing alertly among frost-kissed ferns, listening intently."
+    },
+    {
+      "narration": "टिंकू ने अपनी तेज चाल से पुराने पेड़ों की छांव में उसकी तलाश शुरू कर दी।",
+      "on_screen_text": "तलाश शुरू",
+      "duration_hint": 7.0,
+      "visual": "Action shot of the sleek orange-red fox with white-tipped tail fur and clever amber eyes trotting gracefully through a thick patch of dry amber leaves."
+    },
+    {
+      "narration": "वह हर झाड़ी के पीछे देखने लगी, पर उसे साधारण पीले पत्ते ही मिले।",
+      "on_screen_text": "साधारण पत्ते",
+      "duration_hint": 7.0,
+      "visual": "Close up of the sleek orange-red fox with white-tipped tail fur and clever amber eyes gently sniffing a pile of brown oak leaves with a slightly disappointed look."
+    },
+    {
+      "narration": "थक कर जब वह एक पेड़ के नीचे बैठी, तो सूरज की एक किरण सीधे उसके पैर पर पड़ी।",
+      "on_screen_text": "सूरज की किरण",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of a bright beam of sunlight piercing through dense branches to illuminate the patch of ground where the fox is resting."
+    },
+    {
+      "narration": "उस किरण के नीचे एक अनोखा पत्ता चमक रहा था जो किसी सोने के सिक्के जैसा लग रहा था।",
+      "on_screen_text": "चमकीला पत्ता",
+      "duration_hint": 7.5,
+      "visual": "Close up of a single perfectly shaped maple leaf glowing with an intense golden metallic sheen amidst dark damp soil."
+    },
+    {
+      "narration": "टिंकू ने उसे उठाया और समझी कि असली जादुई पत्ता खोज की वो खुशी है जो उसने पाई।",
+      "on_screen_text": "असली जादू",
+      "duration_hint": 7.5,
+      "visual": "Close up of the sleek orange-red fox with white-tipped tail fur and clever amber eyes holding the glowing golden leaf gently in her paws with a delighted smile."
+    },
+    {
+      "narration": "उसने उस पत्ते को संभाल कर रखा और खुशी-खुशी अपने घर लौट आई।",
+      "on_screen_text": "खुशी का घर",
+      "duration_hint": 6.5,
+      "visual": "Wide shot of the orange-red fox walking briskly along a sunlit forest trail toward a cozy den hidden under roots."
+    },
+    {
+      "narration": "ऐसी ही जादुई कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "Close up of bright autumn leaves sparkling with morning dew under soft golden sunlight."
+    }
+  ]
+}

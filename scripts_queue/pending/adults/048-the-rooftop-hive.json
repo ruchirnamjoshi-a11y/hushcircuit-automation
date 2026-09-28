@@ -1,0 +1,59 @@
+{
+  "id": "the-rooftop-hive",
+  "title": "The Rooftop Hive",
+  "description": "An urban architect suffering from chronic burnout starts keeping bees on his apartment building roof.",
+  "tags": [
+    "burnout",
+    "beekeeping",
+    "city life",
+    "mental health",
+    "nature"
+  ],
+  "character_reference": "a slender man in his late thirties with dark tousled hair, wearing a collarless white linen shirt and round glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Skyscrapers and endless deadlines had reduced my architectural designs to cold lines on a glowing glass screen.",
+      "on_screen_text": "COLD LINES",
+      "duration_hint": 11.0,
+      "visual": "typing rapidly on a laptop keyboard with a blurred background of tall concrete city buildings at dusk"
+    },
+    {
+      "narration": "Seeking calm above the street noise, I hauled cedar wood planks up the fire escape to build a home for bees.",
+      "on_screen_text": "THE FIRE ESCAPE",
+      "duration_hint": 11.0,
+      "visual": "carrying raw cedar wood boards up a rusty metal outdoor fire escape stairs against a brick wall"
+    },
+    {
+      "narration": "I lit the smoker, watching thin gray ribbons of pine needle smoke drift lazily across the gravel rooftop.",
+      "on_screen_text": "SMOKING THE HIVE",
+      "duration_hint": 11.0,
+      "visual": "holding a metal bee smoker puffing gentle white smoke over the wooden frames of a rooftop beehive box"
+    },
+    {
+      "narration": "Thousands of golden workers moved in synchronized harmony, deaf to the honking traffic humming far below us.",
+      "on_screen_text": "GOLDEN HARMONY",
+      "duration_hint": 12.0,
+      "visual": "close-up of countless honeybees crawling across a hexagonal honeycomb frame covered in golden nectar"
+    },
+    {
+      "narration": "Working with the hive required total presence, washing away the anxious mental clutter of corporate life.",
+      "on_screen_text": "TOTAL PRESENCE",
+      "duration_hint": 11.0,
+      "visual": "wearing a protective mesh veil while lifting a wooden hive frame with gloved hands under a bright blue sky"
+    },
+    {
+      "narration": "The honey was sweet, but the real reward was learning how to slow down and listen to a different rhythm.",
+      "on_screen_text": "SWEET RHYTHM",
+      "duration_hint": 12.0,
+      "visual": "pouring thick amber honey from a glass jar onto a wooden spoon in a sunlit kitchen interior"
+    },
+    {
+      "narration": "Find your own sweet balance in a busy world. Follow along for more grounded stories of personal recovery.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "looking out over a city skyline at sunset from a rooftop garden filled with blooming potted flowers"
+    }
+  ]
+}

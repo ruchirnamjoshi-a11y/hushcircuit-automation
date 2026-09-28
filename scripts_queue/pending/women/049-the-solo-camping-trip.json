@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-camping-trip",
+  "title": "The Solo Camping Trip",
+  "description": "After relying on everyone else's approval for years, a woman pitches a tent by herself in the deep woods and finds profound independence.",
+  "tags": [
+    "solo travel",
+    "independence",
+    "nature healing",
+    "self reliance",
+    "women empowerment"
+  ],
+  "character_reference": "a woman in her early thirties with straight dark brown hair in two braided pigtails, wearing a rugged red flannel shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The towering pine trees arched overhead, forming a natural cathedral of green needles and filtering the late afternoon sunlight.",
+      "on_screen_text": "THE DEEP WOODS",
+      "duration_hint": 13.0,
+      "visual": "wide-angle low shot looking straight up at towering pine tree crowns swaying gently against a bright blue afternoon sky"
+    },
+    {
+      "narration": "She unloaded the heavy canvas tent from the trunk of her compact car, facing the daunting task entirely on her own for the first time.",
+      "on_screen_text": "GOING IT ALONE",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a woman pulling camping gear out of a car trunk in a secluded forest clearing surrounded by ferns"
+    },
+    {
+      "narration": "Self-doubt whispered that she should have waited for a companion, but she pushed the nervous thought aside and unfolded the poles.",
+      "on_screen_text": "FACING DOUBT",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands assembling aluminum tent poles on a soft bed of pine needles and fallen leaves"
+    },
+    {
+      "narration": "With focused effort, she staked the corners firmly into the damp earth and raised the shelter against the gentle mountain breeze.",
+      "on_screen_text": "PITCHING THE TENT",
+      "duration_hint": 13.0,
+      "visual": "action shot of pulling a nylon tent guyline taut and hammering a metal tent stake into the dirt with a small mallet"
+    },
+    {
+      "narration": "As dusk painted the forest canopy in shades of violet and amber, she struck a match and coaxed a small campfire to life.",
+      "on_screen_text": "WARMTH OF THE FIRE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a match igniting kindling, starting a warm crackling campfire in a ring of grey stones at twilight"
+    },
+    {
+      "narration": "Sitting alone by the crackling flames, she realized she didn't need anyone else to validate her capability or courage.",
+      "on_screen_text": "QUIET CONFIDENCE",
+      "duration_hint": 13.0,
+      "visual": "warm glowing close-up of a woman staring thoughtfully into a campfire with a peaceful and empowered expression"
+    },
+    {
+      "narration": "The silence of the wilderness wasn't lonely at all; it was a profound celebration of her own fierce self-reliance.",
+      "on_screen_text": "TRUE INDEPENDENCE",
+      "duration_hint": 13.0,
+      "visual": "wide cinematic shot of a glowing campsite nestled among dark pine trees under a clear starry night sky"
+    },
+    {
+      "narration": "Discovering your own strength is the greatest adventure of all. Follow along for more inspiring stories of personal growth.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "serene forest landscape at dawn with soft mist rising through the trees in warm morning light"
+    }
+  ]
+}

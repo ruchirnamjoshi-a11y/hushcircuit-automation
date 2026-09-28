@@ -1,0 +1,65 @@
+{
+  "id": "the-second-hand-violin",
+  "title": "The Second-Hand Violin",
+  "description": "After years of putting her childhood passion in a case at the back of the closet, a woman tunes an old instrument and plays just for herself.",
+  "tags": [
+    "pursuing dreams",
+    "hidden passions",
+    "creative expression",
+    "women empowerment",
+    "self discovery"
+  ],
+  "character_reference": "a woman in her early thirties with curly auburn hair tied back in a loose clip, wearing a vintage mustard-yellow cardigan",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Dust danced in the narrow beam of afternoon sunlight as she reached past winter coats to the very back of the hall closet.",
+      "on_screen_text": "BURIED PASSION",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands pulling an old, scuffed black leather case out from a dusty dark closet shelf among coats"
+    },
+    {
+      "narration": "She unlatched the rusty metal clasps and lifted the lid, revealing a wooden instrument untouched for over a decade.",
+      "on_screen_text": "THE OLD INSTRUMENT",
+      "duration_hint": 12.0,
+      "visual": "overhead shot of a violin case snapping open to reveal a rich brown wooden violin resting in faded velvet lining"
+    },
+    {
+      "narration": "Memories of harsh critique and self-doubt echoed in her mind, reminding her why she had stopped playing in front of critical audiences long ago.",
+      "on_screen_text": "OLD FEARS",
+      "duration_hint": 13.0,
+      "visual": "close-up of thoughtful eyes looking down, soft moody lighting reflecting the quiet hesitation of a remembered critique"
+    },
+    {
+      "narration": "She tightened the bow and lifted the violin to her shoulder, feeling the familiar wood settle beneath her chin once more.",
+      "on_screen_text": "FIRST NOTE",
+      "duration_hint": 12.0,
+      "visual": "side profile of a woman resting a wooden violin against her shoulder, closing her eyes with a gentle expression of readiness"
+    },
+    {
+      "narration": "The first note was slightly sour, vibrating timidly through the quiet room as rusty fingers remembered forgotten muscle memory.",
+      "on_screen_text": "REMEMBERING",
+      "duration_hint": 13.0,
+      "visual": "close-up of fingers pressing down delicately on the fingerboard of a violin while a bow rests across the strings"
+    },
+    {
+      "narration": "With every subsequent stroke, the sound grew richer, filling the empty apartment with a melody that belonged to no one else.",
+      "on_screen_text": "PLAYING FREELY",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a woman playing a violin near a sunlit window, capturing the motion of the bow and a serene smile"
+    },
+    {
+      "narration": "She realized perfection was never the point of art. Joy was found simply in the permission to create without judgment.",
+      "on_screen_text": "PURE JOY",
+      "duration_hint": 12.0,
+      "visual": "close-up of a smiling face relaxed in deep concentration, bathed in warm golden hour sunlight filtering through sheer curtains"
+    },
+    {
+      "narration": "Your passions are worth reviving, no matter how much time has passed. Follow along for more inspiring stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "warm aesthetic shot of a wooden music stand next to a potted fern bathed in soft afternoon light"
+    }
+  ]
+}
