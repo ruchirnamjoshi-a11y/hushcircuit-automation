@@ -1,0 +1,65 @@
+{
+  "id": "penelope-puppy-and-the-shadow-monster",
+  "title": "Penelope Puppy and the Shadow Monster",
+  "description": "A playful pup learns that bedtime shadows on her bedroom wall are just friendly shapes made by her favorite toys.",
+  "tags": [
+    "puppy",
+    "bedtime",
+    "shadows",
+    "cozy room",
+    "bedtime story"
+  ],
+  "character_reference": "a small golden retriever puppy with floppy velvety ears and a white patch on her chest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Bedtime had arrived in the cozy yellow bedroom, but Penelope spotted a tall, wiggly shadow stretching across her wall. She let out a tiny, cautious yip at the strange shape.",
+      "on_screen_text": "THE WIGGLY SHAPE",
+      "duration_hint": 14.0,
+      "visual": "warm glowing bedroom wall with a dark playful silhouette cast by a bedside lamp"
+    },
+    {
+      "narration": "She crept forward on her soft paws, sniffing the wooden floorboards as she investigated the mysterious dark monster. Her tail gave a tentative, hopeful wag.",
+      "on_screen_text": "CAUTIOUS PAWS",
+      "duration_hint": 13.0,
+      "visual": "small golden puppy tiptoeing across polished wooden floorboards with ears perked forward"
+    },
+    {
+      "narration": "Reaching out with her nose, she nudged the object resting on the bedside table. The shadow danced and shifted into a funny, long-eared bunny shape.",
+      "on_screen_text": "A FUNNY DANCE",
+      "duration_hint": 13.0,
+      "visual": "close-up of puppy nose gently bumping against a plush stuffed toy sitting on a wooden surface"
+    },
+    {
+      "narration": "It wasn't a monster at all; it was just her favorite stuffed rabbit sitting right beside her nightlight. The tall shadow was only a friendly greeting from an old friend.",
+      "on_screen_text": "JUST A TOY",
+      "duration_hint": 14.0,
+      "visual": "soft plush toy sitting on a wooden table casting a warm, comforting silhouette against the wall"
+    },
+    {
+      "narration": "Penelope let out a contented sigh and curled up right beside the stuffed rabbit on her fluffy rug. The room felt warm, safe, and filled with gentle amber light.",
+      "on_screen_text": "COZY CORNER",
+      "duration_hint": 13.0,
+      "visual": "small golden puppy curling up to sleep on a soft fluffy rug next to a comforting lamp"
+    },
+    {
+      "narration": "She rested her chin on her paws, watching the gentle shadows sway softly as the night breeze whispered outside the window. There was nothing at all to fear.",
+      "on_screen_text": "PEACEFUL REST",
+      "duration_hint": 14.0,
+      "visual": "close-up of sleeping puppy face resting contentedly on soft fabric with heavy eyelids"
+    },
+    {
+      "narration": "With a soft yawn, she drifted off to sleep surrounded by her comforting toys and warm blankets. Safe dreams guard the night until morning comes.",
+      "on_screen_text": "SWEET DREAMS",
+      "duration_hint": 13.0,
+      "visual": "warm glowing bedroom corner illuminated by a soft amber nightlight casting gentle peaceful shadows"
+    },
+    {
+      "narration": "May your dreams be filled with playful adventures and cozy blankets. Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "cozy indoor bedroom window with soft moonlight filtering through sheer curtains and quiet shadows"
+    }
+  ]
+}

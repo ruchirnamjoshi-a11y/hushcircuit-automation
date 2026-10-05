@@ -1,0 +1,65 @@
+{
+  "id": "bholu-kutta-or-choti-naav",
+  "title": "भोलू कुत्ता और छोटी नाव",
+  "description": "एक छोटे पिल्ले की कहानी जो नदी पार करने के लिए अपनी डर पर काबू पाता है।",
+  "tags": [
+    "पिल्ला",
+    "साहस",
+    "नदी",
+    "नाव",
+    "बच्चों की कहानी"
+  ],
+  "character_reference": "a playful golden retriever puppy with floppy ears and a short wagging tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "नदी किनारे बसा गाँव बहुत सुंदर था, जहाँ भोलू नाम का एक नटखट पिल्ला रहता था।",
+      "on_screen_text": "नदी का किनारा",
+      "duration_hint": 5.2,
+      "visual": "picturesque riverbank with smooth pebbles, tall green reeds swaying gently in the fresh breeze, bright daylight"
+    },
+    {
+      "narration": "दूसरी तरफ उसकी पसंदीदा लाल गेंद बहकर पहुँच गई थी जिसे वह वापस लाना चाहता था।",
+      "on_screen_text": "खोई हुई गेंद",
+      "duration_hint": 5.2,
+      "visual": "shallow flowing river water, a bright red rubber ball resting on a grassy patch across the stream, close-up shot"
+    },
+    {
+      "narration": "लेकिन पानी को देखकर उसका छोटा दिल घबराहट से जोर-जोर से धड़कने लगा।",
+      "on_screen_text": "डर की शुरुआत",
+      "duration_hint": 5.2,
+      "visual": "close-up of the golden puppy looking nervously at the moving water with wide eyes, paws resting near the edge"
+    },
+    {
+      "narration": "तभी उसे किनारे पर एक छोटी सी लकड़ी की खाली नाव तैरती हुई दिखाई दी।",
+      "on_screen_text": "एक उम्मीद",
+      "duration_hint": 5.2,
+      "visual": "edge of the riverbank, a small wooden toy boat bobbing gently on the calm water surface, soft ripples"
+    },
+    {
+      "narration": "उसने गहरी सांस ली, अपनी हिम्मत जुटाई और सावधानी से नाव के अंदर कूद गया।",
+      "on_screen_text": "साहसिक कदम",
+      "duration_hint": 5.2,
+      "visual": "close-up of the puppy carefully stepping inside the small wooden boat, balancing cautiously with focused eyes"
+    },
+    {
+      "narration": "धीरे-धीरे पतवार चलाकर वह सुरक्षित रूप से नदी के पार जा पहुँचा और अपनी गेंद पा ली।",
+      "on_screen_text": "सफलता",
+      "duration_hint": 5.2,
+      "visual": "the puppy reaching the opposite grassy bank, joyfully holding a bright red ball in its mouth, warm sunlight"
+    },
+    {
+      "narration": "अपने डर का सामना करने से बड़ी से बड़ी बाधा भी छोटी लगने लगती है।",
+      "on_screen_text": "डर पर जीत",
+      "duration_hint": 5.2,
+      "visual": "wide scenic view of a calm river reflecting the blue sky and green trees along the quiet banks"
+    },
+    {
+      "narration": "ऐसी ही रोमांचक कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "peaceful riverbank at dusk, gentle golden light reflecting on the water surface as evening approaches"
+    }
+  ]
+}

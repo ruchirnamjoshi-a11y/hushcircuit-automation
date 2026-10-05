@@ -1,0 +1,65 @@
+{
+  "id": "the-late-train",
+  "title": "The Late Train",
+  "description": "A woman waiting on a deserted platform reassesses her commitment to a demanding career.",
+  "tags": [
+    "career change",
+    "burnout",
+    "reflection",
+    "decision",
+    "evening"
+  ],
+  "character_reference": "a woman in her late forties with shoulder-length auburn hair, wearing a tailored navy trench coat and carrying a leather briefcase",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The midnight train was delayed by forty minutes. For once, the silence on the deserted platform felt like a gift.",
+      "on_screen_text": "MIDNIGHT DELAY",
+      "duration_hint": 10.0,
+      "visual": "wide cinematic shot of an empty railway platform at night under flickering amber overhead lamps with gentle mist in the air"
+    },
+    {
+      "narration": "My phone buzzed constantly in my coat pocket with emails from frantic partners demanding revisions I no longer cared about.",
+      "on_screen_text": "CONSTANT DEMANDS",
+      "duration_hint": 10.4,
+      "visual": "close-up of a hand pulling a glowing smartphone from a coat pocket, showing rapid notification banners in the dark"
+    },
+    {
+      "narration": "I silenced the screen and slid it deep into my bag. The glowing metal had dictated my every waking hour for two decades.",
+      "on_screen_text": "TURNING IT OFF",
+      "duration_hint": 10.8,
+      "visual": "close-up of a finger pressing the side power button on a smartphone screen, plunging the device into blackness"
+    },
+    {
+      "narration": "Promotion after promotion had left my apartment hollow and my weekends entirely vacant of anything resembling joy.",
+      "on_screen_text": "HOLLOW SUCCESS",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a woman staring down at her reflection in the dark, rain-spotted glass of a station shelter window"
+    },
+    {
+      "narration": "I had climbed to the very top of a mountain only to realize there was nothing up there except cold wind.",
+      "on_screen_text": "THE PEAK",
+      "duration_hint": 9.1,
+      "visual": "low angle shot looking up at a solitary figure standing against a vast dark sky with distant city lights twinkling"
+    },
+    {
+      "narration": "When the headlights finally appeared down the tracks, I knew I would be handing in my resignation by morning.",
+      "on_screen_text": "THE DECISION",
+      "duration_hint": 9.5,
+      "visual": "close-up of bright oncoming train headlight beams cutting through the dark mist as tracks gleam in the reflection"
+    },
+    {
+      "narration": "Stepping onto the carriage, I felt lighter than I had in years. The destination no longer mattered as much as the freedom.",
+      "on_screen_text": "FREEDOM AWAITS",
+      "duration_hint": 10.4,
+      "visual": "medium shot of a woman stepping onto a warm lit train doorway and looking back with a calm, relieved smile"
+    },
+    {
+      "narration": "Every ending makes room for a truer beginning. Follow along for more quiet stories of change.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.5,
+      "visual": "interior carriage shot looking out the window as the train pulls away into the dark countryside under starry skies"
+    }
+  ]
+}

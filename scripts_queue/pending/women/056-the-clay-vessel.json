@@ -1,0 +1,65 @@
+{
+  "id": "the-clay-vessel",
+  "title": "The Clay Vessel",
+  "description": "Learning resilience and self-acceptance by shaping stubborn clay on a spinning pottery wheel.",
+  "tags": [
+    "pottery",
+    "ceramics",
+    "resilience",
+    "craft",
+    "acceptance"
+  ],
+  "character_reference": "a woman in her early thirties with honey-blonde hair braided down her back, wearing a clay-dusted canvas tunic",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The lump of red clay on the pottery wheel spun wildly out of control because her hands were shaking.",
+      "on_screen_text": "THE SPINNING CLAY",
+      "duration_hint": 14.0,
+      "visual": "pottery wheel spinning fast wet red clay wobbling off-center muddy hands trying to steady it studio interior"
+    },
+    {
+      "narration": "She wanted to give up and push the messy mound off the wheel, frustrated by her lack of instant mastery.",
+      "on_screen_text": "THE URGE TO QUIT",
+      "duration_hint": 14.0,
+      "visual": "pausing hands hovering over spinning clay frustrated expression wet clay splattered on forearms"
+    },
+    {
+      "narration": "Taking a slow breath, she re-centered her palms, applying firm and even pressure to quiet the wobble.",
+      "on_screen_text": "FINDING CENTER",
+      "duration_hint": 13.0,
+      "visual": "close-up hands cupping spinning clay firmly water splashing steady focused concentration"
+    },
+    {
+      "narration": "The clay yielded to her touch, rising upward into a tall, smooth cylinder under her guiding fingers.",
+      "on_screen_text": "RISING UP",
+      "duration_hint": 13.0,
+      "visual": "fingers pulling clay upward creating a slender vase shape wet surface reflecting overhead workshop light"
+    },
+    {
+      "narration": "It had a slight curve and wasn't symmetrical, but it held a distinct, beautiful character all its own.",
+      "on_screen_text": "UNIQUE FLAWS",
+      "duration_hint": 13.0,
+      "visual": "close-up inspecting freshly thrown clay vase smooth curves imperfect yet elegant natural light"
+    },
+    {
+      "narration": "She used a wire tool to slice the base free, setting her finished piece gently onto the wooden board.",
+      "on_screen_text": "CUTTING FREE",
+      "duration_hint": 13.0,
+      "visual": "cutting clay base with thin wire tool hands holding wet ceramic piece carefully pottery workshop setting"
+    },
+    {
+      "narration": "Growth wasn't about perfection; it was about staying in the center while the world spun around her.",
+      "on_screen_text": "STAYING CENTERED",
+      "duration_hint": 14.0,
+      "visual": "wiping clay from hands with a damp cloth looking down at finished piece with a gentle proud smile"
+    },
+    {
+      "narration": "If you appreciate the beauty of making mistakes, follow along for daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "warm friendly smile looking at camera pottery studio shelves blurred in background"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "barnaby-bees-buzzy-bakery",
+  "title": "Barnaby Bee's Buzzy Bakery",
+  "description": "A little honeybee learns that patience makes his sweet nectar treats taste even better.",
+  "tags": [
+    "bee",
+    "bakery",
+    "patience",
+    "honey",
+    "bedtime story"
+  ],
+  "character_reference": "a plump fluffy bumblebee with fuzzy yellow-and-black stripes and tiny translucent wings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Barnaby loved buzzing around the clover patch, dreaming of making the sweetest honey drops in the meadow. But his very first batch was taking longer than he wanted to wait.",
+      "on_screen_text": "THE CLOVER PATCH",
+      "duration_hint": 14.0,
+      "visual": "close-up of lush green grass and blooming pink clover flowers under warm afternoon sunlight"
+    },
+    {
+      "narration": "He hovered impatiently over a hollow oak stump that served as his little woodland kitchen. His tiny wings buzzed in a frustrated blur as he watched the golden syrup settle.",
+      "on_screen_text": "WAITING PATIENTLY",
+      "duration_hint": 13.0,
+      "visual": "small fuzzy insect hovering anxiously over a smooth wooden surface with a tiny drop of golden liquid"
+    },
+    {
+      "narration": "Wise old Grandma Bee landed softly beside him with a gentle hum and a warm smile. She reminded him that good things take time to ripen under the summer sun.",
+      "on_screen_text": "WISE WORDS",
+      "duration_hint": 14.0,
+      "visual": "two fuzzy bees resting together on the edge of a hollow wooden bowl filled with amber nectar"
+    },
+    {
+      "narration": "Barnaby took a deep breath and decided to help the flowers grow while he waited. He fluttered from petal to petal, gently sharing golden pollen with every thirsty blossom.",
+      "on_screen_text": "SHARING POLLEN",
+      "duration_hint": 14.0,
+      "visual": "small fuzzy insect brushing against bright pink flower petals covered in golden yellow dust"
+    },
+    {
+      "narration": "When he returned to his kitchen nook, the golden drop had thickened into the most glorious honey he had ever seen. It shimmered like liquid amber in the fading light.",
+      "on_screen_text": "THE GOLDEN DROP",
+      "duration_hint": 13.0,
+      "visual": "close-up of thick glowing golden honey resting inside a polished wooden acorn cap"
+    },
+    {
+      "narration": "He dipped a tiny wooden twig into the treat and tasted the sweetest reward imaginable. Patience truly made the hard work taste like magic.",
+      "on_screen_text": "SWEET REWARD",
+      "duration_hint": 13.0,
+      "visual": "small fuzzy bee smiling happily while holding a tiny wooden stick dipped in sweet syrup"
+    },
+    {
+      "narration": "As the moon rose over the clover fields, Barnaby curled up in his cozy honeycomb bed, tired and happy. Sweet dreams await every little worker at the end of the day.",
+      "on_screen_text": "SLEEPY BEE",
+      "duration_hint": 14.0,
+      "visual": "cozy interior of a round honeycomb cell filled with soft golden light and peaceful shadows"
+    },
+    {
+      "narration": "May your dreams be as sweet as golden honey tonight. Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "gentle glowing twilight over a quiet meadow filled with sleeping clover flowers and fireflies"
+    }
+  ]
+}

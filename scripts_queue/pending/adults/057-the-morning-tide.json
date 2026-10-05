@@ -1,0 +1,65 @@
+{
+  "id": "the-morning-tide",
+  "title": "The Morning Tide",
+  "description": "A fisherman considers trading his boat and coastal life for a quiet mainland retirement.",
+  "tags": [
+    "coastal life",
+    "retirement",
+    "decision",
+    "change",
+    "ocean"
+  ],
+  "character_reference": "a weathered man with deep laugh lines around his eyes, wearing a heavy yellow oilskin jacket and woolen cap",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty years, my alarm clock was the rhythmic crash of Atlantic waves against the wooden pilings.",
+      "on_screen_text": "THE WAVES",
+      "duration_hint": 9.5,
+      "visual": "wide shot of rough ocean waves crashing against weathered wooden dock pilings at dawn under gray skies"
+    },
+    {
+      "narration": "My old wooden skiff needed more repairs than I had the knees or the patience to handle anymore.",
+      "on_screen_text": "THE OLD BOAT",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a fisherman running his calloused hand along the peeling painted gunwale of a small wooden fishing boat"
+    },
+    {
+      "narration": "The brochures for the inland valley cabin sat on my kitchen counter, filled with green hills and quiet orchards.",
+      "on_screen_text": "THE BROCHURE",
+      "duration_hint": 10.0,
+      "visual": "close-up of weathered hands opening a colorful paper travel brochure depicting rolling green hills and a small cottage"
+    },
+    {
+      "narration": "Leaving the salt air felt like cutting off an arm, but staying meant wrestling the sea until my bones gave out.",
+      "on_screen_text": "THE HARD CHOICE",
+      "duration_hint": 10.4,
+      "visual": "medium shot of a fisherman looking out across a misty harbor with a pensive, contemplative expression on his face"
+    },
+    {
+      "narration": "I watched the gulls wheeling over the harbor one last morning, realizing that home is a state of mind, not water.",
+      "on_screen_text": "LAST MORNING",
+      "duration_hint": 10.8,
+      "visual": "low angle shot looking up against a pale morning sky as several seagulls glide gracefully overhead"
+    },
+    {
+      "narration": "I folded the brochure, placed it in my pocket, and walked down the dock to check the mooring lines.",
+      "on_screen_text": "TURNING THE PAGE",
+      "duration_hint": 9.5,
+      "visual": "medium tracking shot of a man in a yellow jacket walking steadily down a wooden pier toward the misty horizon"
+    },
+    {
+      "narration": "Every horizon invites us into a new chapter, whether we face the ocean or the mountains.",
+      "on_screen_text": "NEW HORIZONS",
+      "duration_hint": 9.5,
+      "visual": "close-up of a fisherman's smiling face illuminated by the bright golden light of a rising sun breaking through clouds"
+    },
+    {
+      "narration": "Life's greatest adventures often begin when we change direction. Follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "wide cinematic view of a tranquil coastal bay at sunrise with golden light reflecting on gentle ripples"
+    }
+  ]
+}

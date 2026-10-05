@@ -1,0 +1,65 @@
+{
+  "id": "the-second-audition",
+  "title": "The Second Audition",
+  "description": "A former community theater actor returns to the stage after a twenty-year hiatus.",
+  "tags": [
+    "theater",
+    "passion",
+    "middle age",
+    "courage",
+    "hobby"
+  ],
+  "character_reference": "a man in his late forties with expressive eyes, wearing a simple black cotton t-shirt and round wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The stage door was heavier than I remembered, or perhaps my shoulders were simply carrying more history.",
+      "on_screen_text": "THE STAGE DOOR",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a man pushing open a heavy, dark wooden backstage door revealing dim theater interior lights"
+    },
+    {
+      "narration": "Inside, the auditorium smelled of ancient velvet, damp timber, and the lingering dust of forgotten applause.",
+      "on_screen_text": "FAMILIAR SCENTS",
+      "duration_hint": 9.5,
+      "visual": "wide shot of an empty vintage theater auditorium with rows of red velvet seats fading into darkness under dusty spotlights"
+    },
+    {
+      "narration": "Twenty years ago, I walked away to pursue a sensible corporate career and a predictable mortgage payment.",
+      "on_screen_text": "WALKING AWAY",
+      "duration_hint": 9.5,
+      "visual": "close-up of hands nervously clutching a dog-eared paper script filled with handwritten margin notes and underlines"
+    },
+    {
+      "narration": "Now, standing alone in the center spotlight, the old stage fright flared up like an old sports injury.",
+      "on_screen_text": "THE SPOTLIGHT",
+      "duration_hint": 9.1,
+      "visual": "medium shot of a man standing in the center of a brightly lit stage with a pool of harsh white light overhead"
+    },
+    {
+      "narration": "I took a deep breath, closed my eyes, and spoke the first famous line into the echoing empty room.",
+      "on_screen_text": "FIRST LINES",
+      "duration_hint": 9.5,
+      "visual": "close-up of an actor reciting lines with closed eyes, his face illuminated by warm, dramatic side lighting"
+    },
+    {
+      "narration": "The words felt clumsy at first, but soon the rhythm returned, flowing effortlessly through my veins.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 9.1,
+      "visual": "medium action shot of an actor gesturing expressively with his hands while speaking passionately on a dark stage"
+    },
+    {
+      "narration": "A single pair of hands clapped from the back row. I smiled, knowing I was finally right where I belonged.",
+      "on_screen_text": "WELCOME BACK",
+      "duration_hint": 10.4,
+      "visual": "medium shot of an actor smiling warmly into the dark auditorium with visible relief and joy on his face"
+    },
+    {
+      "narration": "It is never too late to revisit the passions of your youth. Follow along for more inspiring stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "wide shot of a lone figure standing proudly center stage under a warm spotlight in an otherwise dark theater"
+    }
+  ]
+}

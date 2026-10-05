@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-39",
+  "title": "Neon Pulse — Episode 39: Abyssal Descent",
+  "description": "Kael and Commander Vance plunge into a dark subterranean shaft as the facility collapses around them, leading to a shocking mid-air revelation.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "thriller",
+    "animation"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 39,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Free-falling down the pitch-black shaft, the wind screams past my ears as steel debris rains down all around. Vance is plummeting just feet away, his own armor sparking violently in the gloom.",
+      "on_screen_text": "THE PLUNGE",
+      "duration_hint": 14.0,
+      "visual": "Wide dynamic angle looking down a dark vertical tunnel with glowing amber sparks flying, falling debris spinning past, and two figures diving through empty space."
+    },
+    {
+      "narration": "My amber circuitry pulses to life, flooding my nervous system with raw kinetic energy to slow the terminal velocity. I thrust my hand outward toward the jagged concrete wall to brake.",
+      "on_screen_text": "KINETIC BRAKING",
+      "duration_hint": 14.0,
+      "visual": "Close-up profile of outstretched fingers glowing bright amber against rough stone walls, creating a shower of golden friction sparks and smoke."
+    },
+    {
+      "narration": "Stone shatters into dust as my boots finally lock onto a narrow maintenance ledge, jolting my spine with blinding pain. I cough violently, sucking in the damp, stale air of the deep cavern.",
+      "on_screen_text": "HARD LANDING",
+      "duration_hint": 15.0,
+      "visual": "Low-angle shot of a lone figure crouching on a narrow concrete protrusion over a bottomless abyss, coughing amidst swirling dust and crumbling masonry."
+    },
+    {
+      "narration": "Vance crashes hard onto an opposing rusted platform, his armor buckling and his breathing coming in ragged, desperate gasps. He drops his weapon, clutching his fractured shoulder.",
+      "on_screen_text": "BROKEN ENEMY",
+      "duration_hint": 14.0,
+      "visual": "Medium shot of a defeated military commander slumped against a rusted steel bulkhead, holding a bleeding shoulder amid scattered metallic debris."
+    },
+    {
+      "narration": "I step across the rusted iron beam bridging the gap between us, my jacket glowing brighter with every heartbeat. This ends right here, Commander.",
+      "on_screen_text": "CLOSING IN",
+      "duration_hint": 12.0,
+      "visual": "Over-the-shoulder shot walking across a narrow steel girder spanning a dark chasm, looking toward a wounded figure silhouetted by amber light."
+    },
+    {
+      "narration": "Vance looks up, wiping blood from his forehead, and lets out a grim, bitter laugh that echoes into the dark expanse. He claims I still have no idea what opened the portal.",
+      "on_screen_text": "BITTER LAUGH",
+      "duration_hint": 15.0,
+      "visual": "Close-up of a scarred face smirking with bloody lips, eyes staring defiantly upward under harsh flickering emergency lighting."
+    },
+    {
+      "narration": "Before I can demand answers, the entire floor beneath Vance shears away with a deafening metallic screech. He slips backward into the abyss, pointing a detonator straight at my chest.",
+      "on_screen_text": "THE TRAP",
+      "duration_hint": 15.0,
+      "visual": "Action shot of a platform tilting downward, a falling man raising a small glowing trigger device toward the camera while plunging into darkness."
+    },
+    {
+      "narration": "The remote device blinks a frantic crimson warning, overriding my amber frequency and locking my limbs in place. The whole cavern begins to seal shut from above.",
+      "on_screen_text": "LOCKDOWN",
+      "duration_hint": 14.0,
+      "visual": "Extreme close-up of a flashing red indicator light reflecting in terrified eyes, surrounded by closing heavy steel blast doors."
+    },
+    {
+      "narration": "Follow along for more of the Neon Pulse saga as the countdown to the final truth continues.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "Cinematic wide shot of a glowing amber silhouette standing alone on a fractured ledge as massive heavy doors slam shut in the deep underground."
+    }
+  ]
+}

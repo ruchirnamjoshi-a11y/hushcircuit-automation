@@ -1,0 +1,65 @@
+{
+  "id": "the-potters-rhythm",
+  "title": "The Potter's Rhythm",
+  "description": "A ceramicist trying to throw tall vases learns to let go of her grip and work with the spinning clay instead of fighting it.",
+  "tags": [
+    "ceramics",
+    "pottery",
+    "craft",
+    "mindfulness",
+    "patience"
+  ],
+  "character_reference": "a young artisan with clay dust smudged on her forearms and hair tied back in a messy knot",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The clay wobbled violently on the wheel head, twisting into a lopsided heap for the fifth time.",
+      "on_screen_text": "THE WOBBLE",
+      "duration_hint": 14.0,
+      "visual": "Close-up of grey clay spinning wildly off-center on a motorized pottery wheel"
+    },
+    {
+      "narration": "I squeezed harder, trying to force the spinning earth into a tall, elegant cylinder with sheer muscle.",
+      "on_screen_text": "FORCING SHAPE",
+      "duration_hint": 14.0,
+      "visual": "Medium close-up of tense hands pressing aggressively into wet grey clay"
+    },
+    {
+      "narration": "My forearms burned, and the clay collapsed inward under the excess pressure, ruining the piece.",
+      "on_screen_text": "THE COLLAPSE",
+      "duration_hint": 13.0,
+      "visual": "Close-up of wet clay folding in on itself into a crumpled pancake shape"
+    },
+    {
+      "narration": "Taking a deep breath, I relaxed my grip, letting my palms curve naturally with the motion.",
+      "on_screen_text": "SOFTENING GRIP",
+      "duration_hint": 13.0,
+      "visual": "Close-up of hands gently cupping a spinning mound of mud with relaxed fingers"
+    },
+    {
+      "narration": "As I slowed the wheel down, the clay responded, rising smoothly between my fingertips.",
+      "on_screen_text": "THE RISE",
+      "duration_hint": 13.0,
+      "visual": "Macro shot of tall wet clay walls stretching upward gracefully under a steady stream of water"
+    },
+    {
+      "narration": "It wasn't the rigid shape I had planned, but it possessed a quiet, flowing elegance of its own.",
+      "on_screen_text": "FLUID FORM",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of a finished ceramic vase gleaming under a warm overhead spotlight"
+    },
+    {
+      "narration": "True craftsmanship isn't about domination; it is about learning how to listen to the material.",
+      "on_screen_text": "FINDING BALANCE",
+      "duration_hint": 13.0,
+      "visual": "Close-up of a peaceful expression watching water drip onto a smooth clay surface"
+    },
+    {
+      "narration": "If you love the art of making things by hand, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "A row of handmade ceramic vessels drying on wooden shelves in a sunlit studio"
+    }
+  ]
+}

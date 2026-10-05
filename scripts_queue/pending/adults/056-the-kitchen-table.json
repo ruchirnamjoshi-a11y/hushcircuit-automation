@@ -1,0 +1,65 @@
+{
+  "id": "the-kitchen-table",
+  "title": "The Kitchen Table",
+  "description": "Two estranged siblings clear out their late mother's home and find common ground.",
+  "tags": [
+    "family",
+    "siblings",
+    "reconciliation",
+    "loss",
+    "heritage"
+  ],
+  "character_reference": "a woman in her mid-forties with curly dark hair, wearing a loose flannel shirt and silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The kitchen table had anchored our family through college departures, quiet arguments, and tearful homecomings.",
+      "on_screen_text": "THE OLD TABLE",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a heavy oak kitchen table covered in cardboard moving boxes and packing tape in a sunlit room"
+    },
+    {
+      "narration": "For five years, my brother and I had communicated mostly through stilted holiday texts and awkward silence.",
+      "on_screen_text": "DISTANCE",
+      "duration_hint": 9.5,
+      "visual": "medium shot of two adults standing on opposite sides of a wooden table avoiding eye contact while packing items"
+    },
+    {
+      "narration": "He reached across the scarred wood to hand me a rusted tin filled with our grandmother's handwritten recipes.",
+      "on_screen_text": "RECIPE TIN",
+      "duration_hint": 10.0,
+      "visual": "close-up of hands passing a dented vintage metal box across a wooden table surface in bright midday light"
+    },
+    {
+      "narration": "I opened the lid, and the scent of cinnamon and dried vanilla immediately bridged the decade of bitterness.",
+      "on_screen_text": "FAMILIAR SCENT",
+      "duration_hint": 9.5,
+      "visual": "close-up of fingers lifting index cards covered in faded cursive handwriting inside a metal tin"
+    },
+    {
+      "narration": "He laughed softly at a memory of burnt pie crusts, and the heavy wall between us simply melted away.",
+      "on_screen_text": "SHARED LAUGHTER",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a brother and sister smiling at each other across boxes with genuine warmth in their eyes"
+    },
+    {
+      "narration": "We sat down side by side on the wooden chairs, no longer strangers, just two people missing the same home.",
+      "on_screen_text": "SITTING TOGETHER",
+      "duration_hint": 10.4,
+      "visual": "medium shot of two siblings sitting side by side on old chairs, looking out a sunlit window together"
+    },
+    {
+      "narration": "Some bonds withstand the test of time if you are willing to sit down and share the silence.",
+      "on_screen_text": "THE BOND",
+      "duration_hint": 9.5,
+      "visual": "close-up of two hands resting gently side by side on the edge of a rustic wooden kitchen table"
+    },
+    {
+      "narration": "Family is the anchor we carry with us everywhere. Follow along for more heartfelt stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.5,
+      "visual": "wide cinematic shot of a warm, sun-drenched country kitchen interior with packed moving boxes ready for the road"
+    }
+  ]
+}

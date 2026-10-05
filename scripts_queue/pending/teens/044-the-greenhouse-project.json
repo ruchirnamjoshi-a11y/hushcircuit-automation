@@ -1,0 +1,65 @@
+{
+  "id": "the-greenhouse-project",
+  "title": "The Greenhouse Project",
+  "description": "A quiet botany student struggles to save a dying rare orchid before the spring exhibition, learning patience over perfection.",
+  "tags": [
+    "botany",
+    "perfectionism",
+    "growth",
+    "patience",
+    "plants"
+  ],
+  "character_reference": "a tall teenager with messy dark curls, wearing a canvas utility apron over a worn green hoodie",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The petal curled inward, brown at the edge, signaling another failed attempt to revive the rare orchid.",
+      "on_screen_text": "THE WILTING LEAF",
+      "duration_hint": 14.0,
+      "visual": "Macro shot of a trembling hand gently touching a drooping yellowish orchid petal under dim fluorescent workbench lights"
+    },
+    {
+      "narration": "Every textbook said to increase nitrogen, but the soil felt heavy and suffocated under the rigid schedule.",
+      "on_screen_text": "THE RIGID RULE",
+      "duration_hint": 13.0,
+      "visual": "Overhead view of scattered botany textbooks open to complex chemical charts next to a dirty ceramic pot"
+    },
+    {
+      "narration": "Instead of forcing the routine, I decided to observe what the plant actually needed in this damp corner.",
+      "on_screen_text": "SHIFTING FOCUS",
+      "duration_hint": 13.0,
+      "visual": "Medium close-up peering through foggy glass panes at rain dripping down outside the potting shed window"
+    },
+    {
+      "narration": "I flushed the soil with tepid water and moved it away from the direct heater vent.",
+      "on_screen_text": "A GENTLE RESET",
+      "duration_hint": 12.0,
+      "visual": "Close-up of water droplets trickling through dark rich soil inside a cracked terracotta container"
+    },
+    {
+      "narration": "For three days, nothing changed. The silence in the glasshouse felt heavier than the humidity.",
+      "on_screen_text": "THE WAITING GAME",
+      "duration_hint": 13.0,
+      "visual": "Low angle shot looking upward through hanging fern baskets toward condensation pooling on wooden rafters"
+    },
+    {
+      "narration": "Then, on the fourth morning, a tiny green shoot uncurled toward the soft dawn light.",
+      "on_screen_text": "FIRST SIGN",
+      "duration_hint": 12.0,
+      "visual": "Macro photography focusing on a miniature bright green sprout emerging from the damp stem"
+    },
+    {
+      "narration": "It wasn't about control or strict formulas anymore, just listening to the pace of living things.",
+      "on_screen_text": "LESSONS IN GREEN",
+      "duration_hint": 13.0,
+      "visual": "Close-up profile of a smiling face lit by warm morning sunshine filtering through dense foliage"
+    },
+    {
+      "narration": "If you are learning to grow at your own pace, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Wide angle shot of a peaceful indoor jungle filled with hanging plants and dappled sunbeams"
+    }
+  ]
+}

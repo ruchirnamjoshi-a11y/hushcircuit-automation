@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-ep-36",
+  "title": "Neon Pulse — Episode 36: The Deep Abyss",
+  "description": "Kael descends further into the uncharted trench, navigating deadly alien corridors while Commander Vance closes in from above.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "adventure",
+    "original hero",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 36,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sliding through the heavy blast hatch, I seal it shut just as explosive charges detonate against the outer seal.",
+      "on_screen_text": "SEALING THE HATCH",
+      "duration_hint": 7.0,
+      "visual": "close-up of gloved hands slamming a massive steel lever downward inside a dark flooded industrial chamber with green emergency strobe lighting casting heavy shadows"
+    },
+    {
+      "narration": "The emergency lights cast a sick crimson glow across the ruined metallic corridor stretching into the gloom.",
+      "on_screen_text": "CRIMSON CORRIDOR",
+      "duration_hint": 6.5,
+      "visual": "medium shot looking down a long desolate submarine hallway with buckled steel flooring and flickering red overhead emergency fixtures casting long distorted shadows"
+    },
+    {
+      "narration": "My jacket pulses frantically, warning me that Vance's remote tracking beacons are locking onto my bio-signature.",
+      "on_screen_text": "TRACKING BEACON",
+      "duration_hint": 6.5,
+      "visual": "extreme close-up on jacket sleeve fabric with intricate glowing amber lines flashing rapidly in erratic warning patterns inside a dark interior space"
+    },
+    {
+      "narration": "I force myself forward through the crushing pressure, following the faint hum of alien energy echoing from below.",
+      "on_screen_text": "THE HUMMING DEPTHS",
+      "duration_hint": 6.5,
+      "visual": "wide angle low shot of a solitary figure walking quickly down a massive descending metallic ramp surrounded by gargantuan alien machinery glowing softly in the dark"
+    },
+    {
+      "narration": "A massive subterranean chamber opens up before me, suspended over a bottomless abyss filled with swirling blue plasma energy.",
+      "on_screen_text": "THE ABYSSAL CHAMBER",
+      "duration_hint": 7.0,
+      "visual": "dramatic wide shot of a vast cavernous subterranean hall featuring an open grated walkway overlooking a swirling vortex of bright blue luminescent energy far below"
+    },
+    {
+      "narration": "Suddenly, heavy footsteps echo behind me on the metal walkway. Vance's strike team found a secondary route.",
+      "on_screen_text": "UNWANTED GUESTS",
+      "duration_hint": 6.0,
+      "visual": "over-the-shoulder medium shot of a figure halting abruptly and turning around with a tense expression while listening to heavy metallic boots approaching from the darkness"
+    },
+    {
+      "narration": "Trapped between the bottomless chasm and heavily armed pursuers, I channel the surge of energy straight into my palms.",
+      "on_screen_text": "POWER UNLEASHED",
+      "duration_hint": 6.5,
+      "visual": "medium close-up of a desperate stance with both hands glowing brightly with intense crackling amber energy while looking angrily toward the dark corridor entrance"
+    },
+    {
+      "narration": "The chase ends here. If Vance wants this power, he is going to have to pull it from my burning hands.",
+      "on_screen_text": "THE FINAL STAND",
+      "duration_hint": 6.5,
+      "visual": "dramatic low-angle hero shot standing firm on a metal platform with arms raised as bright energy surges upward, illuminating a cavernous dark background"
+    },
+    {
+      "narration": "Follow along for the next chapter of Neon Pulse to see how this tense standoff unfolds in the deep abyss.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "cinematic dark sci-fi corridor background with subtle glowing amber particles floating gently in the air and moody atmospheric fog"
+    }
+  ]
+}

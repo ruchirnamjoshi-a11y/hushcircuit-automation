@@ -1,0 +1,59 @@
+{
+  "id": "deep-lockdown",
+  "title": "Neon Pulse — Episode 40: Deep Lockdown",
+  "description": "Trapped underground with Commander Vance behind sealed blast doors, Kael must overcome a neural override before his enemy escapes.",
+  "tags": [
+    "action",
+    "superhero",
+    "thriller",
+    "scifi",
+    "survival"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 40,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Paralyzed by the remote override, Kael watches helplessly as Vance limps toward the secondary escape hatch. The heavy steel door begins to grind open, illuminating the dark subterranean vault with an amber emergency glow.",
+      "on_screen_text": "THE OVERRIDE",
+      "duration_hint": 14.0,
+      "visual": "close-up of a paralyzed man on a cavern ledge unable to move while a wounded adversary limps toward a glowing steel hatch in the background low angle gritty lighting"
+    },
+    {
+      "narration": "Every muscle in my body refuses to obey. Vance glances back with a cruel smirk, pressing his hand against the console to finalize the seal.",
+      "on_screen_text": "HELPLESS RAGE",
+      "duration_hint": 11.0,
+      "visual": "pov shot looking up at a sneering enemy activating a glowing wall console inside a damp subterranean tunnel dramatic shadows emphasizing tension"
+    },
+    {
+      "narration": "Instead of panicking, I focus inward. The glowing amber circuitry on my sleeves begins to pulse, feeding on the neural disruption rather than fighting it.",
+      "on_screen_text": "INTERNAL SURGE",
+      "duration_hint": 12.0,
+      "visual": "extreme close-up on jacket sleeves where amber glowing circuitry patterns flare intensely with bright golden light against dark fabric"
+    },
+    {
+      "narration": "The lock snaps. With a violent gasp, I shatter the paralysis, surge to my feet, and hurl a concentrated wave of energy across the chasm.",
+      "on_screen_text": "BREAKING FREE",
+      "duration_hint": 12.0,
+      "visual": "dynamic medium shot of a man suddenly breaking free from a crouch and thrusting his hand forward as a blast of bright amber energy erupts toward the camera"
+    },
+    {
+      "narration": "The blast strikes the console, short-circuiting the lockdown mechanism in a blinding cascade of sparks. Vance stumbles backward, dropping his key card over the ledge into the dark abyss below.",
+      "on_screen_text": "SPARK AND FALL",
+      "duration_hint": 14.0,
+      "visual": "wide action shot of a control panel exploding in a shower of white sparks while an antagonist stumbles in surprise near a steep dropoff"
+    },
+    {
+      "narration": "We are trapped together in the deep dark with no way up. Vance draws his sidearm, his eyes gleaming with desperate fury in the fading light.",
+      "on_screen_text": "FINAL STAND",
+      "duration_hint": 12.0,
+      "visual": "medium shot of two adversaries facing off in a confined subterranean cavern with glowing weapons drawn tense atmosphere and dramatic rim lighting"
+    },
+    {
+      "narration": "There is nowhere left to run and no rescue coming. The real fight for the truth begins right here in the ruins.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "cinematic hero portrait standing tall in a dark cavern with glowing amber details casting light on a determined face and shadows around"
+    }
+  ]
+}

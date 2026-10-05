@@ -1,0 +1,65 @@
+{
+  "id": "the-midnight-canvas",
+  "title": "The Midnight Canvas",
+  "description": "An art student abandons hyper-realistic drawings to embrace messy, expressive street painting under a railway arch.",
+  "tags": [
+    "art",
+    "expression",
+    "street-art",
+    "authenticity",
+    "creativity"
+  ],
+  "character_reference": "an energetic young adult wearing paint-splattered overalls and a beanie pulled over dark curly hair",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My charcoal portrait was technically perfect, yet it felt completely empty of any real emotion.",
+      "on_screen_text": "EMPTY LINES",
+      "duration_hint": 13.0,
+      "visual": "Close-up of a hyper-detailed pencil drawing of an eye resting under a harsh desk lamp"
+    },
+    {
+      "narration": "The professor praised the precision, but my hands felt numb holding the sharpened graphite.",
+      "on_screen_text": "NUMB PERFECTION",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of fingers nervously tapping a wooden drawing board in a quiet academic studio"
+    },
+    {
+      "narration": "Frustrated, I grabbed a thick brush, heavy acrylic paint, and walked out into the damp night.",
+      "on_screen_text": "BREAKING ROUTINE",
+      "duration_hint": 13.0,
+      "visual": "Overhead view of tubes of bright turquoise and crimson paint tumbling onto concrete pavement"
+    },
+    {
+      "narration": "Under the concrete railway arch, I threw away the reference photo and let the strokes fly.",
+      "on_screen_text": "UNRESTRAINED",
+      "duration_hint": 13.0,
+      "visual": "Action shot of a brush splashing vibrant blue paint wildly across a rough brick wall"
+    },
+    {
+      "narration": "Paint splattered on my boots and dripped down the wall, wild and completely uncalculated.",
+      "on_screen_text": "MESSY FREEDOM",
+      "duration_hint": 13.0,
+      "visual": "Close-up of thick paint drips running down dark textured masonry under flickering orange lights"
+    },
+    {
+      "narration": "It wasn't gallery ready, but for the first time in months, the artwork was truly alive.",
+      "on_screen_text": "ALIVE ON WALL",
+      "duration_hint": 13.0,
+      "visual": "Wide shot of a vibrant, chaotic abstract mural glowing against weathered industrial bricks"
+    },
+    {
+      "narration": "True creation starts the moment you stop worrying about looking right.",
+      "on_screen_text": "LET IT FLOW",
+      "duration_hint": 12.0,
+      "visual": "Close-up of a tired face smiling broadly while wiping a smudge of yellow paint from the cheek"
+    },
+    {
+      "narration": "If you are breaking your own rules, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Atmospheric shot of spray paint cans lined up against a dark concrete backdrop"
+    }
+  ]
+}
