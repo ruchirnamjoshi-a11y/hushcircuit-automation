@@ -1,0 +1,65 @@
+{
+  "id": "dezi-hiran-ki-unchi-chhalang",
+  "title": "डेज़ी हिरन की ऊँची छलांग",
+  "description": "एक नन्ही हिरनी की कहानी जो खुद पर विश्वास रखकर अपनी कमजोरी को ताकत बनाती है।",
+  "tags": [
+    "हिरन",
+    "विश्वास",
+    "छलांग",
+    "बच्चों की कहानी",
+    "नैतिक"
+  ],
+  "character_reference": "a delicate fawn with soft brown fur, white spots on her back, and bright curious eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "जंगल के बीचों-बीच एक खूबसूरत मैदान था जहाँ सभी जानवर दौड़ने का अभ्यास करते थे।",
+      "on_screen_text": "खुला मैदान",
+      "duration_hint": 5.2,
+      "visual": "vast green meadow filled with wildflowers, tall grass waving gently in the morning breeze, bright lighting"
+    },
+    {
+      "narration": "डेज़ी बाकी साथियों की तरह ऊंची झाड़ियों को फांद नहीं पाती थी और उदास हो जाती थी।",
+      "on_screen_text": "एक चुनौती",
+      "duration_hint": 5.2,
+      "visual": "edge of a thick green hedge, a small spotted fawn looking up with a hesitant and doubtful expression"
+    },
+    {
+      "narration": "उसकी माँ ने उसे समझाया कि हर किसी की अपनी एक अलग खूबी होती है।",
+      "on_screen_text": "माँ की सीख",
+      "duration_hint": 5.2,
+      "visual": "close-up of two deer standing close together in a sunlit forest clearing, peaceful and loving atmosphere"
+    },
+    {
+      "narration": "डेज़ी ने अपनी कमियों को रोने के बजाय अपनी गति और संतुलन पर ध्यान देना शुरू किया।",
+      "on_screen_text": "नया प्रयास",
+      "duration_hint": 5.2,
+      "visual": "close-up of the fawn's graceful hooves stepping lightly across smooth grassy terrain, dappled sunlight"
+    },
+    {
+      "narration": "अगली दौड़ प्रतियोगिता में उसने अपनी पूरी ताकत और आत्मविश्वास के साथ छलांग लगाई।",
+      "on_screen_text": "शानदार छलांग",
+      "duration_hint": 5.2,
+      "visual": "action shot of the spotted fawn leaping gracefully through the air over a clear stream, bright daylight"
+    },
+    {
+      "narration": "उसकी वह छलांग इतनी सुंदर थी कि सभी जानवरों ने ताली बजाकर उसका स्वागत किया।",
+      "on_screen_text": "सबकी तारीफ",
+      "duration_hint": 5.2,
+      "visual": "sunlit meadow, the young fawn landing smoothly on soft grass with a joyful and triumphant expression"
+    },
+    {
+      "narration": "आत्मविश्वास और निरंतर प्रयास से असंभव को भी संभव बनाया जा सकता है।",
+      "on_screen_text": "आत्मविश्वास",
+      "duration_hint": 5.2,
+      "visual": "peaceful forest landscape under a clear blue sky, warm sunlight illuminating the treetops"
+    },
+    {
+      "narration": "ऐसी ही प्रेरणादायक कहानियों के लिए हमारे साथ बने रहें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "serene meadow at sunset, soft golden glow spreading across the horizon as evening sets in"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "felix-lomdi-or-taron-ka-rasta",
+  "title": "फ़ेलिक्स लोमड़ी और तारों का रास्ता",
+  "description": "एक नन्हीं लोमड़ी की कहानी जो रात के अंधेरे में भी रास्ता ढूँढना सीखती है।",
+  "tags": [
+    "लोमड़ी",
+    "रात",
+    "तारे",
+    "साहस",
+    "बच्चों की कहानी"
+  ],
+  "character_reference": "a clever little red fox kit with bright amber eyes and a fluffy white-tipped tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "रात घनी हो चुकी थी और फ़ेलिक्स अपने घर का रास्ता जंगल में कहीं भूल गया था।",
+      "on_screen_text": "खोया रास्ता",
+      "duration_hint": 5.2,
+      "visual": "dark forest path at night, tall shadowy trees surrounding a small red fox kit looking around with uncertainty"
+    },
+    {
+      "narration": "चारों तरफ अंधेरा छाया हुआ था जिससे उसका छोटा दिल घबराने लगा था।",
+      "on_screen_text": "घोर अंधेरा",
+      "duration_hint": 5.2,
+      "visual": "close-up of the red fox kit sitting cautiously on dark soil, ears perked up listening to nighttime sounds"
+    },
+    {
+      "narration": "तभी आसमान में टिमटिमाते हुए तारों ने अपनी रोशनी से रास्ता रोशन कर दिया।",
+      "on_screen_text": "तारों की रोशनी",
+      "duration_hint": 5.2,
+      "visual": "night sky view through tree branches, bright sparkling stars shining like silver dust against deep indigo"
+    },
+    {
+      "narration": "उसने याद किया कि उसकी माँ ने कहा था कि ध्रुव तारा हमेशा सही दिशा दिखाता है।",
+      "on_screen_text": "माँ की सीख",
+      "duration_hint": 5.2,
+      "visual": "close-up of the fox kit looking upward toward the night sky with a focused and hopeful expression"
+    },
+    {
+      "narration": "उस खास तारे को पहचानकर फ़ेलिक्स ने उसी दिशा में आगे बढ़ना शुरू कर दिया।",
+      "on_screen_text": "सही दिशा",
+      "duration_hint": 5.2,
+      "visual": "low angle shot of furry paws walking purposefully along a quiet forest trail under starry night illumination"
+    },
+    {
+      "narration": "थोड़ी ही देर में वह अपनी मां के पास सुरक्षित रूप से अपने घर पहुँच गया।",
+      "on_screen_text": "सुरक्षित घर",
+      "duration_hint": 5.2,
+      "visual": "warm cozy den entrance, the little red fox greeting its mother happily under soft moonlight"
+    },
+    {
+      "narration": "मुश्किल समय में भी उम्मीद की एक किरण हमारा रास्ता आसान बना देती है।",
+      "on_screen_text": "उम्मीद की किरण",
+      "duration_hint": 5.2,
+      "visual": "peaceful forest landscape at night, silver moonlight casting soft shadows on quiet woodland paths"
+    },
+    {
+      "narration": "ऐसी ही अद्भुत कहानियों के लिए हमारे साथ जुड़े रहें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "tranquil woodland scene under a starry night sky, gentle glowing fireflies dancing near quiet bushes"
+    }
+  ]
+}

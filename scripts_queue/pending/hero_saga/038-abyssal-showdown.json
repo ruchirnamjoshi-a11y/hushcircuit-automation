@@ -1,0 +1,65 @@
+{
+  "id": "abyssal-showdown",
+  "title": "Neon Pulse — Episode 38: Abyssal Showdown",
+  "description": "Kael faces Commander Vance in a flooded alien chamber while dealing with a ticking clock.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "thriller",
+    "original"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 38,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Cold water surges around our boots as Commander Vance steps through the wreckage, his plasma rifle humming with lethal intent. There is nowhere left to run in this drowning tomb.",
+      "on_screen_text": "THE FINAL STAND",
+      "duration_hint": 14.0,
+      "visual": "Low-angle close-up of tactical boots splashing in rising dark water inside a ruined metallic chamber with fractured floor panels and glowing blue warning lights reflecting on the surface"
+    },
+    {
+      "narration": "Electricity arcs fiercely across my sleeves as the amber circuitry floods with raw, uncontrolled power. Every nerve ending burns with the kinetic force waiting to be unleashed.",
+      "on_screen_text": "POWER UNLEASHED",
+      "duration_hint": 14.0,
+      "visual": "Medium shot focusing on glowing amber patterns pulsing brightly along jacket sleeves while faint electrical sparks crackle through the surrounding misty air in a tight industrial corridor"
+    },
+    {
+      "narration": "Vance fires without hesitation, sending a blinding beam of concentrated plasma tearing straight toward my chest. I throw up my hands, letting the kinetic barrier absorb the impact.",
+      "on_screen_text": "PLASMA FIRE",
+      "duration_hint": 15.0,
+      "visual": "Action shot of a bright blue energy beam shattering against a shimmering translucent shield held up in front of a desperate man inside a crumbling underwater bunker"
+    },
+    {
+      "narration": "The shockwave hits with deafening force, knocking Vance off balance and shattering the reinforced glass bulkheads behind him. Torrents of deep ocean water rush in to fill the gap.",
+      "on_screen_text": "GLASS SHATTERS",
+      "duration_hint": 14.0,
+      "visual": "Wide angle view of thick glass walls bursting inward as heavy ocean water floods into a darkened sci-fi control room with sparks flying from shattered computer terminals"
+    },
+    {
+      "narration": "Gasping for breath against the rising tide, I lunge forward and slam my palm directly into his armor. The kinetic release sends him crashing hard into the twisted steel framework.",
+      "on_screen_text": "CLOSE QUARTERS",
+      "duration_hint": 15.0,
+      "visual": "Dynamic medium close-up of a powerful palm strike connecting with armored chest plating, creating a bright shockwave ripple effect in the splashing water around them"
+    },
+    {
+      "narration": "Vance snarls through the pain, pressing a hidden override switch on his gauntlet that makes the entire facility begin to groan and self-destruct. We are both running out of time.",
+      "on_screen_text": "ACTIVATION CODE",
+      "duration_hint": 15.0,
+      "visual": "Extreme close-up of a scarred hand pressing a glowing red button on a metallic gauntlet while red emergency strobe lights flash rapidly across the surrounding wet walls"
+    },
+    {
+      "narration": "Before I can stop him, the floor beneath us collapses into a pitch-black subterranean shaft filled with swirling currents. We plunge together into the unknown depths below.",
+      "on_screen_text": "THE PLUNGE",
+      "duration_hint": 15.0,
+      "visual": "Dramatic overhead shot looking straight down into a dark vertical abyss as two figures fall rapidly through swirling water and debris surrounded by twisted metal beams"
+    },
+    {
+      "narration": "Follow along for more chapters of Neon Pulse as the journey continues.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "Cinematic wide shot of a solitary figure swimming upward toward a distant green glow in deep murky ocean waters with bubbles rising past the camera lens"
+    }
+  ]
+}

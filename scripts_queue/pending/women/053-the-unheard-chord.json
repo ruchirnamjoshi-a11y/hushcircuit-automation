@@ -1,0 +1,65 @@
+{
+  "id": "the-unheard-chord",
+  "title": "The Unheard Chord",
+  "description": "A woman picks up an instrument she abandoned years ago and plays just for herself.",
+  "tags": [
+    "music",
+    "courage",
+    "passion",
+    "sound",
+    "self-expression"
+  ],
+  "character_reference": "a woman in her late twenties with shoulder-length black hair and silver hoop earrings, wearing an oversized cable-knit cream sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The acoustic guitar had stayed in its velvet-lined case in the back of the closet for nearly a decade.",
+      "on_screen_text": "THE DUSTY CASE",
+      "duration_hint": 13.0,
+      "visual": "dark bedroom closet opening dusty velvet guitar case lying flat on the floor warm overhead bulb illumination"
+    },
+    {
+      "narration": "Every time she thought about playing, old criticisms from a harsh teacher echoed loudly in her mind.",
+      "on_screen_text": "OLD ECHOES",
+      "duration_hint": 13.0,
+      "visual": "close-up hand hovering over wooden guitar body hesitant expression shadow falling across the fretboard"
+    },
+    {
+      "narration": "Tonight, she unlatched the rusty metal clasps anyway, letting the old familiar scent of cedar wood fill the room.",
+      "on_screen_text": "LIFTING THE LID",
+      "duration_hint": 14.0,
+      "visual": "fingers snapping open metal case latches lifting the wooden instrument out carefully warm lamplight"
+    },
+    {
+      "narration": "Her fingertips were soft, and the strings felt unfamiliar and sharp against skin that had forgotten them.",
+      "on_screen_text": "STIFF FINGERS",
+      "duration_hint": 13.0,
+      "visual": "close-up pressing fingertips onto steel guitar frets slight wince of discomfort realistic skin texture"
+    },
+    {
+      "narration": "She struck a single chord, and the rich, resonant sound vibrated straight through the floorboards.",
+      "on_screen_text": "THE FIRST NOTE",
+      "duration_hint": 13.0,
+      "visual": "strumming hand caught in motion string vibrating motion blur warm room interior cozy atmosphere"
+    },
+    {
+      "narration": "It wasn't perfect, and her timing slipped, but the music belonged entirely to her.",
+      "on_screen_text": "PLAYING FOR HERSELF",
+      "duration_hint": 13.0,
+      "visual": "medium shot eyes closed strumming acoustic guitar lost in the moment peaceful expression soft lighting"
+    },
+    {
+      "narration": "She played into the empty room, realizing she didn't need applause to make her art worthwhile.",
+      "on_screen_text": "HER OWN AUDIENCE",
+      "duration_hint": 13.0,
+      "visual": "wide shot sitting on edge of bed playing guitar peaceful solitary evening room illuminated by warm lamp"
+    },
+    {
+      "narration": "If you are finding your way back to what you love, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "holding guitar neck smiling warmly at camera soft cozy bedroom background natural lighting"
+    }
+  ]
+}

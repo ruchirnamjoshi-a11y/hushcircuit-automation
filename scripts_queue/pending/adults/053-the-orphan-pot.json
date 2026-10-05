@@ -1,0 +1,65 @@
+{
+  "id": "the-orphan-pot",
+  "title": "The Orphan Pot",
+  "description": "An aging ceramicist finds new purpose after breaking his favorite kiln.",
+  "tags": [
+    "artisan",
+    "craftsmanship",
+    "resilience",
+    "aging",
+    "second chance"
+  ],
+  "character_reference": "an older man with a neatly trimmed gray beard, wearing a dusty canvas apron over a coarse linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Thirty years of firing pots had taught me that clay always wins in the end. Tonight, it won definitively.",
+      "on_screen_text": "THE CRACK",
+      "duration_hint": 9.5,
+      "visual": "close-up of an old electric kiln door opening to reveal a shattered terracotta vase sitting among glowing heating elements"
+    },
+    {
+      "narration": "My hands, stiff with arthritis, had slipped just as I loaded the final batch. Decades of work, ruined in a second.",
+      "on_screen_text": "CLUMSY HANDS",
+      "duration_hint": 10.4,
+      "visual": "close-up of weathered, clay-stained hands trembling slightly as they rest against a heavy wooden workbench"
+    },
+    {
+      "narration": "Instead of sweeping the shards into the dustbin, I sat on my stool and picked up a tube of gold lacquer.",
+      "on_screen_text": "MENDING BROKEN PIECES",
+      "duration_hint": 9.5,
+      "visual": "medium shot of an artisan sitting under a single warm pendant lamp, carefully mixing golden resin in a small ceramic dish"
+    },
+    {
+      "narration": "There is an ancient technique where broken pottery is mended with precious metal, making the scars the most beautiful part.",
+      "on_screen_text": "THE GOLDEN SEAM",
+      "duration_hint": 10.4,
+      "visual": "macro shot of steady fingers applying a thin line of shimmering gold adhesive along the jagged crack of a dark bowl"
+    },
+    {
+      "narration": "I realized my own joints and failures were much the same. Breakage was not the end of utility; it was a new design.",
+      "on_screen_text": "HIDDEN STRENGTH",
+      "duration_hint": 10.4,
+      "visual": "close-up of an old man smiling gently down at his own calloused hands illuminated by warm workshop light"
+    },
+    {
+      "narration": "When the repair dried, the vessel looked stronger and more striking than it ever had in its pristine youth.",
+      "on_screen_text": "REBORN",
+      "duration_hint": 9.1,
+      "visual": "close-up of a finished ceramic bowl resting on dark wood, with intricate golden veins tracing across its surface"
+    },
+    {
+      "narration": "We spend so much energy trying to hide our flaws, forgetting they are where the light finally gets in.",
+      "on_screen_text": "EMBRACING FLAWS",
+      "duration_hint": 9.5,
+      "visual": "medium portrait of a craftsman looking directly into the camera with peaceful eyes and a faint, knowing smile"
+    },
+    {
+      "narration": "Art and life both require patience and repair. Follow along for more stories of quiet resilience.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "wide shot of a cozy ceramic studio filled with shelves of pottery bathed in the soft glow of twilight"
+    }
+  ]
+}

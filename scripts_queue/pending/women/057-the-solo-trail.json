@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-trail",
+  "title": "The Solo Trail",
+  "description": "Embarking on a challenging mountain hike alone and discovering deep inner independence.",
+  "tags": [
+    "hiking",
+    "solitude",
+    "nature",
+    "strength",
+    "adventure"
+  ],
+  "character_reference": "a woman in her late twenties with dark wavy hair tied in a high ponytail, wearing a rust-orange windbreaker and a small canvas backpack",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The trailhead marker pointed up a steep mountain path that everyone told her was too dangerous to climb alone.",
+      "on_screen_text": "THE TRAILHEAD",
+      "duration_hint": 14.0,
+      "visual": "standing at the base of a steep dirt mountain trail looking up pine trees tall canopy morning fog"
+    },
+    {
+      "narration": "For the first mile, doubt walked right beside her, questioning every step on the uneven gravel.",
+      "on_screen_text": "FIRST MILE",
+      "duration_hint": 13.0,
+      "visual": "hiking boots stepping over exposed tree roots on dirt path low angle shot focused determination"
+    },
+    {
+      "narration": "She stopped at a rocky overlook, pulling out her water bottle and listening to the absolute silence of the woods.",
+      "on_screen_text": "THE OVERLOOK",
+      "duration_hint": 14.0,
+      "visual": "standing on a rocky ledge looking out over vast green valley pine forest morning sunlight breaking through clouds"
+    },
+    {
+      "narration": "There was no one to pace her, no one to rush her, and no one to tell her which direction to take.",
+      "on_screen_text": "HER OWN PACE",
+      "duration_hint": 13.0,
+      "visual": "walking steadily up an incline breathing easily backpack straps adjusted comfortably natural daylight"
+    },
+    {
+      "narration": "Reaching the summit ridge, the wind caught her jacket as she looked out over the endless horizon.",
+      "on_screen_text": "THE RIDGE",
+      "duration_hint": 13.0,
+      "visual": "standing tall on mountain peak wind blowing hair and jacket open mountain vista background dramatic sky"
+    },
+    {
+      "narration": "Her legs were tired and her boots were dusty, but her spirit had never felt more alive.",
+      "on_screen_text": "FEELING ALIVE",
+      "duration_hint": 13.0,
+      "visual": "close-up face smiling radiant expression wind in hair warm golden hour sunlight on skin"
+    },
+    {
+      "narration": "She had climbed the mountain entirely on her own strength, proving she could rely on herself.",
+      "on_screen_text": "OWNING THE PEAK",
+      "duration_hint": 13.0,
+      "visual": "wide shot sitting on summit rock resting hands on knees looking out at mountain range peaceful solitude"
+    },
+    {
+      "narration": "If you are ready to conquer your own trails, follow along for daily inspiration.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "friendly smile looking at camera mountain backdrop soft natural lighting outdoor adventure vibe"
+    }
+  ]
+}

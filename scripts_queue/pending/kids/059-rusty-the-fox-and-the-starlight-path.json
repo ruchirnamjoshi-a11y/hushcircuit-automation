@@ -1,0 +1,65 @@
+{
+  "id": "rusty-the-fox-and-the-starlight-path",
+  "title": "Rusty the Fox and the Starlight Path",
+  "description": "A little fox finds his way home through the misty woods by following glowing fireflies in the grass.",
+  "tags": [
+    "fox",
+    "fireflies",
+    "woods",
+    "path",
+    "bedtime story"
+  ],
+  "character_reference": "a small bright red-orange fox cub with a bushy white-tipped tail and inquisitive dark eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Rusty stayed out playing in the forest long after the sun dipped below the hills. The misty woods suddenly looked unfamiliar in the gathering dusk, and he felt a little flutter of worry.",
+      "on_screen_text": "THE MISTY WOODS",
+      "duration_hint": 14.0,
+      "visual": "deep forest path surrounded by soft fog and tall ferns under fading twilight light"
+    },
+    {
+      "narration": "He sat down softly on a bed of cool moss, wondering which way led back to his warm den. Suddenly, a tiny spark of light flickered right in front of his nose.",
+      "on_screen_text": "A TINY SPARK",
+      "duration_hint": 13.0,
+      "visual": "small red-orange fox cub sitting alertly on soft green moss with ears perked forward"
+    },
+    {
+      "narration": "It was a friendly firefly, glowing with a warm amber light as it hovered above a hidden winding trail. The little bug zipped forward a few inches and waited.",
+      "on_screen_text": "THE GLOWING GUIDE",
+      "duration_hint": 13.0,
+      "visual": "bright glowing insect floating near green clover leaves in the dim evening shadows"
+    },
+    {
+      "narration": "Rusty trotted quietly behind the floating beacon as more fireflies joined in to illuminate the path. Together, they painted a sparkling trail across the forest floor.",
+      "on_screen_text": "FOLLOW THE LIGHT",
+      "duration_hint": 14.0,
+      "visual": "small fox cub walking cautiously along a dark dirt path illuminated by scattered glowing bugs"
+    },
+    {
+      "narration": "The warm lights led him straight past the old hollow log and right to the entrance of his cozy underground den. He had made it home safely.",
+      "on_screen_text": "SAFE AT HOME",
+      "duration_hint": 13.0,
+      "visual": "cozy earthen burrow entrance framed by wild ferns and warm glowing fireflies in the twilight"
+    },
+    {
+      "narration": "Rusty turned around and gave a grateful yip to his glowing friends before they fluttered away into the night. He felt brave for following the light.",
+      "on_screen_text": "GRATEFUL HEART",
+      "duration_hint": 13.0,
+      "visual": "small fox smiling warmly toward hovering glowing lights near the mouth of a cozy den"
+    },
+    {
+      "narration": "Curling his bushy tail around his nose, he drifted off to sleep in his warm, safe bed. Every shadow holds a friendly light if you know where to look.",
+      "on_screen_text": "COZY SLEEP",
+      "duration_hint": 14.0,
+      "visual": "small fox cub curled up tightly asleep on a bed of dry leaves inside a dark den"
+    },
+    {
+      "narration": "May the stars guide you safely to sleep tonight. Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "peaceful night sky filled with shimmering stars and soft glowing clouds over a quiet forest"
+    }
+  ]
+}

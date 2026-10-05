@@ -1,0 +1,65 @@
+{
+  "id": "pip-squeak-the-mouse-and-the-giant-feather",
+  "title": "Pip-Squeak the Mouse and the Giant Feather",
+  "description": "A tiny mouse learns how to use a large fallen feather as a wonderful cozy blanket for his nest.",
+  "tags": [
+    "mouse",
+    "nest",
+    "feather",
+    "cozy",
+    "bedtime story"
+  ],
+  "character_reference": "a tiny brown field mouse with large round ears and a long twitching pink nose",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Pip-Squeak shivered in his hollow tree nest as a chilly evening breeze drifted through the bark. His old moss blanket was worn thin, and he needed something warmer.",
+      "on_screen_text": "THE CHILLY BREEZE",
+      "duration_hint": 14.0,
+      "visual": "interior of a hollow tree cavity with textured wood grain and cool blue evening light"
+    },
+    {
+      "narration": "He scampered out onto the woodland floor and discovered a magnificent snowy-white owl feather resting in the grass. To him, it looked as huge as a sailboat.",
+      "on_screen_text": "THE WHITE FEATHER",
+      "duration_hint": 13.0,
+      "visual": "close-up of a large soft white feather lying among green clover leaves and damp soil"
+    },
+    {
+      "narration": "Using his paws, he tried to drag the giant treasure across the dirt, but it was far too heavy for one little mouse. He sat down and scratched his head in thought.",
+      "on_screen_text": "TOO HEAVY",
+      "duration_hint": 14.0,
+      "visual": "small brown mouse with large ears standing beside a large white feather on the ground"
+    },
+    {
+      "narration": "Instead of pulling it all at once, Pip-Squeak carefully climbed on top and tucked the silky down layers around his shoulders like a royal cape.",
+      "on_screen_text": "A SOFT CAPE",
+      "duration_hint": 13.0,
+      "visual": "small furry mouse sitting on a large white feather wrapped around his back like a blanket"
+    },
+    {
+      "narration": "By folding the flexible quill, he managed to carry the fluffy prize all the way back up into his hollow tree home without any trouble at all.",
+      "on_screen_text": "CLIMBING HOME",
+      "duration_hint": 14.0,
+      "visual": "small mouse clutching a fluffy white quill while climbing up rough textured tree bark"
+    },
+    {
+      "narration": "He spread the soft white plumes across his nest, creating the coziest, warmest bed in the entire forest. It felt like sleeping on a cloud.",
+      "on_screen_text": "THE CLOUD BED",
+      "duration_hint": 13.0,
+      "visual": "cozy tree hollow lined with soft white feathers and warm amber light"
+    },
+    {
+      "narration": "Snuggling deep under his new feather blanket, Pip-Squeak closed his eyes with a happy squeak. Even the smallest creatures can find the biggest comforts.",
+      "on_screen_text": "HAPPY DREAMS",
+      "duration_hint": 14.0,
+      "visual": "small mouse tucked comfortably under soft white feathers with eyes closed in peaceful sleep"
+    },
+    {
+      "narration": "May your bed be warm and your dreams be gentle tonight. Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "gentle moonlight filtering through forest leaves onto a peaceful, quiet woodland floor"
+    }
+  ]
+}

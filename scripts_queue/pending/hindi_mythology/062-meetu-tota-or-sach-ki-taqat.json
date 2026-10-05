@@ -1,0 +1,65 @@
+{
+  "id": "meetu-tota-or-sach-ki-taqat",
+  "title": "मीठू तोता और सच की ताकत",
+  "description": "एक चतुर तोते की कहानी जो अपनी गलती मानकर सच्चे दोस्त बनाने में सफल होता है।",
+  "tags": [
+    "तोता",
+    "सच्चाई",
+    "दोस्त",
+    "नैतिक",
+    "कहानी"
+  ],
+  "character_reference": "a vibrant emerald green parrot with a bright curved orange beak and a tuft of blue feathers on its head",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "हरे-भरे जंगल में मीठू तोता हमेशा अपनी बुद्धिमानी की बड़ी-बड़ी बातें किया करता था।",
+      "on_screen_text": "बड़ी बातें",
+      "duration_hint": 5.2,
+      "visual": "dense tropical jungle canopy, lush green leaves swaying gently, soft morning mist filtering through branches"
+    },
+    {
+      "narration": "एक दिन उसने गलती से बंदर के फलों का ढेर गिरा दिया और चुपचाप वहाँ से खिसक गया।",
+      "on_screen_text": "एक गलती",
+      "duration_hint": 5.2,
+      "visual": "branch of a fruit tree, a pile of scattered red berries on the ground below, close-up shot of the parrot flying away quickly"
+    },
+    {
+      "narration": "बंदर को जब नुकसान दिखा तो वह बहुत उदास हुआ, यह देखकर मीठू का मन बेचैन हो गया।",
+      "on_screen_text": "उदासा मन",
+      "duration_hint": 5.2,
+      "visual": "forest floor, a sad monkey sitting among fallen fruit, medium close-up shot showing genuine concern on the monkey's face"
+    },
+    {
+      "narration": "उसने अपनी गलती छिपानी चाही, पर उसका दिल उसे सच बोलने की गवाही देता रहा।",
+      "on_screen_text": "अंतरात्मा की पुकार",
+      "duration_hint": 5.2,
+      "visual": "high up in a leafy tree branch, the parrot looking down thoughtfully with a hesitating posture, soft afternoon light"
+    },
+    {
+      "narration": "हिम्मत जुटाकर मीठू वापस गया और उसने अपनी गलती स्वीकार करते हुए माफी मांगी।",
+      "on_screen_text": "सच बोलना",
+      "duration_hint": 5.2,
+      "visual": "close-up of the bright green parrot bowing its head slightly toward the ground in front of a tree trunk, warm sunlight"
+    },
+    {
+      "narration": "बंदर ने उसका सच सुनना पसंद किया और गुस्से की बजाय उसे गले से लगा लिया।",
+      "on_screen_text": "माफी और प्यार",
+      "duration_hint": 5.2,
+      "visual": "close-up of two woodland animal friends sharing a warm reconciliation moment beneath a canopy of green leaves"
+    },
+    {
+      "narration": "सच बोलने से हमारा सिर हमेशा ऊंचा रहता है और रिश्ते मजबूत होते हैं।",
+      "on_screen_text": "सच्चाई की जीत",
+      "duration_hint": 5.2,
+      "visual": "sunlit forest clearing, peaceful atmosphere with golden rays shining through tall ancient tree trunks"
+    },
+    {
+      "narration": "ऐसी ही और प्रेरणादायक कहानियों के लिए हमारे साथ जुड़े रहें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "serene woodland scene at sunset, warm orange hues painting the sky behind peaceful tree silhouettes"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-faded-polaroid",
+  "title": "The Faded Polaroid",
+  "description": "A photography student stops chasing digital perfection and explores the unpredictable beauty of expired instant film.",
+  "tags": [
+    "photography",
+    "polaroid",
+    "expired-film",
+    "imperfection",
+    "nostalgia"
+  ],
+  "character_reference": "a young adult with silver hoop earrings and a canvas shoulder bag loaded with film canisters",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My digital portfolio was crisp, high-resolution, and completely devoid of any soul.",
+      "on_screen_text": "STERILE PIXELS",
+      "duration_hint": 12.0,
+      "visual": "Close-up of a sleek digital camera screen displaying a sterile, ultra-sharp architectural shot"
+    },
+    {
+      "narration": "Deep in a thrift store drawer, I found a box of instant film that expired a decade ago.",
+      "on_screen_text": "EXPIRED FINDS",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of hands pulling a dusty yellow film box from a cluttered wooden shelf"
+    },
+    {
+      "narration": "There was no preview screen, no delete button, and no way to know what the chemicals would do.",
+      "on_screen_text": "NO PREVIEW",
+      "duration_hint": 13.0,
+      "visual": "Close-up of an old mechanical instant camera being loaded with a weathered film cartridge"
+    },
+    {
+      "narration": "I snapped a quick portrait of my friend near the alleyway as the afternoon shadows lengthened.",
+      "on_screen_text": "THE SNAP",
+      "duration_hint": 13.0,
+      "visual": "Action shot of pressing a heavy silver shutter button while sunlight casts long golden shadows"
+    },
+    {
+      "narration": "The white square spat out, slowly developing ghostly pastel streaks and unexpected lavender hues.",
+      "on_screen_text": "DEVELOPING DREAMS",
+      "duration_hint": 14.0,
+      "visual": "Close-up of a blank white instant photo slowly revealing surreal pink and blue gradients"
+    },
+    {
+      "narration": "It was blurry, imperfect, and entirely unique—a moment frozen in honest chemistry.",
+      "on_screen_text": "TRUE BLUR",
+      "duration_hint": 13.0,
+      "visual": "Medium close-up holding up a colorful vintage photo against soft window light"
+    },
+    {
+      "narration": "Real life isn't sharp and pixel-perfect; it is wonderfully flawed and ephemeral.",
+      "on_screen_text": "FLAWED BEAUTY",
+      "duration_hint": 13.0,
+      "visual": "Close-up of a genuine smile reflecting warm amber light from a vintage desk lamp"
+    },
+    {
+      "narration": "If you love capturing authentic moments, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Several colorful vintage instant photos pinned to a corkboard with warm string lights"
+    }
+  ]
+}

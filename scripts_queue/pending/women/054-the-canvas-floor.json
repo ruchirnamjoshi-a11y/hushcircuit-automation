@@ -1,0 +1,65 @@
+{
+  "id": "the-canvas-floor",
+  "title": "The Canvas Floor",
+  "description": "Throwing out the rules of academic art to paint with wild, uninhibited freedom on large canvases.",
+  "tags": [
+    "painting",
+    "freedom",
+    "art",
+    "release",
+    "creativity"
+  ],
+  "character_reference": "a woman in her early thirties with short blonde hair speckled with dried paint, wearing a faded denim jumpsuit splattered with primary colors",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For years, Nora painted neat little landscapes inside rigid black lines, terrified of making a single mistake.",
+      "on_screen_text": "THE RIGID LINES",
+      "duration_hint": 14.0,
+      "visual": "holding fine paintbrush carefully applying paint to a small canvas neat pristine art studio background daytime lighting"
+    },
+    {
+      "narration": "Today, she rolled a massive blank canvas right onto the wooden floor and threw away all the tiny brushes.",
+      "on_screen_text": "THE BIG BLANK",
+      "duration_hint": 14.0,
+      "visual": "large unprimed white canvas spread across wooden studio floor standing over it looking down holding a large bucket of blue paint"
+    },
+    {
+      "narration": "With a deep breath, she tipped a full jar of crimson paint directly into the center of the white space.",
+      "on_screen_text": "FIRST SPLASH",
+      "duration_hint": 13.0,
+      "visual": "red paint pouring from jar onto white canvas dynamic motion splash droplets frozen in mid-air bright natural window light"
+    },
+    {
+      "narration": "She used her bare hands to smear the color outward, feeling the cool, thick texture without any hesitation.",
+      "on_screen_text": "FINGERTIP PAINTING",
+      "duration_hint": 13.0,
+      "visual": "close-up hands smearing thick red and blue paint across canvas expressive gesture messy fingers texture visible"
+    },
+    {
+      "narration": "Every stroke washed away another expectation of what good art was supposed to look like.",
+      "on_screen_text": "SHEDDING THE RULES",
+      "duration_hint": 13.0,
+      "visual": "medium shot sweeping arm movement across large canvas paint splattering joyful energetic expression"
+    },
+    {
+      "narration": "The floor was a mess of bright pigments, and her hands were stained, but her chest felt completely light.",
+      "on_screen_text": "MESSY FREEDOM",
+      "duration_hint": 13.0,
+      "visual": "sitting on edge of canvas looking down at colorful hands breathing deeply paint-splattered jeans studio floor"
+    },
+    {
+      "narration": "She had finally stopped trying to impress the room and started painting from her soul.",
+      "on_screen_text": "PURE EXPRESSION",
+      "duration_hint": 13.0,
+      "visual": "wide shot colorful abstract painting on floor looking up toward camera smiling brightly natural sunlight"
+    },
+    {
+      "narration": "If you are ready to color outside the lines, follow along for daily encouragement.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "smiling at camera paint smudged on cheek bright art studio background welcoming energy"
+    }
+  ]
+}

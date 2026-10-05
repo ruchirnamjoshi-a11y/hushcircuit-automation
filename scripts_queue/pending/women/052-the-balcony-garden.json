@@ -1,0 +1,65 @@
+{
+  "id": "the-balcony-garden",
+  "title": "The Balcony Garden",
+  "description": "Cultivating quiet strength and patience while turning a neglected concrete balcony into a blooming sanctuary.",
+  "tags": [
+    "patience",
+    "growth",
+    "nature",
+    "peace",
+    "healing"
+  ],
+  "character_reference": "a woman in her early forties with curly auburn hair tied back in a messy ponytail, wearing an earth-toned canvas apron over a linen sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The apartment balcony was nothing more than grey concrete and old dust when Clara decided she needed something green to tend to.",
+      "on_screen_text": "THE BARE CONCRETE",
+      "duration_hint": 15.0,
+      "visual": "wide-angle shot empty grey concrete balcony morning sunlight dusty floorboards empty clay pots stacked in the corner"
+    },
+    {
+      "narration": "She hauled bags of rich soil up the stairs, ignoring the whispering voices telling her she lacked a green thumb.",
+      "on_screen_text": "HEAVY LIFTING",
+      "duration_hint": 13.0,
+      "visual": "straining muscles arms lifting heavy brown paper soil bag onto wooden workbench determined facial expression morning light"
+    },
+    {
+      "narration": "Pressing tiny seeds into the dark earth, she whispered quiet promises of patience to herself and the soil.",
+      "on_screen_text": "PLANTING SEEDS",
+      "duration_hint": 13.0,
+      "visual": "close-up hands gently pressing small seeds into dark moist potting soil inside a terracotta pot tender careful gesture"
+    },
+    {
+      "narration": "Days passed with no change at all, teaching her that waiting is often the hardest part of any transformation.",
+      "on_screen_text": "THE WAITING GAME",
+      "duration_hint": 13.0,
+      "visual": "kneeling on balcony floor watering soil with a brass watering can droplets glistening in sunlight quiet contemplative expression"
+    },
+    {
+      "narration": "Then, a single pale green loop broke through the surface, defying the cold concrete surrounding it.",
+      "on_screen_text": "FIRST GREEN SHOOT",
+      "duration_hint": 13.0,
+      "visual": "extreme close-up macro shot tiny vibrant green sprout emerging from dark soil morning dew drops on leaves"
+    },
+    {
+      "narration": "Week by week, tendrils climbed the railing, turning the neglected space into a living wall of color.",
+      "on_screen_text": "VINE AND LEAF",
+      "duration_hint": 13.0,
+      "visual": "medium shot arranging climbing green vines along wooden trellis smiling softly dappled sunlight filtering through leaves"
+    },
+    {
+      "narration": "She had built this small oasis entirely with her own hands, finding her own steady rhythm in the dirt.",
+      "on_screen_text": "BLOOMING PEACE",
+      "duration_hint": 13.0,
+      "visual": "sitting on wooden stool surrounded by lush potted plants holding a pruning shear looking peaceful and grounded golden hour"
+    },
+    {
+      "narration": "If you believe in growing at your own pace, follow along for more daily inspiration.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "warm gentle smile surrounded by green leaves natural outdoor lighting welcoming gesture"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "maizie-the-mole-and-the-lost-pebble",
+  "title": "Maizie the Mole and the Lost Pebble",
+  "description": "A nearsighted mole uses her sense of touch to find a special glowing stone in the underground tunnels.",
+  "tags": [
+    "mole",
+    "underground",
+    "darkness",
+    "bravery",
+    "bedtime story"
+  ],
+  "character_reference": "a small fuzzy grey mole wearing oversized round spectacles and a pale yellow knitted scarf",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Maizie loved exploring the cozy underground tunnels beneath the meadow, even though her round glasses made everything look a little fuzzy. Tonight, she misplaced her favorite smooth quartz pebble.",
+      "on_screen_text": "THE DARK TUNNEL",
+      "duration_hint": 14.0,
+      "visual": "warm glowing underground dirt tunnel with curved walls and exposed roots hanging from the ceiling"
+    },
+    {
+      "narration": "She patted the soft dirt floor with her paws, relying on her sense of touch instead of her eyes. Roots tickled her fuzzy fingers as she searched every nook and cranny.",
+      "on_screen_text": "GENTLE PAWS",
+      "duration_hint": 13.0,
+      "visual": "close-up of small furry paws gently feeling along textured damp soil near thick wooden tree roots"
+    },
+    {
+      "narration": "A friendly glowworm drifted down from a root above, casting a soft, comforting green light over the curved earthen path. It buzzed softly to offer a helping hand.",
+      "on_screen_text": "A GLOWING FRIEND",
+      "duration_hint": 13.0,
+      "visual": "soft green glowing insect hovering near damp earthy walls inside a cozy underground nook"
+    },
+    {
+      "narration": "Following the warm light, Maizie crawled deeper into a little alcove behind a clump of sweet-smelling ferns. The air down here smelled wonderfully of damp moss and warm earth.",
+      "on_screen_text": "THE SWEET ALCOVE",
+      "duration_hint": 14.0,
+      "visual": "small furry figure peering around a cluster of dark green fern stems inside a cozy earthy burrow"
+    },
+    {
+      "narration": "Her paw brushed against something cool, hard, and wonderfully smooth nestled in the soil. Maizie scooped it up and lifted it closer to her glasses to inspect.",
+      "on_screen_text": "A SMOOTH FIND",
+      "duration_hint": 13.0,
+      "visual": "close-up of small furry hands holding up a smooth shiny stone in soft underground lighting"
+    },
+    {
+      "narration": "It was her lost quartz pebble, catching the glowworm's light and sparkling like a tiny star. Maizie tucked it safely into her scarf pocket with a happy sigh.",
+      "on_screen_text": "THE STARRY STONE",
+      "duration_hint": 13.0,
+      "visual": "small mole smiling warmly while adjusting round glasses in a softly lit earthy burrow"
+    },
+    {
+      "narration": "Snuggling deep into her pile of soft moss, Maizie closed her eyes feeling safe and warm. Even in the dark, she knew she was never truly lost.",
+      "on_screen_text": "SWEET DREAMS",
+      "duration_hint": 13.0,
+      "visual": "cozy underground bed made of soft green moss and dry leaves in gentle glowing darkness"
+    },
+    {
+      "narration": "Close your eyes and drift off to sleep beneath the stars tonight. Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "peaceful underground den with warm amber light filtering down through a small root opening above"
+    }
+  ]
+}

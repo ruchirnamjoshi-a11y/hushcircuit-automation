@@ -1,0 +1,32 @@
+{
+  "start_date": "2026-09-28",
+  "end_date": "2026-10-04",
+  "channel": {
+    "views": 1,
+    "estimatedMinutesWatched": 0,
+    "averageViewDuration": 7,
+    "averageViewPercentage": 1.28,
+    "subscribersGained": 0,
+    "subscribersLost": 0
+  },
+  "top_videos": [
+    {
+      "video": "uGz24ews6J0",
+      "views": 1,
+      "averageViewDuration": 7,
+      "averageViewPercentage": 1.28
+    },
+    {
+      "video": "BgD6m6r5RyA",
+      "views": 0,
+      "averageViewDuration": 0,
+      "averageViewPercentage": 0
+    },
+    {
+      "video": "yD5xuwIvxak",
+      "views": 0,
+      "averageViewDuration": 0,
+      "averageViewPercentage": 0
+    }
+  ]
+}

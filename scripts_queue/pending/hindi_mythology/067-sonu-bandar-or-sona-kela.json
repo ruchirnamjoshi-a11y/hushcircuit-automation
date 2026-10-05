@@ -1,0 +1,65 @@
+{
+  "id": "sonu-bandar-or-sona-kela",
+  "title": "सोना बंदर और सोना केला",
+  "description": "एक लालची बंदर की कहानी जो बांटने की खुशी का असली मतलब समझता है।",
+  "tags": [
+    "बंदर",
+    "केला",
+    "लालच",
+    "दोस्ती",
+    "नैतिक"
+  ],
+  "character_reference": "a mischievous little brown monkey with big brown eyes and a long curly tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "एक दिन सोनू बंदर को जंगल के सबसे ऊंचे पेड़ पर एक चमचमाता हुआ अनोखा केला मिला।",
+      "on_screen_text": "अनोखा फल",
+      "duration_hint": 5.2,
+      "visual": "high up in a lush green tree branch, a single glowing golden banana resting among broad green leaves"
+    },
+    {
+      "narration": "उसने तय किया कि इस अद्भुत फल को वह अकेले ही चुपचाप खाएगा और किसी को नहीं बताएगा।",
+      "on_screen_text": "अकेलापन",
+      "duration_hint": 5.2,
+      "visual": "close-up of the little brown monkey hugging the glowing golden banana tightly with a secretive and protective expression"
+    },
+    {
+      "narration": "लेकिन जब उसने उसे खाने की कोशिश की, तो वह कड़े पत्थर जैसा कठोर हो गया।",
+      "on_screen_text": "कठोर फल",
+      "duration_hint": 5.2,
+      "visual": "close-up of the monkey tapping on the golden fruit with a puzzled and disappointed look on its face"
+    },
+    {
+      "narration": "तभी उसने अपने भूखे दोस्तों को उदास बैठे देखा तो उसका दिल पसीज गया।",
+      "on_screen_text": "भूखे दोस्त",
+      "duration_hint": 5.2,
+      "visual": "branch of a neighboring tree, several small animal friends sitting together looking hungry and tired"
+    },
+    {
+      "narration": "सोनू ने वह केला अपने सभी दोस्तों के साथ बांटकर खाने का फैसला किया।",
+      "on_screen_text": "बांटना",
+      "duration_hint": 5.2,
+      "visual": "close-up of furry hands breaking a glowing golden fruit into several small pieces to share"
+    },
+    {
+      "narration": "जैसे ही उसने हिस्से बांटे, वह जादुई केला सबसे स्वादिष्ट और मीठा बन गया।",
+      "on_screen_text": "मीठा स्वाद",
+      "duration_hint": 5.2,
+      "visual": "sunlit tree branch, multiple happy animal friends eating together with joyful expressions, warm lighting"
+    },
+    {
+      "narration": "खुशियों को बांटने से उनका आनंद कई गुना बढ़ जाता है।",
+      "on_screen_text": "बांटने की खुशी",
+      "duration_hint": 5.2,
+      "visual": "wide shot of a vibrant green jungle canopy under warm golden sunlight, peaceful and joyful atmosphere"
+    },
+    {
+      "narration": "ऐसी ही सीख देने वाली कहानियों के लिए हमारे चैनल को फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "serene forest clearing at dusk, warm evening sun rays filtering through peaceful tree branches"
+    }
+  ]
+}

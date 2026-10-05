@@ -1,0 +1,65 @@
+{
+  "id": "mina-billi-or-suraj-ka-phool",
+  "title": "मीना बिल्ली और सूरजमुखी का फूल",
+  "description": "एक जिज्ञासु बिल्ली की कहानी जो सुबह जल्दी उठकर प्रकृति का अनूठा जादू देखती है।",
+  "tags": [
+    "बिल्ली",
+    "सूरजमुखी",
+    "सुबह",
+    "प्रकृति",
+    "कहानी"
+  ],
+  "character_reference": "a fluffy white kitten with soft grey patches and bright inquisitive amber eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "भोर की पहली किरण के साथ ही मीना बिल्ली अपनी खिड़की से बाहर झांकने लगी।",
+      "on_screen_text": "सुबह की किरण",
+      "duration_hint": 5.2,
+      "visual": "cozy indoor windowsill, soft morning light streaming in, a fluffy kitten looking outside with curiosity"
+    },
+    {
+      "narration": "बगीचे में खिले बड़े-बड़े पीले सूरजमुखी के फूल धीरे-धीरे सूरज की तरफ मुड़ रहे थे।",
+      "on_screen_text": "सुनहरे फूल",
+      "duration_hint": 5.2,
+      "visual": "garden flowerbed, vibrant yellow sunflower heads turning gently toward the glowing morning sky, warm light"
+    },
+    {
+      "narration": "मीना ने सोचा कि ये फूल हमेशा सूर्य की दिशा में ही क्यों देखते रहते हैं।",
+      "on_screen_text": "एक सवाल",
+      "duration_hint": 5.2,
+      "visual": "close-up of the white kitten peering down from a low porch with a thoughtful and tilted head"
+    },
+    {
+      "narration": "वह धीरे-धीरे दबे पाँव चलकर उन फूलों के पास पहुँची और उन्हें ध्यान से देखने लगी।",
+      "on_screen_text": "करीब जाना",
+      "duration_hint": 5.2,
+      "visual": "low angle shot of fluffy paws stepping cautiously across a soft grassy lawn covered in morning dew"
+    },
+    {
+      "narration": "उसने पाया कि रोशनी ही इन फूलों को ऊर्जा और जीवन प्रदान करती है।",
+      "on_screen_text": "अनोखा सच",
+      "duration_hint": 5.2,
+      "visual": "close-up of vibrant yellow petals glistening with dewdrops under bright morning sunlight"
+    },
+    {
+      "narration": "उस दिन से मीना भी हर सुबह जल्दी उठकर धूप में खेलना अपनी आदत बना ली।",
+      "on_screen_text": "नई आदत",
+      "duration_hint": 5.2,
+      "visual": "sunlit garden lawn, the fluffy kitten stretching happily on warm grass surrounded by blooming flowers"
+    },
+    {
+      "narration": "प्रकृति के साथ जुड़ना हमारे शरीर और मन दोनों को तरोताजा कर देता है।",
+      "on_screen_text": "प्रकृति का प्यार",
+      "duration_hint": 5.2,
+      "visual": "wide scenic view of a vibrant floral garden bathed in soft morning golden hour light"
+    },
+    {
+      "narration": "ऐसी ही प्यारी कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "peaceful garden corner at sunset, warm orange rays filtering through green leaves and blooming petals"
+    }
+  ]
+}

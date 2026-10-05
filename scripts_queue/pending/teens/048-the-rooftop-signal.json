@@ -1,0 +1,65 @@
+{
+  "id": "the-rooftop-signal",
+  "title": "The Rooftop Signal",
+  "description": "An amateur radio hobbyist tries to make contact across state lines during a solar storm, learning the value of persistence.",
+  "tags": [
+    "radio",
+    "hobby",
+    "signals",
+    "persistence",
+    "connection"
+  ],
+  "character_reference": "a young adult wearing a worn denim jacket with patches and bulky over-ear headphones",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Static hissed endlessly through the headphones as the solar flare scrambled every standard frequency.",
+      "on_screen_text": "WALL OF STATIC",
+      "duration_hint": 13.0,
+      "visual": "Close-up of an analog radio dial glowing amber beneath a tangle of copper wire antennas"
+    },
+    {
+      "narration": "For three hours, my call signs dissolved into nothingness against the roaring atmospheric noise.",
+      "on_screen_text": "LOST SIGNALS",
+      "duration_hint": 13.0,
+      "visual": "Medium shot of hands adjusting a heavy metal tuning knob in a dimly lit attic room"
+    },
+    {
+      "narration": "My fingers grew stiff in the cold attic air, ready to unplug the rig and call it a night.",
+      "on_screen_text": "THE COLD CHILL",
+      "duration_hint": 13.0,
+      "visual": "Close-up of breath fogging up in the chilly air next to a blinking green transmission light"
+    },
+    {
+      "narration": "Then, beneath the white noise, a faint morse code rhythm tapped out a familiar response.",
+      "on_screen_text": "FAINT TAP",
+      "duration_hint": 13.0,
+      "visual": "Macro shot of a telegraph key tapping rapidly under the beam of a small desk lamp"
+    },
+    {
+      "narration": "I adjusted the fine-tuning dial by a fraction of a millimeter, bringing the voice into clear focus.",
+      "on_screen_text": "LOCKED ON",
+      "duration_hint": 13.0,
+      "visual": "Close-up of eyes widening in surprise as audio meters jump into the green zone"
+    },
+    {
+      "narration": "A distant voice crackled through the speaker from three hundred miles away, answering my call.",
+      "on_screen_text": "CLEAR CONNECTION",
+      "duration_hint": 13.0,
+      "visual": "Medium shot leaning in close to an old speaker grille wrapped in copper wire"
+    },
+    {
+      "narration": "Connection doesn't require a loud voice, just someone willing to keep listening through the noise.",
+      "on_screen_text": "KEEP LISTENING",
+      "duration_hint": 13.0,
+      "visual": "Close-up smiling expression illuminated by the warm amber glow of vacuum tube dials"
+    },
+    {
+      "narration": "If you are tuning into new adventures, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Atmospheric shot of a wire antenna stretching across a dark starlit night sky"
+    }
+  ]
+}

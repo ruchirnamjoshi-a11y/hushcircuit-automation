@@ -1,0 +1,65 @@
+{
+  "id": "the-bakers-mistake",
+  "title": "The Baker's Mistake",
+  "description": "A pastry apprentice accidentally doubles the yeast in a morning batch of croissants, creating an unexpectedly flaky breakthrough.",
+  "tags": [
+    "baking",
+    "mistakes",
+    "pastry",
+    "culinary",
+    "experiment"
+  ],
+  "character_reference": "a young baker with flour smudged across their forehead and wearing a rolled-up linen chef coat",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The kitchen was silent at four in the morning, save for the rhythmic hum of the proofing cabinet.",
+      "on_screen_text": "THE EARLY SHIFT",
+      "duration_hint": 14.0,
+      "visual": "Wide shot of a stainless steel kitchen lit by pale blue pre-dawn light through a high window"
+    },
+    {
+      "narration": "Half asleep, I misread the scale and poured twice the amount of active yeast into the laminated dough.",
+      "on_screen_text": "THE ACCIDENT",
+      "duration_hint": 14.0,
+      "visual": "Close-up of white flour dusting a wooden countertop next to a spilled measuring spoon"
+    },
+    {
+      "narration": "By sunrise, the dough had ballooned past the rim of the tray, looking like a total disaster.",
+      "on_screen_text": "THE OVERFLOW",
+      "duration_hint": 13.0,
+      "visual": "Medium close-up of buttery dough bubbling over the edges of a metal baking sheet"
+    },
+    {
+      "narration": "Instead of tossing it out, I rolled it thin, folded the butter layers, and slid it into the hot oven.",
+      "on_screen_text": "ROLLING THE DICE",
+      "duration_hint": 14.0,
+      "visual": "Close-up of a rolling pin flattening golden sheets of butter and pastry dough on marble"
+    },
+    {
+      "narration": "The oven door window fogged up as the pastries rose into towering, golden-brown spirals.",
+      "on_screen_text": "THE RISE",
+      "duration_hint": 13.0,
+      "visual": "Close-up peering through a hot oven glass at flaky pastries expanding with caramelized layers"
+    },
+    {
+      "narration": "When pulled apart, they shattered into a million delicate, airy layers that melted instantly.",
+      "on_screen_text": "PERFECT FLAKE",
+      "duration_hint": 13.0,
+      "visual": "Macro shot of hands breaking open a warm, steaming croissant revealing honeycomb interiors"
+    },
+    {
+      "narration": "Sometimes our happiest kitchen accidents teach us more than any recipe book ever could.",
+      "on_screen_text": "SWEET SURPRISE",
+      "duration_hint": 13.0,
+      "visual": "Close-up of a satisfied grin while dusting excess flour away from a golden pastry crust"
+    },
+    {
+      "narration": "If you love sweet breakthroughs, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Warmly lit close-up of fresh pastries resting on a cooling rack dusted with powdered sugar"
+    }
+  ]
+}

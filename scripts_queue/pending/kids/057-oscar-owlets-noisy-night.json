@@ -1,0 +1,65 @@
+{
+  "id": "oscar-owlets-noisy-night",
+  "title": "Oscar Owlet's Noisy Night",
+  "description": "A young owlet overcomes his fear of loud forest noises by learning to listen to the gentle symphony of the woods.",
+  "tags": [
+    "owlet",
+    "forest",
+    "night sounds",
+    "bravery",
+    "bedtime story"
+  ],
+  "character_reference": "a fluffy brown-and-white owlet with huge amber eyes and soft speckled feathers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Night fell over the whispering pine forest, and little Oscar snuggled deep into his hollow branch. Strange rustling sounds echoed in the darkness, making him pull his wings in tight.",
+      "on_screen_text": "THE DARK WOODS",
+      "duration_hint": 14.0,
+      "visual": "dark pine tree branch with textured bark silhouetted against a deep indigo night sky"
+    },
+    {
+      "narration": "Was that a monster scratching against the bark? Oscar blinked his wide amber eyes, feathering up in surprise as a gentle breeze rustled the pine needles outside.",
+      "on_screen_text": "A SUDDEN RUSTLE",
+      "duration_hint": 14.0,
+      "visual": "close-up of fluffy young bird with wide startled eyes peering out from behind green pine needles"
+    },
+    {
+      "narration": "Mama Owl nudged him gently with her soft wing, teaching him how to listen closer to the sounds. She whispered that every nighttime noise had a friendly story to tell.",
+      "on_screen_text": "LISTENING CLOSE",
+      "duration_hint": 14.0,
+      "visual": "two feathered birds resting close together on a rustic wooden branch in soft moonlight"
+    },
+    {
+      "narration": "Oscar tilted his feathered head, listening past the rustling leaves to a rhythmic thrumming sound. It was just a tiny cricket playing a soothing lullaby in the grass below.",
+      "on_screen_text": "THE CRICKET'S SONG",
+      "duration_hint": 14.0,
+      "visual": "close-up of textured green moss and blades of grass illuminated by a soft pool of moonlight"
+    },
+    {
+      "narration": "Then came a soft whoosh overhead as a gentle moth fluttered past their hollow tree. The dark forest wasn't scary at all; it was just full of sleepy night creatures.",
+      "on_screen_text": "A GENTLE FLUTTER",
+      "duration_hint": 14.0,
+      "visual": "soft-winged pale moth hovering near dark textured tree bark under silver moonlight"
+    },
+    {
+      "narration": "Oscar puffed out his chest and let out a tiny, cheerful hoot into the cool night air. The forest echoed back a warm, comforting lullaby of rustling leaves and crickets.",
+      "on_screen_text": "A BRAVE HOOT",
+      "duration_hint": 14.0,
+      "visual": "small fluffy bird perched proudly on an old tree branch looking up at twinkling stars"
+    },
+    {
+      "narration": "Yawning sleepily, Oscar tucked his head beneath his soft wing and let the peaceful night sounds rock him to sleep. The woods were his safe and cozy home.",
+      "on_screen_text": "SLEEPY FEATHERS",
+      "duration_hint": 13.0,
+      "visual": "small bird sleeping peacefully with head tucked into soft chest feathers inside a cozy tree nook"
+    },
+    {
+      "narration": "May the quiet lullaby of the night bring you peaceful rest. Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "starry night sky filled with glowing constellations over a quiet, silhouetted forest canopy"
+    }
+  ]
+}

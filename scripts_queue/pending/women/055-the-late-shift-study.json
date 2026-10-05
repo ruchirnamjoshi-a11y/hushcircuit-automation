@@ -1,0 +1,65 @@
+{
+  "id": "the-late-shift-study",
+  "title": "The Late Shift Study",
+  "description": "A working mother carves out thirty minutes every night to study for her dream career.",
+  "tags": [
+    "study",
+    "ambition",
+    "motherhood",
+    "dedication",
+    "goals"
+  ],
+  "character_reference": "a woman in her late thirties with tied-back dark brown hair and a silver stud nose ring, wearing a comfortable grey zip-up hoodie",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Long after the house grew quiet and the laundry baskets were finally empty, Elena opened her heavy textbooks.",
+      "on_screen_text": "THE QUIET HOUR",
+      "duration_hint": 14.0,
+      "visual": "kitchen table at night single desk lamp glowing over thick open textbooks empty coffee mug dark window reflection"
+    },
+    {
+      "narration": "Her eyes burned with exhaustion from a twelve-hour workday, whispering that she should just go to sleep.",
+      "on_screen_text": "FIGHTING FATIGUE",
+      "duration_hint": 14.0,
+      "visual": "rubbing eyes with hand tired expression soft yellow lamplight casting deep shadows in room"
+    },
+    {
+      "narration": "Instead, she picked up her highlighter and marked a brilliant yellow path through complex architectural diagrams.",
+      "on_screen_text": "THE HIGHLIGHTER",
+      "duration_hint": 14.0,
+      "visual": "close-up hand drawing yellow highlighter across paper blueprint technical drawings sharp focus warm lighting"
+    },
+    {
+      "narration": "Nobody was watching her, and nobody was grading this effort except her own internal standard.",
+      "on_screen_text": "SILENT EFFORT",
+      "duration_hint": 13.0,
+      "visual": "side profile focused intently on textbook notes written in margins quiet room atmosphere concentration"
+    },
+    {
+      "narration": "Every difficult equation solved was a brick laid in the foundation of her future independent life.",
+      "on_screen_text": "BUILDING A FUTURE",
+      "duration_hint": 13.0,
+      "visual": "writing complex math equations in notebook pen scratching paper determined facial expression steady hand"
+    },
+    {
+      "narration": "She closed the back cover with a soft thud, knowing she was one step closer to her goal.",
+      "on_screen_text": "CLOSING THE BOOK",
+      "duration_hint": 13.0,
+      "visual": "hands closing heavy textbook shut dust motes floating in lamplight sense of accomplishment"
+    },
+    {
+      "narration": "The path was steep and the hours were long, but she refused to let her dreams fade away.",
+      "on_screen_text": "HER OWN PATH",
+      "duration_hint": 13.0,
+      "visual": "leaning back in chair stretching arms overhead looking toward window with quiet resolve"
+    },
+    {
+      "narration": "If you are burning the midnight oil for your goals, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "gentle encouraging smile looking directly into camera warm indoor lighting cozy evening vibe"
+    }
+  ]
+}

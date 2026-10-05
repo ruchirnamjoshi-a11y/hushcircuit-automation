@@ -1,0 +1,65 @@
+{
+  "id": "the-weighted-suitcase",
+  "title": "The Weighted Suitcase",
+  "description": "A middle-aged man prepares to move out of his childhood home and discovers things he left behind.",
+  "tags": [
+    "life crossroads",
+    "middle age",
+    "moving on",
+    "nostalgia",
+    "new beginnings"
+  ],
+  "character_reference": "a middle-aged man with thinning salt-and-pepper hair, wearing a worn charcoal wool sweater and dark denim jeans",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The house was quiet save for the echo of my own footsteps on bare floorboards. Every room held forty years of ghosts.",
+      "on_screen_text": "EMPTY ROOMS",
+      "duration_hint": 10.4,
+      "visual": "cinematic wide shot of a sparsely furnished living room with dust motes dancing in slanting afternoon sunlight coming through uncurtained windows"
+    },
+    {
+      "narration": "At the bottom of the hall closet sat the leather suitcase my father gave me when I left for college.",
+      "on_screen_text": "THE OLD SUITCASE",
+      "duration_hint": 9.5,
+      "visual": "close-up of calloused hands brushing dust off a scuffed vintage brown leather suitcase resting on faded hardwood floorboards"
+    },
+    {
+      "narration": "I expected it to be empty, just dried leather and old mothballs. Instead, it rattled with a small collection of forgotten notebooks.",
+      "on_screen_text": "FORGOTTEN NOTES",
+      "duration_hint": 10.8,
+      "visual": "medium shot looking down as the lid of the suitcase opens to reveal stacks of bound paper journals tied with frayed twine"
+    },
+    {
+      "narration": "Flipping through the yellowed pages, I found sketches of architecture I never built and cities I never visited.",
+      "on_screen_text": "LOST DREAMS",
+      "duration_hint": 9.5,
+      "visual": "close-up of fingers turning brittle cream-colored pages featuring intricate pencil sketches of buildings and bridges"
+    },
+    {
+      "narration": "For years, I had traded those ambitious blueprints for the safety of a predictable desk job and a quiet suburb.",
+      "on_screen_text": "THE SAFE PATH",
+      "duration_hint": 9.1,
+      "visual": "over-the-shoulder shot showing a solitary figure gazing out a rain-streaked window into a dim, quiet street below"
+    },
+    {
+      "narration": "Regret is a heavy passenger, but it doesn't have to dictate the entire journey home. It is never too late to pick up a pencil.",
+      "on_screen_text": "A NEW PERSPECTIVE",
+      "duration_hint": 11.3,
+      "visual": "low angle shot of a man holding an open notebook tightly against his chest with a resolute expression on his face"
+    },
+    {
+      "narration": "I closed the suitcase, leaving the past neatly packed away, and stepped out the front door into the amber evening light.",
+      "on_screen_text": "STEPPING OUT",
+      "duration_hint": 10.4,
+      "visual": "medium tracking shot of a man walking down front porch steps carrying a single leather bag toward a warm horizon"
+    },
+    {
+      "narration": "If you are standing at your own crossroads today, take heart in the journey ahead. Follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.8,
+      "visual": "silhouette of a traveler looking toward a bright, golden sunset over a rolling landscape under a vast evening sky"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-overgrown-trellis",
+  "title": "The Overgrown Trellis",
+  "description": "A retired botanist confronts years of neglect in her backyard and her emotional life.",
+  "tags": [
+    "gardening",
+    "retirement",
+    "healing",
+    "family",
+    "nature"
+  ],
+  "character_reference": "an older woman with silver hair pulled back into a loose bun, wearing a faded green utility vest and leather gardening gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The climbing roses had taken over the back patio during the five years I spent avoiding the garden.",
+      "on_screen_text": "THE OVERGROWN YARD",
+      "duration_hint": 9.5,
+      "visual": "wide shot of a neglected backyard with massive tangled green rose vines completely covering a wooden garden pergola"
+    },
+    {
+      "narration": "Thorns blocked the path to the wooden bench where my late husband and I used to drink morning tea.",
+      "on_screen_text": "BLOCKED PATHS",
+      "duration_hint": 9.5,
+      "visual": "medium shot of heavy leather-gloved hands holding heavy pruning shears before a wall of thick, thorny green stems"
+    },
+    {
+      "narration": "With every snap of the shears, heavy vines fell away, letting long-absent sunlight strike the rich earth below.",
+      "on_screen_text": "CUTTING BACK",
+      "duration_hint": 9.5,
+      "visual": "close-up of sharp shears slicing cleanly through a thick green wooden stem as bright sunlight spills onto dark soil"
+    },
+    {
+      "narration": "Grief is much like a neglected garden; if you refuse to prune the dead weight, nothing new can ever grow.",
+      "on_screen_text": "PRUNING GRIEF",
+      "duration_hint": 10.0,
+      "visual": "close-up of a gardener wiping sweat from her forehead with the back of a gloved hand, looking thoughtful amidst greenery"
+    },
+    {
+      "narration": "Beneath the tangled mess, tiny green shoots of hardy ivy and stubborn perennials were still reaching upward.",
+      "on_screen_text": "HIDDEN LIFE",
+      "duration_hint": 9.5,
+      "visual": "macro shot of small, vibrant green leaves pushing up through damp mulch and decaying autumn leaves in the garden bed"
+    },
+    {
+      "narration": "By sunset, the wooden bench was visible again, waiting patiently under a clean, open canopy of leaves.",
+      "on_screen_text": "THE BENCH",
+      "duration_hint": 9.1,
+      "visual": "medium shot of a weathered wooden garden bench bathed in warm, slanted golden hour sunlight surrounded by cleared mulch"
+    },
+    {
+      "narration": "I sat down for the first time in years, feeling the tension drain from my shoulders into the welcoming earth.",
+      "on_screen_text": "RESTING EASY",
+      "duration_hint": 10.4,
+      "visual": "medium shot of an older woman sitting down on the rustic bench, resting her hands calmly in her lap"
+    },
+    {
+      "narration": "There is always beauty waiting under the overgrowth. Follow along for more stories of renewal.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.5,
+      "visual": "wide cinematic shot of a peaceful backyard garden bathed in warm sunset hues with blooming flowers along the border"
+    }
+  ]
+}

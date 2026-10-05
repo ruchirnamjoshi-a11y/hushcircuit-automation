@@ -1,0 +1,65 @@
+{
+  "id": "the-vintage-synth",
+  "title": "The Vintage Synth",
+  "description": "An aspiring electronic music producer drops their prized digital laptop setup to perform a live set on a broken analog synthesizer.",
+  "tags": [
+    "music",
+    "analog",
+    "synth",
+    "performance",
+    "creativity"
+  ],
+  "character_reference": "a young musician with round wire-rimmed glasses and pastel-dyed pink tips in short blonde hair",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The laptop screen went completely black right as the soundcheck began, erasing two weeks of production.",
+      "on_screen_text": "THE SUDDEN CRASH",
+      "duration_hint": 14.0,
+      "visual": "Close-up of a dark computer screen reflecting frantic blue stage lights in a small club"
+    },
+    {
+      "narration": "Panic rushed in, threatening to cancel the entire performance before the doors even opened.",
+      "on_screen_text": "PURE PANIC",
+      "duration_hint": 12.0,
+      "visual": "Side profile showing hands gripping the edge of a messy mixing desk in mounting anxiety"
+    },
+    {
+      "narration": "Tucked in the corner of the venue sat a dusty analog synthesizer with missing knobs and cracked keys.",
+      "on_screen_text": "THE RELIC",
+      "duration_hint": 14.0,
+      "visual": "Low angle shot of a heavy vintage electronic keyboard covered in dust under a single spotlight"
+    },
+    {
+      "narration": "I had no presets, no undo button, and only ten minutes to patch together a new sequence.",
+      "on_screen_text": "ZERO PRESETS",
+      "duration_hint": 13.0,
+      "visual": "Close-up of patch cables plugging haphazardly into a maze of golden audio jacks"
+    },
+    {
+      "narration": "Turning the filter knob by hand, a warm, pulsing bassline filled the empty room.",
+      "on_screen_text": "WARM HUM",
+      "duration_hint": 13.0,
+      "visual": "Close-up of fingers gently turning a heavy plastic dial as glowing vacuum tubes warm up"
+    },
+    {
+      "narration": "It sounded raw and imperfect, but it had a pulse that a computer could never replicate.",
+      "on_screen_text": "RAW PULSE",
+      "duration_hint": 13.0,
+      "visual": "Wide shot of a dim rehearsal room illuminated by the orange glow of analog meters bouncing"
+    },
+    {
+      "narration": "Sometimes the best sound comes from working with the limits right in front of you.",
+      "on_screen_text": "FINDING THE GROOVE",
+      "duration_hint": 13.0,
+      "visual": "Close-up of a relieved expression watching audio waveforms dance across a small oscilloscope screen"
+    },
+    {
+      "narration": "If you love discovering hidden sounds, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "Atmospheric shot of vintage audio gear casting long shadows in a cozy basement studio"
+    }
+  ]
+}

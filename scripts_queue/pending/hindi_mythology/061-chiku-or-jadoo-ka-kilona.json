@@ -1,0 +1,65 @@
+{
+  "id": "chiku-or-jadoo-ka-kilona",
+  "title": "चिक्कू और जादू का खिलौना",
+  "description": "एक छोटे भालू की कहानी जिसे एक ऐसा खिलौना मिलता है जो केवल दूसरों की मदद करने पर ही चमकता है।",
+  "tags": [
+    "कानी",
+    "बच्चे",
+    "जादू",
+    "नैतिकता",
+    "नैतिक"
+  ],
+  "character_reference": "a small fluffy brown bear cub with bright round eyes and a striped blue vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "एक पुराने बक्से के कोने में, चिक्कू को एक अजीब सा लकड़ी का खिलौना मिला जो धूल से ढका हुआ था।",
+      "on_screen_text": "खोया हुआ खिलौना",
+      "duration_hint": 5.2,
+      "visual": "dusty attic interior, close-up of a small wooden toy resting among cobwebs, warm shafts of sunlight piercing through wooden floorboards, soft cinematic lighting"
+    },
+    {
+      "narration": "उसने खिलौने को उठाया और उसे बजाने की कोशिश की, लेकिन वह पूरी तरह से शांत और बेरंग था।",
+      "on_screen_text": "शांत खिलौना",
+      "duration_hint": 5.6,
+      "visual": "wooden floor of an attic, close-up of the bear cub examining the dull wooden toy with a puzzled expression, gentle morning light"
+    },
+    {
+      "narration": "तभी उसने देखा कि पास बैठी छोटी गिलहरी अपनी गिरी हुई अखरोट की टोकरी को समेटने के लिए संघर्ष कर रही थी।",
+      "on_screen_text": "गिलहरी की मदद",
+      "duration_hint": 5.2,
+      "visual": "sunlit garden path, a tiny squirrel surrounded by scattered nuts looking overwhelmed, low angle shot focusing on the cluttered ground"
+    },
+    {
+      "narration": "बिना एक पल गंवाए, चिक्कू ने दौड़कर उसके सारे अखरोट उठाकर उसकी टोकरी में वापस भर दिए।",
+      "on_screen_text": "हाथ बढ़ाना",
+      "duration_hint": 5.2,
+      "visual": "close-up of furry paws carefully gathering brown nuts and placing them inside a woven wicker basket, dappled sunlight through leaves"
+    },
+    {
+      "narration": "अचानक उसके हाथ में पकड़ा हुआ लकड़ी का खिलौना एक सुनहरी रोशनी से जगमगा उठा।",
+      "on_screen_text": "जादुई चमक",
+      "duration_hint": 5.2,
+      "visual": "close-up of the wooden toy glowing with a warm golden luminescence, casting soft sparkling reflections onto the character's furry face"
+    },
+    {
+      "narration": "गिलहरी का चेहरा खुशी से खिल उठा और चिक्कू समझ गया कि असली जादू किस बात में है।",
+      "on_screen_text": "खुशी का पल",
+      "duration_hint": 5.2,
+      "visual": "close-up of the furry bear cub smiling warmly while holding the radiant glowing toy, soft out-of-focus green background"
+    },
+    {
+      "narration": "दूसरों की मदद करने से हमारा अपना जीवन भी खुशियों की रोशनी से भर जाता है।",
+      "on_screen_text": "सच्ची खुशी",
+      "duration_hint": 5.2,
+      "visual": "wide shot in a quiet sunlit meadow, gentle breeze moving tall grass, peaceful and harmonious atmosphere"
+    },
+    {
+      "narration": "ऐसी ही और सुंदर कहानियों के लिए हमारे चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "cozy forest clearing at twilight, fireflies softly glowing around tall ancient trees, magical evening ambiance"
+    }
+  ]
+}

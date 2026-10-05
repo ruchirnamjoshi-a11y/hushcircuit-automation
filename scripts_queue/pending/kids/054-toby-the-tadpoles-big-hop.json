@@ -1,0 +1,65 @@
+{
+  "id": "toby-the-tadpoles-big-hop",
+  "title": "Toby the Tadpole's Big Hop",
+  "description": "A little tadpole learns that growing up happens at your own pace when he worries about his first jump onto a lily pad.",
+  "tags": [
+    "tadpole",
+    "growing up",
+    "patience",
+    "pond",
+    "bedtime story"
+  ],
+  "character_reference": "a tiny olive-green tadpole with wide golden eyes and a delicate shimmering tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Toby swam in the warm afternoon sun, watching the older frogs leap effortlessly from leaf to leaf. He still had his long tail and felt far too small to ever make a grand jump.",
+      "on_screen_text": "THE WIDE POND",
+      "duration_hint": 14.0,
+      "visual": "underwater view looking up toward sunlit lily pads with tiny silhouette of swimming subject near green stems"
+    },
+    {
+      "narration": "His friend Pip the dragonfly hovered close by, buzzing encouragement with her shiny blue wings. She nudged a low green lily pad floating just inches away from the muddy bank.",
+      "on_screen_text": "A FRIENDLY NUDGE",
+      "duration_hint": 13.0,
+      "visual": "close-up of floating green lily pad on shimmering water with blue insect hovering above the surface"
+    },
+    {
+      "narration": "Toby wiggled his tail and swam closer to the edge of the water, peering up at the vast green surface. It looked miles away from his safe, familiar patch of soft moss.",
+      "on_screen_text": "THE RISING SLOPE",
+      "duration_hint": 13.0,
+      "visual": "side angle underwater view looking up at a flat green floating leaf hovering above shallow murky water"
+    },
+    {
+      "narration": "He practiced bending his tiny back legs, feeling the new strength building up inside his growing body. Taking a deep breath, he gathered all his courage for one big push.",
+      "on_screen_text": "GETTING READY",
+      "duration_hint": 14.0,
+      "visual": "close-up of tiny aquatic creature resting on muddy shore with folded hind legs preparing to launch"
+    },
+    {
+      "narration": "With a sudden splash of tiny bubbles, Toby launched himself right out of the water and into the air. He soared higher than he ever had before, eyes squeezed shut in concentration.",
+      "on_screen_text": "THE GREAT LEAP",
+      "duration_hint": 15.0,
+      "visual": "mid-air action shot over water with droplets splashing upward and small aquatic body airborne toward a green leaf"
+    },
+    {
+      "narration": "Plop! Toby landed softly on the center of the broad lily pad, wobbling only slightly before steadying himself. He looked down at his reflection in the water with a proud smile.",
+      "on_screen_text": "A SAFE LANDING",
+      "duration_hint": 14.0,
+      "visual": "top-down view of green lily pad with water droplets resting on smooth surface and small creature sitting securely in middle"
+    },
+    {
+      "narration": "Pip buzzed down to celebrate, landing gently beside him on the cool green leaf. Toby realized that every big adventure simply begins with taking that very first little hop.",
+      "on_screen_text": "GROWING BRAVE",
+      "duration_hint": 14.0,
+      "visual": "wide shot of sunlit pond at dusk with two small figures resting together on a wide floating green leaf"
+    },
+    {
+      "narration": "Rest your eyes, little dreamer, and get ready for your own adventures tomorrow. Follow along for more gentle bedtime stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "gentle glowing twilight over calm water with soft ripples reflecting golden sunset light and peaceful atmosphere"
+    }
+  ]
+}
