@@ -1,0 +1,65 @@
+{
+  "id": "the-morning-lane",
+  "title": "The Morning Lane",
+  "description": "A runner decides to ignore her fitness tracker's metrics and runs purely for the rhythm of her breath.",
+  "tags": [
+    "running",
+    "mindfulness",
+    "health",
+    "women",
+    "freedom"
+  ],
+  "character_reference": "a woman in her early thirties with dark athletic cornrow braids, wearing a breathable navy blue running top and a digital sports watch",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The digital watch on her wrist buzzed insistently, demanding she speed up her pace.",
+      "on_screen_text": "THE PERSISTENT BUZZ",
+      "duration_hint": 4.5,
+      "visual": "close up of a digital sports watch screen glowing on a runner's wrist, early morning park setting, soft natural daylight"
+    },
+    {
+      "narration": "For months, Elena had let numbers dictate whether a run was good or a complete failure.",
+      "on_screen_text": "RULED BY NUMBERS",
+      "duration_hint": 4.5,
+      "visual": "close up of running shoes stepping onto asphalt pavement, low angle shot, morning shadow stretching across the ground"
+    },
+    {
+      "narration": "Today, her legs felt heavy, and the relentless pressure to hit her personal best felt unbearable.",
+      "on_screen_text": "HEAVY LEGS",
+      "duration_hint": 4.5,
+      "visual": "medium shot of a runner jogging slowly down a tree-lined park path, morning mist hanging in the background"
+    },
+    {
+      "narration": "With a quick tap of her finger, she switched the watch display off and shoved it under her sleeve.",
+      "on_screen_text": "TURNING IT OFF",
+      "duration_hint": 5.0,
+      "visual": "finger pressing a button on a sports watch, screen fading to black, close up action shot in natural outdoor lighting"
+    },
+    {
+      "narration": "Instantly, the frantic rush melted away, replaced by the steady rhythm of her own breathing.",
+      "on_screen_text": "FINDING RHYTHM",
+      "duration_hint": 4.5,
+      "visual": "close up of feet hitting a dirt running trail covered in fallen leaves, soft morning sun filtering through tree branches"
+    },
+    {
+      "narration": "She slowed to a gentle jog, noticing the dew on the grass and the golden sunrise breaking through trees.",
+      "on_screen_text": "NOTICE THE WORLD",
+      "duration_hint": 5.0,
+      "visual": "sunlight rays piercing through tall green pine trees in a park, morning fog, serene and tranquil atmosphere"
+    },
+    {
+      "narration": "Running wasn't about pleasing an algorithm; it was about feeling alive in her own body.",
+      "on_screen_text": "FEELING ALIVE",
+      "duration_hint": 5.0,
+      "visual": "profile shot of a smiling runner jogging peacefully through a sunlit park, relaxed posture, vibrant morning colors"
+    },
+    {
+      "narration": "If you love stories about letting go of metrics to enjoy the journey, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "peaceful park pathway winding through green trees under a warm golden sunrise, inviting and scenic"
+    }
+  ]
+}

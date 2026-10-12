@@ -1,0 +1,71 @@
+{
+  "id": "the-green-pitch",
+  "title": "The Green Pitch",
+  "description": "A quiet teenager takes the leap to speak up during a high-stakes group project presentation.",
+  "tags": [
+    "confidence",
+    "school",
+    "anxiety",
+    "growth",
+    "presentation"
+  ],
+  "character_reference": "a young woman with shoulder-length dark curly hair, wearing an oversized sage green sweater and round tortoiseshell glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Everyone else in the group was talking over each other, assigning slides like they were handing out candy. I just stared at my notebook, hoping the ground would swallow me whole before I had to volunteer for a speaking part.",
+      "on_screen_text": "THE ASSIGNMENT",
+      "duration_hint": 18.0,
+      "visual": "overhead close-up of hands nervously sketching jagged lines in a spiral notebook surrounded by scattered colored markers on a wooden desk"
+    },
+    {
+      "narration": "When the teacher asked who wanted to introduce our pitch, total silence filled the room. My heart hammered against my ribs so hard I was certain the guy sitting next to me could hear it.",
+      "on_screen_text": "THE SILENCE",
+      "duration_hint": 15.0,
+      "visual": "medium shot looking across a sunlit classroom toward a blackboard while students look downward avoiding eye contact"
+    },
+    {
+      "narration": "I opened my mouth twice, but nothing came out. The clock on the wall seemed to tick in slow motion as my chance slipped away second by second.",
+      "on_screen_text": "FROZEN",
+      "duration_hint": 14.0,
+      "visual": "close-up profile focusing on parted lips and tense jawline against a soft blurred background of a sunlit window"
+    },
+    {
+      "narration": "Instead of sinking lower, I took one deep breath through my nose and pictured what would happen if I stayed invisible forever. I raised my hand halfway before I could change my mind.",
+      "on_screen_text": "THE RAISED HAND",
+      "duration_hint": 16.0,
+      "visual": "close-up of a single arm raised timidly upward with fingers slightly curled in hesitation under warm indoor lighting"
+    },
+    {
+      "narration": "My voice shook on the very first syllable, sounding thin and fragile in the quiet room. But as I kept reading our bullet points, the tremor slowly faded out.",
+      "on_screen_text": "SPEAKING UP",
+      "duration_hint": 16.0,
+      "visual": "low angle shot looking up at a student standing firmly beside a projector screen holding white index cards"
+    },
+    {
+      "narration": "People actually turned around to look at me, not with judgment, but because my points were actually landing. By slide four, I was speaking at a normal volume without reading straight from the card.",
+      "on_screen_text": "FINDING RHYTHM",
+      "duration_hint": 17.0,
+      "visual": "medium shot capturing engaged listeners nodding slightly in a brightly lit classroom setting"
+    },
+    {
+      "narration": "We sat back down to actual applause from our classmates and a reassuring nod from the teacher. My hands were still a little cold, but the heavy knot in my stomach was completely gone.",
+      "on_screen_text": "THE RELIEF",
+      "duration_hint": 17.0,
+      "visual": "close-up of hands resting flat on a wooden desk with shoulders visibly relaxed and slumped downward in release"
+    },
+    {
+      "narration": "Taking up space isn't about being the loudest person in the room; it is simply about refusing to let your own voice go unheard.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 14.0,
+      "visual": "warm golden hour light streaming through a tall window illuminating dust motes dancing in the air"
+    },
+    {
+      "narration": "If you are ready for more everyday victories, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "minimalist aesthetic composition featuring a steaming ceramic mug sitting on a rustic wooden tabletop"
+    }
+  ]
+}

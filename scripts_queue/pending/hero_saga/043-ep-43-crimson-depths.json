@@ -1,0 +1,65 @@
+{
+  "id": "ep-43-crimson-depths",
+  "title": "Neon Pulse — Episode 43: Crimson Depths",
+  "description": "Trapped in an underground abyss with Commander Vance, Kael faces a mysterious unseen power.",
+  "tags": [
+    "action",
+    "superhero",
+    "sci-fi",
+    "animation",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 43,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Dust from the collapse settles over the jagged crimson crystal floor below. Commander Vance struggles to his feet, coughing as the massive energy core hums violently in the center of the cavern.",
+      "on_screen_text": "THE CRUSHING FALL",
+      "duration_hint": 7.5,
+      "visual": "Wide angle low shot of a vast underground crimson crystal cavern, dusty air swirling, a bruised commander rising to his feet near a pulsing glowing red energy monolith, dramatic cinematic lighting, gritty texture, highly detailed background."
+    },
+    {
+      "narration": "Glowing amber circuitry flares across my jacket as I push myself up from the rubble. The air here tastes heavy, charged with an unfamiliar and terrifying energy.",
+      "on_screen_text": "AWAKENING IN THE ABYSS",
+      "duration_hint": 6.5,
+      "visual": "Medium close up from behind of a man pushing himself up from shattered rock debris, glowing amber lines illuminating the back of his dark tactical jacket, casting warm light on sharp jagged red crystal walls, cinematic depth of field."
+    },
+    {
+      "narration": "Vance draws his weapon, but the hum of the core drowns out his threat. Shadows around the perimeter begin to stretch and twist against the crimson light.",
+      "on_screen_text": "UNSEEN WATCHERS",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a military commander aiming a sleek weapon forward with a tense expression, background shadows elongating unnaturally along cavern walls, eerie red illumination, sharp focus, dynamic composition."
+    },
+    {
+      "narration": "A low frequency vibration echoes through the stone, making the amber patterns on my sleeves pulse out of rhythm. Something down here is interfering with my power.",
+      "on_screen_text": "FREQUENCY INTERFERENCE",
+      "duration_hint": 7.0,
+      "visual": "Extreme close up of glowing amber circuitry pulsing erratically on a dark fabric sleeve, small sparks of orange light popping off the fibers, dark rocky underground background blurred out."
+    },
+    {
+      "narration": "Without warning, a towering wave of dark energy erupts from the core and slams into Vance. He vanishes into the shadows before he can even cry out.",
+      "on_screen_text": "VANISHING ACT",
+      "duration_hint": 7.5,
+      "visual": "Action shot of a massive burst of dark purple and crimson energy surging across a cavern floor, swallowing a silhouetted figure standing near a glowing crystal pillar, dramatic motion blur, high contrast."
+    },
+    {
+      "narration": "I drop into a defensive stance as the energy wave ripples toward me. My hands ignite with amber light to form a barrier against the onslaught.",
+      "on_screen_text": "DEFENSIVE STANCE",
+      "duration_hint": 6.5,
+      "visual": "Medium front shot of a man dropping low into a martial arts stance, both hands raised palms forward generating a bright shielding glow of amber energy, flying debris caught in the light, intense focus."
+    },
+    {
+      "narration": "The shockwave shatters against my shield, sending me skidding backward across the glass-like floor. Out of the darkness, a pair of cold eyes opens above us.",
+      "on_screen_text": "THE TRUE MASTER",
+      "duration_hint": 7.0,
+      "visual": "Close up profile shot of a man sliding backward across a reflective crimson crystal floor, sliding sparks flying, eyes wide with shock looking upward toward looming colossal shadows emerging from the dark ceiling above."
+    },
+    {
+      "narration": "If you want to see how this desperate battle in the abyss unfolds, follow along for more of the saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Dramatic medium shot of a man standing defiantly in a deep underground crimson cavern, looking up toward a towering looming entity shrouded in darkness, amber light casting strong highlights, cinematic composition."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "the-blueprint",
+  "title": "The Blueprint",
+  "description": "An ambitious design student redesigns a failed architectural model the night before the final review.",
+  "tags": [
+    "design",
+    "architecture",
+    "creativity",
+    "late-night",
+    "ambition"
+  ],
+  "character_reference": "a young woman with short sharp bangs, wearing an ink-stained denim apron over a black turtleneck and silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "At three in the morning, my entire cardboard model collapsed under its own weight for the second time. Three weeks of all-nighters were sitting in a pathetic heap of scrap paper on my desk.",
+      "on_screen_text": "TOTAL COLLAPSE",
+      "duration_hint": 18.0,
+      "visual": "close-up of ruined white cardboard model pieces scattered messily across a cutting mat covered in pencil shavings"
+    },
+    {
+      "narration": "I wanted to throw the whole project in the recycling bin and sleep for a week. The critique was in five hours, and I had nothing solid to present.",
+      "on_screen_text": "GIVING UP?",
+      "duration_hint": 15.0,
+      "visual": "medium shot of a tired student resting her forehead against the edge of a drafting table under a single swing-arm lamp"
+    },
+    {
+      "narration": "Instead of restarting from scratch, I looked at the structural failure and realized the base was just too rigid. It needed flexibility, not more glue.",
+      "on_screen_text": "THE PIVOT",
+      "duration_hint": 15.0,
+      "visual": "close-up of fingers rapidly sketching a new geometric support brace on graph paper with a mechanical pencil"
+    },
+    {
+      "narration": "I grabbed my utility knife and started slicing through the remaining foam board with ruthless precision. Every cut felt cleaner than the last as frustration turned into pure focus.",
+      "on_screen_text": "CUTTING CLEAN",
+      "duration_hint": 17.0,
+      "visual": "macro shot of a metal utility blade slicing precisely along a steel ruler resting on white foam board"
+    },
+    {
+      "narration": "Using interlocking tabs instead of glue, the new skeleton started rising off the desk within the hour. It wasn't what I originally planned, but it was infinitely stronger.",
+      "on_screen_text": "BUILDING UP",
+      "duration_hint": 16.0,
+      "visual": "close-up of hands slotting geometric pieces together with careful, deliberate movements under bright desk light"
+    },
+    {
+      "narration": "Morning light hit my window just as I glued the final support column into place. The model stood tall, sleek, and entirely redesigned against all odds.",
+      "on_screen_text": "MORNING LIGHT",
+      "duration_hint": 15.0,
+      "visual": "shot of an intricate architectural paper model casting sharp geometric shadows in morning sunlight"
+    },
+    {
+      "narration": "Walking into the critique room on four hours of sleep used to terrify me, but today my hands didn't shake when I placed the model on the presentation table.",
+      "on_screen_text": "THE REVIEW",
+      "duration_hint": 16.0,
+      "visual": "low angle shot of a student carrying a finished model into a bright sunlit studio space"
+    },
+    {
+      "narration": "Sometimes your original idea has to break completely so you can build something much better in its place.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 14.0,
+      "visual": "close-up of drafting tools including triangles and compasses resting on a clean wooden tabletop"
+    },
+    {
+      "narration": "If you appreciate creative comebacks, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "warm aesthetic flat-lay of a sketchbook, fountain pen, and a small potted succulent plant"
+    }
+  ]
+}

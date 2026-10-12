@@ -1,0 +1,65 @@
+{
+  "id": "the-oil-and-canvas",
+  "title": "The Oil and Canvas",
+  "description": "An amateur painter abandons careful realism to experiment with bold, chaotic abstract strokes.",
+  "tags": [
+    "painting",
+    "art",
+    "expression",
+    "women",
+    "creativity"
+  ],
+  "character_reference": "a woman in her mid twenties with messy auburn hair tied with a paint-stained rag, wearing an old grey hoodie covered in colorful splatters",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sara stared at the tiny fine brush in her hand, meticulously trying to capture every exact petal.",
+      "on_screen_text": "THE TINY BRUSH",
+      "duration_hint": 5.0,
+      "visual": "close up of a tiny artist paintbrush carefully applying white paint to a canvas, bright studio lighting, detailed work"
+    },
+    {
+      "narration": "Her hand cramped from tension as she tried to make the portrait look neat, controlled, and perfect.",
+      "on_screen_text": "TIGHT CONTROL",
+      "duration_hint": 5.0,
+      "visual": "close up of tense fingers gripping a wooden paintbrush handle tightly against a canvas background, studio setting"
+    },
+    {
+      "narration": "The canvas felt lifeless, suffocated by her constant fear of making a mistake.",
+      "on_screen_text": "LIFELESS CANVAS",
+      "duration_hint": 4.0,
+      "visual": "medium shot of a hesitant painter looking at a half-finished canvas on an easel, thoughtful expression, soft indoor lighting"
+    },
+    {
+      "narration": "Dropping the small brush into a jar of murky water, she reached for a thick, heavy palette knife instead.",
+      "on_screen_text": "THE PALETTE KNIFE",
+      "duration_hint": 5.0,
+      "visual": "hand dropping a small brush into a glass jar filled with water, colorful paint swirling in the liquid, dramatic lighting"
+    },
+    {
+      "narration": "She scooped up a massive dollop of vibrant crimson paint and dragged it fiercely across the canvas.",
+      "on_screen_text": "BOLD STROKES",
+      "duration_hint": 4.5,
+      "visual": "close up of a metal palette knife spreading thick red and orange oil paint across a textured canvas, dynamic motion"
+    },
+    {
+      "narration": "Colors collided in wild, unpredictable textures that finally matched the chaotic energy inside her.",
+      "on_screen_text": "UNPREDICTABLE TEXTURE",
+      "duration_hint": 5.0,
+      "visual": "close up of vibrant paint swirls and textured impasto brushstrokes on canvas, rich colors catching the studio light"
+    },
+    {
+      "narration": "She stepped back, laughing as paint splattered on her shoes, thrilled by her own liberated creation.",
+      "on_screen_text": "LIBERATED CREATION",
+      "duration_hint": 5.0,
+      "visual": "profile shot of an artist smiling broadly while looking at a colorful abstract painting on an easel, bright creative studio"
+    },
+    {
+      "narration": "If you love stories about breaking free from perfection to find your true style, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "artist's wooden palette covered in vibrant blobs of oil paint and brushes resting on a wooden table, warm creative atmosphere"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "bholu-or-khoya-hua-patta",
+  "title": "भोलू और खोया हुआ पत्ता",
+  "description": "एक छोटे भालू की खोज जो अपने विशेष जादुई पत्ते को ढूंढने निकलता है।",
+  "tags": [
+    "bear cub",
+    "magic leaf",
+    "hindi moral",
+    "adventure"
+  ],
+  "character_reference": "a fluffy little honey-colored bear with round fuzzy ears and a curious nose",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "भोलू पांडा के पास एक जादुई पत्ता था जो उसे अच्छी नींद दिलाता था। एक दिन हवा के झोंके से वह पत्ता कहीं उड़ गया।",
+      "on_screen_text": "खोया पत्ता",
+      "duration_hint": 10.0,
+      "visual": "A fluffy little honey-colored bear with round fuzzy ears and a curious nose looking frantically around a windy forest floor covered in autumn leaves"
+    },
+    {
+      "narration": "भोलू ने अपने दोस्त कछुए से मदद मांगी। दोनों ने मिलकर पूरे जंगल में पत्ते की तलाश शुरू कर दी।",
+      "on_screen_text": "सच्चा मित्र",
+      "duration_hint": 10.0,
+      "visual": "The bear cub walking alongside a wise little turtle through the grassy undergrowth, searching beneath fallen logs and ferns"
+    },
+    {
+      "narration": "उन्होंने झाड़ियों को छाना और पुरानी चट्टानों के पीछे देखा, लेकिन पत्ता कहीं नहीं मिला।",
+      "on_screen_text": "तलाश जारी",
+      "duration_hint": 10.0,
+      "visual": "The bear peering curiously under a large mossy rock with an eager expression, soft forest lighting casting deep shadows"
+    },
+    {
+      "narration": "अचानक भोलू को एक ऊंचे पेड़ की डाल पर चमकती हुई हरी रोशनी दिखाई दी। वही उसका जादुई पत्ता था।",
+      "on_screen_text": "चमकता पत्ता",
+      "duration_hint": 10.0,
+      "visual": "The bear pointing excitedly upward toward a bright glowing green leaf caught gently in the branches of a tall oak tree"
+    },
+    {
+      "narration": "कछुए की मदद से भोलू ने छलांग लगाई और पत्ते को सुरक्षित रूप से अपने पंजे में थाम लिया।",
+      "on_screen_text": "बच गया पत्ता",
+      "duration_hint": 10.0,
+      "visual": "The bear holding the glowing green leaf tightly in his paws with a huge relieved smile, surrounded by soft magical light"
+    },
+    {
+      "narration": "भोलू बहुत खुश हुआ और उसने अपने दोस्त को गले लगाया। मुश्किल समय में दोस्त ही सबसे बड़े मददगार होते हैं।",
+      "on_screen_text": "प्यारी दोस्ती",
+      "duration_hint": 10.0,
+      "visual": "The bear hugging the little turtle happily in a sunlit patch of grass, warm friendly atmosphere"
+    },
+    {
+      "narration": "इस खोज ने उन्हें सिखाया कि सच्ची दोस्ती से कोई भी मुश्किल आसान हो जाती है।",
+      "on_screen_text": "बड़ी सीख",
+      "duration_hint": 10.0,
+      "visual": "The bear resting peacefully under a tree holding his special leaf, looking content and sleepy as evening approaches"
+    },
+    {
+      "narration": "ऐसी ही प्यारी कहानियों के लिए हमारे चैनल को फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "The fluffy bear waving cheerfully to the audience with a bright, welcoming smile in the peaceful forest"
+    }
+  ]
+}

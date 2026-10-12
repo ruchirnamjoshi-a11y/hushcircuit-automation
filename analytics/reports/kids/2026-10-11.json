@@ -1,0 +1,38 @@
+{
+  "start_date": "2026-10-05",
+  "end_date": "2026-10-11",
+  "channel": {
+    "views": 4,
+    "estimatedMinutesWatched": 0,
+    "averageViewDuration": 4,
+    "averageViewPercentage": 7.53,
+    "subscribersGained": 0,
+    "subscribersLost": 0
+  },
+  "top_videos": [
+    {
+      "video": "s_f6CE0uU10",
+      "views": 1,
+      "averageViewDuration": 1,
+      "averageViewPercentage": 1.56
+    },
+    {
+      "video": "L5XpbTHwIbE",
+      "views": 1,
+      "averageViewDuration": 5,
+      "averageViewPercentage": 5.95
+    },
+    {
+      "video": "TuS9XdGt7XI",
+      "views": 1,
+      "averageViewDuration": 8,
+      "averageViewPercentage": 18.98
+    },
+    {
+      "video": "_9EAIfETQHk",
+      "views": 1,
+      "averageViewDuration": 0,
+      "averageViewPercentage": 0
+    }
+  ]
+}

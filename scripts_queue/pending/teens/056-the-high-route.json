@@ -1,0 +1,71 @@
+{
+  "id": "the-high-route",
+  "title": "The High Route",
+  "description": "A beginner rock climber overcomes vertigo and reaches the top of an indoor bouldering wall.",
+  "tags": [
+    "climbing",
+    "sports",
+    "fear",
+    "overcoming",
+    "gym"
+  ],
+  "character_reference": "an athletic young woman with short bright red hair, wearing a chalk-dusted grey athletic tank top and flexible climbing trousers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Looking up from the padded floor, the overhang route looked more like an impossible ceiling than a climbing wall. My palms were already sweating inside my chalk bag.",
+      "on_screen_text": "THE WALL",
+      "duration_hint": 17.0,
+      "visual": "low angle shot looking up at a steep indoor climbing wall dotted with brightly colored polyurethane holds"
+    },
+    {
+      "narration": "I pulled myself onto the first three holds easily enough, but when I reached for the fourth, my foot slipped off a tiny foothold. Panic instantly locked my elbows.",
+      "on_screen_text": "THE SLIP",
+      "duration_hint": 16.0,
+      "visual": "close-up of climbing shoes dangling slightly above foam mats with chalk dust floating in the air"
+    },
+    {
+      "narration": "Dangling by my fingertips three feet off the ground, my brain screamed at me to drop down and quit while I was safe. Everyone else made it look effortless.",
+      "on_screen_text": "DANCING",
+      "duration_hint": 16.0,
+      "visual": "medium shot of a climber gripping brightly colored plastic handholds with tense forearm muscles"
+    },
+    {
+      "narration": "Instead of dropping, I took a deep breath, dropped my heels to push weight into my legs instead of my arms, and trusted my rubber soles.",
+      "on_screen_text": "HEELS DOWN",
+      "duration_hint": 15.0,
+      "visual": "close-up of climbing shoes pressing firmly against a textured green foothold on a wall"
+    },
+    {
+      "narration": "My muscles burned, but my grip held. I reached up, slapped my hand onto the next orange hold, and pulled myself over the bulge.",
+      "on_screen_text": "THE REACH",
+      "duration_hint": 15.0,
+      "visual": "action shot of an arm stretching upward to grab a textured fluorescent orange climbing hold"
+    },
+    {
+      "narration": "The final move required a dynamic jump to the top ledge. I didn't hesitate—I drove through my hips and launched upward into open space.",
+      "on_screen_text": "THE JUMP",
+      "duration_hint": 15.0,
+      "visual": "motion-blurred shot of hands reaching out toward the top edge of a climbing wall"
+    },
+    {
+      "narration": "Both hands slapped the top wooden beam simultaneously as cheers echoed from the gym floor below. My forearms were shaking, but I was standing at the summit.",
+      "on_screen_text": "THE SUMMIT",
+      "duration_hint": 16.0,
+      "visual": "shot looking up at a climber resting hands on the top edge of an indoor rock wall against bright lights"
+    },
+    {
+      "narration": "Gravity isn't your enemy; it's just a reminder to find your balance and keep your center.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 14.0,
+      "visual": "close-up of a chalk-covered climbing brush resting on a wooden ledge under soft indoor lighting"
+    },
+    {
+      "narration": "If you love stories about pushing your limits, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "minimalist aesthetic composition of a climbing chalk bucket sitting beside a water bottle on rubber flooring"
+    }
+  ]
+}

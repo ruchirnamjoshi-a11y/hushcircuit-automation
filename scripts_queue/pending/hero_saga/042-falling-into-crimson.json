@@ -1,0 +1,71 @@
+{
+  "id": "falling-into-crimson",
+  "title": "Neon Pulse — Episode 42: Falling Into Crimson",
+  "description": "Kael plunges into the unknown crimson abyss with Commander Vance, uncovering a deep conspiracy.",
+  "tags": [
+    "action",
+    "superhero",
+    "scifi",
+    "thriller",
+    "original"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 42,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Gravity vanishes as we plummet straight down into a blinding sea of crimson light. Commander Vance spins out of control just inches away from my grasp.",
+      "on_screen_text": "THE LONG FALL",
+      "duration_hint": 7.5,
+      "visual": "Wide low angle shot of a man tumbling headfirst through a churning vortex of deep red light and jagged dark rock walls rushing past at high speed"
+    },
+    {
+      "narration": "The amber circuitry on my sleeves flares up, reacting to the ambient energy of this forgotten subterranean layer. I focus my breathing and brace for impact.",
+      "on_screen_text": "ENERGY SURGE",
+      "duration_hint": 7.0,
+      "visual": "Extreme close up of glowing amber patterns pulsing rapidly along fabric sleeves while swirling crimson illumination washes over the tense face of the falling man"
+    },
+    {
+      "narration": "Vance fires a grappling line into the cavern wall, attempting to arrest his descent while leaving me to crash. Sparks shower down from the jagged stone.",
+      "on_screen_text": "DESPERATE GRAPPLE",
+      "duration_hint": 7.0,
+      "visual": "Mid shot of a rival soldier firing a metallic tether into a sheer obsidian rock face while hurtling downward leaving a bright sparking trail in the dark"
+    },
+    {
+      "narration": "I channel the amber energy into my boots and kick off a protruding rock shelf, changing my trajectory in a fraction of a second.",
+      "on_screen_text": "TACTICAL SHIFT",
+      "duration_hint": 6.5,
+      "visual": "Dynamic side angle of a man kicking violently off a sharp jutting rock pillar with glowing boot soles generating a brief shockwave of golden light"
+    },
+    {
+      "narration": "We crash through a thin crystalline crust and land hard upon a metallic platform suspended in the center of the vast red chamber.",
+      "on_screen_text": "HARD LANDING",
+      "duration_hint": 6.5,
+      "visual": "Low ground shot of two figures slamming onto a rusted grid metal platform amidst a cloud of shattered glass shards and glowing red dust particles"
+    },
+    {
+      "narration": "Vance staggers to his feet, coughing up dust, but his gaze isn't on me. He is staring at the massive structure looming in the background.",
+      "on_screen_text": "THE DISCOVERY",
+      "duration_hint": 7.0,
+      "visual": "Over the shoulder shot of a kneeling man watching a bruised commander rise slowly against the backdrop of towering monolithic machinery humming with scarlet light"
+    },
+    {
+      "narration": "This place isn't just an abandoned base. It's an active facility built around an enormous containment core pulsing with unstable power.",
+      "on_screen_text": "THE CORE",
+      "duration_hint": 6.5,
+      "visual": "Wide angle view of a colossal spherical reactor humming with concentric rings of crimson energy inside a cavernous underground industrial installation"
+    },
+    {
+      "narration": "Vance draws a blade and smiles through bloodied lips, whispering that I just delivered us both right to our true masters.",
+      "on_screen_text": "TRUE MASTERS",
+      "duration_hint": 6.0,
+      "visual": "Close up profile of a wounded soldier holding a serrated knife with a twisted grin while ominous mechanical machinery echoes heavily in the background"
+    },
+    {
+      "narration": "Be sure to subscribe and follow along for more episodes of the series.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Cinematic centered shot of glowing amber circuitry fading into darkness inside a vast subterranean industrial vault while a subtle prompt appears"
+    }
+  ]
+}

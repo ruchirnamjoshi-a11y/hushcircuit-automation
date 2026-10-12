@@ -1,0 +1,65 @@
+{
+  "id": "the-second-draft",
+  "title": "The Second Draft",
+  "description": "A writer throws away a safe manuscript to write the raw, honest story she was actually afraid to tell.",
+  "tags": [
+    "writing",
+    "authenticity",
+    "courage",
+    "women",
+    "art"
+  ],
+  "character_reference": "a woman in her late twenties with messy wavy brown hair, wearing wire-rimmed glasses and a cozy oversized cream-colored cardigan",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Four hundred pages of safe, conventional romance sat neatly stacked on Clara's wooden desk.",
+      "on_screen_text": "THE SAFE PAGES",
+      "duration_hint": 4.5,
+      "visual": "close up of a thick stack of printed manuscript paper bound with a rubber band on a wooden desk, soft indoor lamp lighting"
+    },
+    {
+      "narration": "Publishers loved the plot, but every single word felt like someone else's voice speaking through her.",
+      "on_screen_text": "SOMEONE ELSE'S VOICE",
+      "duration_hint": 5.0,
+      "visual": "close up of typewritten text on paper with red pen markings, shallow depth of field, warm and focused lighting"
+    },
+    {
+      "narration": "She realized she was writing to please an audience that didn't even know her true story.",
+      "on_screen_text": "WRITING FOR OTHERS",
+      "duration_hint": 4.5,
+      "visual": "profile shot of a writer staring thoughtfully at a glowing laptop screen in a dim room, contemplative mood"
+    },
+    {
+      "narration": "With a steady breath, she picked up the entire manuscript and slid it straight into the recycling bin.",
+      "on_screen_text": "LETTING IT GO",
+      "duration_hint": 5.0,
+      "visual": "hands dropping a thick stack of paper into an open cardboard recycling box, dramatic top-down lighting"
+    },
+    {
+      "narration": "She opened a blank digital document, her fingers resting over the keys with nervous anticipation.",
+      "on_screen_text": "A BLANK PAGE",
+      "duration_hint": 4.5,
+      "visual": "close up of fingers resting lightly on the keyboard of a laptop, dark wooden desk surface, warm ambient lamp glow"
+    },
+    {
+      "narration": "This time, she wrote the messy, complicated truth about her own life without filtering a single sentence.",
+      "on_screen_text": "THE REAL TRUTH",
+      "duration_hint": 5.0,
+      "visual": "fingers typing rapidly on a silver laptop keyboard, close up action shot, warm bokeh background"
+    },
+    {
+      "narration": "The words flowed effortlessly because they carried the weight of her actual heartbeat.",
+      "on_screen_text": "TRUE HEARTBEAT",
+      "duration_hint": 4.0,
+      "visual": "close up of a computer screen displaying crisp black paragraphs of text, soft screen glow reflecting on a face"
+    },
+    {
+      "narration": "If you love stories about choosing authentic self-expression over comfort, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "cozy writing desk setup with a laptop, a steaming ceramic mug, and a small potted succulent under warm desk lighting"
+    }
+  ]
+}

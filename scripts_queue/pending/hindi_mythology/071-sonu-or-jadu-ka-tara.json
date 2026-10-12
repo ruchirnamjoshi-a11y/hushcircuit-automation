@@ -1,0 +1,64 @@
+{
+  "id": "sonu-or-jadu-ka-tara",
+  "title": "सोनू और जादू का तारा",
+  "description": "एक छोटे पिल्ले की रात की कहानी जो आसमान से गिरे एक चमकते तारे की मदद करता है।",
+  "tags": [
+    "dog",
+    "magic star",
+    "hindi kids stories",
+    "night tale"
+  ],
+  "character_reference": "a playful golden puppy with floppy ears and a white patch on his chest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "रात का समय था और छोटा पिल्ला सोनू अपने घर के बाहर बैठकर आसमान के चमकते तारों को देख रहा था।",
+      "on_screen_text": "रात का आसमान",
+      "duration_hint": 10.0,
+      "visual": "A playful golden puppy with floppy ears and a white patch on his chest sitting on a cool green lawn looking up at a starry night sky with wide wonder"
+    },
+    {
+      "narration": "अचानक आसमान से रोशनी की एक रेखा टूटी और बगीचे की झाड़ियों के पीछे जा गिरी। सोनू तुरंत वहां दौड़ा।",
+      "on_screen_text": "गिरता तारा",
+      "duration_hint": 10.0,
+      "visual": "A bright glowing shooting star landing softly behind colorful bushes, with the puppy darting eagerly toward the light with tail wagging"
+    },
+    {
+      "narration": "झाड़ियों के पास एक नन्हा टूटा हुआ तारा कांप रहा था। उसकी चमक धीरे-धीरे कम होती जा रही थी।",
+      "on_screen_text": "छोटा तारा",
+      "duration_hint": 10.0,
+      "visual": "Close-up of a tiny glowing starlight creature shivering softly in the grass, losing its bright sparkle while the puppy looks on with deep empathy"
+    },
+    {
+      "narration": "सोनू ने प्यार से अपनी गर्म जीभ से तारे को छुआ और उसे अपने मुलायम पंजे के पास सहलाया।",
+      "on_screen_text": "प्यार का स्पर्श",
+      "duration_hint": 10.0,
+      "visual": "The puppy gently nudging the glowing star with his nose, radiating soft warm light onto his furry golden face in the dark garden"
+    },
+    {
+      "narration": "तारे में फिर से जादू की चमक लौट आई। उसने खुशी से चमकते हुए आसमान की ओर छलांग लगाई।",
+      "on_screen_text": "जादू की वापसी",
+      "duration_hint": 10.0,
+      "visual": "The tiny star glowing brightly again and floating upward into the air, spinning joyfully as the puppy watches with a happy grin"
+    },
+    {
+      "narration": "आसमान में पहुँचकर उस तारे ने अपनी रोशनी से सोनू के पूरे घर को जगमगा दिया जैसे धन्यवाद कह रहा हो।",
+      "on_screen_text": "रोशन रात",
+      "duration_hint": 10.0,
+      "visual": "A brilliant constellation shining warmly down on the sleeping puppy, casting a gentle silver glow over the quiet backyard"
+    },
+    {
+      "narration": "सोनू मुस्कुराते हुए अपने बिस्तर पर सोने चला गया। दूसरों की मदद करने से दिल हमेशा खुश रहता है।",
+      "on_screen_text": "मीठी नींद",
+      "duration_hint": 10.0,
+      "visual": "The golden puppy curled up cozily on a soft rug, eyes closed peacefully with a gentle smile on his face"
+    },
+    {
+      "narration": "प्यारी कहानियों की इस यात्रा में हमारे साथ बने रहें। चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "The puppy waking up happily, stretching his paws toward the viewer under a soft morning sunrise filtering through a window"
+    }
+  ]
+}

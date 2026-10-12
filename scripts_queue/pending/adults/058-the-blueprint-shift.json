@@ -1,0 +1,65 @@
+{
+  "id": "the-blueprint-shift",
+  "title": "The Blueprint Shift",
+  "description": "A veteran architect abandons a massive corporate high-rise project to restore a decaying neighborhood library.",
+  "tags": [
+    "career",
+    "architecture",
+    "middle-aged",
+    "redirection",
+    "choices"
+  ],
+  "character_reference": "a middle-aged male architect with short silver-streaked dark hair, wearing a worn tweed blazer and round wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "At forty-eight, Mark stared at the towering glass model of a skyscraper he no longer believed in. The corporate check was clearing, but the hollow feeling in his chest was growing louder every single day.",
+      "on_screen_text": "THE TOWER MODEL",
+      "duration_hint": 14.0,
+      "visual": "close-up of hands hovering over a gleaming architectural model of a futuristic skyscraper inside a sterile illuminated office, low angle, moody studio lighting"
+    },
+    {
+      "narration": "He pulled the physical keys to the old municipal library from his pocket. It had been boarded up for a decade, waiting for the wrecking ball to turn its historic reading rooms into luxury parking.",
+      "on_screen_text": "THE RUSTY KEYS",
+      "duration_hint": 14.0,
+      "visual": "extreme close-up of heavy brass keys resting on a worn leather desk blotter, shallow depth of field, warm morning light filtering through blinds"
+    },
+    {
+      "narration": "Pushing open the heavy oak doors, dust danced in the shafts of autumn sunlight. The smell of aged paper and forgotten stories wrapped around him like an old, familiar winter coat.",
+      "on_screen_text": "OPENING THE DOORS",
+      "duration_hint": 14.0,
+      "visual": "wide shot of a person stepping through grand double doors into a cavernous abandoned hall filled with tall bookshelves and floating dust motes"
+    },
+    {
+      "narration": "He unrolled his tracing paper over a central oak table that had survived the damp years. For the first time in twenty years, his pencil moved not to maximize profit, but to preserve dignity.",
+      "on_screen_text": "FIRST SKETCH",
+      "duration_hint": 14.0,
+      "visual": "overhead shot of hands sketching restoration lines with a wooden pencil on yellowed architectural paper spread across a scratched wooden surface"
+    },
+    {
+      "narration": "His phone buzzed incessantly with angry emails from senior partners demanding his return to the boardroom. He turned the device face down on the dusty wood and let the silence take over.",
+      "on_screen_text": "SILENCING THE PHONE",
+      "duration_hint": 14.0,
+      "visual": "close-up of a vibrating smartphone screen lying face down on a rustic table, out of focus background showing empty shelving and quiet shadows"
+    },
+    {
+      "narration": "A local neighborhood kid peered through the cracked side window, curious about the sudden activity inside. Mark smiled and waved him closer, trading corporate isolation for community roots.",
+      "on_screen_text": "A CURIOUS GLANCE",
+      "duration_hint": 14.0,
+      "visual": "medium shot looking through a dusty multi-pane window at a smiling man waving his hand toward the outside view, soft natural daylight"
+    },
+    {
+      "narration": "Success is not always measured by how high you build toward the clouds. Sometimes it is measured by what you choose to save when everything else is crumbling down around you.",
+      "on_screen_text": "WHAT WE SAVE",
+      "duration_hint": 14.0,
+      "visual": "silhouette of a person standing tall inside a grand arched window frame, looking out over a quiet autumn park at dusk, warm horizon glow"
+    },
+    {
+      "narration": "If you are standing at your own crossroads and wondering which way to build your life, follow along for more quiet stories of redirection.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "centered composition of an open leather-bound journal resting on a wooden desk with a single unlit brass lamp beside it, cozy and inviting ambiance"
+    }
+  ]
+}

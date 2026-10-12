@@ -1,0 +1,59 @@
+{
+  "id": "the-midnight-press",
+  "title": "The Midnight Press",
+  "description": "A weary printer reclaims his passion by keeping his failing hometown newspaper alive through sheer hand-set type.",
+  "tags": [
+    "craft",
+    "journalism",
+    "tradition",
+    "perseverance",
+    "middle-aged"
+  ],
+  "character_reference": "a rugged man in his early fifties with a weathered face, wearing a charcoal grey linen work shirt with rolled-up sleeves and ink-stained fingers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The town had long since moved online, leaving Julian printing obituaries and garage sale flyers on an antique Heidelberg press that hummed like a contented giant.",
+      "on_screen_text": "THE HUMMING PRESS",
+      "duration_hint": 13.0,
+      "visual": "close-up of heavy metal rollers turning smoothly inside a vintage industrial printing machine, warm ambient workshop lighting"
+    },
+    {
+      "narration": "He held a single lead letter 'A' between his calloused fingers, weighing whether to lock the doors for good after twenty-five years of declining subscriptions.",
+      "on_screen_text": "A SINGLE LETTER",
+      "duration_hint": 13.0,
+      "visual": "extreme close-up of ink-stained fingers holding a tiny metallic typesetting character against a dark background, shallow depth of field"
+    },
+    {
+      "narration": "Instead of turning off the master switch, he pulled out a stack of heavy cotton rag paper. If the world wanted speed, he would offer them something meant to last for centuries.",
+      "on_screen_text": "COTTON RAG PAPER",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a person sliding a crisp sheet of textured paper onto the flatbed of a heavy printing press, determined expression"
+    },
+    {
+      "narration": "He began setting type by hand for a series of forgotten local histories and poetry. The rhythmic clack of lead against the composing stick became his meditation.",
+      "on_screen_text": "SETTING THE TYPE",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands arranging small metal type blocks into a wooden composing stick on a cluttered work table, moody cinematic illumination"
+    },
+    {
+      "narration": "An elderly neighbor stopped by the open alley door, smelling the distinct scent of fresh black ink. She asked if he could print her grandfather's lost wartime letters.",
+      "on_screen_text": "THE ALLEY DOOR",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a man looking back over his shoulder toward an open doorway where bright afternoon light silhouettes a visitor"
+    },
+    {
+      "narration": "The morning sun caught the wet ink drying on the racks, spelling out stories that algorithms could never capture. Some things are simply too human for a screen.",
+      "on_screen_text": "FRESH INK DRYING",
+      "duration_hint": 13.0,
+      "visual": "close-up of printed sheets hanging from wooden clips on a clothesline inside a workshop, illuminated by bright morning rays"
+    },
+    {
+      "narration": "If you value the slow art of genuine craftsmanship in a fast-paced world, follow along for more stories of quiet dedication.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a cozy print shop interior filled with wooden cabinets, metal frames, and warm overhead pendant lights"
+    }
+  ]
+}

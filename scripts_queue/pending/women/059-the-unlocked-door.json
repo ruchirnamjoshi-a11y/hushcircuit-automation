@@ -1,0 +1,65 @@
+{
+  "id": "the-unlocked-door",
+  "title": "The Unlocked Door",
+  "description": "After years of keeping her workshop closed to the public, a carpenter finally decides to share her handcrafted furniture with the world.",
+  "tags": [
+    "craftsmanship",
+    "courage",
+    "woodworking",
+    "women",
+    "business"
+  ],
+  "character_reference": "a woman in her mid thirties with dirty blonde hair tied back in a messy bun, wearing a durable canvas apron dusted with fine sawdust",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The heavy deadbolt turned with a loud click that echoed through the empty wooden workshop.",
+      "on_screen_text": "THE HEAVY LOCK",
+      "duration_hint": 4.5,
+      "visual": "close up of a hand turning a brass deadbolt on a thick wooden workshop door, dramatic sidelighting, rustic interior details"
+    },
+    {
+      "narration": "Inside, dozens of meticulously carved oak chairs sat hidden away in the shadows, waiting for a light they never saw.",
+      "on_screen_text": "HIDDEN CRAFT",
+      "duration_hint": 5.0,
+      "visual": "wide angle shot of rows of handcrafted wooden chairs lined up in a dim barn-like workshop, shafts of sunlight piercing through dust-filled air"
+    },
+    {
+      "narration": "For years, Elena believed her work was never quite good enough to show anyone outside these walls.",
+      "on_screen_text": "YEARS OF DOUBT",
+      "duration_hint": 4.5,
+      "visual": "close up of hands running over a smooth, oiled wooden table surface, inspecting the grain, moody shadows and reflective varnish"
+    },
+    {
+      "narration": "Today, she picked up the iron key, walked to the front entrance, and turned the handle wide open.",
+      "on_screen_text": "OPENING UP",
+      "duration_hint": 4.5,
+      "visual": "hands pushing open large double wooden doors to reveal bright daylight streaming into a dark interior workspace, low angle shot"
+    },
+    {
+      "narration": "Fresh morning air rushed in, carrying the scent of pine and the promise of a brand new chapter.",
+      "on_screen_text": "FRESH AIR",
+      "duration_hint": 4.5,
+      "visual": "close up of a person taking a deep breath with eyes closed, dust particles floating in a bright beam of sunlight near an open doorway"
+    },
+    {
+      "narration": "She placed a simple handmade wooden bench right on the threshold, inviting the world inside.",
+      "on_screen_text": "THE INVITATION",
+      "duration_hint": 4.5,
+      "visual": "medium shot of a rustic wooden bench placed neatly on flat stone pavers just outside a workshop doorway, bright morning lighting"
+    },
+    {
+      "narration": "Perfection was never the goal; sharing her genuine passion was all that mattered in the end.",
+      "on_screen_text": "GENUINE PASSION",
+      "duration_hint": 5.0,
+      "visual": "close up of weathered hands holding a small wooden carving tool, working carefully on a piece of timber, warm and focused atmosphere"
+    },
+    {
+      "narration": "If you love stories about stepping out of the shadows and sharing your gifts, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "warm rustic workshop interior filled with wooden furniture, tools, and soft golden lighting, welcoming and peaceful"
+    }
+  ]
+}

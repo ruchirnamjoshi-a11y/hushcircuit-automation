@@ -1,0 +1,65 @@
+{
+  "id": "benny-bear-and-the-honey-jar",
+  "title": "Benny Bear and the Honey Jar",
+  "description": "A young bear learns the joy of sharing his favorite treat with his forest friends.",
+  "tags": [
+    "bear",
+    "sharing",
+    "honey",
+    "friendship",
+    "moral"
+  ],
+  "character_reference": "a chubby honey-brown bear cub with a patch of lighter fur on his chest and round furry ears",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Benny found a heavy wooden jar filled with the sweetest, golden honey in the forest.",
+      "on_screen_text": "A SWEET DISCOVERY",
+      "duration_hint": 10.0,
+      "visual": "clutching a pottery jar marked with a honeybee symbol, wide excited eyes, licking lips with anticipation, sunny forest floor"
+    },
+    {
+      "narration": "He wanted to eat every single drop all by himself without telling anyone at all.",
+      "on_screen_text": "ALL FOR ME",
+      "duration_hint": 10.0,
+      "visual": "hugging jar tightly to tummy and turning away protectively, mischievous sly smile, lush green ferns in background"
+    },
+    {
+      "narration": "Just then, his friends walked by looking very tired and hungry from playing tag.",
+      "on_screen_text": "TIRED FRIENDS",
+      "duration_hint": 10.0,
+      "visual": "looking over shoulder with a guilty expression at other little animals resting under a tree, drooping ears and paws"
+    },
+    {
+      "narration": "Benny looked at his big jar of honey, then looked at his friends' sad, drooping faces.",
+      "on_screen_text": "A KIND THOUGHT",
+      "duration_hint": 11.0,
+      "visual": "thoughtful expression holding jar loosely, head tilted in deep consideration, dappled sunlight through tree leaves"
+    },
+    {
+      "narration": "With a warm smile, he opened the jar and shared sweet spoonfuls with everyone.",
+      "on_screen_text": "SHARING THE SWEETNESS",
+      "duration_hint": 10.0,
+      "visual": "joyfully spooning honey out to eager little woodland friends, wide happy smile, warm community gathering outdoors"
+    },
+    {
+      "narration": "Eating together made the honey taste twice as sweet as eating it alone ever could.",
+      "on_screen_text": "TASTES BETTER",
+      "duration_hint": 10.0,
+      "visual": "laughing heartily surrounded by happy friends licking honey off their paws, bright cheerful forest clearing"
+    },
+    {
+      "narration": "Benny realized that sharing brings twice as much joy to your heart.",
+      "on_screen_text": "A JOYFUL HEART",
+      "duration_hint": 9.0,
+      "visual": "holding empty jar upside down with a cheerful grin, paws resting on contented tummy, warm golden sunset lighting"
+    },
+    {
+      "narration": "Kindness is the sweetest treat of all. Follow along for more bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "waving paw happily goodbye, friendly smiling face, cozy twilight woods background, gentle magical sparkle"
+    }
+  ]
+}

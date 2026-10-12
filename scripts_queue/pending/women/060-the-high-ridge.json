@@ -1,0 +1,65 @@
+{
+  "id": "the-high-ridge",
+  "title": "The High Ridge",
+  "description": "A hiker stops letting her faster companions dictate her pace and discovers the joy of climbing a mountain on her own terms.",
+  "tags": [
+    "hiking",
+    "nature",
+    "pace",
+    "resilience",
+    "women"
+  ],
+  "character_reference": "a woman in her late twenties with curly red hair tied in a braid, wearing a mustard yellow fleece jacket and a worn canvas backpack",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The trail steepened sharply into loose gravel, and Clara felt her breath burning in her lungs.",
+      "on_screen_text": "THE STEEP CLIMB",
+      "duration_hint": 4.5,
+      "visual": "close up of hiking boots stepping carefully onto loose grey gravel on a steep mountain path, low angle hiking shot, overcast natural light"
+    },
+    {
+      "narration": "Ahead of her, her group was already disappearing around the rocky ridge, moving at a relentless, exhausting sprint.",
+      "on_screen_text": "RUNNING AHEAD",
+      "duration_hint": 5.0,
+      "visual": "wide shot of a distant figure walking up a winding mountain trail through alpine grass, expansive valley view in the background"
+    },
+    {
+      "narration": "Her instinct was to push harder, to ignore the stitch in her side just to keep up with them.",
+      "on_screen_text": "THE URGE TO RUSH",
+      "duration_hint": 4.5,
+      "visual": "close up of hands resting on knees while catching breath, hiker leaning slightly forward on a rocky outcrop, dramatic mountain scenery"
+    },
+    {
+      "narration": "Instead, she stopped, stepped off the narrow path, and planted her trekking poles in the dirt.",
+      "on_screen_text": "STOPPING TO BREATHE",
+      "duration_hint": 4.5,
+      "visual": "metal trekking poles planted upright in soft alpine soil next to purple wildflowers, majestic mountain range in the soft-focused distance"
+    },
+    {
+      "narration": "She unzipped her pack, took a long, slow drink of water, and actually looked at the view around her.",
+      "on_screen_text": "TAKING IT IN",
+      "duration_hint": 5.0,
+      "visual": "close up of hands unscrewing a metal water bottle, bright daylight reflecting off the cap, alpine meadow background with green grass"
+    },
+    {
+      "narration": "The mountains weren't a race to be won; they were a landscape to be experienced.",
+      "on_screen_text": "NOT A RACE",
+      "duration_hint": 4.5,
+      "visual": "profile shot of a hiker looking out over a vast mountain valley with a serene expression, wind gently blowing hair, bright daylight"
+    },
+    {
+      "narration": "When she finally resumed walking, she set a steady rhythm that belonged entirely to her.",
+      "on_screen_text": "HER OWN PACE",
+      "duration_hint": 4.5,
+      "visual": "medium shot of a hiker walking calmly along an open ridgeline, lifting trekking poles with confident and steady movements"
+    },
+    {
+      "narration": "If you love stories about honoring your own pace in life and nature, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "scenic mountain ridge view at sunset with golden light washing over green alpine hills, peaceful and inspiring atmosphere"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "second-set",
+  "title": "Second Set",
+  "description": "A garage drummer overcomes self-doubt to keep the beat during a shaky first basement concert.",
+  "tags": [
+    "music",
+    "drums",
+    "performance",
+    "friends",
+    "debut"
+  ],
+  "character_reference": "a teenage boy with messy bleached blonde hair, wearing a worn black graphic t-shirt and a silver chain necklace",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The basement was entirely packed with people we barely knew, all sweating and shouting over the tuning guitars. My sticks felt like heavy logs in my palms as I sat down behind the kit.",
+      "on_screen_text": "THE BASEMENT",
+      "duration_hint": 18.0,
+      "visual": "dimly lit subterranean room crowded with silhouettes of young people under colored party lights"
+    },
+    {
+      "narration": "We started playing our opening track way too fast, the adrenaline turning every rhythm into a frantic blur. Within thirty seconds, I dropped my left stick right onto the concrete floor.",
+      "on_screen_text": "THE DROP",
+      "duration_hint": 17.0,
+      "visual": "close-up motion blur of a wooden drumstick falling downward against a grey concrete floor"
+    },
+    {
+      "narration": "Time stopped for a heartbeat while the cymbals crashed around me. Panic screamed at me to just stop playing and crawl under the bass drum.",
+      "on_screen_text": "TOTAL PANIC",
+      "duration_hint": 14.0,
+      "visual": "extreme close-up on wide eyes reflecting flickering purple stage lights in a dark room"
+    },
+    {
+      "narration": "Instead, I grabbed my backup stick from the side rack without missing more than a single beat, locking my eyes onto our guitarist's back.",
+      "on_screen_text": "THE RECOVERY",
+      "duration_hint": 15.0,
+      "visual": "dynamic action shot of hands gripping a new pair of drumsticks hovering over a tom drum"
+    },
+    {
+      "narration": "He turned around, caught my eye, and grinned. That simple nod grounded me, pulling my focus away from the crowd and back onto the groove.",
+      "on_screen_text": "THE LOOK",
+      "duration_hint": 15.0,
+      "visual": "over-the-shoulder view looking at another musician turning around with an encouraging smile under blue stage lighting"
+    },
+    {
+      "narration": "By the time we hit the bridge of the final song, the whole room was jumping in time with my kick drum. Every mistake from earlier dissolved into the sheer noise of the music.",
+      "on_screen_text": "LOCKED IN",
+      "duration_hint": 17.0,
+      "visual": "close-up of a bass drum pedal moving rapidly with sneaker sole tapping against metal"
+    },
+    {
+      "narration": "The final chord rang out into cheers and scattered applause that echoed off the concrete walls. My arms were exhausted, but my chest felt lighter than air.",
+      "on_screen_text": "FINAL CHORD",
+      "duration_hint": 15.0,
+      "visual": "wide shot of band members wiping sweat and laughing together in a hazy room lit by a single floor lamp"
+    },
+    {
+      "narration": "The first stumble doesn't ruin the whole performance; it just teaches you how to bounce back twice as hard.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 14.0,
+      "visual": "close-up of a drum kit resting quietly in a dark room with a single drumstick balanced across the snare"
+    },
+    {
+      "narration": "If you love behind-the-scenes moments, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "close-up of a vintage record player spinning slowly on a wooden surface with soft warm lighting"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-rooftop-greenhouse",
+  "title": "The Rooftop Greenhouse",
+  "description": "An urban dweller transforms her concrete balcony into a thriving ecosystem, finding peace amidst the city noise.",
+  "tags": [
+    "gardening",
+    "urban",
+    "peace",
+    "women",
+    "growth"
+  ],
+  "character_reference": "a woman in her early thirties with short dark pixie-cut hair, wearing an oversized denim shirt with rolled-up sleeves and muddy gardening gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Five floors above the bustling city street, the concrete balcony was nothing but gray dust and empty pots.",
+      "on_screen_text": "THE GRAY BALCONY",
+      "duration_hint": 5.0,
+      "visual": "high angle shot of an empty concrete apartment balcony with a few dusty terracotta pots, harsh city daylight, urban rooftops below"
+    },
+    {
+      "narration": "Everyone told her nothing would ever grow up here among the exhaust fumes and harsh winds.",
+      "on_screen_text": "DOUBT FROM BELOW",
+      "duration_hint": 4.5,
+      "visual": "close up of weathered terracotta plant pots sitting on a concrete ledge against a backdrop of distant brick buildings, soft afternoon light"
+    },
+    {
+      "narration": "She ignored the skeptics, carrying bags of rich black soil up the stairs one heavy load at a time.",
+      "on_screen_text": "BRINGING IN LIFE",
+      "duration_hint": 5.0,
+      "visual": "hands pouring rich dark compost into a clean ceramic flower pot, dust and tiny soil particles visible in warm sunlight"
+    },
+    {
+      "narration": "Carefully, she pressed fragile green seedlings into the earth, tucking them in with gentle fingers.",
+      "on_screen_text": "TENDER ROOTS",
+      "duration_hint": 4.5,
+      "visual": "close up of gloved fingers gently pressing soil around the delicate green stem of a tiny tomato seedling, macro perspective"
+    },
+    {
+      "narration": "Day after day, she watered them faithfully, shielding the tender shoots from the afternoon heat.",
+      "on_screen_text": "DAILY CARE",
+      "duration_hint": 4.5,
+      "visual": "water droplets spraying from a brass mister onto vibrant green leaves, sparkling in the warm golden sunlight"
+    },
+    {
+      "narration": "Months later, vibrant vines of tomatoes and cascading herbs turned the harsh concrete into a lush jungle.",
+      "on_screen_text": "THE LUSH OASIS",
+      "duration_hint": 5.0,
+      "visual": "close up of lush green tomato plants and trailing herbs overflowing from pots on a balcony railing, sun filtering through leaves"
+    },
+    {
+      "narration": "Sitting among the leaves with her morning tea, she knew she had built her own quiet sanctuary.",
+      "on_screen_text": "HER SANCTUARY",
+      "duration_hint": 5.0,
+      "visual": "hands holding a warm ceramic mug surrounded by lush green potted plants on a bright sunny balcony, cozy and peaceful"
+    },
+    {
+      "narration": "If you love stories about cultivating your own peace in unexpected places, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "close up of various green potted plants arranged neatly on a wooden balcony shelf, warm sunset lighting filtering through"
+    }
+  ]
+}

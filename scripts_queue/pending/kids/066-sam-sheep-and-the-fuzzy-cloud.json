@@ -1,0 +1,65 @@
+{
+  "id": "sam-sheep-and-the-fuzzy-cloud",
+  "title": "Sam Sheep and the Fuzzy Cloud",
+  "description": "A little lamb tries to catch a cloud in the sky and learns to enjoy the simple wonders around him.",
+  "tags": [
+    "sheep",
+    "cloud",
+    "sky",
+    "imagination",
+    "bedtime"
+  ],
+  "character_reference": "a fluffy little lamb with bouncy white wool curls and soft floppy black ears",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sam lay on his back in the meadow, watching fluffy white clouds float lazily overhead.",
+      "on_screen_text": "WATCHING CLOUDS",
+      "duration_hint": 10.0,
+      "visual": "lying comfortably on green grass looking straight up, relaxed happy expression, wide open blue sky above"
+    },
+    {
+      "narration": "He decided he wanted to catch his very own cloud and keep it in his pocket.",
+      "on_screen_text": "CATCH A CLOUD",
+      "duration_hint": 10.0,
+      "visual": "sitting up abruptly with excited wide eyes, holding one hoof up toward the sky in determination"
+    },
+    {
+      "narration": "Sam climbed up the highest grassy hill, stretching his little hooves as high as they could go.",
+      "on_screen_text": "CLIMBING HIGH",
+      "duration_hint": 10.0,
+      "visual": "standing on tiptoes atop a green mound, stretching front legs upward toward the sky, windy breeze rustling wool"
+    },
+    {
+      "narration": "No matter how high he reached, the soft white clouds stayed far out of his grasp.",
+      "on_screen_text": "TOO FAR AWAY",
+      "duration_hint": 10.0,
+      "visual": "dropping hooves in slight disappointment, looking up with a puzzled pout, sunny pasture landscape"
+    },
+    {
+      "narration": "His mother trotted over and gently reminded him that clouds belong in the sky where they can travel.",
+      "on_screen_text": "A MOTHER'S WISDOM",
+      "duration_hint": 11.0,
+      "visual": "gentle adult sheep nuzzling the little lamb's head lovingly, warm comforting maternal atmosphere"
+    },
+    {
+      "narration": "Sam smiled as he realized he didn't need to hold a cloud to enjoy watching its beauty.",
+      "on_screen_text": "ENJOY THE VIEW",
+      "duration_hint": 11.0,
+      "visual": "happy contented smile lying back down on the grass, relaxed woolly body, peaceful afternoon meadow"
+    },
+    {
+      "narration": "Some things are simply meant to be admired from afar.",
+      "on_screen_text": "ADMIRING BEAUTY",
+      "duration_hint": 9.0,
+      "visual": "closed-eye peaceful expression, resting chin on hooves, soft golden sunlight filtering through pasture grass"
+    },
+    {
+      "narration": "Letting go brings peace to your heart. Follow along for more bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "waving a friendly hoof toward the camera, sleepy smiling face, soft pastel twilight sky background"
+    }
+  ]
+}

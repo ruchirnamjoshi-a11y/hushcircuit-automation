@@ -1,0 +1,71 @@
+{
+  "id": "the-spit-and-polish",
+  "title": "The Spit and Polish",
+  "description": "A weekend shoe restoration project teaches a young artisan patience and attention to detail.",
+  "tags": [
+    "craftsmanship",
+    "shoes",
+    "restoration",
+    "patience",
+    "artisan"
+  ],
+  "character_reference": "a young man with curly dark hair tied back in a small bun, wearing a stained canvas work shirt and leather-working gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The thrift store leather boots looked like they had survived a war zone, covered in deep scuffs and dried mud. My grandfather handed them to me with a challenge: bring them back to life.",
+      "on_screen_text": "THE PROJECT",
+      "duration_hint": 18.0,
+      "visual": "close-up of worn, scuffed brown leather boots sitting on a workbench covered in tools and rags"
+    },
+    {
+      "narration": "I started scrubbing too aggressively with the saddle soap, thinking brute force would strip away the years of neglect. Instead, I just left ugly streaks across the toe box.",
+      "on_screen_text": "TOO ROUGH",
+      "duration_hint": 16.0,
+      "visual": "close-up of a bristled brush scrubbing lather onto a discolored leather surface with fast, erratic strokes"
+    },
+    {
+      "narration": "My grandfather stopped my hand, gently shaking his head. He told me leather breathes like skin, and you can't rush healing.",
+      "on_screen_text": "SLOW DOWN",
+      "duration_hint": 14.0,
+      "visual": "medium shot of weathered hands resting gently over younger hands holding a wooden brush handle"
+    },
+    {
+      "narration": "I took a breath, slowed my pace, and started working in small circular motions using a soft horsehair brush. The wax began to melt smoothly into the grain.",
+      "on_screen_text": "CIRCULAR MOTION",
+      "duration_hint": 16.0,
+      "visual": "macro shot of dark polish being buffed in smooth circles onto a shiny leather heel"
+    },
+    {
+      "narration": "For an hour, there was nothing in the room except the rhythmic swish of the brush and the sharp, clean smell of beeswax. My mind finally quieted down.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 15.0,
+      "visual": "close-up of a soft cloth wiping away excess wax with gentle, sweeping motions"
+    },
+    {
+      "narration": "When I finished buffing the left boot, the leather caught the workshop light with a deep, warm amber glow that looked almost brand new.",
+      "on_screen_text": "THE SHINE",
+      "duration_hint": 15.0,
+      "visual": "close-up shot of polished leather reflecting a warm overhead workshop light bulb"
+    },
+    {
+      "narration": "Setting the finished pair side by side on the bench, I realized care isn't just about fixing objects; it's about respecting the time it took to wear them down.",
+      "on_screen_text": "RESTORED",
+      "duration_hint": 16.0,
+      "visual": "shot of two clean, restored leather boots standing proudly side by side on a wooden workbench"
+    },
+    {
+      "narration": "True quality isn't bought off a shelf; it's earned through patience, attention, and a little bit of elbow grease.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 15.0,
+      "visual": "warm sunlight streaming across a workshop table lined with leather conditioner bottles and brushes"
+    },
+    {
+      "narration": "If you enjoy the art of making things last, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "aesthetic top-down view of artisan leatherworking tools arranged neatly on a dark wooden board"
+    }
+  ]
+}

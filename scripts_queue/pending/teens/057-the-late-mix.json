@@ -1,0 +1,71 @@
+{
+  "id": "the-late-mix",
+  "title": "The Late Mix",
+  "description": "A teenage radio DJ finds her voice during a graveyard shift broadcast.",
+  "tags": [
+    "radio",
+    "music",
+    "voice",
+    "night",
+    "broadcasting"
+  ],
+  "character_reference": "a young woman with long wavy dark hair, wearing oversized vintage headphones and a mustard yellow cardigan",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The red 'ON AIR' light glowed in an otherwise pitch-black studio while the clock ticked past midnight. I was supposed to be running automated playlists, but the transmitter was acting up.",
+      "on_screen_text": "MIDNIGHT SHIFT",
+      "duration_hint": 18.0,
+      "visual": "close-up of a glowing red studio recording light against a dark acoustic-paneled wall"
+    },
+    {
+      "narration": "The automated system crashed completely, leaving dead air echoing through the speakers. My heart leaped into my throat as the silence stretched past five agonizing seconds.",
+      "on_screen_text": "DEAD AIR",
+      "duration_hint": 16.0,
+      "visual": "close-up of audio mixing board meters dipping down to absolute zero in a dimly lit broadcast booth"
+    },
+    {
+      "narration": "I grabbed the heavy metal microphone, pulled it close to my lips, and flicked the live channel switch without thinking twice.",
+      "on_screen_text": "GOING LIVE",
+      "duration_hint": 14.0,
+      "visual": "close-up of a hand pushing a silver audio mixing slider upward with a deliberate motion"
+    },
+    {
+      "narration": "My voice came out raspy and quiet at first, but I started talking about the thunderstorm rolling outside the studio window instead of following the station script.",
+      "on_screen_text": "IMPROVISING",
+      "duration_hint": 16.0,
+      "visual": "close-up of lips speaking softly near a large vintage studio microphone in a dark room"
+    },
+    {
+      "narration": "I spun a mellow jazz vinyl track onto the turntable, dropping the needle right into the groove as the rain battered the glass outside.",
+      "on_screen_text": "THE NEEDLE",
+      "duration_hint": 15.0,
+      "visual": "macro shot of a record player needle descending smoothly into the spinning grooves of a vinyl record"
+    },
+    {
+      "narration": "Within ten minutes, the station phone started ringing with night owls calling in just to say our impromptu chat made them feel less alone in the dark.",
+      "on_screen_text": "THE CALLS",
+      "duration_hint": 16.0,
+      "visual": "close-up of an analog telephone blinking with an incoming amber light on a mixing console"
+    },
+    {
+      "narration": "I leaned back in my chair, watching the audio meters bounce in time with the music. For the first time, I felt like I actually belonged behind this desk.",
+      "on_screen_text": "IN THE GROOVE",
+      "duration_hint": 16.0,
+      "visual": "medium shot of a person smiling softly while wearing large headphones in a warm glowing studio"
+    },
+    {
+      "narration": "You don't need a script to connect with people; sometimes you just need the courage to speak from where you are.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 15.0,
+      "visual": "soft amber desk lamp illuminating a stack of paper notebooks and a microphone base in a quiet room"
+    },
+    {
+      "narration": "If you love late-night broadcasting vibes, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "aesthetic flat-lay of vintage cassette tapes and headphones resting on a wooden tabletop"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "ep-45-the-crimson-apex",
+  "title": "Neon Pulse — Episode 45: The Crimson Apex",
+  "description": "Kael faces the true master within the crimson abyss after Commander Vance's disappearance, leading to a desperate confrontation.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "thriller",
+    "animation"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 45,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The crimson energy core pulses violently beneath my boots, casting long, distorted shadows across the cavern walls. There is no escape route left.",
+      "on_screen_text": "THE ABYSS STRIKES",
+      "duration_hint": 7.0,
+      "visual": "low angle shot of a massive pulsating crimson energy core illuminating jagged rock walls while someone crouches low on a metallic platform"
+    },
+    {
+      "narration": "From the deepest recesses of the shadows, a towering silhouette emerges. Its eyes burn with a cold, unnatural violet light.",
+      "on_screen_text": "TRUE MASTER",
+      "duration_hint": 6.5,
+      "visual": "close up of glowing violet eyes piercing through thick swirling dark mist inside a massive cavernous chamber"
+    },
+    {
+      "narration": "Vance is gone, swallowed by the very dark wave he tried to control. Now I am the only obstacle left standing in this forgotten hell.",
+      "on_screen_text": "LEFT ALONE",
+      "duration_hint": 6.5,
+      "visual": "medium shot looking over a hero's shoulder toward a looming shadowy humanoid figure standing near a glowing red chasm edge"
+    },
+    {
+      "narration": "The entity raises a hand, and the amber circuitry on my jacket flares in sudden, painful synchronization with its dark power.",
+      "on_screen_text": "RESONANT PAIN",
+      "duration_hint": 6.5,
+      "visual": "close up of glowing amber patterns flaring brightly on fabric as a hand clenches in intense agony"
+    },
+    {
+      "narration": "I grit my teeth, channeling the surge into my fists until the glowing energy arcs violently into the surrounding air.",
+      "on_screen_text": "FIGHTING BACK",
+      "duration_hint": 6.0,
+      "visual": "dynamic action shot of fists crackling with fierce amber energy while stepping forward into a defensive stance"
+    },
+    {
+      "narration": "A deafening shockwave shatters the air, throwing me backward against the freezing stone wall of the subterranean vault.",
+      "on_screen_text": "BRUTAL IMPACT",
+      "duration_hint": 6.0,
+      "visual": "wide action shot of a shockwave rippling through a dark cavern and slamming a figure backward into rough stone"
+    },
+    {
+      "narration": "As the smoke clears, the true master steps closer, whispering a chilling revelation that turns my blood to ice.",
+      "on_screen_text": "THE TRUTH",
+      "duration_hint": 6.0,
+      "visual": "medium close up of a menacing tall entity leaning forward into pale light while shadows writhe around it"
+    },
+    {
+      "narration": "Everything I thought I knew was a lie. To survive what comes next, follow along for more of the story.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "dramatic portrait shot of a determined face lit by pulsing amber light with smoke drifting past in slow motion"
+    }
+  ]
+}

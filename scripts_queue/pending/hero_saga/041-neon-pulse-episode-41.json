@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-episode-41",
+  "title": "Neon Pulse — Episode 41: Subterranean Showdown",
+  "description": "Kael and Commander Vance face off in a desperate subterranean showdown after Kael shatters his own neural paralysis.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "thriller",
+    "animation"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 41,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sparks cascade across the shattered console as Kael steps forward, his fists blazing with liquid amber power.",
+      "on_screen_text": "THE REMATCH BEGINS",
+      "duration_hint": 5.0,
+      "visual": "Low angle shot of a tall lean man with messy dark hair stepping forward defiantly, glowing amber energy flaring intensely from his fists inside a dark subterranean chamber filled with flying sparks and ruined tech debris, dramatic cinematic lighting, photorealistic action scene, 8k resolution"
+    },
+    {
+      "narration": "Commander Vance lunges through the smoke, a heavy vibro-blade humming with lethal blue energy in his grip.",
+      "on_screen_text": "LETHAL STRIKE",
+      "duration_hint": 5.0,
+      "visual": "Medium action shot of an armored military commander lunging forward with a glowing blue vibro-blade drawn, closing in fast through thick swirling grey smoke inside a concrete cavern, tense cinematic composition, dynamic motion blur, detailed textures"
+    },
+    {
+      "narration": "Kael deflects the strike with a sweeping arm, the amber circuits flaring blindingly bright against the dark rock walls.",
+      "on_screen_text": "DEFENSIVE SURGE",
+      "duration_hint": 5.5,
+      "visual": "Close up action shot of arms clashing, bright amber energy shield blocking a glowing blue energy blade, dynamic lighting reflecting off rough stone cave walls, high contrast, intense emotional moment, detailed hand-to-hand combat pose"
+    },
+    {
+      "narration": "With a roar, Kael unleashes a shockwave of raw energy that shatters the stone pillars surrounding them.",
+      "on_screen_text": "ENERGY SHOCKWAVE",
+      "duration_hint": 5.0,
+      "visual": "Wide action shot of a powerful shockwave bursting outward in a circular ring, shattering massive stone pillars and sending debris flying across a subterranean cavern, blinding amber glow, dramatic particles, cinematic destruction effect"
+    },
+    {
+      "narration": "Vance staggers back from the blast, weapon slipping from his scorched fingers as he hits the cavern wall.",
+      "on_screen_text": "COMMANDER FALLING",
+      "duration_hint": 5.0,
+      "visual": "Medium shot of a tactical commander staggering backward and slamming against a rough rock wall, dropping a smoking weapon, expression of shock and defeat, dim moody lighting, realistic textures, cinematic drama"
+    },
+    {
+      "narration": "Standing over his defeated pursuer, Kael demands answers about the shadowy network behind the syndicate.",
+      "on_screen_text": "THE ULTIMATUM",
+      "duration_hint": 5.0,
+      "visual": "Over the shoulder shot of a tall lean man standing triumphantly over a kneeling armored commander, pointing an energised hand downward, dark cavern atmosphere, glowing amber light casting long dramatic shadows"
+    },
+    {
+      "narration": "Vance only smiles, coughing up dust before pressing a hidden emergency beacon on his chest plate.",
+      "on_screen_text": "HIDDEN TRAP",
+      "duration_hint": 5.0,
+      "visual": "Close up shot of a hand frantically pressing a blinking red button on a scarred metallic armor chest plate, dark background, shallow depth of field, high tension, cinematic storytelling frame"
+    },
+    {
+      "narration": "The cavern floor begins to fracture and sink, revealing a glowing red abyss opening up directly beneath them.",
+      "on_screen_text": "THE ABYSS OPENS",
+      "duration_hint": 5.5,
+      "visual": "Wide cinematic shot of a deep cave floor splitting apart, glowing crimson lava and deep dark voids opening up between massive crumbling stone slabs, hazardous environment, dramatic glowing embers rising into the air"
+    },
+    {
+      "narration": "Follow along for more original hero adventures as the mystery deepens and new dangers emerge.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Cinematic portrait shot of a determined hero looking upward toward a distant ray of light piercing down into a dark subterranean cavern, glowing amber circuitry subtly pulsing, epic moody atmosphere, high detail"
+    }
+  ]
+}

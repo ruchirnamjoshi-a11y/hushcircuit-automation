@@ -1,0 +1,65 @@
+{
+  "id": "crimson-abyss",
+  "title": "Neon Pulse — Episode 44: The Crimson Abyss",
+  "description": "Kael faces a terrifying true master waiting in the shadows of the crimson abyss after Vance is swallowed by a mysterious dark wave.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "thriller",
+    "neon-pulse"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 44,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The crushing pressure of the crimson abyss gave way to a suffocating silence. Glowing embers drifted through the cavernous void like falling stars.",
+      "on_screen_text": "THE FALLEN DEEP",
+      "duration_hint": 6.0,
+      "visual": "Wide angle shot of a deep underground cavern filled with pulsing crimson light and floating ash, low angle looking up at dark jagged rock formations"
+    },
+    {
+      "narration": "Commander Vance had vanished into that dark wave, leaving behind only fractured echoes in the pulsing energy core.",
+      "on_screen_text": "VANCE GONE",
+      "duration_hint": 5.0,
+      "visual": "Medium shot of the character staring into a swirling vortex of dark energy and red light, hand raised defensively, smoke drifting past the camera"
+    },
+    {
+      "narration": "A heavy presence pressed down from the darkness above. The true architect of this subterranean nightmare was finally showing its face.",
+      "on_screen_text": "TRUE ARCHITECT",
+      "duration_hint": 6.0,
+      "visual": "Low angle tracking shot of the character tensing up, looking toward upper shadows where massive metallic silhouettes loom overhead in the reddish haze"
+    },
+    {
+      "narration": "Glowing amber lines flared brightly along the tactical jacket sleeves as the latent energy surged in response to the looming danger.",
+      "on_screen_text": "CIRCUIT FLARE",
+      "duration_hint": 6.0,
+      "visual": "Close up on arms and sleeves as bright orange energy patterns pulse intensely against dark fabric, sparks flying outward in slow motion"
+    },
+    {
+      "narration": "A low, metallic hum vibrated through the stone floor beneath my boots. Something colossal was uncoiling from the deep shadows.",
+      "on_screen_text": "GROUND SHAKES",
+      "duration_hint": 5.0,
+      "visual": "Medium low shot of boots standing on cracked stone floor as dust and small pebbles vibrate and bounce rhythmically from an unseen impact"
+    },
+    {
+      "narration": "Two burning violet eyes pierced the gloom, fixing an unblinking gaze directly on the glowing circuitry of the jacket.",
+      "on_screen_text": "VIOLET EYES",
+      "duration_hint": 5.0,
+      "visual": "Extreme close up of narrowed determined expression reflecting two bright glowing purple pinpricks of light in the pitch black distance"
+    },
+    {
+      "narration": "There was no escape route left to find. The final confrontation for the fate of the core had officially begun.",
+      "on_screen_text": "FINAL CLASH",
+      "duration_hint": 5.0,
+      "visual": "Over the shoulder action shot facing a towering shadowy entity shrouded in dark smoke while amber light illuminates the dark foreground"
+    },
+    {
+      "narration": "The battle in the abyss is only just beginning. Follow along for more chapters in the ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Cinematic medium portrait shot looking back over the shoulder with a resolute expression against a backdrop of fading red sparks"
+    }
+  ]
+}

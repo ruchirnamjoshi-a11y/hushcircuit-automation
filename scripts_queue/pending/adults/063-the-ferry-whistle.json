@@ -1,0 +1,59 @@
+{
+  "id": "the-ferry-whistle",
+  "title": "The Ferry Whistle",
+  "description": "A seasoned deckhand steps off his daily commuter boat to finally restore an abandoned island lighthouse.",
+  "tags": [
+    "sea",
+    "lighthouse",
+    "transition",
+    "solitude",
+    "middle-aged"
+  ],
+  "character_reference": "a weathered middle-aged sailor with short grizzled beard stubble, wearing a heavy navy blue wool pea coat and a knitted fisherman's cap",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For twenty-eight years, David tied mooring lines to the same ferry dock, watching the misty island lighthouse blink in the distance without ever stepping foot on its shores.",
+      "on_screen_text": "THE DISTANT LIGHT",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a man standing on a wooden pier holding a heavy hemp rope, looking across foggy grey water toward a distant stone lighthouse"
+    },
+    {
+      "narration": "The morning commute had become a blur of identical gray waves and routine diesel fumes. He knew every wave by heart, but felt like a stranger in his own life.",
+      "on_screen_text": "THE GRAY WAVES",
+      "duration_hint": 13.0,
+      "visual": "close-up of weathered hands gripping the cold iron railing of a moving boat, churning wake visible in the background under an overcast sky"
+    },
+    {
+      "narration": "Instead of boarding the early ferry on a rainy Monday, he rented a small wooden skiff and rowed toward the dark island rocks where the rusted lighthouse stood silent.",
+      "on_screen_text": "ROWING AWAY",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a lone person rowing a small wooden rowboat across choppy gray ocean swells toward a rocky shoreline with a tall stone tower"
+    },
+    {
+      "narration": "He carried a heavy toolbox up the spiral stone stairs, greeted only by the sound of gulls and howling wind through the broken glass of the lantern room.",
+      "on_screen_text": "THE SPIRAL STAIRS",
+      "duration_hint": 13.0,
+      "visual": "interior shot looking straight up a dark spiral stone staircase inside a tall tower, a lone figure climbing with a heavy metal toolbox"
+    },
+    {
+      "narration": "With wrench and oil, he began cleaning the ancient Fresnel lens that hadn't spun in decades. Every gear he polished felt like clearing fog from his own mind.",
+      "on_screen_text": "CLEANING THE LENS",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands wiping grime off a complex glass prism lens with a clean white cloth, dramatic window light reflecting off crystal"
+    },
+    {
+      "narration": "When dusk fell, the powerful beam swept across the dark horizon once again, guiding passing ships and signaling his own quiet return to purpose.",
+      "on_screen_text": "THE BEAM RETURNS",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a tall stone lighthouse beacon flashing a bright beam of light across a dark ocean during twilight, cinematic atmosphere"
+    },
+    {
+      "narration": "If you are ready to answer the call of your own uncharted shores, follow along for more stories of personal discovery.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close-up of an old brass maritime compass resting on a wooden windowsill overlooking a calm sea at sunset"
+    }
+  ]
+}

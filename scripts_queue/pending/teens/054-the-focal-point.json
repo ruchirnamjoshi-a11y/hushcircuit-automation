@@ -1,0 +1,71 @@
+{
+  "id": "the-focal-point",
+  "title": "The Focal Point",
+  "description": "An amateur photographer learns to stop chasing perfection and capture raw, unposed emotion.",
+  "tags": [
+    "photography",
+    "art",
+    "camera",
+    "perspective",
+    "hobby"
+  ],
+  "character_reference": "a tall teenager with shaggy brown hair, wearing a utility vest with multiple pockets and a vintage film camera strapped across his chest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I spent two hours trying to capture the perfect sunset shot at the park, adjusting tripod legs until my fingers were stiff. Every photo looked like a postcard I had already seen a thousand times.",
+      "on_screen_text": "THE PURSUIT",
+      "duration_hint": 18.0,
+      "visual": "close-up of camera dials being adjusted rapidly with metallic clicks under fading daylight"
+    },
+    {
+      "narration": "Frustrated with the lack of originality, I turned my back on the golden horizon and looked at the actual people lingering around the park benches.",
+      "on_screen_text": "TURNING AROUND",
+      "duration_hint": 14.0,
+      "visual": "over-the-shoulder shot looking toward a weathered park bench beneath sprawling green oak tree branches"
+    },
+    {
+      "narration": "A stray dog had stolen someone's woolen scarf, and its owner was laughing so hard she was wiping tears away. There was no staging, no golden hour filter, just pure chaos.",
+      "on_screen_text": "THE MOMENT",
+      "duration_hint": 17.0,
+      "visual": "medium shot of a person laughing heartily while looking down toward the grass in an open park"
+    },
+    {
+      "narration": "I didn't have time to mount my tripod or check my light meter. I just lifted the camera to my eye and trusted my instincts for a split second.",
+      "on_screen_text": "SNAP",
+      "duration_hint": 15.0,
+      "visual": "close-up of hands raising a vintage camera to eye level with a quick, decisive motion"
+    },
+    {
+      "narration": "The shutter clicked just as the dog dropped the scarf back into her lap. When I checked the tiny digital screen, I knew instantly I had caught something real.",
+      "on_screen_text": "THE CAPTURE",
+      "duration_hint": 16.0,
+      "visual": "close-up of a camera screen displaying a high-contrast black and white candid photo"
+    },
+    {
+      "narration": "It wasn't a pristine landscape, but it held actual life inside the frame. The blurry edges didn't matter because the emotion came through loud and clear.",
+      "on_screen_text": "REAL LIFE",
+      "duration_hint": 15.0,
+      "visual": "close-up of vintage film negatives hanging on a clothesline to dry under soft amber darkroom lighting"
+    },
+    {
+      "narration": "Photography stopped being about technical perfection and started being about paying attention to the world happening right in front of me.",
+      "on_screen_text": "CLEAR VISION",
+      "duration_hint": 15.0,
+      "visual": "shot of a camera lens resting on a wooden table reflecting a glowing desk lamp"
+    },
+    {
+      "narration": "Perfection is overrated; the best stories are found in the messy, unscripted seconds.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 14.0,
+      "visual": "warm sunbeams cutting through a quiet, dust-filled room hitting a vintage leather camera strap"
+    },
+    {
+      "narration": "If you love finding beauty in unexpected places, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "aesthetic arrangement of stacked photography books and a ceramic coffee mug on a rustic table"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "oliver-owl-and-the-starlight-path",
+  "title": "Oliver Owl and the Starlight Path",
+  "description": "A young owlet guides his forest friends home safely using a glowing firefly lantern.",
+  "tags": [
+    "owl",
+    "night",
+    "guidance",
+    "friendship",
+    "kids"
+  ],
+  "character_reference": "a round fluffy baby owl with big golden-yellow eyes and soft grey-brown speckled feathers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Night had fallen over the whispering woods, and the trees cast long, shadowy shapes.",
+      "on_screen_text": "DEEP NIGHT",
+      "duration_hint": 10.0,
+      "visual": "perched high on a thick tree branch, large glowing eyes scanning dark forest, mystical deep blue night atmosphere"
+    },
+    {
+      "narration": "Down below, his forest friends were stuck on the path because it was too dark to see.",
+      "on_screen_text": "LOST IN THE DARK",
+      "duration_hint": 11.0,
+      "visual": "looking down anxiously from above at shadowy silhouettes of little animals hesitating on a winding forest trail"
+    },
+    {
+      "narration": "Oliver wanted to help, so he gathered a jar full of glowing fireflies to make a lantern.",
+      "on_screen_text": "A GLOWING LANTERN",
+      "duration_hint": 11.0,
+      "visual": "holding a glass jar sparkling with warm yellow bugs in his beak, determined focused expression"
+    },
+    {
+      "narration": "Flapping his wings softly, he flew down and held the bright jar ahead of them.",
+      "on_screen_text": "LEADING THE WAY",
+      "duration_hint": 10.0,
+      "visual": "hovering gently just above the ground holding lantern forward, casting a warm circle of light on the dark trail"
+    },
+    {
+      "narration": "The warm golden light illuminated every rock and root, making the path clear and safe.",
+      "on_screen_text": "SAFE AND CLEAR",
+      "duration_hint": 10.0,
+      "visual": "flying slowly ahead while looking back to check on friends, encouraging friendly facial expression"
+    },
+    {
+      "narration": "His friends smiled happily as they safely reached their cozy homes under the moonlight.",
+      "on_screen_text": "HOME SAFE",
+      "duration_hint": 10.0,
+      "visual": "landing gracefully on a wooden fence post, proud happy smile, warm glowing lights from cozy burrows behind"
+    },
+    {
+      "narration": "Oliver felt a warm glow inside knowing his small help made a big difference.",
+      "on_screen_text": "A WARM GLOW",
+      "duration_hint": 10.0,
+      "visual": "fluffing feathers happily with a contented expression, soft starlight reflecting in large golden eyes"
+    },
+    {
+      "narration": "Helping others lights up your own world too. Follow along for more bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "giving a gentle nod of the head toward camera, peaceful starry night background, magical bedtime glow"
+    }
+  ]
+}

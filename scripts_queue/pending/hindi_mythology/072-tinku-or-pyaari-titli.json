@@ -1,0 +1,64 @@
+{
+  "id": "tinku-or-pyaari-titli",
+  "title": "टिंकू और प्यारी तितली",
+  "description": "एक मेंढक और एक रंगबिरंगी तितली की अनूठी दोस्ती की प्यारी कहानी।",
+  "tags": [
+    "frog",
+    "butterfly",
+    "hindi moral story",
+    "friendship"
+  ],
+  "character_reference": "a bright green little frog with big expressive eyes and small webbed feet",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "टिंकू मेंढक कमल के पत्ते पर बैठकर रोज उदास रहता था क्योंकि उसके पास खेलने के लिए कोई दोस्त नहीं था।",
+      "on_screen_text": "अकेला मेंढक",
+      "duration_hint": 10.0,
+      "visual": "A bright green little frog with big expressive eyes and small webbed feet sitting alone on a broad lotus leaf, looking wistfully across a calm pond"
+    },
+    {
+      "narration": "तभी वहां एक सुनहरे पंखों वाली सुंदर तितली उड़ती हुई आई और उसके पास आकर बैठ गई।",
+      "on_screen_text": "रंगबिरंगी मेहमान",
+      "duration_hint": 10.0,
+      "visual": "A gorgeous butterfly with sparkling golden wings landing gently on the edge of the lotus leaf near the surprised frog"
+    },
+    {
+      "narration": "तितली ने कहा, क्या तुम मेरे साथ हवा में उड़ने का सपना देख सकते हो? टिंकू मुस्कुराया और बोला, मैं पानी में तैर सकता हूँ।",
+      "on_screen_text": "अद्भुत बातचीत",
+      "duration_hint": 10.0,
+      "visual": "The frog looking up cheerfully at the butterfly while water ripples gently around the lotus leaf in the warm afternoon sun"
+    },
+    {
+      "narration": "दोनों ने मिलकर एक खेल खेला। तितली पानी की सतह पर नाचती और टिंकू उसके पीछे-पीछे तैरता।",
+      "on_screen_text": "सुंदर खेल",
+      "duration_hint": 10.0,
+      "visual": "The butterfly fluttering just above the water surface while the happy frog paddles along in ripples, creating a joyful splashing motion"
+    },
+    {
+      "narration": "शाम ढलने लगी और आसमान में सुंदर रंग बिखर गए। दोनों ने एक साथ बैठकर सुंदर नज़ारा देखा।",
+      "on_screen_text": "सुहानी शाम",
+      "duration_hint": 10.0,
+      "visual": "The frog and butterfly resting side by side on a large green lily pad as a stunning orange and purple sunset reflects on the pond water"
+    },
+    {
+      "narration": "टिंकू समझ गया कि दोस्त अलग-अलग तरह के हो सकते हैं, बस दिल साफ होना चाहिए।",
+      "on_screen_text": "सच्ची दोस्ती",
+      "duration_hint": 10.0,
+      "visual": "Close-up of the frog smiling warmly with the butterfly resting gently on his head, soft bokeh lighting in the background"
+    },
+    {
+      "narration": "दोस्ती की इस खूबसूरत मिसाल से हमें प्यार का पाठ मिलता है।",
+      "on_screen_text": "प्यारा बंधन",
+      "duration_hint": 10.0,
+      "visual": "The butterfly taking a graceful flight upward as the frog waves happily with a tiny webbed hand"
+    },
+    {
+      "narration": "ऐसी ही प्यारी कहानियों के लिए हमारे चैनल को फॉलो जरूर करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "The green frog looking directly at the camera with a cheerful expression amidst glowing lily pads in the twilight pond"
+    }
+  ]
+}

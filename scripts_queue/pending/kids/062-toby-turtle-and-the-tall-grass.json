@@ -1,0 +1,65 @@
+{
+  "id": "toby-turtle-and-the-tall-grass",
+  "title": "Toby Turtle and the Tall Grass",
+  "description": "A tiny turtle feels too small to explore the meadow until he finds a clever way to see over the grass.",
+  "tags": [
+    "turtle",
+    "meadow",
+    "growth",
+    "confidence",
+    "kids"
+  ],
+  "character_reference": "a very small emerald-green turtle with a shiny polished shell patterned in golden hexagons",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Toby loved the meadow, but the grass blades were taller than trees to a tiny turtle.",
+      "on_screen_text": "THE TALL MEADOW",
+      "duration_hint": 10.0,
+      "visual": "ground-level shot surrounded by giant vertical green blades of grass, looking up with a slightly overwhelmed expression, bright daytime sunlight filtering down"
+    },
+    {
+      "narration": "Whenever he tried to look ahead, all he could see was a wall of green. He felt so tiny and left behind.",
+      "on_screen_text": "A WALL OF GREEN",
+      "duration_hint": 12.0,
+      "visual": "front view pressing nose against thick grassy stalk, drooping shoulders, long neck stretched upward trying to peer past the stems"
+    },
+    {
+      "narration": "His friend Pip the bird landed nearby. Pip suggested they find a higher spot to get a better view.",
+      "on_screen_text": "A HELPFUL FRIEND",
+      "duration_hint": 11.0,
+      "visual": "looking down at small friendly blue bird perched on a smooth stone, attentive listening pose, head tilted sideways in curiosity"
+    },
+    {
+      "narration": "Toby spotted a smooth, fallen log resting on a gentle slope. That looked like the perfect climbing spot.",
+      "on_screen_text": "THE FALLEN LOG",
+      "duration_hint": 10.0,
+      "visual": "pointing short green flipper toward a weathered brown log covered in soft moss, determined facial expression, sunny woodland clearing"
+    },
+    {
+      "narration": "With slow and steady steps, Toby scrambled up the mossy bark. Up and up he climbed.",
+      "on_screen_text": "SLOW AND STEADY",
+      "duration_hint": 9.0,
+      "visual": "mid-climb action shot scrambling over textured green moss, focused eyes looking upward, gritty detailed tree bark surface"
+    },
+    {
+      "narration": "At the top, the whole world opened up. He could see sparkling streams and colorful wildflowers stretching for miles.",
+      "on_screen_text": "A WONDERFUL VIEW",
+      "duration_hint": 12.0,
+      "visual": "standing proudly atop the log, front flippers resting on shell edge, wide-eyed look of wonder at a breathtaking colorful landscape panorama"
+    },
+    {
+      "narration": "Toby smiled, learning that you do not need to be big to see amazing things.",
+      "on_screen_text": "BEING SMALL",
+      "duration_hint": 9.0,
+      "visual": "happy cheerful smile looking directly forward, relaxed posture on elevated wooden surface, warm golden hour sunbeams casting gentle highlights"
+    },
+    {
+      "narration": "Sometimes all you need is a new perspective. Follow along for more bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "nodding head affirmatively while waving one flipper, soft blurred meadow background, welcoming evening twilight colors"
+    }
+  ]
+}

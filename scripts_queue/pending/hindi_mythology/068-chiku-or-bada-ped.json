@@ -1,0 +1,64 @@
+{
+  "id": "chiku-or-bada-ped",
+  "title": "चिक्कू और बड़ा पेड़",
+  "description": "एक छोटे से गिलहरी की कहानी जो एक बड़े पेड़ पर चढ़ने की कोशिश करता है और अपनी मेहनत से सीखता है।",
+  "tags": [
+    "kids stories",
+    "hindi stories",
+    "moral story",
+    "animals"
+  ],
+  "character_reference": "a small fluffy brown squirrel with bright amber eyes and a bushy tail",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "चिक्कू एक छोटा सा गिलहरी था जो जंगल के सबसे ऊंचे पेड़ को रोज़ देखता था। वह सोचता था कि क्या वह कभी इस विशाल पेड़ की चोटी तक पहुँच पाएगा?",
+      "on_screen_text": "बड़ा सपना",
+      "duration_hint": 10.0,
+      "visual": "A small fluffy brown squirrel with bright amber eyes and a bushy tail looking up in awe at a gigantic ancient tree stretching into a cloudy sky low angle shot forest background"
+    },
+    {
+      "narration": "अगली सुबह, चिक्कू ने हिम्मत जुटाई और पेड़ के तने पर अपने छोटे कदम रखे। छाल खुरदरी थी और चढ़ाई बहुत कठिन लग रही थी।",
+      "on_screen_text": "पहली कोशिश",
+      "duration_hint": 10.0,
+      "visual": "Close-up action shot of the squirrel gripping rough tree bark with tiny paws, straining upward with a determined expression, dappled morning sunlight filtering through dense leaves"
+    },
+    {
+      "narration": "थोड़ा ऊपर जाते ही उसका पैर फिसल गया और वह एक नीची डाली पर आ गिरा। उसे बहुत चोट लगी और उसने हार मानने की सोची।",
+      "on_screen_text": "पहली असफलता",
+      "duration_hint": 10.0,
+      "visual": "The squirrel sitting dejectedly on a lower branch rubbing its tiny knee, looking down with a sad face, soft shadows surrounding the gloomy forest floor below"
+    },
+    {
+      "narration": "तभी एक बूढ़ी चिड़िया ने उसे देखा और कहा, बेटा, हर महान काम में मुश्किलें आती हैं, तुम्हें बस दोबारा कोशिश करनी होगी।",
+      "on_screen_text": "समझदारी की बात",
+      "duration_hint": 10.0,
+      "visual": "A wise old sparrow perched on a nearby twig speaking gently to the sad squirrel, warm golden light highlighting their feathers against a blurry green forest canopy"
+    },
+    {
+      "narration": "चिक्कू ने गहरी सांस ली और अपने छोटे पंजों को फिर से मजबूत किया। इस बार उसने जल्दीबाज़ी न करने का फैसला किया।",
+      "on_screen_text": "नई शुरुआत",
+      "duration_hint": 10.0,
+      "visual": "The squirrel closing its eyes in deep concentration, taking a steady breath while gripping the bark firmly, bright afternoon sunlight illuminating its determined face"
+    },
+    {
+      "narration": "वह एक-एक डाल पर संभलकर चढ़ने लगा। उसने बादलों को अपने करीब आते देखा और उसके दिल में एक नई खुशी दौड़ गई।",
+      "on_screen_text": "ऊपर की ओर",
+      "duration_hint": 10.0,
+      "visual": "Medium shot of the squirrel climbing skillfully past green mossy branches, vibrant blue sky peeking through the canopy, sense of upward motion"
+    },
+    {
+      "narration": "आखिरकार, चिक्कू सबसे ऊंची डाली पर पहुँच गया। वहाँ से पूरा जंगल कितना सुंदर और हरा-भरा दिखाई दे रहा था।",
+      "on_screen_text": "मंजिल",
+      "duration_hint": 10.0,
+      "visual": "The squirrel standing triumphantly on the highest swaying branch, paws raised slightly, looking out over a vast and beautiful sunlit green forest stretching to the horizon"
+    },
+    {
+      "narration": "चिक्कू ने सीख लिया कि मेहनत और पक्के इरादे से हर मुश्किल को हराया जा सकता है। ऐसी और मजेदार कहानियों के लिए चैनल को फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "The happy squirrel resting comfortably among green leaves, smiling brightly toward the camera, warm golden hour sunset casting a peaceful glow over the scene"
+    }
+  ]
+}

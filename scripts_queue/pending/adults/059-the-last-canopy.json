@@ -1,0 +1,59 @@
+{
+  "id": "the-last-canopy",
+  "title": "The Last Canopy",
+  "description": "An aging horticulturist decides to gift her entire rare botanical collection to the community instead of selling it to developers.",
+  "tags": [
+    "nature",
+    "plants",
+    "legacy",
+    "generosity",
+    "midlife"
+  ],
+  "character_reference": "a woman in her late fifties with curly silver hair tied back in a messy bun, wearing a faded green canvas apron over a wool sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty years, Elena tended her greenhouse as a private sanctuary away from the noise of the city. Now, the developers' lucrative offers were piling up higher than her tallest ferns.",
+      "on_screen_text": "THE PRIVATE SANCTUARY",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a person gently touching the vibrant green frond of a giant fern inside a sunlit greenhouse filled with potted plants"
+    },
+    {
+      "narration": "Each rare orchid and heirloom succulent held a memory of a lost season or a quiet triumph. Selling them off would mean a comfortable retirement, but a silent greenhouse.",
+      "on_screen_text": "MEMORIES IN GREEN",
+      "duration_hint": 13.0,
+      "visual": "close-up of weathered hands carefully adjusting a small terracotta pot containing a delicate blooming orchid on a slatted wooden bench"
+    },
+    {
+      "narration": "She made her choice on a crisp Tuesday morning, pinning handwritten notes to the front gates instead of a real estate sign. The collection was going to the local schools and neighborhoods.",
+      "on_screen_text": "THE HANDWRITTEN NOTE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a hand using a wooden clothespin to attach a crisp paper note onto a rustic wire mesh garden gate, bright daylight"
+    },
+    {
+      "narration": "Children and teachers arrived by afternoon, their eyes wide with wonder at the jungle she had cultivated in secret. The greenhouse filled with the sound of genuine laughter.",
+      "on_screen_text": "ARRIVAL OF VISITORS",
+      "duration_hint": 13.0,
+      "visual": "wide angle shot of diverse people walking down a narrow greenhouse aisle between towering tropical plants, dappled sunbeams filtering through glass panes"
+    },
+    {
+      "narration": "She handed over her favorite decades-old jade plant to a young biology teacher with trembling hands. Letting go felt less like a loss and more like planting seeds in fertile ground.",
+      "on_screen_text": "HANDING OVER ROOTS",
+      "duration_hint": 13.0,
+      "visual": "two-person close-up focusing on the transfer of a heavy clay pot from one pair of hands to another, warm and emotional expression"
+    },
+    {
+      "narration": "By evening, the benches were half empty, but her heart had never felt fuller. True wealth is measured by what you scatter to the winds, not what you hoard behind locked doors.",
+      "on_screen_text": "A LIGHTER ROOM",
+      "duration_hint": 14.0,
+      "visual": "interior view of a partially cleared greenhouse bench casting long shadows in the fading golden hour light, peaceful atmosphere"
+    },
+    {
+      "narration": "If you have ever wondered how to leave a lasting mark on your world, follow along for more stories of profound everyday generosity.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a watering can resting on damp wooden floorboards next to a fallen green leaf, soft cinematic lighting"
+    }
+  ]
+}

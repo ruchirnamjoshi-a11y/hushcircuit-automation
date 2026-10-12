@@ -1,0 +1,59 @@
+{
+  "id": "the-clay-hearth",
+  "title": "The Clay Hearth",
+  "description": "A potter breaks her most prized ceramic vessel to build a community kiln for aspiring neighborhood artists.",
+  "tags": [
+    "art",
+    "pottery",
+    "sharing",
+    "community",
+    "midlife"
+  ],
+  "character_reference": "a woman in her late forties with dust-dusted dark hair pulled back with a wooden stick, wearing an indigo linen tunic smeared with terracotta clay",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Clara spent twenty years perfecting her master vase, locking it away in a glass display case as the pinnacle of her solitary career as an elite ceramicist.",
+      "on_screen_text": "THE MASTER VASE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a flawless ceramic vase sitting inside a softly lit glass display cabinet, museum-style spotlighting against a dark interior"
+    },
+    {
+      "narration": "Surrounded by shelves of unsold perfection, she realized her isolation had turned her art cold. The studio was a museum of her own ego rather than a creative home.",
+      "on_screen_text": "COLD PERFECTION",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a person looking around a silent, overly tidy studio filled with endless rows of pristine ceramic sculptures on wooden shelves"
+    },
+    {
+      "narration": "With a steady breath, she took a wooden mallet and shattered her prized vessel into a hundred pieces. The sound echoed sharply in the quiet room, breaking the spell.",
+      "on_screen_text": "BREAKING THE MOLD",
+      "duration_hint": 14.0,
+      "visual": "action shot of a wooden mallet striking a ceramic surface, shards of clay flying outward in mid-air, dynamic motion blur"
+    },
+    {
+      "narration": "She gathered the broken shards and mixed them into fresh clay to build a massive community kiln in the center of her studio floor, open to anyone who wanted to learn.",
+      "on_screen_text": "BUILDING THE KILN",
+      "duration_hint": 14.0,
+      "visual": "close-up of hands pressing wet gray clay bricks together to build a large outdoor-style kiln oven inside a rustic indoor studio space"
+    },
+    {
+      "narration": "Neighbors began wandering in, hesitant at first, then eager to get their hands dirty on the spinning wheels. The studio transformed from a silent vault into a noisy hive.",
+      "on_screen_text": "THE NOISY HIVE",
+      "duration_hint": 14.0,
+      "visual": "wide shot of multiple people working at pottery wheels across a bright studio, laughing and sharing tools in natural daylight"
+    },
+    {
+      "narration": "The new kiln fired up for the first time, glowing with intense orange heat as dozens of amateur pieces baked inside together. Letting go of perfection created something infinitely better.",
+      "on_screen_text": "FIRST FIRING",
+      "duration_hint": 14.0,
+      "visual": "close-up of glowing red-hot fire chambers inside a brick kiln, casting warm flickering light across focused faces in a dim room"
+    },
+    {
+      "narration": "If you know that true beauty comes from shared imperfection and community, follow along for more stories of creative renewal.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a potter's hands shaping wet brown clay on a spinning wheel with water droplets catching the studio light"
+    }
+  ]
+}

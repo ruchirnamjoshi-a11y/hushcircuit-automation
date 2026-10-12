@@ -1,0 +1,59 @@
+{
+  "id": "the-cobbled-path",
+  "title": "The Cobbled Path",
+  "description": "A retired shoemaker returns to his workshop to mend boots for free for those who cannot afford new ones.",
+  "tags": [
+    "craftsmanship",
+    "community",
+    "retirement",
+    "purpose",
+    "kindness"
+  ],
+  "character_reference": "an older man with gentle crinkled eyes, wearing a dark leather apron over a flannel shirt and holding a curved cobbler's awl",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Thomas locked his shoe repair shop for the final time three years ago, exhausted from decades of sore joints and vanishing customers in a disposable culture.",
+      "on_screen_text": "THE FINAL LOCK",
+      "duration_hint": 13.0,
+      "visual": "close-up of a brass key turning inside an old mortise lock on a heavy wooden door, late afternoon sunlight casting long shadows"
+    },
+    {
+      "narration": "Yet retirement felt less like rest and more like a slow erosion of purpose. His hands still remembered the curve of a well-worn heel and the smell of beeswax.",
+      "on_screen_text": "RESTLESS HANDS",
+      "duration_hint": 13.0,
+      "visual": "medium close-up of a person sitting in a quiet armchair, staring down at their own calloused hands with a thoughtful, distant expression"
+    },
+    {
+      "narration": "He unlocked the shop again, turning the sign to read 'Repairs Free of Charge.' He didn't need the income anymore; he just needed a reason to wake up before dawn.",
+      "on_screen_text": "A NEW SIGN",
+      "duration_hint": 14.0,
+      "visual": "close-up of a hand flipping a hand-painted wooden shop sign from closed to open, warm interior lighting reflecting on the glass"
+    },
+    {
+      "narration": "A young delivery driver walked in with a pair of work boots nearly split apart at the soles. Thomas smiled, pulled up his heavy leather stool, and got to work.",
+      "on_screen_text": "THE FIRST PAIR",
+      "duration_hint": 13.0,
+      "visual": "medium shot of an older artisan examining a heavily worn leather work boot handed to him across a wooden counter, warm workshop setting"
+    },
+    {
+      "narration": "The rhythmic pounding of the cobbler's hammer echoed off walls that had witnessed a lifetime of honest labor. Every stitch was an act of quiet restoration.",
+      "on_screen_text": "STITCHING SOLES",
+      "duration_hint": 13.0,
+      "visual": "close-up of a curved needle pulling waxed thread tightly through thick leather soles on a wooden last, dramatic side lighting"
+    },
+    {
+      "narration": "When the driver saw the repaired boots looking nearly new, his stunned gratitude spoke volumes. True wealth isn't what you accumulate, but what you repair for others.",
+      "on_screen_text": "STUNNED GRATITUDE",
+      "duration_hint": 13.0,
+      "visual": "medium close-up of a pair of hands holding up freshly mended leather boots with a satisfied, proud smile just out of frame"
+    },
+    {
+      "narration": "If you believe that small acts of everyday service can mend the fabric of a community, follow along for more inspiring stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a small wooden spool of thick waxed brown thread resting beside a pair of brass shears on a rustic workbench"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "clara-cat-and-the-lost-yarn",
+  "title": "Clara Cat and the Lost Yarn",
+  "description": "A playful kitten learns to clean up her toys after losing her favorite ball of yarn.",
+  "tags": [
+    "kitten",
+    "play",
+    "responsibility",
+    "bedtime",
+    "story"
+  ],
+  "character_reference": "a fluffy white kitten with soft grey tabby patches and bright turquoise eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Clara had the bounceiest ball of purple yarn in the whole house, but she left it hiding somewhere.",
+      "on_screen_text": "THE MISSING YARN",
+      "duration_hint": 11.0,
+      "visual": "puzzled sitting posture in messy playroom, scratching behind fluffy ear with hind paw, looking around with confused wide turquoise eyes"
+    },
+    {
+      "narration": "She searched under the sofa pillows, but found only dusty old blocks and a stray feather.",
+      "on_screen_text": "SEARCHING AROUND",
+      "duration_hint": 10.0,
+      "visual": "peering head first underneath a cozy living room sofa, twitching whiskers, dusty floorboards, soft indoor lighting"
+    },
+    {
+      "narration": "Next, she checked behind the rocking chair. Still no purple ball to be seen anywhere.",
+      "on_screen_text": "BEHIND THE CHAIR",
+      "duration_hint": 10.0,
+      "visual": "walking dejectedly past wooden chair legs, drooping tail with a curved tip, searching expression, warm domestic interior"
+    },
+    {
+      "narration": "Realizing her room was far too messy, Clara decided to tidy up every single toy she owned.",
+      "on_screen_text": "TIME TO TIDY",
+      "duration_hint": 11.0,
+      "visual": "determined facial expression, pushing toy blocks into a wooden basket with paws, active playful posture on a soft rug"
+    },
+    {
+      "narration": "As she rolled away a stack of pillows, a bright flash of purple appeared in the corner.",
+      "on_screen_text": "A BRIGHT FLASH",
+      "duration_hint": 10.0,
+      "visual": "eyes widening in sudden joyful surprise, reaching out one paw toward a corner behind a cushion, cozy bedroom setting"
+    },
+    {
+      "narration": "There was her favorite yarn, resting safely right where she had accidentally kicked it earlier.",
+      "on_screen_text": "FOUND AT LAST",
+      "duration_hint": 10.0,
+      "visual": "happily hugging a round ball of purple yarn against chest, closed-eye joyful smile, soft warm indoor lighting"
+    },
+    {
+      "narration": "Clara learned that keeping things neat makes finding your favorite treasures so much easier.",
+      "on_screen_text": "NEAT AND TIDY",
+      "duration_hint": 10.0,
+      "visual": "sitting proudly beside a perfectly organized toy basket, contented expression, clean tidy rug background"
+    },
+    {
+      "narration": "A tidy space brings peace of mind. Follow along for more bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "waving one paw gently toward camera, sleepy relaxed expression, soft evening lamplight casting cozy shadows"
+    }
+  ]
+}

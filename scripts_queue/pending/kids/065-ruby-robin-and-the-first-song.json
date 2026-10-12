@@ -1,0 +1,65 @@
+{
+  "id": "ruby-robin-and-the-first-song",
+  "title": "Ruby Robin and the First Song",
+  "description": "A young bird overcomes stage fright to sing her very first morning song to the forest.",
+  "tags": [
+    "bird",
+    "singing",
+    "courage",
+    "morning",
+    "tale"
+  ],
+  "character_reference": "a plump fluffy bird with rust-red chest feathers and bright intelligent black eyes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The morning sun was rising, and all the forest birds were tuning up their voices.",
+      "on_screen_text": "MORNING SONG",
+      "duration_hint": 10.0,
+      "visual": "perched on a thin blossoming branch, looking out at a pink dawn sky, feathers fluffed against the morning chill"
+    },
+    {
+      "narration": "It was Ruby's turn to sing the sunrise melody, but her throat felt terribly dry and tight.",
+      "on_screen_text": "STAGE FRIGHT",
+      "duration_hint": 11.0,
+      "visual": "clutching branch tightly with tiny claws, nervous wide eyes, beak clamped shut in worry, soft misty sunrise background"
+    },
+    {
+      "narration": "She hid her head under her wing, wishing she could just disappear into the leaves.",
+      "on_screen_text": "HIDING AWAY",
+      "duration_hint": 10.0,
+      "visual": "tucking head completely beneath wing feathers, huddled posture on branch, dejected and shy mood"
+    },
+    {
+      "narration": "An old wise owl nearby winked gently and told her that every voice is special.",
+      "on_screen_text": "A WISE WINK",
+      "duration_hint": 10.0,
+      "visual": "turning head to look at a gentle feathered mentor on a higher branch, reassuring friendly expression"
+    },
+    {
+      "narration": "Ruby took a deep breath, puffed out her red chest, and opened her beak wide.",
+      "on_screen_text": "A DEEP BREATH",
+      "duration_hint": 10.0,
+      "visual": "inspirational pose inhaling deeply with closed eyes, puffed-out chest feathers, golden morning rays hitting plumage"
+    },
+    {
+      "narration": "A clear, beautiful tune rang out through the trees, filling the quiet woods with music.",
+      "on_screen_text": "THE SWEET MELODY",
+      "duration_hint": 11.0,
+      "visual": "singing with beak wide open toward the sky, joyful expression, musical notes floating in soft morning air"
+    },
+    {
+      "narration": "All the forest animals cheered for her wonderful song, making her heart glow with pride.",
+      "on_screen_text": "CHEERS AND SMILES",
+      "duration_hint": 11.0,
+      "visual": "happy proud posture looking down with a cheerful chirp, glowing warm sunlight, serene woodland backdrop"
+    },
+    {
+      "narration": "Your voice matters just the way it is. Follow along for more bedtime stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "bowing politely with folded wings, gentle smiling beak, sparkling morning dew drops on leaves"
+    }
+  ]
+}

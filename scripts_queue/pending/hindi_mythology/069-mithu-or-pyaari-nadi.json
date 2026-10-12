@@ -1,0 +1,64 @@
+{
+  "id": "mithu-or-pyaari-nadi",
+  "title": "मीठू और प्यारी नदी",
+  "description": "एक नन्हे तोते की यात्रा जो अपनी प्यासी बस्ती के लिए पानी की तलाश में निकलता है।",
+  "tags": [
+    "hindi kahani",
+    "birds",
+    "river",
+    "kids moral"
+  ],
+  "character_reference": "a bright green parrot with a vibrant red beak and blue tail feathers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "गर्मियों के दिनों में जंगल का तालाब पूरी तरह सूख गया था। सभी जानवर पानी की एक-एक बूंद के लिए परेशान हो रहे थे।",
+      "on_screen_text": "सूखा तालाब",
+      "duration_hint": 10.0,
+      "visual": "A bright green parrot with a vibrant red beak and blue tail feathers looking worried over a cracked dry mud bed where a pond used to be under a harsh scorching sun"
+    },
+    {
+      "narration": "नन्हे तोते मीठू ने तय किया कि वह उड़कर जंगल के पार बहने वाली गुप्त नदी को ढूंढकर लाएगा।",
+      "on_screen_text": "बहादुर तोता",
+      "duration_hint": 10.0,
+      "visual": "The parrot spreading its colorful wings, launching off a dry tree branch into the bright open sky with a determined look on its face"
+    },
+    {
+      "narration": "मीठू ने लंबी उड़ान भरी और सूखी पहाड़ियों को पार किया। तेज धूप से उसके पंख थकने लगे थे।",
+      "on_screen_text": "लंबी यात्रा",
+      "duration_hint": 10.0,
+      "visual": "The parrot flying steadily over barren rocky hills under a blazing yellow sun, sweat droplets or tired posture shown through intense concentration"
+    },
+    {
+      "narration": "अचानक उसे दूर हरी-भरी घास और चमकता हुआ नीला पानी दिखाई दिया। उसकी खुशी का कोई ठिकाना नहीं रहा।",
+      "on_screen_text": "खुशी की किरण",
+      "duration_hint": 10.0,
+      "visual": "The parrot's eyes widening in joyful surprise as it spots a sparkling blue river winding through a lush green valley far below"
+    },
+    {
+      "narration": "वह तेजी से नीचे उतरा और नदी के ठंडे पानी में अपनी प्यास बुझाई। पानी अमृत जैसा मीठा था।",
+      "on_screen_text": "ठंडा पानी",
+      "duration_hint": 10.0,
+      "visual": "Close-up of the parrot dipping its red beak happily into sparkling clear river water, ripples spreading outward, lush green ferns along the bank"
+    },
+    {
+      "narration": "मीठू ने अपनी चोंच में ताजे पानी की बूंद उठाई और अपने सभी साथियों को बुलाने के लिए वापस उड़ चला।",
+      "on_screen_text": "साथियों की मदद",
+      "duration_hint": 10.0,
+      "visual": "The parrot flying upward from the river bank holding a tiny drop of water, banking sharply to return toward its home forest"
+    },
+    {
+      "narration": "उसने सभी जानवरों को नदी का रास्ता दिखाया और सबने मिलकर अपनी प्यास बुझाई। एकता में ही असली ताकत है।",
+      "on_screen_text": "सबकी जीत",
+      "duration_hint": 10.0,
+      "visual": "A group of cheerful forest animals drinking happily together by the flowing river, bright friendly atmosphere with soft afternoon light"
+    },
+    {
+      "narration": "दूसरों की मदद करने से मिलने वाली खुशी सबसे बड़ी होती है। ऐसी प्यारी कहानियों के लिए हमें फॉलो करें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "The green parrot perched on a flowering branch surrounded by happy butterflies, looking cheerfully at the viewer"
+    }
+  ]
+}

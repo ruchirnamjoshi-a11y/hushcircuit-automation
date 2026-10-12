@@ -1,0 +1,64 @@
+{
+  "id": "rozi-or-sona-phool",
+  "title": "रोजी और सोना फूल",
+  "description": "एक छोटी खरगोश की कहानी जो एक अनोखे सुनहरे फूल की देखभाल करती है।",
+  "tags": [
+    "rabbit",
+    "golden flower",
+    "hindi stories",
+    "nature"
+  ],
+  "character_reference": "a snowy white bunny with long floppy ears and a pink button nose",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "रोजी खरगोश को अपने छोटे से बगीचे में पौधे लगाना बहुत पसंद था। एक दिन उसे ज़मीन में एक अनोखा बीज मिला।",
+      "on_screen_text": "अनोखा बीज",
+      "duration_hint": 10.0,
+      "visual": "A snowy white bunny with long floppy ears and a pink button nose happily digging a small hole in rich dark garden soil with her paws"
+    },
+    {
+      "narration": "उसने बीज को मिट्टी में दबाया और रोज सुबह उसमें प्यार से पानी डाला। वह उसकी देखभाल बहुत मन से करती थी।",
+      "on_screen_text": "प्यार से सींचा",
+      "duration_hint": 10.0,
+      "visual": "The bunny holding a tiny watering can, sprinkling gentle drops of water onto a patch of fresh soil where a tiny green sprout is emerging"
+    },
+    {
+      "narration": "कुछ ही दिनों में उस पौधे से एक अद्भुत सुनहरे रंग का फूल खिला जो चारों तरफ चमक रहा था।",
+      "on_screen_text": "सुनहरा फूल",
+      "duration_hint": 10.0,
+      "visual": "The bunny looking in absolute amazement at a magnificent glowing golden flower blooming proudly under the bright morning sun"
+    },
+    {
+      "narration": "जंगल के सारे जानवर उस सुंदर फूल को देखने आए। रोजी ने सबको बताया कि यह सब सब्र और प्यार का नतीजा है।",
+      "on_screen_text": "सबकी भीड़",
+      "duration_hint": 10.0,
+      "visual": "Several curious forest animals gathered around the glowing golden flower while the happy white bunny stands proudly beside it"
+    },
+    {
+      "narration": "रात को वह फूल और भी तेज चमकने लगा और उसने पूरे बगीचे को रोशनी से जगमगा दिया।",
+      "on_screen_text": "जादुई रोशनी",
+      "duration_hint": 10.0,
+      "visual": "The golden flower radiating a soft warm magical glow in the dark garden, casting gentle light on the smiling bunny's face"
+    },
+    {
+      "narration": "रोजी समझ गई कि मेहनत और देखभाल कभी बेकार नहीं जाती। उसका फल हमेशा मीठा होता है।",
+      "on_screen_text": "मीठा फल",
+      "duration_hint": 10.0,
+      "visual": "Close-up of the bunny gently touching one golden petal with her nose, surrounded by floating magical sparkles"
+    },
+    {
+      "narration": "प्रकृति की हर चीज़ में कोई न कोई जादू छिपा होता है।",
+      "on_screen_text": "कुदरत का जादू",
+      "duration_hint": 10.0,
+      "visual": "The bunny sitting peacefully among glowing flowers under a starry night sky, looking serene and happy"
+    },
+    {
+      "narration": "ऐसी ही अद्भुत कहानियों के लिए चैनल को फॉलो करना न भूलें।",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "The white bunny waving happily toward the viewer with her floppy ears bouncing in the gentle morning breeze"
+    }
+  ]
+}
