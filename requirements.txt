@@ -1,4 +1,9 @@
-edge-tts==7.2.8
+# 7.2.8 started getting a real, reproducible 403 WSServerHandshakeError
+# from Microsoft's speech endpoint starting 2026-10-14 (every story-track
+# run) -- Microsoft rotated its Sec-MS-GEC trusted-client-token scheme, and
+# 7.3.1 is the first release with the matching handshake fix. Verified
+# live against the real Microsoft endpoint before pinning.
+edge-tts==7.3.1
 requests==2.32.3
 google-api-python-client==2.149.0
 google-auth-oauthlib==1.2.1
@@ -9,3 +14,11 @@ pytest==8.3.3
 playwright==1.62.0
 gradio_client==2.6.0
 faster-whisper==1.2.1
+# faster-whisper declares "av>=11" with no upper bound, so a fresh CI
+# install silently picks up whatever's newest -- PyAV 19.0.0 (2026-10)
+# removed the metadata_errors kwarg that faster-whisper 1.2.1's
+# decode_audio() still passes to av.open(), breaking every manifestation-
+# track run with "TypeError: open() got an unexpected keyword argument
+# 'metadata_errors'" from 2026-10-03 onward. Pinned to the last version
+# before that removal (confirmed working).
+av==18.1.0
