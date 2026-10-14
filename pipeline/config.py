@@ -115,33 +115,6 @@ class Track:
 CATEGORY_ENTERTAINMENT = "24"
 
 TRACKS: dict[str, Track] = {
-    "kids": Track(
-        key="kids",
-        label="Kids",
-        voice="en-GB-SoniaNeural",
-        image_style_prefix=(
-            "Children's picture book illustration with absolutely no text, "
-            "no letters, no words anywhere in the image. A single warm, "
-            "soft watercolor-style illustration of "
-        ),
-        image_style_suffix=(
-            ", gentle pastel color palette, whimsical storybook art style, "
-            "soft rounded shapes, cheerful and cozy mood, isolated scene on "
-            "simple background"
-        ),
-        made_for_kids=True,
-        category_id=CATEGORY_ENTERTAINMENT,
-        story_guidance=(
-            "Gentle bedtime/moral stories for young children, ages roughly "
-            "4-9. A small, relatable animal or child protagonist faces a "
-            "simple, low-stakes problem (fear, feeling small/left out, a "
-            "mistake) and resolves it through kindness, courage, or a "
-            "small act of help — never violence or real danger. Warm, "
-            "simple language. End on a clear, comforting moral."
-        ),
-        extra_tags=["bedtime story", "kids story", "story for kids"],
-        produce_long_form=True,
-    ),
     "teens": Track(
         key="teens",
         label="Teens & Young Adults",
@@ -235,64 +208,6 @@ TRACKS: dict[str, Track] = {
         ),
         extra_tags=["short story", "women's story", "inspiring story"],
         # No YOUTUBE_TOKEN_B64_WOMEN secret set yet -- see teens' comment above.
-        paused=False,
-    ),
-    "hindi_mythology": Track(
-        # Key/secret filenames kept as "hindi_mythology" (retiring the old
-        # mythology content, not the channel/OAuth token — see README) to
-        # avoid renaming the GitHub Actions secret and local token file.
-        # This channel now posts the Hindi-language version of the "kids"
-        # track's stories instead of Indian mythology episodes.
-        key="hindi_mythology",
-        label="Kids Stories (Hindi)",
-        voice="hi-IN-MadhurNeural",
-        # gemini-2.5-flash-preview-tts and gemini-3.1-flash-tts-preview both
-        # turned out to have a hard 10 requests/DAY free-tier cap (confirmed
-        # live) — far too tight for a 30+ scene long-form script. edge-tts's
-        # Hindi voice has no such limit. tts_voices kept here, dormant, in
-        # case a model with a workable daily quota shows up.
-        tts_voices=["Kore", "Puck", "Aoede"],
-        # Unused while shares_images_with="kids" reuses the English track's
-        # already-generated images (see run_daily.py) — kept matching kids'
-        # style as a fallback for the rare case that reuse isn't available.
-        image_style_prefix=(
-            "Children's picture book illustration with absolutely no text, "
-            "no letters, no words anywhere in the image. A single warm, "
-            "soft watercolor-style illustration of "
-        ),
-        image_style_suffix=(
-            ", gentle pastel color palette, whimsical storybook art style, "
-            "soft rounded shapes, cheerful and cozy mood, isolated scene on "
-            "simple background"
-        ),
-        made_for_kids=True,
-        category_id=CATEGORY_ENTERTAINMENT,
-        story_guidance=(
-            "The Hindi-language version of a 'kids' track story — same "
-            "plot, characters, and moral, translated (not a stiff "
-            "word-for-word translation — natural spoken Hindi) into "
-            "Devanagari script for title, description, tags, and every "
-            "scene's narration/on_screen_text. `visual` fields must stay "
-            "IDENTICAL to the English script's (word-for-word) so the "
-            "shared illustrations still match this scene's narration."
-        ),
-        extra_tags=["hindi story", "kids story", "bedtime story", "moral story in hindi"],
-        # No Devanagari-glyph caption font wired up yet — video + audio
-        # only, rather than rendering missing-glyph boxes over the video.
-        burn_captions=False,
-        shares_images_with="kids",
-        shares_youtube_channel_with="kids",
-        produce_long_form=True,
-        # Resumed 2026-08-19: was paused because its SLOW path (independently
-        # regenerating a whole story's scene images when the sibling "kids"
-        # script wasn't produced in the same run) starved math_explainers of
-        # CI time. The actual fix isn't pausing the track — it's making sure
-        # real paired scripts (source_script_id matching a currently-pending
-        # "kids" script, scenes[].visual word-for-word identical) are queued
-        # so the fast/free shared-image path applies instead of the fallback.
-        # Backfilled scripts_queue/pending/hindi_mythology/ to match kids'
-        # 009-015 before flipping this back — watch the next few CI runs to
-        # confirm math_explainers isn't starved again.
         paused=False,
     ),
     "hero_saga": Track(

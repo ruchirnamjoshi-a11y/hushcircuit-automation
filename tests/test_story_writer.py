@@ -1,3 +1,4 @@
+import dataclasses
 import json
 from unittest.mock import MagicMock, patch
 
@@ -11,7 +12,9 @@ from pipeline.story_writer import (
     write_stories,
 )
 
-KIDS_TRACK = TRACKS["kids"]
+# kids was retired from production (2026-09-15) and no longer exists in
+# pipeline.config.TRACKS -- built as an isolated fixture instead.
+KIDS_TRACK = dataclasses.replace(TRACKS["teens"], key="kids")
 HERO_TRACK = TRACKS["hero_saga"]
 
 VALID_STORY = {

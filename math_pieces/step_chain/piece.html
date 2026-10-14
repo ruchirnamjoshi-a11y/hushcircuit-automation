@@ -1,13 +1,13 @@
 <title>Step Chain</title>
 <style>
   :root {
-    --board: #24303d;
-    --board-2: #1c2833;
-    --chalk: #ede9df;
-    --chalk-dim: rgba(237,233,223,0.55);
-    --gold: #d9a441;
-    --coral: #e2725b;
-    --blue: #7fa6c9;
+    --board: #163329;
+    --board-2: #0e1f19;
+    --chalk: #eef2ea;
+    --chalk-dim: rgba(238, 242, 234,0.55);
+    --gold: #f2b84b;
+    --coral: #d97757;
+    --blue: #4fae8f;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -22,7 +22,7 @@
     color: var(--chalk);
   }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(238, 242, 234,0.14); border-radius: 2px; pointer-events: none; }
   .kicker {
     position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
     font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
@@ -30,7 +30,7 @@
   .replay {
     position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
     text-transform: uppercase; color: var(--chalk); background: transparent;
-    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    border: 1px solid rgba(238, 242, 234,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
     cursor: pointer; opacity: 0.7;
   }
   .replay:hover { opacity: 1; }
@@ -103,7 +103,7 @@
     ctx.clearRect(0, 0, W, H);
 
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.strokeStyle = 'rgba(42, 74, 60,0.35)';
     ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -115,7 +115,7 @@
     if (hookAlpha > 0.01) {
       ctx.save();
       ctx.globalAlpha = hookAlpha;
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#eef2ea';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.09, 56)}px ${MONO}`;
@@ -152,7 +152,7 @@
       // middle of the frame once cards spread out to fill the height.
       if (i > 0) {
         const arrowLen = 70;
-        ctx.strokeStyle = 'rgba(237,233,223,0.35)';
+        ctx.strokeStyle = 'rgba(238, 242, 234,0.35)';
         ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.moveTo(W / 2, y - 80 - arrowLen);
@@ -169,12 +169,12 @@
       // plenty of real whitespace between them, not just a few px of
       // baseline offset (a small nudge here still read as "touching" next
       // to fonts this large).
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#eef2ea';
       ctx.textAlign = 'center';
       ctx.font = `400 ${Math.min(W * 0.042, 28)}px ${SERIF}`;
       ctx.fillText(s.label, W / 2, y - 42);
 
-      ctx.fillStyle = i === stepCount - 1 ? '#d9a441' : '#7fa6c9';
+      ctx.fillStyle = i === stepCount - 1 ? '#f2b84b' : '#4fae8f';
       ctx.font = `600 ${Math.min(W * 0.075, 46)}px ${MONO}`;
       ctx.fillText(s.expr, W / 2, y + 52);
 
@@ -189,7 +189,7 @@
       ctx.save();
       ctx.globalAlpha = fEase;
       ctx.textAlign = 'center';
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#eef2ea';
       ctx.font = `500 ${Math.min(W * 0.035, 24)}px ${MONO}`;
       ctx.fillText(P.answerLabel, W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
@@ -197,7 +197,7 @@
       ctx.translate(W / 2, y + 80);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#f2b84b';
       ctx.font = `700 ${Math.min(W * 0.12, 66)}px ${MONO}`;
       ctx.fillText(P.answer, 0, 0);
       ctx.restore();
@@ -206,7 +206,7 @@
       if (P.footnote && finP > 0.75) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
-        ctx.fillStyle = '#e2725b';
+        ctx.fillStyle = '#d97757';
         ctx.font = `italic 400 ${Math.min(W * 0.022, 15)}px ${SERIF}`;
         ctx.textAlign = 'center';
         ctx.fillText(P.footnote, W / 2, y + 130);

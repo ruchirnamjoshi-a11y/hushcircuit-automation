@@ -1,13 +1,13 @@
 <title>The 9 Times Table Finger Trick</title>
 <style>
   :root {
-    --board: #24303d;
-    --board-2: #1c2833;
-    --chalk: #ede9df;
-    --chalk-dim: rgba(237,233,223,0.55);
-    --gold: #d9a441;
-    --coral: #e2725b;
-    --rule: #3a4b5c;
+    --board: #331821;
+    --board-2: #200f14;
+    --chalk: #f7eaee;
+    --chalk-dim: rgba(247, 234, 238,0.55);
+    --gold: #e8b04a;
+    --coral: #4f8fa3;
+    --rule: #4a2530;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -26,7 +26,7 @@
   .frame {
     position: absolute;
     inset: 14px;
-    border: 1px solid rgba(237,233,223,0.14);
+    border: 1px solid rgba(247, 234, 238,0.14);
     border-radius: 2px;
     pointer-events: none;
   }
@@ -66,7 +66,7 @@
     text-transform: uppercase;
     color: var(--chalk);
     background: transparent;
-    border: 1px solid rgba(237,233,223,0.4);
+    border: 1px solid rgba(247, 234, 238,0.4);
     border-radius: 3px;
     padding: 0.35rem 0.7rem;
     cursor: pointer;
@@ -163,7 +163,7 @@
     ctx.clearRect(0, 0, W, H);
 
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.strokeStyle = 'rgba(74, 37, 48,0.35)';
     ctx.lineWidth = 1;
     const step = 34;
     for (let x = (W % step) / 2; x < W; x += step) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -174,7 +174,7 @@
     if (hookAlpha > 0.01) {
       ctx.save();
       ctx.globalAlpha = hookAlpha;
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f7eaee';
       ctx.font = `600 ${Math.min(W * 0.058, 46)}px ${MONO}`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
@@ -195,12 +195,12 @@
         const x = g.left + g.gap * i + g.gap / 2;
         const isFoldTarget = n === N;
         const folded = isFoldTarget ? foldEase > 0.5 : false;
-        const color = isFoldTarget ? '#d9a441' : '#7fa6c9';
+        const color = isFoldTarget ? '#e8b04a' : '#c9506f';
         drawFinger(x, g.baseY, g.fingerW, g.fingerH, folded, Math.min(1, handsEase), color);
 
         ctx.save();
         ctx.globalAlpha = Math.min(1, handsEase);
-        ctx.fillStyle = '#ede9df';
+        ctx.fillStyle = '#f7eaee';
         ctx.font = `500 ${Math.max(10, Math.min(g.gap * 0.42, 16))}px ${MONO}`;
         ctx.textAlign = 'center';
         ctx.fillText(String(n), x, g.baseY + 22);
@@ -214,7 +214,7 @@
       const after = 10 - N;
       ctx.save();
       ctx.globalAlpha = CP.clamp01(countP * 1.6);
-      ctx.fillStyle = '#e2725b';
+      ctx.fillStyle = '#4f8fa3';
       ctx.font = `600 ${Math.min(W * 0.026, 18)}px ${MONO}`;
       ctx.textAlign = 'center';
       const beforeCx = g.left + g.gap * ((N - 1) / 2) - g.gap / 2 + g.gap / 2;
@@ -231,7 +231,7 @@
       ctx.save();
       ctx.globalAlpha = fEase;
       ctx.textAlign = 'center';
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f7eaee';
       ctx.font = `500 ${Math.min(W * 0.03, 22)}px ${MONO}`;
       ctx.fillText(`9 × ${N} =`, W / 2, H * 0.80);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
@@ -239,7 +239,7 @@
       ctx.translate(W / 2, H * 0.80 + 78);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#e8b04a';
       ctx.font = `700 ${Math.min(W * 0.1, 62)}px ${MONO}`;
       ctx.fillText(`${before}${after}`, 0, 0);
       ctx.restore();
@@ -248,7 +248,7 @@
       if (finP > 0.75) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
-        ctx.fillStyle = '#e2725b';
+        ctx.fillStyle = '#4f8fa3';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.fillText('works for any 9 × 1 through 9 × 10', W / 2, H * 0.80 + 92);
         ctx.restore();

@@ -1,41 +1,34 @@
 # Daily Stories, For Every Age
 
 Fully-free, script-driven pipeline that produces and publishes **one narrated
-story per day, per audience track** — kids, teens & young adults, adults &
-middle-aged, women, kids in Hindi, and an ongoing original superhero saga —
-each with its own voice, illustration style, and **its own YouTube
-channel**, then feeds performance data back into future content decisions.
+story per day, per audience track** — teens & young adults, adults &
+middle-aged, women, and an ongoing original superhero saga — each with its
+own voice, illustration style, and **its own YouTube channel**, then feeds
+performance data back into future content decisions. (The `kids` and
+`hindi_mythology` children's-content tracks were retired 2026-09-15 —
+config, queues, generated assets, and their YouTube tokens all removed;
+the actual published videos live on their old YouTube channel and were
+left for manual deletion there, not touched by this pipeline.)
 
-## The tracks, one channel each (except Kids/Kids-Hindi)
+## The tracks, one channel each
 
-Each track has its own OAuth token, and in the general case its own
-YouTube channel — a kids bedtime-story subscriber getting a teen breakup
-drama in their feed, and vice versa, is bad for subscriber retention and
-channel identity, so `teens`/`adults`/`women`/`hero_saga` each get a
-dedicated channel when their token is set up. **`kids` and `hindi_mythology`
-are the deliberate exception**: they authorize the same underlying YouTube
-channel, so English and Hindi kids content post side by side on one
-bilingual channel rather than two separate ones — that's fine here since
-both are the same audience (kids' stories), just two languages, not two
-different audiences the way kids vs. teens would be. See "Multi-channel
-YouTube setup" below for how each channel/token maps to a track.
+Each track has its own OAuth token and its own YouTube channel — a teen
+breakup drama landing in an unrelated audience's feed is bad for
+subscriber retention and channel identity, so `teens`/`adults`/`women`/
+`hero_saga` each get a dedicated channel when their token is set up. See
+"Multi-channel YouTube setup" below for how each channel/token maps to a
+track.
 
-One vertical (9:16) Short is produced daily per channel. Two tracks — kids
-and its Hindi variant — also produce a full-length **long-form** cut of the
-same story (`Track.produce_long_form=True`), built from the exact same
-generated scene images and narration audio at no extra image-generation
-cost, just a second ffmpeg assembly pass and upload. Both cuts stay 9:16
-(vertical long-form), not the separate 16:9 format `pipeline/assemble.py`
-still has kept-but-unused (same pattern as `pipeline/broll.py`) — see "Two
-uploads per day" below for the quota math this changes.
+One vertical (9:16) Short is produced daily per channel. `pipeline/assemble.py`
+also still has a kept-but-unused separate 16:9 long-form path (same pattern
+as `pipeline/broll.py`) — see "Two uploads per day" below for the quota math
+this changes if a track re-enables `Track.produce_long_form=True`.
 
 | Track | Voice | Illustration style | Made for kids? | Notes |
 |---|---|---|---|---|
-| **Kids** | Sonia (British, warm) | Watercolor storybook | Yes — every kids upload is flagged `selfDeclaredMadeForKids` | Standalone story per day; Short **and** long-form |
 | **Teens & young adults** | Aria (confident) | Vibrant character-focused digital art | No | Standalone story per day |
 | **Adults & middle-aged** | Guy (warm, mature) | Cinematic, painterly, reflective | No | Standalone story per day |
 | **Women** | Jenny (warm, comforting) | Elegant, soft, rose-gold | No | Standalone story per day |
-| **Kids (Hindi)** (`hindi_mythology` key/channel — see below) | Madhur (edge-tts Hindi) | Same watercolor style as Kids (shares its images) | Yes | Hindi-translated version of that day's kids story; Short **and** long-form; no captions burned in (`burn_captions=False` — see below) |
 | **Original hero saga** | Christopher (deep, dramatic) | Bold comic-book/graphic-novel | No | **Serialized** — one ongoing story, new episode each day, not standalone (see below) |
 | **Fun By Math** (`math_explainers`) | Christopher (edge-tts) | Hand-authored canvas animation — no AI images at all | No | Up to 2/day (`videos_per_day=2`); zero AI-generation cost (see below) |
 
@@ -84,48 +77,6 @@ while each story's content stays hand-written.
 `pipeline.state`'s daily-limit gate from a single boolean to a per-track
 count — sustaining 2/day still requires 2 pieces queued that day; the
 field only raises the ceiling, it doesn't create content.
-
-### Kids (Hindi) is a language variant of Kids, not its own stories
-
-The `hindi_mythology` track used to run standalone Hindi mythology
-episodes; it's now the Hindi-language version of the kids track's stories
-instead — same plot, same illustrations, translated narration — posted to
-the **same YouTube channel** as `kids` (its OAuth token authorizes that
-same channel, not a separate one — see "one channel each (except
-Kids/Kids-Hindi)" above). The track key, secret name
-(`YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY`), and local token file
-(`secrets/youtube_token_hindi_mythology.json`) were kept as-is (retiring
-the content, not the OAuth setup) rather than renamed. Old mythology
-scripts moved to `archive/hindi_mythology_scripts/`.
-
-Two fields on `Track` make the pairing work (`pipeline/config.py`,
-`run_daily.py`):
-
-- **`Track.shares_images_with = "kids"`** — instead of generating its own
-  scene illustrations, this track reuses the kids track's already-generated
-  raw images from the same `run_daily.py` invocation (matched via
-  `Script.source_script_id`, which must equal the paired English script's
-  `id`), so a second language costs zero extra Cloudflare image-generation
-  quota. If the kids script hasn't been produced yet this run (e.g. it
-  already ran earlier today, or the queues are out of sync), this track
-  falls back to generating its own images independently instead of
-  stalling — using the same `visual` text, so results should still match
-  closely even without reuse.
-- When writing a paired Hindi script: every scene's `visual` field must be
-  **word-for-word identical** to the English script's (visuals only drive
-  the image model, not what's shown/spoken), while `narration`/
-  `on_screen_text`/`title`/`description`/`tags` are translated — natural
-  spoken Hindi (Devanagari), not a stiff word-for-word translation.
-
-`Track.burn_captions=False` on this track skips the ASS caption burn-in
-entirely (video + audio only) rather than rendering Devanagari text with a
-font that only has Latin glyphs wired up. `pipeline/thumbnail.py`'s
-`draw_text` flag mirrors this for the thumbnail's title overlay. Its
-voiceover uses edge-tts's `hi-IN-MadhurNeural` — same provider as every
-other track, no Gemini TTS involved (an earlier `tts_provider="gemini"`
-attempt was reverted after hitting a hard 10-requests/day free-tier cap;
-`tts_voices` is kept, dormant, in case a model with a workable quota shows
-up later).
 
 ### The hero saga track is a serialized, ongoing story
 
@@ -176,11 +127,12 @@ billing account required anywhere:
 ### Limits worth knowing, per tool
 
 - **Cloudflare Workers AI**: 10,000 Neurons/day, account-wide (shared
-  across every track). A ~35-scene long-form kids story needs ~36 images
-  (one reference portrait + one per scene) at ~19 Neurons each ≈ 700
-  Neurons — and the Hindi variant reuses those same images at zero extra
-  cost (`Track.shares_images_with`), so pairing a second language doesn't
-  double this cost. Comfortably inside budget even with heavy iteration,
+  across every track). A ~35-scene long-form story needs ~36 images (one
+  reference portrait + one per scene) at ~19 Neurons each ≈ 700 Neurons —
+  and a track with `Track.shares_images_with` set reuses a sibling
+  track's already-generated images at zero extra cost, so pairing two
+  tracks this way doesn't double the cost. Comfortably inside budget even
+  with heavy iteration,
   but there's no way to query a reset time from the API.
   `pipeline/ai_image.py` distinguishes real rate-limiting (Cloudflare error
   429, retries with backoff) from daily quota exhaustion (error code 4006,
@@ -200,11 +152,10 @@ billing account required anywhere:
   quota bucket total regardless of how many channels or tracks are active,
   not one per channel. `videos.insert` costs 1,600 units;
   `thumbnails.set` costs 50 — a track with `Track.produce_long_form=True`
-  (kids, kids-Hindi) uploads twice a day (Short + long-form) for ~3,300
-  units each; with only those two tracks currently live, that's ~6,600
-  units/day combined, comfortable inside the shared 10,000/day. Turning on
-  more tracks (teens/adults/women/hero_saga) adds to that same shared
-  total, so recheck the math before enabling several at once. A quota
+  uploads twice a day (Short + long-form) for ~3,300 units; no track
+  currently has this enabled. Turning on more tracks
+  (teens/adults/women/hero_saga) adds to that same shared total, so
+  recheck the math before enabling several at once. A quota
   increase can be requested for free in Google Cloud Console but isn't
   instant.
 - **edge-tts**: not an official public API — it's a wrapper around
@@ -389,14 +340,13 @@ script) after a look.
         for this track. This step matters — the OAuth consent screen
         authorizes whichever channel is currently active, and there's no
         channel picker in the flow itself.
-     2. Run `python -m pipeline.upload --auth-setup --track <kids|teens|adults|women|hindi_mythology|hero_saga|math_explainers>`
+     2. Run `python -m pipeline.upload --auth-setup --track <teens|adults|women|hero_saga|math_explainers>`
         — this opens a browser consent screen and, on approval, writes
         `secrets/youtube_token_<track>.json`.
      3. Repeat for the other tracks, switching the active channel each time.
    - For GitHub Actions, base64-encode each track's token file and store it
-     as its own repo secret: `YOUTUBE_TOKEN_B64_KIDS`,
-     `YOUTUBE_TOKEN_B64_TEENS`, `YOUTUBE_TOKEN_B64_ADULTS`,
-     `YOUTUBE_TOKEN_B64_WOMEN`, `YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY`,
+     as its own repo secret: `YOUTUBE_TOKEN_B64_TEENS`,
+     `YOUTUBE_TOKEN_B64_ADULTS`, `YOUTUBE_TOKEN_B64_WOMEN`,
      `YOUTUBE_TOKEN_B64_HERO_SAGA`. Also add `CF_ACCOUNT_ID` / `CF_API_TOKEN`
      as their own repo secrets.
    - You don't have to set all of them up at once — `run_daily.py` and
@@ -445,7 +395,7 @@ spends real money — only a manual `run_daily.py` actually calls the API.
 
 ```bash
 python run_daily.py                  # runs all 4 tracks/channels, uploads as "private"
-python run_daily.py --track kids      # run just one track (needs that channel's token)
+python run_daily.py --track teens     # run just one track (needs that channel's token)
 python run_daily.py --dry-run          # does everything except the real YouTube upload
                                          # (works even with no channels set up yet)
 ```

@@ -1,4 +1,5 @@
 import base64
+import dataclasses
 from io import BytesIO
 from unittest.mock import MagicMock, patch
 
@@ -9,7 +10,9 @@ from pipeline.ai_image import build_prompt, fit_scene_image, generate_scene_imag
 from pipeline.config import TRACKS
 from pipeline.scripts import Scene
 
-KIDS_TRACK = TRACKS["kids"]
+# kids was retired from production (2026-09-15) and no longer exists in
+# pipeline.config.TRACKS -- built as an isolated fixture instead.
+KIDS_TRACK = dataclasses.replace(TRACKS["teens"], key="kids")
 
 SAMPLE_SCENE = Scene(
     narration="Once upon a time there was a small rabbit named Pip.",
@@ -61,7 +64,7 @@ def test_build_prompt_substitutes_trigger_words():
 
 
 def test_build_prompt_varies_by_track():
-    kids_prompt = build_prompt(SAMPLE_SCENE, TRACKS["kids"])
+    kids_prompt = build_prompt(SAMPLE_SCENE, KIDS_TRACK)
     women_prompt = build_prompt(SAMPLE_SCENE, TRACKS["women"])
     assert kids_prompt != women_prompt
 

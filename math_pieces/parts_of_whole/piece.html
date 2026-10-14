@@ -1,13 +1,13 @@
 <title>Parts of a Whole</title>
 <style>
   :root {
-    --board: #24303d;
-    --board-2: #1c2833;
-    --chalk: #ede9df;
-    --chalk-dim: rgba(237,233,223,0.55);
-    --gold: #d9a441;
-    --coral: #e2725b;
-    --blue: #7fa6c9;
+    --board: #26183a;
+    --board-2: #1a1226;
+    --chalk: #f2ecf9;
+    --chalk-dim: rgba(242, 236, 249,0.55);
+    --gold: #f0d15a;
+    --coral: #4fb0a8;
+    --blue: #b06fc9;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -22,7 +22,7 @@
     color: var(--chalk);
   }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(242, 236, 249,0.14); border-radius: 2px; pointer-events: none; }
   .kicker {
     position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
     font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
@@ -30,7 +30,7 @@
   .replay {
     position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
     text-transform: uppercase; color: var(--chalk); background: transparent;
-    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    border: 1px solid rgba(242, 236, 249,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
     cursor: pointer; opacity: 0.7;
   }
   .replay:hover { opacity: 1; }
@@ -111,14 +111,14 @@
 
       ctx.save();
       ctx.globalAlpha = Math.min(1, segReveal);
-      ctx.fillStyle = 'rgba(127,166,201,0.18)';
-      ctx.strokeStyle = 'rgba(237,233,223,0.4)';
+      ctx.fillStyle = 'rgba(176, 111, 201,0.18)';
+      ctx.strokeStyle = 'rgba(242, 236, 249,0.4)';
       ctx.lineWidth = 2;
       ctx.fillRect(x + 3, g.y, segW - 6, g.barH);
       ctx.strokeRect(x + 3, g.y, segW - 6, g.barH);
       if (fillReveal > 0) {
         ctx.globalAlpha = Math.min(1, segReveal) * fillReveal;
-        ctx.fillStyle = '#d9a441';
+        ctx.fillStyle = '#f0d15a';
         ctx.fillRect(x + 3, g.y, segW - 6, g.barH);
       }
       ctx.restore();
@@ -127,7 +127,7 @@
     if (label) {
       ctx.save();
       ctx.globalAlpha = Math.min(1, splitP);
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f2ecf9';
       ctx.textAlign = 'center';
       ctx.font = `500 ${Math.min(getW() * 0.03, 20)}px ${MONO}`;
       ctx.fillText(label, (g.left + g.right) / 2, g.y - 16);
@@ -143,7 +143,7 @@
     ctx.clearRect(0, 0, W, H);
 
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.strokeStyle = 'rgba(61, 42, 82,0.35)';
     ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -154,7 +154,7 @@
     if (hookAlpha > 0.01) {
       ctx.save();
       ctx.globalAlpha = hookAlpha;
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f2ecf9';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.07, 44)}px ${MONO}`;
@@ -174,7 +174,7 @@
       ctx.save();
       ctx.globalAlpha = fEase;
       ctx.textAlign = 'center';
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f2ecf9';
       ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
       ctx.fillText(P.revealLabel || '', W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
@@ -182,7 +182,7 @@
       ctx.translate(W / 2, y + 80);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#f0d15a';
       ctx.font = `700 ${Math.min(W * 0.11, 60)}px ${MONO}`;
       ctx.fillText(P.revealValue, 0, 0);
       ctx.restore();
@@ -191,7 +191,7 @@
       if (P.footnote && finP > 0.75) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
-        ctx.fillStyle = '#e2725b';
+        ctx.fillStyle = '#4fb0a8';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.textAlign = 'center';
         const words = P.footnote.split(' ');

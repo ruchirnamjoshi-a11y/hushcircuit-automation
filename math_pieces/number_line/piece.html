@@ -1,13 +1,13 @@
 <title>Number Line</title>
 <style>
   :root {
-    --board: #24303d;
-    --board-2: #1c2833;
-    --chalk: #ede9df;
-    --chalk-dim: rgba(237,233,223,0.55);
-    --gold: #d9a441;
-    --coral: #e2725b;
-    --blue: #7fa6c9;
+    --board: #351e26;
+    --board-2: #241318;
+    --chalk: #f6eef0;
+    --chalk-dim: rgba(246, 238, 240,0.55);
+    --gold: #f2b955;
+    --coral: #5a92b0;
+    --blue: #d1698a;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -22,7 +22,7 @@
     color: var(--chalk);
   }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(246, 238, 240,0.14); border-radius: 2px; pointer-events: none; }
   .kicker {
     position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
     font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
@@ -30,7 +30,7 @@
   .replay {
     position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
     text-transform: uppercase; color: var(--chalk); background: transparent;
-    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    border: 1px solid rgba(246, 238, 240,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
     cursor: pointer; opacity: 0.7;
   }
   .replay:hover { opacity: 1; }
@@ -98,7 +98,7 @@
     ctx.clearRect(0, 0, W, H);
 
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.strokeStyle = 'rgba(61, 31, 43,0.35)';
     ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -109,7 +109,7 @@
     if (hookAlpha > 0.01) {
       ctx.save();
       ctx.globalAlpha = hookAlpha;
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f6eef0';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.062, 40)}px ${MONO}`;
@@ -123,7 +123,7 @@
       const lineReveal = CP.easeOutCubic(Math.min(1, introP * 1.4));
       ctx.save();
       ctx.globalAlpha = lineReveal;
-      ctx.strokeStyle = 'rgba(237,233,223,0.55)';
+      ctx.strokeStyle = 'rgba(246, 238, 240,0.55)';
       ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.moveTo(g.left, g.y);
@@ -137,13 +137,13 @@
         if (x > g.left + (g.right - g.left) * lineReveal + 2) continue;
         const isHi = highlightSet.has(v);
         ctx.save();
-        ctx.strokeStyle = isHi ? '#d9a441' : 'rgba(237,233,223,0.5)';
+        ctx.strokeStyle = isHi ? '#f2b955' : 'rgba(246, 238, 240,0.5)';
         ctx.lineWidth = isHi ? 3 : 2;
         ctx.beginPath();
         ctx.moveTo(x, g.y - 12);
         ctx.lineTo(x, g.y + 12);
         ctx.stroke();
-        ctx.fillStyle = isHi ? '#d9a441' : 'rgba(237,233,223,0.75)';
+        ctx.fillStyle = isHi ? '#f2b955' : 'rgba(246, 238, 240,0.75)';
         ctx.font = `${isHi ? 600 : 400} ${Math.min(W * 0.026, 16)}px ${MONO}`;
         ctx.textAlign = 'center';
         ctx.fillText(String(v), x, g.y + 34);
@@ -168,7 +168,7 @@
       ctx.save();
       for (let i = 0; i <= segIdx; i++) {
         const vx = valueToX(jumps[i]);
-        ctx.fillStyle = 'rgba(226,114,91,0.55)';
+        ctx.fillStyle = 'rgba(90, 146, 176,0.55)';
         ctx.beginPath();
         ctx.arc(vx, g.y, 5, 0, Math.PI * 2);
         ctx.fill();
@@ -178,7 +178,7 @@
       // marker (arc hop above the line)
       const hopH = 34 * Math.sin(Math.PI * (segCount > 0 ? CP.clamp01(posInSeq - segIdx) : 1));
       ctx.save();
-      ctx.fillStyle = '#e2725b';
+      ctx.fillStyle = '#5a92b0';
       ctx.beginPath();
       ctx.arc(x, g.y - 16 - hopH, 10, 0, Math.PI * 2);
       ctx.fill();
@@ -192,7 +192,7 @@
       ctx.save();
       ctx.globalAlpha = fEase;
       ctx.textAlign = 'center';
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f6eef0';
       ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
       ctx.fillText(P.revealLabel || '', W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
@@ -200,7 +200,7 @@
       ctx.translate(W / 2, y + 80);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#f2b955';
       ctx.font = `700 ${Math.min(W * 0.11, 60)}px ${MONO}`;
       ctx.fillText(P.revealValue, 0, 0);
       ctx.restore();
@@ -209,7 +209,7 @@
       if (P.footnote && finP > 0.75) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8;
-        ctx.fillStyle = '#e2725b';
+        ctx.fillStyle = '#5a92b0';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.textAlign = 'center';
         ctx.fillText(P.footnote, W / 2, y + 118);

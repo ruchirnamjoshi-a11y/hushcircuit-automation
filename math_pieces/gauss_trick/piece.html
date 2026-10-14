@@ -1,13 +1,13 @@
 <title>Gauss's Trick</title>
 <style>
   :root {
-    --board: #24303d;
-    --board-2: #1c2833;
-    --chalk: #ede9df;
-    --chalk-dim: rgba(237,233,223,0.55);
-    --gold: #d9a441;
-    --coral: #e2725b;
-    --rule: #3a4b5c;
+    --board: #241f3d;
+    --board-2: #171526;
+    --chalk: #f1eefb;
+    --chalk-dim: rgba(241, 238, 251,0.55);
+    --gold: #e8b23a;
+    --coral: #d6607f;
+    --rule: #3c3560;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -26,7 +26,7 @@
   .frame {
     position: absolute;
     inset: 14px;
-    border: 1px solid rgba(237,233,223,0.14);
+    border: 1px solid rgba(241, 238, 251,0.14);
     border-radius: 2px;
     pointer-events: none;
   }
@@ -66,7 +66,7 @@
     text-transform: uppercase;
     color: var(--chalk);
     background: transparent;
-    border: 1px solid rgba(237,233,223,0.4);
+    border: 1px solid rgba(241, 238, 251,0.4);
     border-radius: 3px;
     padding: 0.35rem 0.7rem;
     cursor: pointer;
@@ -149,7 +149,7 @@
     ctx.clearRect(0, 0, W, H);
 
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.strokeStyle = 'rgba(60, 53, 96,0.35)';
     ctx.lineWidth = 1;
     const step = 34;
     for (let x = (W % step) / 2; x < W; x += step) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -162,7 +162,7 @@
     if (hookAlpha > 0.01) {
       ctx.save();
       ctx.globalAlpha = hookAlpha;
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f1eefb';
       ctx.font = `600 ${Math.min(W * 0.052, 42)}px ${MONO}`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
@@ -180,7 +180,7 @@
         const h = (n / N) * g.maxH;
         const x = g.left + i * g.bw;
         const localReveal = CP.clamp01((stairEase * cols - i) * 3);
-        drawBar(x, g.bottom, g.bw - 0.6, h * localReveal, '#7fa6c9', 0.85);
+        drawBar(x, g.bottom, g.bw - 0.6, h * localReveal, '#8b7fd6', 0.85);
       }
     }
 
@@ -202,7 +202,7 @@
         // for short original bars (small n, restY close to g.bottom) the
         // tall flipped bar (h close to maxH) hung mostly below g.bottom,
         // spilling the whole shape off the bottom of the frame.
-        drawBar(x, y, g.bw - 0.6, h, '#e2725b', 0.72);
+        drawBar(x, y, g.bw - 0.6, h, '#d6607f', 0.72);
       }
 
       // One "101" annotation per side, not three -- three copies only
@@ -215,7 +215,7 @@
         const x = g.left + i * g.bw + g.bw / 2;
         ctx.save();
         ctx.globalAlpha = 0.95;
-        ctx.fillStyle = '#d9a441';
+        ctx.fillStyle = '#e8b23a';
         ctx.font = `600 ${Math.max(9, Math.min(g.bw * 1.4, 13))}px ${MONO}`;
         ctx.textAlign = 'center';
         ctx.fillText('101', x, g.bottom - g.maxH - 16);
@@ -231,8 +231,8 @@
       const rh = g.maxH * rEase;
       ctx.save();
       ctx.globalAlpha = 0.9;
-      ctx.fillStyle = 'rgba(217,164,65,0.16)';
-      ctx.strokeStyle = '#d9a441';
+      ctx.fillStyle = 'rgba(232, 178, 58,0.16)';
+      ctx.strokeStyle = '#e8b23a';
       ctx.lineWidth = 2;
       ctx.strokeRect(rx, g.bottom - rh, rw, rh);
       ctx.fillRect(rx, g.bottom - rh, rw, rh);
@@ -242,7 +242,7 @@
         const lblAlpha = CP.clamp01((rectP - 0.5) / 0.5);
         ctx.save();
         ctx.globalAlpha = lblAlpha;
-        ctx.fillStyle = '#ede9df';
+        ctx.fillStyle = '#f1eefb';
         ctx.font = `500 ${Math.min(W * 0.024, 16)}px ${MONO}`;
         ctx.textAlign = 'center';
         ctx.fillText('100 wide', (rx + g.right) / 2, g.bottom + 22);
@@ -261,7 +261,7 @@
       ctx.save();
       ctx.globalAlpha = fEase;
       ctx.textAlign = 'center';
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f1eefb';
       ctx.font = `500 ${Math.min(W * 0.03, 22)}px ${MONO}`;
       ctx.fillText('100 × 101 ÷ 2 =', W / 2, H * 0.78);
       const pop = finP > 0.55 ? CP.easeOutBack(CP.clamp01((finP - 0.55) / 0.45)) : 0;
@@ -269,7 +269,7 @@
       ctx.translate(W / 2, H * 0.78 + 46);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#e8b23a';
       ctx.font = `700 ${Math.min(W * 0.09, 58)}px ${MONO}`;
       ctx.fillText('5050', 0, 0);
       ctx.restore();
@@ -278,7 +278,7 @@
       if (finP > 0.8) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((finP - 0.8) / 0.2) * 0.75;
-        ctx.fillStyle = '#e2725b';
+        ctx.fillStyle = '#d6607f';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.fillText('in general: n(n+1)/2', W / 2, H * 0.78 + 88);
         ctx.restore();

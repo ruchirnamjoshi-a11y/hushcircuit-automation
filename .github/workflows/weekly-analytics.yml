@@ -32,11 +32,9 @@ jobs:
               echo "$2" | base64 -d > "secrets/youtube_token_$1.json"
             fi
           }
-          write_token kids "${{ secrets.YOUTUBE_TOKEN_B64_KIDS }}"
           write_token teens "${{ secrets.YOUTUBE_TOKEN_B64_TEENS }}"
           write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
           write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
-          write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
           write_token hero_saga "${{ secrets.YOUTUBE_TOKEN_B64_HERO_SAGA }}"
 
       - name: Pull weekly analytics

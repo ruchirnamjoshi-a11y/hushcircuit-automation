@@ -1,3 +1,4 @@
+import dataclasses
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -6,10 +7,19 @@ from pipeline.config import TRACKS
 
 import run_daily
 
-KIDS_TRACK = TRACKS["kids"]  # produce_long_form=True, shares_images_with=""
 TEENS_TRACK = TRACKS["teens"]  # produce_long_form=False, shares_images_with=""
-HINDI_TRACK = TRACKS["hindi_mythology"]  # produce_long_form=True, shares_images_with="kids"
 MATH_TRACK = TRACKS["math_explainers"]  # content_type="canvas"
+
+# kids/hindi_mythology were retired from production (2026-09-15) and no
+# longer exist in pipeline.config.TRACKS, but they were the only two real
+# tracks with produce_long_form=True / shares_images_with set, so several
+# tests below still need a track shaped like them. Built as isolated
+# fixtures rather than depending on production TRACKS containing these
+# specific keys — same reasoning as the paused-track fixture below.
+KIDS_TRACK = dataclasses.replace(TEENS_TRACK, key="kids", produce_long_form=True)
+HINDI_TRACK = dataclasses.replace(
+    TEENS_TRACK, key="hindi_mythology", produce_long_form=True, shares_images_with="kids",
+)
 
 
 def _patch_pipeline(**overrides):
@@ -136,38 +146,45 @@ def test_run_skips_paused_tracks_without_calling_run_track():
 
 
 def test_run_continues_past_a_real_failure_on_one_track():
+    # No real production track has produce_long_form=True since kids/
+    # hindi_mythology were retired (2026-09-15), so this needs its own
+    # fixture set to keep covering "the failing track's long-form call is
+    # skipped, but a healthy produce_long_form=True track's still runs" --
+    # built in isolation rather than depending on production TRACKS shape.
+    failing = dataclasses.replace(TEENS_TRACK, key="failing-fixture", produce_long_form=True)
+    ok_story = dataclasses.replace(TEENS_TRACK, key="ok-story-fixture", produce_long_form=True)
+    ok_short_only = dataclasses.replace(TEENS_TRACK, key="ok-short-fixture", produce_long_form=False)
+    canvas_fixture = dataclasses.replace(MATH_TRACK, key="canvas-fixture")
+    song_fixture = dataclasses.replace(TRACKS["manifestation"], key="song-fixture")
+    fixture_tracks = {t.key: t for t in (failing, ok_story, ok_short_only, canvas_fixture, song_fixture)}
+
     def fake_run_track(track, dry_run=False, privacy_status="private", produced_images=None):
-        if track.key == "kids":
+        if track.key == failing.key:
             raise RuntimeError("boom")
         return True
 
-    # run() dispatches by content_type -- "canvas" (math_explainers) to
-    # run_math_track, "song" (manifestation) to run_manifestation_track,
-    # everything else to run_track (plus a SEPARATE run_long_form_track
-    # call for any Track.produce_long_form=True track, e.g. kids/
-    # hindi_mythology). All four need mocking here, or a real (unmocked)
-    # one runs for real against whatever's actually queued/authorized/
-    # live-API-reachable on this machine -- previously only "safe" because
-    # the long-form queues happened to be empty (an accident of test
-    # timing, not real isolation: queuing a long-form script, as this
-    # session did, would have made this test hit live Cloudflare calls).
-    with patch("run_daily.run_track", side_effect=fake_run_track) as mock_run_track, \
+    # run() dispatches by content_type -- "canvas" to run_math_track,
+    # "song" to run_manifestation_track, everything else to run_track (plus
+    # a SEPARATE run_long_form_track call for any Track.produce_long_form=
+    # True track). All four need mocking here, or a real (unmocked) one
+    # runs for real against whatever's actually queued/authorized/live-
+    # API-reachable on this machine -- previously only "safe" because the
+    # long-form queues happened to be empty (an accident of test timing,
+    # not real isolation: queuing a long-form script, as this session did,
+    # would have made this test hit live Cloudflare calls).
+    with patch("run_daily.TRACKS", fixture_tracks), \
+         patch("run_daily.run_track", side_effect=fake_run_track) as mock_run_track, \
          patch("run_daily.run_long_form_track", return_value=True) as mock_run_long_form_track, \
          patch("run_daily.run_math_track", return_value=True) as mock_run_math_track, \
          patch("run_daily.run_manifestation_track", return_value=True) as mock_run_manifestation_track:
         exit_code = run_daily.run(dry_run=False)
 
-    story_tracks = [t for t in TRACKS.values() if t.content_type == "story" and not t.paused]
-    canvas_tracks = [t for t in TRACKS.values() if t.content_type == "canvas" and not t.paused]
-    song_tracks = [t for t in TRACKS.values() if t.content_type == "song" and not t.paused]
-    # kids' run_track raises (fake_run_track's side_effect), so its
-    # run_long_form_track call is never reached -- every OTHER non-paused
-    # produce_long_form=True story track's is.
-    expect_long_form_calls = len([t for t in story_tracks if t.produce_long_form and t.key != "kids"])
-    assert mock_run_track.call_count == len(story_tracks)  # all non-paused story tracks still attempted
-    assert mock_run_long_form_track.call_count == expect_long_form_calls
-    assert mock_run_math_track.call_count == len(canvas_tracks)
-    assert mock_run_manifestation_track.call_count == len(song_tracks)
+    # failing's run_track raises, so its run_long_form_track call is never
+    # reached -- ok_story's (the other produce_long_form=True track) is.
+    assert mock_run_track.call_count == 3  # failing, ok_story, ok_short_only
+    assert mock_run_long_form_track.call_count == 1  # only ok_story
+    assert mock_run_math_track.call_count == 1
+    assert mock_run_manifestation_track.call_count == 1
     assert exit_code == 1  # a real failure does affect the exit code
 
 

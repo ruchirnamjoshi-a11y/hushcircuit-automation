@@ -1,14 +1,14 @@
 <title>What Makes a Number Prime</title>
 <style>
-  :root { --board: #24303d; --board-2: #1c2833; --chalk: #ede9df; --chalk-dim: rgba(237,233,223,0.55); --gold: #d9a441; --coral: #e2725b; --blue: #7fa6c9; }
+  :root { --board: #17301f; --board-2: #0f1f14; --chalk: #eef5ec; --chalk-dim: rgba(238, 245, 236,0.55); --gold: #e8b84a; --coral: #cf5f5f; --blue: #62a35c; }
   * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
   #stage { position: relative; width: 100%; height: 100vh; min-height: 560px; overflow: hidden;
     background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--chalk); }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(238, 245, 236,0.14); border-radius: 2px; pointer-events: none; }
   .kicker { position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim); }
-  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
+  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(238, 245, 236,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
   .replay:hover { opacity: 1; }
 </style>
 <div id="stage">
@@ -68,7 +68,7 @@
     const W = getW(), H = getH();
     ctx.clearRect(0, 0, W, H);
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)'; ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(31, 74, 44,0.35)'; ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
     for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
@@ -76,7 +76,7 @@
 
     const hookAlpha = t < T.introStart ? 1 : CP.clamp01(1 - (t - T.introStart) / 0.8);
     if (hookAlpha > 0.01) {
-      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#eef5ec'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.062, 40)}px ${MONO}`;
       ctx.fillText(P.hook, W / 2, H * 0.14);
       ctx.restore();
@@ -106,10 +106,10 @@
 
         ctx.save();
         ctx.globalAlpha = crossed ? 0.28 : 1;
-        ctx.fillStyle = isPrimeReveal ? '#d9a441' : '#ede9df';
+        ctx.fillStyle = isPrimeReveal ? '#e8b84a' : '#eef5ec';
         ctx.fillText(String(n), x, y);
         if (crossed) {
-          ctx.strokeStyle = '#e2725b'; ctx.lineWidth = 2.5; ctx.globalAlpha = 0.7;
+          ctx.strokeStyle = '#cf5f5f'; ctx.lineWidth = 2.5; ctx.globalAlpha = 0.7;
           ctx.beginPath();
           ctx.moveTo(x - g.cell * 0.28, y - g.cell * 0.28);
           ctx.lineTo(x + g.cell * 0.28, y + g.cell * 0.28);
@@ -123,7 +123,7 @@
     if (t >= T.finalStart && P.footnote) {
       const fEase = CP.easeOutCubic(finP);
       ctx.save();
-      ctx.globalAlpha = fEase * 0.85; ctx.fillStyle = '#e2725b'; ctx.textAlign = 'center';
+      ctx.globalAlpha = fEase * 0.85; ctx.fillStyle = '#cf5f5f'; ctx.textAlign = 'center';
       ctx.font = `italic 400 ${Math.min(W * 0.022, 15)}px ${SERIF}`;
       ctx.fillText(P.footnote, W / 2, g.top + g.gh + 50);
       ctx.restore();

@@ -1,3 +1,4 @@
+import dataclasses
 from pathlib import Path
 from unittest.mock import patch
 
@@ -7,7 +8,11 @@ from pipeline.config import TRACKS
 from pipeline.scripts import validate
 from pipeline.upload import build_upload_body, set_thumbnail, upload_daily_video, upload_video
 
-KIDS_TRACK = TRACKS["kids"]
+# kids was retired from production (2026-09-15) and no longer exists in
+# pipeline.config.TRACKS. It was the only made_for_kids=True track still
+# around, and these tests need one, so build it as an isolated fixture
+# rather than depending on a specific production track's key.
+KIDS_TRACK = dataclasses.replace(TRACKS["teens"], key="kids", made_for_kids=True)
 
 SAMPLE = {
     "id": "upload-test",

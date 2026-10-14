@@ -1,12 +1,12 @@
 <title>Fold a Paper to the Moon</title>
 <style>
   :root {
-    --board: #24303d;
-    --board-2: #1c2833;
-    --chalk: #ede9df;
-    --chalk-dim: rgba(237,233,223,0.55);
-    --gold: #d9a441;
-    --coral: #e2725b;
+    --board: #2b2520;
+    --board-2: #1e1a14;
+    --chalk: #f3ecdf;
+    --chalk-dim: rgba(243, 236, 223,0.55);
+    --gold: #e8c468;
+    --coral: #a8623f;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -24,7 +24,7 @@
   .frame {
     position: absolute;
     inset: 14px;
-    border: 1px solid rgba(237,233,223,0.14);
+    border: 1px solid rgba(243, 236, 223,0.14);
     border-radius: 2px;
     pointer-events: none;
   }
@@ -64,7 +64,7 @@
     text-transform: uppercase;
     color: var(--chalk);
     background: transparent;
-    border: 1px solid rgba(237,233,223,0.4);
+    border: 1px solid rgba(243, 236, 223,0.4);
     border-radius: 3px;
     padding: 0.35rem 0.7rem;
     cursor: pointer;
@@ -156,7 +156,7 @@
     ctx.clearRect(0, 0, W, H);
 
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.strokeStyle = 'rgba(74, 60, 44,0.35)';
     ctx.lineWidth = 1;
     const step = 34;
     for (let x = (W % step) / 2; x < W; x += step) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -175,7 +175,7 @@
 
     // track outline
     ctx.save();
-    ctx.strokeStyle = 'rgba(237,233,223,0.25)';
+    ctx.strokeStyle = 'rgba(243, 236, 223,0.25)';
     ctx.lineWidth = 2;
     ctx.strokeRect(g.x, g.top, g.w, trackH);
     ctx.restore();
@@ -186,15 +186,15 @@
       const reached = barFrac >= m.logPos;
       ctx.save();
       ctx.globalAlpha = reached ? 0.95 : 0.35;
-      ctx.strokeStyle = reached ? '#d9a441' : 'rgba(237,233,223,0.4)';
+      ctx.strokeStyle = reached ? '#e8c468' : 'rgba(243, 236, 223,0.4)';
       ctx.lineWidth = 1.5;
       ctx.beginPath();
       ctx.moveTo(g.x - 10, my);
       ctx.lineTo(g.x + g.w + 10, my);
       ctx.stroke();
 
-      ctx.fillStyle = reached ? '#d9a441' : 'var(--chalk-dim)';
-      ctx.fillStyle = reached ? '#d9a441' : 'rgba(237,233,223,0.55)';
+      ctx.fillStyle = reached ? '#e8c468' : 'var(--chalk-dim)';
+      ctx.fillStyle = reached ? '#e8c468' : 'rgba(243, 236, 223,0.55)';
       ctx.font = `600 ${Math.max(9, Math.min(W * 0.024, 14))}px ${MONO}`;
       ctx.textAlign = 'left';
       ctx.textBaseline = 'middle';
@@ -206,10 +206,10 @@
     if (t >= T.growStart) {
       const barH = Math.max(2, barFrac * trackH);
       ctx.save();
-      ctx.fillStyle = '#7fa6c9';
+      ctx.fillStyle = '#c9a06a';
       ctx.fillRect(g.x, g.bottom - barH, g.w, barH);
       // fold lines (visual texture, capped so it doesn't get absurd at high fold counts)
-      ctx.strokeStyle = 'rgba(36,48,61,0.5)';
+      ctx.strokeStyle = 'rgba(43, 37, 32,0.5)';
       ctx.lineWidth = 1;
       const visibleFoldLines = Math.min(24, Math.round(fold));
       for (let i = 1; i <= visibleFoldLines; i++) {
@@ -223,20 +223,20 @@
 
       // fold counter
       ctx.save();
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f3ecdf';
       ctx.font = `700 ${Math.min(W * 0.09, 58)}px ${MONO}`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'alphabetic';
       ctx.fillText(`${Math.round(fold)}`, W / 2, H * 0.135);
       ctx.font = `500 ${Math.min(W * 0.022, 15)}px ${MONO}`;
-      ctx.fillStyle = 'rgba(237,233,223,0.6)';
+      ctx.fillStyle = 'rgba(243, 236, 223,0.6)';
       ctx.textBaseline = 'middle';
       ctx.fillText('FOLDS', W / 2, H * 0.135 + 22);
       ctx.restore();
 
       // current height readout
       ctx.save();
-      ctx.fillStyle = '#e2725b';
+      ctx.fillStyle = '#a8623f';
       ctx.font = `600 ${Math.min(W * 0.032, 20)}px ${MONO}`;
       ctx.textAlign = 'center';
       ctx.fillText(fmtDistance(thicknessMm), W / 2, g.top - 18);
@@ -260,21 +260,21 @@
       ctx.save();
       ctx.globalAlpha = fEase;
       ctx.textAlign = 'center';
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#f3ecdf';
       ctx.font = `500 ${Math.min(W * 0.026, 18)}px ${MONO}`;
       ctx.fillText('42 FOLDS =', W / 2, H * 0.40);
       ctx.save();
       ctx.translate(W / 2, H * 0.40 + 78);
       ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
       ctx.globalAlpha = CP.clamp01(pop);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#e8c468';
       ctx.font = `700 ${Math.min(W * 0.075, 46)}px ${MONO}`;
       ctx.fillText('439,805 KM', 0, 0);
       ctx.restore();
       if (finP > 0.75) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.85;
-        ctx.fillStyle = '#e2725b';
+        ctx.fillStyle = '#a8623f';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.fillText('past the Moon, 384,400 km away', W / 2, H * 0.40 + 122);
         ctx.restore();

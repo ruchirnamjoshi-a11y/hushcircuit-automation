@@ -122,14 +122,9 @@ jobs:
               rm -f "secrets/youtube_token_$1.json"
             fi
           }
-          write_token kids "${{ secrets.YOUTUBE_TOKEN_B64_KIDS }}"
           write_token teens "${{ secrets.YOUTUBE_TOKEN_B64_TEENS }}"
           write_token adults "${{ secrets.YOUTUBE_TOKEN_B64_ADULTS }}"
           write_token women "${{ secrets.YOUTUBE_TOKEN_B64_WOMEN }}"
-          # Secret name kept as HINDI_MYTHOLOGY (retiring the old mythology
-          # content, not the channel/token) — this channel now posts the
-          # Hindi-language version of the "kids" track's stories.
-          write_token hindi_mythology "${{ secrets.YOUTUBE_TOKEN_B64_HINDI_MYTHOLOGY }}"
           write_token hero_saga "${{ secrets.YOUTUBE_TOKEN_B64_HERO_SAGA }}"
           write_token math_explainers "${{ secrets.YOUTUBE_TOKEN_B64_MATH_EXPLAINERS }}"
           write_token manifestation "${{ secrets.YOUTUBE_TOKEN_B64_MANIFESTATION }}"

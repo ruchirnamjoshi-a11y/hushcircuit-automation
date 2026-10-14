@@ -1,14 +1,14 @@
 <title>Reading a Clock as Fractions</title>
 <style>
-  :root { --board: #24303d; --board-2: #1c2833; --chalk: #ede9df; --chalk-dim: rgba(237,233,223,0.55); --gold: #d9a441; --coral: #e2725b; --blue: #7fa6c9; }
+  :root { --board: #1c2536; --board-2: #0f141f; --chalk: #eef1f7; --chalk-dim: rgba(238, 241, 247,0.55); --gold: #e8845a; --coral: #6a7fa8; --blue: #c9a24a; }
   * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
   #stage { position: relative; width: 100%; height: 100vh; min-height: 560px; overflow: hidden;
     background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--chalk); }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(238, 241, 247,0.14); border-radius: 2px; pointer-events: none; }
   .kicker { position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim); }
-  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
+  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(238, 241, 247,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
   .replay:hover { opacity: 1; }
 </style>
 <div id="stage">
@@ -48,7 +48,7 @@
     const W = getW(), H = getH();
     ctx.clearRect(0, 0, W, H);
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)'; ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(42, 53, 80,0.35)'; ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
     for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
@@ -56,7 +56,7 @@
 
     const hookAlpha = t < T.introStart ? 1 : CP.clamp01(1 - (t - T.introStart) / 0.8);
     if (hookAlpha > 0.01) {
-      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#eef1f7'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.058, 38)}px ${MONO}`;
       ctx.fillText(P.hook, W / 2, H * 0.14);
       ctx.restore();
@@ -71,7 +71,7 @@
       const reveal = CP.easeOutCubic(Math.min(1, introP * 1.3));
       ctx.save();
       ctx.globalAlpha = reveal;
-      ctx.strokeStyle = '#ede9df'; ctx.lineWidth = 3;
+      ctx.strokeStyle = '#eef1f7'; ctx.lineWidth = 3;
       ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2 * Math.min(1, introP * 1.6)); ctx.stroke();
       for (let i = 0; i < 12; i++) {
         const a = -Math.PI / 2 + (i / 12) * Math.PI * 2;
@@ -85,9 +85,9 @@
       if (handReveal > 0) {
         ctx.save();
         ctx.globalAlpha = handReveal;
-        ctx.strokeStyle = '#7fa6c9'; ctx.lineWidth = 6; ctx.lineCap = 'round';
+        ctx.strokeStyle = '#c9a24a'; ctx.lineWidth = 6; ctx.lineCap = 'round';
         ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + Math.cos(hourAngle) * r * 0.5, cy + Math.sin(hourAngle) * r * 0.5); ctx.stroke();
-        ctx.strokeStyle = '#d9a441'; ctx.lineWidth = 4;
+        ctx.strokeStyle = '#e8845a'; ctx.lineWidth = 4;
         ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + Math.cos(minuteAngle) * r * 0.78, cy + Math.sin(minuteAngle) * r * 0.78); ctx.stroke();
         ctx.restore();
       }
@@ -98,7 +98,7 @@
       const sweep = CP.easeOutCubic(Math.min(1, wedgeP * 1.3)) * (P.minute / 60) * Math.PI * 2;
       ctx.save();
       ctx.globalAlpha = 0.35;
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#e8845a';
       ctx.beginPath();
       ctx.moveTo(cx, cy);
       ctx.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + sweep);
@@ -108,7 +108,7 @@
       if (wedgeP > 0.5) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((wedgeP - 0.5) / 0.5);
-        ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center';
+        ctx.fillStyle = '#eef1f7'; ctx.textAlign = 'center';
         ctx.font = `500 ${Math.min(W * 0.03, 20)}px ${MONO}`;
         ctx.fillText(P.fractionLabel || '', W / 2, H * 0.72);
         ctx.restore();
@@ -121,13 +121,13 @@
       const y = H * 0.80;
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
       ctx.save(); ctx.translate(W / 2, y); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
-      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#d9a441';
+      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#e8845a';
       ctx.textAlign = 'center';
       ctx.font = `700 ${Math.min(W * 0.1, 56)}px ${MONO}`;
       ctx.fillText(P.revealValue, 0, 0);
       ctx.restore();
       if (P.footnote && finP > 0.75) {
-        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8; ctx.fillStyle = '#e2725b';
+        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8; ctx.fillStyle = '#6a7fa8';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`; ctx.textAlign = 'center';
         ctx.fillText(P.footnote, W / 2, y + 50);
         ctx.restore();

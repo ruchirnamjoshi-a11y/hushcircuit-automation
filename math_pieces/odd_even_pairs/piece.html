@@ -1,14 +1,14 @@
 <title>Why Odd + Odd = Even</title>
 <style>
-  :root { --board: #24303d; --board-2: #1c2833; --chalk: #ede9df; --chalk-dim: rgba(237,233,223,0.55); --gold: #d9a441; --coral: #e2725b; --blue: #7fa6c9; }
+  :root { --board: #1d2a36; --board-2: #131b23; --chalk: #eef3f6; --chalk-dim: rgba(238, 243, 246,0.55); --gold: #f4c15a; --coral: #e07856; --blue: #5b9bd1; }
   * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
   #stage { position: relative; width: 100%; height: 100vh; min-height: 560px; overflow: hidden;
     background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--chalk); }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(238, 243, 246,0.14); border-radius: 2px; pointer-events: none; }
   .kicker { position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim); }
-  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
+  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(238, 243, 246,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
   .replay:hover { opacity: 1; }
 </style>
 <div id="stage">
@@ -83,7 +83,7 @@
     const W = getW(), H = getH();
     ctx.clearRect(0, 0, W, H);
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)'; ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(44, 66, 86,0.35)'; ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
     for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
@@ -91,7 +91,7 @@
 
     const hookAlpha = t < T.aStart ? 1 : CP.clamp01(1 - (t - T.aStart) / 0.8);
     if (hookAlpha > 0.01) {
-      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#eef3f6'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.062, 40)}px ${MONO}`;
       ctx.fillText(P.hook, W / 2, H * 0.14);
       ctx.restore();
@@ -107,16 +107,16 @@
     const rowAy = H * 0.40, rowBy = H * 0.62;
     let aInfo = null, bInfo = null;
     if (t >= T.aStart) {
-      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.04,26)}px ${SERIF}`; ctx.textAlign = 'center';
+      ctx.save(); ctx.fillStyle = '#eef3f6'; ctx.font = `400 ${Math.min(W*0.04,26)}px ${SERIF}`; ctx.textAlign = 'center';
       if (aP > 0.15) ctx.fillText(`${P.a} dots`, W / 2, rowAy - 46);
       ctx.restore();
-      aInfo = drawGroup(P.a, rowAy, Math.min(1, aP * 1.3), '#7fa6c9', '#e2725b', W / 2);
+      aInfo = drawGroup(P.a, rowAy, Math.min(1, aP * 1.3), '#5b9bd1', '#e07856', W / 2);
     }
     if (t >= T.bStart) {
-      ctx.save(); ctx.fillStyle = '#ede9df'; ctx.font = `400 ${Math.min(W*0.04,26)}px ${SERIF}`; ctx.textAlign = 'center';
+      ctx.save(); ctx.fillStyle = '#eef3f6'; ctx.font = `400 ${Math.min(W*0.04,26)}px ${SERIF}`; ctx.textAlign = 'center';
       if (bP > 0.15) ctx.fillText(`${P.b} dots`, W / 2, rowBy - 46);
       ctx.restore();
-      bInfo = drawGroup(P.b, rowBy, Math.min(1, bP * 1.3), '#7fa6c9', '#e2725b', W / 2);
+      bInfo = drawGroup(P.b, rowBy, Math.min(1, bP * 1.3), '#5b9bd1', '#e07856', W / 2);
     }
 
     if (t >= T.finalStart && aInfo && bInfo) {
@@ -126,7 +126,7 @@
       const bLeftoverX = bInfo.startX + Math.floor(bInfo.n / 2) * bInfo.gap;
       ctx.save();
       ctx.globalAlpha = p;
-      ctx.strokeStyle = '#d9a441'; ctx.lineWidth = 3; ctx.setLineDash([6, 6]);
+      ctx.strokeStyle = '#f4c15a'; ctx.lineWidth = 3; ctx.setLineDash([6, 6]);
       ctx.beginPath();
       ctx.moveTo(aLeftoverX, rowAy);
       ctx.lineTo(bLeftoverX, rowBy);
@@ -135,18 +135,18 @@
 
       const y = H * 0.80;
       ctx.save();
-      ctx.globalAlpha = p; ctx.textAlign = 'center'; ctx.fillStyle = '#ede9df';
+      ctx.globalAlpha = p; ctx.textAlign = 'center'; ctx.fillStyle = '#eef3f6';
       ctx.font = `500 ${Math.min(W * 0.032, 22)}px ${MONO}`;
       ctx.fillText(`${P.a} + ${P.b} =`, W / 2, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
       ctx.save(); ctx.translate(W / 2, y + 80); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
-      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#d9a441';
+      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#f4c15a';
       ctx.font = `700 ${Math.min(W * 0.11, 60)}px ${MONO}`;
       ctx.fillText(String(P.a + P.b), 0, 0);
       ctx.restore(); ctx.restore();
 
       if (P.footnote && finP > 0.7) {
-        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.7) / 0.3) * 0.8; ctx.fillStyle = '#e2725b';
+        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.7) / 0.3) * 0.8; ctx.fillStyle = '#e07856';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`; ctx.textAlign = 'center';
         ctx.fillText(P.footnote, W / 2, y + 118);
         ctx.restore();

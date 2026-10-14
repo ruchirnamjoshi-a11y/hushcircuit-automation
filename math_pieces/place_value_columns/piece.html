@@ -1,13 +1,13 @@
 <title>Place Value Columns</title>
 <style>
   :root {
-    --board: #24303d;
-    --board-2: #1c2833;
-    --chalk: #ede9df;
-    --chalk-dim: rgba(237,233,223,0.55);
-    --gold: #d9a441;
-    --coral: #e2725b;
-    --blue: #7fa6c9;
+    --board: #16283f;
+    --board-2: #0d1b2e;
+    --chalk: #eaf1fa;
+    --chalk-dim: rgba(234, 241, 250,0.55);
+    --gold: #e8c25a;
+    --coral: #d98a3d;
+    --blue: #4f86b8;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -22,7 +22,7 @@
     color: var(--chalk);
   }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(234, 241, 250,0.14); border-radius: 2px; pointer-events: none; }
   .kicker {
     position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%);
     font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim);
@@ -30,7 +30,7 @@
   .replay {
     position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em;
     text-transform: uppercase; color: var(--chalk); background: transparent;
-    border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
+    border: 1px solid rgba(234, 241, 250,0.4); border-radius: 3px; padding: 0.35rem 0.7rem;
     cursor: pointer; opacity: 0.7;
   }
   .replay:hover { opacity: 1; }
@@ -107,7 +107,7 @@
     ctx.clearRect(0, 0, W, H);
 
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)';
+    ctx.strokeStyle = 'rgba(35, 64, 92,0.35)';
     ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -118,7 +118,7 @@
     if (hookAlpha > 0.01) {
       ctx.save();
       ctx.globalAlpha = hookAlpha;
-      ctx.fillStyle = '#ede9df';
+      ctx.fillStyle = '#eaf1fa';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.07, 44)}px ${MONO}`;
@@ -145,15 +145,15 @@
           const x = g.left + i * g.colW + g.colW / 2;
           const fromRight = digits - 1 - i;
           const isActive = t >= T.colStart && fromRight === activeFromRight;
-          ctx.fillStyle = isActive ? '#d9a441' : '#ede9df';
+          ctx.fillStyle = isActive ? '#e8c25a' : '#eaf1fa';
           ctx.fillText(str[i], x, y);
         }
       }
       // operator + rule line
-      ctx.fillStyle = '#7fa6c9';
+      ctx.fillStyle = '#4f86b8';
       ctx.font = `600 ${Math.min(g.colW * 0.6, 76)}px ${MONO}`;
       ctx.fillText(P.op, g.left - g.colW * 0.7, g.topY + g.rowH);
-      ctx.strokeStyle = 'rgba(237,233,223,0.6)';
+      ctx.strokeStyle = 'rgba(234, 241, 250,0.6)';
       ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.moveTo(g.left - g.colW * 0.3, g.topY + g.rowH * 1.55);
@@ -171,14 +171,14 @@
         const colX = g.left + (digits - 1 - activeFromRight) * g.colW;
         ctx.save();
         ctx.globalAlpha = 0.16;
-        ctx.fillStyle = '#d9a441';
+        ctx.fillStyle = '#e8c25a';
         ctx.fillRect(colX, g.topY - g.colW * 0.55, g.colW, g.rowH + g.colW * 0.55);
         ctx.restore();
 
         if (note) {
           ctx.save();
           ctx.globalAlpha = 0.95;
-          ctx.fillStyle = '#e2725b';
+          ctx.fillStyle = '#d98a3d';
           ctx.font = `500 ${Math.min(W * 0.028, 18)}px ${MONO}`;
           ctx.textAlign = 'center';
           const words = note.split(' ');
@@ -204,7 +204,7 @@
       const pop = finP > 0.4 ? CP.easeOutBack(CP.clamp01((finP - 0.4) / 0.6)) : 0;
       ctx.save();
       ctx.globalAlpha = CP.clamp01(pop);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#e8c25a';
       ctx.textAlign = 'center';
       ctx.font = `700 ${Math.min(g.colW * 0.72, 92)}px ${MONO}`;
       const ansLeft = g.left + digits * g.colW - P.answer.length * g.colW;
@@ -216,7 +216,7 @@
       if (P.footnote && finP > 0.7) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((finP - 0.7) / 0.3) * 0.8;
-        ctx.fillStyle = 'rgba(237,233,223,0.7)';
+        ctx.fillStyle = 'rgba(234, 241, 250,0.7)';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`;
         ctx.textAlign = 'center';
         ctx.fillText(P.footnote, W / 2, g.topY + g.rowH * 3.0);

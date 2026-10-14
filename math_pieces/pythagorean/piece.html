@@ -1,14 +1,14 @@
 <title>The Pythagorean Theorem</title>
 <style>
-  :root { --board: #24303d; --board-2: #1c2833; --chalk: #ede9df; --chalk-dim: rgba(237,233,223,0.55); --gold: #d9a441; --coral: #e2725b; --blue: #7fa6c9; }
+  :root { --board: #2a2119; --board-2: #191410; --chalk: #f5efe6; --chalk-dim: rgba(245, 239, 230,0.55); --gold: #e0c25a; --coral: #4f7a8f; --blue: #b8863f; }
   * { box-sizing: border-box; } html, body { margin: 0; padding: 0; }
   #stage { position: relative; width: 100%; height: 100vh; min-height: 560px; overflow: hidden;
     background: radial-gradient(120% 140% at 50% 0%, var(--board) 0%, var(--board-2) 100%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--chalk); }
   canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .frame { position: absolute; inset: 14px; border: 1px solid rgba(237,233,223,0.14); border-radius: 2px; pointer-events: none; }
+  .frame { position: absolute; inset: 14px; border: 1px solid rgba(245, 239, 230,0.14); border-radius: 2px; pointer-events: none; }
   .kicker { position: absolute; top: 1.4rem; left: 50%; transform: translateX(-50%); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--chalk-dim); }
-  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(237,233,223,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
+  .replay { position: absolute; right: 1.1rem; top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--chalk); background: transparent; border: 1px solid rgba(245, 239, 230,0.4); border-radius: 3px; padding: 0.35rem 0.7rem; cursor: pointer; opacity: 0.7; }
   .replay:hover { opacity: 1; }
 </style>
 <div id="stage">
@@ -47,7 +47,7 @@
     const W = getW(), H = getH();
     ctx.clearRect(0, 0, W, H);
     ctx.save();
-    ctx.strokeStyle = 'rgba(58,75,92,0.35)'; ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(74, 60, 40,0.35)'; ctx.lineWidth = 1;
     const grid = 34;
     for (let x = (W % grid) / 2; x < W; x += grid) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
     for (let y = (H % grid) / 2; y < H; y += grid) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
@@ -55,7 +55,7 @@
 
     const hookAlpha = t < T.introStart ? 1 : CP.clamp01(1 - (t - T.introStart) / 0.8);
     if (hookAlpha > 0.01) {
-      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.save(); ctx.globalAlpha = hookAlpha; ctx.fillStyle = '#f5efe6'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = `600 ${Math.min(W * 0.06, 38)}px ${MONO}`;
       ctx.fillText(P.hook, W / 2, H * 0.14);
       ctx.restore();
@@ -78,12 +78,12 @@
     if (t >= T.introStart) {
       ctx.save();
       ctx.globalAlpha = CP.easeOutCubic(Math.min(1, introP * 1.4));
-      ctx.strokeStyle = '#7fa6c9'; ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = '#b8863f'; ctx.lineWidth = 4; ctx.lineJoin = 'round';
       ctx.beginPath(); ctx.moveTo(p2.x, p2.y); ctx.lineTo(p0.x, p0.y); ctx.lineTo(p1.x, p1.y); ctx.closePath(); ctx.stroke();
-      ctx.fillStyle = '#ede9df'; ctx.font = `500 ${Math.min(unit * 0.55, 24)}px ${MONO}`; ctx.textAlign = 'center';
+      ctx.fillStyle = '#f5efe6'; ctx.font = `500 ${Math.min(unit * 0.55, 24)}px ${MONO}`; ctx.textAlign = 'center';
       ctx.fillText(String(P.a), p0.x - 24, (p0.y + p2.y) / 2);
       ctx.fillText(String(P.b), (p0.x + p1.x) / 2, p0.y + 26);
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#e0c25a';
       ctx.fillText(String(P.c), (p2.x + p1.x) / 2 + 18, (p2.y + p1.y) / 2 - 10);
       ctx.restore();
     }
@@ -94,7 +94,7 @@
       ctx.save();
       ctx.globalAlpha = reveal * 0.55;
       // square on leg a (left side)
-      ctx.fillStyle = '#7fa6c9';
+      ctx.fillStyle = '#b8863f';
       ctx.fillRect(p2.x - P.a * unit, p2.y, P.a * unit, P.a * unit);
       // square on leg b (bottom)
       ctx.fillRect2 = null;
@@ -102,7 +102,7 @@
       ctx.restore();
       ctx.save();
       ctx.globalAlpha = reveal * 0.55;
-      ctx.fillStyle = '#d9a441';
+      ctx.fillStyle = '#e0c25a';
       // square on hypotenuse (approx, offset perpendicular)
       const hx = p1.x - p2.x, hy = p1.y - p2.y;
       const nx = -hy, ny = hx; const nlen = Math.hypot(nx, ny); const ux = nx / nlen, uy = ny / nlen;
@@ -116,11 +116,11 @@
       if (sqP > 0.5) {
         ctx.save();
         ctx.globalAlpha = CP.clamp01((sqP - 0.5) / 0.5);
-        ctx.fillStyle = '#ede9df'; ctx.textAlign = 'center';
+        ctx.fillStyle = '#f5efe6'; ctx.textAlign = 'center';
         ctx.font = `600 ${Math.min(W * 0.032, 20)}px ${MONO}`;
         ctx.fillText(`${P.a}² = ${P.a * P.a}`, p2.x - P.a * unit / 2, p2.y + P.a * unit / 2);
         ctx.fillText(`${P.b}² = ${P.b * P.b}`, p0.x + P.b * unit / 2, p0.y + P.b * unit / 2);
-        ctx.fillStyle = '#d9a441';
+        ctx.fillStyle = '#e0c25a';
         ctx.fillText(`${P.c}² = ${P.c * P.c}`, p2.x + ux * P.c * unit / 2 + (p1.x - p2.x) / 2, p2.y + uy * P.c * unit / 2 + (p1.y - p2.y) / 2);
         ctx.restore();
       }
@@ -131,18 +131,18 @@
       const fEase = CP.easeOutCubic(finP);
       const y = H * 0.90;
       ctx.save();
-      ctx.globalAlpha = fEase; ctx.textAlign = 'center'; ctx.fillStyle = '#ede9df';
+      ctx.globalAlpha = fEase; ctx.textAlign = 'center'; ctx.fillStyle = '#f5efe6';
       ctx.font = `500 ${Math.min(W * 0.03, 20)}px ${MONO}`;
       ctx.fillText(`${P.a}² + ${P.b}² =`, W / 2 - 60, y);
       const pop = finP > 0.5 ? CP.easeOutBack(CP.clamp01((finP - 0.5) / 0.5)) : 0;
       ctx.save(); ctx.translate(W / 2 + 90, y); ctx.scale(0.7 + 0.3 * pop, 0.7 + 0.3 * pop);
-      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#d9a441';
+      ctx.globalAlpha = CP.clamp01(pop); ctx.fillStyle = '#e0c25a';
       ctx.font = `700 ${Math.min(W * 0.06, 34)}px ${MONO}`;
       ctx.fillText(`${P.c}²`, 0, 0);
       ctx.restore();
       ctx.restore();
       if (P.footnote && finP > 0.75) {
-        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8; ctx.fillStyle = '#e2725b';
+        ctx.save(); ctx.globalAlpha = CP.clamp01((finP - 0.75) / 0.25) * 0.8; ctx.fillStyle = '#4f7a8f';
         ctx.font = `italic 400 ${Math.min(W * 0.02, 14)}px ${SERIF}`; ctx.textAlign = 'center';
         ctx.fillText(P.footnote, W / 2, y + 30);
         ctx.restore();
