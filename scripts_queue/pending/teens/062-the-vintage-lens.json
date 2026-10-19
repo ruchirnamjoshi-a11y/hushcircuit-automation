@@ -1,0 +1,59 @@
+{
+  "id": "the-vintage-lens",
+  "title": "The Vintage Lens",
+  "description": "A digital-native photographer is forced to shoot an entire roll of film with an antique mechanical camera.",
+  "tags": [
+    "photography",
+    "film",
+    "patience",
+    "vintage",
+    "hobby"
+  ],
+  "character_reference": "a lanky young man with messy sandy hair, wearing a thrifted corduroy jacket and a camera strap across his chest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My digital camera battery died right as the afternoon golden hour began. All I had in my bag was my grandfather's completely manual film camera.",
+      "on_screen_text": "DEAD BATTERY",
+      "duration_hint": 14.0,
+      "visual": "close-up of a modern digital camera LCD screen flashing a red low-battery warning icon in bright sunlight"
+    },
+    {
+      "narration": "With no autofocus or review screen, every single click felt like a high-stakes gamble. I had only twenty-four exposures left on the roll.",
+      "on_screen_text": "TWENTY-FOUR SHOTS",
+      "duration_hint": 13.0,
+      "visual": "close-up of fingers carefully turning the mechanical film advance lever on a vintage silver camera body, bright outdoor lighting"
+    },
+    {
+      "narration": "I had to actually estimate the distance, judge the sunlight, and twist the focus ring by hand instead of letting the computer do the work.",
+      "on_screen_text": "MANUAL FOCUS",
+      "duration_hint": 13.0,
+      "visual": "close-up of a hand twisting the knurled metal focus ring on a vintage camera lens, shallow depth of field against green foliage"
+    },
+    {
+      "narration": "Without a screen to check my results, I had to trust my gut instinct for composition. Every shot required actual presence of mind.",
+      "on_screen_text": "TRUST THE GUT",
+      "duration_hint": 13.0,
+      "visual": "side profile of photographer squinting through a mechanical viewfinder, holding a heavy metal camera steady against the cheek"
+    },
+    {
+      "narration": "When I finally developed the film days later, the imperfections made the photos feel alive in a way digital perfection never could.",
+      "on_screen_text": "DEVELOPED FILM",
+      "duration_hint": 13.0,
+      "visual": "close-up of black and white photographic negatives hanging from clips to dry under a warm red safelight in a darkroom"
+    },
+    {
+      "narration": "Slowing down transformed how I looked at the world around me. Sometimes taking away the safety net makes your vision sharper.",
+      "on_screen_text": "NEW PERSPECTIVE",
+      "duration_hint": 13.0,
+      "visual": "macro shot of a finished photographic print showing sharp contrast, warm toning, held up by fingers against a soft background"
+    },
+    {
+      "narration": "Embracing the slow way of doing things changes everything. Follow along for more everyday stories of growing up.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "young man smiling while adjusting a vintage camera strap over his shoulder, sunlit park background, cinematic lighting"
+    }
+  ]
+}

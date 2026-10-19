@@ -1,0 +1,65 @@
+{
+  "id": "vances-ultimatum",
+  "title": "Neon Pulse — Episode 52: Vance's Ultimatum",
+  "description": "Kael confronts Commander Vance in the central core chamber of the shadow empire, leading to a shocking revelation and an impossible choice.",
+  "tags": [
+    "action",
+    "superhero",
+    "sci-fi",
+    "thriller",
+    "animation"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 52,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sparks shower from the shattered control panels as Vance steps forward, his boots ringing sharply against the metal grating.",
+      "on_screen_text": "THE RENEWED CLASH",
+      "duration_hint": 7.0,
+      "visual": "Low angle shot of a heavily armed military commander stepping through glowing debris inside a dark industrial facility, brandishing a crackling energy blade toward the center of the frame"
+    },
+    {
+      "narration": "You cannot outrun what is already inside your veins, Kael. The crimson abyss belongs to the empire, and soon so will you.",
+      "on_screen_text": "THE DARK TRUTH",
+      "duration_hint": 9.5,
+      "visual": "Medium shot of a stern officer holding a glowing futuristic weapon in a vast subterranean control room filled with towering holographic monitors and humming machinery"
+    },
+    {
+      "narration": "Pain flares through my chest as the absorbed energy responds to his voice, threatening to tear my own consciousness apart.",
+      "on_screen_text": "INTERNAL REBELLION",
+      "duration_hint": 8.0,
+      "visual": "Close-up of a desperate man grabbing his chest in intense agony while faint amber lines beneath his clothing flare with chaotic, blinding intensity"
+    },
+    {
+      "narration": "I grit my teeth, channeling the stolen crimson power into my fists to push back against the crushing pressure.",
+      "on_screen_text": "FIGHTING BACK",
+      "duration_hint": 7.5,
+      "visual": "Dynamic action shot of a man throwing his hands forward, unleashing a violent shockwave of swirling red energy that shatters nearby glass panels"
+    },
+    {
+      "narration": "Vance merely smirks, pressing a master override switch that plunges the entire subterranean chamber into sudden, ominous darkness.",
+      "on_screen_text": "LIGHTS OUT",
+      "duration_hint": 7.5,
+      "visual": "Wide shot of a massive underground industrial hall as rows of glowing overhead lights flicker and die simultaneously, leaving only faint red warning beacons"
+    },
+    {
+      "narration": "In the pitch black, the hum of the core shifts into a terrifying frequency, opening a rift in the center of the room.",
+      "on_screen_text": "THE RIFT OPENS",
+      "duration_hint": 7.5,
+      "visual": "Eerie low-light view of a swirling vortex of dark energy tearing open the center of a metallic floor, casting long distorted shadows across the room"
+    },
+    {
+      "narration": "A chilling voice echoes from the anomaly, calling my name and proving that Vance was only ever a messenger for something far worse.",
+      "on_screen_text": "THE TRUE ENEMY",
+      "duration_hint": 8.5,
+      "visual": "A towering shadowy silhouette emerging from a glowing dimensional fracture, casting an immense intimidating shadow toward the camera"
+    },
+    {
+      "narration": "SUBSCRIBE",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.0,
+      "visual": "Dramatic cinematic close-up of determined eyes staring intently forward amid swirling ember sparks in a dark futuristic environment"
+    }
+  ]
+}

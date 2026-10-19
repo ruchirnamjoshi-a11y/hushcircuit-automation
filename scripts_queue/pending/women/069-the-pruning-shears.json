@@ -1,0 +1,65 @@
+{
+  "id": "the-pruning-shears",
+  "title": "The Pruning Shears",
+  "description": "Trimming an overgrown garden teaches a woman how to cut back commitments that no longer serve her.",
+  "tags": [
+    "gardening",
+    "boundaries",
+    "simplifying",
+    "nature",
+    "peace"
+  ],
+  "character_reference": "a woman in her late twenties with short dark pixie-cut hair, wearing a forest green canvas work jacket, canvas utility trousers, and leather gardening gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My backyard rosebushes had grown so wild they were blocking the sunlight from reaching the vegetable patch underneath.",
+      "on_screen_text": "WILD BRANCHES",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of overgrown tangled rose branches blocking sunlight in a lush backyard garden, warm afternoon light filtering through leaves"
+    },
+    {
+      "narration": "I had spent months watering every single stem, afraid that cutting anything back would mean killing the plant.",
+      "on_screen_text": "WATERING EVERYTHING",
+      "duration_hint": 5.5,
+      "visual": "Close-up of gloved hands holding a green garden hose spraying a fine mist over thick green foliage, soft natural lighting"
+    },
+    {
+      "narration": "The nursery worker told me the hard truth: sometimes you have to prune away healthy growth so the core can survive.",
+      "on_screen_text": "THE HARD TRUTH",
+      "duration_hint": 6.0,
+      "visual": "Medium shot standing in a garden holding metal pruning shears downward, thoughtful expression, warm outdoor lighting"
+    },
+    {
+      "narration": "With a sharp snap of the steel shears, I cut away thick, thorny branches that had crowded the center for years.",
+      "on_screen_text": "SHARP SNAPS",
+      "duration_hint": 5.5,
+      "visual": "Close-up of pruning shears snapping cleanly through a thick woody stem, falling green leaves caught in motion blur"
+    },
+    {
+      "narration": "At first, the bush looked bare and exposed, stripped down to its woody skeleton against the garden soil.",
+      "on_screen_text": "BARE AND EXPOSED",
+      "duration_hint": 5.0,
+      "visual": "Medium shot of a heavily pruned rosebush showing bare brown stems against dark damp garden mulch, bright daylight"
+    },
+    {
+      "narration": "A week later, fresh green shoots erupted from the cuts, drinking in the unfiltered sun I had finally given them.",
+      "on_screen_text": "FRESH SHOOTS",
+      "duration_hint": 5.5,
+      "visual": "Macro close-up of tiny bright green leaf buds emerging from a thick pruned branch tip, vibrant morning sunlight"
+    },
+    {
+      "narration": "Saying no to good things is often the only way to make room for the great things meant for you.",
+      "on_screen_text": "MAKING ROOM",
+      "duration_hint": 5.5,
+      "visual": "Medium shot resting hands on hips, smiling proudly at a healthy, well-spaced garden bed under warm afternoon sun"
+    },
+    {
+      "narration": "Follow along for more reflections on clearing out the clutter to let your true life bloom.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Close-up smiling warmly toward the camera in a sun-dappled backyard garden surrounded by green foliage"
+    }
+  ]
+}

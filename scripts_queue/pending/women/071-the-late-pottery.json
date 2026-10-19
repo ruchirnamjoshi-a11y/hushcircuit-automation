@@ -1,0 +1,65 @@
+{
+  "id": "the-late-pottery",
+  "title": "The Late Pottery",
+  "description": "Rescuing a collapsed clay pot on the wheel teaches her that mistakes can always be reshaped.",
+  "tags": [
+    "pottery",
+    "resilience",
+    "craft",
+    "mistakes",
+    "growth"
+  ],
+  "character_reference": "a woman in her late twenties with red hair tied back with a leather cord, wearing a slate gray clay-stained smock and a silver thumb ring",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The clay had gotten too wet on the spinning wheel, folding in on itself like a tired accordion.",
+      "on_screen_text": "THE FOLD",
+      "duration_hint": 5.5,
+      "visual": "Close-up of wet gray clay collapsing sideways on a spinning pottery wheel head, warm workshop incandescent lighting"
+    },
+    {
+      "narration": "My first instinct was to scrape it off the wheel, throw it in the scrap bucket, and pretend I never tried.",
+      "on_screen_text": "INSTINCT TO QUIT",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of hands hovering over a ruined clay lump with a frustrated expression, soft studio shadows"
+    },
+    {
+      "narration": "Instead, I closed my eyes, took a deep breath, and wet my hands with cool water from the bucket.",
+      "on_screen_text": "DEEP BREATH",
+      "duration_hint": 5.0,
+      "visual": "Close-up of hands dipping into a bucket of water, droplets sparkling under warm directional light"
+    },
+    {
+      "narration": "I cupped my palms around the collapsing tower, applying gentle, steady pressure to center the stubborn mass again.",
+      "on_screen_text": "GENTLE PRESSURE",
+      "duration_hint": 5.5,
+      "visual": "Close-up of wet hands gently squeezing and lifting spinning gray clay into a tall symmetrical cylinder, focused motion"
+    },
+    {
+      "narration": "By working with the flaw instead of fighting it, the clay rose higher and wider than my original sketch.",
+      "on_screen_text": "WORKING WITH THE FLAW",
+      "duration_hint": 5.5,
+      "visual": "Close-up of a wide, gracefully flared ceramic bowl spinning smoothly on a potter's wheel, glistening wet surface"
+    },
+    {
+      "narration": "A ruined piece isn't a failure unless you refuse to add water and try shaping it another way.",
+      "on_screen_text": "NOT A FAILURE",
+      "duration_hint": 5.5,
+      "visual": "Medium shot using a wooden rib tool to smooth the rim of a spinning clay vessel, calm and confident expression"
+    },
+    {
+      "narration": "No matter how many times your plans collapse, your hands always have the power to rebuild.",
+      "on_screen_text": "POWER TO REBUILD",
+      "duration_hint": 5.0,
+      "visual": "Medium profile shot looking down at finished pottery with a soft, satisfied smile in a warm rustic studio"
+    },
+    {
+      "narration": "Follow along for more gentle reminders that your best work often comes after the stumble.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Close-up smiling warmly toward the camera in a cozy artisan workshop filled with pottery shelves"
+    }
+  ]
+}

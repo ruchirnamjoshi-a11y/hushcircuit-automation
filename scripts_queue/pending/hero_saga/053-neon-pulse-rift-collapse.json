@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-rift-collapse",
+  "title": "Neon Pulse — Episode 53: Rift Collapse",
+  "description": "Kael faces the terrifying dimensional rift inside the shadow empire core as the entity threatens to consume everything.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "thriller",
+    "original"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 53,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The dimensional rift tore open with a deafening shriek, flooding the subterranean core with blinding violet light. Kael braced against the violent shockwave, his amber circuits flaring in frantic response to the cosmic pressure.",
+      "on_screen_text": "THE RIFT OPENS",
+      "duration_hint": 14.5,
+      "visual": "close-up of a lone warrior fighting a massive swirling purple energy vortex, camera tilting wildly, dark subterranean stone fragments floating in zero gravity, dramatic harsh backlighting"
+    },
+    {
+      "narration": "Commander Vance lunged through the chaotic turbulence, blade raised high for a fatal strike. But the sheer gravity of the expanding rift caught Vance mid-air, dragging the commander helplessly toward the abyss.",
+      "on_screen_text": "VANCE CAUGHT",
+      "duration_hint": 15.0,
+      "visual": "dynamic low angle shot of an armored adversary slipping backward into a glowing purple portal, reaching out desperately, debris flying through the air around them"
+    },
+    {
+      "narration": "A deep, resonant voice echoed directly inside Kael's mind, promising absolute power if he simply stepped forward. The glowing lines along his sleeves burned hotter, threatening to melt through his tactical jacket.",
+      "on_screen_text": "THE WHISPER",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a man clutching his head in intense agony, glowing golden energy pulses visible through torn fabric, swirling violet void reflecting in wide eyes"
+    },
+    {
+      "narration": "Refusing to yield to the entity's corrupting grasp, Kael drove his hands deep into the obsidian console below. He forced his own raw energy outward, creating a counter-pulse against the encroaching darkness.",
+      "on_screen_text": "COUNTER PULSE",
+      "duration_hint": 14.5,
+      "visual": "over-the-shoulder shot of hands slamming onto an alien glowing control panel, bright amber shockwaves rippling across dark metallic surfaces, intense fiery illumination"
+    },
+    {
+      "narration": "The core began to fracture from floor to ceiling as the chain reaction took hold. Chunks of jagged stone plummeted into the bottomless dimensional gap while warning sirens blared in harsh, rhythmic pulses.",
+      "on_screen_text": "COLLAPSING CORE",
+      "duration_hint": 14.0,
+      "visual": "wide shot of a cavernous underground facility crumbling apart, massive pillars snapping in half, intense purple and orange light erupting from deep cracks in the ground"
+    },
+    {
+      "narration": "With one final, lung-bursting effort, Kael leaped away from the crumbling precipice just as the entire chamber imploded. He crashed hard onto the distant tunnel floor, gasping for air in the sudden silence.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 15.0,
+      "visual": "action shot of a figure diving through the air away from an exploding cavern entrance, landing hard on dusty stone, smoke and fading violet sparks swirling behind"
+    },
+    {
+      "narration": "As the smoke cleared, a strange metallic artifact lay resting in the dust before him, pulsing with a faint blue light. The shadow empire had fallen, but an entirely new threat had just revealed itself.",
+      "on_screen_text": "UNKNOWN ARTIFACT",
+      "duration_hint": 15.0,
+      "visual": "extreme close-up of a metallic relic glowing with soft blue radiance on a cracked concrete floor, dim atmospheric lighting, smoke drifting slowly across the frame"
+    },
+    {
+      "narration": "The battle is won, but the journey into the dark unknown continues. Follow along for more original hero adventures every week.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.5,
+      "visual": "cinematic medium shot of a warrior standing resolute in a dark tunnel, looking toward a distant light source, confident posture, moody atmospheric shadows"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "echoes-of-the-syndicate",
+  "title": "Neon Pulse — Episode 50: Echoes of the Syndicate",
+  "description": "Kael confronts his mirror-powered nemesis deep underground while uncovering a massive syndicate facility map.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "thriller",
+    "suspense"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 50,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sparks erupt from the metallic rings as my nemesis steps through the shimmering distortion. There is nowhere left to run in this subterranean tomb.",
+      "on_screen_text": "THE RIVAL EMERGES",
+      "duration_hint": 10.4,
+      "visual": "Extreme close up of electric sparks flying from metallic rings in a dark underground chamber, low angle shot focusing on glowing energy distortion casting sharp amber light"
+    },
+    {
+      "narration": "The syndicate map flickers on the holographic terminal, revealing thousands of hidden outposts across the globe. We were never fighting a localized militia.",
+      "on_screen_text": "GLOBAL CONSPIRACY",
+      "duration_hint": 11.3,
+      "visual": "Medium wide shot of a holographic map projecting floating red nodes across a dark cavern wall, illuminated from below by blue and purple light emitting from ancient machinery"
+    },
+    {
+      "narration": "My foe lunges forward with a shattering glass strike, weaponizing the shattered reflections of the cavern walls. I dodge just in time as shards bury deep into solid stone.",
+      "on_screen_text": "SHATTERED STRIKE",
+      "duration_hint": 12.1,
+      "visual": "Action shot of a character dodging sharp crystalline shards flying past their shoulder, dynamic low angle capturing explosive impact against rough stone walls in deep subterranean depths"
+    },
+    {
+      "narration": "Crimson abyss energy surges through my veins, answering the call of the glowing amber circuitry on my sleeves. The power is heavy, volatile, and entirely unpredictable.",
+      "on_screen_text": "VOLATILE POWER",
+      "duration_hint": 11.7,
+      "visual": "Close up shot of glowing amber patterns flaring brightly on fabric sleeves while dark crimson wisps wrap around clenched fists in a dimly lit rocky underground environment"
+    },
+    {
+      "narration": "With a sweeping kick, I shatter the enemy's primary mirror projector into a million glittering fragments. The sudden blinding flash fills the entire subterranean hall.",
+      "on_screen_text": "MIRROR SHATTER",
+      "duration_hint": 11.3,
+      "visual": "Dynamic action shot capturing a powerful sweep kick sending glass shards flying in all directions, bright white and amber lens flare illuminating a smoke filled cavern space"
+    },
+    {
+      "narration": "As the smoke clears, a hidden bulkhead door groans open behind the console, revealing an automated transport rail system plunging deeper into the dark earth.",
+      "on_screen_text": "HIDDEN PATHWAY",
+      "duration_hint": 11.7,
+      "visual": "Medium wide shot of a heavy steel bulkhead slowly sliding open into a dark tunnel, illuminated by dim amber emergency lights along the metallic tracks stretching into darkness"
+    },
+    {
+      "narration": "My nemesis vanishes into the oncoming transport car, leaving behind a coded transmission blinking on the central console. The trap was set long before I ever arrived down here.",
+      "on_screen_text": "THE TRAP SPRUNG",
+      "duration_hint": 13.0,
+      "visual": "Over the shoulder shot looking toward a fast moving futuristic train disappearing into a dark tunnel, glowing red computer terminal glowing softly in the foreground"
+    },
+    {
+      "narration": "I grab the data core and leap onto the trailing edge of the departing car as it accelerates into the abyss. If the syndicate wants a war, I will bring it straight to their doorstep.",
+      "on_screen_text": "TO THE CORE",
+      "duration_hint": 13.0,
+      "visual": "Action shot of someone grabbing onto the rear bumper of a speeding underground transport vehicle, motion blur background of rocky cave walls rushing past at high speed"
+    },
+    {
+      "narration": "The journey ahead leads straight into the heart of the shadow empire. Follow along for more thrilling chapters of Neon Pulse every week.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.7,
+      "visual": "Wide cinematic shot of a futuristic transport cart speeding down a glowing railway tunnel into the deep underground, dark moody atmosphere with vibrant amber and blue highlights"
+    }
+  ]
+}

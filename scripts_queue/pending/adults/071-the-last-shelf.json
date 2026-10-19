@@ -1,0 +1,65 @@
+{
+  "id": "the-last-shelf",
+  "title": "The Last Shelf",
+  "description": "A lifelong bookseller organizes his final inventory before closing his independent bookshop, finding unexpected gratitude.",
+  "tags": [
+    "books",
+    "community",
+    "closure",
+    "gratitude",
+    "bookseller"
+  ],
+  "character_reference": "an older man with gentle crinkled eyes, wearing a cable-knit sweater with leather elbow patches and half-moon reading glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty-eight years, Julian kept the lights burning in the corner bookstore, handing out paperbacks and quiet recommendations to anyone who walked in.",
+      "on_screen_text": "THE CORNER SHOP",
+      "duration_hint": 14.8,
+      "visual": "wide shot of a cozy independent bookstore interior crammed with wooden bookshelves, warm overhead reading lights"
+    },
+    {
+      "narration": "Now the shelves were nearly bare, the boxes packed tight with tape, and tomorrow the keys would be handed over to a stranger.",
+      "on_screen_text": "BARE SHELVES",
+      "duration_hint": 13.0,
+      "visual": "medium shot of an older man taping shut a cardboard box labeled books on a wooden checkout counter"
+    },
+    {
+      "narration": "He reached into the very back of the lowest shelf and found a stray notebook left behind by a regular customer ten years ago.",
+      "on_screen_text": "THE STRAY NOTEBOOK",
+      "duration_hint": 13.9,
+      "visual": "close-up of weathered hands pulling a dusty leather notebook from the dark recess of an empty wooden shelf"
+    },
+    {
+      "narration": "Flipping through the pages, he saw handwritten recommendations he had written for local teenagers who were now grown adults with families of their own.",
+      "on_screen_text": "OLD RECOMMENDATIONS",
+      "duration_hint": 14.3,
+      "visual": "close-up of aged paper filled with handwritten book lists and initials under warm desk illumination"
+    },
+    {
+      "narration": "The shop wasn't just a business that failed to survive the times. It was a living room where an entire neighborhood grew up.",
+      "on_screen_text": "A LIVING ROOM",
+      "duration_hint": 13.5,
+      "visual": "medium shot of the man looking around the empty, cavernous room with a bittersweet, appreciative smile"
+    },
+    {
+      "narration": "He turned off the main overhead lamp, leaving only a single brass desk light glowing in the front window for the evening commuters.",
+      "on_screen_text": "THE FINAL LAMP",
+      "duration_hint": 13.9,
+      "visual": "medium shot of the man reaching up to pull a brass pull-chain on a green banker lamp, casting long cozy shadows"
+    },
+    {
+      "narration": "Endings are rarely just about loss. They are the quiet proof that something mattered while it lasted.",
+      "on_screen_text": "WHAT MATTERED",
+      "duration_hint": 12.6,
+      "visual": "close-up of the man's face in warm golden light, reflecting quiet contentment and emotional release"
+    },
+    {
+      "narration": "If you cherish the stories that connect us all, follow along for more daily reflections.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "portrait shot of the bookstore owner smiling gently toward the camera against a warm background of books"
+    }
+  ]
+}

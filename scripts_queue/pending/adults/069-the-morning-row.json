@@ -1,0 +1,65 @@
+{
+  "id": "the-morning-row",
+  "title": "The Morning Row",
+  "description": "An aging widower returns to the lake where he used to fish with his father, facing the echoes of memory.",
+  "tags": [
+    "loss",
+    "father",
+    "lake",
+    "memory",
+    "healing"
+  ],
+  "character_reference": "an older man with deep laugh lines around his eyes, short gray hair, wearing a worn fisherman's wool sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The wooden rowboat groaned as Thomas pushed it off the damp gravel shore for the first time since his father passed away.",
+      "on_screen_text": "PUSHING OFF",
+      "duration_hint": 13.0,
+      "visual": "medium shot of an older man pushing a wooden boat into calm misty lake water from a rocky shore at dawn"
+    },
+    {
+      "narration": "The morning mist clung to the surface of the water like a heavy wool blanket, hiding the far shore and the passage of years.",
+      "on_screen_text": "THE MISTY WATER",
+      "duration_hint": 13.5,
+      "visual": "wide landscape shot of a calm foggy lake at sunrise, a lone rowboat creating gentle ripples on the glass-like surface"
+    },
+    {
+      "narration": "Every creak of the oar locks sounded like the voice of his father reminding him to keep his shoulders relaxed and his strokes steady.",
+      "on_screen_text": "THE OARS",
+      "duration_hint": 13.5,
+      "visual": "close-up of weathered hands gripping wooden oars as they dip into the dark water, sending ripples outward"
+    },
+    {
+      "narration": "He had avoided this lake for a decade, fearing the silence would feel too heavy without someone sitting on the bench opposite him.",
+      "on_screen_text": "AVOIDING THE SILENCE",
+      "duration_hint": 13.9,
+      "visual": "medium shot of the man sitting in the middle of the boat, looking down thoughtfully at the empty wooden seat across from him"
+    },
+    {
+      "narration": "Instead of emptiness, he felt the steady rhythm of his own breathing matching the gentle lap of water against the hull.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 12.6,
+      "visual": "close-up of water splashing softly against the side of the wooden boat in golden morning light"
+    },
+    {
+      "narration": "He rested his oars and let the boat drift, realizing that grief doesn't disappear; it simply transforms into a quiet kind of peace.",
+      "on_screen_text": "DRIFTING PEACE",
+      "duration_hint": 14.3,
+      "visual": "profile shot of the man resting with closed eyes, face illuminated by warm sunrise light reflecting off the lake"
+    },
+    {
+      "narration": "Some places hold our history not to weigh us down, but to remind us how far we have traveled.",
+      "on_screen_text": "OUR HISTORY",
+      "duration_hint": 12.6,
+      "visual": "wide shot of the lone boat drifting peacefully amidst golden morning mist on the still water"
+    },
+    {
+      "narration": "If you find comfort in quiet reflections, follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.7,
+      "visual": "portrait shot of the man looking toward the camera with a gentle, serene smile against a soft water backdrop"
+    }
+  ]
+}

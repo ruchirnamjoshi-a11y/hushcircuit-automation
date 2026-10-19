@@ -1,0 +1,65 @@
+{
+  "id": "the-overgrown-pot",
+  "title": "The Overgrown Pot",
+  "description": "An aging botanist realizes her own life has become as root-bound as the neglected specimens in her greenhouse.",
+  "tags": [
+    "gardening",
+    "aging",
+    "growth",
+    "reflection",
+    "change"
+  ],
+  "character_reference": "an older woman with silver hair pulled back in a loose bun, wearing a forest-green canvas apron smeared with dark soil",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For four decades, Elena knew the exact watering schedule of every rare fern and succulent in the municipal conservatory. She kept them alive while her own life stood still.",
+      "on_screen_text": "FORTY YEARS OF GREEN",
+      "duration_hint": 16.5,
+      "visual": "wide shot of a sunlit greenhouse filled with hanging ferns and tropical plants, an older woman tending to a tall monstera"
+    },
+    {
+      "narration": "When she finally tried to repot a massive monstera, she found the roots spiraling tightly in circles, strangled by the ceramic walls that once protected them.",
+      "on_screen_text": "ROOT BOUND",
+      "duration_hint": 14.8,
+      "visual": "close-up of thick tangled roots spilling out of a cracked terracotta pot onto a wooden potting bench covered in loose dirt"
+    },
+    {
+      "narration": "She used her worn trowel to gently tease the compacted earth apart. The plant resisted at first, holding stubbornly to the shape of its confinement.",
+      "on_screen_text": "TEASING THE ROOTS",
+      "duration_hint": 13.9,
+      "visual": "close-up of gloved hands carefully pulling apart dark matted soil with a small metal garden trowel"
+    },
+    {
+      "narration": "Looking down at her own calloused hands, Elena realized she had stayed in the same comfortable rut for so long that she had forgotten how to expand.",
+      "on_screen_text": "THE REALIZE",
+      "duration_hint": 13.5,
+      "visual": "medium shot of the woman pausing, staring thoughtfully down at her dirt-smudged palms while surrounded by green leaves"
+    },
+    {
+      "narration": "She carried the heavy plant outside into the open courtyard, finding a larger vessel with fresh, nutrient-rich soil and plenty of room to stretch.",
+      "on_screen_text": "FINDING SPACE",
+      "duration_hint": 13.9,
+      "visual": "medium shot of the woman lifting a large green plant into a spacious new unglazed pot in an outdoor sunlit courtyard"
+    },
+    {
+      "narration": "Giving something room to grow meant accepting the mess of change and trusting that the new soil would hold it steady.",
+      "on_screen_text": "ROOM TO GROW",
+      "duration_hint": 12.2,
+      "visual": "close-up of soil being patted down gently around the base of the plant stem, dappled sunlight filtering through overhead glass panes"
+    },
+    {
+      "narration": "She poured fresh water over the leaves and took her first deep breath of the afternoon air, feeling lighter than she had in years.",
+      "on_screen_text": "A DEEP BREATH",
+      "duration_hint": 13.0,
+      "visual": "profile shot of the woman closing her eyes and breathing out slowly as water droplets glisten on fresh green foliage"
+    },
+    {
+      "narration": "Every season offers us a chance to repot our lives. Follow along for more stories of quiet transformation.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.6,
+      "visual": "portrait shot of the woman smiling warmly toward the camera against a soft background of indoor botanical plants"
+    }
+  ]
+}

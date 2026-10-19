@@ -1,0 +1,59 @@
+{
+  "id": "the-late-sketch",
+  "title": "The Late Sketch",
+  "description": "A weary commuter sketches a sleeping fellow passenger on the late-night train to capture a fleeting moment.",
+  "tags": [
+    "commuting",
+    "sketching",
+    "observation",
+    "night",
+    "art"
+  ],
+  "character_reference": "a young man with tousled brown hair, wearing a dark wool coat and a canvas messenger bag across his shoulder",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The midnight train rattled along the tracks as I sat across from a tired commuter fast asleep against the window glass.",
+      "on_screen_text": "MIDNIGHT TRAIN",
+      "duration_hint": 13.0,
+      "visual": "interior view of a dimly lit subway car at night, reflection of passengers in the dark window glass, rhythmic motion blur outside"
+    },
+    {
+      "narration": "I pulled my black sketchbook from my bag and uncapped a pen. The rhythmic swaying of the carriage made drawing a real challenge.",
+      "on_screen_text": "THE SKETCHBOOK",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands opening a blank paper sketchbook on a lap, holding a black ink pen under flickering train lights"
+    },
+    {
+      "narration": "My hand moved quickly across the paper, capturing the angle of the slumped shoulder and the relaxed tilt of the head.",
+      "on_screen_text": "FAST LINES",
+      "duration_hint": 13.0,
+      "visual": "close-up of pen sketching swift, confident contour lines on textured paper, rapid hand movements"
+    },
+    {
+      "narration": "Just as I was adding the final shadows to the coat collar, the automated speaker announced my approaching stop.",
+      "on_screen_text": "LAST STOP",
+      "duration_hint": 13.0,
+      "visual": "close-up of eyes glancing upward toward an illuminated digital destination sign inside a moving transit car, blurry lights"
+    },
+    {
+      "narration": "Before stepping out into the cold night air, I tore the page out and gently tucked it onto the empty seat beside the sleeping passenger.",
+      "on_screen_text": "SILENT GIFT",
+      "duration_hint": 14.0,
+      "visual": "close-up of a hand placing a finished pencil sketch down on a blue upholstered train seat, soft interior lighting"
+    },
+    {
+      "narration": "Art doesn't always live in a museum; sometimes it happens in the spaces between destinations.",
+      "on_screen_text": "EVERYDAY ART",
+      "duration_hint": 12.0,
+      "visual": "person walking down a metal train platform at night, breath visible in the cold air, warm amber station lights"
+    },
+    {
+      "narration": "Every stranger you pass has a story worth noticing. Follow along for more everyday stories of growing up.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "smiling commuter walking away toward a stairwell, carrying a messenger bag, atmospheric nighttime city tones"
+    }
+  ]
+}

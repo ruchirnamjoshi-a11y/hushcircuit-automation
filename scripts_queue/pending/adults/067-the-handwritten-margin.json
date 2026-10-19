@@ -1,0 +1,65 @@
+{
+  "id": "the-handwritten-margin",
+  "title": "The Handwritten Margin",
+  "description": "A retired archivist discovers a decades-old book left behind with margin notes from an old friend she lost touch with.",
+  "tags": [
+    "books",
+    "friendship",
+    "memory",
+    "archivist",
+    "nostalgia"
+  ],
+  "character_reference": "a woman in her late fifties with sharp, observant dark eyes, silver-streaked bob haircut, wearing a cable-knit cream cardigan",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sorting through the final boxes of the university archive, Clara expected old tax ledgers and dry academic theses, not ghosts from her youth.",
+      "on_screen_text": "THE FINAL BOX",
+      "duration_hint": 13.9,
+      "visual": "medium shot of a woman in a quiet basement archive leaning over a cardboard box filled with old hardcover books under a banker lamp"
+    },
+    {
+      "narration": "At the bottom of the crate lay a worn copy of poetry with familiar blue ink scrawled across the margins on page forty-two.",
+      "on_screen_text": "FAMILIAR INK",
+      "duration_hint": 13.0,
+      "visual": "close-up of gloved fingers opening an aged yellowed book to a page covered in neat handwritten cursive notes in blue ink"
+    },
+    {
+      "narration": "It was Julian's handwriting. They had spent university nights arguing about verse over cold tea before a bitter argument drove them apart.",
+      "on_screen_text": "JULIAN'S WRITING",
+      "duration_hint": 13.9,
+      "visual": "close-up of eyes widening slightly in recognition, illuminated by the warm amber glow of a desk lamp in the archive"
+    },
+    {
+      "narration": "The note in the margin was a question she had never answered: 'Do you think we will still care about these poems when we are old?'",
+      "on_screen_text": "THE UNANSWERED NOTE",
+      "duration_hint": 14.3,
+      "visual": "macro shot focusing on a specific handwritten sentence on aged paper next to printed poetry text"
+    },
+    {
+      "narration": "Thirty years had passed without a word, yet holding the book felt like picking up a conversation that had only paused for breath.",
+      "on_screen_text": "THIRTY YEARS",
+      "duration_hint": 13.0,
+      "visual": "medium shot of the woman holding the open book against her chest, gazing thoughtfully into the shadows of the archive room"
+    },
+    {
+      "narration": "She picked up a fountain pen from her desk and wrote a simple response in the empty space below his old question.",
+      "on_screen_text": "THE REPLY",
+      "duration_hint": 12.2,
+      "visual": "close-up of a fountain pen writing a neat line of black ink at the bottom of an old book page"
+    },
+    {
+      "narration": "It is never too late to answer the questions we were once too proud or too frightened to address.",
+      "on_screen_text": "NEVER TOO LATE",
+      "duration_hint": 12.6,
+      "visual": "close-up of the closed book resting on a wooden table next to the fountain pen, soft atmospheric lighting"
+    },
+    {
+      "narration": "Some bonds only need a quiet moment to spark back to life. Follow along for more daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "portrait shot of the woman looking directly at the camera with a serene, knowing expression in a warm cozy study"
+    }
+  ]
+}

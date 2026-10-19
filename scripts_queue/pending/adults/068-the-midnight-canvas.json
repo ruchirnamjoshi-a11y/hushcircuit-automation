@@ -1,0 +1,65 @@
+{
+  "id": "the-midnight-canvas",
+  "title": "The Midnight Canvas",
+  "description": "A former sign painter picks up fine art brushes after retirement, confronting the fear of creating without a client's brief.",
+  "tags": [
+    "art",
+    "retirement",
+    "creativity",
+    "fear",
+    "expression"
+  ],
+  "character_reference": "a weathered man with a salt-and-pepper mustache and paint-stained fingers, wearing a faded blue denim work shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty years, Marcus painted exactly what people paid him to paint: neat storefront lettering, polite arrows, and bright restaurant menus.",
+      "on_screen_text": "COMMISSIONED LINES",
+      "duration_hint": 14.3,
+      "visual": "medium shot of a man painting bold capital letters on a wooden board with a fine liner brush in a sunlit workshop"
+    },
+    {
+      "narration": "When he retired, he bought a blank canvas expecting freedom. Instead, the white surface terrified him more than any commercial deadline.",
+      "on_screen_text": "THE BLANK WHITE",
+      "duration_hint": 13.5,
+      "visual": "medium shot of the man sitting on a stool staring nervously at a large blank white canvas on an easel in a quiet room"
+    },
+    {
+      "narration": "Without a customer telling him what color to use or where to place the margins, his hand hovered over the palette in total uncertainty.",
+      "on_screen_text": "TOTAL UNCERTAINTY",
+      "duration_hint": 14.3,
+      "visual": "close-up of paint-stained fingers holding a palette knife above a wooden mixing palette with dollots of oil paint"
+    },
+    {
+      "narration": "He realized his entire career had been safe because someone else always took the blame if the design failed.",
+      "on_screen_text": "SAFE BOUNDARIES",
+      "duration_hint": 12.2,
+      "visual": "profile shot of the man gazing out a rainy window, holding a paintbrush loosely between his knuckles"
+    },
+    {
+      "narration": "With a sudden, defiant breath, he dipped a wide bristle brush into raw umber and swept a heavy, uncalculated stroke right across the center.",
+      "on_screen_text": "THE FIRST STROKE",
+      "duration_hint": 14.8,
+      "visual": "close-up of a brush loaded with dark brown paint making a bold, expressive swipe across a white canvas"
+    },
+    {
+      "narration": "The paint didn't spell a word or point an arrow. It was just a shape born from his own pulse, messy and entirely his own.",
+      "on_screen_text": "HIS OWN SHAPE",
+      "duration_hint": 13.9,
+      "visual": "medium shot of the man leaning back to inspect the chaotic abstract stroke on the canvas with a relieved smile"
+    },
+    {
+      "narration": "True freedom isn't about having no rules. It's about having the courage to break your own boundaries.",
+      "on_screen_text": "BREAKING BOUNDARIES",
+      "duration_hint": 13.0,
+      "visual": "close-up of the artist's hands mixing vibrant colors on a wooden palette under a bright overhead lamp"
+    },
+    {
+      "narration": "If you are ready to start painting outside the lines, follow along for more inspiring stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "portrait shot of the man smiling proudly with paint smudged slightly on his cheek, warm workshop background"
+    }
+  ]
+}

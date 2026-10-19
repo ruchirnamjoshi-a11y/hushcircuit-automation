@@ -1,0 +1,65 @@
+{
+  "id": "the-quiet-metronome",
+  "title": "The Quiet Metronome",
+  "description": "A middle-aged piano tuner decides to finally play his own compositions after decades of fixing other people's instruments.",
+  "tags": [
+    "music",
+    "career",
+    "middle-aged",
+    "regret",
+    "hope"
+  ],
+  "character_reference": "a middle-aged man with thinning gray hair, round wire-rimmed glasses, wearing a dark tweed vest over a white rolled-up shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For twenty-five years, Arthur tuned pianos for concert halls he would never play in and prodigies he would never be. He knew every loose pin and warped hammer in the city.",
+      "on_screen_text": "THE TUNER'S HANDS",
+      "duration_hint": 14.3,
+      "visual": "close-up of calloused fingers delicately adjusting a brass tuning pin inside an open upright piano, warm low-key lamp lighting, wooden interior"
+    },
+    {
+      "narration": "His own upright at home had a dead middle C that he never bothered to fix. It felt appropriate for a life spent smoothing out everyone else's rough edges.",
+      "on_screen_text": "THE DEAD KEY",
+      "duration_hint": 13.9,
+      "visual": "medium shot of the man staring down at a dusty keyboard in a cramped living room, single shaft of afternoon sunlight illuminating dust motes"
+    },
+    {
+      "narration": "One rainy Tuesday, a young student asked him why he never played a full melody. Arthur had no answer ready, only the silence of an empty apartment.",
+      "on_screen_text": "A SIMPLE QUESTION",
+      "duration_hint": 13.0,
+      "visual": "over-the-shoulder view looking at the man holding a tuning wrench, listening intently to a sheet of blank manuscript paper on the music rest"
+    },
+    {
+      "narration": "That evening, instead of packing his leather case, he sat down and began to tighten the rusted wire of the middle C with steady, deliberate turns.",
+      "on_screen_text": "TIGHTENING THE WIRE",
+      "duration_hint": 13.5,
+      "visual": "tight close-up on concentrated eyes reflecting the glint of a metal tuning hammer turning slowly against a steel string"
+    },
+    {
+      "narration": "The note rang out clear and resonant for the first time in a decade. It vibrated through the floorboards and settled deep in his chest.",
+      "on_screen_text": "THE FIRST NOTE",
+      "duration_hint": 13.0,
+      "visual": "wide shot of the man pressing a single piano key, posture straightening slightly as sound fills the dim, cozy room"
+    },
+    {
+      "narration": "He placed his calloused fingers on the ivory keys and played a simple chord he had written down on a napkin years ago.",
+      "on_screen_text": "PLAYING HIS OWN",
+      "duration_hint": 12.6,
+      "visual": "low angle shot focusing on hands pressing down three keys simultaneously, warm lamplight casting long shadows on the wall"
+    },
+    {
+      "narration": "It was never about competing with the prodigies. It was simply about leaving his own mark on the silence.",
+      "on_screen_text": "MAKING HIS MARK",
+      "duration_hint": 11.7,
+      "visual": "profile shot of the man smiling softly while looking down at the moving piano hammers inside the wooden casing"
+    },
+    {
+      "narration": "If you are waiting for permission to finally create your own story, let this be your quiet sign. Follow along for more daily reflections.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.3,
+      "visual": "portrait shot of the man turning his head to look directly toward the camera with a gentle, encouraging expression"
+    }
+  ]
+}

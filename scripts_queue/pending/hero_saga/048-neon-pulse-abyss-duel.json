@@ -1,0 +1,66 @@
+{
+  "id": "neon-pulse-abyss-duel",
+  "title": "Neon Pulse — Episode 48: Abyss Duel",
+  "description": "Kael plunges into an unknown subterranean abyss where he faces his shadowy attacker in a high-stakes duel, uncovering a terrifying truth about his own amber circuitry powers.",
+  "tags": [
+    "neon-pulse",
+    "action",
+    "superhero",
+    "scifi",
+    "original-hero-saga",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 48,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Falling hard into the pitch-black void, the ground shatters beneath us. Sparks ignite the damp air.",
+      "on_screen_text": "THE PLUNGE",
+      "duration_hint": 4.5,
+      "visual": "mid-air plummet through dark cavernous space, glowing amber trail streaming behind, jagged rock walls rushing past, dramatic low-angle upward shot, intense motion blur"
+    },
+    {
+      "narration": "I roll to my feet just as a blast of identical amber energy scorches the stone inches from my face.",
+      "on_screen_text": "MIRROR ATTACK",
+      "duration_hint": 5.0,
+      "visual": "evasive tactical roll on uneven subterranean floor, bright orange energy beam grazing rocky backdrop, low-angle dynamic action frame, tense atmosphere"
+    },
+    {
+      "narration": "Through the flickering light, my attacker emerges from the shadows. The face is obscured behind a shattered glowing visor.",
+      "on_screen_text": "THE RIVAL",
+      "duration_hint": 5.0,
+      "visual": "close-up of mysterious adversary emerging from gloom, cracked glowing facial mask, aggressive stance, cavern interior backdrop with jagged stalactites"
+    },
+    {
+      "narration": "We clash instantly, kinetic force throwing shockwaves against the cavern walls with every traded blow.",
+      "on_screen_text": "COLLIDING FORCES",
+      "duration_hint": 5.0,
+      "visual": "intense hand-to-hand combat exchange, fists colliding with blinding amber sparks flying outward, dynamic close-up angle, rough stone textures all around"
+    },
+    {
+      "narration": "Pain surges through my nervous system, mirroring every strike. This isn't just a combatant—they are somehow connected to my power.",
+      "on_screen_text": "SHARED PAIN",
+      "duration_hint": 5.5,
+      "visual": "close-up portrait grimacing in sudden agony, amber circuitry flaring intensely along clothing fabric, dramatic side lighting casting deep shadows"
+    },
+    {
+      "narration": "Before I can press the advantage, my opponent strikes the cavern floor, triggering a massive structural collapse of ancient stone.",
+      "on_screen_text": "CAVERN COLLAPSE",
+      "duration_hint": 5.5,
+      "visual": "adversary slamming fist into ground, huge boulders and dust clouds erupting upward, wide-angle chaotic action shot inside crumbling underground chamber"
+    },
+    {
+      "narration": "Heavy rubble blocks my path forward, but beyond the dust, a strange hum resonates from deep within the earth.",
+      "on_screen_text": "THE DEEP HUM",
+      "duration_hint": 5.0,
+      "visual": "standing amidst heavy falling debris, looking forward intently toward dark tunnel opening, hazy dust clouds illuminated by faint underground glow"
+    },
+    {
+      "narration": "Follow along for more thrilling chapters in this ongoing saga by subscribing to the channel.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "dramatic medium shot standing resolute inside shadowy subterranean cavern, glowing amber circuitry pulsing steadily, cinematic lighting framing the mysterious exit"
+    }
+  ]
+}

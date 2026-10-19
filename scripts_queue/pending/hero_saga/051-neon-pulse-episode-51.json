@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-51",
+  "title": "Neon Pulse — Episode 51: Descent Into Darkness",
+  "description": "Kael rides the hidden transport deeper into the global shadow empire, uncovering a subterranean hub of advanced technology.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "mystery",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 51,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The clandestine transport halts with a heavy metallic hiss inside a cavernous subterranean terminal. Glowing blue energy conduits pulse along the towering walls of the empire's inner sanctum.",
+      "on_screen_text": "THE HIDDEN HUB",
+      "duration_hint": 7.5,
+      "visual": "Wide angle view of a sleek metallic train stopped inside a massive subterranean docking bay illuminated by pulsing blue neon lines and rising steam, cinematic composition, moody atmosphere"
+    },
+    {
+      "narration": "Stepping out from the shadows, I keep my silhouette hidden behind massive crates of ionized weaponry. Armed guards patrol the catwalks above, their red optic visors sweeping the lower deck.",
+      "on_screen_text": "EVADING THE GUARDS",
+      "duration_hint": 7.8,
+      "visual": "Close side profile of a man crouching low behind large metallic crates, watching armed sentries patrolling an overhead steel bridge with glowing red sensor beams cutting through the dark air"
+    },
+    {
+      "narration": "The facility map I acquired glows softly against my forearm, projecting a glowing routing path through the labyrinthine lower levels. Every second counts before the sector locks down entirely.",
+      "on_screen_text": "THE HOLOGRAPHIC MAP",
+      "duration_hint": 7.5,
+      "visual": "Low angle medium shot of a man looking down at his forearm where a bright blue holographic schematic projects floating interface grids, casting a neon glow across his focused face"
+    },
+    {
+      "narration": "A sudden security alarm shrieks through the corridor, flashing harsh amber emergency strobes across the metallic flooring. Automated defense turrets swivel down from the ceiling tracks.",
+      "on_screen_text": "BREACH DETECTED",
+      "duration_hint": 7.5,
+      "visual": "Action shot of automated metallic gun turrets dropping rapidly from ceiling slots in a narrow steel hallway while warning amber lights flash intensely, dynamic camera tilt"
+    },
+    {
+      "narration": "Channeling the crimson energy from the abyss, I blast through the reinforced bulkhead with a concussive shockwave. Sparks and melted steel rain down into the dark abyss below.",
+      "on_screen_text": "EXPLOSIVE BREACH",
+      "duration_hint": 7.8,
+      "visual": "A man thrusting both hands forward as a violent burst of crimson and amber light shatters a thick metal door into glowing fragments, flying debris frozen mid-air, high contrast lighting"
+    },
+    {
+      "narration": "Stepping into the central core chamber, I freeze at the sight before me. A colossal containment vessel hums with raw, unstable power right in the center of the room.",
+      "on_screen_text": "THE CORE CHAMBER",
+      "duration_hint": 7.3,
+      "visual": "A man standing at the edge of a massive circular metallic platform, staring in awe at a towering glowing cylinder filled with swirling violet energy suspended in the center of a dark room"
+    },
+    {
+      "narration": "Footsteps echo heavily from the platform behind me, followed by a familiar, chilling voice cutting through the hum. Commander Vance steps out of the shadows with a cold smile.",
+      "on_screen_text": "UNWELCOME RETURN",
+      "duration_hint": 7.5,
+      "visual": "Medium close up of a stern armored commander stepping out from deep shadows into pale overhead light, holding a heavy sidearm and smirking with malicious intent"
+    },
+    {
+      "narration": "If you want to see how this dangerous journey concludes and what waits inside the core, follow along for more stories right here.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "Cinematic portrait of a man looking back over his shoulder with intense determination, glowing amber circuitry flaring brightly on his sleeves against a dark industrial backdrop"
+    }
+  ]
+}

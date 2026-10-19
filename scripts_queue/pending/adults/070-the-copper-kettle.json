@@ -1,0 +1,65 @@
+{
+  "id": "the-copper-kettle",
+  "title": "The Copper Kettle",
+  "description": "A woman inherits a dented kettle from her grandmother and learns the value of slowing down her frantic daily routine.",
+  "tags": [
+    "heritage",
+    "slow-living",
+    "family",
+    "mindfulness",
+    "kitchen"
+  ],
+  "character_reference": "a woman in her late forties with curly dark hair pinned up casually, wearing a simple linen apron over a striped shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Clara's kitchen ran on a strict schedule of instant coffee and digital timers. Everything had to be efficient, fast, and automated.",
+      "on_screen_text": "THE FAST KITCHEN",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a woman rushing around a modern kitchen, tapping buttons on a sleek espresso machine in bright morning light"
+    },
+    {
+      "narration": "Among her late grandmother's estate boxes sat a heavy, soot-stained copper kettle with a loose brass handle.",
+      "on_screen_text": "THE COPPER RELIC",
+      "duration_hint": 12.2,
+      "visual": "close-up of hands unboxing a dented, antique copper kettle from old packing paper on a wooden table"
+    },
+    {
+      "narration": "Instead of packing it away to sell, she filled it with water and placed it on the old gas burner, waiting for the flame to catch.",
+      "on_screen_text": "LIGHTING THE BURNER",
+      "duration_hint": 13.5,
+      "visual": "close-up of a match striking and igniting a blue gas ring beneath the heavy copper bottom of the kettle"
+    },
+    {
+      "narration": "There was no digital display to tell her the exact temperature. She had to listen for the faint shudder before the whistle.",
+      "on_screen_text": "WAITING WITHOUT SCREENS",
+      "duration_hint": 13.9,
+      "visual": "medium shot of the woman leaning against the kitchen counter, watching the kettle with a patient, curious expression"
+    },
+    {
+      "narration": "When the steam finally rose in a soft white plume, the room filled with the warm, rich scent of boiled water and old memories.",
+      "on_screen_text": "THE WARM STEAM",
+      "duration_hint": 13.0,
+      "visual": "close-up of steam curling gracefully from the spout of the copper kettle against a dark tiled kitchen wall"
+    },
+    {
+      "narration": "She poured the water slowly into a ceramic mug, realizing she hadn't stood still and watched something boil in twenty years.",
+      "on_screen_text": "POURING SLOWLY",
+      "duration_hint": 13.5,
+      "visual": "close-up of hot water pouring from the copper spout into a handmade ceramic mug in warm kitchen lighting"
+    },
+    {
+      "narration": "Slowing down isn't a waste of time. Sometimes it's the only way to actually taste your life.",
+      "on_screen_text": "TASTING LIFE",
+      "duration_hint": 12.2,
+      "visual": "profile shot of the woman holding the warm mug with both hands, eyes closed as she inhales the steam"
+    },
+    {
+      "narration": "If you enjoy finding peace in everyday routines, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.7,
+      "visual": "portrait shot of the woman smiling softly at the camera in a cozy kitchen filled with morning light"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-morning-pen",
+  "title": "The Morning Pen",
+  "description": "Finding her own writing voice before the rest of the world wakes up and demands her attention.",
+  "tags": [
+    "writing",
+    "creativity",
+    "morningroutine",
+    "solitude",
+    "inspiration"
+  ],
+  "character_reference": "a woman in her early thirties with shoulder-length blonde hair in a messy bun, wearing a chunky cream-knit pullover sweater and wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "At five in the morning, the house belongs entirely to me. The coffee machine hasn't hissed yet, and the world outside is completely blue.",
+      "on_screen_text": "THE BLUE HOUR",
+      "duration_hint": 6.0,
+      "visual": "Wide shot of a quiet kitchen interior with indigo pre-dawn light filtering through sheer curtains, a single ceramic mug resting on the counter"
+    },
+    {
+      "narration": "For years, I saved my best energy for everyone else. By the time I sat down to write my own stories, the well was completely dry.",
+      "on_screen_text": "THE EMPTY WELL",
+      "duration_hint": 6.0,
+      "visual": "Close-up of hands wrapped around a warm ceramic mug on a wooden tabletop, dark moody lighting, thoughtful downward gaze"
+    },
+    {
+      "narration": "Then I realized nobody was going to hand me permission to prioritize my art. I had to grant it to myself.",
+      "on_screen_text": "GRANTING PERMISSION",
+      "duration_hint": 5.5,
+      "visual": "Medium profile shot sitting at a wooden desk by a window, warm amber desk lamp glowing softly against the deepening morning shadows"
+    },
+    {
+      "narration": "I uncapped a heavy black fountain pen and pressed the nib against crisp, blank paper. The scratch of ink was the only sound in the room.",
+      "on_screen_text": "FIRST INK",
+      "duration_hint": 6.0,
+      "visual": "Extreme close-up of a fountain pen nib gliding across a lined notebook page, dark rich ink flowing smoothly under focused warm lamp light"
+    },
+    {
+      "narration": "At first, the sentences were clumsy and hesitant, like an instrument falling out of tune. I kept writing anyway.",
+      "on_screen_text": "CLUMSY FIRST NOTES",
+      "duration_hint": 5.5,
+      "visual": "Close-up of hand crossing out a line of handwritten text in a notebook, natural morning light catching the textured paper surface"
+    },
+    {
+      "narration": "By the third page, the rhythm found me. The characters stopped posing and started breathing on their own.",
+      "on_screen_text": "THE RHYTHM FINDS ME",
+      "duration_hint": 5.0,
+      "visual": "Close-up of pen moving rapidly and steadily across paper, focused expression blurred in the foreground, soft warm interior ambiance"
+    },
+    {
+      "narration": "Protecting your creative spark isn't selfish. It is the only way to keep your inner light from flickering out.",
+      "on_screen_text": "PROTECTING THE SPARK",
+      "duration_hint": 5.5,
+      "visual": "Medium shot looking out a window as soft golden sunrise light hits the face, peaceful and content expression in a cozy room"
+    },
+    {
+      "narration": "Follow along for more gentle reminders to put your dreams first every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Close-up smiling warmly toward the camera in a softly lit, inviting room filled with house plants and books"
+    }
+  ]
+}

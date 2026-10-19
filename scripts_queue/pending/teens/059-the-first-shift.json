@@ -1,0 +1,59 @@
+{
+  "id": "the-first-shift",
+  "title": "The First Shift",
+  "description": "A young bakery apprentice accidentally ruins the morning batch of croissants and has to start over from scratch.",
+  "tags": [
+    "baking",
+    "mistakes",
+    "perseverance",
+    "apprentice",
+    "morning"
+  ],
+  "character_reference": "a young woman with freckled cheeks, honey-blonde hair tied back in a messy bun, and a flour-dusted canvas apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The kitchen was freezing at four in the morning when I pulled the heavy tray of dough from the cooler. I was so exhausted I didn't check the temperature gauge on the proofer.",
+      "on_screen_text": "EARLY MORNING MISTAKE",
+      "duration_hint": 17.0,
+      "visual": "close-up of frosted digital thermometer reading glowing red in a dark kitchen, cold blue morning light filtering through a glass window"
+    },
+    {
+      "narration": "An hour later, I opened the proofer to find a melted disaster of butter and soggy layers. The entire morning bake was completely unsalvageable.",
+      "on_screen_text": "RUINED DOUGH",
+      "duration_hint": 13.0,
+      "visual": "close-up looking down into a metal tray filled with slumped, ruined pastry dough oozing melted butter, dim fluorescent overhead lighting"
+    },
+    {
+      "narration": "Panic flared hot in my chest as I stared at the ruined pans sitting on the stainless steel prep table. The head baker was going to arrive in less than two hours.",
+      "on_screen_text": "TICKING CLOCK",
+      "duration_hint": 15.0,
+      "visual": "side profile of stressed face staring down at a stainless steel prep table, hands gripping the edge of the counter tightly, harsh shadows"
+    },
+    {
+      "narration": "Instead of hiding the trays, I scraped the counter clean, dumped the failed dough into the compost, and weighed out fresh flour. There was no time to panic.",
+      "on_screen_text": "STARTING OVER",
+      "duration_hint": 15.0,
+      "visual": "fast motion perspective of hands dumping a large scoop of white flour onto a clean wooden workspace, dust puffing into the air"
+    },
+    {
+      "narration": "My arms burned as I folded the chilled butter into the fresh dough with rapid, practiced movements. Muscle memory finally kicked in to save the morning.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 14.0,
+      "visual": "close-up of flour-dusted hands aggressively rolling out smooth laminated pastry dough with a wooden rolling pin on a wooden table"
+    },
+    {
+      "narration": "When the oven timer finally went off, the kitchen filled with the rich, golden scent of buttery pastry. They weren't just good; they were our best batch yet.",
+      "on_screen_text": "GOLDEN CRUST",
+      "duration_hint": 15.0,
+      "visual": "macro shot of steaming, perfectly flaky golden-brown croissants resting on a cooling rack, warm oven light glowing in the background"
+    },
+    {
+      "narration": "Mistakes happen to everyone, but fixing them is where the real learning happens. Follow along for more everyday stories of growing up.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "relaxed figure leaning against a clean kitchen counter, wiping flour off hands with a linen towel, gentle morning sunlight streaming inward"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-baking-oven",
+  "title": "The Baking Oven",
+  "description": "Mastering a difficult sourdough loaf becomes a meditation in patience and letting go of perfection.",
+  "tags": [
+    "baking",
+    "patience",
+    "mindfulness",
+    "hobby",
+    "perfectionism"
+  ],
+  "character_reference": "a woman with honey-blonde hair pulled back in a loose braid, wearing an oversized beige linen apron over a striped cotton shirt and dusted lightly with flour on her cheek",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sourdough doesn't care about your schedule or your need for control. It rises when it is ready, not a minute before.",
+      "on_screen_text": "NO RUSH",
+      "duration_hint": 5.5,
+      "visual": "Close-up of bubbly active sourdough starter fermenting inside a glass jar on a wooden kitchen counter, warm morning kitchen lighting"
+    },
+    {
+      "narration": "For years, I applied corporate deadlines to my personal life, panicking whenever something took longer than expected.",
+      "on_screen_text": "CORPORATE DEADLINES",
+      "duration_hint": 5.5,
+      "visual": "Medium shot resting hands on a flour-dusted wooden countertop, looking down thoughtfully with soft indoor lighting"
+    },
+    {
+      "narration": "Baking bread forced me to slow down my breathing and watch the dough transform through gentle, repetitive stretches.",
+      "on_screen_text": "GENTLE STRETCHES",
+      "duration_hint": 5.5,
+      "visual": "Close-up of wet, elastic dough being gently pulled and folded over itself on a wooden board, soft natural window light"
+    },
+    {
+      "narration": "When the loaf went into the scorching cast-iron Dutch oven, I couldn't touch it or fix it anymore. I just had to trust the heat.",
+      "on_screen_text": "TRUSTING THE HEAT",
+      "duration_hint": 6.0,
+      "visual": "Medium shot carefully placing a heavy black cast-iron lid onto a hot pot inside a warm oven, steam rising gently"
+    },
+    {
+      "narration": "Twenty minutes later, I lifted the lid. A magnificent, blistered golden crust stared back at me, imperfect and utterly beautiful.",
+      "on_screen_text": "GOLDEN CRUST",
+      "duration_hint": 6.0,
+      "visual": "Close-up of lifting a heavy lid to reveal a perfectly browned, cracked sourdough loaf inside a dark pot, warm steam billowing"
+    },
+    {
+      "narration": "Cutting into the warm crumb, I realized that good things cannot be rushed. Some processes require heat, time, and surrender.",
+      "on_screen_text": "WARM CRUMB",
+      "duration_hint": 6.0,
+      "visual": "Close-up of a serrated bread knife slicing through a crisp sourdough loaf, steam rising from the soft porous interior"
+    },
+    {
+      "narration": "Letting go of perfection is the first step toward finding genuine peace in your everyday routine.",
+      "on_screen_text": "GENUINE PEACE",
+      "duration_hint": 5.0,
+      "visual": "Medium shot holding a slice of freshly baked bread, smiling gently toward the warm, sunlit kitchen window"
+    },
+    {
+      "narration": "Follow along for more daily inspirations on slowing down and savoring the process.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Close-up smiling warmly toward the camera in a cozy kitchen filled with rustic baking ingredients and warm light"
+    }
+  ]
+}

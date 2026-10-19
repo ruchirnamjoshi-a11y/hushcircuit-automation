@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-exhibit",
+  "title": "The Solo Exhibit",
+  "description": "A painter hangs her own canvases after years of keeping them hidden in closets.",
+  "tags": [
+    "art",
+    "courage",
+    "confidence",
+    "selfexpression",
+    "milestones"
+  ],
+  "character_reference": "a woman in her mid-thirties with wavy auburn hair flecked with gray, wearing a denim apron over a black cotton t-shirt and smudges of dried blue paint on her wrist",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For a decade, my paintings faced the wall in the back of my studio. Showing them to anyone felt like walking outside without clothes.",
+      "on_screen_text": "FACING THE WALL",
+      "duration_hint": 6.0,
+      "visual": "Medium shot of several large stretched canvases turned backward against a white brick studio wall, dusty warm afternoon light streaming through high windows"
+    },
+    {
+      "narration": "People told me I was too timid, that art needs a loud voice to survive in the gallery world. I believed them for too long.",
+      "on_screen_text": "THE LOUD WORLD",
+      "duration_hint": 6.5,
+      "visual": "Close-up of hands holding a wooden paintbrush with bristles stiffened from dried oil paint, neutral background with soft shadows"
+    },
+    {
+      "narration": "Then I rented a small community room with white walls and good northern light. No gallery directors, no gatekeepers.",
+      "on_screen_text": "RENTING THE SPACE",
+      "duration_hint": 5.5,
+      "visual": "Wide shot of an empty whitewashed room with polished concrete floors, cool diffuse daylight pouring in through tall industrial windows"
+    },
+    {
+      "narration": "I drove the canvases over in my hatchback, propping them up one by one until the room hummed with color and old memories.",
+      "on_screen_text": "PROPPING THE CANVAS",
+      "duration_hint": 6.0,
+      "visual": "Medium shot lifting a heavy framed oil painting with both hands against a white wall, focused concentration, dust motes in the air"
+    },
+    {
+      "narration": "Stepping back to look at the completed arrangement, my chest loosened. The work spoke for itself without needing me to translate.",
+      "on_screen_text": "THE WORK SPEAKS",
+      "duration_hint": 6.0,
+      "visual": "Wide angle shot standing with arms crossed, gazing at a row of colorful abstract paintings hung neatly on a bright wall, serene posture"
+    },
+    {
+      "narration": "Nobody came for the first hour, and surprisingly, I didn't care. The victory was simply hanging the art on the nail.",
+      "on_screen_text": "THE FIRST HOUR",
+      "duration_hint": 5.5,
+      "visual": "Close-up profile looking calmly out a sunlit window inside an art gallery space, gentle smile playing at the corner of the mouth"
+    },
+    {
+      "narration": "You don't need a formal invitation to share your gifts with the world. You just need to claim your space.",
+      "on_screen_text": "CLAIM YOUR SPACE",
+      "duration_hint": 5.0,
+      "visual": "Medium shot turning toward the camera with an empowered, genuine smile inside a sunlit creative studio"
+    },
+    {
+      "narration": "Follow along for more stories about stepping out of the shadows and into your power.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Close-up smiling warmly toward the camera in a brightly lit room filled with vibrant artwork blur in the background"
+    }
+  ]
+}

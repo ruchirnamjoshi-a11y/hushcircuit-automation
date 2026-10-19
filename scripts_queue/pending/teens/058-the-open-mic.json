@@ -1,0 +1,65 @@
+{
+  "id": "the-open-mic",
+  "title": "The Open Mic",
+  "description": "A nervous teen with severe stage fright tries to share an original poem at a crowded local coffeehouse.",
+  "tags": [
+    "poetry",
+    "stage-fright",
+    "coming-of-age",
+    "teen-drama",
+    "courage"
+  ],
+  "character_reference": "a tall young man with messy dark curls, wearing an oversized cable-knit sweater and round wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My palms were completely soaked as I clutched the crumpled notebook against my chest. Every single seat in the room was taken, and the low murmur of conversation felt like a wall of sound.",
+      "on_screen_text": "THE WAITING ROOM",
+      "duration_hint": 16.0,
+      "visual": "close-up of trembling hands clutching a dog-eared notebook, warm amber overhead pendant lighting, blurred background of crowded wooden tables inside a dimly lit indie coffee shop"
+    },
+    {
+      "narration": "When the host called my name, my stomach dropped straight to my toes. I stood up so fast my chair scraped loudly against the wooden floorboards, drawing unwanted attention.",
+      "on_screen_text": "CALLED UP",
+      "duration_hint": 14.0,
+      "visual": "medium shot looking up from floor level as a youth stands abruptly beside an empty wooden chair, eyes wide with sudden panic, ambient shadows cast against exposed brick"
+    },
+    {
+      "narration": "Walking toward the small wooden stage felt like marching across a mile-long tightrope. The microphone stand loomed ahead like a metal skeleton waiting for me to trip.",
+      "on_screen_text": "THE LONG WALK",
+      "duration_hint": 14.0,
+      "visual": "low angle perspective focusing on a solitary metal microphone stand under a single overhead spotlight, dark wooden floorboards stretching toward empty velvet chairs"
+    },
+    {
+      "narration": "I stepped up to the mic, opened my mouth, and absolute silence came out. My throat was too tight to push even a single syllable past my lips.",
+      "on_screen_text": "FROZEN STIFF",
+      "duration_hint": 13.0,
+      "visual": "tight cinematic close-up of a terrified face staring straight ahead into a silver microphone grille, sweat glistening on the temple, dark blurred background"
+    },
+    {
+      "narration": "I looked down at the messy ink on the page, willing myself to remember why I wrote this. Instead of reading the whole poem, I decided to just speak the very first line.",
+      "on_screen_text": "FINDING THE VOICE",
+      "duration_hint": 16.0,
+      "visual": "extreme close-up of hand holding a blue pen over lined paper filled with frantic handwriting, soft warm rim lighting cutting across the page"
+    },
+    {
+      "narration": "My voice shook on the first word, but then it steadied into a normal rhythm. Faces in the front row leaned in closer, listening instead of judging.",
+      "on_screen_text": "THE TURNING POINT",
+      "duration_hint": 14.0,
+      "visual": "profile shot showing mouth parted mid-speech near a metallic microphone, soft atmospheric lighting, gentle focus on determined expression"
+    },
+    {
+      "narration": "When I finished the final line, a scattering of genuine applause echoed through the room. A massive weight lifted straight off my shoulders.",
+      "on_screen_text": "THE RELIEF",
+      "duration_hint": 12.0,
+      "visual": "close-up of a relieved smile breaking across the face, eyes closed in quiet triumph, warm ambient glow reflecting off wire frames"
+    },
+    {
+      "narration": "Stepping off that tiny stage, I knew I could face the microphone again tomorrow. Follow along for more everyday stories of growing up.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 14.0,
+      "visual": "person walking away down a dimly lit hallway toward a glowing exit sign, holding a notebook tightly, cinematic moody color grading"
+    }
+  ]
+}

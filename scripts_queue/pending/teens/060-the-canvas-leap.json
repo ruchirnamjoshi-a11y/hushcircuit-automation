@@ -1,0 +1,59 @@
+{
+  "id": "the-canvas-leap",
+  "title": "The Canvas Leap",
+  "description": "An art student abandons safe, hyper-realistic pencil drawings to try messy, expressive oil painting.",
+  "tags": [
+    "art",
+    "creativity",
+    "fear-of-failure",
+    "identity",
+    "expression"
+  ],
+  "character_reference": "a teenage boy with messy turquoise-dyed hair, wearing an ink-stained denim jacket and smudged charcoal on his fingers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My sketchbook was filled with fifty identical drawings of mechanical gears, drawn with absolute precision. I was terrified of making a single stray mark.",
+      "on_screen_text": "SAFE AND BORED",
+      "duration_hint": 14.0,
+      "visual": "overhead close-up of a sketchbook page filled with intensely detailed, rigid mechanical pencil drawings, sharp graphite lines under a desk lamp"
+    },
+    {
+      "narration": "My art teacher dropped a massive blank canvas on my easel and told me to throw away the pencils for the entire week. My heart skipped a beat.",
+      "on_screen_text": "NO PENCILS ALLOWED",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a blank white canvas resting on a wooden easel, hands holding a handful of colored chalks and thick bristle brushes hesitantly"
+    },
+    {
+      "narration": "I squeezed thick globs of cadmium red and cobalt blue directly onto the white surface without planning a single stroke beforehand.",
+      "on_screen_text": "FIRST SPLAT",
+      "duration_hint": 12.0,
+      "visual": "macro close-up of bright red oil paint being smeared across white canvas with a wide palette knife, vibrant texture glistening under studio lights"
+    },
+    {
+      "narration": "At first, the painting looked like an absolute disaster of muddy colors and aggressive brushstrokes. I wanted to scrape the whole thing off and quit.",
+      "on_screen_text": "MUDDY MESS",
+      "duration_hint": 14.0,
+      "visual": "close-up of frustrated face staring at an abstract painting covered in chaotic, messy smears of dark paint, shadows emphasizing worry"
+    },
+    {
+      "narration": "Instead of panicking, I grabbed a larger brush and swept wild strokes of yellow right through the middle of the mess. The chaos suddenly started working.",
+      "on_screen_text": "LETING GO",
+      "duration_hint": 14.0,
+      "visual": "dynamic action shot of a thick paintbrush slashing a bold streak of bright yellow paint across a textured canvas, paint droplets flying"
+    },
+    {
+      "narration": "Stepping back, I realized the painting had more life in it than anything I had drawn all year. Perfection was overrated anyway.",
+      "on_screen_text": "REAL ART",
+      "duration_hint": 12.0,
+      "visual": "wide shot of an artist standing back with arms crossed, looking proudly at a large, vibrant, messy abstract oil painting bathed in studio light"
+    },
+    {
+      "narration": "Breaking your own rules is the only way to find your true style. Follow along for more everyday stories of growing up.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands wiping colorful paint off fingers with a dirty rag, smiling expression, soft warm indoor lighting"
+    }
+  ]
+}

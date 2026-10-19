@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-paddle",
+  "title": "The Solo Paddle",
+  "description": "Taking a kayak out onto a calm lake alone for the first time builds unshakeable self-reliance.",
+  "tags": [
+    "adventure",
+    "independence",
+    "nature",
+    "water",
+    "courage"
+  ],
+  "character_reference": "a woman in her early thirties with thick curly dark hair pulled into a high ponytail, wearing a bright yellow waterproof windbreaker and a life vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For years, I waited for someone adventurous enough to join me on weekend trips to the lake. Nobody ever had the time.",
+      "on_screen_text": "WAITING FOR OTHERS",
+      "duration_hint": 6.0,
+      "visual": "Medium shot sitting on a wooden dock looking out over a vast, still lake under overcast skies, quiet moody atmosphere"
+    },
+    {
+      "narration": "Standing on the gravel shore with a rented red kayak, my stomach fluttered with nervous hesitation.",
+      "on_screen_text": "NERVOUES SHORELINE",
+      "duration_hint": 5.0,
+      "visual": "Close-up of hiking boots standing on wet pebbles beside the hull of a bright red kayak, ripples lapping against the shore"
+    },
+    {
+      "narration": "I pushed off the muddy bank, stepped into the cockpit, and adjusted my grip on the double-bladed paddle.",
+      "on_screen_text": "PUSHING OFF",
+      "duration_hint": 5.0,
+      "visual": "Medium shot pushing a kayak off the shallow shoreline into calm water with a wooden paddle, natural daylight reflecting off water"
+    },
+    {
+      "narration": "The first ten minutes were shaky as I learned how the boat responded to my shifting weight on the open water.",
+      "on_screen_text": "SHAKY START",
+      "duration_hint": 5.5,
+      "visual": "Wide shot of a single red kayak gliding across a glassy lake surface, soft ripples trailing behind, overcast natural light"
+    },
+    {
+      "narration": "When I reached the center of the lake, I stopped paddling and let the boat drift in total silence.",
+      "on_screen_text": "TOTAL SILENCE",
+      "duration_hint": 5.0,
+      "visual": "Close-up of hands resting on a double paddle across the boat gunwales, calm water reflecting gray clouds overhead"
+    },
+    {
+      "narration": "Nobody was steering for me, nobody was narrating the view. Every stroke forward was entirely my own doing.",
+      "on_screen_text": "MY OWN DOING",
+      "duration_hint": 5.5,
+      "visual": "Medium shot dipping a paddle cleanly into dark water, creating a symmetrical swirl of ripples, peaceful focused expression"
+    },
+    {
+      "narration": "Discovering you can rely completely on yourself is the most liberating feeling in the entire world.",
+      "on_screen_text": "LIBERATING FEELING",
+      "duration_hint": 5.0,
+      "visual": "Medium profile shot smiling broadly while looking out across a wide lake under brightening afternoon skies"
+    },
+    {
+      "narration": "Follow along for more stories about trusting your own navigation.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.5,
+      "visual": "Close-up smiling warmly toward the camera against a backdrop of tranquil lake water and distant green trees"
+    }
+  ]
+}

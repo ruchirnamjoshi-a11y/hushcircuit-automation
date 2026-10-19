@@ -1,0 +1,59 @@
+{
+  "id": "the-greenhouse-prop",
+  "title": "The Greenhouse Prop",
+  "description": "A botany enthusiast tries to rescue a dying rare fern before the school science fair judge arrives.",
+  "tags": [
+    "botany",
+    "plants",
+    "science-fair",
+    "rescue",
+    "nature"
+  ],
+  "character_reference": "a teenage girl with curly black hair in pigtails, wearing round glasses and a forest-green canvas apron with dirt smudges",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My rare silver fern was drooping miserably just hours before the science fair exhibition. The fronds were turning brown and crisp at the edges.",
+      "on_screen_text": "WILTING FERN",
+      "duration_hint": 14.0,
+      "visual": "close-up of drooping, dry green fern leaves curling inward in a small clay pot under harsh fluorescent lighting"
+    },
+    {
+      "narration": "I panicked, thinking I had overwatered it, but checking the soil proved it was bone dry. The classroom heater had sucked all the moisture from the air.",
+      "on_screen_text": "PARCHED EARTH",
+      "duration_hint": 14.0,
+      "visual": "close-up of dry, cracked potting soil inside a terracotta plant pot, a small gardening trowel resting nearby"
+    },
+    {
+      "narration": "I rushed to the sink, filled a spray bottle with tepid filtered water, and gently misted every single frond until tiny droplets clung to the leaves.",
+      "on_screen_text": "MISTING",
+      "duration_hint": 14.0,
+      "visual": "close-up of hand squeezing a plastic spray bottle, creating a fine mist of water droplets glistening in the air over green leaves"
+    },
+    {
+      "narration": "Next, I set up a humidity dome using a clear plastic storage bin over the pot to trap the moisture. Now all I could do was wait.",
+      "on_screen_text": "HUMIDITY DOME",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a potted plant covered by a clear plastic container on a wooden workbench, warm side lighting"
+    },
+    {
+      "narration": "When the judges walked into the exhibition hall later that morning, the fern had perked right back up, unfurling vibrant new green fronds.",
+      "on_screen_text": "COMEBACK",
+      "duration_hint": 13.0,
+      "visual": "close-up of vibrant, healthy fern leaves uncurling gracefully, glowing under soft natural sunlight filtering through a window"
+    },
+    {
+      "narration": "Patience and attentive care can bring almost anything back to life if you catch it in time. Nature rewards persistence.",
+      "on_screen_text": "GROWING STRONG",
+      "duration_hint": 13.0,
+      "visual": "side view of smiling face looking down lovingly at a thriving potted plant, warm green tones in the background"
+    },
+    {
+      "narration": "Nurturing your passions takes daily attention and care. Follow along for more everyday stories of growing up.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "person watering a row of small potted plants with a brass watering can, sunlit indoor greenhouse setting"
+    }
+  ]
+}
