@@ -1,0 +1,65 @@
+{
+  "id": "the-clay-hearth",
+  "title": "The Clay Hearth",
+  "description": "A retired bricklayer spends his savings building an outdoor bread oven for his neighbors, uniting a fractured cul-de-sac.",
+  "tags": [
+    "community",
+    "baking",
+    "neighbors",
+    "retirement",
+    "generosity"
+  ],
+  "character_reference": "a sturdy, stocky man in his early sixties with a thick salt-and-pepper mustache, wearing a dusty denim work shirt and leather belt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "When Greg retired from masonry, his subdivision was a place where people waved from cars but never spoke.",
+      "on_screen_text": "QUIET SUBDIVISION",
+      "duration_hint": 9.5,
+      "visual": "wide daylight shot of a quiet suburban street with modern houses and empty paved driveways under a clear blue sky"
+    },
+    {
+      "narration": "Instead of turning inward, he hauled hundreds of heavy firebricks into the center of his front lawn.",
+      "on_screen_text": "THE FIREBRICKS",
+      "duration_hint": 9.1,
+      "visual": "medium shot of stacked red clay bricks resting neatly on green grass next to a wheelbarrow in a front yard"
+    },
+    {
+      "narration": "Using trowel and mortar, he shaped a magnificent dome oven, working steadily through the scorching July heat.",
+      "on_screen_text": "SHAPING THE DOME",
+      "duration_hint": 9.5,
+      "visual": "close-up shot of a metal trowel smoothing wet gray mortar over curved red bricks to build a dome structure"
+    },
+    {
+      "narration": "Neighbors peered through curtains at first, baffled by the strange construction taking shape in the grass.",
+      "on_screen_text": "CURIOUS EYES",
+      "duration_hint": 9.1,
+      "visual": "close-up of a sheer white lace curtain parting slightly near a window glass reflecting outdoor sunlight"
+    },
+    {
+      "narration": "When the masonry cured, he lit the first roaring wood fire and baked four golden loaves of sourdough bread.",
+      "on_screen_text": "FIRST FIRE",
+      "duration_hint": 9.5,
+      "visual": "medium shot of bright orange flames licking the inside arch of a freshly built brick oven filled with glowing embers"
+    },
+    {
+      "narration": "The rich smell of baking bread drifted down the block, drawing people out of their quiet houses.",
+      "on_screen_text": "THE AROMA",
+      "duration_hint": 9.1,
+      "visual": "close-up of golden-brown crusts of artisan bread resting on a wooden peel dusted with white flour"
+    },
+    {
+      "narration": "Soon, lawn chairs were dragged out, and strangers sat together breaking bread under the evening stars.",
+      "on_screen_text": "BREAKING BREAD",
+      "duration_hint": 9.1,
+      "visual": "wide outdoor shot of diverse neighbors sitting in folding chairs around a warm glowing brick oven at dusk"
+    },
+    {
+      "narration": "If you enjoy heartwarming stories of community, follow along for a new story every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "close-up of warm amber firelight glowing inside a handcrafted brick hearth during a cool evening gathering"
+    }
+  ]
+}

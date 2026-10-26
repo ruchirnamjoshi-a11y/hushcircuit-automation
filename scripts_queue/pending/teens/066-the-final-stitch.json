@@ -1,0 +1,65 @@
+{
+  "id": "the-final-stitch",
+  "title": "The Final Stitch",
+  "description": "A high school senior redesigns her handmade prom dress after a disastrous seam tear the night before the dance.",
+  "tags": [
+    "fashion",
+    "diy",
+    "highschool",
+    "design",
+    "resilience"
+  ],
+  "character_reference": "a young woman with shoulder-length blonde hair tied back with a yellow ribbon, wearing a paint-splattered denim apron over a grey hoodie",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I spent three months hand-sewing every single sequin onto my dream dress, imagining how it would look under the gym lights.",
+      "on_screen_text": "THREE MONTHS OF WORK",
+      "duration_hint": 13.0,
+      "visual": "macro shot of delicate iridescent sequins being sewn onto shimmering blue fabric with a silver threaded needle"
+    },
+    {
+      "narration": "The night before the dance, I tried it on for the final fitting, and the entire side seam ripped completely open with a sickening sound.",
+      "on_screen_text": "THE RIPTIDE",
+      "duration_hint": 14.0,
+      "visual": "close up of hands holding torn blue fabric edges showing frayed threads and broken stitches under harsh desk lamp light"
+    },
+    {
+      "narration": "Panic set in immediately as I stared at the ruined fabric on my bedroom floor. There was less than twelve hours until the grand march.",
+      "on_screen_text": "MIDNIGHT PANIC",
+      "duration_hint": 14.0,
+      "visual": "wide shot of messy bedroom floor covered in scattered fabric scraps with a dejected silhouette sitting against a wooden dresser"
+    },
+    {
+      "narration": "Instead of throwing the whole thing away, I grabbed a pair of sharp shears and decided to completely reinvent the silhouette into something entirely new.",
+      "on_screen_text": "RADICAL REDESIGN",
+      "duration_hint": 14.0,
+      "visual": "close up of sharp metal scissors cutting aggressively through vibrant blue satin fabric with flying thread fibers"
+    },
+    {
+      "narration": "Working through the night with a mouthful of pins and a glowing desk lamp, I added an asymmetrical hem and a contrasting gold panel.",
+      "on_screen_text": "WORKING ALL NIGHT",
+      "duration_hint": 14.0,
+      "visual": "profile shot of focused face illuminated by a brass desk lamp biting a metal sewing pin while guiding fabric through a humming machine"
+    },
+    {
+      "narration": "As the morning sun hit my bedroom window, I stepped back to look at the finished piece. It wasn't what I planned, but it was infinitely cooler.",
+      "on_screen_text": "MORNING LIGHT",
+      "duration_hint": 15.0,
+      "visual": "medium shot of unique custom garment hanging from a wooden wardrobe door glowing in golden hour sunbeams casting long shadows"
+    },
+    {
+      "narration": "Walking into the venue later that night, I realized accidents often make space for your best creative breakthroughs.",
+      "on_screen_text": "OWNING THE ROOM",
+      "duration_hint": 13.0,
+      "visual": "low angle shot of confident stride across polished hardwood floor with dynamic lighting and blurred festive background"
+    },
+    {
+      "narration": "If you love watching creative comebacks and real teen journeys, follow along for a new story every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close up portrait smiling warmly into camera with sparkling fairy lights bokeh in the dark background"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-late-ferry",
+  "title": "The Late Ferry",
+  "description": "A lifelong resident of a coastal town misses the final boat off the island, forcing him to face why he stayed.",
+  "tags": [
+    "island",
+    "belonging",
+    "decision",
+    "home",
+    "coastal"
+  ],
+  "character_reference": "a weathered man in his sixties with deep laugh lines around his eyes, wearing a heavy navy wool fisherman's sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty years, Thomas packed his worn leather briefcase and caught the seven o'clock mainland ferry without fail.",
+      "on_screen_text": "THE SEVEN O'CLOCK",
+      "duration_hint": 9.5,
+      "visual": "medium shot of a man in a thick woolen sweater clutching a weathered leather briefcase while standing on a wooden pier at dusk"
+    },
+    {
+      "narration": "Tonight, carrying his retirement papers in his pocket, the horn blew before he reached the boarding ramp.",
+      "on_screen_text": "MISSED DEPARTURE",
+      "duration_hint": 9.5,
+      "visual": "wide shot of a large ferry churning white water as it pulls away from a dark wooden dock into misty coastal waters"
+    },
+    {
+      "narration": "He watched the red taillights of the ship cut across the dark, churning channel toward the distant city lights.",
+      "on_screen_text": "TAIL LIGHTS",
+      "duration_hint": 9.1,
+      "visual": "close-up of glowing red navigation lights fading away into a dark, foggy ocean horizon under a twilight sky"
+    },
+    {
+      "narration": "Standing alone on the empty pier, he felt a strange, terrifying wave of absolute freedom wash over him.",
+      "on_screen_text": "STRANGE FREEDOM",
+      "duration_hint": 9.1,
+      "visual": "medium shot of a man looking out over expansive dark ocean waters with wind blowing through his gray hair on a wooden dock"
+    },
+    {
+      "narration": "The island behind him was quiet, smelling of salt spray, pine needles, and wet cobblestones.",
+      "on_screen_text": "SALTY AIR",
+      "duration_hint": 8.7,
+      "visual": "macro shot of dewdrops clinging to dark green pine needles against a moody, overcast coastal backdrop"
+    },
+    {
+      "narration": "He realized he had never wanted to leave; he had only been following a script written by someone else.",
+      "on_screen_text": "ANOTHER SCRIPT",
+      "duration_hint": 9.1,
+      "visual": "close-up profile shot of an older man looking thoughtfully down at his own calloused hands resting on a wooden railing"
+    },
+    {
+      "narration": "Turning his back on the empty terminal, he walked slowly home toward the heart of the sleeping village.",
+      "on_screen_text": "WALKING HOME",
+      "duration_hint": 9.1,
+      "visual": "wide low-angle shot of a lone figure walking down a narrow, empty seaside path flanked by old stone walls at night"
+    },
+    {
+      "narration": "If you love stories about finding your true path, follow along for daily emotional journeys.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "warm cinematic shot of a glowing amber lantern hanging from a weathered wooden post near the coast at twilight"
+    }
+  ]
+}

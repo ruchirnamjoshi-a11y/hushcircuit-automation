@@ -1,0 +1,65 @@
+{
+  "id": "the-overtime-shed",
+  "title": "The Overtime Shed",
+  "description": "A corporate manager realizes his forty years of devotion to a desk job left him a stranger in his own garage workshop.",
+  "tags": [
+    "career",
+    "midlife",
+    "regret",
+    "craft",
+    "redemption"
+  ],
+  "character_reference": "a tall middle-aged man with thinning gray hair, round wire-rimmed glasses, wearing a faded plaid button-down shirt and rolled-up sleeves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "After forty years of managing other people's projects, Arthur finally turned the key on his own garage door.",
+      "on_screen_text": "THE LOCKED DOOR",
+      "duration_hint": 9.1,
+      "visual": "close-up hands gripping a heavy rusty brass key inserted into a weathered wooden padlock outdoors in fading afternoon light"
+    },
+    {
+      "narration": "Dust motes danced in the solitary beam of light cutting through the heavy, stagnant air.",
+      "on_screen_text": "FORTY YEARS OF DUST",
+      "duration_hint": 7.8,
+      "visual": "low angle shot looking up at a single narrow ray of golden sunlight piercing through heavy airborne dust motes inside a dark garage"
+    },
+    {
+      "narration": "He brushed a thick layer of grime off a forgotten walnut rocking chair he had started before his children were born.",
+      "on_screen_text": "THE UNFINISHED CHAIR",
+      "duration_hint": 10.4,
+      "visual": "medium shot gently sweeping a dusty work glove across the carved armrest of an old unfinished wooden chair in a cluttered workshop"
+    },
+    {
+      "narration": "His palms were softer now, shaped by keyboards and conference calls rather than raw timber and sandpaper.",
+      "on_screen_text": "SOFTENED HANDS",
+      "duration_hint": 9.1,
+      "visual": "extreme close-up of weathered palms resting flat against a rough unpolished oak plank, showing fine sawdust settling on skin"
+    },
+    {
+      "narration": "He picked up a heavy hand plane, testing its blade with a thumb that had forgotten the weight of true creation.",
+      "on_screen_text": "TESTING THE EDGE",
+      "duration_hint": 9.5,
+      "visual": "close-up profile shot inspecting the steel blade of a vintage wooden hand plane while holding it near a workbench covered in shavings"
+    },
+    {
+      "narration": "The first curl of wood shaved off smooth and sweet, smelling of resin and lost time.",
+      "on_screen_text": "THE FIRST SHAVING",
+      "duration_hint": 8.7,
+      "visual": "macro lens capturing a thin pale ribbon of wood curling away sharply from a metal chisel edge on a cluttered workbench"
+    },
+    {
+      "narration": "He looked out the dusty window as twilight fell, realizing it was never truly too late to build something of his own.",
+      "on_screen_text": "A NEW FOUNDATION",
+      "duration_hint": 10.0,
+      "visual": "over-the-shoulder medium shot looking out a small dirty window toward a peaceful backyard turning purple in the approaching dusk"
+    },
+    {
+      "narration": "If this story resonated with you, follow along for more quiet moments of reflection every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "warm cinematic close-up of a rustic wooden tabletop illuminated by a single amber desk lamp in a cozy workshop at night"
+    }
+  ]
+}

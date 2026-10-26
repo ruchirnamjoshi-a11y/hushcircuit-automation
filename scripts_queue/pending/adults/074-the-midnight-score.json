@@ -1,0 +1,65 @@
+{
+  "id": "the-midnight-score",
+  "title": "The Midnight Score",
+  "description": "A retired classical pianist confronts his fear of imperfection by playing jazz in an empty diner after hours.",
+  "tags": [
+    "music",
+    "fear",
+    "perfectionism",
+    "passion",
+    "courage"
+  ],
+  "character_reference": "an older man with unruly white hair, wearing a rumpled black suit jacket over a dark gray t-shirt and silver cufflinks",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty years, Marcus played every single note precisely as written, never missing a beat or a measure.",
+      "on_screen_text": "THE PERFECT NOTE",
+      "duration_hint": 9.5,
+      "visual": "close-up hands gracefully playing ivory piano keys in sharp focus under a harsh concert hall spotlight"
+    },
+    {
+      "narration": "When arthritis finally forced him off the grand concert stages, the silence in his apartment was deafening.",
+      "on_screen_text": "FORCED SILENCE",
+      "duration_hint": 9.5,
+      "visual": "medium shot of an older man sitting motionless in a dimly lit living room with his hands resting quietly in his lap"
+    },
+    {
+      "narration": "One rainy Tuesday at midnight, he found an out-of-tune upright piano tucked in the back of an all-night diner.",
+      "on_screen_text": "THE DINER PIANO",
+      "duration_hint": 9.5,
+      "visual": "wide shot of an old scratched upright piano sitting against a pale wall inside a quiet, empty diner late at night"
+    },
+    {
+      "narration": "He lifted the scarred wooden fallboard, his stiff fingers trembling above the yellowed keys.",
+      "on_screen_text": "TREMBLING FINGERS",
+      "duration_hint": 8.3,
+      "visual": "close-up of wrinkled hands hovering above slightly yellowed, dusty piano keys inside a dimly lit room"
+    },
+    {
+      "narration": "Instead of Bach or Mozart, he pressed down a dissonant, smoky chord he had never dared to play before.",
+      "on_screen_text": "SMOKY CHORDS",
+      "duration_hint": 9.5,
+      "visual": "close-up hands striking a complex chord on a worn-out piano keyboard with soft neon lights reflecting off the wood"
+    },
+    {
+      "narration": "The melody wandered off the page, imperfect and messy, yet entirely and beautifully his own.",
+      "on_screen_text": "IMPERFECT MELODY",
+      "duration_hint": 9.1,
+      "visual": "medium profile shot of an older man closing his eyes while playing a piano with deep concentration under moody lighting"
+    },
+    {
+      "narration": "The lone night cook paused flipping burgers, leaning against the counter to listen to the unexpected tune.",
+      "on_screen_text": "THE AUDIENCE",
+      "duration_hint": 9.1,
+      "visual": "medium shot of a person leaning against a shiny metallic counter inside a diner, looking thoughtfully toward the music"
+    },
+    {
+      "narration": "If this story inspired you to embrace imperfections, follow along for more daily tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "close-up of a single warm spotlight shining down on polished wooden piano keys in a quiet room"
+    }
+  ]
+}

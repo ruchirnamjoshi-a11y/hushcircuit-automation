@@ -1,0 +1,65 @@
+{
+  "id": "the-silent-rehearsal",
+  "title": "The Silent Rehearsal",
+  "description": "A woman practices her first solo theatrical monologue in an empty park after years of supporting others.",
+  "tags": [
+    "empowerment",
+    "resilience",
+    "confidence",
+    "theater",
+    "boundary"
+  ],
+  "character_reference": "a woman in her late thirties with shoulder-length dark curly hair, wearing a green utility jacket and comfortable sneakers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For ten years, Maya held the cue cards and smoothed down everyone else's opening nights. Tonight, the stage was simply a patch of grass beneath the streetlamps.",
+      "on_screen_text": "THE EMPTY STAGE",
+      "duration_hint": 7.0,
+      "visual": "Wide angle shot of a solitary woman standing beneath the warm orange glow of a single streetlamp in a quiet public park at night holding a rolled paper"
+    },
+    {
+      "narration": "Her chest tightened as she raised her chin, remembering how long she had buried her own voice under polite applause for the people around her.",
+      "on_screen_text": "THE TIGHT CHEST",
+      "duration_hint": 6.5,
+      "visual": "Medium close-up of the woman tilting her head back with eyes closed and hands resting tightly over her collarbone in a moment of deep hesitation"
+    },
+    {
+      "narration": "The first line came out as a breathless whisper, barely carrying past the park bench where she stood.",
+      "on_screen_text": "THE FIRST WHISPER",
+      "duration_hint": 5.0,
+      "visual": "Close-up profile of the woman speaking softly into the cool night air with a wooden park bench visible slightly out of focus in the background"
+    },
+    {
+      "narration": "She caught herself shrinking, her shoulders curling inward the way they always did when she anticipated someone interrupting.",
+      "on_screen_text": "CATCHING HERSELF",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of the woman looking down at her own rounded shoulders and immediately forcing them back and down with a conscious physical adjustment"
+    },
+    {
+      "narration": "Taking a slow breath, she rooted her heels into the dirt and let the second line rise from deep inside her diaphragm.",
+      "on_screen_text": "DEEP ROOTS",
+      "duration_hint": 5.5,
+      "visual": "Low angle shot focusing on the woman pressing her sneakers firmly into the grass while speaking with an open and expressive hand gesture"
+    },
+    {
+      "narration": "The sound filled the dark clearing, unapologetic and resonant, bouncing off the sleeping oak trees.",
+      "on_screen_text": "CLEAR SOUND",
+      "duration_hint": 5.0,
+      "visual": "Medium shot of the woman gazing forward with a powerful expression while tall dark tree trunks stand silently in the background under a starry sky"
+    },
+    {
+      "narration": "Nobody was watching, and for the first time in her life, that felt like the greatest freedom in the world.",
+      "on_screen_text": "TOTAL FREEDOM",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the woman smiling brightly with a look of pure liberation as a gentle breeze catches the ends of her dark curls"
+    },
+    {
+      "narration": "Follow along for more stories about finding your voice and choosing yourself every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Warm close-up portrait of the woman looking directly into the camera with a gentle and encouraging smile against a softly blurred evening background"
+    }
+  ]
+}

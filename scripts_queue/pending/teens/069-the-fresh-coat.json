@@ -1,0 +1,65 @@
+{
+  "id": "the-fresh-coat",
+  "title": "The Fresh Coat",
+  "description": "A shy art student steps out of his comfort zone to paint a massive community mural after his initial sketch is rejected.",
+  "tags": [
+    "art",
+    "mural",
+    "creativity",
+    "community",
+    "expression"
+  ],
+  "character_reference": "a young man with tousled sandy blonde hair, wearing a paint-stained oversized denim jacket and silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I spent weeks designing a safe, predictable mural concept for the community center wall, hoping nobody would really notice it.",
+      "on_screen_text": "SAFE DESIGN",
+      "duration_hint": 14.0,
+      "visual": "close up of colored pencils sketching a neat geometric pattern onto a textured sketchbook page with soft pencil shading"
+    },
+    {
+      "narration": "The committee took one look at my submission and gently told me it lacked soul, asking me to try something much bolder.",
+      "on_screen_text": "REJECTED CONCEPT",
+      "duration_hint": 14.0,
+      "visual": "over the shoulder view of a hand holding a red marker striking through a paper sketch sitting on a messy wooden table"
+    },
+    {
+      "narration": "Standing in front of the massive blank concrete wall the next morning, the scale of the task made my hands shake.",
+      "on_screen_text": "THE BLANK WALL",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a huge weathered concrete outdoor wall with a tiny human silhouette standing at the base holding a paint roller"
+    },
+    {
+      "narration": "Instead of overthinking every line, I dipped a thick roller into a bucket of bright yellow paint and threw caution to the wind.",
+      "on_screen_text": "FIRST STROKE",
+      "duration_hint": 14.0,
+      "visual": "action shot of paint roller leaving a vibrant streak of bright yellow paint across a grey textured concrete surface"
+    },
+    {
+      "narration": "Hours flew by as I climbed the scaffolding, splashing wild organic shapes and vibrant colors across the once-dull surface.",
+      "on_screen_text": "BUILDING COLOR",
+      "duration_hint": 13.0,
+      "visual": "medium shot of artist reaching upward on metal scaffolding holding a dripping paintbrush against a colorful mural background"
+    },
+    {
+      "narration": "Neighbors walking by stopped to watch, smiling and pointing as the chaotic abstract forms finally came together into a stunning landscape.",
+      "on_screen_text": "CROWD REACTION",
+      "duration_hint": 14.0,
+      "visual": "low angle shot of colorful abstract mural details glowing under bright afternoon sunlight with soft blue sky above"
+    },
+    {
+      "narration": "Stepping back down to the pavement, I realized playing it safe was never the art I actually wanted to make.",
+      "on_screen_text": "BIGGER PICTURE",
+      "duration_hint": 13.0,
+      "visual": "profile view of artist wiping sweat from forehead while gazing up at a finished massive colorful wall painting proudly"
+    },
+    {
+      "narration": "More inspiring stories about stepping out of your comfort zone are posted daily, so follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close up portrait smiling directly into camera with colorful paint smudges on cheek and warm golden hour light"
+    }
+  ]
+}

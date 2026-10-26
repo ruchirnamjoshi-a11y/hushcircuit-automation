@@ -1,0 +1,65 @@
+{
+  "id": "the-overgrown-garden",
+  "title": "The Overgrown Garden",
+  "description": "A woman tackles a jungle of weeds in her backyard, letting go of perfectionism one pulled root at a time.",
+  "tags": [
+    "healing",
+    "patience",
+    "gardening",
+    "release",
+    "growth"
+  ],
+  "character_reference": "a woman in her early forties with sandy blonde hair tied back in a blue bandana, wearing a denim shirt and muddy gardening pants",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The backyard had become a sea of tangled briars and knee-high weeds, mirroring the chaos in her mind.",
+      "on_screen_text": "SEA OF WEEDS",
+      "duration_hint": 6.0,
+      "visual": "Wide shot of an overgrown, neglected backyard filled with tall wild grass, tangled vines, and unruly bushes under a cloudy sky"
+    },
+    {
+      "narration": "For months she avoided looking out the back window, overwhelmed by the sheer scale of the neglect.",
+      "on_screen_text": "AVOIDING THE VIEW",
+      "duration_hint": 5.5,
+      "visual": "Medium close-up of a woman looking out through a glass window pane covered in faint water drops with a weary expression"
+    },
+    {
+      "narration": "Today, she didn't try to plan the whole landscape. She simply knelt down in the dirt with a pair of shears.",
+      "on_screen_text": "ONE SPOT",
+      "duration_hint": 6.0,
+      "visual": "Medium shot of the woman kneeling on the grass holding metal pruning shears with a pile of cut weeds beside her knees"
+    },
+    {
+      "narration": "The thick roots resisted at first, gripping the hardened earth with stubborn determination.",
+      "on_screen_text": "STUBBORN ROOTS",
+      "duration_hint": 5.0,
+      "visual": "Close-up of gloved hands pulling firmly on a thick, dirt-covered weed stem embedded in dark soil"
+    },
+    {
+      "narration": "With a sudden pop, the root let go, and she tumbled backward onto the grass in a fit of genuine laughter.",
+      "on_screen_text": "THE RELEASE",
+      "duration_hint": 6.0,
+      "visual": "Medium shot of the woman sitting back on the green grass laughing with soil smudged on her cheek and hands raised in amusement"
+    },
+    {
+      "narration": "Beneath the tangled mess, patches of dark, fertile soil emerged, ready for something new to grow.",
+      "on_screen_text": "FERTILE SOIL",
+      "duration_hint": 5.5,
+      "visual": "Close-up of freshly cleared dark earth with scattered green shoots poking through in the warm afternoon light"
+    },
+    {
+      "narration": "She dusted her hands off on her knees, realizing that clearing space was the hardest and best part of healing.",
+      "on_screen_text": "CLEARING SPACE",
+      "duration_hint": 6.0,
+      "visual": "Medium close-up of the woman brushing dirt from her palms with a peaceful, satisfied smile on her face"
+    },
+    {
+      "narration": "Follow along for more stories about tending to your life and clearing space for what matters.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Warm portrait of the woman smiling gently outdoors with green garden foliage blurred softly in the background"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-frame-rate",
+  "title": "The Frame Rate",
+  "description": "A skateboarder captures a cinematic trick after countless bails, redefining his style through patience.",
+  "tags": [
+    "skateboarding",
+    "film",
+    "persistence",
+    "sports",
+    "focus"
+  ],
+  "character_reference": "a teenage skater with shaggy dark hair tucked under a backwards black baseball cap, wearing a scuffed graphic hoodie and canvas sneakers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I set up my camera on a tripod at the bottom of the concrete stairs, determined to finally land this elusive kickflip down the gap.",
+      "on_screen_text": "THE SETUP",
+      "duration_hint": 14.0,
+      "visual": "close up of a digital camera mounted on a tripod lens pointing toward a steep set of concrete outdoor stairs"
+    },
+    {
+      "narration": "For two straight hours, every single attempt ended in a painful bail, my board snapping away and my shins taking a brutal beating.",
+      "on_screen_text": "BRUTAL BAILS",
+      "duration_hint": 14.0,
+      "visual": "action shot of skateboard flipping out from under flying feet midair above concrete ground with motion blur"
+    },
+    {
+      "narration": "Sitting on the bottom step catching my breath, my legs were bruised and my confidence was entirely battered.",
+      "on_screen_text": "WOUNDED PRIDE",
+      "duration_hint": 13.0,
+      "visual": "medium shot of exhausted skater sitting on concrete steps holding scuffed skateboard deck with head bowed down"
+    },
+    {
+      "narration": "Instead of packing up my gear in defeat, I reviewed the camera footage to see where my weight distribution was completely off.",
+      "on_screen_text": "CHECKING THE TAPE",
+      "duration_hint": 14.0,
+      "visual": "close up of hands scrolling through slow motion video playback on a small digital camera screen showing skateboard motion"
+    },
+    {
+      "narration": "Adjusting my footing by just an inch, I took a deep breath, pushed off the asphalt, and flew toward the drop once more.",
+      "on_screen_text": "THE ADJUSTMENT",
+      "duration_hint": 14.0,
+      "visual": "close up of sneakers adjusting grip tape position on top of a worn skateboard deck with gritty urban texture"
+    },
+    {
+      "narration": "This time, the board rotated clean beneath my feet, catching every wheel squarely on the pavement without a single wobble.",
+      "on_screen_text": "THE CLEAN LAND",
+      "duration_hint": 14.0,
+      "visual": "low angle action shot of skateboard landing firmly on concrete with small dust cloud rising under wheels"
+    },
+    {
+      "narration": "Checking the camera screen playback afterward, the shot was absolute perfection, proving patience pays off better than rushing.",
+      "on_screen_text": "PLAYING IT BACK",
+      "duration_hint": 14.0,
+      "visual": "over the shoulder view of bright camera screen displaying a sharp crisp freeze frame of a skateboard trick in motion"
+    },
+    {
+      "narration": "If you love real stories about pushing past the frustration, follow along for a new story every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close up portrait looking into camera with a confident triumphant smile and warm afternoon sun flare"
+    }
+  ]
+}

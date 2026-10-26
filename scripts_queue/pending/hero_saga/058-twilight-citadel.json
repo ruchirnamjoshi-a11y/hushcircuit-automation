@@ -1,0 +1,71 @@
+{
+  "id": "twilight-citadel",
+  "title": "Neon Pulse — Episode 58: Twilight Citadel",
+  "description": "Kael wakes up in a towering metropolis bathed in perpetual twilight and discovers a sinister broadcast across the city grid.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "suspense",
+    "neon pulse"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 58,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Heavy metallic rain drums against the slick obsidian pavement as Kael struggles to his feet in the sprawling twilight city.",
+      "on_screen_text": "AWAKENING IN TWILIGHT",
+      "duration_hint": 9.5,
+      "visual": "close-up of a lone figure coughing on rain-slicked dark stone pavement, low angle looking up, dramatic moody lighting, towering alien skyscrapers in the blurred background"
+    },
+    {
+      "narration": "Glowing amber circuits pulse along his sleeves, reacting to the ambient energy signature saturating the dark atmosphere here.",
+      "on_screen_text": "RESONANT ENERGY",
+      "duration_hint": 9.0,
+      "visual": "medium shot of glowing golden lines flaring brightly on fabric sleeves, dramatic hand gesture, dark alleyway setting with neon haze reflecting off wet surfaces"
+    },
+    {
+      "narration": "Above the canyon of skyscrapers, a massive holographic projection flickers to life across the permanent dusk sky.",
+      "on_screen_text": "THE PROJECTION",
+      "duration_hint": 8.0,
+      "visual": "wide shot from below looking up at a colossal glowing blue geometric symbol hovering in a dark purple twilight sky between massive futuristic monolithic towers"
+    },
+    {
+      "narration": "The architect's cold voice echoes from every comm-tower, declaring that the harvest has only just begun across this sector.",
+      "on_screen_text": "A CHILLING BROADCAST",
+      "duration_hint": 9.0,
+      "visual": "close-up of the protagonist clenching teeth in frustration, hand pressed to head in pain, moody atmospheric fog rolling through a narrow high-tech canyon"
+    },
+    {
+      "narration": "Mechanical footsteps slam against the metal walkways above, hunting for the sole survivor of the dimensional collapse.",
+      "on_screen_text": "THE PURSUIT",
+      "duration_hint": 8.5,
+      "visual": "low angle shot looking up at grated iron catwalks, heavy armored boots stepping forward in silhouette against a hazy orange horizon"
+    },
+    {
+      "narration": "Kael ignites a surge of amber plasma in his palm, casting harsh golden light over the damp walls of the alley.",
+      "on_screen_text": "READY FOR BATTLE",
+      "duration_hint": 8.5,
+      "visual": "close-up shot of a glowing hand radiating bright orange energy particles, illuminating dark metallic wall textures and falling rain drops"
+    },
+    {
+      "narration": "A shadowy enforcer drops from the upper tier, blocking the only exit with a humming blade of dark blue energy.",
+      "on_screen_text": "BLOCKED PATH",
+      "duration_hint": 8.5,
+      "visual": "medium action shot of a menacing armored adversary landing heavily on wet ground, holding a glowing cobalt sword, facing forward aggressively"
+    },
+    {
+      "narration": "With nowhere left to run, Kael steps forward into the glow, knowing this new world holds the answers to everything.",
+      "on_screen_text": "THE NEXT WAR",
+      "duration_hint": 8.5,
+      "visual": "over-the-shoulder shot of a determined fighter striding purposefully toward a dangerous glowing adversary in a narrow futuristic urban trench"
+    },
+    {
+      "narration": "The battle for the twilight metropolis is just beginning. Follow along for more chapters in the ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.5,
+      "visual": "cinematic hero portrait looking directly toward the camera with fierce determination, glowing energy sparks floating in the air around the subject"
+    }
+  ]
+}

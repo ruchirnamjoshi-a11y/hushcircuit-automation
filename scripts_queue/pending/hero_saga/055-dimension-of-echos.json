@@ -1,0 +1,65 @@
+{
+  "id": "dimension-of-echos",
+  "title": "Neon Pulse — Episode 55: Dimension of Echos",
+  "description": "Kael wakes up in a surreal otherworldly dimension and must navigate a maze of shifting realities while evading an unseen pursuer.",
+  "tags": [
+    "action",
+    "superhero",
+    "scifi",
+    "adventure",
+    "portal"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 55,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Pulled violently through the tear in space, I crash hard onto a crystalline floor that shatters beneath my weight. Strange, floating geometric structures pulse with a cold blue light all around me.",
+      "on_screen_text": "THE RIFT",
+      "duration_hint": 14.0,
+      "visual": "Low angle shot of a man tumbling onto a fractured glowing purple crystalline floor amidst floating geometric monoliths casting long blue shadows in a surreal void atmosphere without any text or signs present"
+    },
+    {
+      "narration": "My jacket's amber circuitry flares up, reacting to the heavy atmospheric pressure of this unknown realm. I push myself up, gripping the glowing artifact tightly as shadows begin to twist in the distance.",
+      "on_screen_text": "STRANGE REALM",
+      "duration_hint": 14.0,
+      "visual": "Medium close up of the man rising from the ground, pressing one hand against his tactical jacket while holding a bright glowing relic in the other palm as dark smoke writhes far away in the background"
+    },
+    {
+      "narration": "A metallic screech echoes across the vast expanse, bouncing off invisible walls. Whatever dragged me here is closing in fast, and my powers feel heavy and unresponsive in this strange atmosphere.",
+      "on_screen_text": "UNSEEN HUNTER",
+      "duration_hint": 14.0,
+      "visual": "Over the shoulder view of the man staring intently into a dense fog of floating metallic debris while reaching defensively toward his side as distant mechanical echoes ripple through the air"
+    },
+    {
+      "narration": "I sprint across a narrow floating bridge made of pure light as energy pulses snap at my heels. One misstep means falling into an endless abyss of swirling starlight and void.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 14.0,
+      "visual": "Action shot of the man sprinting frantically across a fragile glowing bridge suspended over a deep abyss filled with swirling nebulas and falling star fragments with dynamic motion blur"
+    },
+    {
+      "narration": "Reaching the other side, I slide behind a massive obsidian pillar to catch my breath. The artifact in my hand pulses rapidly, trying to warn me of something standing right behind me.",
+      "on_screen_text": "HIDDEN THREAT",
+      "duration_hint": 14.0,
+      "visual": "Profile shot of the man pressed flat against a towering black stone pillar, eyes wide with tension as he looks down at the intensely glowing device in his trembling hands"
+    },
+    {
+      "narration": "A towering figure clad in shifting, faceless armor steps out from the shadows, blocking my only way forward. This isn't just an adversary; it is the architect of the shadow empire.",
+      "on_screen_text": "THE ARCHITECT",
+      "duration_hint": 14.0,
+      "visual": "Low angle shot facing a massive imposing armored warrior with glowing crimson visor details standing menacingly before the man who stands frozen in defensive posture on the crystalline ground"
+    },
+    {
+      "narration": "The entity raises a hand, and the ground beneath my feet begins to disintegrate into floating shards. If I don't break through this barrier now, I will be trapped here forever.",
+      "on_screen_text": "SINKING GROUND",
+      "duration_hint": 14.0,
+      "visual": "Wide dynamic shot of the floor collapsing beneath the man into a dark void while jagged shards of crystal float upward around him in zero gravity amid crackling energy discharges"
+    },
+    {
+      "narration": "Follow along on our channel to see how Kael escapes this dimensional trap in the next chapter of Neon Pulse.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "Close up profile of the man turning his head sharply toward the camera with a determined expression while amber light radiates from his tactical jacket sleeves against a dark atmospheric backdrop"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-sixty",
+  "title": "Neon Pulse — Episode 60: Abyssal Descent",
+  "description": "Kael navigates a dangerous subterranean chasm and uncovers a massive subterranean facility run by the shadow empire.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "original",
+    "adventure"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 60,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The plunge into the deep abyss ends with a hard slam against rusted metallic scaffolding suspended over a roaring subterranean sea.",
+      "on_screen_text": "THE HARD LANDING",
+      "duration_hint": 7.0,
+      "visual": "Low angle shot of a man tumbling onto a rusted metal grate platform deep underground with glowing amber light reflecting off wet steel beams."
+    },
+    {
+      "narration": "Sparks fly from overhead conduits as the ambient darkness is pierced by the sudden flare of massive industrial floodlights below.",
+      "on_screen_text": "INDUSTRIAL AWAKENING",
+      "duration_hint": 7.0,
+      "visual": "Wide angle view of towering industrial machinery and massive cables suspended across a cavernous underground chamber illuminated by harsh yellow floodlights."
+    },
+    {
+      "narration": "He checks the amber circuitry on his sleeves, watching the pulsing light stabilize as the atmospheric pressure shifts violently.",
+      "on_screen_text": "CIRCUITS STABILIZE",
+      "duration_hint": 6.0,
+      "visual": "Close up on glowing amber patterns pulsing intensely along the sleeve fabric while a man clenches his fist in a dark industrial interior."
+    },
+    {
+      "narration": "Below the scaffolding, thousands of encrypted data cores glow rhythmically inside colossal containment silos operated by automated drones.",
+      "on_screen_text": "THE VAULT OF DATA",
+      "duration_hint": 7.0,
+      "visual": "High vantage view looking down at rows of glowing cylindrical storage units guarded by hovering mechanical sphere drones in a vast cavern."
+    },
+    {
+      "narration": "A familiar holographic transmission flickers to life in the humid air, broadcasting Commander Vance's cold laughter across the cavern.",
+      "on_screen_text": "THE GHOSTLY SIGNAL",
+      "duration_hint": 7.0,
+      "visual": "Medium close up of a man staring intently at a floating blue holographic projection glowing brightly amidst heavy steam and dark shadows."
+    },
+    {
+      "narration": "Heavy metallic footsteps echo from the dark lower tunnel, signaling that the shadow empire's elite vanguard has finally arrived.",
+      "on_screen_text": "APPROACHING THREAT",
+      "duration_hint": 6.5,
+      "visual": "Over the shoulder shot facing a dark tunnel entrance where heavy armored boots step forward into the dim illumination of flickering lights."
+    },
+    {
+      "narration": "With nowhere left to run, he draws his glowing energy blade and braces for a clash that will shake the foundation of the underworld.",
+      "on_screen_text": "READY FOR BATTLE",
+      "duration_hint": 6.5,
+      "visual": "Action shot of a man crouching into a defensive stance while igniting a bright humming blade that casts intense light across his determined face."
+    },
+    {
+      "narration": "Follow along for more of the original hero saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.0,
+      "visual": "Cinematic wide shot of a solitary figure standing heroically on a suspended metal bridge overlooking a vast sprawling underground high tech complex."
+    }
+  ]
+}

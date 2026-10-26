@@ -1,0 +1,59 @@
+{
+  "id": "realm-of-shadows",
+  "title": "Neon Pulse — Episode 56: Realm of Shadows",
+  "description": "Trapped in a surreal realm of shifting realities, Kael confronts the true architect of the shadow empire.",
+  "tags": [
+    "action",
+    "superhero",
+    "sci-fi",
+    "thriller",
+    "adventure"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 56,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Gravity twists violently as shards of fractured glass float through the crimson sky. Kael struggles to regain his footing on a jagged platform hovering over nothingness.",
+      "on_screen_text": "SHATTERED REALITY",
+      "duration_hint": 10.4,
+      "visual": "wide-angle shot of a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves, stumbling on a floating glass fragment above a crimson void"
+    },
+    {
+      "narration": "A low hum reverberates through the void as the amber circuitry on the tactical jacket flares to life in response to the strange atmosphere.",
+      "on_screen_text": "CIRCUITS AWAKEN",
+      "duration_hint": 9.1,
+      "visual": "close-up shot of arms covered in a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves, illuminating intensely against dark surroundings"
+    },
+    {
+      "narration": "From the swirling vortex ahead, a towering figure draped in shifting shadows emerges. The true mastermind steps forward into the dim crimson light.",
+      "on_screen_text": "THE ARCHITECT",
+      "duration_hint": 9.5,
+      "visual": "low-angle shot of a towering shadowy silhouette stepping out of a swirling crimson portal, gazing downward with glowing eyes"
+    },
+    {
+      "narration": "You led me straight into the trap, but this ends right here. Kael tightens his grip as his energy surges outward.",
+      "on_screen_text": "NO WAY OUT",
+      "duration_hint": 8.7,
+      "visual": "medium shot of a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves, clenching fists with fierce determination"
+    },
+    {
+      "narration": "A wave of dark energy erupts from the adversary, shattering nearby platforms into fine dust. Kael leaps backward just in time to avoid the blast.",
+      "on_screen_text": "NARROW ESCAPE",
+      "duration_hint": 10.0,
+      "visual": "action shot of a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves, diving backward as dark shockwaves pulverize stone"
+    },
+    {
+      "narration": "The architect laughs, revealing that every battle fought so far was merely a test of strength. The real war is only just beginning.",
+      "on_screen_text": "THE ULTIMATE TEST",
+      "duration_hint": 9.1,
+      "visual": "medium close-up of a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves, staring intently upward with gritted teeth"
+    },
+    {
+      "narration": "With the entire dimensional realm destabilizing around them, Kael charges forward into the shadow storm. Follow along for more of the journey.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.5,
+      "visual": "dynamic action shot of a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves, sprinting directly toward a massive swirling vortex of energy"
+    }
+  ]
+}

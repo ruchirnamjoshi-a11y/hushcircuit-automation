@@ -1,0 +1,65 @@
+{
+  "id": "the-mic-drop",
+  "title": "The Mic Drop",
+  "description": "A nervous college freshman tries out for the campus radio station and freezes during his live test.",
+  "tags": [
+    "radio",
+    "college",
+    "anxiety",
+    "voice",
+    "comeback"
+  ],
+  "character_reference": "a tall college student with messy curly dark hair, wearing an oversized green corduroy overshirt and round silver wire glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My palms were sweating as I stared at the flashing red ON AIR light above the studio door. This was the moment I had rehearsed in my dorm room a hundred times.",
+      "on_screen_text": "THE BIG AUDITION",
+      "duration_hint": 14.0,
+      "visual": "close up of glowing red recording sign in dark soundproof booth with acoustic foam panels and blurred anxious expression in foreground"
+    },
+    {
+      "narration": "I sat down at the heavy mixing console, pulled the oversized headphones over my ears, and waited for the engineer to give me the cue.",
+      "on_screen_text": "SITTING DOWN",
+      "duration_hint": 12.0,
+      "visual": "low angle medium shot of hands adjusting sliding audio faders on a large professional mixing board with colorful glowing knobs"
+    },
+    {
+      "narration": "When the green light flashed, my throat completely closed up. I opened my mouth to introduce my segment, but nothing came out except a weak squeak.",
+      "on_screen_text": "TOTAL FREEZE",
+      "duration_hint": 15.0,
+      "visual": "tight shot of wide panicked eyes staring blankly at a dead microphone with hands gripping the edge of the wooden desk tightly"
+    },
+    {
+      "narration": "Thirty agonizing seconds of dead air ticked by before the station manager signaled to cut the mic. I pulled off the headphones, ready to pack up and walk away forever.",
+      "on_screen_text": "DEAD AIR",
+      "duration_hint": 15.0,
+      "visual": "over the shoulder shot of sound technician looking through control room glass shaking head gently with digital clock showing elapsed seconds"
+    },
+    {
+      "narration": "Instead of kicking me out, she slid a cup of water across the desk and told me to just talk about the music I actually loved instead of the script.",
+      "on_screen_text": "A SECOND CHANCE",
+      "duration_hint": 15.0,
+      "visual": "close up of steaming paper cup sliding across smooth wooden tabletop with blurry warm interior lights reflecting in background"
+    },
+    {
+      "narration": "I took a slow breath, forgot about the formal intro, and started rambling about the weird indie record spinning right in front of me.",
+      "on_screen_text": "FINDING MY VOICE",
+      "duration_hint": 14.0,
+      "visual": "close up of vinyl record spinning on a turntable with colorful abstract light reflections dancing across the black grooves"
+    },
+    {
+      "narration": "My voice stopped shaking, the red light felt less like a warning and more like a heartbeat, and I finally settled into the rhythm of the room.",
+      "on_screen_text": "HITTING THE GROOVE",
+      "duration_hint": 14.0,
+      "visual": "profile shot of smiling face leaning close to adjustable boom microphone with relaxed posture and soft ambient studio lighting"
+    },
+    {
+      "narration": "If you love real stories about finding your footing when things go wrong, follow along for more every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 12.0,
+      "visual": "warm cinematic portrait looking directly toward camera with genuine confident smile and soft focus background of warm string lights"
+    }
+  ]
+}

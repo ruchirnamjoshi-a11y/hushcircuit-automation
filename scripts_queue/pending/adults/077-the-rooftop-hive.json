@@ -1,0 +1,65 @@
+{
+  "id": "the-rooftop-hive",
+  "title": "The Rooftop Hive",
+  "description": "An accountant finds mental clarity after adopting urban beekeeping on a gritty downtown office roof.",
+  "tags": [
+    "nature",
+    "focus",
+    "bees",
+    "city",
+    "mindfulness"
+  ],
+  "character_reference": "a meticulous man in his late forties with neatly parted brown hair, wire glasses, and a light-colored canvas beekeeping suit",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "David spent twenty-five years balancing corporate ledgers, his mind trapped in endless columns of strict numbers.",
+      "on_screen_text": "COLUMNS OF NUMBERS",
+      "duration_hint": 9.5,
+      "visual": "close-up shot of a green mechanical calculator printing rows of black numbers on a paper tape roll on a desk"
+    },
+    {
+      "narration": "Seeking calm, he hauled wooden hive boxes up five flights of stairs to his building's sun-baked gravel roof.",
+      "on_screen_text": "THE GRAVEL ROOF",
+      "duration_hint": 9.5,
+      "visual": "wide shot of a solitary wooden beehive box sitting on a sprawling gravel rooftop overlooking distant city skyscrapers"
+    },
+    {
+      "narration": "Opening a hive required absolute stillness; a single hurried movement would scatter the entire colony.",
+      "on_screen_text": "ABSOLUTE STILLNESS",
+      "duration_hint": 9.1,
+      "visual": "close-up hands wearing thick leather gloves gently lifting a wooden frame covered in buzzing honeybees"
+    },
+    {
+      "narration": "He learned to slow his breathing, matching the rhythmic hum of thousands of wings in the warm air.",
+      "on_screen_text": "SLOW BREATHING",
+      "duration_hint": 9.1,
+      "visual": "extreme close-up of amber honeybees crawling across a hexagonal honeycomb frame glowing in bright sunlight"
+    },
+    {
+      "narration": "The frantic panic of tax season melted away, replaced by the ancient, steady rhythm of the hive.",
+      "on_screen_text": "ANCIENT RHYTHM",
+      "duration_hint": 9.1,
+      "visual": "medium profile shot of a man wearing a mesh veil looking calmly down at a wooden frame in his hands"
+    },
+    {
+      "narration": "Extracting the first golden harvest of honey, he tasted sweetness born right in the middle of concrete chaos.",
+      "on_screen_text": "GOLDEN HARVEST",
+      "duration_hint": 9.5,
+      "visual": "close-up shot of thick amber honey dripping slowly from a wooden honey dipper into a glass jar"
+    },
+    {
+      "narration": "Looking across the skyline, he realized peace wasn't found in escape, but in paying deep attention.",
+      "on_screen_text": "DEEP ATTENTION",
+      "duration_hint": 9.1,
+      "visual": "over-the-shoulder shot looking out past a rooftop railing toward a sprawling urban cityscape at golden hour"
+    },
+    {
+      "narration": "If you love stories of unexpected peace, follow along for daily tales of quiet discovery.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "warm close-up shot of translucent golden honey catching warm afternoon light through a glass jar"
+    }
+  ]
+}

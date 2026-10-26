@@ -1,0 +1,65 @@
+{
+  "id": "the-sprout-s-arc",
+  "title": "The Sprout's Arc",
+  "description": "An urban gardener struggles to revive a dying rare bonsai tree before a neighborhood botanical showcase.",
+  "tags": [
+    "gardening",
+    "botany",
+    "patience",
+    "nature",
+    "growth"
+  ],
+  "character_reference": "a young woman with short curly dark hair and freckles, wearing a sage green linen button-up shirt and a leather gardening tool belt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My prized Japanese maple bonsai was dropping leaves faster than I could count, threatening my entry into the community plant showcase.",
+      "on_screen_text": "THE WILTING TREE",
+      "duration_hint": 14.0,
+      "visual": "close up of dry curled red leaves on delicate bonsai tree branches resting on a rustic wooden potting bench"
+    },
+    {
+      "narration": "I tried increasing the watering schedule, but the soil turned heavy and soggy, pushing the struggling roots even closer to rot.",
+      "on_screen_text": "ROOT ROT",
+      "duration_hint": 13.0,
+      "visual": "close up of hands gently brushing damp dark soil away from delicate exposed tree roots with a small wooden trowel"
+    },
+    {
+      "narration": "Panic set in as I realized my aggressive care routine was actually killing the plant instead of saving it.",
+      "on_screen_text": "KILLING WITH KINDNESS",
+      "duration_hint": 13.0,
+      "visual": "medium shot of frustrated gardener holding head in hands next to struggling potted plant with bright greenhouse light behind"
+    },
+    {
+      "narration": "Stripping away my complicated fertilizer mixtures, I completely repotted the bonsai in fresh, airy soil and trimmed away every dead branch.",
+      "on_screen_text": "STARTING FRESH",
+      "duration_hint": 14.0,
+      "visual": "close up of sharp pruning shears clipping a dry dead twig from a bonsai trunk with fresh green shoots visible underneath"
+    },
+    {
+      "narration": "For two weeks, I practiced strict patience, giving it gentle indirect sunlight and just enough moisture to slowly bounce back.",
+      "on_screen_text": "PATIENT WAITING",
+      "duration_hint": 13.0,
+      "visual": "time lapse style close up of sunlight shifting across small green leaves on a healthy potted bonsai plant indoors"
+    },
+    {
+      "narration": "On the morning of the exhibition, tiny vibrant emerald buds burst open along the branches, healthier than ever before.",
+      "on_screen_text": "NEW GROWTH",
+      "duration_hint": 14.0,
+      "visual": "macro shot of bright green dew-kissed leaf opening up on a delicate tree branch under soft warm morning window light"
+    },
+    {
+      "narration": "Placing the thriving tree on the exhibition pedestal, I smiled knowing real growth takes time and cannot be rushed.",
+      "on_screen_text": "BLOOMING BRIGHT",
+      "duration_hint": 13.0,
+      "visual": "profile view of gardener smiling gently while touching a healthy green leaf on a flourishing potted bonsai tree"
+    },
+    {
+      "narration": "More stories about patience and natural comebacks are waiting right here, so follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "direct portrait looking into camera with a warm grounded smile and soft green plant leaves blurred in the background"
+    }
+  ]
+}

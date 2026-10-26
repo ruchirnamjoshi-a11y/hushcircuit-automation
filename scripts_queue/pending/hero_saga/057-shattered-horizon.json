@@ -1,0 +1,71 @@
+{
+  "id": "shattered-horizon",
+  "title": "Neon Pulse — Episode 57: Shattered Horizon",
+  "description": "Kael faces the true architect of the shadow empire as their surreal dimension collapses, leading to a stunning revelation that changes everything.",
+  "tags": [
+    "action",
+    "superhero",
+    "scifi",
+    "originalhero",
+    "epic"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 57,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The ground beneath us fractures into jagged geometric shards, floating in a void of blinding white light and swirling purple energy. The architect of this chaos stands unfazed at the center, watching my every move with cold detachment.",
+      "on_screen_text": "THE RIFT WIDENS",
+      "duration_hint": 14.0,
+      "visual": "Wide low angle shot of a crumbling geometric platform suspended in a swirling purple and white void, cracked terrain, dynamic atmospheric lighting."
+    },
+    {
+      "narration": "My amber circuits flare violently in response to the surging dimensional pressure. Every nerve in my body screams as the ambient energy attempts to tear my consciousness apart from the inside out.",
+      "on_screen_text": "SURGING POWER",
+      "duration_hint": 13.0,
+      "visual": "Close up on arms showing glowing amber circuitry patterns flaring brightly, fabric straining, tense muscular strain, dark atmospheric background."
+    },
+    {
+      "narration": "I grit my teeth and channel the overload directly into a concentrated kinetic shockwave. The blast shatters the nearest floating monolith into a million glittering fragments that cascade into the abyss.",
+      "on_screen_text": "KINETIC STRIKE",
+      "duration_hint": 13.0,
+      "visual": "Medium action shot of a powerful forward punch releasing a brilliant shockwave of energy, shattering floating stone pillars into dust, dynamic motion blur."
+    },
+    {
+      "narration": "With a swift motion, the shadow commander retaliates by summoning a wall of razor-sharp obsidian spikes. I barely manage to slide beneath them as they embed themselves deep into the shifting floor.",
+      "on_screen_text": "DEADLY DEFENSE",
+      "duration_hint": 13.0,
+      "visual": "Low angle tracking shot of a rapid tactical slide under a barrage of falling jagged black crystal spikes, dramatic lighting, flying debris."
+    },
+    {
+      "narration": "Seizing the opening, I close the distance in a blur of motion and drive my glowing fist toward his chest. But my strike stops dead, caught effortlessly by an invisible barrier.",
+      "on_screen_text": "BLOCKED PATH",
+      "duration_hint": 13.0,
+      "visual": "Medium close up of a fist striking a shimmering translucent energy shield, shocked facial expression, glowing amber light reflecting off a barrier."
+    },
+    {
+      "narration": "The architect smiles calmly, whispering words that instantly freeze the blood in my veins. He reveals that every trial I ever faced was engineered not to defeat me, but to harvest my unique frequency.",
+      "on_screen_text": "THE REVELATION",
+      "duration_hint": 14.0,
+      "visual": "Medium shot of an imposing cloaked figure speaking, looking down with a sinister expression, swirling dimensional energy framing the background."
+    },
+    {
+      "narration": "Before I can process the betrayal, the entire realm collapses into a singularity beneath our feet. We are pulled into freefall through an endless tunnel of roaring neon light.",
+      "on_screen_text": "INTO THE ABYSS",
+      "duration_hint": 13.0,
+      "visual": "High angle shot looking down into a swirling vortex of bright neon streaks, falling rapidly through a vertical cosmic tunnel, dramatic wind effect."
+    },
+    {
+      "narration": "As the portal slams shut behind us, we emerge into an unfamiliar, sky-high metropolis bathed in perpetual twilight. The true war for this world is only just beginning.",
+      "on_screen_text": "NEW FRONTIER",
+      "duration_hint": 13.0,
+      "visual": "Wide panoramic shot of a towering futuristic city skyline under a twilight sky, flying vehicles streaking past glowing futuristic spires, epic scale."
+    },
+    {
+      "narration": "Find out what happens next in the ongoing saga. Follow along for more epic action and continuous story chapters.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "Cinematic centered composition of glowing amber energy swirling in a dark chamber, mysterious atmospheric haze, subtle pulsing glow effect."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-quiet-corner",
+  "title": "The Quiet Corner",
+  "description": "A woman builds a reading nook in her tiny apartment, creating an inviolable sanctuary from workplace burnout.",
+  "tags": [
+    "sanctuary",
+    "boundaries",
+    "reading",
+    "peace",
+    "solitude"
+  ],
+  "character_reference": "a woman in her early thirties with wavy chestnut hair, wearing an oversized cable-knit cream sweater and cozy wool socks",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Her phone buzzed with after-hours emails until the screen felt like a physical weight pressing on her chest.",
+      "on_screen_text": "CONSTANT BUZZ",
+      "duration_hint": 6.0,
+      "visual": "Close-up of a glowing smartphone screen displaying multiple notification banners on a wooden table in a dimly lit room"
+    },
+    {
+      "narration": "Instead of replying, she turned the device face down and walked away from the desk.",
+      "on_screen_text": "TURNING IT DOWN",
+      "duration_hint": 5.0,
+      "visual": "Medium close-up of a woman's hand flipping a smartphone face down on a wooden surface with a definitive motion"
+    },
+    {
+      "narration": "In the neglected corner of her living room, she dragged an old armchair over to the sunniest window.",
+      "on_screen_text": "THE SUNNY CORNER",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of the woman pulling a comfortable upholstered armchair into a bright corner bathed in warm afternoon sunlight"
+    },
+    {
+      "narration": "She piled three heavy blankets on the seat and stacked her favorite unread novels on the floor beside it.",
+      "on_screen_text": "STACKED NOVELS",
+      "duration_hint": 5.5,
+      "visual": "Close-up of hands arranging a tall stack of hardcover books with colorful spines beside a plush armchair"
+    },
+    {
+      "narration": "Curling up with a paperback, she drew an invisible boundary that no notification could ever cross.",
+      "on_screen_text": "THE INVISIBLE LINE",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of the woman curled up comfortably in the armchair, holding an open book with a calm and focused expression"
+    },
+    {
+      "narration": "The noise of the workday faded into silence as the golden afternoon light washed over the pages.",
+      "on_screen_text": "GOLDEN LIGHT",
+      "duration_hint": 5.5,
+      "visual": "Close-up of warm sunlight streaming across the open pages of a book held by hands wearing cozy knitted sleeves"
+    },
+    {
+      "narration": "For the first time all week, the world could wait while she existed entirely for herself.",
+      "on_screen_text": "THE WORLD WAITS",
+      "duration_hint": 5.5,
+      "visual": "Medium close-up of the woman resting her cheek against her hand while reading with a serene smile"
+    },
+    {
+      "narration": "Follow along for more stories about protecting your peace and carving out space for your soul.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Cozy portrait of the woman smiling warmly into the camera from her reading nook with soft indoor lighting"
+    }
+  ]
+}

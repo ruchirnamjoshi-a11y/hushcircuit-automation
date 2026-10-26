@@ -1,0 +1,65 @@
+{
+  "id": "the-third-verse",
+  "title": "The Third Verse",
+  "description": "A middle-aged poet finds an old notebook from her youth and finishes a poem she abandoned thirty years ago.",
+  "tags": [
+    "poetry",
+    "youth",
+    "writing",
+    "reflection",
+    "art"
+  ],
+  "character_reference": "a woman in her early fifties with shoulder-length curly auburn hair, wearing round tortoiseshell glasses and a navy turtleneck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Cleaning out her childhood attic, Clara uncovered a faded blue notebook with pages yellowed by time.",
+      "on_screen_text": "THE BLUE NOTEBOOK",
+      "duration_hint": 9.1,
+      "visual": "close-up of dusty hands opening a faded blue cardboard notebook with yellowed paper pages in a dim attic"
+    },
+    {
+      "narration": "Her teenage handwriting sprawled across the pages, full of grand dreams and unfinished stanzas.",
+      "on_screen_text": "TEENAGE DREAMS",
+      "duration_hint": 8.7,
+      "visual": "close-up shot of handwritten cursive poetry on old paper with ink slightly faded near the edges"
+    },
+    {
+      "narration": "She turned to the final page and found a poem that stopped abruptly in the middle of the third verse.",
+      "on_screen_text": "THE UNFINISHED VERSE",
+      "duration_hint": 9.5,
+      "visual": "macro shot of a fountain pen ink line ending mid-sentence on a lined yellow notebook page under a desk lamp"
+    },
+    {
+      "narration": "For decades, she had believed life got too busy for art, trading verses for mortgages and meetings.",
+      "on_screen_text": "TRADING VERSES",
+      "duration_hint": 9.1,
+      "visual": "medium shot of a woman sitting on an attic floor surrounded by cardboard boxes, holding an open notebook against her chest"
+    },
+    {
+      "narration": "She uncapped a heavy fountain pen, feeling the familiar weight of ink against paper once again.",
+      "on_screen_text": "THE FOUNTAIN PEN",
+      "duration_hint": 8.7,
+      "visual": "close-up of a silver fountain pen nib resting gently against a blank white space on an old paper page"
+    },
+    {
+      "narration": "The missing words didn't come from youthful ambition now, but from the hard-earned grace of aging.",
+      "on_screen_text": "HARD-EARNED GRACE",
+      "duration_hint": 9.1,
+      "visual": "close-up hand writing smooth cursive lines with a dark ink pen on aged paper under warm indoor lighting"
+    },
+    {
+      "narration": "As she wrote the final period, thirty years of quiet regret dissolved into the page.",
+      "on_screen_text": "FINAL PERIOD",
+      "duration_hint": 8.3,
+      "visual": "extreme close-up of a pen point adding a dark ink dot to the end of a sentence on vintage paper"
+    },
+    {
+      "narration": "If this story inspired you to finish what you started, follow along for daily creative tales.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "cozy close-up of an open journal and a vintage pen illuminated by warm amber lamp light at night"
+    }
+  ]
+}

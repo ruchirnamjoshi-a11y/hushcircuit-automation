@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-sixty-one",
+  "title": "Neon Pulse — Episode 61: Subterranean Sanctuary",
+  "description": "Kael navigates the hidden shadow empire facility, uncovering strange experiments and a startling familiar face.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "original",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 61,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Stepping out of the smoking crater, I survey the sprawling underground metropolis stretching endlessly into the cavernous dark. Giant generators hum with a menacing blue light.",
+      "on_screen_text": "THE HIDDEN DEPTHS",
+      "duration_hint": 12.0,
+      "visual": "Low-angle wide shot of a cavernous subterranean facility with massive glowing blue power generators, rising smoke, and endless metallic catwalks vanishing into the deep shadows."
+    },
+    {
+      "narration": "Patrols of armored guards march in unison below me. I slip silently along an overhead conduit, keeping my amber circuitry from flaring in the shadows.",
+      "on_screen_text": "STEALTHY DESCENT",
+      "duration_hint": 11.5,
+      "visual": "Close-up profile shot of crouching behind a massive metallic pipe, watching armed guards patrolling below in a dimly lit industrial corridor."
+    },
+    {
+      "narration": "Console screens flash with stolen schematics of the shadow empire's core network. They are building something far worse than a weapon.",
+      "on_screen_text": "STOLEN SECRETS",
+      "duration_hint": 11.0,
+      "visual": "Over-the-shoulder shot interacting with a glowing holographic control console displaying complex floating blueprints and red warning data streams."
+    },
+    {
+      "narration": "Suddenly, a piercing alarm shatters the stillness. Red emergency strobes flood the chamber as heavy blast doors begin to seal shut all around.",
+      "on_screen_text": "LOCKDOWN ACTIVATED",
+      "duration_hint": 11.0,
+      "visual": "Dynamic action shot dodging rolling heavy steel blast doors while flashing crimson emergency lights cast long, dramatic shadows across the metallic floor."
+    },
+    {
+      "narration": "I channel energy into my palms, sending a surge of amber pulses through the mainframe. The heavy steel barrier grinds to a sudden halt.",
+      "on_screen_text": "OVERRIDE PULSE",
+      "duration_hint": 10.5,
+      "visual": "Medium close-up pressing both hands against a massive control panel as bright amber energy arcs violently from the fingertips into the metal."
+    },
+    {
+      "narration": "Stepping through the breached portal, I find myself in a silent containment lab. In the center floats a crystalline chamber holding someone I thought was dead.",
+      "on_screen_text": "THE CONTAINMENT LAB",
+      "duration_hint": 12.0,
+      "visual": "Wide shot walking into a sterile circular laboratory filled with glowing specimen tubes and a large levitating crystal pod in the center."
+    },
+    {
+      "narration": "Commander Vance steps out from behind the glass, smirking as the containment field powers down. The trap has finally sprung shut.",
+      "on_screen_text": "THE TRAP SPRINGS",
+      "duration_hint": 11.0,
+      "visual": "Medium shot of a scarred military commander smirking wickedly while pressing a button on a remote detonator inside a high-tech white laboratory."
+    },
+    {
+      "narration": "Before I can react, the floor drops away beneath my feet into an abyss of crackling electricity. Follow along for more of the saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.5,
+      "visual": "Dramatic action shot falling backward through a collapsing metallic floor as crackling electrical arcs spark wildly in all directions around the tumbling figure."
+    }
+  ]
+}

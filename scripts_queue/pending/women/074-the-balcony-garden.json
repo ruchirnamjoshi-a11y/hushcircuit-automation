@@ -1,0 +1,65 @@
+{
+  "id": "the-balcony-garden",
+  "title": "The Balcony Garden",
+  "description": "A woman transforms her concrete apartment balcony into a thriving sanctuary despite her landlord's warnings.",
+  "tags": [
+    "nature",
+    "sanctuary",
+    "growth",
+    "peace",
+    "home"
+  ],
+  "character_reference": "a woman in her late twenties with short platinum blonde hair, wearing a striped linen overall and gardening gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The rental agreement said no permanent alterations, but it said nothing about pots, soil, and sheer stubborn determination.",
+      "on_screen_text": "NO ALTERATIONS",
+      "duration_hint": 6.5,
+      "visual": "Medium shot of a woman looking out over a completely bare, gray concrete apartment balcony under a bright afternoon sky holding a small ceramic pot"
+    },
+    {
+      "narration": "For months, Elena stared at the empty gray concrete, waiting for permission to make the space feel like her own.",
+      "on_screen_text": "WAITING FOR PERMISSION",
+      "duration_hint": 6.0,
+      "visual": "Close-up of the woman resting her chin on her gloved hand while leaning against a metal balcony railing with a wistful expression"
+    },
+    {
+      "narration": "Then she realized she didn't need a signature to buy soil, seeds, and twenty terracotta planters.",
+      "on_screen_text": "TERRACOTTA",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of the woman kneeling on the concrete floor surrounded by rows of unpainted clay pots and bags of dark potting soil"
+    },
+    {
+      "narration": "Her hands dug deep into the rich, damp earth, pressing tiny tomato seeds into the dark warmth.",
+      "on_screen_text": "DAMP EARTH",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the woman's gloved hands gently pressing dark soil around a delicate green sprout inside a clay pot"
+    },
+    {
+      "narration": "Week by week, green vines climbed the iron railings, softening the hard edges of the city skyline.",
+      "on_screen_text": "CLIMBING VINES",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of lush green tomato plants and creeping vines winding up the dark iron bars of an apartment balcony railing in the morning sun"
+    },
+    {
+      "narration": "Sitting among the leaves with her morning coffee, she understood that peace is something you cultivate yourself.",
+      "on_screen_text": "CULTIVATING PEACE",
+      "duration_hint": 6.0,
+      "visual": "Medium close-up of the woman sitting comfortably in a wicker chair surrounded by lush green foliage, holding a steaming ceramic mug"
+    },
+    {
+      "narration": "The gray concrete was gone, replaced by a jungle built entirely on her own terms.",
+      "on_screen_text": "HER OWN JUNGLE",
+      "duration_hint": 5.0,
+      "visual": "Wide angle shot of a vibrant, plant-filled balcony bursting with green leaves and colorful flowers under warm afternoon sunlight"
+    },
+    {
+      "narration": "Follow along for more stories about growing your own space and choosing your own peace.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Charming close-up portrait of the woman smiling brightly among trailing green leaves with natural sunlight highlighting her face"
+    }
+  ]
+}

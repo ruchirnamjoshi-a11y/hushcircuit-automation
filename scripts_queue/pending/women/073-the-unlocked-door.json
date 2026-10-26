@@ -1,0 +1,65 @@
+{
+  "id": "the-unlocked-door",
+  "title": "The Unlocked Door",
+  "description": "A woman decides to finally walk into the community woodworking workshop she walked past for three years.",
+  "tags": [
+    "craft",
+    "courage",
+    "self-worth",
+    "woodworking",
+    "independence"
+  ],
+  "character_reference": "a woman in her early forties with auburn hair tied in a loose messy bun, wearing a plaid flannel shirt and canvas work apron",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For three years, Clara paused outside the heavy wooden doors of the workshop, listening to the hum of the sanders and telling herself she didn't belong.",
+      "on_screen_text": "THE LONG PAUSE",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of a woman standing outside a warm glowing timber workshop window at dusk, staring thoughtfully inward with her hand resting on a brick wall"
+    },
+    {
+      "narration": "She had spent a lifetime making things fit for other people while her own hands itched to shape raw cedar.",
+      "on_screen_text": "RAW CEDAR",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the woman looking down at her calloused hands, rubbing her palms together while standing in dappled afternoon light"
+    },
+    {
+      "narration": "Tonight, instead of walking to the bus stop, she pushed the heavy brass handle and stepped over the threshold.",
+      "on_screen_text": "STEPPING INSIDE",
+      "duration_hint": 5.5,
+      "visual": "Medium shot from behind the woman as she pushes open a heavy wooden door to reveal a warmly lit room filled with sawdust and workbenches"
+    },
+    {
+      "narration": "The air smelled of pine resin and oil, a scent that instantly made her feel more at home than any office ever had.",
+      "on_screen_text": "PINE RESIN",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the woman taking a slow, deep breath with her eyes closed inside the warm interior of the timber workshop"
+    },
+    {
+      "narration": "An instructor glanced up, and instead of shrinking back into the shadows, Clara walked right up to the workbench.",
+      "on_screen_text": "STEPPING FORWARD",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of the woman walking purposefully across a wood-shaving strewn floor toward a large oak workbench with a determined look"
+    },
+    {
+      "narration": "She rested her fingers on the smooth surface of a lathe, feeling the quiet pulse of possibility beneath her palms.",
+      "on_screen_text": "THE LATHE",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the woman's hands resting firmly on the polished wood surface of a workshop table surrounded by scattered carving tools"
+    },
+    {
+      "narration": "It took three years of hesitation to cross that room, but the dust on her boots finally felt like her own.",
+      "on_screen_text": "HER OWN DUST",
+      "duration_hint": 6.0,
+      "visual": "Low angle shot focusing on the woman's work boots dusted with light sawdust as she stands tall and confident in the workshop"
+    },
+    {
+      "narration": "Follow along for more stories about stepping through the doors you were always meant to open.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Friendly close-up portrait of the woman smiling warmly inside the glowing workshop with soft amber light illuminating her face"
+    }
+  ]
+}

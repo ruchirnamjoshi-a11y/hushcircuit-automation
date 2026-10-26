@@ -1,0 +1,65 @@
+{
+  "id": "the-baker-s-batch",
+  "title": "The Baker's Batch",
+  "description": "An ambitious culinary student ruins his signature pastry for a competition and invents a delicious new hybrid.",
+  "tags": [
+    "baking",
+    "culinary",
+    "competition",
+    "kitchen",
+    "innovation"
+  ],
+  "character_reference": "a young man with short dark wavy hair, wearing a crisp white chef coat stained with a smudge of flour on one cheek",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The regional pastry showcase was my one shot at landing a summer apprenticeship in the city, and my laminated croissant dough was the centerpiece.",
+      "on_screen_text": "THE BIG SHOWCASE",
+      "duration_hint": 14.0,
+      "visual": "close up of golden brown flaky pastry dough being rolled out on a floured marble countertop with metal rolling pin"
+    },
+    {
+      "narration": "Disaster struck when the commercial oven malfunctioned, baking my delicate butter layers into a flat, burnt disaster.",
+      "on_screen_text": "OVEN DISASTER",
+      "duration_hint": 13.0,
+      "visual": "close up of charred baked goods inside a glowing stainless steel oven with plumes of light smoke curling upward"
+    },
+    {
+      "narration": "With only twenty minutes left on the clock, I watched my entire culinary dream crumble into dark, crispy crumbs.",
+      "on_screen_text": "CRUMBLING DREAMS",
+      "duration_hint": 13.0,
+      "visual": "tight shot of hands crushing a burnt pastry crust into dark crumbs against a stainless steel prep table surface"
+    },
+    {
+      "narration": "Panic turned into reckless inspiration. I grabbed the ruined dough, chopped it up, and tossed it into a bowl with leftover caramel and sea salt.",
+      "on_screen_text": "RECKLESS IDEA",
+      "duration_hint": 14.0,
+      "visual": "medium shot of chef pouring thick amber caramel sauce over broken pastry chunks in a large metal mixing bowl"
+    },
+    {
+      "narration": "I quickly layered the buttery crunch into mini tart shells, torching the top until it caramelized into a glossy, amber crust.",
+      "on_screen_text": "FAST ASSEMBLY",
+      "duration_hint": 13.0,
+      "visual": "close up of a blue butane culinary torch flame melting sugar crystals across a dessert tart shell with sparks flying"
+    },
+    {
+      "narration": "When the judges bit into the improvised creation, the dead silence in the room suddenly broke into enthusiastic gasps of surprise.",
+      "on_screen_text": "THE TASTE TEST",
+      "duration_hint": 14.0,
+      "visual": "close up of hands placing a rustic glazed pastry onto a white ceramic plate under bright kitchen spotlight beams"
+    },
+    {
+      "narration": "Sometimes your greatest kitchen failures are just accidental recipes waiting for you to be brave enough to invent them.",
+      "on_screen_text": "SWEET SUCCESS",
+      "duration_hint": 14.0,
+      "visual": "profile view of young chef smiling proudly down at a tray of freshly glazed pastries with bright stainless steel kitchen background"
+    },
+    {
+      "narration": "If you love stories about turning mistakes into masterpieces, follow along for a new story every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 13.0,
+      "visual": "close up portrait looking into camera with a warm cheerful smile and flour dusted on cheek"
+    }
+  ]
+}

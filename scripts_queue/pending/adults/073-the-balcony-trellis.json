@@ -1,0 +1,65 @@
+{
+  "id": "the-balcony-trellis",
+  "title": "The Balcony Trellis",
+  "description": "An empty nester transforms a neglected apartment balcony into a flourishing green sanctuary, finding purpose in patience.",
+  "tags": [
+    "gardening",
+    "aging",
+    "solitude",
+    "growth",
+    "hope"
+  ],
+  "character_reference": "a woman in her late fifties with silver-streaked dark hair tied back in a loose bun, wearing a dark green canvas apron over a cream knit sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The apartment felt entirely too quiet once the last moving box was unpacked and the door clicked shut.",
+      "on_screen_text": "THE EMPTY ROOM",
+      "duration_hint": 9.1,
+      "visual": "wide interior shot of a minimalist living room with a single cardboard box on bare hardwood floors near sliding glass doors"
+    },
+    {
+      "narration": "She stepped outside onto the narrow concrete balcony, facing a grid of gray city walls.",
+      "on_screen_text": "CONCRETE WALLS",
+      "duration_hint": 8.3,
+      "visual": "medium shot looking out from a bare urban balcony toward distant overcast concrete apartment buildings in the morning haze"
+    },
+    {
+      "narration": "Instead of folding inward, she dragged out three empty terracotta pots and a bag of rich, dark soil.",
+      "on_screen_text": "THE FIRST POTS",
+      "duration_hint": 9.1,
+      "visual": "close-up hands scooping dark brown potting soil into a heavy earthenware container on a small concrete patio floor"
+    },
+    {
+      "narration": "She pressed delicate jasmine seeds into the cold earth, wondering if anything could truly take root here.",
+      "on_screen_text": "PLANTING HOPE",
+      "duration_hint": 8.7,
+      "visual": "extreme close-up of fingertips gently pressing tiny round seeds into damp black soil inside a terracotta flowerpot"
+    },
+    {
+      "narration": "Morning after morning, she watered the barren soil with a small metal can, watching for any sign of life.",
+      "on_screen_text": "DAILY RITUAL",
+      "duration_hint": 9.1,
+      "visual": "close-up shot of a galvanized watering can pouring a gentle stream of water over dark damp dirt in a planter box"
+    },
+    {
+      "narration": "Then, after weeks of patient waiting, a tiny emerald spear broke through the crust.",
+      "on_screen_text": "THE FIRST SHOOT",
+      "duration_hint": 8.3,
+      "visual": "macro shot of a single bright green seedling emerging through dark soil under soft morning sunlight"
+    },
+    {
+      "narration": "By summer, green vines climbed the iron railing, turning her private corner into a living forest.",
+      "on_screen_text": "GREEN WALL",
+      "duration_hint": 8.7,
+      "visual": "medium shot of lush green ivy and climbing vines weaving through a dark metal balcony railing against a bright afternoon sky"
+    },
+    {
+      "narration": "If you enjoy stories about quiet transformations, follow along for a new journey every day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.7,
+      "visual": "peaceful close-up of green leaves catching golden hour sunlight on an apartment balcony with blurred city background"
+    }
+  ]
+}

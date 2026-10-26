@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-59",
+  "title": "Neon Pulse — Episode 59: Echoes in the Twilight",
+  "description": "Kael faces a dangerous gauntlet of mechanical enforcers in the twilight metropolis as the shadow empire closes in.",
+  "tags": [
+    "original hero saga",
+    "sci-fi action",
+    "superhero",
+    "cyberpunk",
+    "suspense"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 59,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Heavy footsteps echo through the mist as the perimeter alarm shatters the twilight silence. The mechanical enforcers have found my position.",
+      "on_screen_text": "THE ALARM SOUNDS",
+      "duration_hint": 9.5,
+      "visual": "Low-angle tracking shot of heavy metallic footsteps slamming onto wet pavement in a foggy alleyway, with faint red sensor lights glowing through dense smoke."
+    },
+    {
+      "narration": "Sparks fly from the walls as twin automated turrets lock on and unleash a blistering barrage of plasma fire. I dive behind a crumbling concrete pillar just in time.",
+      "on_screen_text": "BLISTERING BARRAGE",
+      "duration_hint": 12.0,
+      "visual": "Close-up action shot of a man diving frantically behind a ruined concrete pillar as bright blue plasma blasts splinter the stone and scatter white-hot sparks."
+    },
+    {
+      "narration": "The amber circuitry on my sleeves flares with sudden, blinding intensity. I channel the raw energy directly into my palms, feeling the familiar hum surge through my veins.",
+      "on_screen_text": "SURGING POWER",
+      "duration_hint": 11.5,
+      "visual": "Medium close-up of outstretched hands glowing intensely with bright amber light, casting harsh shadows across a tense, determined face amidst dark industrial surroundings."
+    },
+    {
+      "narration": "With a sweeping motion, I release a shockwave of condensed plasma that shatters the nearest mechanical hunter into a shower of twisted metal and molten debris.",
+      "on_screen_text": "DEVASTATING STRIKE",
+      "duration_hint": 11.0,
+      "visual": "Wide dynamic action shot of a powerful shockwave erupting forward, tearing apart a towering robotic enforcer and sending glowing metallic shards flying through the air."
+    },
+    {
+      "narration": "Smoke clears to reveal dozens more red optic sensors blinking to life in the upper darkness. They are adapting faster than I can destroy them.",
+      "on_screen_text": "ENDLESS WAVES",
+      "duration_hint": 10.5,
+      "visual": "Medium shot looking upward into dark tiered scaffolding where dozens of menacing red robotic eyes stare down menacingly from the shadows."
+    },
+    {
+      "narration": "A sharp, encrypted transmission cuts through my neural link. It is a familiar voice, carrying a warning that changes everything I thought I knew about this realm.",
+      "on_screen_text": "ENCRYPTED TRANSMISSION",
+      "duration_hint": 11.0,
+      "visual": "Extreme close-up of a side profile showing intense focus, with a faint blue holographic data stream reflecting across the eyes in a dark, confined space."
+    },
+    {
+      "narration": "Before I can respond, the ground beneath my feet fractures completely, plunging me into a subterranean abyss of pure, blinding neon light.",
+      "on_screen_text": "THE SUDDEN DROP",
+      "duration_hint": 10.0,
+      "visual": "Perspective shot looking straight down as the stone floor collapses into a deep, glowing vertical shaft filled with blinding violet and cyan energy."
+    },
+    {
+      "narration": "Follow along for more of the Original Hero Saga as the battle for the twilight metropolis continues.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "Cinematic wide shot of a solitary figure standing at the edge of a vast, glowing subterranean chasm, illuminated by vibrant neon lights from below."
+    }
+  ]
+}

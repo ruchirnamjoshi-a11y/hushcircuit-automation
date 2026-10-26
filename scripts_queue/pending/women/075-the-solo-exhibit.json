@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-exhibit",
+  "title": "The Solo Exhibit",
+  "description": "A woman rents a small local cafe space to show her childhood paintings after keeping them hidden in closets.",
+  "tags": [
+    "art",
+    "vulnerability",
+    "dream",
+    "courage",
+    "expression"
+  ],
+  "character_reference": "a woman in her mid-thirties with long straight dark hair, wearing a paint-splattered denim artist coat and round glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The canvases had lived under her bed for a decade, facing the floor where nobody could judge them.",
+      "on_screen_text": "UNDER THE BED",
+      "duration_hint": 6.0,
+      "visual": "Medium low-angle shot of a woman pulling a large wrapped canvas out from beneath a wooden bed frame in a dimly lit bedroom"
+    },
+    {
+      "narration": "Every brushstroke was a secret she was too afraid to tell the world, tucked safely away in dark corners.",
+      "on_screen_text": "HIDDEN SECRETS",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the woman running her fingers across the textured oil paint surface of a colorful abstract canvas"
+    },
+    {
+      "narration": "When the corner cafe offered its bare brick wall for a weekend, her stomach dropped into freefall.",
+      "on_screen_text": "BARE BRICK",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of the woman standing inside an empty cozy coffee shop looking up at a long exposed brick wall with a nervous expression"
+    },
+    {
+      "narration": "She took a deep breath, lifted the first heavy frame, and hammered the brass nail into the wall herself.",
+      "on_screen_text": "THE FIRST NAIL",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the woman's hand holding a small silver hammer driving a brass nail securely into an old brick wall"
+    },
+    {
+      "narration": "One by one, the paintings went up, splashing bold oranges, deep indigos, and raw emotion across the room.",
+      "on_screen_text": "BOLD COLORS",
+      "duration_hint": 6.0,
+      "visual": "Medium shot of several vibrant oil paintings hanging in a row along a rustic cafe wall under warm pendant lighting"
+    },
+    {
+      "narration": "A stranger stopped in front of her favorite piece, tears glistening in their eyes without a word spoken.",
+      "on_screen_text": "A STRANGER'S TEARS",
+      "duration_hint": 6.0,
+      "visual": "Medium close-up of the artist watching from a corner with folded hands as an anonymous patron gazes intently at her artwork"
+    },
+    {
+      "narration": "Her art was out in the open air now, and the terror had finally given way to pure relief.",
+      "on_screen_text": "OPEN AIR",
+      "duration_hint": 5.5,
+      "visual": "Close-up of the artist exhaling a long, steady breath with a gentle, proud smile lighting up her face"
+    },
+    {
+      "narration": "Follow along for more stories about sharing your hidden gifts with the world.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Warm portrait of the artist standing proudly in front of her hanging paintings with soft indoor lighting and a welcoming smile"
+    }
+  ]
+}

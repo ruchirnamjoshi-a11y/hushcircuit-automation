@@ -1,0 +1,65 @@
+{
+  "id": "the-morning-run",
+  "title": "The Morning Run",
+  "description": "A woman swaps her exhausting late-night study routine for a quiet dawn jog that reclaims her mornings.",
+  "tags": [
+    "routine",
+    "wellness",
+    "discipline",
+    "sunrise",
+    "strength"
+  ],
+  "character_reference": "a woman in her late twenties with dark braided hair, wearing a gray athletic hoodie and running shoes",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Midnight oil had become her prison, trading her health for deadlines that never seemed to end.",
+      "on_screen_text": "MIDNIGHT OIL",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of a woman hunched over a laptop at a dark desk illuminated only by a harsh blue screen glow in the dead of night"
+    },
+    {
+      "narration": "When her alarm buzzed at five in the morning, every muscle in her body screamed to stay under the covers.",
+      "on_screen_text": "FIVE AM ALARM",
+      "duration_hint": 6.0,
+      "visual": "Close-up of the woman lying in bed with her eyes open in the dark, staring up at the ceiling while a soft alarm glows on her nightstand"
+    },
+    {
+      "narration": "She planted her feet on the cold floor anyway, zipping up her hoodie against the pre-dawn chill.",
+      "on_screen_text": "COLD FLOOR",
+      "duration_hint": 5.5,
+      "visual": "Low angle shot of bare feet stepping onto cool wooden floorboards beside a bed with a folded athletic jacket nearby"
+    },
+    {
+      "narration": "Stepping outside, the world was astonishingly still, wrapped in a blanket of cool morning fog.",
+      "on_screen_text": "MORNING FOG",
+      "duration_hint": 5.0,
+      "visual": "Wide shot of an empty residential street shrouded in soft white morning mist under a dark blue pre-dawn sky"
+    },
+    {
+      "narration": "Her sneakers hit the pavement in a steady rhythm, matching the slow, deep beat of her own breathing.",
+      "on_screen_text": "STEADY RHYTHM",
+      "duration_hint": 5.5,
+      "visual": "Close-up of running shoes striking damp asphalt in motion with the lower hem of gray athletic pants swaying"
+    },
+    {
+      "narration": "Over the crest of the hill, the sun broke through the horizon, painting the sky in gold and amber.",
+      "on_screen_text": "THE SUNRISE",
+      "duration_hint": 5.5,
+      "visual": "Medium shot of the runner pausing at the top of a hill, looking out toward a brilliant golden sunrise breaking through distant trees"
+    },
+    {
+      "narration": "She wasn't running from her responsibilities anymore; she was running straight toward herself.",
+      "on_screen_text": "TOWARD HERSELF",
+      "duration_hint": 5.5,
+      "visual": "Medium close-up of the runner smiling with flushed cheeks and sparkling eyes as morning sunlight illuminates her face"
+    },
+    {
+      "narration": "Follow along for more stories about reclaiming your time and finding strength in the morning light.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Friendly portrait of the runner looking directly into the camera with a vibrant morning sky blurred softly behind her"
+    }
+  ]
+}
