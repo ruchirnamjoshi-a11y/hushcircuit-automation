@@ -1,0 +1,71 @@
+{
+  "id": "the-sculptors-stone",
+  "title": "The Sculptor's Stone",
+  "description": "A woman chooses to carve the marble block she wants instead of the commission she was handed.",
+  "tags": [
+    "art",
+    "boundaries",
+    "purpose",
+    "sculpture",
+    "courage"
+  ],
+  "character_reference": "a tall woman with dark curly hair tied back in a messy knot, wearing a stained canvas apron over a fitted gray linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The client pointed to the safe design, but Elena kept looking at the rough granite slab in the corner.",
+      "on_screen_text": "THE SAFE CHOICE",
+      "duration_hint": 10.0,
+      "visual": "Close up profile looking at a massive raw gray stone block in a dimly lit studio workshop with dust motes drifting in shafts of warm light"
+    },
+    {
+      "narration": "Every week they asked for the predictable floral relief, something that would match their lobby walls.",
+      "on_screen_text": "THE REPEATED REQUEST",
+      "duration_hint": 9.0,
+      "visual": "Hands holding a stack of sketches of floral patterns under the harsh glow of an overhead metal lamp shade"
+    },
+    {
+      "narration": "She spent her nights tracing the lines of her own vision, far from what anyone else requested.",
+      "on_screen_text": "SECRET DESIGNS",
+      "duration_hint": 10.0,
+      "visual": "Sketching fiercely in a thick leather bound notebook with charcoal pencils scattered on a wooden work table"
+    },
+    {
+      "narration": "The advance check sat on the counter, enough to pay rent for three quiet months.",
+      "on_screen_text": "THE TENSION",
+      "duration_hint": 9.0,
+      "visual": "A white envelope resting near a clay modeling tool on a rustic oak counter with deep shadows filling the room"
+    },
+    {
+      "narration": "When the deadline arrived, she rolled the heavy uncommissioned sculpture into the center of the room.",
+      "on_screen_text": "THE UNVEILING",
+      "duration_hint": 10.0,
+      "visual": "Pushing a heavy wheeled cart bearing a sharp abstract stone sculpture across a polished concrete floor"
+    },
+    {
+      "narration": "Her voice did not shake when she told them this was the only piece she would release.",
+      "on_screen_text": "HOLDING HER GROUND",
+      "duration_hint": 9.0,
+      "visual": "Standing tall with chin raised slightly and hands resting firmly on hips in front of a tall window"
+    },
+    {
+      "narration": "Leaving the contract unsigned felt terrifying, but the weight lifted from her chest instantly.",
+      "on_screen_text": "THE RELEASE",
+      "duration_hint": 9.0,
+      "visual": "Exhaling deeply with closed eyes while sunlight catches the loose curls framing her face"
+    },
+    {
+      "narration": "She finally picked up the heavy chisel for herself alone.",
+      "on_screen_text": "HER OWN WORK",
+      "duration_hint": 8.0,
+      "visual": "Gripping a steel chisel tightly against gray stone with flying white marble dust frozen midair"
+    },
+    {
+      "narration": "Follow along for more stories about choosing your true path.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "Soft focus shot of finished stone carvings lined up along a sunlit workshop shelf filled with tools"
+    }
+  ]
+}

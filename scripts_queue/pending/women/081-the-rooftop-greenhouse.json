@@ -1,0 +1,71 @@
+{
+  "id": "the-rooftop-greenhouse",
+  "title": "The Rooftop Greenhouse",
+  "description": "A woman transforms an abandoned concrete rooftop into a thriving sanctuary of rare plants.",
+  "tags": [
+    "nature",
+    "gardening",
+    "sanctuary",
+    "patience",
+    "growth"
+  ],
+  "character_reference": "a woman with wavy auburn hair tucked under a wide-brimmed straw hat, wearing a dirt-smudged denim jumpsuit and leather work gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The barren concrete roof above her apartment building collected nothing but dust and discarded papers.",
+      "on_screen_text": "THE WASTELAND",
+      "duration_hint": 10.0,
+      "visual": "Looking across a vast empty gray rooftop under a glaring midday sun with ventilation pipes in the background"
+    },
+    {
+      "narration": "Neighbors laughed when she dragged the first heavy bags of organic soil up six flights of stairs.",
+      "on_screen_text": "HEAVY LOADS",
+      "duration_hint": 10.0,
+      "visual": "Dragging a thick burlap sack filled with potting soil across rough weathered concrete tiles"
+    },
+    {
+      "narration": "She spent every evening building wooden planter boxes to catch the best angle of the afternoon sun.",
+      "on_screen_text": "BUILDING ROOTS",
+      "duration_hint": 10.0,
+      "visual": "Screwing cedar planks together with a cordless power drill while sawdust settles on worn knees"
+    },
+    {
+      "narration": "Delicate seedlings survived the sudden spring frost only because she covered them with old bedsheets.",
+      "on_screen_text": "FROST WATCH",
+      "duration_hint": 10.0,
+      "visual": "Tucking white cotton fabric gently around small green shoots inside a wooden container during a chilly dawn"
+    },
+    {
+      "narration": "Months of hauling water in watering cans finally paid off when the first heirloom tomatoes ripened.",
+      "on_screen_text": "FIRST HARVEST",
+      "duration_hint": 10.0,
+      "visual": "Cupping a heavy red tomato hanging from a lush green vine with sunlight glinting off morning dew"
+    },
+    {
+      "narration": "The harsh city noise faded away behind walls of thick ferns and blooming lavender bushes.",
+      "on_screen_text": "THE OASIS",
+      "duration_hint": 9.0,
+      "visual": "Brushing past towering potted tomato plants and fragrant green herbs on a narrow wooden boardwalk"
+    },
+    {
+      "narration": "She sat among the leaves as the sun dipped below the skyline, breathing in the rich damp earth.",
+      "on_screen_text": "PEACE",
+      "duration_hint": 10.0,
+      "visual": "Sitting on a wooden bench surrounded by hanging green foliage with orange sunset glow filling the sky"
+    },
+    {
+      "narration": "Creating her own green world cured the loneliness she had carried for years.",
+      "on_screen_text": "GROWING HOME",
+      "duration_hint": 8.0,
+      "visual": "Pruning small yellow leaves from a potted fern with silver gardening shears in soft golden light"
+    },
+    {
+      "narration": "Follow along for more stories of cultivating peace in unexpected places.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A ceramic watering can resting beside a cluster of small terracotta pots on a wooden deck"
+    }
+  ]
+}

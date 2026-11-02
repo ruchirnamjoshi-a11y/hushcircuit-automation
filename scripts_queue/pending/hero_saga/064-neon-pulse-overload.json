@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-overload",
+  "title": "Neon Pulse — Episode 64: Core Overload",
+  "description": "Kael races against time to neutralize Vance's overloading control core in the subterranean abyss before the entire chamber collapses.",
+  "tags": [
+    "neon pulse",
+    "action",
+    "superhero",
+    "sci-fi",
+    "original hero saga"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 64,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sparks cascade violently from the fractured control core as raw energy threatens to detonate the entire subterranean chamber.",
+      "on_screen_text": "THE CRITICAL MOMENT",
+      "duration_hint": 5.2,
+      "visual": "close-up of glowing amber sparks erupting from a fractured metallic control console inside a dark subterranean cavern with pulsing blue energy leaks"
+    },
+    {
+      "narration": "Channeling voltage through his fingertips, he forces his bare hands directly into the exposed circuitry to suppress the surge.",
+      "on_screen_text": "DIVERTING THE SURGE",
+      "duration_hint": 5.6,
+      "visual": "medium shot from behind of hands pressing firmly into sizzling electrical wires while bright amber light flows through skin and fingertips"
+    },
+    {
+      "narration": "The internal machinery screams in protest, fighting his control and sending searing shockwaves up his forearms.",
+      "on_screen_text": "FIGHTING THE FEEDBACK",
+      "duration_hint": 5.2,
+      "visual": "close-up on tensed face grimacing against sudden pain as brilliant electrical arcs illuminate the dark stone walls of the underground chamber"
+    },
+    {
+      "narration": "He thrusts his energy downward, grounding the massive electrical discharge deep into the bedrock beneath his boots.",
+      "on_screen_text": "GROUNDING THE POWER",
+      "duration_hint": 5.2,
+      "visual": "low angle shot looking up at boots firmly planted on cracked stone floor as blinding bolts of amber electricity strike downward into the earth"
+    },
+    {
+      "narration": "The deafening roar of the machine slowly fades into a low, steady hum as the core finally stabilizes.",
+      "on_screen_text": "STABILIZING THE CORE",
+      "duration_hint": 5.2,
+      "visual": "wide shot of the smoking metallic console glowing with a calm amber hue inside a cavern filled with drifting metallic dust and faint blue light"
+    },
+    {
+      "narration": "Exhaling heavily, he catches his breath and notices a hidden compartment slide open within the silenced casing.",
+      "on_screen_text": "THE HIDDEN CACHE",
+      "duration_hint": 5.2,
+      "visual": "medium shot looking down over a shoulder as a secret metal panel clicks open to reveal an unfamiliar pulsing data drive resting inside"
+    },
+    {
+      "narration": "He picks up the strange data crystal, realizing Commander Vance left behind far more than just a trap.",
+      "on_screen_text": "UNEXPECTED DISCOVERY",
+      "duration_hint": 5.2,
+      "visual": "close-up of fingers lifting a glowing crystalline storage device from a recessed compartment while amber circuits pulse softly in the background"
+    },
+    {
+      "narration": "A holographic projection suddenly flickers to life above the crystal, displaying coordinates to a facility he never knew existed.",
+      "on_screen_text": "COORDINATES REVEALED",
+      "duration_hint": 5.6,
+      "visual": "medium shot of glowing blue holographic map projections hovering in the dark air above a metal table while shadows dance across the stone walls"
+    },
+    {
+      "narration": "Follow along for more original hero stories in the next chapter of Neon Pulse.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "cinematic close-up of amber circuits slowly dimming along jacket sleeves as a solitary figure turns away toward a glowing tunnel entrance"
+    }
+  ]
+}

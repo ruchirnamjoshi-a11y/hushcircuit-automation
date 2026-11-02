@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-ep-62",
+  "title": "Neon Pulse — Episode 62: The Electrical Abyss",
+  "description": "Kael plummets into the crackling electrical abyss, fighting to harness his surging amber power before the surge consumes him completely.",
+  "tags": [
+    "action",
+    "superhero",
+    "scifi",
+    "thriller",
+    "adventure"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 62,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Gravity vanishes as thousands of volts tear through the dark abyss. The pulsing energy threatens to tear my nervous system apart.",
+      "on_screen_text": "THE PLUNGE",
+      "duration_hint": 6.5,
+      "visual": "Low angle extreme wide shot of a tall lean man falling through a vertical shaft filled with blinding blue and yellow electric arcs, dynamic motion blur, high contrast cinematic lighting"
+    },
+    {
+      "narration": "I force my breathing steady, channeling the raw current directly into the amber patterns on my sleeves. The glow intensifies, fighting back the darkness.",
+      "on_screen_text": "CHANNELING THE SURGE",
+      "duration_hint": 7.0,
+      "visual": "Medium close up of a man arching his back midair while glowing yellow circuitry patterns on his dark sleeves flare brightly, intense focus expression, dark subterranean background"
+    },
+    {
+      "narration": "A massive metallic platform looms out of the blinding glare below. This fall is about to end very painfully unless I redirect this charge.",
+      "on_screen_text": "IMPENDING IMPACT",
+      "duration_hint": 6.5,
+      "visual": "Top down perspective of a rusted metal platform rushing upward toward the camera as a falling figure braces for impact, sparks flying, dramatic action cinematography"
+    },
+    {
+      "narration": "At the last possible microsecond, I unleash the stored voltage downward. A blinding shockwave shatters the impending platform into a cloud of glowing debris.",
+      "on_screen_text": "SHOCKWAVE BLAST",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of a man thrusting both palms straight down toward the floor, releasing a massive expanding ring of golden energy and scattering steel fragments, dark industrial cavern"
+    },
+    {
+      "narration": "I land hard on a lower catwalk, sliding across grating that melts beneath my boots. Commander Vance watches from a control balcony far above, smiling coldly.",
+      "on_screen_text": "THE WATCHER",
+      "duration_hint": 7.0,
+      "visual": "Medium wide shot of a man sliding across a smoking metal catwalk while looking up into the shadows above where a silhouetted figure stands behind a glowing console"
+    },
+    {
+      "narration": "Vance's voice echoes through the cavern, mocking my futile resistance. He thinks this abyss is my final grave, but he has no idea what I just unlocked.",
+      "on_screen_text": "DEFIANT STAND",
+      "duration_hint": 7.0,
+      "visual": "Close up profile of a man standing on a scorched catwalk with glowing amber veins pulsing along his neck and jaw, glaring upward with grim determination"
+    },
+    {
+      "narration": "The amber circuitry on my jacket surges with a sudden, deafening hum. A secondary gateway activates behind Vance, revealing a terrifying new threat.",
+      "on_screen_text": "THE NEW HORROR",
+      "duration_hint": 7.0,
+      "visual": "Wide shot of a towering dark gateway ripping open behind a distant balcony, spewing violet energy as massive metallic claws emerge from the rift"
+    },
+    {
+      "narration": "Follow along for more of the Original Hero Saga as Kael fights to survive the shadow empire.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Cinematic medium shot of a man standing ready on a glowing metal platform as purple energy storms gather in the background, dramatic atmospheric lighting"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "the-night-shift-potter",
+  "title": "The Night Shift Potter",
+  "description": "A night-shift pottery worker lets a warped clay vessel collapse, finding liberation in discarding perfection.",
+  "tags": [
+    "pottery",
+    "craft",
+    "letting-go",
+    "midnight",
+    "artistry"
+  ],
+  "character_reference": "a middle-aged man with grease-smudged cheeks, wild dark hair, and clay-stained fingers, wearing a collarless grey linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The kiln room hummed at two in the morning, the only sound besides the rhythmic spinning of my potter's wheel in the dark.",
+      "on_screen_text": "THE TWO A.M. HUM",
+      "duration_hint": 12.6,
+      "visual": "wide shot of a dark industrial studio lit by a single hanging bulb, pottery wheel spinning in the center of the frame"
+    },
+    {
+      "narration": "I was centering a massive lump of stoneware clay, trying to force it into a symmetrical vase that my clients expected.",
+      "on_screen_text": "THE FORCED SYMMETRY",
+      "duration_hint": 12.2,
+      "visual": "close-up of clay-covered hands pressing firmly against a spinning wet grey mound of clay on a metal wheel head, water splashing under fingertips"
+    },
+    {
+      "narration": "My hands grew tired, and the wet clay began to wobble off-center, leaning dangerously to the left like a drunken tower.",
+      "on_screen_text": "THE WOBBLING TOWER",
+      "duration_hint": 12.2,
+      "visual": "close-up of a tall, thin clay vessel twisting crookedly as it spins on a potter's wheel, dramatic overhead lighting catching wet clay surfaces"
+    },
+    {
+      "narration": "For years, a ruined pot meant a ruined night. But tonight, I pressed my thumb right through the collapsing wall.",
+      "on_screen_text": "THE COLLAPSE",
+      "duration_hint": 11.7,
+      "visual": "close-up of a thumb puncturing the side of a spinning distorted clay cylinder, sending wet clay spinning outward in a splash"
+    },
+    {
+      "narration": "As the clay slumped down into a low, organic dish, I laughed out loud in the empty room. It was better than what I planned.",
+      "on_screen_text": "THE ORGANIC DISH",
+      "duration_hint": 13.5,
+      "visual": "medium shot of a person smiling broadly while looking down at a flat, rustic ceramic bowl shaped on the wheel, warm studio light"
+    },
+    {
+      "narration": "Perfection is a cage we build for ourselves. True freedom smells like wet earth and kiln smoke.",
+      "on_screen_text": "THE WET EARTH",
+      "duration_hint": 11.7,
+      "visual": "close-up of hands resting flat against a wooden workbench covered in clay smudges, peaceful expression in low light"
+    },
+    {
+      "narration": "Follow along for more daily stories about finding freedom in letting go.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.6,
+      "visual": "portrait of a potter looking directly at the camera with a relaxed, genuine smile, dark workshop background with pottery shelves"
+    }
+  ]
+}

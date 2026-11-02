@@ -1,0 +1,71 @@
+{
+  "id": "the-marathon-trail",
+  "title": "The Marathon Trail",
+  "description": "A woman trains for a difficult mountain ultramarathon despite being told she lacks the natural speed.",
+  "tags": [
+    "running",
+    "endurance",
+    "perseverance",
+    "mountains",
+    "strength"
+  ],
+  "character_reference": "an athletic woman with short braided dark hair, wearing a teal moisture-wicking trail running shirt and muddy running shorts",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "They told her endurance was something you start in youth, not after turning forty with a desk job.",
+      "on_screen_text": "THE DOUBT",
+      "duration_hint": 10.0,
+      "visual": "Lacing up bright yellow trail running shoes while sitting on the edge of a weathered wooden porch at dawn"
+    },
+    {
+      "narration": "Her lungs burned on the steep gravel switchbacks every single morning before the sun cleared the ridge.",
+      "on_screen_text": "EARLY CLIMBS",
+      "duration_hint": 10.0,
+      "visual": "Running uphill along a narrow dirt trail bordered by pine trees with mist rising from the valley below"
+    },
+    {
+      "narration": "She stopped comparing her pace to the group leaders and simply learned to listen to her own heartbeat.",
+      "on_screen_text": "FINDING HER RHYTHM",
+      "duration_hint": 10.0,
+      "visual": "Checking a GPS watch on a muddy wrist while pausing briefly to catch breath near a granite boulder"
+    },
+    {
+      "narration": "Blisters and bruised toes became quiet reminders of miles earned through stubborn persistence.",
+      "on_screen_text": "THE TOLL",
+      "duration_hint": 9.0,
+      "visual": "Applying athletic tape carefully to a heel under the warm yellow glow of a small desk lamp"
+    },
+    {
+      "narration": "Race day brought freezing rain and winds that whipped across the high alpine pass.",
+      "on_screen_text": "THE STORM",
+      "duration_hint": 9.0,
+      "visual": "Pushing forward through blowing mist on a rocky ridge with dark storm clouds pressing down overhead"
+    },
+    {
+      "narration": "Her legs screamed to stop, but her mind remained entirely fixed on the next tree line.",
+      "on_screen_text": "ONE MORE MILE",
+      "duration_hint": 9.0,
+      "visual": "A low angle tracking shot of running feet splashing through a shallow puddle on a forest track"
+    },
+    {
+      "narration": "Crossing the finish line alone in the dusk, she knew the medal mattered far less than the grit.",
+      "on_screen_text": "THE FINISH",
+      "duration_hint": 10.0,
+      "visual": "Walking slowly beneath a simple wooden finish arch with hands resting on knees and deep shadows stretching out"
+    },
+    {
+      "narration": "She smiled into the cold mountain air, stronger than she had ever imagined possible.",
+      "on_screen_text": "UNSTOPPABLE",
+      "duration_hint": 8.0,
+      "visual": "Pulling a warm fleece jacket over shoulders while looking out across a vast twilight mountain landscape"
+    },
+    {
+      "narration": "Follow along for more stories of quiet resilience and chasing big goals.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A trail map spread flat on a wooden table with a steaming mug of black coffee beside it"
+    }
+  ]
+}

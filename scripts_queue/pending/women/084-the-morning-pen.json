@@ -1,0 +1,71 @@
+{
+  "id": "the-morning-pen",
+  "title": "The Morning Pen",
+  "description": "A woman carves out thirty minutes of uninterrupted writing time before the household wakes.",
+  "tags": [
+    "writing",
+    "routine",
+    "creativity",
+    "morning",
+    "solitude"
+  ],
+  "character_reference": "a woman with messy brown hair falling over her eyes, wearing an oversized knit cream sweater and wool socks",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The house was dead silent at five in the morning, long before anyone else stirred from sleep.",
+      "on_screen_text": "THE SILENT HOUR",
+      "duration_hint": 10.0,
+      "visual": "A dark kitchen window reflecting the pale blue glow of early dawn before the sun rises"
+    },
+    {
+      "narration": "She wrapped her cold hands around a ceramic mug while watching the steam rise in the dim light.",
+      "on_screen_text": "WARMTH IN THE DARK",
+      "duration_hint": 10.0,
+      "visual": "Holding a heavy ceramic mug with both hands while sitting at a dark wooden dining room table"
+    },
+    {
+      "narration": "Her notebooks piled up over the months, filled with fiction she wrote for herself and no one else.",
+      "on_screen_text": "STACKED PAGES",
+      "duration_hint": 10.0,
+      "visual": "A towering stack of colorful spiral notebooks resting under a small adjustable reading lamp on a desk"
+    },
+    {
+      "narration": "Family demands often tried to squeeze out her creative time, but she guarded these minutes fiercely.",
+      "on_screen_text": "DEFENDING TIME",
+      "duration_hint": 10.0,
+      "visual": "Writing furiously in a lined notebook with a black ballpoint pen while morning light begins to hit the floorboards"
+    },
+    {
+      "narration": "Words flowed onto paper without judgment or the need for immediate perfection.",
+      "on_screen_text": "PURE EXPRESSION",
+      "duration_hint": 9.0,
+      "visual": "Close up of a hand writing cursive words across cream colored paper with ink catching the light"
+    },
+    {
+      "narration": "A heavy novel started taking shape sentence by sentence in the quiet sanctuary of dawn.",
+      "on_screen_text": "THE STORY GROWS",
+      "duration_hint": 9.0,
+      "visual": "Flipping back through several completed pages of handwritten text covered in margin notes and arrows"
+    },
+    {
+      "narration": "When footsteps finally sounded down the hallway, her private world was already safely captured.",
+      "on_screen_text": "THE SHIFT",
+      "duration_hint": 9.0,
+      "visual": "Closing a leather journal gently with a soft thud as sunlight spills across the wooden table surface"
+    },
+    {
+      "narration": "She closed the cover with a satisfied smile, knowing her voice mattered.",
+      "on_screen_text": "OWNING HER VOICE",
+      "duration_hint": 8.0,
+      "visual": "Resting a chin on folded hands while looking out a sunlit window with a peaceful expression"
+    },
+    {
+      "narration": "Follow along for more stories of finding time for your true passions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A black fountain pen resting neatly across the open pages of a blank journal in warm morning light"
+    }
+  ]
+}

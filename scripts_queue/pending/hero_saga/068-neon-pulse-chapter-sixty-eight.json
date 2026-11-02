@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-chapter-sixty-eight",
+  "title": "Neon Pulse — Episode 68: Countdown In The Sky",
+  "description": "Kael confronts the live countdown timer on the abandoned orbital platform while deadly automated security turrets power up.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "suspense",
+    "neonpulse"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 68,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The countdown display pulses with an unforgiving red glow. Only minutes remain before the metropolis below faces total destruction.",
+      "on_screen_text": "THE TICKING CLOCK",
+      "duration_hint": 6.5,
+      "visual": "close up shot of a digital glowing red countdown timer on a futuristic metal console with sparks flying and dark metallic interior background"
+    },
+    {
+      "narration": "Heavy robotic shutters grind open along the ceiling. Rows of automated defense turrets lock their target sensors straight onto my position.",
+      "on_screen_text": "TURRETS ACTIVATE",
+      "duration_hint": 7.0,
+      "visual": "low angle shot looking up as multiple heavy automated gun turrets emerge from ceiling slots and point laser sights downward"
+    },
+    {
+      "narration": "A barrage of plasma fire tears through the air. I throw myself behind a heavy steel control console just as it shatters into glowing debris.",
+      "on_screen_text": "EVADING FIRE",
+      "duration_hint": 7.5,
+      "visual": "dynamic action shot of the character diving sideways through the air while glowing plasma blasts impact metal panels sending sparks in all directions"
+    },
+    {
+      "narration": "The amber circuitry on my sleeves flares brightly. I channel the surging energy directly into the platform's central power conduit.",
+      "on_screen_text": "CHANNELING ENERGY",
+      "duration_hint": 6.5,
+      "visual": "medium shot of the character kneeling with hands pressed against a massive sparking terminal while glowing amber light streams from arms"
+    },
+    {
+      "narration": "A massive surge of feedback ripples through the network. The turrets momentarily stall, their targeting lasers flickering out of sync.",
+      "on_screen_text": "SYSTEM OVERLOAD",
+      "duration_hint": 6.5,
+      "visual": "wide shot of robotic turrets sparking and malfunctioning on a dark metallic platform with dramatic overhead lighting casting deep shadows"
+    },
+    {
+      "narration": "Before the security system can reboot, a hidden holographic projector flickers to life above the console. Commander Vance's cold smile fills the room.",
+      "on_screen_text": "THE HOLOGRAM",
+      "duration_hint": 7.5,
+      "visual": "medium close up of the character staring up in shock at a glowing blue translucent holographic projection of a stern military commander"
+    },
+    {
+      "narration": "He reveals the countdown cannot be stopped from the inside. The entire orbital platform is locked on a one-way collision course.",
+      "on_screen_text": "COLLISION COURSE",
+      "duration_hint": 7.0,
+      "visual": "over the shoulder shot looking at a giant observation window showing a sprawling metropolis far below under a dark night sky"
+    },
+    {
+      "narration": "With the escape shuttle bay already sealing shut, I need to find another way off this station before time runs out completely.",
+      "on_screen_text": "TRAPPED IN ORBIT",
+      "duration_hint": 6.5,
+      "visual": "wide shot of the character standing alone on a high metal catwalk looking toward a closing heavy blast door at the end of the corridor"
+    },
+    {
+      "narration": "Follow along for the next chapter as the battle for the metropolis reaches its most desperate hour.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.5,
+      "visual": "dramatic cinematic portrait of the character turning around with a determined expression against a backdrop of distant glowing stars"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "the-solo-exhibit",
+  "title": "The Solo Exhibit",
+  "description": "A photographer refuses to compromise her documentary style for commercial appeal.",
+  "tags": [
+    "photography",
+    "integrity",
+    "career",
+    "vision",
+    "art"
+  ],
+  "character_reference": "a woman with tousled blonde hair and round tortoiseshell glasses, wearing a utility vest with multiple pockets over a black turtleneck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The gallery director wanted glossy portraits, not the gritty street scenes she had spent years capturing.",
+      "on_screen_text": "COMMERCIAL PRESSURE",
+      "duration_hint": 10.0,
+      "visual": "Looking at slick fashion photographs spread across a sleek white marble gallery desk under recessed track lighting"
+    },
+    {
+      "narration": "Her archive of working-class neighborhoods told a real story that gloss could never replace.",
+      "on_screen_text": "REAL STORIES",
+      "duration_hint": 9.0,
+      "visual": "Leafing through a portfolio box of black and white silver gelatin prints showing candid street moments"
+    },
+    {
+      "narration": "Accepting their terms meant changing her portfolio to fit a trend that would fade by next season.",
+      "on_screen_text": "THE COMPROMISE",
+      "duration_hint": 10.0,
+      "visual": "Staring intently at a contract paper resting on a cluttered desk with a fountain pen held tightly in hand"
+    },
+    {
+      "narration": "Instead, she rented an empty warehouse space down by the docks to show her work on her own terms.",
+      "on_screen_text": "INDEPENDENT SPACE",
+      "duration_hint": 10.0,
+      "visual": "Walking through a vast raw brick warehouse room with exposed wooden beams and concrete flooring"
+    },
+    {
+      "narration": "She spent three days hammering nails and hanging large framed prints along the weathered brick walls.",
+      "on_screen_text": "PREPARING THE SHOW",
+      "duration_hint": 10.0,
+      "visual": "Hammering a picture hook into a rough brick wall while holding a spirit level against the top of a black frame"
+    },
+    {
+      "narration": "Opening night brought friends, strangers, and an overwhelming wave of authentic appreciation.",
+      "on_screen_text": "OPENING NIGHT",
+      "duration_hint": 9.0,
+      "visual": "People gathered in a warmly lit warehouse space looking at large framed documentary photographs on the walls"
+    },
+    {
+      "narration": "She stood quietly in the corner, knowing she stayed true to every frame she shot.",
+      "on_screen_text": "STAYING TRUE",
+      "duration_hint": 9.0,
+      "visual": "Smiling warmly while holding a small camera around her neck amidst a bustling crowd of gallery visitors"
+    },
+    {
+      "narration": "Compromise was off the table; her vision belonged to her alone.",
+      "on_screen_text": "HER OWN VISION",
+      "duration_hint": 8.0,
+      "visual": "Close up of fingers adjusting the focus ring on a vintage 35mm camera lens in dim ambient light"
+    },
+    {
+      "narration": "Follow along for more stories of creative independence and unyielding integrity.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A vintage camera body resting on a wooden table beside a stack of exhibition prints in soft daylight"
+    }
+  ]
+}

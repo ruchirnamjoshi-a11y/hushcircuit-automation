@@ -1,0 +1,71 @@
+{
+  "id": "the-solo-paddle",
+  "title": "The Solo Paddle",
+  "description": "A woman takes her kayak out onto open water for the first time without a group guide.",
+  "tags": [
+    "kayaking",
+    "water",
+    "independence",
+    "nature",
+    "adventure"
+  ],
+  "character_reference": "a woman with sun-bleached brown hair tied in a ponytail, wearing a bright orange personal flotation device over a rash guard",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The instructors always insisted beginners stay close to the sheltered cove where the water was calm.",
+      "on_screen_text": "THE SHALLOWS",
+      "duration_hint": 10.0,
+      "visual": "Looking out across a glassy green lake from a rocky shore where rental kayaks are lined up neatly"
+    },
+    {
+      "narration": "Today she pushed past the breakwater into the wide expanse of the open lake where the wind picked up.",
+      "on_screen_text": "OPEN WATER",
+      "duration_hint": 10.0,
+      "visual": "Pushing a red fiberglass kayak off the pebbled shoreline into ripples of deep blue water"
+    },
+    {
+      "narration": "Her arms felt the strain immediately as choppy waves tested her balance and steering technique.",
+      "on_screen_text": "THE CHOP",
+      "duration_hint": 10.0,
+      "visual": "Pulling a carbon fiber paddle through choppy water with spray kicking up against the side of the boat"
+    },
+    {
+      "narration": "Fear whispered that she was too far from shore, but deep breathing steadied her strokes.",
+      "on_screen_text": "FINDING BALANCE",
+      "duration_hint": 10.0,
+      "visual": "Sitting upright with core engaged while dipping the paddle blade smoothly into deep green water"
+    },
+    {
+      "narration": "Reaching the center of the lake, she stopped paddling and let the boat drift in absolute silence.",
+      "on_screen_text": "THE DRIFT",
+      "duration_hint": 10.0,
+      "visual": "Resting the paddle across the kayak hull while looking out at a vast horizon under a wide blue sky"
+    },
+    {
+      "narration": "No one was there to direct her route or tell her when to turn back toward land.",
+      "on_screen_text": "TOTAL FREEDOM",
+      "duration_hint": 9.0,
+      "visual": "Trailing a bare hand through cool lake water leaving a faint wake behind the gliding boat"
+    },
+    {
+      "narration": "Heading back to shore, her muscles were tired, but her spirit felt entirely transformed.",
+      "on_screen_text": "THE RETURN",
+      "duration_hint": 9.0,
+      "visual": "Paddling toward a sunlit shore with pine trees reflecting like a mirror on the lake surface"
+    },
+    {
+      "narration": "She pulled the kayak onto the gravel and smiled at the wide open water.",
+      "on_screen_text": "CAPTAIN OF HER BOAT",
+      "duration_hint": 8.0,
+      "visual": "Dragging the bow of the kayak up onto dry pebbles while wiping sea spray from her forehead"
+    },
+    {
+      "narration": "Follow along for more stories of stepping out and finding your own strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A paddle resting against the hull of a red kayak parked on a grassy riverbank at golden hour"
+    }
+  ]
+}

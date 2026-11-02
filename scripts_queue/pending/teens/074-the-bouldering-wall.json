@@ -1,0 +1,65 @@
+{
+  "id": "the-bouldering-wall",
+  "title": "The Bouldering Wall",
+  "description": "A beginner climber faces his fear of heights on a notoriously difficult gym route.",
+  "tags": [
+    "climbing",
+    "fear",
+    "perseverance",
+    "sports",
+    "growth"
+  ],
+  "character_reference": "an athletic young man with short brown hair, wearing a chalk-stained gray t-shirt and climbing harness around the waist",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Everyone else seemed to float up the vibrant plastic holds while I remained stuck at the bottom.",
+      "on_screen_text": "THE CRUX",
+      "duration_hint": 4.4,
+      "visual": "wide angle looking up at a towering indoor climbing wall covered in colorful holds, standing with hands on hips in frustration"
+    },
+    {
+      "narration": "My fingers were already raw from chalk and slipping off the tiny orange crimps.",
+      "on_screen_text": "RAW HANDS",
+      "duration_hint": 4.0,
+      "visual": "close up on calloused hands covered in white climbing chalk, flexing fingers tightly against a textured wooden training board"
+    },
+    {
+      "narration": "I looked up at the overhang, feeling that familiar wave of panic crawl up my spine.",
+      "on_screen_text": "LOOKING UP",
+      "duration_hint": 4.1,
+      "visual": "tilted upward angle staring intently at a steep vertical overhang, eyes narrowed with nervous determination, gym mats below"
+    },
+    {
+      "narration": "Instead of turning back, I chalked up one last time and reached for the first hold.",
+      "on_screen_text": "ONE MORE TRY",
+      "duration_hint": 4.3,
+      "visual": "medium shot reaching up toward a bright blue climbing hold, body tensed in mid-reach, vibrant indoor gym background"
+    },
+    {
+      "narration": "My foot slipped once, but my core held firm against the gravity pulling me down.",
+      "on_screen_text": "THE SLIP",
+      "duration_hint": 4.2,
+      "visual": "dynamic action shot of boots pressed against textured wall, muscles straining intensely under physical exertion"
+    },
+    {
+      "narration": "With a final desperate lunge, my fingertips caught the lip of the finishing ledge.",
+      "on_screen_text": "THE REACH",
+      "duration_hint": 4.1,
+      "visual": "close up on hand gripping tightly onto the top edge of a climbing panel, veins visible on forearm, dramatic side lighting"
+    },
+    {
+      "narration": "Pulling myself over the top, the gym noise faded into a rush of pure accomplishment.",
+      "on_screen_text": "THE SUMMIT",
+      "duration_hint": 4.3,
+      "visual": "medium shot sitting panting on top of the climbing structure, wiping sweat from forehead with a victorious grin"
+    },
+    {
+      "narration": "Follow along for more stories of pushing past your own boundaries.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.8,
+      "visual": "friendly grin while giving a thumbs up gesture, bright indoor climbing gym atmosphere, blurred colorful holds behind"
+    }
+  ]
+}

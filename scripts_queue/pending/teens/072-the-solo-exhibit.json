@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-exhibit",
+  "title": "The Solo Exhibit",
+  "description": "A young artist struggles with self-doubt while setting up her first independent gallery showcase in a sunlit loft.",
+  "tags": [
+    "art",
+    "confidence",
+    "comingofage",
+    "creativity",
+    "identity"
+  ],
+  "character_reference": "a young nineteen-year-old woman with messy dark curly hair, wearing an oversized paint-splattered denim jacket and round wire glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I stared at the blank white wall, convinced every piece of art I brought was absolute garbage.",
+      "on_screen_text": "THE EMPTY WALL",
+      "duration_hint": 4.5,
+      "visual": "close up on a young woman gripping the edge of a blank white gallery wall, biting her lower lip with anxious concentration, soft morning window light"
+    },
+    {
+      "narration": "My hands trembled as I lined up the frames, wondering why I thought I was ready for this.",
+      "on_screen_text": "DOUBT CREEPS IN",
+      "duration_hint": 4.0,
+      "visual": "medium shot kneeling on hardwood floor, carefully adjusting a wooden picture frame while looking down with a worried frown"
+    },
+    {
+      "narration": "Hours slipped away in silence as canvas after canvas finally found its proper home.",
+      "on_screen_text": "FINDING THE RHYTHM",
+      "duration_hint": 4.0,
+      "visual": "wide angle interior view of a sunlit studio loft filled with hanging paintings, stepping back slowly while wiping dust from hands"
+    },
+    {
+      "narration": "When the heavy front door creaked open, my heart slammed against my ribs like a caged bird.",
+      "on_screen_text": "THE FIRST GUEST",
+      "duration_hint": 4.3,
+      "visual": "over the shoulder perspective watching a tall wooden door slowly swing open, flooding warm afternoon sunlight across polished wooden floors"
+    },
+    {
+      "narration": "An old friend stepped inside, smiled warmly at the center piece, and pointed without hesitation.",
+      "on_screen_text": "A FAMILIAR FACE",
+      "duration_hint": 4.3,
+      "visual": "medium shot pointing enthusiastically toward a framed landscape canvas, beaming wide smile, colorful modern loft interior background"
+    },
+    {
+      "narration": "Suddenly, the tight knot in my chest loosened, replaced by a quiet, steady surge of pride.",
+      "on_screen_text": "A BREATH OF RELIEF",
+      "duration_hint": 4.2,
+      "visual": "close up profile looking upward with soft genuine smile, relaxed posture, warm ambient gallery lighting casting gentle shadows"
+    },
+    {
+      "narration": "Creating isn't about perfection; it is about having the courage to share your unique voice.",
+      "on_screen_text": "OWNING YOUR ART",
+      "duration_hint": 4.4,
+      "visual": "waist up shot standing tall with arms crossed loosely, nodding confidently toward camera, sunlit room filled with completed artwork"
+    },
+    {
+      "narration": "Follow along for more stories of creative growth and everyday breakthroughs.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.8,
+      "visual": "friendly wave toward the camera lens, warm genuine smile, glowing golden hour light filtering through tall industrial windows"
+    }
+  ]
+}

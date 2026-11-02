@@ -1,0 +1,59 @@
+{
+  "id": "the-rooftop-apiary",
+  "title": "The Rooftop Apiary",
+  "description": "An urban worker tends beehives on a concrete rooftop, finding solace above the noise of the city.",
+  "tags": [
+    "bees",
+    "city-life",
+    "nature",
+    "solitude",
+    "mindfulness"
+  ],
+  "character_reference": "a woman in her late forties with blonde hair pulled into a ponytail, wearing a white bee suit jacket with the hood thrown back",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Five floors above the roaring traffic of downtown, my small rooftop sanctuary offered a completely different kind of rush hour.",
+      "on_screen_text": "FIVE FLOORS UP",
+      "duration_hint": 12.6,
+      "visual": "wide shot of a gravel rooftop garden with white wooden beehives, hazy urban skyline in the background under an overcast afternoon sky"
+    },
+    {
+      "narration": "I pulled on my leather gloves and lifted the wooden lid, greeted immediately by the deep, steady hum of ten thousand bees.",
+      "on_screen_text": "THE HIVE HUM",
+      "duration_hint": 12.2,
+      "visual": "close-up of gloved hands lifting a white wooden hive frame covered in buzzing honeybees, soft natural daylight casting shadows"
+    },
+    {
+      "narration": "Down on the street, people rushed past shouting into phones. Up here, every movement had to be slow, deliberate, and calm.",
+      "on_screen_text": "SLOW MOVEMENTS",
+      "duration_hint": 13.5,
+      "visual": "close-up profile of a person breathing steadily with eyes closed, wearing a mesh beekeeping veil, peaceful expression"
+    },
+    {
+      "narration": "I lifted a golden honeycomb frame to the light, amber wax glistening like stained glass under the grey clouds.",
+      "on_screen_text": "THE AMBER WAX",
+      "duration_hint": 11.7,
+      "visual": "close-up of hands holding a wooden frame filled with glowing golden honeycomb cells up to a cloudy sky, bright natural illumination"
+    },
+    {
+      "narration": "They don't care about deadlines or quarterly reports. They only care about the nectar of the present moment.",
+      "on_screen_text": "THE PRESENT MOMENT",
+      "duration_hint": 12.2,
+      "visual": "medium shot of a person standing quietly beside white beehives on a gravel roof, looking down thoughtfully with hands resting on hips"
+    },
+    {
+      "narration": "Working with them taught me how to breathe through the noise and find stillness right in the middle of the chaos.",
+      "on_screen_text": "FINDING STILLNESS",
+      "duration_hint": 13.0,
+      "visual": "close-up of gloved hands gently placing a hive roof back down onto a wooden box, soft focus on rooftop plants and distant buildings"
+    },
+    {
+      "narration": "Subscribe for daily reflections on finding calm in unexpected places.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.1,
+      "visual": "warm portrait of a smiling woman with a beekeeping veil pushed back over her head, sunny rooftop background"
+    }
+  ]
+}

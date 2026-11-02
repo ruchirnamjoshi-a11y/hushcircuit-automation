@@ -1,0 +1,59 @@
+{
+  "id": "the-handwritten-margin",
+  "title": "The Handwritten Margin",
+  "description": "A book lover finds a decades-old marginalia note in a secondhand poetry book, connecting with a stranger across time.",
+  "tags": [
+    "books",
+    "poetry",
+    "connection",
+    "mystery",
+    "nostalgia"
+  ],
+  "character_reference": "a middle-aged man with spectacles perched on his nose, wearing a corduroy blazer over a knit sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "In the back of a damp secondhand bookshop, I pulled an old poetry collection from the shelf, its spine cracked and faded.",
+      "on_screen_text": "THE FADED SPINE",
+      "duration_hint": 12.2,
+      "visual": "medium shot of a person browsing through packed wooden bookshelves in a dimly lit antique shop, warm overhead lamp glow"
+    },
+    {
+      "narration": "I flipped to a page about autumn rain, and found a neat handwritten note scribbled in the bottom margin in purple ink.",
+      "on_screen_text": "THE PURPLE INK",
+      "duration_hint": 12.2,
+      "visual": "close-up of yellowed book pages showing neat cursive handwritten annotations in purple ink along the bottom margin, soft indoor light"
+    },
+    {
+      "narration": "It was dated October 1974, written by someone who had read these exact lines on a rainy afternoon just like this one.",
+      "on_screen_text": "OCTOBER 1974",
+      "duration_hint": 12.6,
+      "visual": "close-up of a finger tracing a faded ink date written at the bottom of a book page, shallow depth of field, cozy atmosphere"
+    },
+    {
+      "narration": "Reading their words felt like sitting across a table from a ghost who shared my exact quiet melancholy.",
+      "on_screen_text": "THE GHOSTLY PEER",
+      "duration_hint": 11.3,
+      "visual": "medium shot of a person sitting in an old leather armchair in a quiet room, reading an open book with a pensive expression"
+    },
+    {
+      "narration": "We are so often afraid of being alone in our thoughts, forgetting that others walked this exact road before us.",
+      "on_screen_text": "WALKED BEFORE",
+      "duration_hint": 12.2,
+      "visual": "close-up of thoughtful eyes looking up from an open book toward a rainy windowpane reflecting soft indoor light"
+    },
+    {
+      "narration": "I tucked a blank slip of paper into the back cover before closing it, leaving a quiet greeting for whoever finds it next.",
+      "on_screen_text": "THE BLANK SLIP",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands sliding a small white paper bookmark into the back pages of an old book, warm ambient lighting"
+    },
+    {
+      "narration": "Follow along for more daily stories about human connections across time.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.6,
+      "visual": "warm indoor portrait smiling gently while holding an old hardcover book against his chest, cozy bookshop background"
+    }
+  ]
+}

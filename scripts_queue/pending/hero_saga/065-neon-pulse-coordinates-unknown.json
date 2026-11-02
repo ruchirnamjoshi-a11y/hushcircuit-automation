@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-coordinates-unknown",
+  "title": "Neon Pulse — Episode 65: Coordinates Unknown",
+  "description": "Kael follows the decrypted holographic data crystal to an uncharted perimeter, uncovering a massive perimeter wall and an unexpected presence waiting for him.",
+  "tags": [
+    "action",
+    "scifi",
+    "superhero",
+    "mystery",
+    "adventure"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 65,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The decrypted coordinates lead straight into a desolate wasteland far beyond the city limits. Heavy fog rolls over barren earth where nothing should exist.",
+      "on_screen_text": "THE DESOLATE FRONTIER",
+      "duration_hint": 7.0,
+      "visual": "Wide aerial shot looking down at a lone figure walking across a misty, cracked earth wasteland under a dim grey sky, hyper-detailed environment, cinematic lighting"
+    },
+    {
+      "narration": "Stepping closer to the target zone, the amber circuitry on my jacket begins to pulse erratically. Something massive is humming beneath the soil.",
+      "on_screen_text": "SURGING ENERGY",
+      "duration_hint": 7.0,
+      "visual": "Close-up shot of glowing amber lines pulsing brightly on the fabric sleeve of a tactical jacket, dark gritty underground background, dynamic lighting, cinematic focus"
+    },
+    {
+      "narration": "A towering perimeter wall emerges from the mist, forged from dark jagged metal that absorbs all light. There are no gates, only a seamless obsidian barrier blocking the way forward.",
+      "on_screen_text": "THE OBSIDIAN WALL",
+      "duration_hint": 8.5,
+      "visual": "Low-angle shot looking up at a colossal sheer metal wall stretching into thick swirling fog, forbidding architecture, realistic textures, epic scale"
+    },
+    {
+      "narration": "I press the data crystal against the cold metal surface. The black plating ripples like liquid, dissolving into a glowing geometric entryway.",
+      "on_screen_text": "DIGITAL KEY",
+      "duration_hint": 7.5,
+      "visual": "Medium close-up of a hand holding a glowing crystal against a massive dark metal wall that melts away into bright digital geometric patterns, dramatic lighting"
+    },
+    {
+      "narration": "Stepping inside the dark corridor, heavy steel doors slam shut behind me with a thunderous echo. Emergency red lights flash along the narrow steel walls.",
+      "on_screen_text": "TRAPPED INSIDE",
+      "duration_hint": 7.5,
+      "visual": "Interior shot of a narrow industrial corridor illuminated by pulsing red emergency lights, heavy steel doors sealing shut in the background, dramatic shadows"
+    },
+    {
+      "narration": "Footsteps resonate from the darkness ahead, slow and rhythmic. A lone figure steps into the amber glow, wearing armor bearing Commander Vance's crest.",
+      "on_screen_text": "THE RIVAL EMERGES",
+      "duration_hint": 7.5,
+      "visual": "Medium shot of an armored warrior stepping out from heavy shadows into a pool of amber light, holding an advanced energy blade, tense confrontation stance"
+    },
+    {
+      "narration": "This facility isn't abandoned at all. It's the central hub of their entire operation, and waiting inside is an old enemy I thought was long gone.",
+      "on_screen_text": "THE CORE TRAP",
+      "duration_hint": 7.0,
+      "visual": "Over-the-shoulder shot of a figure staring down a vast high-tech subterranean chamber filled with humming machinery and glowing conduits, dramatic depth of field"
+    },
+    {
+      "narration": "If you want to see how this dangerous infiltration unfolds, follow along for more original sci-fi action.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Medium shot of a determined hero readying for combat in a high-tech facility corridor, glowing amber circuitry flaring up, cinematic composition"
+    }
+  ]
+}

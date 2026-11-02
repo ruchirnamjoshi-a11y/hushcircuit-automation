@@ -1,0 +1,65 @@
+{
+  "id": "the-rooftop-sprout",
+  "title": "The Rooftop Sprout",
+  "description": "An urban gardener tries to grow heirloom tomatoes on a windy concrete apartment roof.",
+  "tags": [
+    "gardening",
+    "plants",
+    "city",
+    "patience",
+    "greenthumb"
+  ],
+  "character_reference": "a young woman with short bright blue hair, wearing green gardening overalls and muddy canvas sneakers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The rooftop wind tore my young tomato seedlings right out of their fragile little pots.",
+      "on_screen_text": "WINDY ROOF",
+      "duration_hint": 4.3,
+      "visual": "kneeling on a concrete rooftop terrace, holding a snapped green stem with a frustrated expression, city skyline background"
+    },
+    {
+      "narration": "I stared at the empty soil, wondering why I ever thought farming worked on concrete.",
+      "on_screen_text": "BARREN DIRT",
+      "duration_hint": 4.1,
+      "visual": "looking down into an empty wooden planter box filled with dark soil, hands resting on knees in defeat"
+    },
+    {
+      "narration": "Instead of quitting, I built wooden windbreaks and tied every single stalk to sturdy stakes.",
+      "on_screen_text": "THE WINDBREAK",
+      "duration_hint": 4.4,
+      "visual": "hammering a wooden stake into a garden bed with steady strokes, focused determination, bright afternoon sunlight"
+    },
+    {
+      "narration": "Day after day, I hauled heavy watering cans up four flights of narrow stairs.",
+      "on_screen_text": "HEAVY WATER",
+      "duration_hint": 4.1,
+      "visual": "carrying a heavy metal watering can across a rooftop garden, muscles tensing with effort, potted green plants surrounding"
+    },
+    {
+      "narration": "Weeks later, a tiny yellow flower appeared, defying the harsh city breeze.",
+      "on_screen_text": "FIRST BLOSSOM",
+      "duration_hint": 4.0,
+      "visual": "close up macro shot of a delicate yellow tomato flower blooming amongst lush green leaves, soft warm sunlight"
+    },
+    {
+      "narration": "Plucking the first ripe red fruit from the vine felt like winning a major victory.",
+      "on_screen_text": "THE HARVEST",
+      "duration_hint": 4.2,
+      "visual": "holding up a bright red heirloom tomato gently in palm, beaming with a proud joyful smile, rooftop garden background"
+    },
+    {
+      "narration": "Nurturing something from nothing teaches you more about yourself than any textbook ever could.",
+      "on_screen_text": "GROWING UP",
+      "duration_hint": 4.4,
+      "visual": "standing tall amidst green plants on a sunny roof, arms resting on hips with a confident, peaceful expression"
+    },
+    {
+      "narration": "Follow along for more stories of cultivating passion in unexpected places.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.9,
+      "visual": "waving cheerfully toward the camera while holding a garden trowel, bright sunny day, lush green foliage"
+    }
+  ]
+}

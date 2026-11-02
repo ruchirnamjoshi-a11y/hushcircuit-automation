@@ -1,0 +1,71 @@
+{
+  "id": "the-late-canvas",
+  "title": "The Late Canvas",
+  "description": "A woman returns to painting after a twenty-year hiatus spent raising a family and working.",
+  "tags": [
+    "painting",
+    "art",
+    "passion",
+    "second-act",
+    "creativity"
+  ],
+  "character_reference": "a woman with silver-streaked dark hair pulled back with a wooden pin, wearing an oversized paint-splattered linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The tubes of oil paint were stiff and dry after sitting untouched in the bottom of the closet.",
+      "on_screen_text": "FORGOTTEN BRUSHES",
+      "duration_hint": 10.0,
+      "visual": "Sorting through a wooden box filled with old dried-out paint tubes and stiff bristle brushes in a dim closet"
+    },
+    {
+      "narration": "Her hand trembled holding the bristle brush over the blank white surface of the stretched canvas.",
+      "on_screen_text": "THE BLANK PAGE",
+      "duration_hint": 10.0,
+      "visual": "Holding a wooden handled paintbrush inches away from a stark white canvas mounted on a wooden easel"
+    },
+    {
+      "narration": "For years she had prioritized everyone else's schedule, leaving her own palettes to gather dust.",
+      "on_screen_text": "YEARS GONE BY",
+      "duration_hint": 9.0,
+      "visual": "Looking at old family photographs taped to the corner of a tilted wooden mirror reflecting a quiet room"
+    },
+    {
+      "narration": "The first strokes were clumsy, but she refused to scrape them off and start over.",
+      "on_screen_text": "FIRST STROKES",
+      "duration_hint": 9.0,
+      "visual": "Applying thick cobalt blue oil paint directly onto canvas with a flat palette knife in quick energetic gestures"
+    },
+    {
+      "narration": "Midnight crept in quietly as she mixed colors without worrying about what anyone else would think.",
+      "on_screen_text": "MIDNIGHT STUDIO",
+      "duration_hint": 10.0,
+      "visual": "Mixing vibrant yellow and green pigments on a wooden palette under the focused beam of a brass desk lamp"
+    },
+    {
+      "narration": "Each layer of paint felt like reclaiming a piece of herself she thought was lost forever.",
+      "on_screen_text": "RECLAIMING SELF",
+      "duration_hint": 9.0,
+      "visual": "Stepping back from the easel with narrowed eyes to study an expressive abstract landscape in progress"
+    },
+    {
+      "narration": "By dawn, the canvas held a vibrant storm of color that finally matched her inner world.",
+      "on_screen_text": "THE AWAKENING",
+      "duration_hint": 9.0,
+      "visual": "Sunlight streaming across a finished colorful oil painting leaning against a white brick studio wall"
+    },
+    {
+      "narration": "It was never too late to pick up the tools and begin again.",
+      "on_screen_text": "NEW BEGINNING",
+      "duration_hint": 8.0,
+      "visual": "Wiping paint from stained fingers with a white cotton rag while smiling softly in warm morning light"
+    },
+    {
+      "narration": "Follow along for more stories of artistic rebirth and second chances.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "A row of clean wooden paintbrushes resting in a ceramic jar filled with water on a wooden table"
+    }
+  ]
+}

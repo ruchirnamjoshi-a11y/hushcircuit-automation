@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-ep-67",
+  "title": "Neon Pulse — Episode 67: Coordinates of Doom",
+  "description": "Kael follows Marcus's coordinates to a derelict orbital platform, only to discover an automated countdown targeting the city below.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "thriller",
+    "original-saga"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 67,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The encrypted coordinates led me straight to an abandoned orbital platform hovering above the clouds. The air here was thin, freezing, and charged with static electricity.",
+      "on_screen_text": "THE ABANDONED PLATFORM",
+      "duration_hint": 7.8,
+      "visual": "Wide cinematic shot of a ruined futuristic metal platform floating above a dense sea of grey clouds at sunset low angle dramatic lighting"
+    },
+    {
+      "narration": "Marcus didn't just escape the blast. He left these glowing beacons deliberately, daring me to follow him into the lion's den.",
+      "on_screen_text": "THE GLOWING BEACON",
+      "duration_hint": 5.6,
+      "visual": "Close up of a pulsing neon blue metallic device resting on cracked concrete floor casting harsh shadows across dark surroundings"
+    },
+    {
+      "narration": "Suddenly, automated security turrets dropped from the ceiling, their targeting lasers locking instantly onto my chest.",
+      "on_screen_text": "SECURITY LOCKDOWN",
+      "duration_hint": 5.2,
+      "visual": "Rapid action shot of robotic chrome turrets descending from a metallic ceiling with bright red laser sights pointing forward"
+    },
+    {
+      "narration": "I threw up my hands, channeling the amber energy from my jacket to deflect the barrage of plasma fire.",
+      "on_screen_text": "DEFLECTING THE FIRE",
+      "duration_hint": 5.2,
+      "visual": "Medium action shot of a person raising both hands forward creating a shimmering orange energy shield that blocks glowing blue projectile blasts"
+    },
+    {
+      "narration": "The blast wave shattered the observation window, sucking me out toward the howling void of the upper atmosphere.",
+      "on_screen_text": "SHATTERED GLASS",
+      "duration_hint": 5.2,
+      "visual": "Dramatic low angle shot of massive glass panes breaking inward with flying debris and rushing wind against a dark stormy sky"
+    },
+    {
+      "narration": "Using my remaining energy, I launched myself back onto the metal decking, gasping for breath as sirens wailed.",
+      "on_screen_text": "NARROW REENTRY",
+      "duration_hint": 5.2,
+      "visual": "Close up profile of a man kneeling on grated metal flooring catching his breath with smoke swirling around his boots"
+    },
+    {
+      "narration": "Before me, the main console flared to life, displaying a live countdown timer pointing directly at the metropolis below.",
+      "on_screen_text": "THE COUNTDOWN",
+      "duration_hint": 5.6,
+      "visual": "Medium shot of a massive curved holographic display glowing red with digital numbers ticking down rapidly above a dark control desk"
+    },
+    {
+      "narration": "If you want to see how this high-stakes battle unfolds and help me stop the countdown, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.2,
+      "visual": "Cinematic portrait shot looking determinedly past the camera lens with bright amber sparks floating softly in the dark background air"
+    }
+  ]
+}

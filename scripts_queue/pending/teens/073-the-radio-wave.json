@@ -1,0 +1,65 @@
+{
+  "id": "the-radio-wave",
+  "title": "The Radio Wave",
+  "description": "An introverted college student builds the courage to host her first live campus broadcast late at night.",
+  "tags": [
+    "radio",
+    "voice",
+    "college",
+    "introvert",
+    "bravery"
+  ],
+  "character_reference": "a college-age male with messy blonde hair, wearing a dark green vintage crewneck sweater and silver hoop earrings",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Midnight in the campus broadcast booth always felt heavier, like the whole world was listening.",
+      "on_screen_text": "MIDNIGHT SHIFT",
+      "duration_hint": 4.5,
+      "visual": "close up on glowing analog audio mixing board knobs in a dimly lit recording studio, fingers resting lightly on slider controls"
+    },
+    {
+      "narration": "I adjusted the heavy headphones, watching the master volume meter flicker in absolute silence.",
+      "on_screen_text": "THE SILENT BOOTH",
+      "duration_hint": 4.2,
+      "visual": "medium shot putting on bulky black headphones, staring intently at glowing digital audio levels, soundproof foam wall panels background"
+    },
+    {
+      "narration": "My throat went completely dry as my thumb hovered over the glowing red transmission toggle.",
+      "on_screen_text": "THE RED SWITCH",
+      "duration_hint": 4.3,
+      "visual": "macro shot of a glowing red toggle switch, trembling thumb hovering inches away, dark atmospheric studio lighting"
+    },
+    {
+      "narration": "I took a deep breath, flipped the switch, and began speaking into the empty darkness.",
+      "on_screen_text": "GOING LIVE",
+      "duration_hint": 4.0,
+      "visual": "side profile speaking softly into a vintage black studio microphone, eyes closed in deep concentration, warm overhead desk lamp"
+    },
+    {
+      "narration": "For the first twenty minutes, it felt like talking to myself in an echoing cave.",
+      "on_screen_text": "EMPTY AIR",
+      "duration_hint": 4.2,
+      "visual": "medium shot leaning back in ergonomic studio chair, resting chin on hand with a thoughtful, questioning expression"
+    },
+    {
+      "narration": "Then the studio phone blinked amber, shattering the isolation with a single unexpected call.",
+      "on_screen_text": "THE CALL LIGHT",
+      "duration_hint": 4.3,
+      "visual": "close up on a retro telephone console with a blinking amber indicator light, dark wooden desktop surface"
+    },
+    {
+      "narration": "Hearing someone say they needed that song tonight changed everything I thought about my voice.",
+      "on_screen_text": "A TRUE CONNECTION",
+      "duration_hint": 4.5,
+      "visual": "smiling broadly while pressing a telephone receiver to ear, leaning forward with sudden joyful energy, studio lighting"
+    },
+    {
+      "narration": "Follow along for more stories of finding your voice in unexpected places.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.9,
+      "visual": "adjusting microphone arm with a confident smirk, looking directly into the camera lens, cozy glowing studio interior"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-vinyl-revival",
+  "title": "The Vinyl Revival",
+  "description": "A teenager who loves vintage records tries to curate a playlist for a local youth center dance.",
+  "tags": [
+    "music",
+    "vinyl",
+    "dj",
+    "community",
+    "nostalgia"
+  ],
+  "character_reference": "a teenage boy with messy curly dark hair, wearing a thrifted corduroy jacket over a vintage graphic tee",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Nobody dances to seventies funk anymore, or at least that's what everyone kept telling me.",
+      "on_screen_text": "WRONG ERA",
+      "duration_hint": 4.3,
+      "visual": "flipping rapidly through crates of dusty black vinyl records in a dimly lit room, looking skeptical"
+    },
+    {
+      "narration": "I watched the empty dance floor at the youth center, clutching my stack of heavy vinyl.",
+      "on_screen_text": "EMPTY FLOOR",
+      "duration_hint": 4.1,
+      "visual": "holding a stack of record jackets against chest, standing nervously beside a turntable setup in a large community hall"
+    },
+    {
+      "narration": "My hands shook as I lowered the delicate needle onto the spinning black groove.",
+      "on_screen_text": "DROPPING THE NEEDLE",
+      "duration_hint": 4.2,
+      "visual": "close up on a turntable tone arm gently lowering a metal needle onto a spinning black vinyl record spinning under warm lamp light"
+    },
+    {
+      "narration": "For three awkward seconds, only static hissed through the oversized speakers.",
+      "on_screen_text": "THE STATIC",
+      "duration_hint": 3.9,
+      "visual": "standing frozen with hand on audio mixer knob, staring anxiously toward a group of teens talking near the gym doors"
+    },
+    {
+      "narration": "Then the bassline kicked in, rolling through the room like a sudden wave of warmth.",
+      "on_screen_text": "THE GROOVE",
+      "duration_hint": 4.2,
+      "visual": "tapping foot rhythmically against the wooden floor, head nodding slightly to an invisible beat, colorful room lighting"
+    },
+    {
+      "narration": "A few heads turned, shoulders started swaying, and suddenly the floor came alive.",
+      "on_screen_text": "THE SPARK",
+      "duration_hint": 4.1,
+      "visual": "smiling broadly while watching people step onto the dance floor, warm amber overhead lights reflecting off the turntable"
+    },
+    {
+      "narration": "Good music doesn't have an expiration date; it just needs someone willing to play it.",
+      "on_screen_text": "TIMELESS SOUND",
+      "duration_hint": 4.3,
+      "visual": "adjusting volume slider on mixer with confidence, relaxed posture, lively background atmosphere"
+    },
+    {
+      "narration": "Follow along for more stories of sharing what you love with the world.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.9,
+      "visual": "pointing playfully toward the camera with a cheerful grin, warm cozy indoor lighting, vintage aesthetic"
+    }
+  ]
+}

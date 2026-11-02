@@ -1,0 +1,65 @@
+{
+  "id": "the-potters-hands",
+  "title": "The Potter's Hands",
+  "description": "A ceramics student struggles to center clay on the wheel before finding her natural rhythm.",
+  "tags": [
+    "pottery",
+    "ceramics",
+    "craft",
+    "focus",
+    "artisan"
+  ],
+  "character_reference": "a young woman with curly blonde hair tied back with a yellow ribbon, wearing a clay-stained linen apron over a striped shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The spinning clay rebelled against my palms, flying off-center and wobbling wildly.",
+      "on_screen_text": "THE WOBBLE",
+      "duration_hint": 4.2,
+      "visual": "close up on wet brown clay wobbling out of control on a spinning pottery wheel, hands pressing too hard in panic"
+    },
+    {
+      "narration": "Every time I tried to force it into shape, the lumpy cylinder collapsed into a puddle.",
+      "on_screen_text": "COLLAPSED CLAY",
+      "duration_hint": 4.3,
+      "visual": "medium shot looking down at a ruined mound of wet clay on a wheel head, biting lip in frustration"
+    },
+    {
+      "narration": "My instructor simply told me to breathe, slow down, and listen to the wheel.",
+      "on_screen_text": "SLOW DOWN",
+      "duration_hint": 4.1,
+      "visual": "resting muddy hands on knees while sitting at a pottery wheel, listening intently with a thoughtful expression"
+    },
+    {
+      "narration": "I closed my eyes, relaxed my shoulders, and let my hands match the wheel's speed.",
+      "on_screen_text": "FINDING BALANCE",
+      "duration_hint": 4.2,
+      "visual": "close up on wet palms gently cupping a spinning lump of clay, eyes closed in deep concentration, studio pottery background"
+    },
+    {
+      "narration": "Suddenly, the clay went completely still between my hands, obeying my touch.",
+      "on_screen_text": "CENTERED",
+      "duration_hint": 4.0,
+      "visual": "macro shot of smooth clay forming a symmetrical dome under steady, gentle hands, soft studio lighting"
+    },
+    {
+      "narration": "I pulled up the walls smoothly, watching a graceful vase take shape from the chaos.",
+      "on_screen_text": "THE VESSEL",
+      "duration_hint": 4.3,
+      "visual": "pulling fingers upward as wet clay transforms into a tall, elegant vase, focused expression, ceramic studio setting"
+    },
+    {
+      "narration": "Mastery isn't about control; it's about learning when to guide and when to let go.",
+      "on_screen_text": "THE CRAFT",
+      "duration_hint": 4.4,
+      "visual": "holding up a finished ceramic pot with both hands, smiling proudly with clay smudged on cheek, warm studio light"
+    },
+    {
+      "narration": "Follow along for more stories of patience, practice, and creative discovery.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.9,
+      "visual": "giving a friendly thumbs up with clay-dusted fingers, warm genuine smile, pottery studio background"
+    }
+  ]
+}

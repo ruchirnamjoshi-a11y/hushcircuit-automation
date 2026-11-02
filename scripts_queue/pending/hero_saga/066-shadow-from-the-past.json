@@ -1,0 +1,71 @@
+{
+  "id": "shadow-from-the-past",
+  "title": "Neon Pulse — Episode 66: Shadow From The Past",
+  "description": "Kael faces an unexpected adversary from his past inside the secret facility beyond the obsidian wall.",
+  "tags": [
+    "action",
+    "scifi",
+    "hero",
+    "mystery",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 66,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The blade stopped inches from my throat. When the figure stepped out of the shadows, my blood ran ice cold.",
+      "on_screen_text": "THE SURPRISE",
+      "duration_hint": 4.5,
+      "visual": "Low angle medium shot inside a dark concrete chamber, the protagonist dodging a glowing steel blade, intense facial expression, dramatic blue rim lighting, smoke swirling on the floor."
+    },
+    {
+      "narration": "It was Marcus. My former mentor, the man who taught me everything, now standing among the enemy.",
+      "on_screen_text": "BETRAYED BY A MENTOR",
+      "duration_hint": 4.0,
+      "visual": "Close-up of a stern older man with a cybernetic eyepatch holding a raised weapon, cold expression, flickering fluorescent overhead light casting harsh shadows in an industrial room."
+    },
+    {
+      "narration": "He didn't hesitate. A kinetic shockwave erupted from his fists, shattering the reinforced glass around us.",
+      "on_screen_text": "SHATTERING GLASS",
+      "duration_hint": 4.0,
+      "visual": "Explosive wide shot of glass panels shattering inward, shards flying through the air in slow motion, silhouette of the protagonist recoiling backward from a powerful shockwave."
+    },
+    {
+      "narration": "I rolled beneath his strike, amber circuitry flaring along my sleeves as I channeled raw energy into my palms.",
+      "on_screen_text": "CHARGING THE POWER",
+      "duration_hint": 4.5,
+      "visual": "Medium close-up of hands glowing with intense amber light, electrical sparks crackling along jacket sleeves, crouched combat stance on a grated metal floor."
+    },
+    {
+      "narration": "Our strikes collided with deafening force, sending blue and orange sparks cascading across the damp concrete floor.",
+      "on_screen_text": "CLASH OF TITANS",
+      "duration_hint": 4.5,
+      "visual": "Action shot of two figures locking combat poles, bright energy sparks flying outward, dynamic camera angle, gritty texture on concrete walls in the background."
+    },
+    {
+      "narration": "He laughed, his voice echoing off the steel walls as he overpowered my stance and forced me to the edge.",
+      "on_screen_text": "TAUNTING THE ENEMY",
+      "duration_hint": 4.0,
+      "visual": "Medium shot of an adversary leaning forward with a smug smirk, pressing down a glowing weapon against the protagonist who is staggering backward near a sheer drop."
+    },
+    {
+      "narration": "With one final heave, I triggered the data crystal, unleashing a blinding pulse that overloaded every system in the room.",
+      "on_screen_text": "BLINDING PULSE",
+      "duration_hint": 4.5,
+      "visual": "Extreme close-up of a glowing data crystal held in a trembling hand, blinding white and amber light exploding outward, lens flare obscuring the background."
+    },
+    {
+      "narration": "In the chaos of the blackout, Marcus vanished into the smoke, leaving behind a coordinate map to something far worse.",
+      "on_screen_text": "VANISHED IN SMOKE",
+      "duration_hint": 4.5,
+      "visual": "Wide shot of a ruined control room filled with thick grey smoke and blinking emergency red lights, the protagonist standing alone looking down at a holographic display map."
+    },
+    {
+      "narration": "The battle is just beginning. Follow along for more chapters in the ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.0,
+      "visual": "Cinematic medium portrait of the protagonist staring resolutely toward a distant glowing doorway, dark atmospheric background, subtle amber light reflecting in focused eyes."
+    }
+  ]
+}

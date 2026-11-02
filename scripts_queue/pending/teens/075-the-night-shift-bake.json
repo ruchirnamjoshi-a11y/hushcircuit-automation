@@ -1,0 +1,65 @@
+{
+  "id": "the-night-shift-bake",
+  "title": "The Night Shift Bake",
+  "description": "A culinary apprentice struggles to master laminated dough during her first solo overnight shift.",
+  "tags": [
+    "baking",
+    "apprentice",
+    "kitchen",
+    "mistakes",
+    "dedication"
+  ],
+  "character_reference": "a young woman with shoulder-length auburn hair tied back in a messy bun, wearing a flour-dusted black apron over a white t-shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "At three in the morning, the bakery was freezing and the butter was melting way too fast.",
+      "on_screen_text": "THE MELTDOWN",
+      "duration_hint": 4.4,
+      "visual": "close up on hands pressing a rolling pin into a block of golden yellow butter on a stainless steel prep table dusted with flour"
+    },
+    {
+      "narration": "My pastry layers kept blending together into a sticky, ruined mess of dough.",
+      "on_screen_text": "RUINED LAYERS",
+      "duration_hint": 4.0,
+      "visual": "medium shot staring down at a torn sheet of sticky pastry dough on a metal counter, shoulders slumped in disappointment"
+    },
+    {
+      "narration": "I wanted to throw in the towel and walk out into the quiet, empty street.",
+      "on_screen_text": "QUITTING TIME?",
+      "duration_hint": 4.1,
+      "visual": "leaning back against a tiled kitchen wall, wiping a smudge of flour from cheek with the back of a tired hand"
+    },
+    {
+      "narration": "Instead, I dumped the scraps, grabbed a fresh block of cold butter, and started over.",
+      "on_screen_text": "STARTING OVER",
+      "duration_hint": 4.3,
+      "visual": "kneading a fresh lump of white dough with focused energy, stainless steel bowls and baking tools scattered around"
+    },
+    {
+      "narration": "This time, I slowed down, watched the temperature, and trusted my instincts.",
+      "on_screen_text": "PATIENCE",
+      "duration_hint": 4.0,
+      "visual": "gentle close up dusting excess flour off a rolled sheet of laminated pastry with a soft pastry brush"
+    },
+    {
+      "narration": "When the oven timer finally went off, golden flaky layers emerged like magic.",
+      "on_screen_text": "THE GOLDEN CRUST",
+      "duration_hint": 4.1,
+      "visual": "looking through a warm glowing oven window at trays of perfectly risen croissants turning a deep golden brown"
+    },
+    {
+      "narration": "Biting into the warm pastry, I knew the sleepless night had been entirely worth it.",
+      "on_screen_text": "SWEET REWARD",
+      "duration_hint": 4.2,
+      "visual": "holding up a freshly baked flaky pastry, smiling broadly with tired eyes, cozy warm commercial kitchen background"
+    },
+    {
+      "narration": "Follow along for more stories of turning mistakes into masterclasses.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 3.9,
+      "visual": "nodding encouragingly while holding a wooden spatula, warm kitchen lighting, cheerful friendly expression"
+    }
+  ]
+}

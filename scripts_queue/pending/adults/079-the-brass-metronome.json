@@ -1,0 +1,59 @@
+{
+  "id": "the-brass-metronome",
+  "title": "The Brass Metronome",
+  "description": "A retired piano teacher decides to play a public recital for the first time in thirty years, confronting the fear of making mistakes.",
+  "tags": [
+    "music",
+    "courage",
+    "aging",
+    "regret",
+    "new-beginnings"
+  ],
+  "character_reference": "a middle-aged woman with silver-streaked dark hair tied back in a neat bun, wearing a forest green cardigan over a simple grey dress",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty years, the metronome sat silent on the shelf, its ticking replaced by the quiet hum of an empty house. Today, I picked up the key and wound the brass spring tight.",
+      "on_screen_text": "THE SILENT SHELF",
+      "duration_hint": 14.3,
+      "visual": "close-up of hands winding a tarnished brass clockwork mechanism on a polished wooden instrument, low afternoon light catching dust motes, shallow depth of field"
+    },
+    {
+      "narration": "My fingers hovered over the ivory keys, stiff and hesitant after decades away from the recital hall. Every old doubt rushed back all at once.",
+      "on_screen_text": "THE STIFF FINGERS",
+      "duration_hint": 12.2,
+      "visual": "close-up of trembling hands resting above yellowed piano keys, dim indoor lighting, shadows casting across polished wood surface, tense posture"
+    },
+    {
+      "narration": "I played the first chord, and a sour note rang out through the dusty room, sharp and jarring. My heart sank instantly.",
+      "on_screen_text": "THE SOUR NOTE",
+      "duration_hint": 10.4,
+      "visual": "medium shot of a person striking a single piano key with one hand while wincing slightly, solemn expression, empty sunlit living room background"
+    },
+    {
+      "narration": "Instead of stopping, I let the rhythm carry me forward into the second measure, accepting the imperfection as part of the melody.",
+      "on_screen_text": "THE RHYTHM RETURNS",
+      "duration_hint": 11.3,
+      "visual": "close-up profile of focused face, eyes closed in concentration, warm lamp glow reflecting in glasses, motion blur on hands moving across keyboard"
+    },
+    {
+      "narration": "By the final movement, the music filled the room with a rich, unhurried warmth that had been missing for far too long.",
+      "on_screen_text": "THE FINAL MOVEMENT",
+      "duration_hint": 11.7,
+      "visual": "wide shot from behind showing the silhouette of a person playing piano facing a tall window, golden hour sunlight streaming across the floorboards"
+    },
+    {
+      "narration": "I folded the sheet music closed and felt a quiet strength settle in my chest. It is never too late to begin again.",
+      "on_screen_text": "THE QUIET STRENGTH",
+      "duration_hint": 11.3,
+      "visual": "close-up of hands smoothing down the paper cover of a black music book on a wooden stand, peaceful expression, soft natural lighting"
+    },
+    {
+      "narration": "If this story resonated with you, follow along for more daily reflections on life's turning points.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.6,
+      "visual": "warm indoor portrait looking toward the camera with a gentle, reassuring smile, soft blurred background with house plants"
+    }
+  ]
+}

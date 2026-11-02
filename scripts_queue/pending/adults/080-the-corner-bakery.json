@@ -1,0 +1,59 @@
+{
+  "id": "the-corner-bakery",
+  "title": "The Corner Bakery",
+  "description": "A baker passes on his sourdough starter and recipe book to an unexpected apprentice, finding peace in letting go.",
+  "tags": [
+    "baking",
+    "legacy",
+    "craftsmanship",
+    "transition",
+    "wisdom"
+  ],
+  "character_reference": "an older man with deeply weathered skin, silver hair dusted with white flour, wearing a faded blue apron over a linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Before dawn every morning for forty years, the ovens were my only company in the dark. Now, the heat is becoming too much for my tired bones.",
+      "on_screen_text": "FORTY YEARS",
+      "duration_hint": 13.9,
+      "visual": "wide shot of a flour-dusted kitchen illuminated only by the orange glow of an open stone oven door, silhouette of a person leaning against a wooden counter"
+    },
+    {
+      "narration": "I set the heavy clay crock of sourdough starter on the wooden table, the bubbling culture alive with decades of yeast and memory.",
+      "on_screen_text": "THE LIVING STARTER",
+      "duration_hint": 12.6,
+      "visual": "close-up of weathered hands touching the rim of a rough earthenware bowl filled with bubbling dough, dramatic side lighting highlighting flour dust in the air"
+    },
+    {
+      "narration": "The young man stood by the door, nervous and unsure, holding his coat like he might run at any moment.",
+      "on_screen_text": "THE APPRENTICE",
+      "duration_hint": 10.4,
+      "visual": "medium shot of a hesitant younger person standing near a wooden doorway, holding a dark jacket, looking down with a tentative expression"
+    },
+    {
+      "narration": "I slid the leather-bound recipe book across the flour-dusted wood between us without a word of instruction.",
+      "on_screen_text": "THE LEATHER BOOK",
+      "duration_hint": 10.4,
+      "visual": "close-up of a hand sliding a worn leather notebook across a scarred wooden table surface, dust particles floating in a beam of morning light"
+    },
+    {
+      "narration": "He opened the cover, tracing the faded ink of my grandfather's handwriting with a fingertip. I saw the understanding dawn in his eyes.",
+      "on_screen_text": "THE FADED INK",
+      "duration_hint": 13.5,
+      "visual": "close-up of young hands turning yellowed parchment pages covered in cursive writing, warm overhead lamp casting a soft glow"
+    },
+    {
+      "narration": "Sometimes, handing over what you love most is the hardest way to keep it alive in the world.",
+      "on_screen_text": "PASSING THE TORCH",
+      "duration_hint": 10.4,
+      "visual": "two-shot profile of an older mentor and a younger person standing side by side looking down at a wooden prep table, peaceful atmosphere"
+    },
+    {
+      "narration": "If you enjoy stories about quiet transitions and new chapters, be sure to subscribe for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.9,
+      "visual": "warm portrait of an older man smiling faintly while wiping flour from his hands with a clean white cloth, soft focus background"
+    }
+  ]
+}

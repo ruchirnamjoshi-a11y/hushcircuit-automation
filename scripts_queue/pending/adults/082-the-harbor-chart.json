@@ -1,0 +1,59 @@
+{
+  "id": "the-harbor-chart",
+  "title": "The Harbor Chart",
+  "description": "A retired cartographer corrects an old maritime map by hand, realizing that error is a natural part of any journey.",
+  "tags": [
+    "maps",
+    "reflection",
+    "retirement",
+    "perfectionism",
+    "acceptance"
+  ],
+  "character_reference": "an older woman with curly white hair, wearing round reading glasses and a navy blue wool sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For forty years at the hydrographic office, my job was to draw the coastline so ships would never run aground in the dark.",
+      "on_screen_text": "FORTY YEARS AT SEA",
+      "duration_hint": 12.6,
+      "visual": "medium shot of an older person bent over a drafting table covered in large rolled parchment sheets, warm desk lamp lighting a cluttered room"
+    },
+    {
+      "narration": "Retirement was supposed to be a rest, but my old navigational charts kept calling me back to the drafting board.",
+      "on_screen_text": "THE DRAFTING BOARD",
+      "duration_hint": 11.7,
+      "visual": "close-up of hands smoothing out a large, yellowed paper map with brass weights placed on the corners, indoor ambient light"
+    },
+    {
+      "narration": "I noticed a sandbar I had mapped forty years ago had shifted with the tides, rendering my proudest work technically incorrect.",
+      "on_screen_text": "THE SHIFTING SAND",
+      "duration_hint": 12.6,
+      "visual": "close-up through round spectacles focusing on ink lines and pencil annotations on a nautical chart, dramatic side lighting"
+    },
+    {
+      "narration": "Instead of feeling defeated by the error, I picked up a red pen and drew the new channel with a steady, forgiving hand.",
+      "on_screen_text": "THE RED PEN",
+      "duration_hint": 11.7,
+      "visual": "close-up of a hand using a fine-nib pen to draw a curved red line across an old map, sharp focus on the ink meeting paper"
+    },
+    {
+      "narration": "The world changes beneath our feet and around our shores whether we give it permission or not.",
+      "on_screen_text": "CHANGING SHORES",
+      "duration_hint": 10.4,
+      "visual": "medium shot looking over a person's shoulder at a partially corrected map, window showing a dark evening harbor with distant lights"
+    },
+    {
+      "narration": "We spend our youth trying to draw a permanent world, only to spend our later years learning how to love the shifts.",
+      "on_screen_text": "LOVING THE SHIFTS",
+      "duration_hint": 13.0,
+      "visual": "close-up of thoughtful face looking away from the desk toward a dark window, reflecting a warm interior lamp"
+    },
+    {
+      "narration": "Subscribe for daily stories celebrating life's unexpected detours and second thoughts.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.0,
+      "visual": "warm portrait of an older woman smiling softly while adjusting her glasses, cozy indoor setting with bookshelves behind"
+    }
+  ]
+}
