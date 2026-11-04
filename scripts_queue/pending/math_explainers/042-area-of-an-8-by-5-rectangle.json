@@ -1,0 +1,28 @@
+{
+  "id": "area-of-an-8-by-5-rectangle",
+  "title": "Finding the Area of an 8 by 5 Rectangle",
+  "description": "Counting rows and columns to find a rectangle's area without memorizing a formula.",
+  "tags": [
+    "math tricks",
+    "area",
+    "geometry",
+    "learn math"
+  ],
+  "piece": "grid_area",
+  "narration_lines": [
+    "What's the area of an 8 by 5 rectangle?",
+    "Picture it as a grid of little squares.",
+    "Count the rows, count the columns.",
+    "Rows times columns: 40 square units. That's it."
+  ],
+  "params": {
+    "kicker": "area of a rectangle",
+    "hook": "Area of an 8 × 5 rectangle?",
+    "rows": 5,
+    "cols": 8,
+    "mode": "area",
+    "revealLabel": "rows × columns =",
+    "revealValue": "40",
+    "footnote": "count the rows, count the columns, multiply"
+  }
+}

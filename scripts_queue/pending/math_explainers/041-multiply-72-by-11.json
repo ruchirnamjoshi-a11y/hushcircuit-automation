@@ -1,0 +1,40 @@
+{
+  "id": "multiply-72-by-11",
+  "title": "A Fast Way to Multiply by 11",
+  "description": "Splitting and re-combining digits to multiply any two-digit number by 11 in your head.",
+  "tags": [
+    "math tricks",
+    "mental math",
+    "multiplication",
+    "learn math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Here's a fast way to multiply by eleven. What's 72 times 11?",
+    "First, split the two digits apart.",
+    "Now add them together: 7 plus 2 is 9.",
+    "Slot that sum right in the middle.",
+    "72 times 11 is 792 -- works for any two-digit number under 91."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "72 × 11 = ?",
+    "steps": [
+      {
+        "label": "Split the digits",
+        "expr": "7 _ 2"
+      },
+      {
+        "label": "Add them together",
+        "expr": "7 + 2 = 9"
+      },
+      {
+        "label": "Slot the sum in the middle",
+        "expr": "7 9 2"
+      }
+    ],
+    "answerLabel": "72 × 11 =",
+    "answer": "792",
+    "footnote": "works for any 2-digit number under 91"
+  }
+}

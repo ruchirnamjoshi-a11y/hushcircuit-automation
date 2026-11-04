@@ -1,0 +1,27 @@
+{
+  "id": "945-as-a-fraction-of-the-hour",
+  "title": "What 9:45 Means as a Fraction",
+  "description": "Reading the clock face as a fraction of the hour instead of just a time.",
+  "tags": [
+    "math tricks",
+    "fractions",
+    "time",
+    "learn math"
+  ],
+  "piece": "clock_face",
+  "narration_lines": [
+    "What does 9:45 mean as a fraction of the hour?",
+    "Look at where the minute hand sits on the clock face.",
+    "It's gone 45 out of the 60 minutes in the hour.",
+    "45 out of 60 simplifies to three-quarters -- three-quarters of the way around the clock."
+  ],
+  "params": {
+    "kicker": "time as fractions",
+    "hook": "What does 9:45 mean as a fraction?",
+    "hour": 9,
+    "minute": 45,
+    "fractionLabel": "45 out of 60 minutes",
+    "revealValue": "3/4",
+    "footnote": "three-quarters past = 3/4 of the way around the clock"
+  }
+}

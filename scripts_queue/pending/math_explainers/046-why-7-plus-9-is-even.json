@@ -1,0 +1,24 @@
+{
+  "id": "why-7-plus-9-is-even",
+  "title": "Why Odd Plus Odd Is Always Even",
+  "description": "Pairing up dots to see why two odd numbers always sum to an even one.",
+  "tags": [
+    "math tricks",
+    "number theory",
+    "learn math"
+  ],
+  "piece": "odd_even_pairs",
+  "narration_lines": [
+    "Why does an odd number plus an odd number always make an even number?",
+    "Take 7 and 9 -- both odd, so each has one dot left over after pairing up.",
+    "Those two leftover dots pair up with each other.",
+    "No dot left alone, so 7 plus 9 is even -- every time."
+  ],
+  "params": {
+    "kicker": "why it always works",
+    "hook": "Why does odd + odd = even?",
+    "a": 7,
+    "b": 9,
+    "footnote": "the two leftover dots always pair up with each other"
+  }
+}

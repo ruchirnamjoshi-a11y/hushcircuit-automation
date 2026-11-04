@@ -1,0 +1,26 @@
+{
+  "id": "pythagorean-6-8-10",
+  "title": "The 6-8-10 Right Triangle",
+  "description": "Using a² + b² = c² to find the longest side of a right triangle with legs 6 and 8.",
+  "tags": [
+    "math tricks",
+    "geometry",
+    "pythagorean theorem",
+    "learn math"
+  ],
+  "piece": "pythagorean",
+  "narration_lines": [
+    "A right triangle has legs of 6 and 8. What's the longest side?",
+    "Square each leg: 6 squared is 36, 8 squared is 64.",
+    "Add them together: 36 plus 64 is 100.",
+    "The square root of 100 is 10, the longest side -- true for every right triangle, any size."
+  ],
+  "params": {
+    "kicker": "right triangles",
+    "hook": "A right triangle with legs 6 and 8?",
+    "a": 6,
+    "b": 8,
+    "c": 10,
+    "footnote": "true for every right triangle, any size"
+  }
+}

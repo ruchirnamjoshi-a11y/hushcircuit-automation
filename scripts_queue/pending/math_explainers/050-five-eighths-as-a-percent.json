@@ -1,0 +1,28 @@
+{
+  "id": "five-eighths-as-a-percent",
+  "title": "What 5/8 Means as a Percent",
+  "description": "Filling in parts of a whole to turn the fraction 5/8 into a percent.",
+  "tags": [
+    "math tricks",
+    "fractions",
+    "percentages",
+    "learn math"
+  ],
+  "piece": "parts_of_whole",
+  "narration_lines": [
+    "What does five eighths mean?",
+    "Split a whole into 8 equal parts.",
+    "Now fill in 5 of those 8 parts.",
+    "Five eighths is 62.5 percent -- the bottom number is how many parts, the top is how many you have."
+  ],
+  "params": {
+    "kicker": "parts of a whole",
+    "hook": "What does 5/8 mean?",
+    "total": 8,
+    "filled": 5,
+    "label": "5/8",
+    "revealLabel": "as a percent:",
+    "revealValue": "62.5%",
+    "footnote": "the bottom number is how many parts, the top is how many you have"
+  }
+}

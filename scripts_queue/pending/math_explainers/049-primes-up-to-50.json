@@ -1,0 +1,24 @@
+{
+  "id": "primes-up-to-50",
+  "title": "Which Numbers Up to 50 Are Prime",
+  "description": "Sieving out multiples to reveal every prime number under 50.",
+  "tags": [
+    "math tricks",
+    "prime numbers",
+    "number theory",
+    "learn math"
+  ],
+  "piece": "prime_sieve",
+  "narration_lines": [
+    "Which numbers up to 50 are actually prime?",
+    "Start crossing out every multiple of 2, then 3, then 5, then 7.",
+    "Whatever survives the sieve can't be divided evenly by anything smaller.",
+    "What's left are the primes -- each one has exactly two factors: 1 and itself."
+  ],
+  "params": {
+    "kicker": "the sieve",
+    "hook": "Which numbers up to 50 are prime?",
+    "max": 50,
+    "footnote": "a prime has exactly two factors: 1 and itself"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rounding-83-to-nearest-10",
+  "title": "Rounding 83 to the Nearest 10",
+  "description": "Using the number line to see which ten a number is actually closer to.",
+  "tags": [
+    "math tricks",
+    "rounding",
+    "number line",
+    "learn math"
+  ],
+  "piece": "number_line",
+  "narration_lines": [
+    "Round 83 to the nearest ten.",
+    "Picture it sitting on the number line between 80 and 90.",
+    "It's only 3 away from 80, but 7 away from 90.",
+    "So 83 rounds down to 80."
+  ],
+  "params": {
+    "kicker": "on the number line",
+    "hook": "Round 83 to the nearest 10",
+    "min": 0,
+    "max": 100,
+    "tick": 10,
+    "jumps": [
+      83,
+      80
+    ],
+    "revealLabel": "83 rounds to",
+    "revealValue": "80",
+    "footnote": "closer to 80 than to 90"
+  }
+}
