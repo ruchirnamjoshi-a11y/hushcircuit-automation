@@ -1,0 +1,71 @@
+{
+  "id": "terminal-breach",
+  "title": "Neon Pulse — Episode 72: Terminal Breach",
+  "description": "Kael plunges into the lower district shadows, evading hunter drones while unlocking a devastating city-wide defense grid override.",
+  "tags": [
+    "action",
+    "cyberpunk",
+    "superhero",
+    "thriller",
+    "sci-fi"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 72,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Wind screams past as terminal velocity approaches, the glowing amber circuitry on my sleeves cutting through the dark neon smog.",
+      "on_screen_text": "DARING FREEFALL",
+      "duration_hint": 12.0,
+      "visual": "A breathtaking high angle shot of a solitary figure plunging downward through a dense labyrinth of towering neon lit skyscrapers during a stormy night with thick swirling fog and glowing amber light trails streaming past sleeves."
+    },
+    {
+      "narration": "Impact looms below, but a localized kinetic pulse cushions the landing against a slick metallic rooftop.",
+      "on_screen_text": "IMPACT SHOCKWAVE",
+      "duration_hint": 9.5,
+      "visual": "Extreme close up of boots smashing onto a wet metallic rooftop sending out a glowing shockwave ripple while debris scatters in all directions under pouring rain and dark shadows."
+    },
+    {
+      "narration": "Hunter drones screech overhead, scanning the lower alleyways with sweeping red searchlights.",
+      "on_screen_text": "HUNTER SEARCH",
+      "duration_hint": 10.0,
+      "visual": "Low angle shot looking up from a dark cramped alleyway as three sleek mechanical drones with glowing crimson sensor eyes hover silently between narrow concrete walls."
+    },
+    {
+      "narration": "I slip through a rusted maintenance hatch, plunging deep into the labyrinthine subterranean tunnels.",
+      "on_screen_text": "SUBTERRANEAN ESCAPE",
+      "duration_hint": 9.0,
+      "visual": "Medium action shot of a man sliding down a steep rusted industrial pipe inside a dark subterranean tunnel illuminated only by faint dripping water and distant flickering orange warning lights."
+    },
+    {
+      "narration": "The stolen data chip slots into the mainframe, immediately illuminating the dead console with pulsing blue diagnostics.",
+      "on_screen_text": "SYSTEM OVERRIDE",
+      "duration_hint": 11.5,
+      "visual": "Close up hands pushing a small glowing data chip into an ancient dark control panel covered in tangled wires and pulsing blue holographic diagnostic displays lighting up the face."
+    },
+    {
+      "narration": "A holographic map unfurls across the dark room, exposing Commander Vance's primary command stronghold.",
+      "on_screen_text": "ENEMY STRONGHOLD",
+      "duration_hint": 10.0,
+      "visual": "Wide shot of a massive three dimensional holographic city map glowing brightly in the center of a derelict underground bunker while a lone figure stands watching with intense focus."
+    },
+    {
+      "narration": "Suddenly, every display in the chamber locks up, flashing a single encrypted countdown timer.",
+      "on_screen_text": "COUNTDOWN INITIATED",
+      "duration_hint": 9.5,
+      "visual": "A dark control room where multiple monitors simultaneously flash bright crimson warning symbols while a nervous figure stares back in sudden realization of an ambush."
+    },
+    {
+      "narration": "The heavy steel doors behind me hiss open, revealing the unmistakable silhouette of Commander Vance waiting in the dark.",
+      "on_screen_text": "TRAPPED AGAIN",
+      "duration_hint": 11.0,
+      "visual": "Dramatic cinematic shot from behind a man turning around slowly as heavy reinforced steel doors slide open to reveal an intimidating armored adversary standing in a corridor filled with rolling steam."
+    },
+    {
+      "narration": "The fight for the city reaches its tipping point. Follow along for more chapters in the ongoing saga.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "Cinematic medium close up of a determined man clenching his fists as glowing amber patterns flare up brightly across his jacket sleeves while shadows close in from the background."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-ferry-whistle",
+  "title": "The Ferry Whistle",
+  "description": "A man who spent decades commuting across the same bay makes a sudden choice to stay on the other side.",
+  "tags": [
+    "routine",
+    "spontaneous choice",
+    "coastal life",
+    "change of scenery",
+    "reflection"
+  ],
+  "character_reference": "a tall man in his fifties with weathered features, wearing a heavy navy wool peacoat and a knitted wool scarf",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sixteen thousand times I had ridden the 8:15 ferry across the grey waters of the bay, clockwork precise.",
+      "on_screen_text": "CLOCKWORK COMMUTE",
+      "duration_hint": 12.0,
+      "visual": "Standing on the wooden deck of a passenger ferry, looking out at choppy grey ocean waves under an overcast sky"
+    },
+    {
+      "narration": "I knew every rusted rivet on the railing and every squawk of the gulls that followed our wake.",
+      "on_screen_text": "FAMILIAR WAKE",
+      "duration_hint": 11.0,
+      "visual": "Fingers resting on a weathered white painted iron railing, ocean spray glistening on the metal surface"
+    },
+    {
+      "narration": "The city on the opposite shore was waiting with its endless meetings, spreadsheets, and fluorescent corridors.",
+      "on_screen_text": "THE WAITING CITY",
+      "duration_hint": 11.0,
+      "visual": "Squinting toward a distant skyline shrouded in morning fog and industrial haze, ferry horn echoing"
+    },
+    {
+      "narration": "When the ramp lowered at the southern terminal, the usual crowd surged forward toward the turnstiles.",
+      "on_screen_text": "THE RUSH",
+      "duration_hint": 11.0,
+      "visual": "Commuters in dark coats rushing past a metal boarding gate on a pier, motion blur capturing the hurried crowd"
+    },
+    {
+      "narration": "I did not move. I stayed leaning against the piling, watching the passengers vanish into the terminal.",
+      "on_screen_text": "STAYING BEHIND",
+      "duration_hint": 11.0,
+      "visual": "Standing motionless on an empty wooden dock while blurred figures walk away into the distance, solitary silhouette"
+    },
+    {
+      "narration": "The deckhand looked back at me, confused, his hand resting on the heavy mooring line.",
+      "on_screen_text": "A QUESTIONING GLANCE",
+      "duration_hint": 11.0,
+      "visual": "A weathered sailor in a yellow oilskin jacket looking inquisitively over his shoulder with a coiled rope in hand"
+    },
+    {
+      "narration": "I shook my head, stepped off the boat onto the quiet fishing dock, and let the city go.",
+      "on_screen_text": "THE NEW SHORE",
+      "duration_hint": 11.0,
+      "visual": "Stepping onto a wooden pier with a small leather briefcase, looking toward a quaint seaside village with colorful cottages"
+    },
+    {
+      "narration": "Follow along for more stories about ordinary moments that change everything.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "Standing by a coastal railing with a peaceful expression, gentle ocean breeze rustling clothing, soft daylight"
+    }
+  ]
+}

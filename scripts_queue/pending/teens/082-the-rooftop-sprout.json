@@ -1,0 +1,71 @@
+{
+  "id": "the-rooftop-sprout",
+  "title": "The Rooftop Sprout",
+  "description": "An amateur gardener refuses to give up after pests destroy her first batch of balcony seedlings.",
+  "tags": [
+    "gardening",
+    "plants",
+    "resilience",
+    "hobbies",
+    "patience"
+  ],
+  "character_reference": "a young adult with chin-length dark wavy hair tucked behind pierced ears, wearing a faded mustard yellow apron covered in potting soil",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I woke up to find every single one of my fragile tomato seedlings chewed down to bare brown stems.",
+      "on_screen_text": "GONE OVERNIGHT",
+      "duration_hint": 7.0,
+      "visual": "close up of empty small terracotta pots filled with dark damp soil and tiny stripped green stalks, morning light"
+    },
+    {
+      "narration": "Three weeks of watering, checking soil moisture, and moving trays for optimal sunlight had vanished in a single night.",
+      "on_screen_text": "WASTED WEEKS",
+      "duration_hint": 7.5,
+      "visual": "side profile of gardener staring down at empty plant pots with a look of utter disbelief, balcony railing in background"
+    },
+    {
+      "narration": "It felt silly to care this much about a few dirt-filled containers on a cramped apartment balcony.",
+      "on_screen_text": "SILLY TO CARE",
+      "duration_hint": 6.5,
+      "visual": "close up of hands resting on knees, wearing gardening gloves smudged with dry brown dirt, concrete balcony floor"
+    },
+    {
+      "narration": "Instead of throwing the pots away, I swept up the fallen dirt and started researching natural deterrents.",
+      "on_screen_text": "NEW STRATEGY",
+      "duration_hint": 6.5,
+      "visual": "close up of gloved hands wiping down a wooden plant shelf with a damp rag, bright afternoon sunshine"
+    },
+    {
+      "narration": "I planted sturdy basil and marigold companion seeds, setting up a homemade mesh screen to protect the soil.",
+      "on_screen_text": "SECOND ATTEMPT",
+      "duration_hint": 6.5,
+      "visual": "close up of fingers pressing tiny brown seeds into fresh potting soil inside a small clay pot, soft daylight"
+    },
+    {
+      "narration": "Days passed with careful watering, checking the mesh every morning for any signs of unexpected trouble.",
+      "on_screen_text": "DAILY CARE",
+      "duration_hint": 6.0,
+      "visual": "close up of a watering can spout gently pouring a stream of clear water onto dark soil, glistening droplets"
+    },
+    {
+      "narration": "Then, poking through the rich earth, tiny vibrant green cotyledons uncurled toward the morning sun.",
+      "on_screen_text": "GREEN SHOOTS",
+      "duration_hint": 6.5,
+      "visual": "macro shot of two tiny bright green seedling leaves emerging from dark soil, sunlit dew drops on edges"
+    },
+    {
+      "narration": "Growth is rarely a straight line; sometimes you just have to replant and try again.",
+      "on_screen_text": "GROWTH TAKES TIME",
+      "duration_hint": 6.5,
+      "visual": "medium shot of gardener smiling warmly down at tiny potted plants on a sunny wooden bench, green foliage background"
+    },
+    {
+      "narration": "If you love small victories and everyday journeys, follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "friendly smiling face looking toward camera, soft green outdoor background bokeh, warm daylight illumination"
+    }
+  ]
+}

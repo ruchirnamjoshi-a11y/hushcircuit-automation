@@ -1,0 +1,71 @@
+{
+  "id": "the-second-lens",
+  "title": "The Second Lens",
+  "description": "An aspiring photographer discovers that shooting subjects without staging creates more powerful and honest portraits.",
+  "tags": [
+    "photography",
+    "art",
+    "authenticity",
+    "creativity",
+    "growth"
+  ],
+  "character_reference": "a young adult with shoulder-length blonde hair tied in a loose half-bun, wearing a utility vest with multiple pockets and round wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My carefully posed portraits always looked stiff and lifeless, no matter how much time I spent adjusting the studio lighting.",
+      "on_screen_text": "STIFF AND LIFELESS",
+      "duration_hint": 7.0,
+      "visual": "close up of a vintage camera body being adjusted with trembling fingers, dark moody indoor lighting, blurred backdrop of studio umbrellas"
+    },
+    {
+      "narration": "I deleted entire memory cards of awkward smiles and forced postures, wondering if I had any real creative instinct left.",
+      "on_screen_text": "DELETING THE FILES",
+      "duration_hint": 7.0,
+      "visual": "close up of a laptop screen reflecting blue light, hand hovering over a mouse trackpad with a trash bin icon visible, dimly lit room"
+    },
+    {
+      "narration": "Stuck in a creative rut, I stepped outside into the crowded afternoon market without a tripod or any expectations.",
+      "on_screen_text": "STEPPING OUTSIDE",
+      "duration_hint": 6.5,
+      "visual": "over-the-shoulder view of a person walking down a bustling sunlit outdoor market aisle, colorful fabrics and produce blurring past"
+    },
+    {
+      "narration": "Instead of asking people to look at the camera, I simply watched how they interacted with each other naturally.",
+      "on_screen_text": "OBSERVING LIFE",
+      "duration_hint": 6.5,
+      "visual": "close up of hands holding a camera up to eye level, framing a busy marketplace scene through the viewfinder, bright daylight"
+    },
+    {
+      "narration": "An old baker laughing at a dropped pastry, a child chasing a stray bubble—these fleeting moments held all the emotion.",
+      "on_screen_text": "CATCHING THE MOMENT",
+      "duration_hint": 7.0,
+      "visual": "extreme close up of a camera shutter button being pressed down swiftly by an index finger, blurred warm background light"
+    },
+    {
+      "narration": "When I reviewed the shots later that evening, every frame vibrated with genuine life instead of manufactured perfection.",
+      "on_screen_text": "THE REAL MAGIC",
+      "duration_hint": 7.0,
+      "visual": "close up of laptop screen displaying a crisp, emotionally rich candid portrait, warm desk lamp lighting up the dark workspace"
+    },
+    {
+      "narration": "Photography wasn't about controlling every variable; it was about noticing the beauty hiding in plain sight.",
+      "on_screen_text": "TRUE PERSPECTIVE",
+      "duration_hint": 6.5,
+      "visual": "medium shot of photographer smiling gently while looking down at a camera screen, cozy room interior with houseplants"
+    },
+    {
+      "narration": "Sometimes you have to drop the script to finally capture the truth.",
+      "on_screen_text": "UNPLANNED ART",
+      "duration_hint": 5.5,
+      "visual": "close up of camera strap resting across the chest of a utility vest, warm amber sunlight streaming through a window"
+    },
+    {
+      "narration": "If you love small victories and everyday journeys, follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "friendly smiling face looking toward camera, soft indoor background bokeh, warm afternoon lighting"
+    }
+  ]
+}

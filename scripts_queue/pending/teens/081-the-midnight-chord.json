@@ -1,0 +1,71 @@
+{
+  "id": "the-midnight-chord",
+  "title": "The Midnight Chord",
+  "description": "A quiet musician overcomes performance anxiety by playing just for the joy of sound rather than approval.",
+  "tags": [
+    "music",
+    "acoustic",
+    "anxiety",
+    "creativity",
+    "passion"
+  ],
+  "character_reference": "a young adult with messy red hair falling over freckled cheeks, wearing an oversized grey cable-knit sweater with frayed cuffs",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My fingers froze over the guitar strings the moment anyone else entered the room, terrified of hitting a wrong note.",
+      "on_screen_text": "FROZEN STRINGS",
+      "duration_hint": 7.0,
+      "visual": "close up of hands hovering nervously over acoustic guitar frets, dim bedroom lighting, dark wooden floorboards"
+    },
+    {
+      "narration": "Every song I wrote felt too exposed, like whispering my deepest secrets directly into a crowded megaphone.",
+      "on_screen_text": "TOO EXPOSED",
+      "duration_hint": 6.5,
+      "visual": "close up of a spiral notebook filled with crossed-out handwritten lyrics, illuminated by a single warm desk lamp"
+    },
+    {
+      "narration": "At midnight, with the rest of the house fast asleep, the pressure to impress vanished completely into the dark.",
+      "on_screen_text": "MIDNIGHT SILENCE",
+      "duration_hint": 6.5,
+      "visual": "wide shot of a dark bedroom with moonlight streaming through horizontal window blinds, casting striped shadows on the floor"
+    },
+    {
+      "narration": "I strummed a simple, meandering chord progression that didn't have to follow any rules or structure.",
+      "on_screen_text": "NO RULES",
+      "duration_hint": 6.0,
+      "visual": "close up of thumb plucking a single steel guitar string, causing it to vibrate rapidly in warm lamplight"
+    },
+    {
+      "narration": "Without an audience to judge me, the melody started flowing from somewhere deep and honest inside my chest.",
+      "on_screen_text": "HONEST MELODY",
+      "duration_hint": 6.5,
+      "visual": "side profile of young adult humming softly with eyes closed, leaning close to the wooden body of an acoustic guitar"
+    },
+    {
+      "narration": "A stray chord rang out slightly out of tune, but instead of stopping, I leaned into the imperfection.",
+      "on_screen_text": "LEANING IN",
+      "duration_hint": 6.5,
+      "visual": "close up of left hand pressing down firmly on guitar frets, fingers slightly pink from pressure, warm vintage aesthetic"
+    },
+    {
+      "narration": "Music wasn't an exam to pass; it was a conversation with myself in the quietest hours of the night.",
+      "on_screen_text": "A CONVERSATION",
+      "duration_hint": 6.5,
+      "visual": "medium shot of musician smiling faintly while strumming a gentle final chord, cozy room filled with soft shadows"
+    },
+    {
+      "narration": "When you stop playing for everyone else, you finally hear your own voice.",
+      "on_screen_text": "YOUR OWN VOICE",
+      "duration_hint": 6.0,
+      "visual": "close up of guitar headstock resting against a wall, warm ambient lighting casting a peaceful glow"
+    },
+    {
+      "narration": "If you love small victories and everyday journeys, follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "friendly smiling face looking toward camera, soft indoor background bokeh, warm evening illumination"
+    }
+  ]
+}

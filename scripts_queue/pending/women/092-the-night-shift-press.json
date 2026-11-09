@@ -1,0 +1,59 @@
+{
+  "id": "the-night-shift-press",
+  "title": "The Night Shift Press",
+  "description": "A traditional letterpress printer takes over a historic print shop and brings her own bold voice to the vintage machinery.",
+  "tags": [
+    "letterpress",
+    "printing",
+    "typography",
+    "ink",
+    "tradition"
+  ],
+  "character_reference": "a woman in her early thirties with slicked-back dark hair and ink smudges on her cheek, wearing a heavy canvas utility jumpsuit",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Midnight in the print shop meant the heavy cast-iron presses belonged entirely to her creative experiments.",
+      "on_screen_text": "MIDNIGHT PRESS",
+      "duration_hint": 10.4,
+      "visual": "moody wide shot of a massive vintage cast-iron printing press inside a dimly lit workshop with overhead pendant lamps"
+    },
+    {
+      "narration": "While others printed wedding invitations, she spent her nights hand-setting heavy lead type for poetry broadsheets.",
+      "on_screen_text": "SETTING TYPE",
+      "duration_hint": 10.4,
+      "visual": "close-up of fingers carefully placing tiny lead letters into a wooden compositor stick in reverse order"
+    },
+    {
+      "narration": "She rolled out thick, viscous black ink onto the metal disc until it hummed with a glossy, even sheen.",
+      "on_screen_text": "ROLLING THE INK",
+      "duration_hint": 10.4,
+      "visual": "action shot rolling a rubber brayer across a steel ink plate, spreading a glossy layer of dark ink"
+    },
+    {
+      "narration": "Locking the heavy chase into the bed of the press required all her upper body strength and absolute precision.",
+      "on_screen_text": "THE LOCK-UP",
+      "duration_hint": 10.4,
+      "visual": "hands tightening metal quoins with a brass key inside a heavy steel frame holding type blocks"
+    },
+    {
+      "narration": "She pulled the heavy iron lever with a satisfying thud, pressing crisp cotton paper deep into the inked metal.",
+      "on_screen_text": "PULLING THE LEVER",
+      "duration_hint": 10.4,
+      "visual": "medium shot pulling down a large weighted iron handle on an antique printing press with intense focus"
+    },
+    {
+      "narration": "Peeling back the heavy sheet, she ran her thumb over the deep, tactile embossment of ink on thick paper.",
+      "on_screen_text": "THE IMPRESSION",
+      "duration_hint": 10.9,
+      "visual": "close-up of fingertips tracing deeply indented black lettering on a thick cotton paper sheet in warm lamp light"
+    },
+    {
+      "narration": "Leave your own permanent mark on the world. Subscribe for daily stories of quiet passion and grit.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.4,
+      "visual": "warm cinematic portrait of a smiling woman holding a freshly printed broadsheet in a historic print shop"
+    }
+  ]
+}

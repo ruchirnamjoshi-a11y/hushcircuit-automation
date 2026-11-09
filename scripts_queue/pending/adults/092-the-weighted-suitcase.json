@@ -1,0 +1,65 @@
+{
+  "id": "the-weighted-suitcase",
+  "title": "The Weighted Suitcase",
+  "description": "A woman sorting through her late mother's wardrobe discovers a locked trunk filled with mementos of an unlived adventure.",
+  "tags": [
+    "inheritance",
+    "family secrets",
+    "regret",
+    "second chance",
+    "legacy"
+  ],
+  "character_reference": "a woman in her late forties with curly dark hair and soft expressive eyes, wearing a cozy oversized cream sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My mother always kept a heavy leather trunk locked in the back of the attic, untouched for forty years.",
+      "on_screen_text": "THE LOCKED TRUNK",
+      "duration_hint": 12.0,
+      "visual": "Kneeling in a dusty attic space before a battered brown leather steamer trunk secured with a brass padlock"
+    },
+    {
+      "narration": "When we finally turned the small key, we expected old tax forms and faded holiday photographs.",
+      "on_screen_text": "THE SMALL KEY",
+      "duration_hint": 11.0,
+      "visual": "Inserting a small vintage brass key into a stubborn lock, close up on focused hands in a sunlit dusty room"
+    },
+    {
+      "narration": "Instead, we found a passport issued in 1974, unsealed ferry tickets to Marseilles, and an unfinished sketchbook.",
+      "on_screen_text": "UNSHIPPED TICKETS",
+      "duration_hint": 12.0,
+      "visual": "Lifting a bundle of crisp turquoise colored travel documents and a leather-bound sketchbook out from a layer of folded wool"
+    },
+    {
+      "narration": "She had planned to leave before marriage and mortgages chained her to this quiet provincial town.",
+      "on_screen_text": "THE ROAD NOT TAKEN",
+      "duration_hint": 12.0,
+      "visual": "Flipping through pages of charcoal drawings depicting European street scenes, soft melancholic facial expression"
+    },
+    {
+      "narration": "I traced her youthful handwriting on the margin of a map, realizing how many quiet sacrifices shaped our lives.",
+      "on_screen_text": "QUIET SACRIFICES",
+      "duration_hint": 12.0,
+      "visual": "Finger pointing gently at cursive handwriting written in faded ink on an old folded paper map, warm indoor lighting"
+    },
+    {
+      "narration": "She gave us her stability, but she left her own wild heart behind in this dusty box.",
+      "on_screen_text": "A WILD HEART",
+      "duration_hint": 11.0,
+      "visual": "Holding a charcoal pencil found inside the trunk between two fingers, looking off into the distance thoughtfully"
+    },
+    {
+      "narration": "I closed the trunk, not with sorrow, but with the sudden resolve to take the trip she never got to make.",
+      "on_screen_text": "THE RESOLVE",
+      "duration_hint": 12.0,
+      "visual": "Shutting the heavy lid of the leather trunk with a firm push, dust motes swirling in a shaft of golden afternoon light"
+    },
+    {
+      "narration": "If you believe in honoring the dreams passed down to us, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "Smiling warmly while holding an old travel sketchbook in a cozy living room, inviting and hopeful atmosphere"
+    }
+  ]
+}

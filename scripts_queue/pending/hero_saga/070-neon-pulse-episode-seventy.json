@@ -1,0 +1,65 @@
+{
+  "id": "neon-pulse-episode-seventy",
+  "title": "Neon Pulse — Episode 70: The Distress Signal",
+  "description": "Kael plummets toward the metropolis in an emergency pod while a mysterious distress signal reveals a hidden betrayal.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "animation",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 70,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The emergency launch pod shrieks as it punches through the dense cloud layer, glowing amber circuits on my jacket flaring in response to the atmospheric friction. Below me, the sprawling metropolis stretches out like a grid of fractured neon glass, waiting for impact.",
+      "on_screen_text": "DESCENT INTO THE SPRAWL",
+      "duration_hint": 14.5,
+      "visual": "interior view of a high-tech escape pod rushing through glowing clouds, dramatic lighting, low angle shot focusing on the pilot staring intensely out the reinforced glass window"
+    },
+    {
+      "narration": "The cockpit dashboard suddenly shifts from amber to a harsh, flashing crimson. The mysterious distress signal overrides my manual navigation, locking the pod's trajectory onto a secure coordinate deep within the city's heavily restricted upper sectors.",
+      "on_screen_text": "OVERRIDE PROTOCOL",
+      "duration_hint": 13.0,
+      "visual": "close-up of glowing crimson control panels flashing inside a dark cockpit, nervous hands gripping flight controls, motion blur background"
+    },
+    {
+      "narration": "Audio bursts through the static, cutting off mid-sentence with a voice I recognize all too well. Commander Vance's cold tone echoes from the speakers, confirming that my escape from the orbital platform was anticipated all along.",
+      "on_screen_text": "A FAMILIAR VOICE",
+      "duration_hint": 13.5,
+      "visual": "intense close-up of a pilot wincing in shock while listening to a crackling audio speaker on the dashboard, dim blue and red ambient lighting"
+    },
+    {
+      "narration": "I override the manual lock and slam my hand against the emergency brake levers. The pod violently decelerates, throwing sparks across the cramped cabin and changing my vector away from Vance's trap.",
+      "on_screen_text": "EVASIVE ACTION",
+      "duration_hint": 12.0,
+      "visual": "side profile shot of a man throwing his weight forward to pull a heavy metallic control lever, flying sparks illuminating a dark metallic interior"
+    },
+    {
+      "narration": "Below, the towering skyscrapers loom closer, their darkened upper spires masking defense turrets that hum with latent energy. I have seconds to find a place to crash before the automated systems blow my pod out of the sky.",
+      "on_screen_text": "TOWERING DEFENSES",
+      "duration_hint": 13.0,
+      "visual": "panoramic view from above of massive futuristic skyscrapers shrouded in fog, glowing blue energy pulses visible on distant rooftop structures"
+    },
+    {
+      "narration": "I spot a narrow maintenance balcony jutting out from a shadowy residential tower. Gripping the controls with both hands, I aim straight for the gap, praying my armor can absorb the shock of a hard collision.",
+      "on_screen_text": "THE NARROW GAP",
+      "duration_hint": 12.5,
+      "visual": "fast-paced tracking shot rushing toward a dark concrete balcony nestled between massive futuristic buildings, dynamic camera movement"
+    },
+    {
+      "narration": "The pod clips the edge of the platform in a screech of tearing metal, sending a shockwave through my entire body. As the escape vessel comes to a smoking halt, the hatch blows open to reveal the rain-soaked city streets.",
+      "on_screen_text": "HARD LANDING",
+      "duration_hint": 13.5,
+      "visual": "explosive impact shot of a metallic pod crashing onto a concrete ledge, flying debris and billowing white smoke filling the dark frame"
+    },
+    {
+      "narration": "Stepping out onto the precipice, I realize the distress signal wasn't a trap after all, but a coordinated warning. Follow along for more chapters in this ongoing journey.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.5,
+      "visual": "wide cinematic shot of a lone figure standing on a rainy futuristic balcony at night, looking out over a vast glowing city skyline"
+    }
+  ]
+}

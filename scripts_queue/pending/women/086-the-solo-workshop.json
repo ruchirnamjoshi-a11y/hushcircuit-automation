@@ -1,0 +1,59 @@
+{
+  "id": "the-solo-workshop",
+  "title": "The Solo Workshop",
+  "description": "A carpenter takes a leap of faith to build her own furniture line after years of working in someone else's shadow.",
+  "tags": [
+    "carpentry",
+    "woodworking",
+    "craftsmanship",
+    "independence",
+    "empowerment"
+  ],
+  "character_reference": "a woman in her early thirties with tied-back dark curly hair, wearing a worn denim work apron and a plaid flannel shirt, focused expression",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For five years, Elena sanded table legs in the background while her boss took all the credit. Today, she finally walked out with her own set of hand tools.",
+      "on_screen_text": "WALKING AWAY",
+      "duration_hint": 14.3,
+      "visual": "close-up of hands carrying a heavy wooden toolbox outdoors, warm morning sunlight, shallow depth of field, dust particles floating in the air"
+    },
+    {
+      "narration": "Renting a cramped garage was a gamble, but the smell of cedar and fresh sawdust felt entirely like freedom.",
+      "on_screen_text": "THE NEW SPACE",
+      "duration_hint": 10.0,
+      "visual": "interior of a dusty garage workspace filled with stacked wooden planks, single window casting soft daylight across a workbench"
+    },
+    {
+      "narration": "She spent hours tracing out clean lines on a solid oak slab, ignoring the quiet doubts whispering in the back of her mind.",
+      "on_screen_text": "THE BLUEPRINT",
+      "duration_hint": 10.9,
+      "visual": "overhead angle of hands using a pencil to draw precise measurements along the edge of a rustic wooden board"
+    },
+    {
+      "narration": "The saw screamed against the timber, kicking up a golden cloud that settled on her shoulders like a badge of honor.",
+      "on_screen_text": "MAKING THE CUT",
+      "duration_hint": 10.9,
+      "visual": "action shot of woodworking with sawdust flying, glowing rim light highlighting the intense concentration on the face"
+    },
+    {
+      "narration": "Joint by joint, she assembled the dining table entirely on her own terms, measuring twice and doubting zero times.",
+      "on_screen_text": "BUILDING STRENGTH",
+      "duration_hint": 10.4,
+      "visual": "medium shot tapping a wooden mallet against a tight joint of a table frame inside a sunlit workshop"
+    },
+    {
+      "narration": "Running her palm across the butter-smooth sanded grain, she knew this piece was just the beginning of her own story.",
+      "on_screen_text": "THE FINISHED PIECE",
+      "duration_hint": 11.3,
+      "visual": "close-up of fingertips gently gliding over a polished wooden surface, natural wood grain reflecting warm ambient light"
+    },
+    {
+      "narration": "If you are waiting for permission to build the life you want, consider this your sign to pick up the tools.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.4,
+      "visual": "warm cinematic portrait of a smiling woman resting her chin on her hand inside a cozy illuminated workshop"
+    }
+  ]
+}

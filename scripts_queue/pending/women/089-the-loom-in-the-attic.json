@@ -1,0 +1,59 @@
+{
+  "id": "the-loom-in-the-attic",
+  "title": "The Loom in the Attic",
+  "description": "Restoring an antique floor loom helps a textile artist weave together her grandmother's legacy and her own modern style.",
+  "tags": [
+    "weaving",
+    "textiles",
+    "heritage",
+    "artisan",
+    "creativity"
+  ],
+  "character_reference": "a woman in her late twenties with braided dark hair, wearing a loose linen tunic with ink stains on the cuffs",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Buried under dust sheets in her family's old attic sat a heavy oak floor loom that hadn't seen daylight in decades.",
+      "on_screen_text": "THE DISCOVERY",
+      "duration_hint": 11.3,
+      "visual": "dusty attic interior with shafts of sunlight illuminating a massive antique wooden floor loom covered in old sheets"
+    },
+    {
+      "narration": "Her family told her to sell it for scrap, but she saw the heartbeat of the women who came before her waiting in the beams.",
+      "on_screen_text": "SEEING POTENTIAL",
+      "duration_hint": 11.7,
+      "visual": "close-up of fingers gently brushing thick dust off an intricately carved wooden gear on an antique loom"
+    },
+    {
+      "narration": "Threading hundreds of warp threads through the tiny heddle eyes required hours of intense, uninterrupted patience.",
+      "on_screen_text": "THE WARP",
+      "duration_hint": 10.0,
+      "visual": "macro shot of nimble fingers pulling thin cotton threads through tiny metal loops with extreme concentration"
+    },
+    {
+      "narration": "She tossed the wooden shuttle back and forth, blending deep indigo wool with bright flashes of copper silk.",
+      "on_screen_text": "SHUTTLE AND WEFT",
+      "duration_hint": 10.4,
+      "visual": "action shot of a wooden shuttle flying swiftly across a patterned web of threads inside a loom frame"
+    },
+    {
+      "narration": "The rhythmic thud of the beater bar echoed through the room like a steady, comforting heartbeat.",
+      "on_screen_text": "THE RHYTHM",
+      "duration_hint": 8.7,
+      "visual": "medium shot pushing a heavy wooden batten forward to pack tight rows of colorful woven fabric"
+    },
+    {
+      "narration": "Holding up the finished textile to the window, she realized she had woven her own modern strength into traditional threads.",
+      "on_screen_text": "THE TAPESTRY",
+      "duration_hint": 11.3,
+      "visual": "close-up of a vibrant woven wall hanging held up against bright window light, showing rich textures and colors"
+    },
+    {
+      "narration": "Honor your roots while creating your own design. Follow along for more stories of quiet reinvention.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.4,
+      "visual": "warm cinematic portrait of a smiling woman draped in a colorful hand-woven textile inside a sunlit studio"
+    }
+  ]
+}

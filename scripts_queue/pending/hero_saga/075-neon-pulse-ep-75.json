@@ -1,0 +1,71 @@
+{
+  "id": "neon-pulse-ep-75",
+  "title": "Neon Pulse — Episode 75: Coordinates Unknown",
+  "description": "Kael analyzes the encrypted data drive in the neon-lit alleys, only to discover a terrifying signal broadcasting directly to his neural link.",
+  "tags": [
+    "original hero saga",
+    "cyberpunk action",
+    "sci-fi thriller",
+    "neon pulse",
+    "episode 75"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 75,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The damp asphalt reflects the harsh neon glow above as the decrypted coordinates begin to resolve on the salvaged drive.",
+      "on_screen_text": "THE DECRYPTION",
+      "duration_hint": 7.0,
+      "visual": "Low-angle close-up of hands holding a glowing data terminal casting blue light onto wet pavement in a dark narrow alleyway cinematic lighting"
+    },
+    {
+      "narration": "Lines of restricted military architecture flash across the screen, revealing an underground facility buried deep beneath the sector boundary.",
+      "on_screen_text": "HIDDEN SECTOR",
+      "duration_hint": 7.5,
+      "visual": "Over-the-shoulder view looking at complex wireframe blueprints of an underground bunker displayed on a handheld holographic screen with glowing cyan interface lines"
+    },
+    {
+      "narration": "Without warning, the amber circuitry on his jacket flares brightly, syncing with a fierce pulse radiating from the terminal.",
+      "on_screen_text": "SUDDEN SURGE",
+      "duration_hint": 7.0,
+      "visual": "Medium shot of the protagonist gasping in surprise as intricate amber patterns on clothing flare intensely illuminating the dark surroundings with warm light"
+    },
+    {
+      "narration": "A sharp static pierces his auditory cortex, overriding his thoughts with an automated transmission from an unknown source.",
+      "on_screen_text": "THE TRANSMISSION",
+      "duration_hint": 7.0,
+      "visual": "Close-up of the protagonist wincing in pain with eyes closed tightly, clutching the side of his head in a dimly lit industrial corridor"
+    },
+    {
+      "narration": "A synthesized voice echoes inside his mind, reciting his exact coordinates and confirming that Vance was only a subordinate.",
+      "on_screen_text": "THE HIGHER POWER",
+      "duration_hint": 7.5,
+      "visual": "Wide atmospheric shot of an empty concrete industrial courtyard at night with a single flickering overhead light casting long dramatic shadows"
+    },
+    {
+      "narration": "He draws his sidearm as heavy mechanical footsteps begin to resonate from the shadows at the far end of the alley.",
+      "on_screen_text": "APPROACHING THREAT",
+      "duration_hint": 7.0,
+      "visual": "Low angle shot of the protagonist holding a futuristic weapon in a defensive stance, looking intently down a dark rain-slicked passage"
+    },
+    {
+      "narration": "Red targeting lasers cut through the thick fog, locking onto his chest from multiple elevated positions above.",
+      "on_screen_text": "LASER LOCK",
+      "duration_hint": 7.0,
+      "visual": "POV style medium shot showing multiple bright red laser sight dots projecting across the protagonist's tactical jacket against a backdrop of deep shadows"
+    },
+    {
+      "narration": "To uncover the mastermind behind the conspiracy, Kael has to survive whatever trap has just been sprung.",
+      "on_screen_text": "THE TRAP",
+      "duration_hint": 7.0,
+      "visual": "Dynamic action shot of the protagonist leaping sideways behind a concrete barrier as sparks fly from an unseen projectile impacting the wall nearby"
+    },
+    {
+      "narration": "Find out what happens next as the hunt continues. Follow along for more of the story.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.5,
+      "visual": "Cinematic portrait of the protagonist staring resolutely forward into the glowing fog with amber light reflecting off wet surfaces in the background"
+    }
+  ]
+}

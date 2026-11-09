@@ -1,0 +1,59 @@
+{
+  "id": "the-glass-blower-studio",
+  "title": "The Glass Blower Studio",
+  "description": "Facing the heat of the furnace, a glass artisan learns to let go of perfection and embrace the fluid nature of molten glass.",
+  "tags": [
+    "glassblowing",
+    "artisan",
+    "fire",
+    "imperfection",
+    "craft"
+  ],
+  "character_reference": "a woman with curly dark hair pulled back in a bandana, wearing a heavy cotton protective vest and safety glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Working with twenty-two hundred degrees of molten glass leaves no room for hesitation or second-guessing.",
+      "on_screen_text": "THE FURNACE",
+      "duration_hint": 10.0,
+      "visual": "glowing orange interior of a brick glass furnace casting bright light across a dark industrial studio floor"
+    },
+    {
+      "narration": "For years, Mara tried to make every vase perfectly symmetrical, letting fear of flaws dictate her hands.",
+      "on_screen_text": "THE RIGID VASE",
+      "duration_hint": 10.0,
+      "visual": "close-up of hands turning a metal blowpipe continuously to keep molten glass from sagging unevenly"
+    },
+    {
+      "narration": "Today, she decided to follow the organic curve of the liquid heat instead of fighting its wild nature.",
+      "on_screen_text": "LETTING GO",
+      "duration_hint": 10.0,
+      "visual": "medium shot using a wet wooden block to shape glowing red glass at the end of a steel rod"
+    },
+    {
+      "narration": "She blew a steady breath down the steel pipe, watching the glowing bubble expand like a living, breathing heart.",
+      "on_screen_text": "THE BREATH",
+      "duration_hint": 10.4,
+      "visual": "close-up of lips pursed against a metal pipe while holding a glowing red orb of hot glass in the air"
+    },
+    {
+      "narration": "Swirling the molten vessel in the cool air, she guided the centrifugal force to create a sweeping, asymmetric flare.",
+      "on_screen_text": "SHAPING FIRE",
+      "duration_hint": 10.9,
+      "visual": "dynamic action shot spinning a long steel pipe in circles as a fiery orange glass vessel widens outward"
+    },
+    {
+      "narration": "Set inside the annealing oven to cool slowly overnight, the finished vase caught the light with wild, beautiful grace.",
+      "on_screen_text": "COOLED BEAUTY",
+      "duration_hint": 11.7,
+      "visual": "close-up of a translucent blue-and-amber glass vase sitting on a dark shelf, catching sharp highlights"
+    },
+    {
+      "narration": "True beauty often lives in the parts we cannot control. Subscribe for more daily journeys of self-discovery.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.9,
+      "visual": "warm cinematic portrait of a smiling woman holding a finished art glass piece in a sunlit workshop"
+    }
+  ]
+}

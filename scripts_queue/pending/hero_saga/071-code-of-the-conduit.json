@@ -1,0 +1,65 @@
+{
+  "id": "code-of-the-conduit",
+  "title": "Neon Pulse — Episode 71: Code Of The Conduit",
+  "description": "Kael intercepts a forbidden transmission on the high-altitude balcony, leading to a chilling realization about the city's defense network.",
+  "tags": [
+    "action",
+    "sci-fi",
+    "superhero",
+    "thriller",
+    "conspiracy"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 71,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The shattered balcony glass crackles underfoot as the mysterious distress signal loops on my tactical display. That familiar voice echoes again, whispering coordinates buried deep within the central mainframe.",
+      "on_screen_text": "THE HIDDEN SIGNAL",
+      "duration_hint": 9.0,
+      "visual": "Close-up of a glowing digital display glowing in a dark high-altitude architectural alcove, shattered glass fragments reflecting amber light, dramatic low-angle perspective looking toward an open horizon."
+    },
+    {
+      "narration": "I kneel by the flickering terminal, my fingers brushing the frozen keypad as dormant circuits spark to life. Commander Vance left a backdoor here, a digital tripwire waiting for the right frequency.",
+      "on_screen_text": "THE FROZEN TERMINAL",
+      "duration_hint": 9.0,
+      "visual": "Medium close-up kneeling beside a damaged metallic control console, blue sparks flying from exposed wiring, intense focused expression illuminated by console glare in a moody interior."
+    },
+    {
+      "narration": "Energy surges up my forearm, the amber circuitry blazing bright against the dark fabric as the data flood hits my nervous system. It is not just a warning; it is a live map of the orbital grid.",
+      "on_screen_text": "SURGE OF DATA",
+      "duration_hint": 9.0,
+      "visual": "Close-up of forearms where complex glowing amber line patterns pulse with intense illumination, subtle electric arcs dancing across fabric, moody atmospheric lighting casting deep shadows."
+    },
+    {
+      "narration": "Every defensive battery across the metropolis just shifted orientation, locking onto my exact coordinates with chilling precision. They knew I would survive the fall, and they are setting the trap.",
+      "on_screen_text": "THE TRAP CLOSES",
+      "duration_hint": 9.0,
+      "visual": "Wide angle shot from behind looking out over a sprawling futuristic skyline at night, distant red laser targeting beams converging toward a single high altitude balcony."
+    },
+    {
+      "narration": "A heavy steel blast door groans and locks shut behind me, sealing off the only exit into the maintenance shaft. I am cut off, forced to make a vertical leap into the abyss below.",
+      "on_screen_text": "SEALED EXITS",
+      "duration_hint": 9.0,
+      "visual": "Medium shot of thick industrial steel panels slamming shut in a dark subterranean hallway, heavy pneumatic locks engaging with heavy shadows and harsh overhead lighting."
+    },
+    {
+      "narration": "I charge the amber pulse through my boots, bracing against the concrete ledge as heavy automated drones sweep the perimeter overhead. There is nowhere left to hide from their scanners.",
+      "on_screen_text": "THE EDGE OF ABYSS",
+      "duration_hint": 9.0,
+      "visual": "Low-angle shot standing at the absolute edge of a towering precipice, powerful amber energy glowing around heavy boots, sleek mechanical surveillance drones hovering in the dark sky above."
+    },
+    {
+      "narration": "With a deafening crack of displaced air, I launch myself off the precipice into the vertical drop toward the lower districts. The real war for the city is just beginning.",
+      "on_screen_text": "FREEFALL DIVE",
+      "duration_hint": 8.0,
+      "visual": "Dynamic action shot plunging straight down through dizzying urban canyons at night, wind whipping past with motion blur, glowing amber traces trailing behind in a breathless descent."
+    },
+    {
+      "narration": "Follow along for more chapters in the ongoing saga of Neon Pulse.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 5.0,
+      "visual": "Cinematic dark abstract background with subtle amber light pulses moving upward, clean minimalist framing designed for a digital short-form video ending."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "shadow-of-command",
+  "title": "Neon Pulse — Episode 73: Shadow of Command",
+  "description": "Trapped by Commander Vance in the subterranean mainframe, Kael must outfight his greatest adversary before the facility self-destructs.",
+  "tags": [
+    "action",
+    "scifi",
+    "hero",
+    "cyberpunk",
+    "thriller"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 73,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Sparks shower from the shattered console as Vance steps through the smoke, his blade humming with lethal intent.",
+      "on_screen_text": "THE TRAP SPRINGS",
+      "duration_hint": 5.0,
+      "visual": "Low-angle medium shot, aggressive male commander stepping through electrical smoke in a subterranean server room, holding a glowing tactical blade, aggressive posture, cinematic lighting."
+    },
+    {
+      "narration": "Kael stumbles backward, dodging a sweeping arc that melts the steel bulkhead inches from his face.",
+      "on_screen_text": "NARROW DODGE",
+      "duration_hint": 4.5,
+      "visual": "Dynamic side-angle action shot, dodging evasively away from a searing energy slash, melting sparks flying off a rusted metallic wall, intense concentration, low-key lighting."
+    },
+    {
+      "narration": "Amber energy surges down his sleeves, hardening into a defensive barrier just in time to absorb the blow.",
+      "on_screen_text": "PULSE SHIELD",
+      "duration_hint": 4.5,
+      "visual": "Close-up action shot, glowing orange energy radiating across arms to form a translucent defensive barrier against a heavy downward strike, glowing particles, dark industrial backdrop."
+    },
+    {
+      "narration": "The shockwave shatters the server racks, flooding the chamber with blinding blue emergency strobe lights.",
+      "on_screen_text": "SYSTEM OVERLOAD",
+      "duration_hint": 4.5,
+      "visual": "Wide angle shot, massive server room explosion with blue emergency strobe lights flashing across tangled cables and destroyed machinery, chaotic atmosphere, dramatic shadows."
+    },
+    {
+      "narration": "Gripping Vance's weapon arm, Kael sweeps his leg and forces the commander down onto the metallic grate floor.",
+      "on_screen_text": "COUNTER ATTACK",
+      "duration_hint": 4.5,
+      "visual": "Medium close-up wrestling grapple, pinning an opponent's arm to a grated metal floor, strained expressions, dynamic overhead camera angle, gritty underground industrial setting."
+    },
+    {
+      "narration": "Vance snarls, breaking free with a brutal elbow strike that sends Kael crashing into the main terminal.",
+      "on_screen_text": "BRUTAL REVERSAL",
+      "duration_hint": 4.5,
+      "visual": "Medium shot, violent elbow strike impact throwing a person backward into a bank of smoking computer terminals, flying debris, high contrast, cinematic action choreography."
+    },
+    {
+      "narration": "Alarms blare as the facility initiates a total lockdown, threatening to bury them both alive beneath the city.",
+      "on_screen_text": "LOCKDOWN INITIATED",
+      "duration_hint": 4.5,
+      "visual": "Wide interior shot, heavy steel blast doors slamming shut at the end of a dark corridor, red warning lights flashing, dust falling from the ceiling, dramatic scale."
+    },
+    {
+      "narration": "Vance vanishes into the descending shadows, leaving Kael alone as the ceiling begins to collapse.",
+      "on_screen_text": "VANISHED INTO DARKNESS",
+      "duration_hint": 4.5,
+      "visual": "Medium shot, looking down a dark corridor as a figure retreats into billowing smoke, falling concrete rubble, solitary heroic silhouette, moody teal and orange lighting."
+    },
+    {
+      "narration": "Follow along for more of the Neon Pulse saga as the battle for the underground continues.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 4.0,
+      "visual": "Portrait medium shot, looking determinedly toward the camera amid rising dust and glowing amber circuit lines, moody atmospheric background, cinematic ending frame."
+    }
+  ]
+}

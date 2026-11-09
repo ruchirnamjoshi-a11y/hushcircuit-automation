@@ -1,0 +1,65 @@
+{
+  "id": "orbital-countdown",
+  "title": "Neon Pulse — Episode 69: The Orbital Countdown",
+  "description": "Kael races against a live countdown timer aboard an abandoned orbital platform as it hurtles toward the metropolis below, leading to a desperate escape.",
+  "tags": [
+    "action",
+    "scifi",
+    "hero",
+    "suspense",
+    "escape"
+  ],
+  "character_reference": "a tall, lean man with messy dark hair, wearing a worn charcoal-grey tactical jacket with glowing amber circuitry patterns running down his sleeves",
+  "episode_number": 69,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The countdown blares red against the vibrating steel bulkheads. There are barely three minutes left before atmospheric entry.",
+      "on_screen_text": "TICKING CLOCK",
+      "duration_hint": 7.0,
+      "visual": "close up of a flashing crimson digital timer mounted on a scorched metal wall casting heavy red shadows in a dark industrial corridor"
+    },
+    {
+      "narration": "Sparks shower down from severed conduit lines as the deck plates groan under the immense gravitational pull.",
+      "on_screen_text": "FALLING STATION",
+      "duration_hint": 7.5,
+      "visual": "wide low angle shot of a narrow catwalk vibrating violently as bright yellow sparks rain down from overhead damaged electrical cables"
+    },
+    {
+      "narration": "Kael slams his palm onto the emergency launch pod interface, overriding the lockout protocol with a burst of concentrated energy.",
+      "on_screen_text": "OVERRIDE CODE",
+      "duration_hint": 7.0,
+      "visual": "medium shot of the protagonist frantically interacting with a glowing blue holographic control console inside a cramped metal escape bay"
+    },
+    {
+      "narration": "The heavy blast doors groan and seal shut, trapping the incoming shockwave outside just as the main console short-circuits.",
+      "on_screen_text": "SEALED SHUT",
+      "duration_hint": 7.0,
+      "visual": "action shot of heavy steel bulkhead doors slamming shut together while a cloud of white smoke billows from a ruined control panel"
+    },
+    {
+      "narration": "Strap in tight because the trajectory calculates a direct atmospheric dive right back into the glowing urban sprawl.",
+      "on_screen_text": "DESCENT PATH",
+      "duration_hint": 7.0,
+      "visual": "over the shoulder view looking through a curved viewport at a massive glowing metropolis rapidly approaching below through swirling clouds"
+    },
+    {
+      "narration": "The pod ejects with a bone-jarring kick, plunging headfirst into the endless clouds toward the city far below.",
+      "on_screen_text": "FREE FALL",
+      "duration_hint": 7.0,
+      "visual": "dramatic side profile shot inside a dimly lit capsule with intense kinetic motion blur visible through the thick glass window"
+    },
+    {
+      "narration": "As the descent stabilizes, a blinking distress signal begins pulsing from deep within the city's central mainframe.",
+      "on_screen_text": "UNKNOWN SIGNAL",
+      "duration_hint": 7.0,
+      "visual": "macro shot of a small dashboard monitor displaying an erratic pulsing green beacon against a pitch black cockpit background"
+    },
+    {
+      "narration": "Follow along for more of the original hero saga as the mystery behind Vance and the hidden network unravels.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 7.5,
+      "visual": "atmospheric medium cinematic shot of the hero standing silhouette against a bright neon skyline under a heavy nighttime drizzle"
+    }
+  ]
+}

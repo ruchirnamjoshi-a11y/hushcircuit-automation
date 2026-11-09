@@ -1,0 +1,71 @@
+{
+  "id": "the-curb-kick",
+  "title": "The Curb Kick",
+  "description": "A teenager trying to master a skateboard trick faces repetitive failures at the local empty lot before finally sticking the landing.",
+  "tags": [
+    "skateboarding",
+    "persistence",
+    "teen",
+    "hobbies",
+    "practice"
+  ],
+  "character_reference": "a young tall teenager with messy dark curls wearing an oversized forest green hoodie and scuffed black canvas sneakers",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My board flipped away for the fiftieth time, clattering loudly against the cracked concrete as my ankles throbbed with dull frustration.",
+      "on_screen_text": "THE FIFTIETH TRY",
+      "duration_hint": 7.5,
+      "visual": "close up of a skateboard rolling away on grey cracked pavement with scuffed shoes entering frame from the side, low angle, overcast lighting"
+    },
+    {
+      "narration": "Everyone else made it look so effortless, floating through the air while I could barely keep my balance for two seconds.",
+      "on_screen_text": "COMPARING TO OTHERS",
+      "duration_hint": 7.0,
+      "visual": "side profile of teenager looking intently downwards with a discouraged expression, holding a skateboard vertically against one leg, dusty park background"
+    },
+    {
+      "narration": "I wanted to toss the deck into the nearby bushes and walk away, pretending I never cared about landing this stupid trick.",
+      "on_screen_text": "THE URGE TO QUIT",
+      "duration_hint": 7.0,
+      "visual": "close up of hands resting on grip tape with knuckles tense, blurred green bushes in the background, late afternoon sun casting long shadows"
+    },
+    {
+      "narration": "Instead, I took a long breath, adjusted my footing slightly, and reminded myself why I picked up the board in the first place.",
+      "on_screen_text": "A DEEP BREATH",
+      "duration_hint": 7.0,
+      "visual": "teenager looking down at feet positioned on skateboard deck, adjusting shoelaces with focused concentration, shallow depth of field"
+    },
+    {
+      "narration": "This time, the pop felt crisper, the rotation sharper beneath my sneakers as I leaped into the air with the board.",
+      "on_screen_text": "THE SNAP",
+      "duration_hint": 6.5,
+      "visual": "action shot of feet suspended in mid air just above a spinning skateboard deck, motion blur on background, bright sunlight catching the wheels"
+    },
+    {
+      "narration": "Gravity seemed to hold its breath for a split second before both wheels slammed down firmly onto the solid concrete.",
+      "on_screen_text": "FOUR WHEELS DOWN",
+      "duration_hint": 6.5,
+      "visual": "low angle shot of skateboard wheels hitting the pavement with a tiny puff of dust, knees bent in absorption, dynamic motion"
+    },
+    {
+      "narration": "I let out a loud shout of disbelief and relief, laughing as I picked up the board and tapped it twice against the ground.",
+      "on_screen_text": "PURE RELIEF",
+      "duration_hint": 6.5,
+      "visual": "medium shot of teenager laughing genuinely with head tilted back, holding skateboard horizontally, warm golden hour lighting"
+    },
+    {
+      "narration": "Progress is quiet until it is loud, and today it sounded like wheels finally rolling away smooth.",
+      "on_screen_text": "THE REAL WIN",
+      "duration_hint": 6.0,
+      "visual": "close up of skateboard wheels rolling smoothly across smooth grey concrete, low tracking shot, dust motes dancing in the sun"
+    },
+    {
+      "narration": "If you love small victories and everyday journeys, follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "close up of smiling face looking directly into camera lens, soft warm blur of trees in the background, natural afternoon illumination"
+    }
+  ]
+}

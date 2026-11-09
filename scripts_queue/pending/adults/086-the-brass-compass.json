@@ -1,0 +1,65 @@
+{
+  "id": "the-brass-compass",
+  "title": "The Brass Compass",
+  "description": "A middle-aged cartographer finds a forgotten pocket compass in his father's desk, sparking a quiet reckoning about the paths he never took.",
+  "tags": [
+    "life crossroads",
+    "middle age",
+    "reflection",
+    "family legacy",
+    "new directions"
+  ],
+  "character_reference": "a middle-aged man with thinning graying hair, round wire-rimmed glasses, wearing a worn tweed vest over a crisp linen shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The drawer of the mahogany desk had not been opened in seven years. Inside rested only a heavy, tarnished brass compass.",
+      "on_screen_text": "THE HIDDEN DRAWER",
+      "duration_hint": 12.0,
+      "visual": "Close up hands pulling open a dark wooden drawer revealing a single vintage pocket instrument resting on velvet lining, soft warm indoor lighting"
+    },
+    {
+      "narration": "My father had used it to chart remote mountain trails, back when the world felt vast and entirely full of possibility.",
+      "on_screen_text": "MAPS OF THE PAST",
+      "duration_hint": 12.0,
+      "visual": "A person holding a brass pocket instrument in trembling palms, looking down with a reflective expression, cluttered map sketches in blurred background"
+    },
+    {
+      "narration": "For twenty years I had stayed in the same office, drawing predictable municipal grids while the real wilderness waited.",
+      "on_screen_text": "THE SAFE ROUTE",
+      "duration_hint": 12.0,
+      "visual": "Sitting at a cluttered wooden drafting table under a green shaded lamp, staring blankly at straight ink lines on heavy parchment paper"
+    },
+    {
+      "narration": "I turned the casing over in my palm. The needle swung freely, pointing north with absolute and stubborn certainty.",
+      "on_screen_text": "TRUE NORTH",
+      "duration_hint": 11.0,
+      "visual": "Fingers rotating a metallic pocket dial as the tiny magnetized needle spins rapidly before settling into place, dramatic side lighting"
+    },
+    {
+      "narration": "It was a quiet reminder that a detour is not a mistake, but simply a different way of arriving.",
+      "on_screen_text": "A QUIET REALIZATION",
+      "duration_hint": 11.0,
+      "visual": "Looking up from the desk toward a rain streaked window, soft twilight filtering through the glass, contemplative expression"
+    },
+    {
+      "narration": "Tomorrow, I would submit the resignation letter that had sat in my mind for over a decade.",
+      "on_screen_text": "THE DECISION",
+      "duration_hint": 11.0,
+      "visual": "Holding a blank sheet of stationery over a wooden desk with a fountain pen poised in readiness, deep focus"
+    },
+    {
+      "narration": "The map of my life was not finished yet. There were still uncharted territories waiting for my footsteps.",
+      "on_screen_text": "NEW HORIZONS",
+      "duration_hint": 12.0,
+      "visual": "Folding an old topographical map into a leather satchel, warm golden hour light casting long shadows across the room"
+    },
+    {
+      "narration": "If this story resonated with your own quiet crossroads, follow along for more everyday journeys.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "Gentle smile looking directly toward the camera in a cozy, book filled study, inviting atmosphere"
+    }
+  ]
+}

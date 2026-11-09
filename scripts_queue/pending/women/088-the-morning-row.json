@@ -1,0 +1,59 @@
+{
+  "id": "the-morning-row",
+  "title": "The Morning Row",
+  "description": "A woman takes up sculling at dawn to reclaim her mornings and find clarity on the open water.",
+  "tags": [
+    "rowing",
+    "dawn",
+    "water",
+    "solitude",
+    "mental-clarity"
+  ],
+  "character_reference": "an athletic woman with shoulder-length blonde hair tied in a messy ponytail, wearing a fitted grey athletic long-sleeve shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Long before the alarm clocks buzzed across the valley, Clara pushed her sleek wooden shell away from the silent dock.",
+      "on_screen_text": "BEFORE DAWN",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a single scull gliding onto a mirror-flat lake at twilight, mist rising from the water surface"
+    },
+    {
+      "narration": "For years, her mornings belonged to everyone else's schedule. Now, the river offered a different kind of demand.",
+      "on_screen_text": "HER OWN TIME",
+      "duration_hint": 10.4,
+      "visual": "close-up of hands gripping an oar handle tightly, droplets of water glistening in the dim morning light"
+    },
+    {
+      "narration": "She locked her blades into the water and drove her legs backward, feeling the boat surge forward with clean power.",
+      "on_screen_text": "THE DRIVE",
+      "duration_hint": 10.4,
+      "visual": "side profile of a rower pulling hard on an oar, muscles engaged, water splashing in a crisp arc"
+    },
+    {
+      "narration": "The rhythmic catch and release cleared the mental clutter that had built up through weeks of office politics.",
+      "on_screen_text": "CLEARING THE MIND",
+      "duration_hint": 10.4,
+      "visual": "low angle shot looking up at a rower gliding past reeds along the misty shoreline, calm and focused"
+    },
+    {
+      "narration": "Halfway across the lake, she stopped rowing entirely, letting the boat glide while she caught her breath in the stillness.",
+      "on_screen_text": "THE STILLNESS",
+      "duration_hint": 10.9,
+      "visual": "medium shot of a woman resting her arms across her oars, looking out across the vast, calm water as the sun peaks"
+    },
+    {
+      "narration": "Turning back toward the boathouse, her arms ached, but her mind felt lighter than the morning mist.",
+      "on_screen_text": "HEADING BACK",
+      "duration_hint": 9.6,
+      "visual": "pov shot from the bow looking toward a wooden dock as the boat smoothly approaches in the golden light"
+    },
+    {
+      "narration": "Find the space that belongs only to you. Subscribe and join our daily circle of grounding stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.9,
+      "visual": "warm cinematic portrait of a smiling woman standing by the lakeshore with her oar resting against her shoulder"
+    }
+  ]
+}

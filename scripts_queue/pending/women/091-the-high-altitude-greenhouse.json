@@ -1,0 +1,59 @@
+{
+  "id": "the-high-altitude-greenhouse",
+  "title": "The High Altitude Greenhouse",
+  "description": "An amateur botanist revives delicate alpine flora in a frost-bitten mountain nursery against all odds.",
+  "tags": [
+    "botany",
+    "mountains",
+    "greenhouse",
+    "plants",
+    "perseverance"
+  ],
+  "character_reference": "a woman with freckled skin and short sandy-blonde hair, wearing a thick wool cardigan over a denim shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "At eight thousand feet, the frost arrived early and stayed late, turning most gardening attempts into heartbreak.",
+      "on_screen_text": "THE MOUNTAIN FROST",
+      "duration_hint": 11.3,
+      "visual": "wide shot of a mist-shrouded mountain slope with a small glass greenhouse glistening in the cold alpine light"
+    },
+    {
+      "narration": "Her neighbors told her alpine primrose could never survive this altitude in a drafty glass enclosure.",
+      "on_screen_text": "THE DOUBTERS",
+      "duration_hint": 10.4,
+      "visual": "close-up of frost crystals forming intricate patterns along the lower edge of a weathered greenhouse window pane"
+    },
+    {
+      "narration": "Instead of backing down, she reinforced the frame, installed thermal bricks, and tended the fragile seedlings daily.",
+      "on_screen_text": "REBUILDING",
+      "duration_hint": 10.4,
+      "visual": "hands using a small trowel to pack dark, rich compost tightly around the base of tiny green sprouts"
+    },
+    {
+      "narration": "She adjusted the vents by hand every time the fickle mountain winds shifted direction without warning.",
+      "on_screen_text": "WATCHING THE WIND",
+      "duration_hint": 10.0,
+      "visual": "medium shot adjusting a brass latch on a hinged greenhouse roof vent, looking out at rolling clouds"
+    },
+    {
+      "narration": "After months of careful sheltering, the first vibrant purple blossom finally pushed through the green leaves.",
+      "on_screen_text": "THE FIRST BLOOM",
+      "duration_hint": 10.4,
+      "visual": "macro shot of a delicate purple alpine flower opening its petals under warm, filtered glasshouse light"
+    },
+    {
+      "narration": "Proving the skeptics wrong was sweet, but watching life thrive where it shouldn't was her real reward.",
+      "on_screen_text": "THRIVING HIGH",
+      "duration_hint": 10.4,
+      "visual": "close-up of smiling eyes looking down at a tray of lush green seedlings blooming in wooden flats"
+    },
+    {
+      "narration": "Nurture your dreams, no matter how cold the climate gets. Follow along for more inspiring daily stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 10.9,
+      "visual": "warm cinematic portrait of a smiling woman standing inside a sunlit greenhouse filled with potted plants"
+    }
+  ]
+}

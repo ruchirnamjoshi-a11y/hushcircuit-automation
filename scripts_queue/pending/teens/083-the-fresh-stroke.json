@@ -1,0 +1,71 @@
+{
+  "id": "the-fresh-stroke",
+  "title": "The Fresh Stroke",
+  "description": "A hesitant painter ruins a canvas with an accidental splatter and turns the mistake into a breakthrough abstract masterpiece.",
+  "tags": [
+    "painting",
+    "art",
+    "mistakes",
+    "creativity",
+    "expression"
+  ],
+  "character_reference": "a young adult with messy platinum blonde hair tied back with a paintbrush, wearing an ink-stained denim work shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My paintbrush slipped from my tired fingers, dropping a thick glob of crimson paint right dead center on my pristine white canvas.",
+      "on_screen_text": "THE ACCIDENT",
+      "duration_hint": 7.5,
+      "visual": "close up of a thick red paint drop splashing onto a stretched white canvas, wooden easel legs visible in background, dramatic lighting"
+    },
+    {
+      "narration": "Months of careful shading and precise geometric lines were instantly ruined by one clumsy, chaotic splash.",
+      "on_screen_text": "RUINED CANVAS",
+      "duration_hint": 7.0,
+      "visual": "side profile of artist staring in horror at a canvas with a red splotch, holding a dripping paintbrush mid-air"
+    },
+    {
+      "narration": "I stared at the damage, frozen in place, ready to grab a scraper and strip the fabric bare.",
+      "on_screen_text": "READY TO QUIT",
+      "duration_hint": 6.5,
+      "visual": "close up of hands clenched tightly into fists on wooden table, paint tubes scattered around, warm indoor lighting"
+    },
+    {
+      "narration": "Instead of erasing the error, I dipped my brush into cobalt blue and dragged it right across the crimson smear.",
+      "on_screen_text": "FIGHTING BACK",
+      "duration_hint": 7.0,
+      "visual": "close up of a brush loaded with blue paint sweeping aggressively across a red mark on canvas, dynamic motion blur"
+    },
+    {
+      "narration": "The colors bled together into something raw and unpredictable, unlike anything I had planned in my sketchbook.",
+      "on_screen_text": "RAW ENERGY",
+      "duration_hint": 7.0,
+      "visual": "close up of vibrant paint textures mixing on canvas surface, thick impasto strokes catching bright studio light"
+    },
+    {
+      "narration": "For the first time all week, I wasn't painting to be neat; I was painting to feel something real.",
+      "on_screen_text": "PAINTING FREELY",
+      "duration_hint": 6.5,
+      "visual": "medium shot of artist applying vigorous brushstrokes with an intense, focused expression, art studio interior"
+    },
+    {
+      "narration": "Stepping back, the chaotic mess transformed into an expressive abstract landscape full of depth and movement.",
+      "on_screen_text": "THE MASTERPIECE",
+      "duration_hint": 7.0,
+      "visual": "wide shot of colorful abstract painting on easel, artist standing beside it with arms crossed, smiling in satisfaction"
+    },
+    {
+      "narration": "Perfection is overrated, but finding your own style in a mistake changes everything.",
+      "on_screen_text": "BEAUTIFUL MISTAKES",
+      "duration_hint": 6.0,
+      "visual": "close up of artist's paint-splattered fingers resting against a wooden palette, warm ambient lighting"
+    },
+    {
+      "narration": "If you love small victories and everyday journeys, follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "friendly smiling face looking toward camera, soft studio background bokeh, warm afternoon illumination"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-late-shift-violin",
+  "title": "The Late Shift Violin",
+  "description": "A night custodian in a grand concert hall dares to pick up an abandoned instrument left on the stage.",
+  "tags": [
+    "secret passion",
+    "music",
+    "late night",
+    "hidden talent",
+    "courage"
+  ],
+  "character_reference": "a man in his late forties with curly dark hair flecked with gray, wearing a gray utility jumpsuit and soft work boots",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The concert hall at three in the morning belonged entirely to the dust mop and the silence.",
+      "on_screen_text": "THE SILENT HALL",
+      "duration_hint": 11.0,
+      "visual": "Pushing a wide push broom across a polished hardwood stage floor under dim work lights, vast empty velvet seats in the background"
+    },
+    {
+      "narration": "Near the conductor's podium, resting on a velvet chair, lay a dark wooden case left behind by the visiting orchestra.",
+      "on_screen_text": "LEFT BEHIND",
+      "duration_hint": 12.0,
+      "visual": "Approaching a dark leather violin case resting on an ornate wooden chair on an empty stage, dramatic spotlights from above"
+    },
+    {
+      "narration": "I had not touched an instrument since I was sixteen and my family could no longer afford the lessons.",
+      "on_screen_text": "OLD MEMORIES",
+      "duration_hint": 11.0,
+      "visual": "Opening a brass latch on a velvet-lined instrument case with trembling fingers, revealing a polished vintage fiddle inside"
+    },
+    {
+      "narration": "Lifting the violin felt like greeting an old friend who had forgiven my long absence.",
+      "on_screen_text": "THE REUNION",
+      "duration_hint": 11.0,
+      "visual": "Lifting a wooden instrument carefully by its neck, bringing it up toward the chin with a practiced, graceful posture"
+    },
+    {
+      "narration": "The bow trembled against the strings, producing a pure, resonant note that echoed through the cavernous room.",
+      "on_screen_text": "THE FIRST NOTE",
+      "duration_hint": 12.0,
+      "visual": "Drawing a horsehair bow across shiny strings, closed eyes showing deep emotional release, stage lights glinting on the polished wood"
+    },
+    {
+      "narration": "For five minutes, I forgot the aching knees, the night shifts, and the life that had passed me by.",
+      "on_screen_text": "LOST IN MUSIC",
+      "duration_hint": 11.0,
+      "visual": "Playing passionately on a grand empty stage, head tilted down in concentration, warm theatrical spotlight illuminating the figure"
+    },
+    {
+      "narration": "When the final chord faded into the empty rafters, I wiped the rosin dust from the bridge and gently latched the case.",
+      "on_screen_text": "THE FINAL CHORD",
+      "duration_hint": 12.0,
+      "visual": "Laying the instrument back into its velvet slot and snapping the metal clasps shut with a gentle click"
+    },
+    {
+      "narration": "If you believe it is never too late to play your own song, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "Leaning against the edge of the stage with a content, peaceful smile, soft ambient auditorium lighting"
+    }
+  ]
+}

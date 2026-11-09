@@ -1,0 +1,71 @@
+{
+  "id": "the-late-mix",
+  "title": "The Late Mix",
+  "description": "A coffee shop barista experiments with a unique iced beverage recipe after a slow morning rush.",
+  "tags": [
+    "coffee",
+    "creativity",
+    "workplace",
+    "experiment",
+    "passion"
+  ],
+  "character_reference": "a young adult with curly brown hair pulled back in a messy bun, wearing a dark green canvas apron over a black t-shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The morning rush had finally ended, leaving behind a mountain of dirty mugs and a completely empty counter.",
+      "on_screen_text": "AFTER THE RUSH",
+      "duration_hint": 7.0,
+      "visual": "medium shot of a stainless steel espresso machine with steam rising, stacked ceramic mugs, quiet sunlit counter"
+    },
+    {
+      "narration": "Instead of starting on the endless dish pile, my eyes drifted toward the leftover lavender syrup and fresh rosemary sprigs.",
+      "on_screen_text": "NEW IDEA",
+      "duration_hint": 7.0,
+      "visual": "close up of hands holding a glass jar of purple syrup and fresh green herbs next to an espresso grinder, warm lighting"
+    },
+    {
+      "narration": "My previous drink experiments had tasted like cough syrup mixed with dirt, so I knew the odds were against me.",
+      "on_screen_text": "BAD MEMORIES",
+      "duration_hint": 7.0,
+      "visual": "close up of measuring spoons resting on a metal counter, soft morning sunbeams casting long shadows"
+    },
+    {
+      "narration": "I carefully infused cold brew with a single drop of lavender extract and muddled a sprig of rosemary at the bottom.",
+      "on_screen_text": "THE MIX",
+      "duration_hint": 7.0,
+      "visual": "close up of a muddler pressing green rosemary leaves into the bottom of a clear glass tumbler, amber liquid pouring in"
+    },
+    {
+      "narration": "Ice cubes tumbled into the glass with a sharp crack, swirling the dark coffee and pale syrup together.",
+      "on_screen_text": "THE POUR",
+      "duration_hint": 6.5,
+      "visual": "action shot of ice cubes dropping into a glass of cold brew, swirling liquid creating beautiful marble patterns"
+    },
+    {
+      "narration": "Taking a cautious sip, the floral sweetness hit first, followed by the crisp, earthy finish of the rosemary.",
+      "on_screen_text": "THE TASTE TEST",
+      "duration_hint": 7.0,
+      "visual": "close up of barista closing eyes in delighted surprise while taking a small sip from a glass straw, warm indoor light"
+    },
+    {
+      "narration": "It wasn't just a drink anymore; it was proof that taking a small creative risk could taste amazing.",
+      "on_screen_text": "SUCCESSFUL BREW",
+      "duration_hint": 7.0,
+      "visual": "medium shot of barista smiling proudly at a finished iced drink garnished with a sprig of green rosemary on a wooden counter"
+    },
+    {
+      "narration": "Creativity can happen anywhere, even behind an espresso machine on a quiet Tuesday morning.",
+      "on_screen_text": "FINDING INSPIRATION",
+      "duration_hint": 6.5,
+      "visual": "close up of coffee beans spilling from a wooden scoop onto a metallic scale, warm ambient illumination"
+    },
+    {
+      "narration": "If you love small victories and everyday journeys, follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "friendly smiling face looking toward camera, soft cafe background bokeh, warm daylight illumination"
+    }
+  ]
+}

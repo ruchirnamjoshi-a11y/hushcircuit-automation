@@ -1,0 +1,65 @@
+{
+  "id": "the-blueprint-shift",
+  "title": "The Blueprint Shift",
+  "description": "An aging architect realizes his greatest design isn't a towering skyscraper, but the cozy home he built for his own retirement.",
+  "tags": [
+    "architecture",
+    "simplicity",
+    "home building",
+    "middle age",
+    "values"
+  ],
+  "character_reference": "a middle-aged man with short salt-and-pepper hair, wearing a plaid flannel shirt with sleeves rolled up to the elbows",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "I had spent thirty years designing glass towers that pierced the clouds for corporations I would never meet.",
+      "on_screen_text": "TOWERS OF GLASS",
+      "duration_hint": 12.0,
+      "visual": "Reviewing large architectural blueprints covered in complex geometric floor plans under a harsh fluorescent desk light"
+    },
+    {
+      "narration": "The cities grew taller and colder, while my own family grew up in houses I was too busy to inhabit.",
+      "on_screen_text": "TIME SLIPPING",
+      "duration_hint": 11.0,
+      "visual": "Looking out a high-rise office window at a sprawling concrete metropolis under a grey overcast sky, reflection in the glass"
+    },
+    {
+      "narration": "Last year, I stopped taking commercial contracts and bought a sloping acre of rocky earth by the creek.",
+      "on_screen_text": "THE ROCKS BY THE CREEK",
+      "duration_hint": 12.0,
+      "visual": "Walking through tall meadow grass near a bubbling stream, holding a simple wooden measuring stake in one hand"
+    },
+    {
+      "narration": "There were no steel frames or curtain walls here. Just reclaimed cedar, local stone, and southern exposure.",
+      "on_screen_text": "NATURAL MATERIALS",
+      "duration_hint": 11.0,
+      "visual": "Running calloused fingers over a rough, weathered stack of gray timber planks piled on a grassy clearing"
+    },
+    {
+      "narration": "I drew every beam and window frame by hand, using a wooden pencil instead of a digital drafting tablet.",
+      "on_screen_text": "DRAWN BY HAND",
+      "duration_hint": 12.0,
+      "visual": "Sketching simple lines on heavy brown kraft paper with a yellow carpenter's pencil, bright natural light from a barn window"
+    },
+    {
+      "narration": "The resulting cottage was small, humble, and perfectly aligned with the path of the morning sun.",
+      "on_screen_text": "THE FINISHED COTTAGE",
+      "duration_hint": 11.0,
+      "visual": "Standing outside a newly built timber cabin with a wide porch, surrounded by pine trees during golden hour"
+    },
+    {
+      "narration": "True architecture is not about dominating the landscape, but finding a place where the soul can finally rest.",
+      "on_screen_text": "A PLACE TO REST",
+      "duration_hint": 12.0,
+      "visual": "Sitting on a wooden front porch step drinking from a tin cup, looking out over a peaceful valley with a calm expression"
+    },
+    {
+      "narration": "Follow along for more stories about building a life that truly matters.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "Smiling gently toward the camera from a cozy, wood-paneled porch, warm afternoon sunlight casting long shadows"
+    }
+  ]
+}

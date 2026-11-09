@@ -1,0 +1,71 @@
+{
+  "id": "the-ceramic-curve",
+  "title": "The Ceramic Curve",
+  "description": "A pottery student struggles to center clay on the wheel before discovering how to work with the spinning momentum.",
+  "tags": [
+    "pottery",
+    "clay",
+    "craft",
+    "patience",
+    "art"
+  ],
+  "character_reference": "a young adult with short spiky dark hair dusted with white clay powder, wearing a denim apron over a striped shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The lump of gray clay wobbled violently, spinning off-center and throwing my hands completely off balance.",
+      "on_screen_text": "THE WOBBLE",
+      "duration_hint": 7.0,
+      "visual": "close up of hands slipping off a spinning lump of gray clay on a pottery wheel, wet splatters on a wooden splash pan"
+    },
+    {
+      "narration": "Every time I pressed down to fix it, the clay twisted into a lopsided blob that looked nothing like a vase.",
+      "on_screen_text": "LOPSIDED MESS",
+      "duration_hint": 7.0,
+      "visual": "side profile of student looking frustrated while staring down at a distorted clay cylinder on a spinning wheel head"
+    },
+    {
+      "narration": "My instructor walked by, placed a gentle hand over mine, and whispered to stop fighting the spin.",
+      "on_screen_text": "A GENTLE TIP",
+      "duration_hint": 6.5,
+      "visual": "close up of experienced hands guiding a younger pair of hands on wet clay, pottery studio background with kiln"
+    },
+    {
+      "narration": "Instead of forcing my strength against the machine, I softened my wrists and matched the wheel's rhythm.",
+      "on_screen_text": "MATCHING THE RHYTHM",
+      "duration_hint": 7.0,
+      "visual": "close up of relaxed hands resting evenly on either side of a smooth spinning clay mound, glistening wet surface"
+    },
+    {
+      "narration": "Suddenly, the clay steadied between my palms, turning from a chaotic wobble into a smooth, silent column.",
+      "on_screen_text": "CENTERED",
+      "duration_hint": 7.0,
+      "visual": "close up of gray clay rising smoothly upward into a tall perfect cylinder under steady thumbs, warm overhead lighting"
+    },
+    {
+      "narration": "I curved my thumb inward, watching a hollow well open up right in the center like magic.",
+      "on_screen_text": "OPENING UP",
+      "duration_hint": 6.5,
+      "visual": "close up of a single thumb pressing down into the center of spinning wet clay, water pooling in the indentation"
+    },
+    {
+      "narration": "The finished bowl was slightly uneven, but it held its shape proudly under the bright studio lamps.",
+      "on_screen_text": "THE FINISHED PIECE",
+      "duration_hint": 6.5,
+      "visual": "medium shot of potter smiling warmly while holding up a damp freshly thrown clay bowl, pottery studio shelves in background"
+    },
+    {
+      "narration": "True progress comes when you stop resisting the momentum and learn to guide it.",
+      "on_screen_text": "GOING WITH THE FLOW",
+      "duration_hint": 6.5,
+      "visual": "close up of pottery wheel pedal being pressed gently by a bare foot, wooden studio floor"
+    },
+    {
+      "narration": "If you love small victories and everyday journeys, follow along for more stories every single day.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 6.0,
+      "visual": "friendly smiling face looking toward camera, soft studio background bokeh, warm daylight illumination"
+    }
+  ]
+}

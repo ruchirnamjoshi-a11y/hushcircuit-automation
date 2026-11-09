@@ -1,0 +1,65 @@
+{
+  "id": "the-greenhouse-door",
+  "title": "The Greenhouse Door",
+  "description": "A retired botanist decides to finally cultivate the rare alpine seeds she kept in her freezer for decades.",
+  "tags": [
+    "second chances",
+    "retirement",
+    "gardening",
+    "patience",
+    "hope"
+  ],
+  "character_reference": "an elderly woman with silver hair pulled into a loose braid, wearing a heavy cable-knit cardigan and mud-smudged gardening gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty years, the little foil packets sat tucked safely behind bags of frozen peas, forgotten by everyone but me.",
+      "on_screen_text": "FROZEN DREAMS",
+      "duration_hint": 12.0,
+      "visual": "Opening a frosty freezer drawer and pulling out a small, crinkled paper seed packet covered in handwritten botanical notes"
+    },
+    {
+      "narration": "They were seeds of the blue Himalayan poppy, notoriously difficult to grow, requiring frost and absolute patience.",
+      "on_screen_text": "THE RARE SEEDS",
+      "duration_hint": 12.0,
+      "visual": "Emptying tiny brown seeds onto a rough wooden palm, examining them closely under natural daylight spilling through a window"
+    },
+    {
+      "narration": "My career had been spent teaching others how to preserve plants, while my own ambitions withered in the shade.",
+      "on_screen_text": "SHADED AMBITIONS",
+      "duration_hint": 12.0,
+      "visual": "Looking out through a misted glass window at an overgrown backyard garden in autumn, holding a trowel loosely at her side"
+    },
+    {
+      "narration": "I cleared away the dead winter vines inside the glass frame and filled terracotta pots with fresh soil.",
+      "on_screen_text": "CLEARING THE EARTH",
+      "duration_hint": 11.0,
+      "visual": "Pressing dark soil firmly into a clay flowerpot with calloused fingers, dust particles floating in a sunbeam"
+    },
+    {
+      "narration": "There is a strange comfort in getting your hands dirty again after so many years of safe observation.",
+      "on_screen_text": "DIGGING IN",
+      "duration_hint": 11.0,
+      "visual": "Wiping a smudge of damp earth across a cheek with the back of a gloved hand, looking down at the planted pots with satisfaction"
+    },
+    {
+      "narration": "Nature does not rush its greatest displays, and neither should we when our own season arrives.",
+      "on_screen_text": "PATIENT GROWTH",
+      "duration_hint": 11.0,
+      "visual": "Placing a glass dome gently over a seedling tray inside a bright greenhouse, condensation beading on the clear surface"
+    },
+    {
+      "narration": "I set the final tray on the wooden bench and waited for the first stubborn sign of life.",
+      "on_screen_text": "FIRST GREEN",
+      "duration_hint": 11.0,
+      "visual": "Leaning down to inspect a row of small pots aligned on a wooden slat bench, warm sunlight washing over the scene"
+    },
+    {
+      "narration": "Follow along for more gentle reminders that it is never too late to plant what you love.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 11.0,
+      "visual": "Standing proudly inside a sunlit glasshouse filled with green foliage, smiling gently at the viewer"
+    }
+  ]
+}
