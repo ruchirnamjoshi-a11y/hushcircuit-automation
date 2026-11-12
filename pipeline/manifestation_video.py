@@ -32,6 +32,7 @@ import re
 import subprocess
 import time
 from pathlib import Path
+from typing import Optional
 
 from pipeline.ai_image import CloudflareQuotaExhausted, CloudflareUnavailable, _call_cloudflare
 from pipeline.config import GEMINI_API_KEY, HF_TOKEN
@@ -104,34 +105,56 @@ class ZeroGPUQuotaExhausted(RuntimeError):
     can consume most/all of the tiny free daily budget by itself."""
 
 
+class ACEStepUnavailable(RuntimeError):
+    """ACE-Step's Space itself was unreachable/flaky for a handful of
+    retries in a row -- NOT a quota signal, so retrying shortly (next
+    scheduled run, ~hours not ~a day) is the right call, unlike
+    ZeroGPUQuotaExhausted. Confirmed in production (2026-11-12): three
+    separate runs failed on gradio_client.exceptions.AppError:
+    RepositoryNotFoundError and httpx.HTTPStatusError: 403 fetching the
+    generated file, even though the Space was independently confirmed
+    RUNNING and reachable moments later -- a transient HF-side hiccup
+    (cold start / GPU-pool contention), not a real repo/access problem."""
+
+
+ACE_STEP_RETRIES = 2
+ACE_STEP_RETRY_DELAY_SECONDS = 15
+
+
 def synthesize_song(lyrics_text: str, style_tags: str, duration_seconds: float, out_path: Path) -> Path:
     from gradio_client import Client  # deferred: only needed for this one call
 
-    client = Client("ACE-Step/ACE-Step", token=HF_TOKEN or None)
-    try:
-        result = client.predict(
-            audio_duration=duration_seconds,
-            prompt=style_tags,
-            lyrics=lyrics_text,
-            infer_step=60,
-            api_name="/__call__",
-        )
-    except Exception as e:
-        # Two distinct observed error texts share the same "retry later,
-        # don't fail the whole job" handling in run_daily.py: hard daily
-        # quota exhaustion ("ZeroGPU quota...") and live pool congestion
-        # ("No GPU was available after 60s..."). Only matching the first
-        # string let a real congestion error fall through as a raw
-        # AppError and hard-fail the job (confirmed in production: run
-        # 32814268463 failed the whole run on exactly this un-caught text).
-        msg = str(e)
-        if "ZeroGPU quota" in msg or "No GPU was available" in msg:
-            raise ZeroGPUQuotaExhausted(msg) from e
-        raise
-    audio_path = result[0] if isinstance(result, (list, tuple)) else result
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    run_ffmpeg(["-i", str(audio_path), "-c:a", "copy", str(out_path)])
-    return out_path
+    last_error: Optional[Exception] = None
+    for attempt in range(ACE_STEP_RETRIES + 1):
+        try:
+            client = Client("ACE-Step/ACE-Step", token=HF_TOKEN or None)
+            result = client.predict(
+                audio_duration=duration_seconds,
+                prompt=style_tags,
+                lyrics=lyrics_text,
+                infer_step=60,
+                api_name="/__call__",
+            )
+            audio_path = result[0] if isinstance(result, (list, tuple)) else result
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            run_ffmpeg(["-i", str(audio_path), "-c:a", "copy", str(out_path)])
+            return out_path
+        except Exception as e:
+            # Two distinct observed error texts get the SAME "retry much
+            # later, don't fail the whole job" handling in run_daily.py:
+            # hard daily quota exhaustion ("ZeroGPU quota...") and live
+            # pool congestion ("No GPU was available after 60s..."). Ones
+            # not retried here, since neither clears in minutes.
+            msg = str(e)
+            if "ZeroGPU quota" in msg or "No GPU was available" in msg:
+                raise ZeroGPUQuotaExhausted(msg) from e
+            last_error = e
+            suffix = f", retrying in {ACE_STEP_RETRY_DELAY_SECONDS}s" if attempt < ACE_STEP_RETRIES else ""
+            print(f"[manifestation] ACE-Step attempt {attempt + 1}/{ACE_STEP_RETRIES + 1} failed{suffix}: {e}")
+            if attempt < ACE_STEP_RETRIES:
+                time.sleep(ACE_STEP_RETRY_DELAY_SECONDS)
+
+    raise ACEStepUnavailable(f"ACE-Step unreachable after {ACE_STEP_RETRIES + 1} attempts: {last_error}") from last_error
 
 
 def transcribe_song(audio_path: Path) -> list[tuple[str, float, float, bool]]:

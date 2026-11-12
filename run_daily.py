@@ -77,7 +77,7 @@ from pipeline.config import (
     youtube_token_path,
 )
 from pipeline.manifestation_lyrics import GeminiUnavailable
-from pipeline.manifestation_video import ZeroGPUQuotaExhausted
+from pipeline.manifestation_video import ACEStepUnavailable, ZeroGPUQuotaExhausted
 from pipeline.math_scripts import load_next_pending as load_next_pending_math
 from pipeline.scripts import Script, load_next_pending, mark_used
 from pipeline.shorts import assemble_short
@@ -617,6 +617,16 @@ def run(dry_run: bool = False, privacy_status: str = "private", track_key: Optio
             # Confirmed in production (2026-09-10): a 400 and two 60s read
             # timeouts, each an uncaught crash before this existed.
             print(f"[{track.key}] Cloudflare unavailable: {e}")
+            print(f"[{track.key}] Aborting this track — will retry on the next scheduled run.")
+        except ACEStepUnavailable as e:
+            # ACE-Step's Space itself flaked out (RepositoryNotFoundError,
+            # a 403 fetching the generated file) across every retry, not a
+            # quota signal -- confirmed in production (2026-11-12, three
+            # separate runs) that the Space was independently reachable
+            # moments later, so this is transient HF-side congestion, same
+            # "skip this track, retry next scheduled run" handling as the
+            # other unavailable/quota cases above.
+            print(f"[{track.key}] ACE-Step unavailable: {e}")
             print(f"[{track.key}] Aborting this track — will retry on the next scheduled run.")
         except Exception:
             any_failed = True

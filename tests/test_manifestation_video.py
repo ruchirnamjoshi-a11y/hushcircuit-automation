@@ -74,6 +74,52 @@ def test_scene_image_falls_back_to_gradient_instead_of_crashing(tmp_path):
     mock_gradient.assert_called_once_with(out_path, mv.RESOLUTION)
 
 
+def test_synthesize_song_retries_transient_failure_then_succeeds(tmp_path):
+    # Real production bug (2026-11-12, three separate runs in one day):
+    # ACE-Step's Space flaked (RepositoryNotFoundError, then a 403
+    # fetching the generated file) even though the Space was confirmed
+    # RUNNING and reachable moments later -- transient HF-side congestion,
+    # not a quota signal, so a short retry should just work.
+    calls = {"n": 0}
+
+    def fake_client(*args, **kwargs):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise RuntimeError("RepositoryNotFoundError")
+        mock_client = MagicMock()
+        mock_client.predict.return_value = ["/tmp/fake-song.mp3"]
+        return mock_client
+
+    with patch("gradio_client.Client", side_effect=fake_client), \
+         patch("pipeline.manifestation_video.run_ffmpeg"), \
+         patch("pipeline.manifestation_video.time.sleep"):
+        out = mv.synthesize_song("la la la", "pop, upbeat", 30.0, tmp_path / "song.mp3")
+
+    assert calls["n"] == 2
+    assert out == tmp_path / "song.mp3"
+
+
+def test_synthesize_song_raises_ace_step_unavailable_after_exhausting_retries(tmp_path):
+    with patch("gradio_client.Client", side_effect=RuntimeError("RepositoryNotFoundError")), \
+         patch("pipeline.manifestation_video.time.sleep"):
+        with pytest.raises(mv.ACEStepUnavailable):
+            mv.synthesize_song("la la la", "pop, upbeat", 30.0, tmp_path / "song.mp3")
+
+
+def test_synthesize_song_quota_exhaustion_is_not_retried(tmp_path):
+    attempts = {"n": 0}
+
+    def always_quota_exhausted(*args, **kwargs):
+        attempts["n"] += 1
+        raise RuntimeError("ZeroGPU quota exceeded for today")
+
+    with patch("gradio_client.Client", side_effect=always_quota_exhausted), \
+         patch("pipeline.manifestation_video.time.sleep"):
+        with pytest.raises(mv.ZeroGPUQuotaExhausted):
+            mv.synthesize_song("la la la", "pop, upbeat", 30.0, tmp_path / "song.mp3")
+    assert attempts["n"] == 1  # no point retrying -- the daily budget is gone either way
+
+
 def test_character_reference_propagates_instead_of_falling_back(tmp_path):
     # Unlike a scene image, the reference portrait has no safe degraded
     # option -- every scene's image-to-image conditioning depends on it,
