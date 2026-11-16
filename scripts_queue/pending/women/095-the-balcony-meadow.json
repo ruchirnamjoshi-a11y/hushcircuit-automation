@@ -1,0 +1,65 @@
+{
+  "id": "the-balcony-meadow",
+  "title": "The Balcony Meadow",
+  "description": "A city dweller transforms her small concrete apartment balcony into a thriving wildflower sanctuary against neighbors' doubts.",
+  "tags": [
+    "gardening",
+    "sanctuary",
+    "patience",
+    "growth",
+    "home"
+  ],
+  "character_reference": "a woman with shoulder-length wavy dark hair, wearing an oversized green apron stained with potting soil and round wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The gray concrete balcony overlooked a noisy, congested avenue of passing traffic. Neighbors said nothing green could ever survive in the soot and wind.",
+      "on_screen_text": "THE GRAY SPACE",
+      "duration_hint": 14.0,
+      "visual": "medium shot looking out over a bare, empty concrete apartment balcony railing toward a distant urban street filled with hazy afternoon light"
+    },
+    {
+      "narration": "Elena refused to accept a barren view. She hauled heavy bags of rich black compost out through the living room, filling every corner with potential.",
+      "on_screen_text": "HAULING THE EARTH",
+      "duration_hint": 13.0,
+      "visual": "close-up of hands cutting open a thick plastic bag of dark soil, spilling rich compost into a long wooden planter box on a concrete floor"
+    },
+    {
+      "narration": "Kneeling on the hard tiles, she carefully pressed delicate wildflower seeds into the damp earth, covering them with a gentle layer of soil.",
+      "on_screen_text": "PLANTING THE SEEDS",
+      "duration_hint": 13.0,
+      "visual": "extreme close-up of soil-dusted fingers dropping tiny brown seeds into small, evenly spaced holes pressed into dark, damp garden compost"
+    },
+    {
+      "narration": "Weeks passed with careful watering and patient waiting. She protected the tiny green shoots from harsh afternoon gusts using woven wicker screens.",
+      "on_screen_text": "PATIENT TENDING",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a watering can tipping a gentle stream of crystal water over fragile green seedlings sprouting inside a wooden trough"
+    },
+    {
+      "narration": "By early summer, the balcony had erupted into vibrant reds, purples, and golds. Bumblebees buzzed lazily between heavy blossoms against the brick wall.",
+      "on_screen_text": "THE BLOOMING WALL",
+      "duration_hint": 14.0,
+      "visual": "close-up of colorful wildflowers swaying gently in the breeze, vibrant petals catching warm morning sunbeams, blurred urban background"
+    },
+    {
+      "narration": "Sitting in her folding wooden chair surrounded by fragrant petals, the city noise faded into a distant hum. She had cultivated her own peaceful world.",
+      "on_screen_text": "HER OWN OASIS",
+      "duration_hint": 13.0,
+      "visual": "medium portrait shot of a smiling woman sitting peacefully among lush green potted plants on a sunny balcony, reading a small paperback book"
+    },
+    {
+      "narration": "Beauty grows wherever you decide to plant your dreams, no matter how harsh the surrounding soil.",
+      "on_screen_text": "CULTIVATING JOY",
+      "duration_hint": 12.0,
+      "visual": "close-up of hands gently cupping a vibrant blossom, sunlight filtering through delicate petals in the quiet morning air"
+    },
+    {
+      "narration": "Nurture your own sanctuary every single day. Follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "wide shot of a lush, flower-filled balcony oasis glowing in warm afternoon sunlight, framed by soft green foliage and wooden planters"
+    }
+  ]
+}

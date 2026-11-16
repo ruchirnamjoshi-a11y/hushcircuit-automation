@@ -1,0 +1,65 @@
+{
+  "id": "the-high-ridge",
+  "title": "The High Ridge",
+  "description": "A hiker decides to leave her cautious group behind to tackle the steep ridge trail at her own pace.",
+  "tags": [
+    "hiking",
+    "solo",
+    "nature",
+    "courage",
+    "confidence"
+  ],
+  "character_reference": "a woman in her early forties with curly dark hair tied in a messy bun, wearing a teal windbreaker and a well-worn gray backpack",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The trail split at the base of the steep granite ridge, where the rest of the tour group insisted on turning back for safety. Maya looked up at the looming summit.",
+      "on_screen_text": "THE TRAIL SPLIT",
+      "duration_hint": 14.0,
+      "visual": "low angle shot of a weathered wooden trail marker post at a dirt fork in a pine forest, dramatic rocky peaks rising into a clear blue sky behind it"
+    },
+    {
+      "narration": "They warned her the climb was too demanding for a solo hiker. But she knew her own strength better than anyone else ever could.",
+      "on_screen_text": "TRUSTING HERSELF",
+      "duration_hint": 13.0,
+      "visual": "medium shot looking over a hiker's shoulder as she adjusts the shoulder straps of her backpack, gazing up a steep ascending dirt trail framed by tall fir trees"
+    },
+    {
+      "narration": "With each steady upward step, the chatter of self-doubt faded into the crisp mountain air. Her boots found purchase on the solid rock.",
+      "on_screen_text": "FINDING HER STRIDE",
+      "duration_hint": 13.0,
+      "visual": "close-up tracking shot of sturdy hiking boots stepping firmly onto uneven gray stones, pine needles scattered across the rugged ground"
+    },
+    {
+      "narration": "Wind swept across the exposed slope, tugging at her jacket. She paused to catch her breath, planting her trekking poles firmly against the stone.",
+      "on_screen_text": "FACING THE WIND",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a hiker leaning slightly into a strong breeze on an open mountain ridge, holding aluminum trekking poles, hair blowing across her face"
+    },
+    {
+      "narration": "Reaching the highest ledge, the vast expanse of the valley opened up beneath her feet in breathtaking golden afternoon light. She had made it all the way.",
+      "on_screen_text": "REACHING THE CREST",
+      "duration_hint": 14.0,
+      "visual": "wide panoramic shot from behind a solitary figure standing on a dramatic rocky precipice, looking out over a vast valley filled with rolling green forests"
+    },
+    {
+      "narration": "No rushing, no keeping up with anyone else's pace. Just the rhythmic beating of her heart and the freedom of the high alpine wilderness.",
+      "on_screen_text": "HER OWN PACE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a smiling face flushed with exertion, eyes closed peacefully as warm sunbeams hit her skin, wind rustling surrounding evergreen boughs"
+    },
+    {
+      "narration": "Choosing your own path is never about the destination; it is about trusting every step it takes to get there.",
+      "on_screen_text": "THE TRUE SUMMIT",
+      "duration_hint": 12.0,
+      "visual": "medium close-up of hands unhooking a water flask from a pack strap, taking a refreshing drink against a backdrop of distant blue mountain layers"
+    },
+    {
+      "narration": "Every journey begins with a single step of self-belief. Follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "cinematic shot of hiking boots resting on a flat summit rock, overlooking a golden sunlit horizon with soft glowing atmospheric haze"
+    }
+  ]
+}

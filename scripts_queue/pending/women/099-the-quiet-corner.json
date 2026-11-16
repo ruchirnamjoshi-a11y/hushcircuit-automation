@@ -1,0 +1,65 @@
+{
+  "id": "the-quiet-corner",
+  "title": "The Quiet Corner",
+  "description": "A woman transforms an underused alcove in her home into a personal writing retreat, carving out space for her inner voice.",
+  "tags": [
+    "writing",
+    "routine",
+    "sanctuary",
+    "reflection",
+    "words"
+  ],
+  "character_reference": "a woman in her late thirties with wavy chestnut hair pulled back in a tortoiseshell clip, wearing a cozy oversized oatmeal-colored knit sweater",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The empty alcove beneath the staircase was piled high with old cardboard boxes and discarded coats. Nora cleared the clutter away in one decisive afternoon.",
+      "on_screen_text": "CLEARING THE SPACE",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a woman lifting a dusty cardboard box out from a small, shadowy nook beneath a wooden staircase, dust particles floating in light"
+    },
+    {
+      "narration": "She dragged in a small wooden writing desk handed down from her grandmother, placing it right beneath the small frosted basement window.",
+      "on_screen_text": "THE DESK ARRIVES",
+      "duration_hint": 13.0,
+      "visual": "medium shot of hands guiding the legs of an antique wooden writing desk into position against a freshly painted cream wall, soft daylight falling across it"
+    },
+    {
+      "narration": "On top, she placed a heavy black leather-bound journal and a single sharp graphite pencil. No laptops, no notifications, no distractions.",
+      "on_screen_text": "SIMPLE TOOLS",
+      "duration_hint": 13.0,
+      "visual": "close-up of a blank journal with thick cream pages lying open beside a sharpened wooden pencil on a dark wooden desktop, soft morning sunbeams"
+    },
+    {
+      "narration": "Sitting down in the tight nook, her knees brushed the wooden panels. For the first time, she gave herself permission to write her own story.",
+      "on_screen_text": "SITTING DOWN",
+      "duration_hint": 13.0,
+      "visual": "medium portrait shot of a woman sitting comfortably at a small desk in a cozy alcove, pen poised above paper with a look of deep concentration"
+    },
+    {
+      "narration": "Words began to flow across the blank page without hesitation or self-censorship. Every sentence captured a piece of her authentic voice.",
+      "on_screen_text": "WRITING FREELY",
+      "duration_hint": 12.0,
+      "visual": "extreme close-up of a graphite pencil moving swiftly across lined paper, writing legible cursive words in soft focus under warm lamp illumination"
+    },
+    {
+      "narration": "This tiny corner required nothing from anyone else. It was a dedicated sanctuary built entirely for her thoughts to breathe.",
+      "on_screen_text": "HER SANCTUARY",
+      "duration_hint": 12.0,
+      "visual": "wide interior shot of a cozy reading nook tucked beneath wooden stairs, glowing with warm amber lamplight and surrounded by quiet bookshelves"
+    },
+    {
+      "narration": "Carve out your own corner of peace in a world that always demands your attention.",
+      "on_screen_text": "CLAIM YOUR SPACE",
+      "duration_hint": 11.0,
+      "visual": "close-up of a steaming ceramic mug resting beside a closed journal on a wooden desk, wisps of steam rising into warm, atmospheric shadows"
+    },
+    {
+      "narration": "Protect your inner voice and let it be heard. Follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "warm, inviting shot of a quiet writing desk bathed in gentle amber light, evoking a sense of deep peace and creative freedom"
+    }
+  ]
+}

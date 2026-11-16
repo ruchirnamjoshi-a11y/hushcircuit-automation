@@ -1,0 +1,71 @@
+{
+  "id": "the-late-canvas",
+  "title": "The Late Canvas",
+  "description": "A frustrated painter ruins a canvas only to discover an accidental masterpiece underneath.",
+  "tags": [
+    "painting",
+    "art",
+    "creativity",
+    "mistakes",
+    "inspiration"
+  ],
+  "character_reference": "a young man with messy ink-stained fingers, wearing a paint-splattered black apron over a white hoodie",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "A heavy glob of ultramarine paint dripped straight down the center of my nearly finished portrait.",
+      "on_screen_text": "THE MISTAKE",
+      "duration_hint": 8.0,
+      "visual": "close-up of dark blue paint streak running down a textured canvas, dripping off the lower edge"
+    },
+    {
+      "narration": "Six hours of careful brushwork ruined in one careless second of exhaustion.",
+      "on_screen_text": "RUINED HOURS",
+      "duration_hint": 8.0,
+      "visual": "medium shot holding a paintbrush mid-air with a shocked expression, staring at the ruined artwork in dim studio light"
+    },
+    {
+      "narration": "I grabbed a palette knife, ready to scrape the entire canvas clean and start over from scratch.",
+      "on_screen_text": "THE SCRAPE",
+      "duration_hint": 8.0,
+      "visual": "hand gripping a metal palette knife aggressively, poised to slash across the painted surface"
+    },
+    {
+      "narration": "Instead of clearing it, the sharp metal edge dragged the wet blue paint across the harsh lines.",
+      "on_screen_text": "THE SMUDGE",
+      "duration_hint": 8.0,
+      "visual": "close-up of palette knife smearing vibrant blue across dry ochre background layers, dynamic motion blur"
+    },
+    {
+      "narration": "The accidental smear softened the rigid shadows, giving the whole composition an unexpected depth.",
+      "on_screen_text": "NEW DEPTH",
+      "duration_hint": 8.0,
+      "visual": "stepping back to squint at the canvas, lighting catching the glossy textured paint layers, curious expression"
+    },
+    {
+      "narration": "I dipped my brush back into the palette and started working with the mistake instead of fighting it.",
+      "on_screen_text": "ADAPTING",
+      "duration_hint": 9.0,
+      "visual": "applying quick, expressive strokes of white paint next to the blue smudge with a fine round brush"
+    },
+    {
+      "narration": "The abstract textures conveyed a raw emotion the stiff portrait never could have captured.",
+      "on_screen_text": "RAW EMOTION",
+      "duration_hint": 8.0,
+      "visual": "extreme close-up of textured paint ridges catching bright studio lamp light, vibrant contrasting colors"
+    },
+    {
+      "narration": "Sometimes our best creative breakthroughs are just happy accidents waiting for us to accept them.",
+      "on_screen_text": "HAPPY ACCIDENTS",
+      "duration_hint": 9.0,
+      "visual": "leaning against the easel with paint brush in hand, looking at the finished abstract piece with a proud smile"
+    },
+    {
+      "narration": "If you love artistic journeys and unexpected wins, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "turning toward camera with a cheerful grin, holding paint brush, warm cozy studio background with canvases"
+    }
+  ]
+}

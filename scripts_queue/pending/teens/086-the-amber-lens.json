@@ -1,0 +1,71 @@
+{
+  "id": "the-amber-lens",
+  "title": "The Amber Lens",
+  "description": "A quiet aspiring photographer struggles with taking candid portraits of strangers until she finds her own perspective.",
+  "tags": [
+    "photography",
+    "social-anxiety",
+    "coming-of-age",
+    "art",
+    "confidence"
+  ],
+  "character_reference": "a young woman with shoulder-length wavy dark hair, wearing an oversized corduroy jacket and wire-rimmed glasses",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My camera felt heavier around my neck than usual as the crowded subway station buzzed with hurried commuters.",
+      "on_screen_text": "THE RUSH HOUR",
+      "duration_hint": 9.0,
+      "visual": "close-up of silver camera hanging against textured brown fabric, hurried feet blurred in motion below, moody ambient station lighting"
+    },
+    {
+      "narration": "Everyone moved with such fierce purpose, and I just stood by the pillar, pretending to adjust settings I already knew.",
+      "on_screen_text": "HIDING IN PLAIN SIGHT",
+      "duration_hint": 9.0,
+      "visual": "medium shot leaning against a cool concrete pillar, fingers nervously tapping camera body, looking sideways away from lens"
+    },
+    {
+      "narration": "I wanted to capture real life, not staged landscapes, but my finger froze every time I lifted the viewfinder to a face.",
+      "on_screen_text": "THE HESITATION",
+      "duration_hint": 9.0,
+      "visual": "low angle looking up at camera held tentatively near chest level, deep shadows, distant blurry figures moving past"
+    },
+    {
+      "narration": "Then an elderly musician started playing an acoustic guitar by the exit stairs, completely lost in his own melody.",
+      "on_screen_text": "THE MELODY",
+      "duration_hint": 8.0,
+      "visual": "over-the-shoulder view of worn wooden guitar body and calloused fingers pressing steel strings under warm overhead bulb"
+    },
+    {
+      "narration": "Instead of freezing, I stepped closer, let my breathing steady, and framed the raw joy etched across his weather-worn face.",
+      "on_screen_text": "FINDING THE ANGLE",
+      "duration_hint": 9.0,
+      "visual": "profile view raising camera smoothly toward eye level, focused expression, soft bokeh background of tiled walls"
+    },
+    {
+      "narration": "The shutter clicked quietly, blending right into the rhythm of the underground station without disturbing a single note.",
+      "on_screen_text": "THE CLICK",
+      "duration_hint": 8.0,
+      "visual": "extreme close-up of finger pressing shutter release button on metallic camera top plate, shallow depth of field"
+    },
+    {
+      "narration": "Checking the little screen, I finally saw something honest staring back at me instead of just empty air.",
+      "on_screen_text": "THE REVEAL",
+      "duration_hint": 8.0,
+      "visual": "looking down at small digital screen glowing softly in dim light, slight smile forming on face, warm color tones"
+    },
+    {
+      "narration": "For the first time, my lens felt like an extension of my own voice rather than a shield to hide behind.",
+      "on_screen_text": "OWNING THE FRAME",
+      "duration_hint": 8.0,
+      "visual": "confident half-turn toward camera holding strap firmly, natural lighting illuminating features, gentle determined expression"
+    },
+    {
+      "narration": "If you want to see where this journey takes me next, follow along for more stories.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "facing forward with a relaxed genuine smile, camera resting comfortably against chest, soft warm cinematic backdrop"
+    }
+  ]
+}

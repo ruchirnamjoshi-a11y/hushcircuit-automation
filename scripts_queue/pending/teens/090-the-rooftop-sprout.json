@@ -1,0 +1,71 @@
+{
+  "id": "the-rooftop-sprout",
+  "title": "The Rooftop Sprout",
+  "description": "An urban gardener tries to grow heirloom tomatoes on a windy concrete balcony.",
+  "tags": [
+    "gardening",
+    "plants",
+    "urban-farming",
+    "patience",
+    "growth"
+  ],
+  "character_reference": "a young man with messy dark curls, wearing a utility vest over a faded green t-shirt and work gloves",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Gusts of wind whipped across the concrete balcony, threatening to knock over my fragile seedling trays.",
+      "on_screen_text": "THE WINDY LEDGE",
+      "duration_hint": 8.0,
+      "visual": "close-up of small green tomato stems shivering inside plastic cells, wind rustling leaves, moody grey sky above"
+    },
+    {
+      "narration": "Three previous stalks had snapped in half during the spring storms, leaving me with empty pots and doubt.",
+      "on_screen_text": "LOST CROPS",
+      "duration_hint": 9.0,
+      "visual": "medium shot staring down at an empty terracotta pot filled with dry soil, contemplative and discouraged posture"
+    },
+    {
+      "narration": "I needed a better system, so I built a wooden windbreak using salvaged crates and zip ties.",
+      "on_screen_text": "THE REBUILD",
+      "duration_hint": 8.0,
+      "visual": "hands tightening a black zip tie around weathered wooden slats with pliers, focused determination"
+    },
+    {
+      "narration": "Next, I gently transplanted the hardiest tomato sprout into a deeper pot filled with rich compost.",
+      "on_screen_text": "DEEP ROOTS",
+      "duration_hint": 8.0,
+      "visual": "close-up of gloved fingers carefully pressing dark soil around the base of a vibrant green stem"
+    },
+    {
+      "narration": "Day after day, I watered it at dawn, watching the stem thicken against the morning breeze.",
+      "on_screen_text": "MORNING CARE",
+      "duration_hint": 8.0,
+      "visual": "holding a small metal watering can, droplets falling onto dark damp soil, soft golden sunrise light"
+    },
+    {
+      "narration": "Weeks later, tiny yellow blossoms finally burst open along the main vine.",
+      "on_screen_text": "FIRST BLOSSOMS",
+      "duration_hint": 8.0,
+      "visual": "extreme close-up of tiny yellow flowers blooming amongst dark green serrated leaves, bright natural daylight"
+    },
+    {
+      "narration": "A small, bright red tomato hung proudly from the vine, defying the harsh winds of the city.",
+      "on_screen_text": "THE HARVEST",
+      "duration_hint": 8.0,
+      "visual": "fingers gently cupping a ripe red tomato hanging from a sturdy vine, proud smile just out of focus"
+    },
+    {
+      "narration": "Growth takes patience, especially when your environment tries to push you backward.",
+      "on_screen_text": "PATIENT GROWTH",
+      "duration_hint": 8.0,
+      "visual": "standing tall on the balcony holding the harvest basket, warm sunlight illuminating features, peaceful expression"
+    },
+    {
+      "narration": "If you enjoy watching little efforts turn into great rewards, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "leaning against the wooden planter box with a warm grin, looking directly at camera, bright rooftop setting"
+    }
+  ]
+}

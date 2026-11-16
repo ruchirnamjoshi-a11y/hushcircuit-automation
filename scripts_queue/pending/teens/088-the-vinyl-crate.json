@@ -1,0 +1,71 @@
+{
+  "id": "the-vinyl-crate",
+  "title": "The Vinyl Crate",
+  "description": "An amateur record collector takes a chance on organizing an obscure local vinyl swap event.",
+  "tags": [
+    "music",
+    "vinyl",
+    "community",
+    "hobby",
+    "ambition"
+  ],
+  "character_reference": "a young man with tousled blonde hair, round tortoiseshell glasses, and an oversized vintage denim vest",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Dust danced in the afternoon sunlight filtering through the crowded crates of discarded records.",
+      "on_screen_text": "THE CRATES",
+      "duration_hint": 8.0,
+      "visual": "close-up of dusty cardboard record sleeves being flipped through rapidly by fingertips, warm sunbeams cutting across wooden table"
+    },
+    {
+      "narration": "Most people skipped right past the basement bins, looking for pristine pressings instead of hidden gems.",
+      "on_screen_text": "OVERLOOKED",
+      "duration_hint": 8.0,
+      "visual": "medium shot lifting a worn paper sleeve with faded artwork, contemplative expression, cluttered room background"
+    },
+    {
+      "narration": "Instead of complaining about the lack of local music lovers, I decided to set up my own swap meet in the alley alcove.",
+      "on_screen_text": "THE IDEA",
+      "duration_hint": 9.0,
+      "visual": "sitting at a wooden workbench sketching layout ideas on grid paper with a yellow pencil, determined posture"
+    },
+    {
+      "narration": "By morning, only two people had shown up, and my anxiety spiked through the roof.",
+      "on_screen_text": "SLOW START",
+      "duration_hint": 8.0,
+      "visual": "looking down an empty brick alleyway with hands shoved deep into pockets, anxious expression, overcast daylight"
+    },
+    {
+      "narration": "I dropped the needle on a funky 70s soul record I loved, turning up the portable speakers just enough.",
+      "on_screen_text": "DROPPING THE NEEDLE",
+      "duration_hint": 9.0,
+      "visual": "close-up of turntable stylus lowering gently into black vinyl groove, spinning label, warm vintage turntable deck"
+    },
+    {
+      "narration": "Slowly, people walking by stopped to listen, drawn in by the groove rather than any flashy marketing.",
+      "on_screen_text": "DRAWING A CROWD",
+      "duration_hint": 9.0,
+      "visual": "over-the-shoulder view looking at hands flipping through newly arranged milk crates of records under string lights"
+    },
+    {
+      "narration": "Before long, strangers were trading deep cuts and arguing passionately about basslines.",
+      "on_screen_text": "THE CONNECTION",
+      "duration_hint": 8.0,
+      "visual": "two pairs of hands holding up different album covers, sharing an animated conversation, blurry brick wall background"
+    },
+    {
+      "narration": "Building a community didn't need a massive venue, just a shared turntable and a willingness to share.",
+      "on_screen_text": "THE GROOVE",
+      "duration_hint": 9.0,
+      "visual": "smiling broadly while packing a record sleeve back into its jacket, relaxed posture, warm amber lighting"
+    },
+    {
+      "narration": "Catch more everyday stories and creative adventures by following along below.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "leaning against a stack of vintage record cases, nodding toward camera with a friendly grin, cozy atmosphere"
+    }
+  ]
+}

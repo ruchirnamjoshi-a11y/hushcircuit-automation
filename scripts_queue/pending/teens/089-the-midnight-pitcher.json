@@ -1,0 +1,71 @@
+{
+  "id": "the-midnight-pitcher",
+  "title": "The Midnight Pitcher",
+  "description": "A high school ceramics student tries to master the pottery wheel before her final evaluation.",
+  "tags": [
+    "ceramics",
+    "art",
+    "perseverance",
+    "craft",
+    "high-school"
+  ],
+  "character_reference": "a young woman with dark braided hair, wearing a clay-stained linen apron over a dark turtleneck",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The pottery wheel whirred loudly as yet another lump of grey clay spun completely off-center.",
+      "on_screen_text": "OFF CENTER",
+      "duration_hint": 8.0,
+      "visual": "close-up of wet clay wobbling wildly on a spinning metal wheel head, water splashing onto wooden splash pan"
+    },
+    {
+      "narration": "My hands were aching from pressing too hard, trying to force the material into a shape it clearly hated.",
+      "on_screen_text": "THE STRUGGLE",
+      "duration_hint": 9.0,
+      "visual": "medium shot pressing both palms firmly against a misshapen grey mound, frustrated expression, dim studio lighting"
+    },
+    {
+      "narration": "With twenty minutes left before cleanup, I scraped the whole mess off and started with a fresh ball.",
+      "on_screen_text": "STARTING OVER",
+      "duration_hint": 9.0,
+      "visual": "using a metal rib tool to slice wet clay off the wheel head cleanly, focused and calm demeanor"
+    },
+    {
+      "narration": "This time, instead of fighting the rotation, I matched my breathing to the steady hum of the motor.",
+      "on_screen_text": "FINDING BALANCE",
+      "duration_hint": 9.0,
+      "visual": "close-up of thumbs pressing softly into the exact center of spinning wet clay, hands steady and relaxed"
+    },
+    {
+      "narration": "Water slipped between my fingers as the clay wall slowly rose upward into a tall, slender cylinder.",
+      "on_screen_text": "THE RISE",
+      "duration_hint": 8.0,
+      "visual": "low angle watching wet clay walls extend upward between delicate fingertips, glistening under overhead lamp"
+    },
+    {
+      "narration": "I curved my knuckle inward to carve a delicate lip, holding my breath so the balance wouldn't break.",
+      "on_screen_text": "THE CURVE",
+      "duration_hint": 9.0,
+      "visual": "extreme close-up of a single finger shaping the rim of a damp vase, intense concentration, blurred background"
+    },
+    {
+      "narration": "The finished vase stood straight and true, completely centered under the warm overhead spotlight.",
+      "on_screen_text": "THE FINISH",
+      "duration_hint": 8.0,
+      "visual": "hands resting gently on either side of a smooth symmetrical ceramic vessel, satisfied smile, warm studio glow"
+    },
+    {
+      "narration": "True mastery wasn't about avoiding mistakes, but learning how to guide them into something beautiful.",
+      "on_screen_text": "THE LESSON",
+      "duration_hint": 9.0,
+      "visual": "wiping wet hands on apron while admiring the finished piece on the wheel head, relaxed confident posture"
+    },
+    {
+      "narration": "For more daily stories about creative comebacks, follow along with us.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "leaning against the wooden work table holding a ceramic tool, smiling warmly at camera, cozy artistic studio vibe"
+    }
+  ]
+}

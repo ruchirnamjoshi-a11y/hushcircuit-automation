@@ -1,0 +1,65 @@
+{
+  "id": "the-late-canvas",
+  "title": "The Late Canvas",
+  "description": "A woman returns to oil painting after a twenty-year hiatus, rediscovering her artistic voice without seeking validation.",
+  "tags": [
+    "painting",
+    "art",
+    "reclamation",
+    "expression",
+    "creativity"
+  ],
+  "character_reference": "a woman in her mid-forties with short silver-streaked dark hair, wearing a paint-spattered linen smock and smudges of ultramarine on her cheek",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The tubes of oil paint were stiff and dried at the ends, tucked away in the back of a closet for decades. Sarah popped open a tube of cadmium red.",
+      "on_screen_text": "OPENING THE BOX",
+      "duration_hint": 14.0,
+      "visual": "close-up of hands squeezing a stiff, vintage tube of red oil paint onto a wooden palette, thick pigment curling smoothly against the varnished wood"
+    },
+    {
+      "narration": "For years she had believed her creative window was permanently closed by daily obligations. Holding the bristle brush felt both foreign and entirely natural.",
+      "on_screen_text": "THE FIRST STROKE",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a painter holding a flat hog-bristle brush above a blank white linen canvas mounted on a wooden easel, hesitating before the first stroke"
+    },
+    {
+      "narration": "She stopped worrying about what anyone else might think of the result. Her hand swept a bold, curved slash of ultramarine across the white linen.",
+      "on_screen_text": "LETTING GO OF FEAR",
+      "duration_hint": 14.0,
+      "visual": "close-up action shot of a loaded paintbrush sweeping a wide, expressive arc of deep blue paint across a textured canvas surface"
+    },
+    {
+      "narration": "Layers of rich pigment built up under the soft glow of her floor lamp. Hours dissolved into midnight as colors blended into deep, emotional landscapes.",
+      "on_screen_text": "BUILDING LAYERS",
+      "duration_hint": 13.0,
+      "visual": "medium shot of a focused artist dabbing a palette knife into thick piles of yellow and white paint, applying texture onto a swirling canvas"
+    },
+    {
+      "narration": "Step by step, the canvas mirrored her inner landscape—complex, resilient, and unapologetically vibrant. Every mistake became a new texture.",
+      "on_screen_text": "REFLECTING THE SOUL",
+      "duration_hint": 13.0,
+      "visual": "profile shot of an artist stepping back to examine her work, holding a palette knife, eyes reflecting the colorful paint on the canvas"
+    },
+    {
+      "narration": "She did not paint it for an exhibition or praise. She created it purely because the voice inside her refused to remain silent any longer.",
+      "on_screen_text": "CREATING FOR HERSELF",
+      "duration_hint": 14.0,
+      "visual": "close-up of hands mixing warm ochre and white paint with a flexible metal palette knife on a wooden mixing board, soft lamplight glowing"
+    },
+    {
+      "narration": "It is never too late to pick up the tools of your true passion and make something entirely your own.",
+      "on_screen_text": "YOUR TURN",
+      "duration_hint": 12.0,
+      "visual": "wide shot of a cozy art studio filled with colorful canvases, paint jars, and a warm standing lamp casting a golden glow over the easel"
+    },
+    {
+      "narration": "Express your true self without hesitation. Follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "artistic close-up of a finished abstract oil painting showing rich textures, vibrant strokes, and warm highlights in a serene studio setting"
+    }
+  ]
+}

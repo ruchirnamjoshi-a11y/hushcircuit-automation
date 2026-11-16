@@ -1,0 +1,65 @@
+{
+  "id": "the-porch-repair",
+  "title": "The Porch Repair",
+  "description": "A homeowner finally replaces a rotting floorboard he has stepped over carefully every single morning for five years.",
+  "tags": [
+    "home",
+    "maintenance",
+    "carpentry",
+    "procrastination",
+    "renewal"
+  ],
+  "character_reference": "a middle-aged man with tousled brown hair flecked with gray, wearing a plaid flannel shirt with rolled-up sleeves and a leather tool pouch",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "Every morning at sunrise, David lifted his right foot just an inch higher to clear the soft, spongy pine board near the front screen door.",
+      "on_screen_text": "THE DAILY HABIT",
+      "duration_hint": 14.0,
+      "visual": "close up of a worn leather boot stepping carefully over a decayed wooden porch plank in early morning light"
+    },
+    {
+      "narration": "For five years, he had told himself it was a minor annoyance, something to tackle next autumn when the weather cooled down and the garden beds were cleared.",
+      "on_screen_text": "POSTPONED CHORES",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a man holding a mug of coffee while looking down at a weathered wooden floorboards on a porch"
+    },
+    {
+      "narration": "Today, armed with a heavy crowbar and a box of galvanized screws, he knelt down on the dusty cedar planks and slid the curved steel tip into the crack.",
+      "on_screen_text": "THE PRY BAR",
+      "duration_hint": 14.0,
+      "visual": "close up of a steel crowbar inserting into the gap between two rotting wooden deck boards with wood fibers fraying"
+    },
+    {
+      "narration": "With a sharp groan of rusted nails giving way, the decayed timber popped loose, revealing a damp bed of dark soil and forgotten debris underneath.",
+      "on_screen_text": "PULLING THE ROT",
+      "duration_hint": 14.0,
+      "visual": "action shot of a crowbar prying up a splintered wooden plank revealing dark soil and old joists underneath"
+    },
+    {
+      "narration": "He scraped away the damp mold from the oak joist below, checking its strength with the tip of his hammer. Solid heartwood, completely sound underneath.",
+      "on_screen_text": "SOUND TIMBER",
+      "duration_hint": 14.0,
+      "visual": "close up of a hammer tapping firmly against a sturdy dark wooden floor joist covered in sawdust"
+    },
+    {
+      "narration": "David measured and cut a fresh cedar replacement board, its golden grain smelling faintly of pine resin as it slid snugly into the empty space.",
+      "on_screen_text": "THE NEW PLANK",
+      "duration_hint": 14.0,
+      "visual": "close up of a clean golden cedar board being fitted snugly into a gap between older weathered porch planks"
+    },
+    {
+      "narration": "He drove the final screw home with his drill, leaving a flush, level surface where the hazard had lurked for half a decade.",
+      "on_screen_text": "FLUSH AND LEVEL",
+      "duration_hint": 14.0,
+      "visual": "close up of a cordless power drill driving a shiny steel screw flush into a newly laid wooden deck board"
+    },
+    {
+      "narration": "Fixing what is broken in our own yard often mends the quiet fatigue in our minds. Follow along for more quiet stories of everyday transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "close up of a vintage brass house key resting on a newly replaced wooden porch railing in warm sunlight"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-solo-paddle",
+  "title": "The Solo Paddle",
+  "description": "A woman takes her kayak out onto a misty morning lake for the first time alone, finding calm in the stillness.",
+  "tags": [
+    "kayaking",
+    "lake",
+    "solitude",
+    "water",
+    "peace"
+  ],
+  "character_reference": "a woman in her late twenties with blonde hair tucked under a red baseball cap, wearing a bright yellow flotation vest over a gray fleece",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The morning mist clung tightly to the surface of the quiet alpine lake, hiding the far shore completely. Maya slid her red kayak down the damp wooden ramp.",
+      "on_screen_text": "THE MISTY SHORE",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a yellow-vested kayaker pushing a sleek red hull off a wooden boat ramp into calm, glass-like water covered by a thin morning fog"
+    },
+    {
+      "narration": "She had always relied on companions for outdoor trips, fearing she lacked the confidence to venture out unassisted. Today, she stepped into the boat alone.",
+      "on_screen_text": "STEPPING OUT ALONE",
+      "duration_hint": 14.0,
+      "visual": "close-up of hands gripping the gunwales of a kayak, carefully shifting weight to settle onto the molded plastic seat, water rippling gently"
+    },
+    {
+      "narration": "Pushing off from the dock, the fiberglass paddle dipped into the dark water with a crisp, rhythmic splash. Ripple rings spread outward into the fog.",
+      "on_screen_text": "FIRST PADDLE STROKE",
+      "duration_hint": 13.0,
+      "visual": "medium action shot of a double-bladed paddle dipping into glassy water, creating swirling concentric ripples reflecting gray morning skies"
+    },
+    {
+      "narration": "As she glided further from the shore, the sounds of the highway vanished entirely, replaced only by the gentle lap of water against the bow.",
+      "on_screen_text": "SILENCE ON THE WATER",
+      "duration_hint": 13.0,
+      "visual": "wide shot of a single red kayak gliding across a vast, mirror-flat mountain lake surrounded by towering silhouettes of pine trees in the fog"
+    },
+    {
+      "narration": "She stopped paddling and let the boat drift, breathing in the damp scent of pine and cedar. There was no schedule to keep, no destination to rush toward.",
+      "on_screen_text": "DRIFTING IN PEACE",
+      "duration_hint": 14.0,
+      "visual": "close-up profile shot of a kayaker resting her paddle across her lap, closing her eyes in deep contentment, mist swirling softly around her shoulders"
+    },
+    {
+      "narration": "Finding her own balance on the water mirrored the balance she was building in her life—steady, adaptable, and self-contained.",
+      "on_screen_text": "FINDING BALANCE",
+      "duration_hint": 12.0,
+      "visual": "low angle shot looking up at a kayaker holding a paddle horizontally, framed against a pale sky breaking open with golden morning light"
+    },
+    {
+      "narration": "True independence is discovering you are the only captain you ever really needed.",
+      "on_screen_text": "HER OWN CAPTAIN",
+      "duration_hint": 11.0,
+      "visual": "close-up of water dripping from the end of a paddle blade, catching the sunlight and sparkling like diamonds before hitting the lake surface"
+    },
+    {
+      "narration": "Embrace the stillness of your own company. Follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "serene wide shot of a kayak resting peacefully on calm, reflective lake waters under a softening morning sky"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "the-drawer-of-spares",
+  "title": "The Drawer of Spares",
+  "description": "A retired machinist realizes the broken trinkets he has spent decades fixing were never worth saving, prompting him to finally clear out his workspace.",
+  "tags": [
+    "retirement",
+    "letting go",
+    "workshop",
+    "craftsmanship",
+    "reflection"
+  ],
+  "character_reference": "a tired middle-aged man with thinning gray hair, round wire-rimmed spectacles, wearing a worn herringbone tweed vest over a flannel shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For thirty years, Arthur saved every loose spring, warped hinge, and cracked gear in this very drawer. He told himself each one held a purpose waiting to be rediscovered.",
+      "on_screen_text": "THE RETAINED PAST",
+      "duration_hint": 14.0,
+      "visual": "close up hands sorting through a wooden drawer filled with rusted metal gears and loose springs under a single overhead incandescent bulb"
+    },
+    {
+      "narration": "The morning sunlight cut across the workbench, illuminating dust motes that had settled undisturbed since the autumn equinox. Outside, the neighborhood was waking to a quiet Saturday.",
+      "on_screen_text": "MORNING LIGHT",
+      "duration_hint": 13.0,
+      "visual": "low angle shot looking past a cluttered wooden workbench toward a frosted glass window catching pale morning rays"
+    },
+    {
+      "narration": "He picked up a brass clockwork gear with worn teeth. Try as he might, it would never turn a dial again, yet he had carried it across three workshops.",
+      "on_screen_text": "USELESS BRASS",
+      "duration_hint": 14.0,
+      "visual": "extreme close up of calloused fingers holding a tarnished brass gear against a dark background of workshop clutter"
+    },
+    {
+      "narration": "His knuckles ached with the damp chill of the room. It was not the weight of the metal that had slowed him down all these years, but the habit of keeping what was broken.",
+      "on_screen_text": "THE STIFF JOINTS",
+      "duration_hint": 15.0,
+      "visual": "medium shot of the man rubbing his stiff knuckles while staring down at an open iron storage chest"
+    },
+    {
+      "narration": "He pulled the metal waste bin closer to his knees. With a slow, deliberate motion, he emptied the first handful of unfixable trinkets into the dark base.",
+      "on_screen_text": "CLEARING SPACE",
+      "duration_hint": 14.0,
+      "visual": "close up shot of small metal objects dropping into a galvanized metal bucket with a dull metallic clatter"
+    },
+    {
+      "narration": "The drawer bottom emerged from beneath the clutter, bare wood showing pale where the shadows had protected it from decades of grime. It looked larger than he remembered.",
+      "on_screen_text": "THE EMPTY DRAWER",
+      "duration_hint": 14.0,
+      "visual": "high angle shot of a wooden drawer interior being wiped clean with a dry cotton rag revealing smooth light wood"
+    },
+    {
+      "narration": "Arthur stood up, stretching his back as the floorboards creaked beneath his boots. The workbench was clear at last, waiting for something new to be measured.",
+      "on_screen_text": "A CLEAN SLATE",
+      "duration_hint": 14.0,
+      "visual": "medium wide shot of the man standing straight with hands on hips before a newly cleared wooden table in a sunlit room"
+    },
+    {
+      "narration": "Some things are kept because we need them, and others simply because we are afraid to stop holding on. Follow along for more quiet stories of everyday transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "shot of an old brass desk lamp turned off casting a warm soft reflection on a clean wooden surface"
+    }
+  ]
+}

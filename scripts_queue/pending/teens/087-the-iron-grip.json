@@ -1,0 +1,71 @@
+{
+  "id": "the-iron-grip",
+  "title": "The Iron Grip",
+  "description": "A beginner bouldering enthusiast faces her fear of heights on the toughest wall in the gym.",
+  "tags": [
+    "bouldering",
+    "climbing",
+    "perseverance",
+    "sports",
+    "growth"
+  ],
+  "character_reference": "a teenage girl with freckles, curly red hair tied back in a messy bun, wearing a chalk-dusted athletic tank top",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My palms were caked in white chalk, but that did nothing to stop them from shaking against the textured wall.",
+      "on_screen_text": "CHALKED UP",
+      "duration_hint": 8.0,
+      "visual": "close-up of hands coated in white powder pressing tightly against vibrant orange resin holds, moody indoor gym lighting"
+    },
+    {
+      "narration": "Everyone else seemed to float up the overhangs effortlessly, while my shoes kept slipping off the very first foothold.",
+      "on_screen_text": "THE STRUGGLE",
+      "duration_hint": 9.0,
+      "visual": "low angle looking up at rubber climbing shoe struggling to find traction on a steep incline, tense calf muscles"
+    },
+    {
+      "narration": "I let go in frustration, dropping safely onto the thick blue mat below with a heavy sigh.",
+      "on_screen_text": "THE DROP",
+      "duration_hint": 8.0,
+      "visual": "medium shot standing on padded blue flooring, wiping forehead with the back of an arm, looking upward with frustration"
+    },
+    {
+      "narration": "An instructor walked by, pointed to a different route with larger holds, and just said to focus on my hip placement.",
+      "on_screen_text": "A NEW PATH",
+      "duration_hint": 9.0,
+      "visual": "pointing gesture toward colorful holds on a gray textured panel, side profile, attentive listening pose"
+    },
+    {
+      "narration": "I took a deep breath, reset my grip, and this time kept my center of gravity close to the wall.",
+      "on_screen_text": "CENTERED",
+      "duration_hint": 8.0,
+      "visual": "tight shot of fingers curling over a deep blue jug hold, knuckles whitening with intense focused effort"
+    },
+    {
+      "narration": "Move by move, the burning in my forearms faded into the background as I found my rhythm.",
+      "on_screen_text": "FINDING RHYTHM",
+      "duration_hint": 8.0,
+      "visual": "profile view reaching upward toward a yellow hold, body pressed flush against the vertical surface, intense concentration"
+    },
+    {
+      "narration": "My fingers wrapped around the final top ledge, and I pulled myself up over the crest.",
+      "on_screen_text": "THE SUMMIT",
+      "duration_hint": 8.0,
+      "visual": "close-up of hands gripping the top edge of the wooden wall panel, dust particles floating in overhead beams"
+    },
+    {
+      "narration": "Looking down from the top, the height didn't feel terrifying anymore; it felt like something I earned.",
+      "on_screen_text": "THE VIEW",
+      "duration_hint": 8.0,
+      "visual": "looking downward with a breathless triumphant grin, sweat on forehead, soft gym blur in background"
+    },
+    {
+      "narration": "If you love stories about pushing past your limits, follow along for more.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "relaxing shoulders on padded mat, laughing breathlessly while looking directly at camera, warm athletic atmosphere"
+    }
+  ]
+}

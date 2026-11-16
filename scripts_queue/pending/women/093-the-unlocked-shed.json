@@ -1,0 +1,65 @@
+{
+  "id": "the-unlocked-shed",
+  "title": "The Unlocked Shed",
+  "description": "A woman takes back the old backyard shed to restore vintage wooden furniture, stepping away from years of endless family errands.",
+  "tags": [
+    "woodworking",
+    "boundaries",
+    "craft",
+    "empowerment",
+    "women"
+  ],
+  "character_reference": "a woman in her late thirties with a braided auburn ponytail, wearing a faded plaid flannel shirt and dusty denim overalls",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For ten years, the backyard shed remained a catch-all for broken chairs and forgotten garden tools. Clara finally turned the heavy iron key in the lock, claiming the space as her own.",
+      "on_screen_text": "TURNING THE KEY",
+      "duration_hint": 14.0,
+      "visual": "extreme close-up of a brass key turning inside an old, weathered padlock on a wooden door, shallow depth of field, warm afternoon sunlight catching dust motes"
+    },
+    {
+      "narration": "Her phone buzzed continuously from the kitchen counter inside the house, full of requests she usually rushed to answer. She left it on silent and slid it into her jacket pocket.",
+      "on_screen_text": "SILENCING THE NOISE",
+      "duration_hint": 14.0,
+      "visual": "medium shot looking down past a wooden workbench at a smartphone glowing on a dark shelf, screen lit with notifications, blurred background of cluttered tools"
+    },
+    {
+      "narration": "A heavily chipped walnut table sat in the center of the room, waiting for care. Running her palm over the scarred surface, she decided where to begin the restoration.",
+      "on_screen_text": "THE DAMAGED SURFACE",
+      "duration_hint": 14.0,
+      "visual": "close-up of calloused hands tracing deep scratches across an antique wooden tabletop, side lighting highlighting the rough grain and texture of the old wood"
+    },
+    {
+      "narration": "She picked up a coarse piece of sandpaper and began stripping away years of peeling varnish. Each steady sweep removed another layer of neglect.",
+      "on_screen_text": "STRIPPING THE PAST",
+      "duration_hint": 13.0,
+      "visual": "medium action shot of hands gripping a sanding block, sweeping across a curved wooden chair arm, fine sawdust rising into a beam of filtered daylight"
+    },
+    {
+      "narration": "The physical labor was demanding, but her breathing fell into a steady, grounding rhythm. For the first time in memory, her mind was entirely quiet.",
+      "on_screen_text": "FINDING HER RHYTHM",
+      "duration_hint": 13.0,
+      "visual": "profile shot focusing on intense, focused expression, sweat glistening on temple, dust-dusted cheeks, looking down intently at the woodworking project"
+    },
+    {
+      "narration": "As dusk settled outside the small window, raw, golden honey-toned wood emerged from beneath the dark, heavy stain. It was sturdy, beautiful, and entirely restored.",
+      "on_screen_text": "REVEALING THE GRAIN",
+      "duration_hint": 14.0,
+      "visual": "close-up of a soft cloth wiping amber-colored finishing oil across smooth polished wood, glowing reflections under a low hanging incandescent work lamp"
+    },
+    {
+      "narration": "Clara stood back, wiping her brow with the back of a dusty hand, feeling a quiet surge of absolute self-reliance. The space was hers, and so was her time.",
+      "on_screen_text": "OWNING HER TIME",
+      "duration_hint": 14.0,
+      "visual": "wide interior shot of the rustic shed filled with warm lamplight, leaning against the newly finished table with a confident, peaceful posture"
+    },
+    {
+      "narration": "Every woman deserves a space where her own needs come first. Follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "warm, inviting close-up of hands resting gently on a polished wooden surface, soft golden ambient lighting filling the cozy workshop interior"
+    }
+  ]
+}

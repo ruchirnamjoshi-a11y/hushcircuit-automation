@@ -1,0 +1,65 @@
+{
+  "id": "the-greenhouse-pane",
+  "title": "The Greenhouse Pane",
+  "description": "An aging botanist struggles to let go of a rare, high-maintenance orchid that has choked out every other plant in his care.",
+  "tags": [
+    "botany",
+    "obsession",
+    "greenhouse",
+    "letting go",
+    "growth"
+  ],
+  "character_reference": "a lean middle-aged man with silver-streaked hair, square tortoiseshell glasses, wearing a faded khaki garden apron stained with green chlorophyll",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The Peruvian orchid filled the center bench with heavy, velvety blooms that smelled faintly of vanilla and damp earth. Julian had spent ten years keeping it alive against the odds.",
+      "on_screen_text": "THE CENTERPIECE",
+      "duration_hint": 14.0,
+      "visual": "close up of an exotic dark purple orchid bloom covered in fine water droplets inside a warm glass enclosure"
+    },
+    {
+      "narration": "To feed its enormous thirst, every other fern and seedling in the glasshouse had been starved of moisture and light. The benches around it were barren brown skeletons.",
+      "on_screen_text": "STARVED ROOTS",
+      "duration_hint": 14.0,
+      "visual": "medium shot of dry empty flower pots lined up neatly on a wooden slat shelf inside a misty greenhouse"
+    },
+    {
+      "narration": "He traced a thick, corky aerial root that had wrapped itself around the main support beam like an iron cable. It was choking the structure that supported the roof.",
+      "on_screen_text": "THE STRANGLING ROOT",
+      "duration_hint": 14.0,
+      "visual": "close up of thick greenish-brown plant roots tightly gripping a damp wooden beam inside a greenhouse"
+    },
+    {
+      "narration": "Julian picked up his pruning shears, their steel blades cold against his palm. He had pruned roses and vines before, but never anything that demanded such devotion.",
+      "on_screen_text": "COLD STEEL",
+      "duration_hint": 14.0,
+      "visual": "close up of polished steel pruning shears held in calloused fingers with condensation beading on the metal"
+    },
+    {
+      "narration": "With a sharp snap, the main stem gave way. A thick amber sap welled up from the cut, smelling intensely sweet as it pooled on the cedar workbench.",
+      "on_screen_text": "THE CLEAN CUT",
+      "duration_hint": 14.0,
+      "visual": "close up of pruning shears snapping through a thick green plant stem with translucent sap beading on the severed edge"
+    },
+    {
+      "narration": "The greenhouse suddenly felt larger, filled with the fresh scent of damp cedar and cool air rushing in through the open roof vents from the garden outside.",
+      "on_screen_text": "FRESH AIR",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a person opening a hinged glass roof vent letting misty outdoor air sweep into a greenhouse"
+    },
+    {
+      "narration": "He placed several small terracotta pots of resilient green moss onto the vacant bench. There was room now for things that knew how to share the soil.",
+      "on_screen_text": "NEW SHOOTS",
+      "duration_hint": 14.0,
+      "visual": "close up of hands placing small clay pots filled with bright green moss onto a clean wooden greenhouse bench"
+    },
+    {
+      "narration": "True care means knowing when a single grand obsession must make room for a thriving garden. Follow along for more quiet stories of everyday transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "close up of a single glass watering can resting on a wooden board with soft dappled sunlight filtering through mist"
+    }
+  ]
+}

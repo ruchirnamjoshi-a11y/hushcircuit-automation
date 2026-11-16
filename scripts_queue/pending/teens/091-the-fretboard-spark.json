@@ -1,0 +1,71 @@
+{
+  "id": "the-fretboard-spark",
+  "title": "The Fretboard Spark",
+  "description": "A nervous guitar student overcomes stage fright during an impromptu neighborhood jam.",
+  "tags": [
+    "music",
+    "guitar",
+    "confidence",
+    "performance",
+    "youth"
+  ],
+  "character_reference": "a young woman with a short asymmetrical silver-dyed haircut, wearing a thrifted leather jacket over a band tee",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "My fingers hovered over the guitar neck, locking up completely the moment anyone turned to listen.",
+      "on_screen_text": "FROZEN FRETBOARD",
+      "duration_hint": 9.0,
+      "visual": "close-up of hand hesitating over steel guitar strings, wooden fretboard markers visible, tense atmosphere"
+    },
+    {
+      "narration": "I had practiced the chord progression a hundred times in my bedroom, but out here it felt foreign.",
+      "on_screen_text": "PRACTICE VS REALITY",
+      "duration_hint": 9.0,
+      "visual": "medium shot sitting on a low brick wall holding an acoustic guitar, looking down with an uncertain expression"
+    },
+    {
+      "narration": "My friend smiled warmly, strummed an easy bassline, and told me to just play three notes.",
+      "on_screen_text": "KEEP IT SIMPLE",
+      "duration_hint": 9.0,
+      "visual": "over-the-shoulder view of another hand demonstrating a simple three-string chord on a wooden acoustic guitar"
+    },
+    {
+      "narration": "I took a slow breath, planted my index finger on the third fret, and struck the first string.",
+      "on_screen_text": "THE FIRST NOTE",
+      "duration_hint": 8.0,
+      "visual": "close-up of fingertip pressing down firmly on a brass fret wire, pick striking a single clear string"
+    },
+    {
+      "narration": "The note rang out clear and resonant, cutting through the ambient hum of the courtyard.",
+      "on_screen_text": "CLEAR RESONANCE",
+      "duration_hint": 8.0,
+      "visual": "sound hole of the guitar reflecting warm amber sunset light, vibration ripples visible in the air"
+    },
+    {
+      "narration": "Instead of overthinking the solo, I let my hand flow naturally into the rhythm we shared.",
+      "on_screen_text": "FINDING THE FLOW",
+      "duration_hint": 9.0,
+      "visual": "strumming hand moving smoothly across the soundboard in a relaxed motion, natural outdoor lighting"
+    },
+    {
+      "narration": "Heads turned, not in judgment, but in appreciation as the melody filled the evening air.",
+      "on_screen_text": "THE GROOVE CATCHES",
+      "duration_hint": 8.0,
+      "visual": "profile view smiling while playing chords with confidence, soft sunset glow on face, blurred background"
+    },
+    {
+      "narration": "The fear didn't vanish entirely, but the music finally became louder than the doubt.",
+      "on_screen_text": "LOUDER THAN DOUBT",
+      "duration_hint": 8.0,
+      "visual": "looking up from the guitar fretboard with a genuine, triumphant smile, warm golden hour lighting"
+    },
+    {
+      "narration": "Catch more uplifting stories about finding your voice by following along below.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 8.0,
+      "visual": "holding the guitar neck comfortably across chest, nodding warmly at camera, cozy evening courtyard background"
+    }
+  ]
+}

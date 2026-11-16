@@ -1,0 +1,65 @@
+{
+  "id": "the-late-shift-press",
+  "title": "The Late Shift Press",
+  "description": "A veteran printmaker runs the final edition on a heavy iron press before the building is sold for modern apartments.",
+  "tags": [
+    "printing",
+    "industry",
+    "nostalgia",
+    "craft",
+    "farewell"
+  ],
+  "character_reference": "a stocky middle-aged man with closely cropped gray hair, soot-stained fingers, wearing a dark canvas shop apron over a rolled-sleeve chambray shirt",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The Heidelberg press hummed with a heavy, rhythmic pulse that shook the concrete floor. For thirty years, Thomas had fed heavy rag paper into its iron jaws.",
+      "on_screen_text": "THE IRON PULSE",
+      "duration_hint": 14.0,
+      "visual": "close up of heavy mechanical iron gears rotating smoothly with thick black machine grease gleaming in dim light"
+    },
+    {
+      "narration": "Cardboard boxes lined the hallway, packed with metal type cases and ink rollers destined for a storage locker across town. The walls were already bare of posters.",
+      "on_screen_text": "PACKED BOXES",
+      "duration_hint": 14.0,
+      "visual": "medium shot of stacked cardboard storage boxes resting against a brick wall in a dim industrial workshop"
+    },
+    {
+      "narration": "He rolled a thick layer of rich black ink across the lead type locked into the chase. The smell of linseed oil and carbon black was the only home he had truly known.",
+      "on_screen_text": "ROLLING THE INK",
+      "duration_hint": 14.0,
+      "visual": "close up of a rubber roller spreading a glossy black layer of ink across raised metal typography blocks"
+    },
+    {
+      "narration": "Thomas placed the final sheet of heavy cream-colored cotton paper onto the platen, aligning the corner marks with practiced precision born of endless repetition.",
+      "on_screen_text": "THE FINAL SHEET",
+      "duration_hint": 14.0,
+      "visual": "close up of ink-stained fingers carefully placing a crisp sheet of textured white paper onto a printing press bed"
+    },
+    {
+      "narration": "The press clamped shut with a satisfying thud, transferring the deep black impression onto the fibers with uncompromising pressure.",
+      "on_screen_text": "THE IMPRESSION",
+      "duration_hint": 14.0,
+      "visual": "medium action shot of a heavy iron printing arm swinging down to press paper against inked metal type"
+    },
+    {
+      "narration": "He lifted the fresh print by its corners, inspecting the crisp lines of poetry stamped into the grain. It was the last thing this room would ever produce.",
+      "on_screen_text": "THE LAST PRINT",
+      "duration_hint": 14.0,
+      "visual": "close up of hands holding up a freshly printed sheet of paper showing bold black typography under a spotlight"
+    },
+    {
+      "narration": "Thomas turned off the main breaker switch. The sudden silence that swallowed the room was heavier than the roar of the machinery had ever been.",
+      "on_screen_text": "THE SUDDEN SILENCE",
+      "duration_hint": 14.0,
+      "visual": "close up of a hand flipping a heavy black electrical safety switch on a brick pillar in a dark room"
+    },
+    {
+      "narration": "When the old tools fall silent, we discover the courage to write the next chapter on blank paper. Follow along for more quiet stories of everyday transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "close up of a wooden composing stick filled with metal letter sorts resting on an old workbench"
+    }
+  ]
+}

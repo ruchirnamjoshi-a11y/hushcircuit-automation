@@ -1,0 +1,65 @@
+{
+  "id": "the-clay-vessel",
+  "title": "The Clay Vessel",
+  "description": "A potter learns to let go of perfectionism, embracing the asymmetric beauty of handmade stoneware.",
+  "tags": [
+    "pottery",
+    "ceramics",
+    "craft",
+    "acceptance",
+    "mindfulness"
+  ],
+  "character_reference": "a woman in her early thirties with messy dark curls pinned back with a wooden chopstick, wearing a clay-smeared linen tunic",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The lump of gray stoneware clay sat dead center on the spinning wheel head. Hanna pressed her thumbs firmly into the spinning mass to open the center.",
+      "on_screen_text": "CENTERING THE CLAY",
+      "duration_hint": 14.0,
+      "visual": "close-up of wet, mud-covered hands pressing firmly into a rotating cone of gray clay on a spinning metal wheel head, water splashing in tiny droplets"
+    },
+    {
+      "narration": "For years, she chased flawless symmetry in everything she made. When a piece warped slightly on the wheel, she used to crush it back down in frustration.",
+      "on_screen_text": "THE IMPERFECT SHAPE",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a potter watching a tall clay cylinder wobble slightly to one side, hands resting gently on the spinning gray walls"
+    },
+    {
+      "narration": "Today, she decided to let the clay lead. As the walls rose upward under her palms, she allowed the vessel to curve into a gentle, organic sway.",
+      "on_screen_text": "LETTING IT FLOW",
+      "duration_hint": 13.0,
+      "visual": "extreme close-up of slender fingers lifting the wet rim of a growing vase, shaping a graceful, slightly curved silhouette against a dark workshop background"
+    },
+    {
+      "narration": "Using a thin steel rib, she smoothed the exterior while preserving the slight irregularities that proved human hands had shaped it.",
+      "on_screen_text": "HONING THE CURVE",
+      "duration_hint": 13.0,
+      "visual": "close-up of a metal rib tool curving along the rotating side of a clay pot, scraping away excess moisture and leaving a smooth, satin-like finish"
+    },
+    {
+      "narration": "Cutting the finished vase from the wheel with a wire tool, she lifted it carefully. It wasn't machine-made perfection, and that was its true power.",
+      "on_screen_text": "THE UNQIUE VESSEL",
+      "duration_hint": 13.0,
+      "visual": "medium shot of hands holding a wet, freshly thrown clay vase by its base, lifting it away from the spinning wheel head with utmost care"
+    },
+    {
+      "narration": "Life, like pottery, derives its beauty from the unique curves and marks left by our struggles and growth.",
+      "on_screen_text": "BEAUTY IN FLAWS",
+      "duration_hint": 11.0,
+      "visual": "close-up of a finished stoneware pot resting on a wooden board, showing subtle, beautiful throwing rings and organic variations in texture"
+    },
+    {
+      "narration": "Embrace your own unique shape without the pressure of perfection.",
+      "on_screen_text": "YOUR TRUE SELF",
+      "duration_hint": 10.0,
+      "visual": "warm, moody close-up of a potter's hands resting on a clean wooden workbench, dusted with dry white clay powder under soft overhead lighting"
+    },
+    {
+      "narration": "Celebrate the art of being wonderfully human. Follow along for more stories of quiet strength.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 9.0,
+      "visual": "artistic shot of handcrafted ceramic mugs and vases arranged neatly on wooden studio shelves, illuminated by warm, directional side light"
+    }
+  ]
+}

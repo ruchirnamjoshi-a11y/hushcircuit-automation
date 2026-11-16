@@ -1,0 +1,65 @@
+{
+  "id": "the-second-audition",
+  "title": "The Second Audition",
+  "description": "A former classical cellist picks up her instrument after a twenty-year hiatus to play for a local community orchestra.",
+  "tags": [
+    "music",
+    "cello",
+    "comeback",
+    "orchestra",
+    "passion"
+  ],
+  "character_reference": "a woman in her late forties with shoulder-length auburn hair, wearing a simple black velvet blazer and a silver pendant necklace",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "The velvet-lined case had remained zipped in the back of the bedroom closet since the winter her daughter was born. The brass latches were tarnished green.",
+      "on_screen_text": "THE CLOSED CASE",
+      "duration_hint": 14.0,
+      "visual": "close up of tarnished brass latches on a dusty black hardshell musical instrument case resting on a carpeted floor"
+    },
+    {
+      "narration": "When she unlatched the lid, the rich scent of aged spruce, rosin dust, and old wool rose up to greet her like an old friend she had neglected.",
+      "on_screen_text": "SCENT OF ROSIN",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a woman opening a velvet-lined instrument case revealing the warm polished wood of a cello inside"
+    },
+    {
+      "narration": "Her fingers hovered over the ebony fingerboard, trembling slightly as muscle memory wrestled with two decades of silence and everyday routine.",
+      "on_screen_text": "TREMBLING FINGERS",
+      "duration_hint": 14.0,
+      "visual": "close up of hands with subtle trembling fingers resting gently on the dark polished wood of a cello fingerboard"
+    },
+    {
+      "narration": "She drew the bow across the C-string. The deep, resonant vibration shook the floorboards beneath her chair, filling the empty room with rich sound.",
+      "on_screen_text": "THE FIRST NOTE",
+      "duration_hint": 14.0,
+      "visual": "close up of a horsehair bow being drawn smoothly across a heavy cello string with fine rosin dust glittering in the light"
+    },
+    {
+      "narration": "The awkwardness melted away by the second measure as her wrist remembered the curved sweep of Elgar's melody. Her breathing fell into time with the bow.",
+      "on_screen_text": "FINDING THE RHYTHM",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a cellist playing intently with eyes closed in a warmly lit room filled with bookshelves"
+    },
+    {
+      "narration": "She looked down at the sheet music propped against the living room window, marking a bow change with a soft pencil stroke just as she had in conservatory.",
+      "on_screen_text": "THE MARGIN NOTE",
+      "duration_hint": 14.0,
+      "visual": "close up of a hand writing a musical notation in pencil on old yellowed sheet music resting on a stand"
+    },
+    {
+      "narration": "The community hall audition notice sat on the kitchen counter beside her coffee mug. For the first time in years, she reached for her car keys without hesitation.",
+      "on_screen_text": "READY TO PLAY",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a hand picking up metal car keys from a wooden kitchen counter next to a warm ceramic mug"
+    },
+    {
+      "narration": "Our true passions never truly leave us; they only wait patiently for us to remember how to play. Follow along for more quiet stories of everyday transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "close up of a wooden cello bridge and fine tuners reflecting warm indoor light in a quiet room"
+    }
+  ]
+}

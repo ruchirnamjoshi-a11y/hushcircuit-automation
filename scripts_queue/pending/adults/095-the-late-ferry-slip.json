@@ -1,0 +1,65 @@
+{
+  "id": "the-late-ferry-slip",
+  "title": "The Late Ferry Slip",
+  "description": "A dockworker who has watched thousands of commuters leave finally decides to board the boat himself.",
+  "tags": [
+    "transition",
+    "waterfront",
+    "departure",
+    "courage",
+    "commute"
+  ],
+  "character_reference": "a rugged middle-aged man with a weather-lined face, thick salt-and-pepper beard, wearing a heavy waxed canvas jacket and wool fisherman's cap",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For twenty-four years, Marcus secured the mooring ropes as the midnight ferry groaned against the pilings. He knew the rhythm of the tides better than the calendar on his wall.",
+      "on_screen_text": "THE MIDNIGHT MOORING",
+      "duration_hint": 14.0,
+      "visual": "close up of thick hemp rope being looped tightly around a rusted iron bollard on a wooden pier at night"
+    },
+    {
+      "narration": "He watched hundreds of tired passengers step off the gangplank carrying briefcases and duffels, heading inland toward lives he could only imagine from the edge of the water.",
+      "on_screen_text": "PASSING FACES",
+      "duration_hint": 14.0,
+      "visual": "medium shot from behind a bundled dockworker watching blurred commuters walk up a wooden ramp under amber overhead lights"
+    },
+    {
+      "narration": "The fog horn bellowed across the dark harbor, vibrating through the wooden planks beneath his heavy work boots. The final departure bell echoed against the tin roof.",
+      "on_screen_text": "THE FINAL HORN",
+      "duration_hint": 14.0,
+      "visual": "low angle shot of a heavy iron ferry railing dripping with mist under the glow of a amber deck lamp"
+    },
+    {
+      "narration": "He looked down at the brass heavy-duty latch in his palm one last time. The gate was open, and the engine was humming with a low, impatient urgency.",
+      "on_screen_text": "THE OPEN GATE",
+      "duration_hint": 14.0,
+      "visual": "close up of a calloused hand resting on a weathered wooden gate latch with dark water visible in the gap"
+    },
+    {
+      "narration": "Without a word to the deckhand, Marcus stepped across the narrow gap between the pier and the vessel, leaving his heavy leather tool belt hanging on the piling.",
+      "on_screen_text": "STEPPING ACROSS",
+      "duration_hint": 14.0,
+      "visual": "medium shot of heavy work boots stepping from a wooden dock onto the wet metal deck of a ferry"
+    },
+    {
+      "narration": "The engines surged, churning the dark harbor water into a froth of white foam as the ferry pulled away from the slip into the open expanse of the bay.",
+      "on_screen_text": "PULLING AWAY",
+      "duration_hint": 14.0,
+      "visual": "wake of white churning water swirling behind the stern of a moving boat under a dark starless sky"
+    },
+    {
+      "narration": "He leaned against the cold railing, watching his hometown shrink into a cluster of distant lights. For the first time in decades, he was heading toward the horizon.",
+      "on_screen_text": "THE OPEN WATER",
+      "duration_hint": 14.0,
+      "visual": "medium shot of a man looking out over a dark rippling ocean with distant city lights glowing on the horizon"
+    },
+    {
+      "narration": "It is never too late to trade the security of the shore for the mystery of the deep water. Follow along for more quiet stories of everyday transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "close up of a brass navigation compass resting on a wooden ledge with soft ambient light reflecting off the glass"
+    }
+  ]
+}

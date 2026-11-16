@@ -1,0 +1,65 @@
+{
+  "id": "the-canvas-underneath",
+  "title": "The Canvas Underneath",
+  "description": "An amateur painter discovers that her best work is hidden beneath a landscape she spent months trying to force into perfection.",
+  "tags": [
+    "art",
+    "perfectionism",
+    "second chances",
+    "creativity",
+    "release"
+  ],
+  "character_reference": "a woman in her late forties with dark curly hair pulled back in a messy clip, wearing an oversized denim smock dusted with dried acrylic paint",
+  "episode_number": 0,
+  "source_script_id": "",
+  "scenes": [
+    {
+      "narration": "For six months, Elena had tried to make the distant hills look noble and severe. Every stroke felt heavier than the last, weighed down by her own stubborn expectations.",
+      "on_screen_text": "THE DIFFICULT HILLS",
+      "duration_hint": 14.0,
+      "visual": "close up of a hand holding a stiff paintbrush hesitating before a muddy canvas surface covered in green and brown paint"
+    },
+    {
+      "narration": "She dipped a broad palette knife into a jar of turpentine, intending only to scrape away a clumsy cloud. Instead, the blade caught the canvas edge and tore a clean slit.",
+      "on_screen_text": "THE SLIP OF THE BLADE",
+      "duration_hint": 15.0,
+      "visual": "close up of a metal palette knife pressing sharply against the taut fabric of a stretched canvas leaving a long gray streak"
+    },
+    {
+      "narration": "Beneath the dull green hills, a flash of bright cadmium orange peeked through the tear. It was a remnant from an abandoned sketch she had painted over in frustration last winter.",
+      "on_screen_text": "HIDDEN COLOR",
+      "duration_hint": 14.0,
+      "visual": "macro shot of textured paint layers showing a vibrant orange hue emerging under a scraped top coat of olive green"
+    },
+    {
+      "narration": "She peeled back a corner of the upper layer with her thumb. The old paint was alive, chaotic, and completely free of the careful rules she had imposed on herself.",
+      "on_screen_text": "PEELING BACK",
+      "duration_hint": 14.0,
+      "visual": "close up of fingers gently pulling away a dry curl of oil paint from a textured canvas revealing bright underlayers"
+    },
+    {
+      "narration": "The heavy landscape she had labored over was nothing more than a cage built out of second guesses. It was time to let the underpainting breathe.",
+      "on_screen_text": "BREAKING THE CAGE",
+      "duration_hint": 14.0,
+      "visual": "medium shot of the woman wiping paint off her forehead with the back of her forearm while staring intently at an easel"
+    },
+    {
+      "narration": "With quick, confident sweeps of the scraper, she began tearing away the dead weight of the upper painting, letting the brilliant underlying chaos spill across the room.",
+      "on_screen_text": "REVEALING THE CORE",
+      "duration_hint": 14.0,
+      "visual": "action shot of a palette knife rapidly scraping away thick layers of dried paint from a wooden easel frame"
+    },
+    {
+      "narration": "The finished piece was imperfect, raw, and entirely her own. She stepped back as the studio filled with the sharp, clean scent of solvent and raw linen.",
+      "on_screen_text": "THE TRUE PIECE",
+      "duration_hint": 14.0,
+      "visual": "medium wide shot of an artist stepping back from an easel covered in bold expressive abstract strokes under warm spotlight"
+    },
+    {
+      "narration": "Sometimes our greatest breakthroughs require destroying the careful lies we built to please everyone else. Follow along for more quiet stories of everyday transitions.",
+      "on_screen_text": "SUBSCRIBE",
+      "duration_hint": 15.0,
+      "visual": "close up of a wooden palette smeared with bright leftover paint resting on a rustic wooden taboret"
+    }
+  ]
+}
