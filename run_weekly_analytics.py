@@ -16,13 +16,35 @@ from __future__ import annotations
 import sys
 import traceback
 
-from pipeline.analytics import build_report, write_report
+from pipeline.analytics import LOW_QUEUE_THRESHOLD, build_report, count_pending_scripts, write_report
 from pipeline.config import TRACKS, youtube_token_path
+
+
+def _warn_if_queue_low(track) -> None:
+    # Story-type tracks get auto-refilled by run_weekly_story_refill.py
+    # right after this script in the same workflow, so a low count here is
+    # expected and self-correcting -- not worth an alert. Canvas/song
+    # tracks (e.g. math_explainers) are deliberately excluded from that
+    # refill (hand-authored by design), so a low queue there silently
+    # stops production with no automatic recovery -- this is exactly the
+    # math_explainers gap (empty 2026-09-11 to 2026-11-04, unnoticed for
+    # ~2 months because "Queue empty, skipping" only ever showed up in CI
+    # logs nobody reads regularly). `::warning::` is GitHub Actions'
+    # annotation syntax -- it surfaces in the run summary UI, not just the
+    # raw log, so it doesn't require anyone to go looking for it.
+    if track.content_type == "story":
+        return
+    pending = count_pending_scripts(track.key)
+    if pending <= LOW_QUEUE_THRESHOLD:
+        print(f"::warning::[{track.key}] Only {pending} script(s) left in the queue and this "
+              f"track isn't on the automated refill — write more scripts manually or it will "
+              f"silently stop producing videos.")
 
 
 def run() -> int:
     any_failed = False
     for track in TRACKS.values():
+        _warn_if_queue_low(track)
         if track.shares_youtube_channel_with:
             # Confirmed live (2026-08-27, via YouTube's public oEmbed
             # endpoint): this track's videos upload to the SAME channel as
@@ -39,7 +61,7 @@ def run() -> int:
             print(f"[{track.key}] No YouTube OAuth token at {token_path} — skipping.")
             continue
         try:
-            report = build_report(token_path, days=7)
+            report = build_report(token_path, days=7, track_key=track.key)
             json_path, md_path = write_report(report, track.key, track.label)
             print(f"[{track.key}] Wrote {json_path} and {md_path}")
         except Exception:

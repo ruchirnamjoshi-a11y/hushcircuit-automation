@@ -5,6 +5,7 @@ from unittest.mock import MagicMock, patch
 from pipeline.analytics import (
     _rows_to_dicts,
     build_report,
+    count_pending_scripts,
     fetch_channel_metrics,
     fetch_top_videos,
     write_report,
@@ -90,3 +91,64 @@ def test_write_report_writes_json_and_markdown_per_track(tmp_path):
     assert "Kids" in md_content
     assert "views" in md_content
     assert "abc123" in md_content
+
+
+def test_count_pending_scripts_counts_json_files_recursively(tmp_path):
+    with patch("pipeline.analytics.QUEUE_PENDING_DIR", tmp_path):
+        track_dir = tmp_path / "math_explainers"
+        track_dir.mkdir()
+        (track_dir / "041-a.json").write_text("{}")
+        (track_dir / "042-b.json").write_text("{}")
+        long_dir = track_dir / "long"
+        long_dir.mkdir()
+        (long_dir / "001-c.json").write_text("{}")
+
+        assert count_pending_scripts("math_explainers") == 3
+
+
+def test_count_pending_scripts_returns_zero_for_missing_track_dir(tmp_path):
+    with patch("pipeline.analytics.QUEUE_PENDING_DIR", tmp_path):
+        assert count_pending_scripts("nonexistent_track") == 0
+
+
+def test_build_report_includes_queue_pending_when_track_key_given():
+    with patch("pipeline.analytics.fetch_channel_metrics", return_value={"views": 1200}), \
+         patch("pipeline.analytics.fetch_top_videos", return_value=[]), \
+         patch("pipeline.analytics.count_pending_scripts", return_value=2):
+        report = build_report(FAKE_TOKEN_PATH, days=7, track_key="math_explainers")
+
+    assert report["queue_pending"] == 2
+
+
+def test_build_report_omits_queue_pending_without_track_key():
+    with patch("pipeline.analytics.fetch_channel_metrics", return_value={"views": 1200}), \
+         patch("pipeline.analytics.fetch_top_videos", return_value=[]):
+        report = build_report(FAKE_TOKEN_PATH, days=7)
+
+    assert "queue_pending" not in report
+
+
+def test_write_report_flags_low_queue_in_markdown(tmp_path):
+    report = {
+        "start_date": "2026-07-01", "end_date": "2026-07-07",
+        "channel": {"views": 1200}, "top_videos": [],
+        "queue_pending": 1,
+    }
+    _, md_path = write_report(report, "math_explainers", "Fun By Math", reports_dir=tmp_path)
+
+    md_content = md_path.read_text()
+    assert "Queue health" in md_content
+    assert "Only 1 script(s) left" in md_content
+
+
+def test_write_report_shows_healthy_queue_without_alarm(tmp_path):
+    report = {
+        "start_date": "2026-07-01", "end_date": "2026-07-07",
+        "channel": {"views": 1200}, "top_videos": [],
+        "queue_pending": 20,
+    }
+    _, md_path = write_report(report, "math_explainers", "Fun By Math", reports_dir=tmp_path)
+
+    md_content = md_path.read_text()
+    assert "20 scripts queued and ready" in md_content
+    assert "Only" not in md_content
