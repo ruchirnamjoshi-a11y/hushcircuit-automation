@@ -1,0 +1,32 @@
+{
+  "id": "rounding-362-to-nearest-100",
+  "title": "Rounding 362 to the Nearest Hundred",
+  "description": "Using the number line to see which hundred a number actually lands closest to.",
+  "tags": [
+    "math tricks",
+    "rounding",
+    "number line",
+    "learn math"
+  ],
+  "piece": "number_line",
+  "narration_lines": [
+    "Round 362 to the nearest hundred.",
+    "Picture it on the number line between 300 and 400.",
+    "It's 62 away from 300, but only 38 away from 400.",
+    "So 362 rounds up to 400."
+  ],
+  "params": {
+    "kicker": "on the number line",
+    "hook": "Round 362 to the nearest 100",
+    "min": 0,
+    "max": 1000,
+    "tick": 100,
+    "jumps": [
+      362,
+      400
+    ],
+    "revealLabel": "362 rounds to",
+    "revealValue": "400",
+    "footnote": "closer to 400 than to 300"
+  }
+}

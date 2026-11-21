@@ -1,0 +1,27 @@
+{
+  "id": "230-as-half-past",
+  "title": "Reading 2:30 as Half Past",
+  "description": "Seeing why the clock position at 2:30 is exactly half of the way around the hour.",
+  "tags": [
+    "math tricks",
+    "fractions",
+    "time",
+    "learn math"
+  ],
+  "piece": "clock_face",
+  "narration_lines": [
+    "What does 2:30 mean as a fraction of the hour?",
+    "Look at where the minute hand sits on the clock face.",
+    "It's gone 30 out of the 60 minutes in the hour.",
+    "30 out of 60 simplifies to one half -- that's why we call it half past."
+  ],
+  "params": {
+    "kicker": "time as fractions",
+    "hook": "What does 2:30 mean as a fraction?",
+    "hour": 2,
+    "minute": 30,
+    "fractionLabel": "30 out of 60 minutes",
+    "revealValue": "1/2",
+    "footnote": "half past = 1/2 of the way around the clock"
+  }
+}

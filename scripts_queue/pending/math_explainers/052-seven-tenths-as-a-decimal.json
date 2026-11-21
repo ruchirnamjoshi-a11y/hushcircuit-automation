@@ -1,0 +1,28 @@
+{
+  "id": "seven-tenths-as-a-decimal",
+  "title": "What 7/10 Means as a Decimal",
+  "description": "Filling in parts of a whole to see why 7/10 and 0.7 are the same amount.",
+  "tags": [
+    "math tricks",
+    "fractions",
+    "decimals",
+    "learn math"
+  ],
+  "piece": "parts_of_whole",
+  "narration_lines": [
+    "What does seven tenths mean as a decimal?",
+    "Split a whole into 10 equal parts.",
+    "Now fill in 7 of those 10 parts.",
+    "Seven tenths is just 0.7 -- the tenths place is literally parts out of ten."
+  ],
+  "params": {
+    "kicker": "parts of a whole",
+    "hook": "What does 7/10 mean?",
+    "total": 10,
+    "filled": 7,
+    "label": "7/10",
+    "revealLabel": "as a decimal:",
+    "revealValue": "0.7",
+    "footnote": "the tenths place is literally parts out of ten"
+  }
+}

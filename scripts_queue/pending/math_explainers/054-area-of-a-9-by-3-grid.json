@@ -1,0 +1,28 @@
+{
+  "id": "area-of-a-9-by-3-grid",
+  "title": "How Many Squares Cover a 9 by 3 Grid",
+  "description": "Counting rows and columns to find the area of a 9 by 3 rectangle.",
+  "tags": [
+    "math tricks",
+    "area",
+    "geometry",
+    "learn math"
+  ],
+  "piece": "grid_area",
+  "narration_lines": [
+    "How many squares cover a 9 by 3 grid?",
+    "Picture it as rows and columns of little squares.",
+    "Count the rows, count the columns.",
+    "Rows times columns: 27 square units."
+  ],
+  "params": {
+    "kicker": "area of a rectangle",
+    "hook": "Area of a 9 × 3 grid?",
+    "rows": 3,
+    "cols": 9,
+    "mode": "area",
+    "revealLabel": "rows × columns =",
+    "revealValue": "27",
+    "footnote": "count the rows, count the columns, multiply"
+  }
+}

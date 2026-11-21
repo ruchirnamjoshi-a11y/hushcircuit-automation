@@ -1,0 +1,36 @@
+{
+  "id": "dividing-84-by-5",
+  "title": "The Fast Trick to Divide by 5",
+  "description": "Doubling a number and shifting the decimal point instead of dividing by 5 directly.",
+  "tags": [
+    "math tricks",
+    "mental math",
+    "division",
+    "learn math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Here's a fast way to divide by 5. What's 84 divided by 5?",
+    "Double the number instead.",
+    "84 doubled is 168.",
+    "Now just move the decimal point one place left.",
+    "That's 16.8 -- 84 divided by 5."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "84 ÷ 5 = ?",
+    "steps": [
+      {
+        "label": "Double the number instead",
+        "expr": "84 × 2 = 168"
+      },
+      {
+        "label": "Move the decimal one place left",
+        "expr": "168 → 16.8"
+      }
+    ],
+    "answerLabel": "84 ÷ 5 =",
+    "answer": "16.8",
+    "footnote": "dividing by 5 is always ×2 then shift the decimal"
+  }
+}

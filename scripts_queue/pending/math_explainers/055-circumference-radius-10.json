@@ -1,0 +1,24 @@
+{
+  "id": "circumference-radius-10",
+  "title": "The Circumference of a Radius-10 Circle",
+  "description": "Using pi to find the circumference of a circle with radius 10.",
+  "tags": [
+    "math tricks",
+    "pi",
+    "circles",
+    "learn math"
+  ],
+  "piece": "circle_circumference",
+  "narration_lines": [
+    "What's the circumference of a circle with radius 10?",
+    "Picture the radius wrapping around the circle's edge.",
+    "It takes about two times pi, around 6.28, of those radius-lengths to go all the way around.",
+    "So the circumference is about 63 units -- pi is just how many radiuses wrap around, doubled."
+  ],
+  "params": {
+    "kicker": "what pi really means",
+    "hook": "Circumference of a circle with radius 10?",
+    "radius": 10,
+    "footnote": "pi (≈3.14) is just how many \"radiuses\" wrap around, doubled"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "multiply-47-by-99",
+  "title": "The Fast Trick to Multiply by 99",
+  "description": "Multiplying by 100 and subtracting the original number instead of multiplying by 99 directly.",
+  "tags": [
+    "math tricks",
+    "mental math",
+    "multiplication",
+    "learn math"
+  ],
+  "piece": "step_chain",
+  "narration_lines": [
+    "Here's a fast way to multiply by 99. What's 47 times 99?",
+    "Multiply by 100 instead -- just add two zeros.",
+    "47 times 100 is 4700.",
+    "Now subtract the original 47.",
+    "4700 minus 47 is 4653 -- that's 47 times 99."
+  ],
+  "params": {
+    "kicker": "a quick trick",
+    "hook": "47 × 99 = ?",
+    "steps": [
+      {
+        "label": "Multiply by 100 instead",
+        "expr": "47 × 100 = 4700"
+      },
+      {
+        "label": "Subtract the original number",
+        "expr": "4700 − 47"
+      },
+      {
+        "label": "That gives the answer",
+        "expr": "4700 − 47 = 4653"
+      }
+    ],
+    "answerLabel": "47 × 99 =",
+    "answer": "4653",
+    "footnote": "multiplying by 99 is always ×100 then subtract once"
+  }
+}

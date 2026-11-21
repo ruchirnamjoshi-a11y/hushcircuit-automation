@@ -1,0 +1,31 @@
+{
+  "id": "subtracting-52-from-80",
+  "title": "Subtracting 52 From 80 Column by Column",
+  "description": "Borrowing across a zero when the top digit is smaller than the bottom digit.",
+  "tags": [
+    "math tricks",
+    "subtraction",
+    "mental math",
+    "learn math"
+  ],
+  "piece": "place_value_columns",
+  "narration_lines": [
+    "What's 80 minus 52?",
+    "Line up the two numbers by their columns.",
+    "The top digit, 0, is smaller than 2, so borrow from the 8: it becomes 7, and the 0 becomes 10. 10 minus 2 is 8. Then 7 minus 5 is 2.",
+    "80 minus 52 is 28."
+  ],
+  "params": {
+    "kicker": "column by column",
+    "hook": "80 − 52 = ?",
+    "op": "−",
+    "top": "80",
+    "bottom": "52",
+    "notes": [
+      "borrow: 10 − 2 = 8",
+      "7 − 5 = 2"
+    ],
+    "answer": "28",
+    "footnote": "borrow from the left when the top digit is too small"
+  }
+}

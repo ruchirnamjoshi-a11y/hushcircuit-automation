@@ -1,0 +1,26 @@
+{
+  "id": "pythagorean-9-12-15",
+  "title": "The 9-12-15 Right Triangle",
+  "description": "Scaling up the classic 3-4-5 triangle to see the Pythagorean theorem still holds.",
+  "tags": [
+    "math tricks",
+    "geometry",
+    "pythagorean theorem",
+    "learn math"
+  ],
+  "piece": "pythagorean",
+  "narration_lines": [
+    "A right triangle has legs of 9 and 12. What's the longest side?",
+    "Square each leg: 9 squared is 81, 12 squared is 144.",
+    "Add them together: 81 plus 144 is 225.",
+    "The square root of 225 is 15 -- just the 3-4-5 triangle scaled up by 3."
+  ],
+  "params": {
+    "kicker": "right triangles",
+    "hook": "A right triangle with legs 9 and 12?",
+    "a": 9,
+    "b": 12,
+    "c": 15,
+    "footnote": "it's the classic 3-4-5 triangle, scaled up by 3"
+  }
+}

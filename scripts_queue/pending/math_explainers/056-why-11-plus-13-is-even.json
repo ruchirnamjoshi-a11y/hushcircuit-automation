@@ -1,0 +1,24 @@
+{
+  "id": "why-11-plus-13-is-even",
+  "title": "Why 11 Plus 13 Is Always Even",
+  "description": "Pairing up leftover dots to see why two odd numbers always sum to an even one.",
+  "tags": [
+    "math tricks",
+    "number theory",
+    "learn math"
+  ],
+  "piece": "odd_even_pairs",
+  "narration_lines": [
+    "Why does 11 plus 13 come out even, when both numbers are odd?",
+    "Take 11 and 13 -- both odd, so each has one dot left over after pairing up.",
+    "Those two leftover dots pair up with each other.",
+    "No dot left alone, so 11 plus 13 is even -- odd plus odd always is."
+  ],
+  "params": {
+    "kicker": "why it always works",
+    "hook": "Why is 11 + 13 even?",
+    "a": 11,
+    "b": 13,
+    "footnote": "the two leftover dots always pair up with each other"
+  }
+}
